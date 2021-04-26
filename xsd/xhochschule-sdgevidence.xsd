@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.4/xsd"
+           xmlns:loc="http://www.w3.org/ns/corevocabulary/location"
+           xmlns:per="http://www.w3.org/ns/corevocabulary/person"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.4/xsd"
+           xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.4/xsd"
+           version="0.4"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+   <xs:annotation>
+      <xs:appinfo>
+         <standard>
+            <nameLang>XHochschule</nameLang>
+            <nameKurz>XHochschule</nameKurz>
+            <nameTechnisch>xhochschule</nameTechnisch>
+            <kennung>urn:xoev-de:xhochschule-de:def:standard:xhochschule</kennung>
+            <beschreibung>XHochschule</beschreibung>
+         </standard>
+         <versionStandard>
+            <version>0.4</version>
+            <versionXOEVProfil>1.7.2</versionXOEVProfil>
+            <versionXOEVHandbuch>2.2</versionXOEVHandbuch>
+            <versionXGenerator>3.0.1</versionXGenerator>
+            <versionModellierungswerkzeug>19.0 SP 3</versionModellierungswerkzeug>
+            <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+         </versionStandard>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.4/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.4/xsd"/>
+   <xs:import schemaLocation="http://xhochschule.de/def/core_vocabularies/2.0.1/Core%20Location%20Vocabulary%201.0.0/CoreLocation-v1.00.xsd"
+              namespace="http://www.w3.org/ns/corevocabulary/location"/>
+   <xs:import schemaLocation="http://xhochschule.de/def/core_vocabularies/2.0.1/Core%20Person%20Vocabulary%201.0.0/CorePerson-v1.00.xsd"
+              namespace="http://www.w3.org/ns/corevocabulary/person"/>
+   <xs:import schemaLocation="http://xoev.de/latinchars/1_1/datatypes/latinchars.xsd"
+              namespace="http://xoev.de/latinchars/1_1/datatypes"/>
+   <xs:element name="sdgTertiaryEducationDiplomaEvidence.0011">
+      <xs:annotation>
+         <xs:appinfo>
+            <rechtsgrundlage/>
+         </xs:appinfo>
+         <xs:documentation>Abstract superclass for evidences that are issued after obtaining a Tertiary Education grade (cf. www.github.com/SEMICeu/SDG-sandbox).</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="nachrichtenkopf" type="xbd:Nachrichtenkopf">
+               <xs:annotation>
+                  <xs:documentation>Nachrichtenkopf von XHochschule</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="identifier" type="xbd:Identifikation">
+               <xs:annotation>
+                  <xs:documentation>An unambiguous reference to the Tertiary Education Evidence.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="issuingDate" type="xs:date">
+               <xs:annotation>
+                  <xs:documentation>The date on which the Tertiary Education Evidence was issued.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="language" maxOccurs="unbounded" type="xbd:Sprache">
+               <xs:annotation>
+                  <xs:documentation>The language in which the Tertiary Education Evidence is issued.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="qualificationName"
+                        maxOccurs="unbounded"
+                        type="xbd:String.Localized">
+               <xs:annotation>
+                  <xs:documentation>Full name of the qualification, at least in the original language(s) as it is styled in the original qualification, e.g. Master of Science, Kandidat nauk, Maîtrise, Diplom, etc.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="issuingPlace">
+               <xs:annotation>
+                  <xs:documentation>The Location where the Tertiary Education Evidence was issued.</xs:documentation>
+               </xs:annotation>
+               <xs:complexType>
+                  <xs:sequence>
+                     <xs:element name="geographicName"
+                                 minOccurs="0"
+                                 maxOccurs="unbounded"
+                                 type="xbd:String.Localized"/>
+                     <xs:element name="geographicIdentifier" minOccurs="0" type="xs:anyURI"/>
+                     <xs:element name="address" minOccurs="0" type="loc:CvlocationType"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element name="belongsTo" type="per:CvpersonType">
+               <xs:annotation>
+                  <xs:documentation>The Student that is the holder of the Tertiary Education Evidence.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="obtainedAt"
+                        minOccurs="0"
+                        maxOccurs="unbounded"
+                        type="xs:ID">
+               <xs:annotation>
+                  <xs:documentation>The Education Institution that educated the Student.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="issuingAuthority" maxOccurs="unbounded" type="xhs:Hochschule">
+               <xs:annotation>
+                  <xs:documentation>The Organisation that issued the Tertiary Education Evidence.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="accessToFurtherStudy"
+                        minOccurs="0"
+                        maxOccurs="unbounded"
+                        type="xbd:Code.ISCED2011">
+               <xs:annotation>
+                  <xs:documentation>Details of access to further academic and/or professional studies the qualification provides, especially to specific qualifications, or levels of study, e.g.: access to Doctoral studies in the country or institution.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="accessToRegulatedProfession"
+                        minOccurs="0"
+                        maxOccurs="unbounded"
+                        type="xbd:String.Localized">
+               <xs:annotation>
+                  <xs:documentation>Details of any rights to practise, or professional title, accorded to the holder of the qualification, in accordance with national legislation or requirements by a competent authority.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="levelOfDistinction"
+                        minOccurs="0"
+                        type="xhs:Code.LateinischeEhrenbezeichnung">
+               <xs:annotation>
+                  <xs:documentation>Indication of the level of distinction with which an academic degree has been earned, e.g. First Class Honors Degree, Summa Cum Laude, Merit, Avec Distinction, Avec mention, etc.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="overallGrade"
+                        minOccurs="0"
+                        maxOccurs="unbounded"
+                        type="xs:string">
+               <xs:annotation>
+                  <xs:documentation>A mark indicating a degree of accomplishment.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="qualificationLevel" type="xbd:Code.ISCED2011">
+               <xs:annotation>
+                  <xs:documentation>Level of the obtained qualification.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="thesisTitle"
+                        minOccurs="0"
+                        maxOccurs="unbounded"
+                        type="xbd:String.Localized">
+               <xs:annotation>
+                  <xs:documentation>Title of the dissertation completed by a student as part of a tertiary education degree.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="hasSupplement" minOccurs="0" type="xs:ID">
+               <xs:annotation>
+                  <xs:documentation>Supplementary document that serves as an annex, with additional information related to the Tertiary Education Diploma Evidence.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

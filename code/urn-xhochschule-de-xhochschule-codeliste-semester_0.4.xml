@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3">
+   <Annotation>
+      <Description>
+         <xoev-cl-3:nameKurz>Semester</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Semester der erstmaligen Einschreibung (Immatrikulation) an einer Hochschule. Angabe des Semesters.</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:herausgebernameKurz>XHochschule</xoev-cl-3:herausgebernameKurz>
+         <xoev-cl-3:beschreibung-versionCodeliste>Mit Studientyp sei hier die Unterscheidung zwischen Voll- und Teilzeit gemeint.</xoev-cl-3:beschreibung-versionCodeliste>
+         <xoev-cl-3:datumGueltigkeitAb>2021-04-26</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>Semester-Codes</ShortName>
+      <LongName>Semester</LongName>
+      <Version>0.4</Version>
+      <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:semester</CanonicalUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:semester_0.4</CanonicalVersionUri>
+      <Agency>
+         <LongName>XHochschule</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName>Code</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Lateinische Bezeichnung</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-3:empfohleneCodeSpalte/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.4/code/semester/sommersemester</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sommersemester</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.4/code/semester/wintersemester</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wintersemester</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>
