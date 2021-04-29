@@ -1,12 +1,12 @@
 ---
 name: Issue Template Deutsch
-about: Aussagekräftiger Titel mit mindestens einem Verb
+about: Beteiligungsverfahren zur Version 0.4 von XHochschule
 title: ''
 labels: ''
 assignees: XHochschuleDE
 
 ---
 
-Ersteller: [bitte angeben]
-Ersteller-Typ: [ CAMS-Hersteller / Hochschule / Ministerium ]
+Autor: [bitte angeben]
+Art der Organisation: [ CAMS-Hersteller / Hochschule / Ministerium / andere ]
 Beschreibung: [bitte Beschreibung der Rückmeldung angeben]

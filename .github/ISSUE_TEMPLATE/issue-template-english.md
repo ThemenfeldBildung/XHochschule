@@ -1,6 +1,6 @@
 ---
 name: Issue Template English
-about: Meaningful title including at least one verb
+about: Contribution for version 0.4 of XHochschule
 title: ''
 labels: ''
 assignees: XHochschuleDE
@@ -8,5 +8,5 @@ assignees: XHochschuleDE
 ---
 
 Creator: [please fill in]
-Creator type: [ vendor / university / ministry ]
+Type of the organisation: [ vendor / university / ministry / other ]
 Description: [please fill in description of your feedback]
