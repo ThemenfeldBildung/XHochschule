@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xhs:immatrikulationsbescheinigungBAfoeGP9.0002 xmlns:xbd="http://xbildung.de/def/xbildung/0.4/xsd" xmlns:xhs="http://xhochschule.de/def/xhochschule/0.4/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.4/xsd http://xhochschule.de/def/xhochschule/0.4/xsd/xhochschule.xsd">
+    <xhs:ausstellendeHochschule>
+        <xbd:anschrift>
+            <xbd:strasse>Goßlerstraße</xbd:strasse>
+            <xbd:hausnummer>9</xbd:hausnummer>
+            <xbd:postleitzahl>37073</xbd:postleitzahl>
+            <xbd:ort>Göttingen</xbd:ort>
+        </xbd:anschrift>
+        <xbd:artDerBildungseinrichtung listURI="urn:xbildung-de:xbildung:codeliste:artderbildungseinrichtung" listVersionID="0.4">
+            <code>http://www.xbildung.de/def/xbildung/0.4/code/ArtDerBildungseinrichtung/Hochschule</code>
+        </xbd:artDerBildungseinrichtung>
+        <xbd:artDerTraegerschaft listURI="urn:xbildung-de:xbildung:codeliste:artdertraegerschaft" listVersionID="0.4">
+            <code>http://xbildung.de/def/xbildung/0.4/code/ArtDerTraegerschaft/2</code>
+        </xbd:artDerTraegerschaft>
+        <!-- optional: <xhs:hochschulIdentifikation /> -->
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="0.4">
+            <code>http://xhochschule.de/def/destatis/0.4/code/hochschulsignatur/1030</code>
+        </xhs:hochschulsignatur>
+    </xhs:ausstellendeHochschule>
+    <xhs:studierender>
+        <xbd:id>mat348194</xbd:id>
+        <xbd:nameNatuerlichePerson>
+            <xbd:familienname>
+                <xbd:name>Musterfrau</xbd:name>
+            </xbd:familienname>
+            <xbd:geburtsname>
+                <xbd:name>Mustermann</xbd:name>
+            </xbd:geburtsname>
+            <!-- optional: <xbd:fruehererFamilienname />-->
+            <xbd:vorname>
+                <xbd:name>Maxi</xbd:name>
+            </xbd:vorname>
+            <xbd:anrede>Frau</xbd:anrede>
+            <xbd:weitererName>
+                <xbd:name>Dorothea</xbd:name>
+            </xbd:weitererName>
+        </xbd:nameNatuerlichePerson>
+        <xbd:anschrift>
+            <xbd:strasse>Heidestraße</xbd:strasse>
+            <xbd:hausnummer>17</xbd:hausnummer>
+            <xbd:postleitzahl>51147</xbd:postleitzahl>
+            <xbd:ort>Köln</xbd:ort>
+        </xbd:anschrift>
+        <!-- Hier darf nicht angegeben werden: <xbd:geschlecht />-->
+        <xbd:geburt>
+            <xbd:datum>1989-01-01</xbd:datum>
+            <xbd:geburtsort>
+                <xbd:ort>Göttingen</xbd:ort>
+            </xbd:geburtsort>
+        </xbd:geburt>
+        <xbd:identifikationsnummer>
+            <xbd:id>mat348194</xbd:id>
+        </xbd:identifikationsnummer>
+        <xbd:staatsangehoerigkeit>
+            <xbd:staat listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat" listVersionID="2021-02-19">
+                <code>000</code>
+                <name>Deutschland</name>
+            </xbd:staat>
+        </xbd:staatsangehoerigkeit>
+        <xbd:identifikation>
+            <xbd:id>mat348194</xbd:id>
+        </xbd:identifikation>
+        <xhs:einschreibung>
+            <xhs:studienperiode>
+                <xhs:jahr>2017</xhs:jahr>
+                <xhs:jahr>2018</xhs:jahr>
+                <xhs:semester listURI="urn:xhochschule-de:xhochschule:codeliste:semester" listVersionID="0.4">
+                    <code>http://xhochschule.de/def/xhochschule/0.4/code/semester/wintersemester</code>
+                </xhs:semester>
+                <xhs:vorlesungBeginn>2017-10-16</xhs:vorlesungBeginn>
+                <xhs:vorlesungEnde>2018-02-18</xhs:vorlesungEnde>
+            </xhs:studienperiode>
+            <xhs:einschreibungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:einschreibungsstatus" listVersionID="0.4">
+                <code>http://xhochschule.de/def/xhochschule/0.4/code/einschreibungsstatus/immatrikuliert</code>
+            </xhs:einschreibungsstatus>
+            <xhs:beurlaubungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="0.4">
+                <code>http://xhochschule.de/def/xhochschule/0.4/code/beurlaubungsstatus/nicht_beurlaubt</code>
+            </xhs:beurlaubungsstatus>
+            <xhs:lernzeitmodell listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell" listVersionID="0.4">
+                <code>http://xhochschule.de/def/xhochschule/0.4/code/lernzeitmodell/vollzeit</code>
+            </xhs:lernzeitmodell>
+        </xhs:einschreibung>
+        <xhs:ersteinschreibung>2014-10-01</xhs:ersteinschreibung>
+        <xhs:hochschulsemester>5</xhs:hochschulsemester>
+    </xhs:studierender>
+    <xhs:studienfach>
+        <xhs:identifikation>
+            <xbd:id>globPol</xbd:id>
+        </xhs:identifikation>
+        <xhs:name xml:lang="de">Globale Politik: Strukturen und Grenzen</xhs:name>
+        <xhs:name xml:lang="en">Global Politics: Structures and Frontiers</xhs:name>
+        <xhs:angestrebterAbschluss listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.4">
+            <code>http://xbildung.de/def/xbildung/0.4/code/ArtDesAbschlusses/Bachelor</code>
+        </xhs:angestrebterAbschluss>
+        <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="0.4">
+            <code>http://xhochschule.de/def/destatis/0.4/code/faecherschluessel/129</code>
+            <!-- Politikwissenschaften, da es "Globale Politik: Strukturen und Grenzen" in der Codliste nicht gibt. -->
+        </xhs:schluesselDESTATIS>
+        <xhs:fachsemester>5</xhs:fachsemester>
+        <xhs:schluesselISCED2011 listVersionID="2011">
+            <code>6</code>
+        </xhs:schluesselISCED2011>
+        <xhs:schluesselISCED2013 listVersionID="2013">
+            <code>0312</code>
+        </xhs:schluesselISCED2013>
+    </xhs:studienfach>
+    <xhs:studienfach>
+        <xhs:identifikation>
+            <xbd:id>KommInf</xbd:id>
+        </xhs:identifikation>
+        <xhs:name xml:lang="de">Kommunikations- und Informationstechnik</xhs:name>
+        <xhs:name xml:lang="en">Communication and Information Science</xhs:name>
+        <xhs:angestrebterAbschluss listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.4">
+            <code>http://xbildung.de/def/xbildung/0.4/code/ArtDesAbschlusses/Bachelor</code>
+        </xhs:angestrebterAbschluss>
+        <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="0.4">
+            <code>http://xhochschule.de/def/destatis/0.4/code/faecherschluessel/222</code>
+            <!-- Kommunikations- und Informationstechnik -->
+        </xhs:schluesselDESTATIS>
+        <xhs:fachsemester>5</xhs:fachsemester>
+    </xhs:studienfach>
+    <xhs:formerfordernisHinweis xml:lang="de">Diese Bescheinigung ist maschinell erstellt und trägt weder Unterschrift noch Siegel. Zusätze und Änderungen bedürfen der ausdrücklichen schriftlichen Bestätigung durch das Studierendenbüro der Universität Göttingen.</xhs:formerfordernisHinweis>
+    <xhs:verifikation>
+        <xhs:schluessel>QNVCFM3P4UDF</xhs:schluessel>
+        <xhs:adresse>https://verify.uni-goettingen.de/de/QNVCFM3P4UDF</xhs:adresse>
+    </xhs:verifikation>
+    <!-- sollte hier in V0.5 nicht mehr auftauchen -->
+    <xhs:studienperiode>
+        <xhs:jahr>2017</xhs:jahr>
+        <xhs:jahr>2018</xhs:jahr>
+        <xhs:semester listURI="urn:xhochschule-de:xhochschule:codeliste:semester" listVersionID="0.4">
+            <code>http://xhochschule.de/def/xhochschule/0.4/code/semester/wintersemester</code>
+        </xhs:semester>
+        <xhs:vorlesungBeginn>2017-10-16</xhs:vorlesungBeginn>
+        <xhs:vorlesungEnde>2018-02-18</xhs:vorlesungEnde>
+    </xhs:studienperiode>
+</xhs:immatrikulationsbescheinigungBAfoeGP9.0002>
