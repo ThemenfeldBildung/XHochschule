@@ -8,16 +8,16 @@
          <xoev-cl-3:beschreibung-codeliste>Liste von Nachweistypen im Hochschulwesen inkl. einem Mapping zu Europass Credential</xoev-cl-3:beschreibung-codeliste>
          <xoev-cl-3:herausgebernameKurz>XHochschule</xoev-cl-3:herausgebernameKurz>
          <xoev-cl-3:beschreibung-versionCodeliste>Diese Liste erfasst die Art eines Nachweises im Hochschulwesen</xoev-cl-3:beschreibung-versionCodeliste>
-         <xoev-cl-3:datumGueltigkeitAb>2021-04-26</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:datumGueltigkeitAb>2021-06-01</xoev-cl-3:datumGueltigkeitAb>
          <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Hochschulnachweis-Codes</ShortName>
       <LongName>Hochschulnachweis</LongName>
-      <Version>0.4</Version>
+      <Version>0.6</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:hochschulnachweis</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:hochschulnachweis_0.4</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:hochschulnachweis_0.6</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -56,7 +56,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.4/code/hochschulnachweis/diploma</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/hochschulnachweis/diploma</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Zeugnis</SimpleValue>
@@ -70,7 +70,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.4/code/hochschulnachweis/diplomaSupplement</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/hochschulnachweis/diplomaSupplement</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Diploma Supplement</SimpleValue>
@@ -84,7 +84,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.4/code/hochschulnachweis/immatrikulationsbescheinigung</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/hochschulnachweis/immatrikulationsbescheinigung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Immatrikulationsbescheinigung</SimpleValue>
@@ -98,7 +98,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.4/code/hochschulnachweis/other</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/hochschulnachweis/other</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Anderer Nachweis</SimpleValue>
@@ -112,7 +112,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.4/code/hochschulnachweis/transcriptOfRecord</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/hochschulnachweis/transcriptOfRecord</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Transcript of Record</SimpleValue>

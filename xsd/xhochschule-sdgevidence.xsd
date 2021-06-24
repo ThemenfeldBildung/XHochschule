@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.4/xsd"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.6/xsd"
            xmlns:loc="http://www.w3.org/ns/corevocabulary/location"
            xmlns:per="http://www.w3.org/ns/corevocabulary/person"
-           xmlns:xbd="http://xbildung.de/def/xbildung/0.4/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.6/xsd"
            xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-           targetNamespace="http://xhochschule.de/def/xhochschule/0.4/xsd"
-           version="0.4"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.6/xsd"
+           version="0.6"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -19,9 +19,9 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.4</version>
+            <version>0.6</version>
             <versionXOEVProfil>1.7.2</versionXOEVProfil>
-            <versionXOEVHandbuch>2.2</versionXOEVHandbuch>
+            <versionXOEVHandbuch>2.3.1</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
             <versionModellierungswerkzeug>19.0 SP 3</versionModellierungswerkzeug>
             <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
@@ -29,8 +29,8 @@
       </xs:appinfo>
    </xs:annotation>
    <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.4/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/0.4/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.6/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.6/xsd"/>
    <xs:import schemaLocation="http://xhochschule.de/def/core_vocabularies/2.0.1/Core%20Location%20Vocabulary%201.0.0/CoreLocation-v1.00.xsd"
               namespace="http://www.w3.org/ns/corevocabulary/location"/>
    <xs:import schemaLocation="http://xhochschule.de/def/core_vocabularies/2.0.1/Core%20Person%20Vocabulary%201.0.0/CorePerson-v1.00.xsd"

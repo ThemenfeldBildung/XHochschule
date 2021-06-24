@@ -4,20 +4,20 @@
              xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3">
    <Annotation>
       <Description>
-         <xoev-cl-3:nameKurz>Immatrikulationsbescheinigung</xoev-cl-3:nameKurz>
-         <xoev-cl-3:beschreibung-codeliste>Liste von Immatrikulationsbescheinigungstypen im Hochschulwesen</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:nameKurz>Semester</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Semester der erstmaligen Einschreibung (Immatrikulation) an einer Hochschule. Angabe des Semesters.</xoev-cl-3:beschreibung-codeliste>
          <xoev-cl-3:herausgebernameKurz>XHochschule</xoev-cl-3:herausgebernameKurz>
-         <xoev-cl-3:beschreibung-versionCodeliste>diese Liste erfasst die Art eines Nachweises im Hochschulwesen</xoev-cl-3:beschreibung-versionCodeliste>
-         <xoev-cl-3:datumGueltigkeitAb>2021-04-26</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:beschreibung-versionCodeliste>Mit Studientyp sei hier die Unterscheidung zwischen Voll- und Teilzeit gemeint.</xoev-cl-3:beschreibung-versionCodeliste>
+         <xoev-cl-3:datumGueltigkeitAb>2021-06-01</xoev-cl-3:datumGueltigkeitAb>
          <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>Immatrikulationsbescheinigung-Codes</ShortName>
-      <LongName>Immatrikulationsbescheinigung</LongName>
-      <Version>0.4</Version>
-      <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:immatrikulationsbescheinigung</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:immatrikulationsbescheinigung_0.4</CanonicalVersionUri>
+      <ShortName>Semester-Codes</ShortName>
+      <LongName>Semester</LongName>
+      <Version>0.6</Version>
+      <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:semester</CanonicalUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:semester_0.6</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -30,12 +30,7 @@
       </Column>
       <Column Id="description-de-DE" Use="required">
          <ShortName>description-de-DE</ShortName>
-         <LongName>Name (Deutsch)</LongName>
-         <Data Type="string"/>
-      </Column>
-      <Column Id="description-en-GB" Use="required">
-         <ShortName>description-en-GB</ShortName>
-         <LongName>Name (Englisch)</LongName>
+         <LongName>Lateinische Bezeichnung</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -51,13 +46,18 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.4/code/immatrikulationsbescheinigung/BAfoeG_P9</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/semester/sommersemester</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>Immatrikulationsbescheinigung nach BAföG §9</SimpleValue>
+            <SimpleValue>Sommersemester</SimpleValue>
          </Value>
-         <Value ColumnRef="description-en-GB">
-            <SimpleValue>Generic</SimpleValue>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/semester/wintersemester</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wintersemester</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

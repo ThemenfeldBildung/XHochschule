@@ -4,20 +4,20 @@
              xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3">
    <Annotation>
       <Description>
-         <xoev-cl-3:nameKurz>Semester</xoev-cl-3:nameKurz>
-         <xoev-cl-3:beschreibung-codeliste>Semester der erstmaligen Einschreibung (Immatrikulation) an einer Hochschule. Angabe des Semesters.</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:nameKurz>Beurlaubungsstatus</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Da im Sinne des BAföG-Formblatts 2 nur relevant ist, ob ein/e Studierende/r beurlaubt ist, werden in dieser Version nur zwei mögliche Werte angegeben. In zukünftigen Versionen könnten noch verschieden Anlässe für die Beurlaubung abgebildet werden.</xoev-cl-3:beschreibung-codeliste>
          <xoev-cl-3:herausgebernameKurz>XHochschule</xoev-cl-3:herausgebernameKurz>
-         <xoev-cl-3:beschreibung-versionCodeliste>Mit Studientyp sei hier die Unterscheidung zwischen Voll- und Teilzeit gemeint.</xoev-cl-3:beschreibung-versionCodeliste>
-         <xoev-cl-3:datumGueltigkeitAb>2021-04-26</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:beschreibung-versionCodeliste>Für die Implementierung der Immatrikulationsbescheinigung nach §9 muss der Beurlaubungsstatus als Codeliste abgebildet werden.</xoev-cl-3:beschreibung-versionCodeliste>
+         <xoev-cl-3:datumGueltigkeitAb>2021-06-01</xoev-cl-3:datumGueltigkeitAb>
          <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>Semester-Codes</ShortName>
-      <LongName>Semester</LongName>
-      <Version>0.4</Version>
-      <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:semester</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:semester_0.4</CanonicalVersionUri>
+      <ShortName>Beurlaubungsstatus-Codes</ShortName>
+      <LongName>Beurlaubungsstatus</LongName>
+      <Version>0.6</Version>
+      <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus</CanonicalUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus_0.6</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -30,7 +30,7 @@
       </Column>
       <Column Id="description-de-DE" Use="required">
          <ShortName>description-de-DE</ShortName>
-         <LongName>Lateinische Bezeichnung</LongName>
+         <LongName>deutsche Übersetzung</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -46,18 +46,18 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.4/code/semester/sommersemester</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/beurlaubungsstatus/beurlaubt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>Sommersemester</SimpleValue>
+            <SimpleValue>Beurlaubt</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.4/code/semester/wintersemester</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/beurlaubungsstatus/nicht_beurlaubt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>Wintersemester</SimpleValue>
+            <SimpleValue>Nicht beurlaubt</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

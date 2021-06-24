@@ -4,20 +4,20 @@
              xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3">
    <Annotation>
       <Description>
-         <xoev-cl-3:nameKurz>Beurlaubungsstatus</xoev-cl-3:nameKurz>
-         <xoev-cl-3:beschreibung-codeliste>Da im Sinne des BAföG-Formblatts 2 nur relevant ist, ob ein/e Studierende/r beurlaubt ist, werden in dieser Version nur zwei mögliche Werte angegeben. In zukünftigen Versionen könnten noch verschieden Anlässe für die Beurlaubung abgebildet werden.</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:nameKurz>Einschreibungsstatus</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Status der Immatrikulation an einer Hochschule</xoev-cl-3:beschreibung-codeliste>
          <xoev-cl-3:herausgebernameKurz>XHochschule</xoev-cl-3:herausgebernameKurz>
-         <xoev-cl-3:beschreibung-versionCodeliste>Für die Implementierung der Immatrikulationsbescheinigung nach §9 muss der Beurlaubungsstatus als Codeliste abgebildet werden.</xoev-cl-3:beschreibung-versionCodeliste>
-         <xoev-cl-3:datumGueltigkeitAb>2021-04-26</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:beschreibung-versionCodeliste>Diese Liste erfasst die Art der Einschreibung im Hochschulwesen.</xoev-cl-3:beschreibung-versionCodeliste>
+         <xoev-cl-3:datumGueltigkeitAb>2021-06-01</xoev-cl-3:datumGueltigkeitAb>
          <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>Beurlaubungsstatus-Codes</ShortName>
-      <LongName>Beurlaubungsstatus</LongName>
-      <Version>0.4</Version>
-      <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus_0.4</CanonicalVersionUri>
+      <ShortName>Einschreibungsstatus-Codes</ShortName>
+      <LongName>Einschreibungsstatus</LongName>
+      <Version>0.6</Version>
+      <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:einschreibungsstatus</CanonicalUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:einschreibungsstatus_0.6</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -30,7 +30,7 @@
       </Column>
       <Column Id="description-de-DE" Use="required">
          <ShortName>description-de-DE</ShortName>
-         <LongName>deutsche Übersetzung</LongName>
+         <LongName>Name (Deutsch)</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -46,18 +46,26 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.4/code/beurlaubungsstatus/beurlaubt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/einschreibungsstatus/exmatrikuliert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>Beurlaubt</SimpleValue>
+            <SimpleValue>exmatrikuliert</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.4/code/beurlaubungsstatus/nicht_beurlaubt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/einschreibungsstatus/immatrikuliert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>Nicht beurlaubt</SimpleValue>
+            <SimpleValue>immatrikuliert</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/einschreibungsstatus/vorlaeufigImmatrikuliert</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>vorläufig immatrikuliert</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

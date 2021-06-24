@@ -4,12 +4,13 @@
             queryBinding="xslt2">
    <sch:ns prefix="dinspec91379"
            uri="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"/>
+   <sch:ns prefix="elmo" uri="https://github.com/emrex-eu/elmo-schemas/tree/v1"/>
    <sch:ns prefix="eup" uri="http://data.europa.eu/snb"/>
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
    <sch:ns prefix="loc" uri="http://www.w3.org/ns/corevocabulary/location"/>
    <sch:ns prefix="per" uri="http://www.w3.org/ns/corevocabulary/person"/>
-   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/0.4/xsd"/>
-   <sch:ns prefix="xhs" uri="http://xhochschule.de/def/xhochschule/0.4/xsd"/>
+   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/0.6/xsd"/>
+   <sch:ns prefix="xhs" uri="http://xhochschule.de/def/xhochschule/0.6/xsd"/>
    <sch:ns prefix="xiaa" uri="http://www.osci.de/xinneres/auslandsanschrift/3"/>
    <sch:ns prefix="xian" uri="http://www.osci.de/xinneres/allgemeinername/2"/>
    <sch:ns prefix="xiaz" uri="http://www.osci.de/xinneres/azrnummer/1"/>
@@ -38,20 +39,27 @@
       <sch:rule id="rule-SCH-KeinGeschlecht-0001" abstract="true">
          <sch:assert id="SCH-KeinGeschlecht-0001" test="empty(xbd:geschlecht)">Für den Studierenden darf auf der Immatrikulationsbescheinigung nach BaföG §9 kein Geschlecht angegeben werden.</sch:assert>
       </sch:rule>
+      <sch:rule id="rule-SCH-KeineAnrede-0005" abstract="true">
+         <sch:assert id="SCH-KeineAnrede-0005" test="empty(xbd:anrede)">Die Anrede des Studierenden wird auf der Immatrikulationsbescheinigung nach BaföG §9 nicht benötigt.</sch:assert>
+      </sch:rule>
+      <sch:rule id="rule-SCH-KeineSemester-0006" abstract="true">
+         <sch:assert id="SCH-KeineSemester-0006" test="empty(xhs:hochschulsemester)">Die Hochschulsemester des Studierenden werden auf der Immatrikulationsbescheinigung nach BaföG §9 nicht benötigt.</sch:assert>
+      </sch:rule>
+      <sch:rule id="rule-SCH-KeineWohnanschrift-0002" abstract="true">
+         <sch:assert id="SCH-KeineWohnanschrift-0002" test="empty(xbd:anschrift)">Für den Studierenden wird auf der Immatrikulationsbescheinigung nach BAföG §9 keine Wohnanschrift benötigt.</sch:assert>
+      </sch:rule>
       <sch:rule id="rule-SCH-NameNatuerlichePerson-0003" abstract="true">
          <sch:assert id="SCH-NameNatuerlichePerson-0003"
                      test="exists(xbd:nameNatuerlichePerson/xbd:familienname)">Für den Studierenden muss zur Identifikation auf der Immatrikulationsbescheinigung nach BAföG §9 ein Familienname angegeben werden.</sch:assert>
-      </sch:rule>
-      <sch:rule id="rule-SCH-WohnanschriftEinfach-0002" abstract="true">
-         <sch:assert id="SCH-WohnanschriftEinfach-0002"
-                     test="exists(xbd:anschrift/xbd:strasse) and exists(xbd:anschrift/xbd:postleitzahl) and exists(xbd:anschrift/xbd:ort)">Für den Studierenden muss zur Identifikation auf der Immatrikulationsbescheinigung nach BAföG §9 eine Wohnanschrift angegeben werden.</sch:assert>
       </sch:rule>
       <!--Konkrete Regeln-->
       <sch:rule context="xhs:immatrikulationsbescheinigungBAfoeGP9.0002//xhs:studierender">
          <sch:extends rule="rule-SCH-Einschreibung-0004"/>
          <sch:extends rule="rule-SCH-KeinGeschlecht-0001"/>
+         <sch:extends rule="rule-SCH-KeineAnrede-0005"/>
+         <sch:extends rule="rule-SCH-KeineSemester-0006"/>
+         <sch:extends rule="rule-SCH-KeineWohnanschrift-0002"/>
          <sch:extends rule="rule-SCH-NameNatuerlichePerson-0003"/>
-         <sch:extends rule="rule-SCH-WohnanschriftEinfach-0002"/>
       </sch:rule>
    </sch:pattern>
 </sch:schema>

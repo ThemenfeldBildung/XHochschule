@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.4/xsd"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.6/xsd"
+           xmlns:elmo="https://github.com/emrex-eu/elmo-schemas/tree/v1"
            xmlns:eup="http://data.europa.eu/snb"
-           xmlns:xbd="http://xbildung.de/def/xbildung/0.4/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.6/xsd"
            xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-           targetNamespace="http://xhochschule.de/def/xhochschule/0.4/xsd"
-           version="0.4"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.6/xsd"
+           version="0.6"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -18,9 +19,9 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.4</version>
+            <version>0.6</version>
             <versionXOEVProfil>1.7.2</versionXOEVProfil>
-            <versionXOEVHandbuch>2.2</versionXOEVHandbuch>
+            <versionXOEVHandbuch>2.3.1</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
             <versionModellierungswerkzeug>19.0 SP 3</versionModellierungswerkzeug>
             <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
@@ -30,8 +31,10 @@
    <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
    <xs:import schemaLocation="http://xbildung.de/def/edci/0.10.0.edited/flatten/genericschema.xsd"
               namespace="http://data.europa.eu/snb"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.4/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/0.4/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.6/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.6/xsd"/>
+   <xs:import schemaLocation="http://xhochschule.de/def/elmo/1.6/schema.xsd"
+              namespace="https://github.com/emrex-eu/elmo-schemas/tree/v1"/>
    <xs:import schemaLocation="http://xoev.de/latinchars/1_1/datatypes/latinchars.xsd"
               namespace="http://xoev.de/latinchars/1_1/datatypes"/>
    <xs:element name="edciCredential.0001">
@@ -99,11 +102,6 @@
                      </xs:element>
                   </xs:sequence>
                </xs:complexType>
-            </xs:element>
-            <xs:element name="studienperiode" type="xhs:Studienperiode">
-               <xs:annotation>
-                  <xs:documentation>Zusätzliche Informationen der Bildungseinrichtung. Diese enthalten unter anderem Informationen über die Adresse der Bildungseinrichtung.</xs:documentation>
-               </xs:annotation>
             </xs:element>
          </xs:sequence>
       </xs:complexType>
@@ -213,6 +211,23 @@
                         type="xbd:Code.ISCED2011">
                <xs:annotation>
                   <xs:documentation>Bezeichnung des erworbenen Zugangs zu einem weiterführenden Studium (ISCED Code 2011)</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="elmoCredential.0004">
+      <xs:annotation>
+         <xs:appinfo>
+            <rechtsgrundlage/>
+         </xs:appinfo>
+         <xs:documentation>Eine Nachricht, die die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren allgemeinen Nachweis des Bildungswesens erhält (reines EDCI).</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element ref="elmo:elmo">
+               <xs:annotation>
+                  <xs:documentation>A set of claims made by an issuer in Europe, using the Europass Standards. A Europass credential is a set of one or more claims which may be used to demonstrate that the owner has certain skills or has achieved certain learning outcomes through formal, non-formal or informal learning.</xs:documentation>
                </xs:annotation>
             </xs:element>
          </xs:sequence>
