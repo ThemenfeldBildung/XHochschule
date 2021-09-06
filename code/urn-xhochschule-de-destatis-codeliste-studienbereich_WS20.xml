@@ -14,9 +14,9 @@
    <Identification>
       <ShortName>Studienbereich-Codes</ShortName>
       <LongName>Studienbereich gemäß Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik</LongName>
-      <Version>0.6</Version>
+      <Version>WS20</Version>
       <CanonicalUri>urn:xhochschule-de:destatis:codeliste:studienbereich</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:destatis:codeliste:studienbereich_0.6</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:destatis:codeliste:studienbereich_WS20</CanonicalVersionUri>
       <Agency>
          <LongName>Statistisches Bundesamt</LongName>
       </Agency>
@@ -45,7 +45,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/01</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/01</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Geisteswissenschaften allgemein</SimpleValue>
@@ -56,7 +56,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/02</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/02</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Evang. Theologie, -Religionslehre</SimpleValue>
@@ -67,7 +67,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/03</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/03</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kath. Theologie, -Religionslehre</SimpleValue>
@@ -78,7 +78,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/04</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/04</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Philosophie</SimpleValue>
@@ -89,7 +89,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/05</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/05</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Geschichte</SimpleValue>
@@ -100,7 +100,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/06</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/06</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bibliothekswissenschaft, Dokumentation</SimpleValue>
@@ -111,7 +111,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/07</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/07</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Allgemeine und vergleichende Literatur und Sprachwissenschaft</SimpleValue>
@@ -122,7 +122,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/08</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/08</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Altphilologie (klass. Philologie), Neugriechisch</SimpleValue>
@@ -133,7 +133,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/09</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/09</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Germanistik (Deutsch, germanische Sprachen ohne Anglistik)</SimpleValue>
@@ -144,7 +144,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/10</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/10</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Anglistik, Amerikanistik</SimpleValue>
@@ -155,7 +155,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/11</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/11</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Romanistik</SimpleValue>
@@ -166,7 +166,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/12</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/12</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Slawistik, Baltistik, Finno-Ugristik</SimpleValue>
@@ -177,7 +177,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/13</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/13</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Außereuropäische Sprach- und Kulturwissenschaften</SimpleValue>
@@ -188,7 +188,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/14</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/14</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kulturwissenschaften i.e.S.</SimpleValue>
@@ -199,7 +199,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/15</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/15</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Islamische Studien</SimpleValue>
@@ -210,7 +210,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/16</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/16</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sport, Sportwissenschaft</SimpleValue>
@@ -221,7 +221,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/17</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/17</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Rechts-, Wirtschafts- und Sozialwissenschaften allgemein</SimpleValue>
@@ -232,7 +232,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/18</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/18</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Regionalwissenschaften</SimpleValue>
@@ -243,7 +243,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/19</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/19</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Politikwissenschaften</SimpleValue>
@@ -254,7 +254,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/20</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/20</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sozialwissenschaften</SimpleValue>
@@ -265,7 +265,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/21</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/21</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sozialwesen</SimpleValue>
@@ -276,7 +276,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/22</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/22</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Rechtswissenschaften</SimpleValue>
@@ -287,7 +287,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/23</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/23</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Verwaltungswissenschaften</SimpleValue>
@@ -298,7 +298,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/24</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/24</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschaftswissenschaften</SimpleValue>
@@ -309,7 +309,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/25</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/25</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschaftsingenieurwesen mit wirtschaftswiss. Schwerpunkt</SimpleValue>
@@ -320,7 +320,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/26</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/26</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Psychologie</SimpleValue>
@@ -331,7 +331,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/27</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/27</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Erziehungswissenschaften</SimpleValue>
@@ -342,7 +342,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/28</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/28</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Mathematik, Naturwissenschaften allgemein</SimpleValue>
@@ -353,7 +353,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/29</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/29</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Mathematik</SimpleValue>
@@ -364,7 +364,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/30</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/30</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Physik, Astronomie</SimpleValue>
@@ -375,7 +375,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/31</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/31</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Chemie</SimpleValue>
@@ -386,7 +386,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/32</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/32</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Pharmazie</SimpleValue>
@@ -397,7 +397,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/33</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/33</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Biologie</SimpleValue>
@@ -408,7 +408,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/34</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/34</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Geowissenschaften (ohne Geographie)</SimpleValue>
@@ -419,7 +419,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/35</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/35</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Geographie</SimpleValue>
@@ -430,7 +430,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/36</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/36</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Gesundheitswissenschaften allgemein</SimpleValue>
@@ -441,7 +441,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/37</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/37</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Humanmedizin (ohne Zahnmedizin)</SimpleValue>
@@ -452,7 +452,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/38</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/38</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Zahnmedizin</SimpleValue>
@@ -463,7 +463,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/39</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/39</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Veterinärmedizin</SimpleValue>
@@ -474,7 +474,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/40</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/40</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Landespflege, Umweltgestaltung</SimpleValue>
@@ -485,7 +485,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/41</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/41</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Agrarwissenschaften, Lebensmittel- und Getränketechnologie</SimpleValue>
@@ -496,7 +496,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/42</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/42</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Forstwissenschaft, Holzwirtschaft</SimpleValue>
@@ -507,7 +507,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/43</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/43</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Ernährungs- und Haushaltswissenschaften</SimpleValue>
@@ -518,7 +518,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/44</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/44</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Ingenieurwesen allgemein</SimpleValue>
@@ -529,7 +529,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/45</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/45</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bergbau, Hüttenwesen</SimpleValue>
@@ -540,7 +540,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/46</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/46</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Maschinenbau/Verfahrenstechnik</SimpleValue>
@@ -551,7 +551,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/47</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/47</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Elektrotechnik und Informationstechnik</SimpleValue>
@@ -562,7 +562,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/48</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/48</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Verkehrstechnik, Nautik</SimpleValue>
@@ -573,7 +573,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/49</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/49</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Architektur, Innenarchitektur</SimpleValue>
@@ -584,7 +584,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/50</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/50</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Raumplanung</SimpleValue>
@@ -595,7 +595,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/51</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/51</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bauingenieurwesen</SimpleValue>
@@ -606,7 +606,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/52</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/52</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Vermessungswesen</SimpleValue>
@@ -617,7 +617,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/53</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/53</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschaftsingenieurwesen mit ingenieurwiss. Schwerpunkt</SimpleValue>
@@ -628,7 +628,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/54</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/54</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Informatik</SimpleValue>
@@ -639,7 +639,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/55</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/55</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Materialwissenschaft und Werkstofftechnik</SimpleValue>
@@ -650,7 +650,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/56</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/56</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kunst, Kunstwissenschaft allgemein</SimpleValue>
@@ -661,7 +661,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/57</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/57</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bildende Kunst</SimpleValue>
@@ -672,7 +672,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/58</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/58</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Gestaltung</SimpleValue>
@@ -683,7 +683,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/59</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/59</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Darstellende Kunst, Film und Fernsehen, Theaterwissenschaft</SimpleValue>
@@ -694,7 +694,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/60</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/60</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Musik, Musikwissenschaft</SimpleValue>
@@ -705,7 +705,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/0.6/code/studienbereich/61</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS20/code/studienbereich/61</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Außerhalb der Studienbereichsgliederung</SimpleValue>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.7/xsd"
+           xmlns:elmo="https://github.com/emrex-eu/elmo-schemas/tree/v1"
+           xmlns:eup="http://data.europa.eu/snb"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.7/xsd"
+           xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.7/xsd"
+           version="0.7"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+   <xs:annotation>
+      <xs:appinfo>
+         <standard>
+            <nameLang>XHochschule</nameLang>
+            <nameKurz>XHochschule</nameKurz>
+            <nameTechnisch>xhochschule</nameTechnisch>
+            <kennung>urn:xoev-de:xhochschule-de:def:standard:xhochschule</kennung>
+            <beschreibung>XHochschule</beschreibung>
+         </standard>
+         <versionStandard>
+            <version>0.7</version>
+            <versionXOEVProfil>1.7.2</versionXOEVProfil>
+            <versionXOEVHandbuch>2.3.1</versionXOEVHandbuch>
+            <versionXGenerator>3.0.1</versionXGenerator>
+            <versionModellierungswerkzeug>19.0 SP 3</versionModellierungswerkzeug>
+            <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+         </versionStandard>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/edci/0.10.0.edited/flatten/genericschema.xsd"
+              namespace="http://data.europa.eu/snb"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.7/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.7/xsd"/>
+   <xs:import schemaLocation="http://xhochschule.de/def/elmo/1.6/schema.xsd"
+              namespace="https://github.com/emrex-eu/elmo-schemas/tree/v1"/>
+   <xs:import schemaLocation="http://xoev.de/latinchars/1_1/datatypes/latinchars.xsd"
+              namespace="http://xoev.de/latinchars/1_1/datatypes"/>
+   <xs:element name="edciCredential">
+      <xs:annotation>
+         <xs:appinfo>
+            <rechtsgrundlage/>
+         </xs:appinfo>
+         <xs:documentation>Ein Dokument, die die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren allgemeinen Nachweis des Bildungswesens erhält (reines EDCI).</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="credential" type="eup:EuropassCredentialType">
+               <xs:annotation>
+                  <xs:documentation>A set of claims made by an issuer in Europe, using the Europass Standards. A Europass credential is a set of one or more claims which may be used to demonstrate that the owner has certain skills or has achieved certain learning outcomes through formal, non-formal or informal learning.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="elmoCredential">
+      <xs:annotation>
+         <xs:appinfo>
+            <rechtsgrundlage/>
+         </xs:appinfo>
+         <xs:documentation>Ein Dokument, die die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren allgemeinen Nachweis des Bildungswesens erhält (reines ELMO ).</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element ref="elmo:elmo">
+               <xs:annotation>
+                  <xs:documentation>A set of claims made by an issuer in Europe, using the Europass Standards. A Europass credential is a set of one or more claims which may be used to demonstrate that the owner has certain skills or has achieved certain learning outcomes through formal, non-formal or informal learning.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="hochschulabschlusszeugnis">
+      <xs:annotation>
+         <xs:appinfo>
+            <rechtsgrundlage/>
+         </xs:appinfo>
+         <xs:documentation>Eine Dokument, die die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Hochschulabschlusszeugnisses erhält (EDCI + XHochschule)</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="xbd:Bildungsnachweis">
+               <xs:sequence>
+                  <xs:element name="studierender" type="xhs:Studierender">
+                     <xs:annotation>
+                        <xs:documentation>Studierende Person, für die ein Hochschulabschlusszeugnis ausgestellt wird.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="ausstellendeHochschule"
+                              maxOccurs="unbounded"
+                              type="xhs:Hochschule">
+                     <xs:annotation>
+                        <xs:documentation>Die Hochschule, an der der Abschluss erfolgt und die das Hochschulabschlusszeugnis ausstellt.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="diplomaSupplementVerweis" minOccurs="0" type="xs:ID">
+                     <xs:annotation>
+                        <xs:documentation>Verweis auf ein gemeinsam mit einem Hochschulabschlusszeugnis (Diploma) ausgestelltes Diploma Supplement</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="transcriptOfRecordVerweis" minOccurs="0" type="xs:ID">
+                     <xs:annotation>
+                        <xs:documentation>Verweis auf ein gemeinsam mit einem Hochschulabschlusszeugnis (Diploma) ausgestelltes "Transcript Of Record"-Dokument</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="studiengang" minOccurs="0" maxOccurs="unbounded">
+                     <xs:annotation>
+                        <xs:documentation>Der Studiengang, für den ein Hochschulzeugnis ausgestellt wird mit studiengangsspezifischen Eigenschaften.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="identifikation" minOccurs="0" type="xbd:Identifikation">
+                              <xs:annotation>
+                                 <xs:documentation>Eindeutiger Verweis auf einen bestimmten Studiengang</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="name"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Freitextfeld für die Bezeichnung des Studienberechs, in den der Studiengang einzuordnen ist.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="studienfach"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xhs:Studienfach">
+                              <xs:annotation>
+                                 <xs:documentation>Freitextfeld für die Bezeichnung eines Studienfachs</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="studienbereichCode"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xhs:Code.Studienbereich">
+                              <xs:annotation>
+                                 <xs:documentation>Bezeichnung des Studienbereichs nach DESTATIS Code. Dieses Verzeichnis des Statistischen Bundesamtes (DESTATIS) wird in XHochschule nachgenutzt, um Studienbereichen nicht neue bundesweit einheitliche Schlüssel zuordnen zu müssen.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="studienbereichBezeichnung"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Freitextfeld für die Bezeichnung des Studienberechs, in den der Studiengang einzuordnen ist.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="angabenLehramt" minOccurs="0" type="xhs:Lehramt">
+                              <xs:annotation>
+                                 <xs:documentation>Spezialisierung eines Studiengangs mit lehramtspezifischen Angaben.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="benotung" minOccurs="0" maxOccurs="unbounded">
+                     <xs:annotation>
+                        <xs:documentation>Die Benotung der absolvierenden Person, die sich aus Benotungselementen wie z.B. Gesamtnote und lateinischer Ehrenbezeichnung zusammensetzt.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="gesamtnote"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xs:string">
+                              <xs:annotation>
+                                 <xs:documentation>Freitextfeld für die Note, die sich aus allen erbrachten Leistungen des Hochschulstudiums ergibt.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="lateinischeEhrenbezeichnung"
+                                       minOccurs="0"
+                                       type="xhs:Code.LateinischeEhrenbezeichnung">
+                              <xs:annotation>
+                                 <xs:documentation>latenische Ehrenbezeichnung falls vorhanden (z.B. "cum laude")</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="bezeichnung" type="xbd:String.Localized">
+                     <xs:annotation>
+                        <xs:documentation>Eine Freitextbezeichnung für das Hochschulabschlusszeugnis.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="zulassungZuReglementiertemBerufBezeichnung"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xbd:String.Localized">
+                     <xs:annotation>
+                        <xs:documentation>Bezeichnung des reglementierten Berufs für den durch Erwerb des Hochschulabschlusses die Zugangsvoraussetzung erfüllt werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="zulassungZuReglementiertemBerufCode"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xbd:Code.ReglementierterBeruf">
+                     <xs:annotation>
+                        <xs:documentation>DESTATIS Code des reglementierten Berufs für den durch Erwerb des Hochschulabschlusses eine Zugangsvoraussetzung erfüllt wird.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="zugangsberechtigungWeiterfuehrendesStudiumBezeichnung"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xbd:String.Localized">
+                     <xs:annotation>
+                        <xs:documentation>Freitextbeschreibung des erworbenen Zugangs zu einem weiterführenden Studium.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="zugangsberechtigungWeiterfuehrendesStudiumCode"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xbd:Code.ISCED2011">
+                     <xs:annotation>
+                        <xs:documentation>Bezeichnung des erworbenen Zugangs zu einem weiterführenden Studium (ISCED Code 2011).</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

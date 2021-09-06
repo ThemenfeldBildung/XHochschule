@@ -8,16 +8,16 @@
          <xoev-cl-3:beschreibung-codeliste>Da im Sinne des BAföG-Formblatts 2 nur relevant ist, ob ein/e Studierende/r beurlaubt ist, werden in dieser Version nur zwei mögliche Werte angegeben. In zukünftigen Versionen könnten noch verschieden Anlässe für die Beurlaubung abgebildet werden.</xoev-cl-3:beschreibung-codeliste>
          <xoev-cl-3:herausgebernameKurz>XHochschule</xoev-cl-3:herausgebernameKurz>
          <xoev-cl-3:beschreibung-versionCodeliste>Für die Implementierung der Immatrikulationsbescheinigung nach §9 muss der Beurlaubungsstatus als Codeliste abgebildet werden.</xoev-cl-3:beschreibung-versionCodeliste>
-         <xoev-cl-3:datumGueltigkeitAb>2021-06-01</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:datumGueltigkeitAb>2021-09-06</xoev-cl-3:datumGueltigkeitAb>
          <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Beurlaubungsstatus-Codes</ShortName>
       <LongName>Beurlaubungsstatus</LongName>
-      <Version>0.6</Version>
+      <Version>0.7</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus_0.6</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus_0.7</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -46,7 +46,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/beurlaubungsstatus/beurlaubt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.7/code/beurlaubungsstatus/beurlaubt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Beurlaubt</SimpleValue>
@@ -54,7 +54,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/beurlaubungsstatus/nicht_beurlaubt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.7/code/beurlaubungsstatus/nicht_beurlaubt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Nicht beurlaubt</SimpleValue>

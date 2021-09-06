@@ -17,6 +17,7 @@ XHochschule besteht aus verschiedenen Artefakten, welche einem URI-Konzept folge
 * Die XSD-Schemata im Ordner [/xsd](https://github.com/OZG-TFBildung/XHochschule/tree/main/xsd)
 * Die Darstellung der Spezifikation als PDF im Ordner [/spec](https://github.com/OZG-TFBildung/XHochschule/tree/main/spec)
 * Die Schematron-Regeln im Ordner [/sch](https://github.com/OZG-TFBildung/XHochschule/tree/main/sch)
+* Die Beispielinstanzen im Ordner [/xml](https://github.com/OZG-TFBildung/XHochschule/tree/main/xml)
 
 # Das Beteiligungsverfahren
 

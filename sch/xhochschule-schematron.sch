@@ -9,8 +9,8 @@
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
    <sch:ns prefix="loc" uri="http://www.w3.org/ns/corevocabulary/location"/>
    <sch:ns prefix="per" uri="http://www.w3.org/ns/corevocabulary/person"/>
-   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/0.6/xsd"/>
-   <sch:ns prefix="xhs" uri="http://xhochschule.de/def/xhochschule/0.6/xsd"/>
+   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/0.7/xsd"/>
+   <sch:ns prefix="xhs" uri="http://xhochschule.de/def/xhochschule/0.7/xsd"/>
    <sch:ns prefix="xiaa" uri="http://www.osci.de/xinneres/auslandsanschrift/3"/>
    <sch:ns prefix="xian" uri="http://www.osci.de/xinneres/allgemeinername/2"/>
    <sch:ns prefix="xiaz" uri="http://www.osci.de/xinneres/azrnummer/1"/>
@@ -32,34 +32,25 @@
    <sch:ns prefix="xoev-lc" uri="http://xoev.de/latinchars/1_1/datatypes"/>
    <sch:pattern>
       <!--Abstrakte Regeln-->
-      <!-- /Data/XHochschule/Nachrichten/Nachweis/Anonymous/angabenStudierenderBAfoeGP9 -->
-      <sch:rule id="rule-SCH-Einschreibung-0004" abstract="true">
-         <sch:assert id="SCH-Einschreibung-0004" test="exists(xhs:einschreibung)">Für den Studierenden muss ein Immatrikulationsstatus auf der Immatrikulationsbescheinigung nach BAföG §9 angegeben werden.</sch:assert>
+      <!-- /Data/XHochschule/Baukasten/Anonymous/angabenStudienabschnittExmatrikulationsbescheinigung -->
+      <sch:rule id="rule-SCH-KeinBeurlaubungsgrund-0001" abstract="true">
+         <sch:assert id="SCH-KeinBeurlaubungsgrund-0001" test="empty(xhs:beurlaubungsgrund)"/>
       </sch:rule>
-      <sch:rule id="rule-SCH-KeinGeschlecht-0001" abstract="true">
-         <sch:assert id="SCH-KeinGeschlecht-0001" test="empty(xbd:geschlecht)">Für den Studierenden darf auf der Immatrikulationsbescheinigung nach BaföG §9 kein Geschlecht angegeben werden.</sch:assert>
+      <!-- /Data/XHochschule/Baukasten/Anonymous/angabenStudienabschnittRentenbescheinigung -->
+      <sch:rule id="rule-SCH-Ausbildungsstaette-0002" abstract="true">
+         <sch:assert id="SCH-Ausbildungsstaette-0002" test="exists(xhs:ausbildungsstätte)">Für eine Bescheinigung zur Vorlage bei der Deutschen Rentenversicherung, muss der Name der Ausbildungsstätte für den Studienabschnitt angegeben werden.</sch:assert>
       </sch:rule>
-      <sch:rule id="rule-SCH-KeineAnrede-0005" abstract="true">
-         <sch:assert id="SCH-KeineAnrede-0005" test="empty(xbd:anrede)">Die Anrede des Studierenden wird auf der Immatrikulationsbescheinigung nach BaföG §9 nicht benötigt.</sch:assert>
-      </sch:rule>
-      <sch:rule id="rule-SCH-KeineSemester-0006" abstract="true">
-         <sch:assert id="SCH-KeineSemester-0006" test="empty(xhs:hochschulsemester)">Die Hochschulsemester des Studierenden werden auf der Immatrikulationsbescheinigung nach BaföG §9 nicht benötigt.</sch:assert>
-      </sch:rule>
-      <sch:rule id="rule-SCH-KeineWohnanschrift-0002" abstract="true">
-         <sch:assert id="SCH-KeineWohnanschrift-0002" test="empty(xbd:anschrift)">Für den Studierenden wird auf der Immatrikulationsbescheinigung nach BAföG §9 keine Wohnanschrift benötigt.</sch:assert>
-      </sch:rule>
-      <sch:rule id="rule-SCH-NameNatuerlichePerson-0003" abstract="true">
-         <sch:assert id="SCH-NameNatuerlichePerson-0003"
-                     test="exists(xbd:nameNatuerlichePerson/xbd:familienname)">Für den Studierenden muss zur Identifikation auf der Immatrikulationsbescheinigung nach BAföG §9 ein Familienname angegeben werden.</sch:assert>
+      <sch:rule id="rule-SCH-Beurlaubungsgrund-0001" abstract="true">
+         <sch:assert id="SCH-Beurlaubungsgrund-0001"
+                     test="(exists(xhs:beurlaubungsgrund) and not(contains(xhs:beurlaubungsstatus//code,'http://xhochschule.de/def/xhochschule/0.7/code/beurlaubungsstatus/beurlaubt' ))) or (empty(xhs:beurlaubungsgrund) and contains(xhs:beurlaubungsstatus//code,'http://xhochschule.de/def/xhochschule/0.7/code/beurlaubungsstatus/nicht_beurlaubt' ))">Für eine Bescheinigung zur Vorlage bei der Deutschen Rentenversicherung muss der Grund der Beurlaubung angegeben werden, wenn der Studierende beurlaubt ist.</sch:assert>
       </sch:rule>
       <!--Konkrete Regeln-->
-      <sch:rule context="xhs:immatrikulationsbescheinigungBAfoeGP9.0002//xhs:studierender">
-         <sch:extends rule="rule-SCH-Einschreibung-0004"/>
-         <sch:extends rule="rule-SCH-KeinGeschlecht-0001"/>
-         <sch:extends rule="rule-SCH-KeineAnrede-0005"/>
-         <sch:extends rule="rule-SCH-KeineSemester-0006"/>
-         <sch:extends rule="rule-SCH-KeineWohnanschrift-0002"/>
-         <sch:extends rule="rule-SCH-NameNatuerlichePerson-0003"/>
+      <sch:rule context="xhs:rentenbescheinigung//xhs:studienabschnitte">
+         <sch:extends rule="rule-SCH-Ausbildungsstaette-0002"/>
+         <sch:extends rule="rule-SCH-Beurlaubungsgrund-0001"/>
+      </sch:rule>
+      <sch:rule context="xhs:exmatrikulationsbescheinigung//xhs:studienabschnitt">
+         <sch:extends rule="rule-SCH-KeinBeurlaubungsgrund-0001"/>
       </sch:rule>
    </sch:pattern>
 </sch:schema>

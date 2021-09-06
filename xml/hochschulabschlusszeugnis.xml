@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://xhochschule.de/def/xhochschule/0.7/xsd/xhochschule.xsd" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<xhs:hochschulabschlusszeugnis xmlns:business="http://www.w3.org/ns/corevocabulary/business" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+    xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:clm54217="urn:un:unece:uncefact:codelist:specification:54217:2001"
+    xmlns:clm5639="urn:un:unece:uncefact:codelist:specification:5639:1988" xmlns:clm66411="urn:un:unece:uncefact:codelist:specification:66411:2001"
+    xmlns:clmIANAMIMEMediaType="urn:un:unece:uncefact:codelist:specification:IANAMIMEMediaType:2003" xmlns:cred="http://data.europa.eu/europass/model/credentials/w3c#"
+    xmlns:cva="http://www.w3.org/ns/corevocabulary/AggregateComponents" xmlns:cvb="http://www.w3.org/ns/corevocabulary/BasicComponents"
+    xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:elmo="https://github.com/emrex-eu/elmo-schemas/tree/v1" xmlns:eup="http://data.europa.eu/snb" xmlns:europass="http://europass.cedefop.europa.eu/Europass/V2.0"
+    xmlns:ewp="https://github.com/erasmus-without-paper/ewp-specs-architecture/blob/stable-v1/common-types.xsd"
+    xmlns:ewpAddress="https://github.com/erasmus-without-paper/ewp-specs-types-address/tree/stable-v1"
+    xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:location="http://www.w3.org/ns/corevocabulary/location"
+    xmlns:person="http://www.w3.org/ns/corevocabulary/person" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2"
+    xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
+    xmlns:xbd="http://xbildung.de/def/xbildung/0.7/xsd" xmlns:xhs="http://xhochschule.de/def/xhochschule/0.7/xsd" xmlns:xiaa="http://www.osci.de/xinneres/auslandsanschrift/3"
+    xmlns:xicgvz="http://www.osci.de/xinneres/codes/gemeindeverzeichnis/2" xmlns:xima="http://www.osci.de/xinneres/meldeanschrift/3"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0" xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.7/xsd http://xhochschule.de/def/xhochschule/0.7/xsd/xhochschule.xsd">
+    <xbd:id>
+        <xbd:id>zeugnis_typ_2</xbd:id>
+        <xbd:beschreibung xml:lang="de">Technische ID, z.B. zur Identifikation eines bestimmten
+            Nachweis-Typs innerhalb eines bestimmten CaMS</xbd:beschreibung>
+    </xbd:id>
+    <xbd:artDesNachweises listURI="urn:xbildung-de:xbildung:codeliste:artdesnachweises" listVersionID="0.7">
+        <code>http://www.xbildung.de/def/xbildung/0.7/code/ArtDesNachweises/Hochschulabschlusszeugnis</code>
+    </xbd:artDesNachweises>
+    <xbd:ausstellungsdatum>2021-07-07</xbd:ausstellungsdatum>
+    <xbd:gueltigkeitszeitraum>
+        <xbd:beginn>2021-07-01</xbd:beginn>
+    </xbd:gueltigkeitszeitraum>
+    <xbd:einsatzzweck>Zum Nachweis der Hochschul-Ausbildung</xbd:einsatzzweck>
+    <xbd:titel xml:lang="de">Hochschulabschlusszeugnis</xbd:titel>
+    <xhs:studierender>
+        <xbd:id>MAT_1023909</xbd:id>
+        <xbd:nameNatuerlichePerson>
+            <xbd:familienname>
+                <xbd:name>Muster</xbd:name>
+            </xbd:familienname>
+            <xbd:geburtsname>
+                <xbd:name>Vormuster</xbd:name>
+            </xbd:geburtsname>
+            <xbd:vorname>
+                <xbd:name>Maxi</xbd:name>
+            </xbd:vorname>
+            <xbd:anrede>Frau</xbd:anrede>
+        </xbd:nameNatuerlichePerson>
+        <xbd:geburt>
+            <xbd:datum>1990-01-01</xbd:datum>
+            <xbd:geburtsort>
+                <xbd:ort>Saarbrücken</xbd:ort>
+            </xbd:geburtsort>
+        </xbd:geburt>
+        <xbd:anschrift>
+            <xbd:strasse>Holzweg</xbd:strasse>
+            <xbd:hausnummer>5</xbd:hausnummer>
+            <xbd:postleitzahl>66140</xbd:postleitzahl>
+            <xbd:ort>Saarbrücken</xbd:ort>
+        </xbd:anschrift>
+        <xbd:identifikationsnummer>
+            <xbd:id>1023909</xbd:id>
+            <xbd:beschreibung xml:lang="de">Matrikelnummer der studierenden Person</xbd:beschreibung>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>uuid:57a42c1a-be5e-460b-bf2b-7fa77ef0364a</xbd:id>
+            <xbd:beschreibung xml:lang="de">eIDAS ID der studierenden Person</xbd:beschreibung>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>urn:schac:personalUniqueCode:int:esi:de:99-999-999-999</xbd:id>
+            <xbd:beschreibung xml:lang="de">European Student Identifer der studierenden Person</xbd:beschreibung>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>99-999-999-999</xbd:id>
+            <xbd:beschreibung xml:lang="de">ID nach Identifikationsnummerngesetz (abgeleitet von SteuerID)</xbd:beschreibung>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>99-999-999-999</xbd:id>
+            <xbd:beschreibung xml:lang="de">OZG-Landeskonto-ID der studierenden Person</xbd:beschreibung>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>123456789123456</xbd:id>
+            <xbd:beschreibung xml:lang="de">BAföG-Förderungsnummer der studierenden Person </xbd:beschreibung>
+        </xbd:identifikationsnummer>
+        <xhs:immatrikulation>
+            <xhs:matrikelnummer>1023909</xhs:matrikelnummer>
+            <xhs:hochschule>
+                <code>http://xhochschule.de/def/destatis/WS20/code/hochschulsignatur/1360</code>
+            </xhs:hochschule>
+        </xhs:immatrikulation>
+        <xhs:hochschulsemester>6</xhs:hochschulsemester>
+        <xhs:ersteinschreibung>2014-10-01</xhs:ersteinschreibung>
+    </xhs:studierender>
+    <xhs:ausstellendeHochschule>
+        <xbd:name>
+            <xbd:name xml:lang="de">Universität des Saarlandes</xbd:name>
+        </xbd:name>
+        <xbd:anschrift>
+            <xbd:postfach>Postfach 15 11 50</xbd:postfach>
+            <xbd:postleitzahl>66041</xbd:postleitzahl>
+            <xbd:ort>Saarbrücken</xbd:ort>
+        </xbd:anschrift>
+        <xbd:artDerBildungseinrichtung listURI="urn:xbildung-de:xbildung:codeliste:artderbildungseinrichtunghochschule" listVersionID="0.7">
+            <code>http://www.xbildung.de/def/xbildung/0.7/code/ArtDerBildungseinrichtung/1</code>
+        </xbd:artDerBildungseinrichtung>
+        <xbd:artDerTraegerschaft listURI="urn:xbildung-de:xbildung:codeliste:artdertraegerschaft" listVersionID="0.7">
+            <code>http://xbildung.de/def/xbildung/0.7/code/ArtDerTraegerschaft/1</code>
+        </xbd:artDerTraegerschaft>
+        <xhs:hochschulIdentifikation>ID001</xhs:hochschulIdentifikation>
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="WS20">
+            <code>http://xhochschule.de/def/destatis/WS20/code/hochschulsignatur/1360</code>
+        </xhs:hochschulsignatur>
+    </xhs:ausstellendeHochschule>
+    <xhs:diplomaSupplementVerweis>DS_1023909</xhs:diplomaSupplementVerweis>
+    <xhs:transcriptOfRecordVerweis>TOR_1023909</xhs:transcriptOfRecordVerweis>
+    <xhs:studiengang>
+        <xhs:identifikation>
+            <xbd:id>Informatik_1</xbd:id>
+        </xhs:identifikation>
+        <xhs:name xml:lang="de">B. Sc. Informatik</xhs:name>
+        <xhs:studienfach>
+            <xhs:angestrebterAbschluss listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.7">
+                <code>http://xbildung.de/def/xbildung/0.7/code/ArtDesAbschlusses/Bachelor</code>
+            </xhs:angestrebterAbschluss>
+            <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS20">
+                <code>http://xhochschule.de/def/destatis/WS20/code/faecherschluessel/079</code>
+            </xhs:schluesselDESTATIS>
+        </xhs:studienfach>
+        <xhs:studienbereichCode listURI="urn:xhochschule-de:destatis:codeliste:studienbereich" listVersionID="WS20">
+            <code>http://xhochschule.de/def/destatis/WS20/code/studienbereich/54</code>
+        </xhs:studienbereichCode>
+        <xhs:studienbereichBezeichnung xml:lang="de">Informatik</xhs:studienbereichBezeichnung>
+    </xhs:studiengang>
+    <xhs:benotung>
+        <xhs:gesamtnote>1,3</xhs:gesamtnote>
+        <xhs:lateinischeEhrenbezeichnung>
+            <code>http://xhochschule.de/def/xhochschule/0.7/code/lateinischeehrenbezeichnung/cum_laude</code>
+        </xhs:lateinischeEhrenbezeichnung>
+    </xhs:benotung>
+    <xhs:bezeichnung xml:lang="de">Zeugnis ...</xhs:bezeichnung>
+    <xhs:zugangsberechtigungWeiterfuehrendesStudiumBezeichnung xml:lang="en-US">Master</xhs:zugangsberechtigungWeiterfuehrendesStudiumBezeichnung>
+    <xhs:zugangsberechtigungWeiterfuehrendesStudiumCode listURI="urn:xbildung-de:isced:codeliste:2011level" listVersionID="listVersionID11">
+        <code>746</code>
+    </xhs:zugangsberechtigungWeiterfuehrendesStudiumCode>
+</xhs:hochschulabschlusszeugnis>

@@ -8,16 +8,16 @@
          <xoev-cl-3:beschreibung-codeliste>Semester der erstmaligen Einschreibung (Immatrikulation) an einer Hochschule. Angabe des Semesters.</xoev-cl-3:beschreibung-codeliste>
          <xoev-cl-3:herausgebernameKurz>XHochschule</xoev-cl-3:herausgebernameKurz>
          <xoev-cl-3:beschreibung-versionCodeliste>Mit Studientyp sei hier die Unterscheidung zwischen Voll- und Teilzeit gemeint.</xoev-cl-3:beschreibung-versionCodeliste>
-         <xoev-cl-3:datumGueltigkeitAb>2021-06-01</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:datumGueltigkeitAb>2021-09-06</xoev-cl-3:datumGueltigkeitAb>
          <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Semester-Codes</ShortName>
       <LongName>Semester</LongName>
-      <Version>0.6</Version>
+      <Version>0.7</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:semester</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:semester_0.6</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:semester_0.7</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -46,7 +46,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/semester/sommersemester</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.7/code/semester/sommersemester</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sommersemester</SimpleValue>
@@ -54,7 +54,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.6/code/semester/wintersemester</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.7/code/semester/wintersemester</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wintersemester</SimpleValue>
