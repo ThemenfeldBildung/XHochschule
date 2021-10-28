@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3">
+   <Annotation>
+      <Description>
+         <xoev-cl-3:nameKurz>Periode</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Diese Codeliste enthält mögliche Ausprägungen von Perioden eines Studienabschnittes (z.B. "Sommersemester" oder "1. Trimester").</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:herausgebernameKurz>XHEIE.eu</xoev-cl-3:herausgebernameKurz>
+         <xoev-cl-3:beschreibung-versionCodeliste>Angabe der Periode z.B. eines Studienabschnitts, z.B. Sommersemester, Wintersemester, 1.Trimester, etc.</xoev-cl-3:beschreibung-versionCodeliste>
+         <xoev-cl-3:datumGueltigkeitAb>2021-11-01</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>Periode-Codes</ShortName>
+      <LongName>Periode</LongName>
+      <Version>0.8</Version>
+      <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:periode</CanonicalUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:periode_0.8</CanonicalVersionUri>
+      <Agency>
+         <LongName>XHochschule</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName>Code</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Lateinische Bezeichnung</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-3:empfohleneCodeSpalte/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.8/code/periode/sommersemester</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sommersemester</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.8/code/periode/sonstigePeriodeneinteilung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sonstige Periodeneinteilung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.8/code/periode/trimester1</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Trimester 1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.8/code/periode/trimester2</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Trimester 2</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.8/code/periode/trimester3</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Trimester 3</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.8/code/periode/wintersemester</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wintersemester</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

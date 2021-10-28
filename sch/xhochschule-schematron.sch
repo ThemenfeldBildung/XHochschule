@@ -9,8 +9,8 @@
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
    <sch:ns prefix="loc" uri="http://www.w3.org/ns/corevocabulary/location"/>
    <sch:ns prefix="per" uri="http://www.w3.org/ns/corevocabulary/person"/>
-   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/0.7/xsd"/>
-   <sch:ns prefix="xhs" uri="http://xhochschule.de/def/xhochschule/0.7/xsd"/>
+   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/0.8/xsd"/>
+   <sch:ns prefix="xhs" uri="http://xhochschule.de/def/xhochschule/0.8/xsd"/>
    <sch:ns prefix="xiaa" uri="http://www.osci.de/xinneres/auslandsanschrift/3"/>
    <sch:ns prefix="xian" uri="http://www.osci.de/xinneres/allgemeinername/2"/>
    <sch:ns prefix="xiaz" uri="http://www.osci.de/xinneres/azrnummer/1"/>
@@ -32,6 +32,10 @@
    <sch:ns prefix="xoev-lc" uri="http://xoev.de/latinchars/1_1/datatypes"/>
    <sch:pattern>
       <!--Abstrakte Regeln-->
+      <!-- /Data/XHochschule/Baukasten/Anonymous/angabenAusstellendeHochschuleExma -->
+      <sch:rule id="rule-SCH-KeineAdresse-0001" abstract="true">
+         <sch:assert id="SCH-KeineAdresse-0001" test="empty(xbd:anschrift)"/>
+      </sch:rule>
       <!-- /Data/XHochschule/Baukasten/Anonymous/angabenStudienabschnittExmatrikulationsbescheinigung -->
       <sch:rule id="rule-SCH-KeinBeurlaubungsgrund-0001" abstract="true">
          <sch:assert id="SCH-KeinBeurlaubungsgrund-0001" test="empty(xhs:beurlaubungsgrund)"/>
@@ -42,7 +46,18 @@
       </sch:rule>
       <sch:rule id="rule-SCH-Beurlaubungsgrund-0001" abstract="true">
          <sch:assert id="SCH-Beurlaubungsgrund-0001"
-                     test="(exists(xhs:beurlaubungsgrund) and not(contains(xhs:beurlaubungsstatus//code,'http://xhochschule.de/def/xhochschule/0.7/code/beurlaubungsstatus/beurlaubt' ))) or (empty(xhs:beurlaubungsgrund) and contains(xhs:beurlaubungsstatus//code,'http://xhochschule.de/def/xhochschule/0.7/code/beurlaubungsstatus/nicht_beurlaubt' ))">Für eine Bescheinigung zur Vorlage bei der Deutschen Rentenversicherung muss der Grund der Beurlaubung angegeben werden, wenn der Studierende beurlaubt ist.</sch:assert>
+                     test="if (xhs:beurlaubungsstatus/code = 'http://xhochschule.de/def/xhochschule/0.8/code/beurlaubungsstatus/beurlaubt') then exists(xhs:beurlaubungsgrund) else empty(xhs:beurlaubungsgrund)">Für eine Bescheinigung zur Vorlage bei der Deutschen Rentenversicherung muss der Grund der Beurlaubung angegeben werden, wenn der Studierende beurlaubt ist.</sch:assert>
+      </sch:rule>
+      <!-- /Data/XHochschule/Bescheinigungen/exmatrikulationsbescheinigung -->
+      <sch:rule id="rule-SCH-KeinEinsatzzweck-0001" abstract="true">
+         <sch:assert id="SCH-KeinEinsatzzweck-0001" test="empty(einsatzzweck)"/>
+      </sch:rule>
+      <sch:rule id="rule-SCH-KeineAdresse-0002" abstract="true">
+         <sch:assert id="SCH-KeineAdresse-0002" test="empty(xhs:studierender/xbd:anschrift)">Für eine Bescheinigung zur Vorlage bei der Deutschen Rentenversicherung, darf die Anschrift des Studierenden nicht angegeben werden.</sch:assert>
+      </sch:rule>
+      <!-- /Data/XHochschule/Bescheinigungen/rentenbescheinigung -->
+      <sch:rule id="rule-SCH-KeineAdresse-0001" abstract="true">
+         <sch:assert id="SCH-KeineAdresse-0001" test="empty(xhs:studierender/xbd:anschrift)">Für eine Bescheinigung zur Vorlage bei der Deutschen Rentenversicherung, darf die Anschrift des Studierenden nicht angegeben werden.</sch:assert>
       </sch:rule>
       <!--Konkrete Regeln-->
       <sch:rule context="xhs:rentenbescheinigung//xhs:studienabschnitte">
@@ -51,6 +66,16 @@
       </sch:rule>
       <sch:rule context="xhs:exmatrikulationsbescheinigung//xhs:studienabschnitt">
          <sch:extends rule="rule-SCH-KeinBeurlaubungsgrund-0001"/>
+      </sch:rule>
+      <sch:rule context="xhs:exmatrikulationsbescheinigung">
+         <sch:extends rule="rule-SCH-KeinEinsatzzweck-0001"/>
+         <sch:extends rule="rule-SCH-KeineAdresse-0002"/>
+      </sch:rule>
+      <sch:rule context="xhs:exmatrikulationsbescheinigung//xhs:ausstellendeHochschule">
+         <sch:extends rule="rule-SCH-KeineAdresse-0001"/>
+      </sch:rule>
+      <sch:rule context="xhs:rentenbescheinigung">
+         <sch:extends rule="rule-SCH-KeineAdresse-0001"/>
       </sch:rule>
    </sch:pattern>
 </sch:schema>

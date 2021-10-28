@@ -5,8 +5,8 @@
    <Annotation>
       <Description>
          <xoev-cl-3:nameKurz>Lernzeitmodell</xoev-cl-3:nameKurz>
-         <xoev-cl-3:beschreibung-codeliste>Da im Sinne des BAföG-Formblatts 2 nur relevant ist, ob ein/e Studierende/r in Voll- oder Teilzeit studiert, werden in dieser Version weitere Unterscheidungen wie Duales Studium oder Abendstudium nicht betrachtet. Da diese Variante in der EDCI-Spezifikation angegeben wird, ist auch "Teilzeitstudium light" berücksichtigt.</xoev-cl-3:beschreibung-codeliste>
-         <xoev-cl-3:herausgebernameKurz>XHochschule</xoev-cl-3:herausgebernameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Diese Codeliste enthält mögliche Ausprägungen von Lernzeitmodellen.</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:herausgebernameKurz>XHEIE.eu</xoev-cl-3:herausgebernameKurz>
          <xoev-cl-3:beschreibung-versionCodeliste>Mit Lernzeitmodell sei hier die Unterscheidung zwischen Voll- und Teilzeit gemeint.</xoev-cl-3:beschreibung-versionCodeliste>
          <xoev-cl-3:datumGueltigkeitAb>2021-09-06</xoev-cl-3:datumGueltigkeitAb>
          <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
@@ -15,9 +15,9 @@
    <Identification>
       <ShortName>Lernzeitmodell-Codes</ShortName>
       <LongName>Lernzeitmodell</LongName>
-      <Version>0.7</Version>
+      <Version>0.8</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell_0.7</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell_0.8</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -51,7 +51,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.7/code/lernzeitmodell/teilzeit</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.8/code/lernzeitmodell/teilzeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Teilzeit</SimpleValue>
@@ -62,7 +62,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.7/code/lernzeitmodell/vollzeit</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.8/code/lernzeitmodell/vollzeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Vollzeit</SimpleValue>

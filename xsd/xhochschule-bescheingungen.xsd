@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.7/xsd"
-           xmlns:xbd="http://xbildung.de/def/xbildung/0.7/xsd"
-           targetNamespace="http://xhochschule.de/def/xhochschule/0.7/xsd"
-           version="0.7"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.8/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.8/xsd"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.8/xsd"
+           version="0.8"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -16,7 +16,7 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.7</version>
+            <version>0.8</version>
             <versionXOEVProfil>1.7.2</versionXOEVProfil>
             <versionXOEVHandbuch>2.3.1</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
@@ -26,20 +26,22 @@
       </xs:appinfo>
    </xs:annotation>
    <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.7/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/0.7/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.8/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.8/xsd"/>
    <xs:element name="exmatrikulationsbescheinigung">
       <xs:annotation>
          <xs:appinfo>
             <rechtsgrundlage/>
          </xs:appinfo>
-         <xs:documentation>Exmatrikulationsbescheinigung für ein eizelnen Studiengang, die für einen Studienplatzwechsel benötigt wird.</xs:documentation>
+         <xs:documentation>Exmatrikulationsbescheinigung für einen einzelnen Studiengang, die für einen Studienplatzwechsel benötigt wird.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
          <xs:complexContent>
             <xs:extension base="xbd:AllgemeineBescheinigung">
                <xs:sequence>
-                  <xs:element name="exmatrikulationsgrund" type="xhs:Code.Exmatrikulationsgrund">
+                  <xs:element name="exmatrikulationsgrund"
+                              minOccurs="0"
+                              type="xhs:Code.Exmatrikulationsgrund">
                      <xs:annotation>
                         <xs:documentation>Durch den Exmatrikulationsgrund wird, im Falle einer Exmatrikulation, der Anlass für die Exmatrikulation in Form eines bundesweit einheitlichen Codes abgebildet.</xs:documentation>
                      </xs:annotation>
@@ -54,10 +56,15 @@
                         <xs:documentation>Beschreibung der zu exmatrikulierenden Person.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="ausstellendeHochschule" type="xhs:Hochschule">
+                  <xs:element name="ausstellendeHochschule">
                      <xs:annotation>
                         <xs:documentation>Die Hochschule, von der die Exmatrikulation erfolgt und die die Bescheinigung ausstellt nach bundesweit einheitlicher Hochschulbezeichnung.</xs:documentation>
                      </xs:annotation>
+                     <xs:complexType>
+                        <xs:complexContent>
+                           <xs:extension base="xhs:Hochschule"/>
+                        </xs:complexContent>
+                     </xs:complexType>
                   </xs:element>
                   <xs:element name="studienfach"
                               minOccurs="0"
@@ -77,12 +84,12 @@
                         </xs:complexContent>
                      </xs:complexType>
                   </xs:element>
-                  <xs:element name="urlaubsstudienperioden" minOccurs="0" type="xs:integer">
+                  <xs:element name="urlaubsstudienperioden" type="xs:integer">
                      <xs:annotation>
                         <xs:documentation>Anzahl der zum Zeitpunkt der Exmatrikulation abgelegten Urlaubsstudienperioden. Als Urlaubsstudienperioden werden die Studienperioden bezeichnet, in denen ein Studierender in einer Hochschule immatrikuliert und beurlaubt ist.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="hochschulstudienperioden" minOccurs="0" type="xs:integer">
+                  <xs:element name="hochschulstudienperioden" type="xs:integer">
                      <xs:annotation>
                         <xs:documentation>Anzahl der zum Zeitpunkt der Exmatrikulation abgelegten Studienperioden. Als Hochschulstudienperioden werden die Studienperioden bezeichnet, die ein Studierender an einer Hochschule immatrikuliert ist.</xs:documentation>
                      </xs:annotation>
@@ -126,7 +133,7 @@
          <xs:appinfo>
             <rechtsgrundlage/>
          </xs:appinfo>
-         <xs:documentation>Spezialisierung eines Bildungsnachweis im Hochschulwesen mit hochschulspezifischen Angaben zur Vorlage bei einer Rentenversicherung durch die studierende Person.</xs:documentation>
+         <xs:documentation>Spezialisierung einer allgemeinen Bescheinigungen zur Vorlage bei der Deutschen Rentenversicherung durch den Studierenden</xs:documentation>
       </xs:annotation>
       <xs:complexType>
          <xs:complexContent>
@@ -139,16 +146,42 @@
                         <xs:documentation>Rentenversicherungsnummer der studierenden Person, der eine Bescheinigung ausgestellt wird.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="studierender" type="xhs:Studierender"/>
+                  <xs:element name="studierender" type="xhs:Studierender">
+                     <xs:annotation>
+                        <xs:documentation>Beschreibung der empfangenden Person.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
                   <xs:element name="ausstellendeHochschule" type="xhs:Hochschule">
                      <xs:annotation>
                         <xs:documentation>Hochschule, die die Bescheinigung ausstellt nach bundesweit einheitlicher Hochschulbezeichnung.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="studienabschnitte" maxOccurs="unbounded">
+                     <xs:annotation>
+                        <xs:documentation>Aufzählung aller Studienabschnitte zum Nachweis des Studierendenstatus der empfangenden Person. Bei Beurlaubung muss immer der Beurlaubungsgrund aufgeführt werden.</xs:documentation>
+                     </xs:annotation>
                      <xs:complexType>
                         <xs:complexContent>
-                           <xs:extension base="xhs:Studienabschnitt"/>
+                           <xs:extension base="xhs:Studienabschnitt">
+                              <xs:sequence>
+                                 <xs:element name="abgeschlossenOderDatum">
+                                    <xs:complexType>
+                                       <xs:choice>
+                                          <xs:element name="abgeschlossen" fixed="true" type="xs:boolean">
+                                             <xs:annotation>
+                                                <xs:documentation>Gibt an, ob der Studienabschnitt regulär abgeschlossen wurde. Wenn nicht, muss das Datum des Abschlusses angegeben werden.</xs:documentation>
+                                             </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="enddatum" type="xs:date">
+                                             <xs:annotation>
+                                                <xs:documentation>Muss angegeben werden, wenn der Studienabschnitt nicht regulär beendet wurde</xs:documentation>
+                                             </xs:annotation>
+                                          </xs:element>
+                                       </xs:choice>
+                                    </xs:complexType>
+                                 </xs:element>
+                              </xs:sequence>
+                           </xs:extension>
                         </xs:complexContent>
                      </xs:complexType>
                   </xs:element>
