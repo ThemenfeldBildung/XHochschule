@@ -1,6 +1,6 @@
 ---
 name: Issue Template Deutsch
-about: Beteiligungsverfahren zur Version 0.4 von XHochschule
+about: Beteiligungsverfahren von XHochschule
 title: ''
 labels: ''
 assignees: XHochschuleDE
