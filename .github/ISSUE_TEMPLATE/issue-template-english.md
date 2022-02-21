@@ -1,6 +1,6 @@
 ---
 name: Issue Template English
-about: Contribution for version 0.4 of XHochschule
+about: Contribution of XHochschule
 title: ''
 labels: ''
 assignees: XHochschuleDE
