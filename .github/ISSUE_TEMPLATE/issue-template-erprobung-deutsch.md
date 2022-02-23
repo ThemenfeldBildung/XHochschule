@@ -11,6 +11,7 @@ assignees: XHochschuleDE
 **Name der Organisation:** [bitte angeben]
 
 **Kategorie(n) der Rückmeldung:** [z.B.: Allgemein / Fehler / Bedeutung unklar / Datentyp / Kardinalität / Doppelung / ...]
+**Betroffenes Feld:** [Wenn zutreffend, z.B. `studienfach.fachsemester` / -]
 
 **Beschreibung:**
 [bitte Beschreibung der Rückmeldung angeben]
