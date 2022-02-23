@@ -1,8 +1,8 @@
 ---
-name: Rückmeldung im Rahmen der Erprobung
-about: Erprobung von XHochschule
-title: ''
-labels: Erprobung, Open
+name: Rückmeldung im Rahmen der Pilotierung
+about: Pilotierung von XHochschule
+title: 'Exma-Besch: '
+labels: Pilotierung, Open
 assignees: XHochschuleDE
 
 ---
