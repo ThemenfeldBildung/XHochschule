@@ -1,7 +1,7 @@
 ---
 name: Rückmeldung im Rahmen der Pilotierung
 about: Pilotierung von XHochschule
-title: 'Exma-Besch: '
+title: "Exma-Besch: "
 labels: Pilotierung, Open
 assignees: XHochschuleDE
 
