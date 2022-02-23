@@ -1,5 +1,5 @@
 ---
-name: Issue Template Deutsch
+name: Rückmeldung im Rahmen der aktuellen Version
 about: Beteiligungsverfahren von XHochschule
 title: ''
 labels: ''
