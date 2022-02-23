@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Hochschulabschlusszeugnis nach XHochschule Version 0.9. Nichtnormative Beispielinstanz für ein  
+    Hochschulabschlusszeugnis. Dieses wird (z.B.) für einem Studienplatzwechsel von einem Bachelorstudiengang 
+    zu einem Masterstudiengang benötigt.
+    Version: XHochschule 0.9
+    Letzte Aktualisierung: 18.02.2022 
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag des BMBF und Land Sachsen-Anhalt"
+-->
+<xhs:hochschulabschlusszeugnis
+    xmlns:xbd="http://xbildung.de/def/xbildung/0.9/xsd" 
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.9/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.9/xsd 
+    http://xhochschule.de/def/xhochschule/0.9/xsd/xhochschule.xsd"> 
+    
+    <!-- Allgemeine Eigenschaften des Hochschulabschlusszeugnis -->
+    <xbd:sprache>
+        <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20210929-0">
+            <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+        </xbd:sprache>
+    </xbd:sprache>
+    <xbd:ausstellung>
+        <xbd:datum>2021-07-01</xbd:datum>
+        <xbd:ort>Saarbrücken</xbd:ort>
+    </xbd:ausstellung>
+    <xbd:gueltigkeitszeitraum>
+        <xbd:beginn>2021-07-01</xbd:beginn>
+    </xbd:gueltigkeitszeitraum>
+    <xbd:titel xml:lang="de-DE">Hochschulabschlusszeugnis</xbd:titel>
+    <xbd:abschluss>
+        <xbd:artDesAbschlusses listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.9">
+            <code>http://xbildung.de/def/xbildung/0.9/code/ArtDesAbschlusses/Bachelor</code>
+        </xbd:artDesAbschlusses>        
+        <xbd:abschlussarbeit>
+            <xbd:titelDerArbeit xml:lang="de-DE">Implementation eines Systems zur Validierung von RDF-Dateien</xbd:titelDerArbeit>
+            <xbd:noteDerArbeit><xbd:note>1.3</xbd:note></xbd:noteDerArbeit>
+            <xbd:urlDerArbeit>http://www.example.com/BachelorArbeit_ErikaMustermann.pdf</xbd:urlDerArbeit>
+        </xbd:abschlussarbeit>
+        
+    </xbd:abschluss>
+    <xbd:artDesNachweises listURI="urn:xbildung-de:xbildung:codeliste:artdesnachweises" listVersionID="0.9">
+        <code>http://www.xbildung.de/def/xbildung/0.9/code/ArtDesNachweises/Hochschulabschlusszeugnis</code>
+    </xbd:artDesNachweises>
+    
+    <!-- Angaben zur studierenden Person -->
+    <xhs:studierender>
+        <xbd:nameNatuerlichePerson>
+            <xbd:familienname>
+                <xbd:name>Mustermann</xbd:name>            
+            </xbd:familienname>          
+            <xbd:vorname>
+                <xbd:name>Erika</xbd:name>                                
+            </xbd:vorname>           
+        </xbd:nameNatuerlichePerson>
+        <xbd:geburt>
+            <xbd:datum>1983-08-12</xbd:datum>
+            <xbd:geburtsort>               
+                <xbd:ort>Berlin</xbd:ort>                
+            </xbd:geburtsort>
+        </xbd:geburt>               
+        <!-- Optionale/zukünftige Identifikationsarten für die studierende Person -->
+        <xbd:identifikationsnummer>
+            <xbd:id>86095742719</xbd:id>
+            <xbd:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuerID)</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>1983-08-12</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>99-999-999-999</xbd:id>
+            <xbd:beschreibung>OZG-Landeskonto-ID der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2001-08-12</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>uuid:57a42c1a-be5e-460b-bf2b-7fa77ef0364a</xbd:id>
+            <xbd:beschreibung>eIDAS ID der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2002-08-12</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>urn:schac:personalUniqueCode:int:esi:de:99-999-999-999</xbd:id>
+            <xbd:beschreibung>European Student Identifer der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2003-08-12</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>  
+        <xhs:matrikelnummer>
+            <xbd:id>1023909</xbd:id>
+            <xbd:beschreibung>Matrikelnummer der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2017-10-01</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xhs:matrikelnummer>
+    </xhs:studierender>    
+    
+    <!-- Angaben zur ausstellenden Hochschule -->
+    <xhs:ausstellendeHochschule>
+        <xbd:name>
+            <xbd:name>Universität des Saarlandes</xbd:name>            
+        </xbd:name>        
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="WS21">
+            <code>http://xhochschule.de/def/destatis/WS21/code/hochschulsignatur/1360</code>
+        </xhs:hochschulsignatur>
+    </xhs:ausstellendeHochschule>        
+    
+    <xhs:diplomaSupplementVerweis>DS_1023909</xhs:diplomaSupplementVerweis>
+    <xhs:transcriptOfRecordVerweis>TOR_1023909</xhs:transcriptOfRecordVerweis>
+    
+    <!-- Angaben zum Studienfach -->
+    <xhs:studienfach>       
+        <xhs:name xml:lang="de-DE">B. Sc. Informatik</xhs:name>
+        <xhs:studienfach>            
+            <xhs:name xml:lang="de-DE">Informatik</xhs:name>
+            <xhs:angestrebterAbschluss listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.9">
+                <code>http://xbildung.de/def/xbildung/0.9/code/ArtDesAbschlusses/Bachelor</code>
+            </xhs:angestrebterAbschluss>
+            <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS21">
+                <code>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/079</code>  
+            </xhs:schluesselDESTATIS>
+            <xhs:fachsemester>8</xhs:fachsemester>
+            <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unseco:codeliste:isced2011" listVersionID="ISCED-2011">
+                <code>645</code>
+            </xhs:schluesselISCED2011>
+            <xhs:schluesselISCED2013 listURI="urn:xhochschule-de:unesco:codeliste:isced2013fieldofstudies" listVersionID="ISCED-2013">
+                <code>0610</code>
+            </xhs:schluesselISCED2013>
+        </xhs:studienfach>
+        <xhs:studienbereichCode listURI="urn:xhochschule-de:destatis:codeliste:studienbereich" listVersionID="WS21">
+            <code>http://xhochschule.de/def/destatis/WS21/code/studienbereich/54</code>
+        </xhs:studienbereichCode>
+        <xhs:studienbereichBezeichnung xml:lang="de-DE">Informatik</xhs:studienbereichBezeichnung>        
+    </xhs:studienfach>
+    
+    <!-- Angaben zur Benotung -->    
+    <xhs:benotung>
+        <xhs:gesamtnote>1,4</xhs:gesamtnote>
+        <xhs:lateinischeEhrenbezeichnung listURI="urn:xhochschule-de:xhochschule:codeliste:lateinischeehrenbezeichnung" listVersionID="0.9">
+            <code>http://xhochschule.de/def/xhochschule/0.9/code/lateinischeehrenbezeichnung/cum_laude</code>
+        </xhs:lateinischeEhrenbezeichnung>
+    </xhs:benotung>    
+    <xhs:bezeichnung xml:lang="de-DE">Zeugnis</xhs:bezeichnung>
+    <xhs:zugangsberechtigungWeiterfuehrendesStudiumBezeichnung xml:lang="de-DE">Master</xhs:zugangsberechtigungWeiterfuehrendesStudiumBezeichnung>
+    <xhs:zugangsberechtigungWeiterfuehrendesStudiumCode listURI="urn:xbildung-de:unseco:codeliste:isced2011" listVersionID="ISCED-2011">
+        <code>747</code>
+    </xhs:zugangsberechtigungWeiterfuehrendesStudiumCode>
+</xhs:hochschulabschlusszeugnis>

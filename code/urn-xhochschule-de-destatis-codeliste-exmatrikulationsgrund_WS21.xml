@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Exmatrikulationsgrund</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie werden in XHochschule maschinenverbeitbar bereitgestellt, um die möglichen Gründe für eine Exmatrikulation anhand von eindeutigen Schlüsseln identifizieren zu können.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>DESTATIS</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:validFrom>2021-06-14</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>Exmatrikulationsgrund-Codes</ShortName>
+      <LongName>Grund für die Exmatrikulation nach DESTATIS Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik 2020</LongName>
+      <Version>WS21</Version>
+      <CanonicalUri>urn:xhochschule-de:destatis:codeliste:exmatrikulationsgrund</CanonicalUri>
+      <CanonicalVersionUri>urn:xhochschule-de:destatis:codeliste:exmatrikulationsgrund_WS21</CanonicalVersionUri>
+      <Agency>
+         <LongName>Statistisches Bundesamt</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+      <Key Id="description-de-DEKey">
+         <ShortName>description-de-DEKey</ShortName>
+         <ColumnRef Ref="description-de-DE"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/0</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Exmatrikulation aufgrund landesrechtlicher Bestimmungen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/1</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Beendigung des Studiums nach bestandener Prüfung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/2</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Unterbrechung des Studiums</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/3</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Beendigung des Studiums ohne Prüfung, da keine mehr möglich</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/4</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Hochschulwechsel</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/5</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Antritt Freiwilligendienst</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/6</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Endgültiger Abbruch des Studiums</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/7</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Streichung durch die Hochschule wegen fehlender Rückmeldung bzw. fehlender Krankenversicherung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/8</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Beendigung des Studiums nach endgültig nicht bestandener Prüfung/Vorprüfung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/9</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sonstige Gründe</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>
