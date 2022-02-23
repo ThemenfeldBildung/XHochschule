@@ -1,5 +1,5 @@
 ---
-name: Rückmeldung im Rahmen der aktuellen Version
+name: Rückmeldung zu der aktuellen Version
 about: Beteiligungsverfahren von XHochschule
 title: ''
 labels: ''
