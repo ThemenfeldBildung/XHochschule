@@ -1,5 +1,5 @@
 ---
-name: Issue Template English
+name: Feedback on the current version
 about: Contribution of XHochschule
 title: ''
 labels: ''
