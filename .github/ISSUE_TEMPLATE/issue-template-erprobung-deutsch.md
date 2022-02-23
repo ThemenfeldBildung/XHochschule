@@ -1,8 +1,8 @@
 ---
-name: Issue Template für die Erprobung Deutsch
+name: Feedback im Rahmen der Erprobung
 about: Erprobung von XHochschule
 title: ''
-labels: 'erprobung'
+labels: erprobung
 assignees: XHochschuleDE
 
 ---
