@@ -2,7 +2,7 @@
 name: Feedback im Rahmen der Erprobung
 about: Erprobung von XHochschule
 title: ''
-labels: erprobung
+labels: Erprobung, Open
 assignees: XHochschuleDE
 
 ---
