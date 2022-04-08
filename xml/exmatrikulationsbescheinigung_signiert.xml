@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<!-- 
+    Exmatrikulationsbescheinigung nach XHochschule Version 0.91, inklusive einer digitalen Signatur.
+    Nichtnormative Beispielinstanz für eine Exmatrikulationsbescheinigung. Diese wird (z.B.) bei einem 
+    Studienplatzwechsel benötigt, um die Höhe von etwaigen Studiengebühren zu berechnen.  
+    Die digitale Signatur verwendet Beispielwerte, so dass das XML validiert, die Inhalte können aber nicht 
+    kryptografisch geprüft werden können.
+    Version: XHochschule 0.91
+    Letzte Aktualisierung: 07.04.2022 
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag des BMBF und Land Sachsen-Anhalt"
+-->
+<xhs:exmatrikulationsbescheinigung xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd"
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.91/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.91/xsd https://xhochschule.de/def/xhochschule/0.91/xsd/xhochschule.xsd                         http://www.w3.org/2000/09/xmldsig#             http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd">
+
+    <!-- Angaben zur digitalen Signatur des Dokuments -->
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod
+                Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <ds:Reference URI="">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"/>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue>TXEoi/I7OmWl+7qg00bEcv0k/K0=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>
+            UX3WS7unmdXdPcE9mpywM4OxWQdjvYtZ/brElfrcYIB6pkxW8r2KHFf4nTbLiOUPlOAB93nCpBAD
+            Jf60SpNyekYLueGqPk5j3Yk328Mdu2oekl4JvO9gnfATHoITf0T1dAtFQkeCTawjXUPDfplK+NmW
+            iOoSKQvH672G40mdrfW0TGKfPotZgsvzPyQYrSbJo7UKZvOjL7W64EGLawhP1LN4vvrervRJkF2N
+            UnokfUnNWC1cKTWjaY4l1SNHC9SvnkkG45G/cui49RPHne2tS1rWFPnrBFGPko/dp4tsdvZS53a8
+            QbHnPckA69ocBxwpnOUKAezqEO8aM3+h98sNwag+SBNKexJ5xx3RtvF9QmwchbR2wGUmcopu5XZ3
+            /qOLOjB0DBlD0LqfMxtUurbUqqymMsw0DiNQEdKJCD41Rcw3V9swpDpyDlfumms8DPfiSwbAWxZC
+            RZedDlLMvb4yJpVCEDy5JQok7v2SnTPKwsXZJKGjQ+p3tl1v4IT3h/lVus+NOwNbr21Vy43kbXfE
+            MjrsM6pvGdn0nOO5A/A7H/vnKQIkcXxkGEzaNopzcJywsuvOmnLgYloKxKUqsBopUYn4Cq8H8trS
+            aq7FtfuPRJzknRNDJjseroqmg4Z3qCMl9YcNTbNnJ4j70gOjVc13CFTqACVCj3BY8TnCMRxvebk= </ds:SignatureValue>
+        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:X509Data>
+                <ds:X509SubjectName>CN=XBildung,OU=XBildung,O=XBildung,L=Berlin,ST=Berlin,C=DE</ds:X509SubjectName>
+                <ds:X509Certificate>
+                    MIIFbzCCA1egAwIBAgIEJzH8pTANBgkqhkiG9w0BAQwFADBoMQswCQYDVQQGEwJERTEPMA0GA1UE
+                    CBMGQmVybGluMQ8wDQYDVQQHEwZCZXJsaW4xETAPBgNVBAoTCFhCaWxkdW5nMREwDwYDVQQLEwhY
+                    QmlsZHVuZzERMA8GA1UEAxMIWEJpbGR1bmcwHhcNMjIwNDA3MTMwNTI1WhcNMzIwNDA0MTMwNTI1
+                    WjBoMQswCQYDVQQGEwJERTEPMA0GA1UECBMGQmVybGluMQ8wDQYDVQQHEwZCZXJsaW4xETAPBgNV
+                    BAoTCFhCaWxkdW5nMREwDwYDVQQLEwhYQmlsZHVuZzERMA8GA1UEAxMIWEJpbGR1bmcwggIiMA0G
+                    CSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCoGaF/lI95ZYXsFoGsJf0S8XFftwr6EVsQMy9I+38B
+                    kITXq4VaTh1J6tvojsI+wuGXVQBQx6IFZCvk1rLxvohCk9GPLF7bmMS3tXM4dnVQ67C7JoZ4ZX7R
+                    9ITEECttUa+K4hSTEyyPBwwBLSIGkmIwgCAKog57n5ZfQ77SG93mqJM9aaFQLp2HBpds2RLS+aeh
+                    fUPObqAqdY4hzpiip+5cNtqHUQadx5bYn3lFAChMG4LQ0jav97GTPNOZoCKFD+nn+lgukWGt1VS0
+                    pZpxO938xAWxUMQRe8PtNwp/pFYNXOtDvO3Lm541snoNEoFaN3UCBq321kjIxjIPYy1hB99ktI/B
+                    uvUq4v2m3xfIaBPG7jBYQp8iKJyYgoWLg96FgBMgsVc0yMsrb9H3rwmWsq7cPF1FrbjOzTNne25R
+                    gMRsbycBDAsUr0zbj6EKOKrd1tIUBSAcoq9N/ZU54d7QF20p/fNJADCutM5urDrwYdr8Wg6UnTd6
+                    DnUpXBQDdsIjZ3JhMDZ493ER+t/zSTQVlg707ZPqIAPdYaRb6juJ7/Vjz6CJop9Wgd3m/+XnWtWF
+                    SaiKqarAI9uhEDRHqPLMqGoEHdRIIv0bsKd5/QfTWdpUPc1y+F7mHoLo5Sb5b/b77s6stwpEJbco
+                    5stK+MF3e2oLi/AiGtrclLYLEZ1GvS9ZlQIDAQABoyEwHzAdBgNVHQ4EFgQUFHPNGJF0c2nuJJfc
+                    dJM4vHy/JXYwDQYJKoZIhvcNAQEMBQADggIBAG2aTr70OTrETKMlc0lpfBh0cKgHKqS059hqYQUD
+                    cWuSMZGASWw2gwGZxVAix4xxFCv2I77dNedvTKyWNpGB/FlRhyt8mQcD+E13LDGOyZBSvw8az+J+
+                    js8kn7yYbEIAdk427iOvEhVmEVg2LKZ+Rvtk1GkBauWdpv9N+u2Ah4jcUTMG8mC22fDeT0q3S3CR
+                    FPea/9xwF8yT0tVedy8Qay+k22iW6Z3IV9Yml+xXwjW1paGaVwxJaj5G5XD1LUjXkZQjHu0Zz0LO
+                    kK/Vo11OedDD0Nk+r8SoKGzuwb9DXueCxubhTuGx7mxiRu8AqnDEW9Le2zpfLPHuy7IwdwwQIZgK
+                    capNXzLBz4PVOAFxjSNu0Qkl+qAeeUVTKefmDi7WH0fvK3QW/DODOzs3UIdUV5MQXqtWkoIf7G/W
+                    D+NFe5x6bIL2L3VeXnkVU8A6etKhFnjdXN/QXsEeSN2OtDNcrK/zRfO7PxtlMD7IjcMJBbhaMq+Q
+                    kj7vcXDWQXcAmLP+YJ2lxo0X5/zBNjmOe4T6HeA90aUGKJbT0yQYHTnc0yLuZbxWkuvCOr+xcV24
+                    DnEI/U520gt9vF940Ik0kYzJg9j3Z+5KTFcur/mXZsIixWcG/iB7uLjduoOTMiq/eyDxABqigrqI
+                    MFqst0Vw4k5zeYWiYvLKMELb8t0nPhzXQY/I </ds:X509Certificate>
+            </ds:X509Data>
+            <ds:KeyValue>
+                <ds:RSAKeyValue>
+                    <ds:Modulus>qBmhf5SPeWWF7BaBrCX9EvFxX7cK+hFbEDMvSPt/AZCE16uFWk4dSerb6I7CPsLhl1UAUMeiBWQr
+                        5Nay8b6IQpPRjyxe25jEt7VzOHZ1UOuwuyaGeGV+0fSExBArbVGviuIUkxMsjwcMAS0iBpJiMIAg
+                        CqIOe5+WX0O+0hvd5qiTPWmhUC6dhwaXbNkS0vmnoX1Dzm6gKnWOIc6YoqfuXDbah1EGnceW2J95
+                        RQAoTBuC0NI2r/exkzzTmaAihQ/p5/pYLpFhrdVUtKWacTvd/MQFsVDEEXvD7TcKf6RWDVzrQ7zt
+                        y5ueNbJ6DRKBWjd1Agat9tZIyMYyD2MtYQffZLSPwbr1KuL9pt8XyGgTxu4wWEKfIiicmIKFi4Pe
+                        hYATILFXNMjLK2/R968JlrKu3DxdRa24zs0zZ3tuUYDEbG8nAQwLFK9M24+hCjiq3dbSFAUgHKKv
+                        Tf2VOeHe0BdtKf3zSQAwrrTObqw68GHa/FoOlJ03eg51KVwUA3bCI2dyYTA2ePdxEfrf80k0FZYO
+                        9O2T6iAD3WGkW+o7ie/1Y8+giaKfVoHd5v/l51rVhUmoiqmqwCPboRA0R6jyzKhqBB3USCL9G7Cn
+                        ef0H01naVD3Ncvhe5h6C6OUm+W/2++7OrLcKRCW3KObLSvjBd3tqC4vwIhra3JS2CxGdRr0vWZU=</ds:Modulus>
+                    <ds:Exponent>AQAB</ds:Exponent>
+                </ds:RSAKeyValue>
+            </ds:KeyValue>
+        </ds:KeyInfo>
+    </ds:Signature>
+
+    <!-- Allgemeine Eigenschaften der Exmatrikulationsbescheinigung -->
+    <xbd:sprache>
+        <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+            listVersionID="20210929-0">
+            <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+        </xbd:sprache>
+    </xbd:sprache>
+    <xbd:ausstellung>
+        <xbd:datum>2020-10-01</xbd:datum>
+        <xbd:ort>Saarbrücken</xbd:ort>
+    </xbd:ausstellung>
+    <xbd:gueltigkeitszeitraum>
+        <xbd:beginn>2020-09-30</xbd:beginn>
+    </xbd:gueltigkeitszeitraum>
+    <xbd:titel xml:lang="de-DE">Exmatrikulationsbescheinigung</xbd:titel>
+    <xbd:artDerBescheinigung listURI="urn:xbildung-de:xbildung:codeliste:artderbescheinigung"
+        listVersionID="0.91">
+        <code>http://www.xbildung.de/def/xbildung/0.91/code/ArtDerBescheinigung/Exmatrikulationsbescheinigung</code>
+    </xbd:artDerBescheinigung>
+    <xhs:exmatrikulationsgrund listURI="urn:xhochschule-de:destatis:codeliste:exmatrikulationsgrund"
+        listVersionID="WS21">
+        <code>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/1</code>
+        <!-- Code 1: Beendigung des Studiums nach bestandener Prüfung, siehe Spezifikationsdokument -->
+    </xhs:exmatrikulationsgrund>
+    <xhs:exmatrikulationsdatum>2020-09-30</xhs:exmatrikulationsdatum>
+
+    <!-- Angaben zur studierenden Person -->
+    <xhs:studierender>
+        <xbd:nameNatuerlichePerson>
+            <xbd:familienname>
+                <xbd:name>Mustermann</xbd:name>
+            </xbd:familienname>
+            <xbd:vorname>
+                <xbd:name>Erika</xbd:name>
+            </xbd:vorname>
+        </xbd:nameNatuerlichePerson>
+        <xbd:geburt>
+            <xbd:datum>1983-08-12</xbd:datum>
+            <xbd:geburtsort>
+                <xbd:ort>Berlin</xbd:ort>
+            </xbd:geburtsort>
+        </xbd:geburt>
+        <!-- Optionale/zukünftige Identifikationsarten für die studierende Person -->
+        <xbd:identifikationsnummer>
+            <xbd:id>86095742719</xbd:id>
+            <xbd:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von
+                SteuerID)</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>1983-08-12</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>99-999-999-999</xbd:id>
+            <xbd:beschreibung>OZG-Landeskonto-ID der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2001-08-12</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>uuid:57a42c1a-be5e-460b-bf2b-7fa77ef0364a</xbd:id>
+            <xbd:beschreibung>eIDAS ID der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2002-08-12</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>urn:schac:personalUniqueCode:int:esi:de:99-999-999-999</xbd:id>
+            <xbd:beschreibung>European Student Identifier der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2003-08-12</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>
+        <!-- Pflichtfeld: Matrikelnummer der studierenden Person -->
+        <xhs:matrikelnummer>
+            <xbd:id>1023909</xbd:id>
+            <xbd:beschreibung>Matrikelnummer der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2017-10-01</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xhs:matrikelnummer>
+        <xhs:ersteinschreibung>2017-10-01</xhs:ersteinschreibung>
+        <xhs:hochschulsemester>8</xhs:hochschulsemester>
+        <xhs:urlaubssemester>1</xhs:urlaubssemester>
+    </xhs:studierender>
+
+    <!-- Angaben zur ausstellenden Hochschule -->
+    <xhs:ausstellendeHochschule>
+        <xbd:name>
+            <xbd:name>Universität des Saarlandes</xbd:name>
+        </xbd:name>
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur"
+            listVersionID="WS21">
+            <code>http://xhochschule.de/def/destatis/WS21/code/hochschulsignatur/1360</code>
+        </xhs:hochschulsignatur>
+    </xhs:ausstellendeHochschule>
+
+    <!-- Angaben zum Studienfach -->
+    <xhs:studienfach>
+        <xhs:name xml:lang="de-DE">Informatik</xhs:name>
+        <xhs:name xml:lang="en">Computer Science</xhs:name>
+        <xhs:angestrebterAbschluss listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses"
+            listVersionID="0.91">
+            <code>http://xbildung.de/def/xbildung/0.91/code/ArtDesAbschlusses/Bachelor</code>
+        </xhs:angestrebterAbschluss>
+        <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel"
+            listVersionID="WS21">
+            <code>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/079</code>
+        </xhs:schluesselDESTATIS>
+        <xhs:fachsemester>8</xhs:fachsemester>
+        <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011"
+            listVersionID="ISCED-2011">
+            <code>645</code>
+            <!-- First degree (3-4 years) -->
+        </xhs:schluesselISCED2011>
+        <xhs:schluesselISCED2013
+            listURI="urn:xhochschule-de:unesco:codeliste:isced2013fieldofstudies"
+            listVersionID="ISCED-2013">
+            <code>0610</code>
+            <!--  Information and Communication Technologies (ICTs) not further defined -->
+        </xhs:schluesselISCED2013>
+    </xhs:studienfach>
+
+    <!-- Angaben für die Verifikation des Dokuments -->
+    <xhs:verifikation>
+        <xhs:schluessel>XXXCFM3P4UDF</xhs:schluessel>
+        <xhs:adresse>https://verify.uni-saarland.de/de/XXXCFM3P4UDF</xhs:adresse>
+    </xhs:verifikation>
+</xhs:exmatrikulationsbescheinigung>

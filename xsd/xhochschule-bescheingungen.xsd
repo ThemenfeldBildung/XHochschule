@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.9/xsd"
-           xmlns:xbd="http://xbildung.de/def/xbildung/0.9/xsd"
-           targetNamespace="http://xhochschule.de/def/xhochschule/0.9/xsd"
-           version="0.9"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.91/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.91/xsd"
+           version="0.91"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -16,7 +16,7 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.9</version>
+            <version>0.91</version>
             <versionXOEVProfil>2.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
@@ -26,8 +26,8 @@
       </xs:appinfo>
    </xs:annotation>
    <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.9/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/0.9/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.91/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.91/xsd"/>
    <xs:element name="exmatrikulationsbescheinigung">
       <xs:annotation>
          <xs:appinfo>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Exmatrikulationsbescheinigung nach XHochschule Version 0.9. Nichtnormative Beispielinstanz für eine  
+    Exmatrikulationsbescheinigung nach XHochschule Version 0.91. Nichtnormative Beispielinstanz für eine  
     Exmatrikulationsbescheinigung. Diese wird (z.B.) bei einem Studienplatzwechsel benötigt, um die Höhe 
     von etwaigen Studiengebühren zu berechnen.  
-    Version: XHochschule 0.9
+    Version: XHochschule 0.91
     Letzte Aktualisierung: 18.02.2022 
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag des BMBF und Land Sachsen-Anhalt"
 -->
 <xhs:exmatrikulationsbescheinigung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.9/xsd https://xhochschule.de/def/xhochschule/0.9/xsd/xhochschule.xsd"
- xmlns:xhs="http://xhochschule.de/def/xhochschule/0.9/xsd"
- xmlns:xbd="http://xbildung.de/def/xbildung/0.9/xsd"> 
+ xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.91/xsd https://xhochschule.de/def/xhochschule/0.91/xsd/xhochschule.xsd"
+ xmlns:xhs="http://xhochschule.de/def/xhochschule/0.91/xsd"
+ xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd"> 
     
     <!-- Allgemeine Eigenschaften der Exmatrikulationsbescheinigung -->
     <xbd:sprache>
@@ -26,8 +26,8 @@
         <xbd:beginn>2020-09-30</xbd:beginn>
     </xbd:gueltigkeitszeitraum>
     <xbd:titel xml:lang="de-DE">Exmatrikulationsbescheinigung</xbd:titel>
-    <xbd:artDerBescheinigung listURI="urn:xbildung-de:xbildung:codeliste:artderbescheinigung" listVersionID="0.9">
-        <code>http://www.xbildung.de/def/xbildung/0.9/code/ArtDerBescheinigung/Exmatrikulationsbescheinigung</code>
+    <xbd:artDerBescheinigung listURI="urn:xbildung-de:xbildung:codeliste:artderbescheinigung" listVersionID="0.91">
+        <code>http://www.xbildung.de/def/xbildung/0.91/code/ArtDerBescheinigung/Exmatrikulationsbescheinigung</code>
     </xbd:artDerBescheinigung>   
     <xhs:exmatrikulationsgrund listURI="urn:xhochschule-de:destatis:codeliste:exmatrikulationsgrund" listVersionID="WS21">
         <code>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/1</code>
@@ -107,14 +107,14 @@
     <xhs:studienfach>
         <xhs:name xml:lang="de-DE">Informatik</xhs:name>
         <xhs:name xml:lang="en">Computer Science</xhs:name>
-        <xhs:angestrebterAbschluss listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.9">
-            <code>http://xbildung.de/def/xbildung/0.9/code/ArtDesAbschlusses/Bachelor</code>
+        <xhs:angestrebterAbschluss listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.91">
+            <code>http://xbildung.de/def/xbildung/0.91/code/ArtDesAbschlusses/Bachelor</code>
         </xhs:angestrebterAbschluss>
         <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS21">
             <code>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/079</code>
         </xhs:schluesselDESTATIS>
         <xhs:fachsemester>8</xhs:fachsemester>
-        <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unseco:codeliste:isced2011" listVersionID="ISCED-2011">
+        <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
             <code>645</code> <!-- First degree (3-4 years) -->
         </xhs:schluesselISCED2011>
         <xhs:schluesselISCED2013 listURI="urn:xhochschule-de:unesco:codeliste:isced2013fieldofstudies" listVersionID="ISCED-2013">

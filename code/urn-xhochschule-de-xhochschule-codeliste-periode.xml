@@ -15,9 +15,9 @@
    <Identification>
       <ShortName>Periode-Codes</ShortName>
       <LongName>Periode</LongName>
-      <Version>0.9</Version>
+      <Version>0.91</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:periode</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:periode_0.9</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:periode_0.91</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -46,7 +46,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.9/code/periode/sommersemester</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.91/code/periode/sommersemester</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sommersemester</SimpleValue>
@@ -54,7 +54,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.9/code/periode/sonstigePeriodeneinteilung</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.91/code/periode/sonstigePeriodeneinteilung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sonstige Periodeneinteilung</SimpleValue>
@@ -62,7 +62,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.9/code/periode/trimester1</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.91/code/periode/trimester1</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Trimester 1</SimpleValue>
@@ -70,7 +70,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.9/code/periode/trimester2</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.91/code/periode/trimester2</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Trimester 2</SimpleValue>
@@ -78,7 +78,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.9/code/periode/trimester3</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.91/code/periode/trimester3</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Trimester 3</SimpleValue>
@@ -86,7 +86,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.9/code/periode/wintersemester</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.91/code/periode/wintersemester</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wintersemester</SimpleValue>

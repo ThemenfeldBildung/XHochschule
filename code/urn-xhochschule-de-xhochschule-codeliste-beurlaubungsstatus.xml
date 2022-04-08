@@ -15,9 +15,9 @@
    <Identification>
       <ShortName>Beurlaubungsstatus-Codes</ShortName>
       <LongName>Beurlaubungsstatus</LongName>
-      <Version>0.9</Version>
+      <Version>0.91</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus_0.9</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus_0.91</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -46,7 +46,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.9/code/beurlaubungsstatus/beurlaubt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.91/code/beurlaubungsstatus/beurlaubt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Beurlaubt</SimpleValue>
@@ -54,7 +54,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.9/code/beurlaubungsstatus/nicht_beurlaubt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.91/code/beurlaubungsstatus/nicht_beurlaubt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Nicht beurlaubt</SimpleValue>

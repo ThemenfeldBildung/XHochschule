@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Hochschulabschlusszeugnis nach XHochschule Version 0.9. Nichtnormative Beispielinstanz für ein  
+    Hochschulabschlusszeugnis nach XHochschule Version 0.91. Nichtnormative Beispielinstanz für ein  
     Hochschulabschlusszeugnis. Dieses wird (z.B.) für einem Studienplatzwechsel von einem Bachelorstudiengang 
     zu einem Masterstudiengang benötigt.
-    Version: XHochschule 0.9
-    Letzte Aktualisierung: 18.02.2022 
+    Version: XHochschule 0.91
+    Letzte Aktualisierung: 07.04.2022 
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag des BMBF und Land Sachsen-Anhalt"
 -->
 <xhs:hochschulabschlusszeugnis
-    xmlns:xbd="http://xbildung.de/def/xbildung/0.9/xsd" 
-    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.9/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd" 
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.91/xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.9/xsd 
-    http://xhochschule.de/def/xhochschule/0.9/xsd/xhochschule.xsd"> 
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.91/xsd 
+    http://xhochschule.de/def/xhochschule/0.91/xsd/xhochschule.xsd"> 
     
     <!-- Allgemeine Eigenschaften des Hochschulabschlusszeugnis -->
     <xbd:sprache>
@@ -29,8 +29,8 @@
     </xbd:gueltigkeitszeitraum>
     <xbd:titel xml:lang="de-DE">Hochschulabschlusszeugnis</xbd:titel>
     <xbd:abschluss>
-        <xbd:artDesAbschlusses listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.9">
-            <code>http://xbildung.de/def/xbildung/0.9/code/ArtDesAbschlusses/Bachelor</code>
+        <xbd:artDesAbschlusses listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.91">
+            <code>http://xbildung.de/def/xbildung/0.91/code/ArtDesAbschlusses/Bachelor</code>
         </xbd:artDesAbschlusses>        
         <xbd:abschlussarbeit>
             <xbd:titelDerArbeit xml:lang="de-DE">Implementation eines Systems zur Validierung von RDF-Dateien</xbd:titelDerArbeit>
@@ -39,8 +39,8 @@
         </xbd:abschlussarbeit>
         
     </xbd:abschluss>
-    <xbd:artDesNachweises listURI="urn:xbildung-de:xbildung:codeliste:artdesnachweises" listVersionID="0.9">
-        <code>http://www.xbildung.de/def/xbildung/0.9/code/ArtDesNachweises/Hochschulabschlusszeugnis</code>
+    <xbd:artDesNachweises listURI="urn:xbildung-de:xbildung:codeliste:artdesnachweises" listVersionID="0.91">
+        <code>http://www.xbildung.de/def/xbildung/0.91/code/ArtDesNachweises/Hochschulabschlusszeugnis</code>
     </xbd:artDesNachweises>
     
     <!-- Angaben zur studierenden Person -->
@@ -115,14 +115,14 @@
         <xhs:name xml:lang="de-DE">B. Sc. Informatik</xhs:name>
         <xhs:studienfach>            
             <xhs:name xml:lang="de-DE">Informatik</xhs:name>
-            <xhs:angestrebterAbschluss listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.9">
-                <code>http://xbildung.de/def/xbildung/0.9/code/ArtDesAbschlusses/Bachelor</code>
+            <xhs:angestrebterAbschluss listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.91">
+                <code>http://xbildung.de/def/xbildung/0.91/code/ArtDesAbschlusses/Bachelor</code>
             </xhs:angestrebterAbschluss>
             <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS21">
                 <code>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/079</code>  
             </xhs:schluesselDESTATIS>
             <xhs:fachsemester>8</xhs:fachsemester>
-            <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unseco:codeliste:isced2011" listVersionID="ISCED-2011">
+            <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
                 <code>645</code>
             </xhs:schluesselISCED2011>
             <xhs:schluesselISCED2013 listURI="urn:xhochschule-de:unesco:codeliste:isced2013fieldofstudies" listVersionID="ISCED-2013">
@@ -138,13 +138,13 @@
     <!-- Angaben zur Benotung -->    
     <xhs:benotung>
         <xhs:gesamtnote>1,4</xhs:gesamtnote>
-        <xhs:lateinischeEhrenbezeichnung listURI="urn:xhochschule-de:xhochschule:codeliste:lateinischeehrenbezeichnung" listVersionID="0.9">
-            <code>http://xhochschule.de/def/xhochschule/0.9/code/lateinischeehrenbezeichnung/cum_laude</code>
+        <xhs:lateinischeEhrenbezeichnung listURI="urn:xhochschule-de:xhochschule:codeliste:lateinischeehrenbezeichnung" listVersionID="0.91">
+            <code>http://xhochschule.de/def/xhochschule/0.91/code/lateinischeehrenbezeichnung/cum_laude</code>
         </xhs:lateinischeEhrenbezeichnung>
     </xhs:benotung>    
     <xhs:bezeichnung xml:lang="de-DE">Zeugnis</xhs:bezeichnung>
     <xhs:zugangsberechtigungWeiterfuehrendesStudiumBezeichnung xml:lang="de-DE">Master</xhs:zugangsberechtigungWeiterfuehrendesStudiumBezeichnung>
-    <xhs:zugangsberechtigungWeiterfuehrendesStudiumCode listURI="urn:xbildung-de:unseco:codeliste:isced2011" listVersionID="ISCED-2011">
+    <xhs:zugangsberechtigungWeiterfuehrendesStudiumCode listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
         <code>747</code>
     </xhs:zugangsberechtigungWeiterfuehrendesStudiumCode>
 </xhs:hochschulabschlusszeugnis>
