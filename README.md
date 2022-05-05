@@ -5,9 +5,7 @@
 
 # Was ist XHochschule?
 
-XHochschule ist ein vom [IT-Planungsrat](https://www.it-planungsrat.de/SharedDocs/Sitzungen/DE/2020/Sitzung_33.html?pos=13) auf die Standardisierungsagenda gehobenes, die Lebenslage Studium betreffendes Standardisierungsvorhaben des Landes Sachsen-Anhalt und des Bundesministeriums für Bildung und Forschung (kurz: BMBF). Es , sodass die erforderliche Interoperabilität zwischen den Hochschulsystemen (Campus Management Systeme genannt) zur medienbruchfreien Abwicklung von zukünftig digitalen Verwaltungsleistungen hergestellt werden kann. Ein [Animationsvideo](https://www.youtube.com/watch?v=c3P4dU6hAYU) illustriert den fachlichen Bedarf dieser Spezifikation im Hochschulwesen.
-
-![Animationsvideo](http://www.xhochschule.de/images/XHS_YouTube.PNG)
+XHochschule ist ein vom [IT-Planungsrat](https://www.it-planungsrat.de/SharedDocs/Sitzungen/DE/2020/Sitzung_33.html?pos=13) auf die Standardisierungsagenda gehobenes, die Lebenslage Studium betreffendes Standardisierungsvorhaben des Landes Sachsen-Anhalt und des Bundesministeriums für Bildung und Forschung (kurz: BMBF). Es verfolgt das Ziel, den Austausch von Studierendendaten im nationalen Hochschulwesen zu vereinheitlichen, sodass die erforderliche Interoperabilität zwischen den Hochschulsystemen (Campus Management Systeme genannt) zur medienbruchfreien Abwicklung von zukünftig digitalen Verwaltungsleistungen hergestellt werden kann.
 
 # Veröffentlichte Artefakte von XHochschule
 
