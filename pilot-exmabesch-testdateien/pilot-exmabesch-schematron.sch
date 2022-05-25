@@ -83,4 +83,10 @@
       </sch:rule>
    </sch:pattern>
    
+   <sch:pattern>
+      <sch:rule id="SCH-XHS-pilot-exmabesch-0009" context="//*">
+         <sch:assert test="string()!=''">Das Element "<sch:name/>" in "<sch:value-of select="ancestor::*/name()"/>" ist leer. Bitte geben Sie einen Wert an, oder entfernen Sie das Element. Führen Sie nach dem entfernen eines Elements eine XML-Schema Validierung durch.</sch:assert>
+      </sch:rule>
+   </sch:pattern>
+   
 </sch:schema>
