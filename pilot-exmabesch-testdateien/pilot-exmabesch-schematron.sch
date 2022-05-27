@@ -89,4 +89,10 @@
       </sch:rule>
    </sch:pattern>
    
+   <sch:pattern>
+      <sch:rule id="SCH-XHS-pilot-exmabesch-0010" context="xhs:exmatrikulationsbescheinigung//xbd:ausstellung/*">
+         <sch:assert test="name() != 'xbd:ort'">Ein Ausstellungsort ist auf der Exmatrikulationsbescheinigung nicht anzugeben</sch:assert>
+      </sch:rule>
+   </sch:pattern>
+   
 </sch:schema>
