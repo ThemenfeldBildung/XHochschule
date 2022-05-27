@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.91/xsd"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.92/xsd"
            xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd"
            xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-           targetNamespace="http://xhochschule.de/def/xhochschule/0.91/xsd"
-           version="0.91"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.92/xsd"
+           version="0.92"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -17,7 +17,7 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.91</version>
+            <version>0.92</version>
             <versionXOEVProfil>2.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
@@ -425,56 +425,13 @@
                         <xs:documentation>Verweis auf ein gemeinsam mit einem Hochschulabschlusszeugnis (Diploma) ausgestelltes "Transcript Of Record"-Dokument</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="studienfach" minOccurs="0" maxOccurs="unbounded">
+                  <xs:element name="studienfach"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xhs:Studienfach">
                      <xs:annotation>
-                        <xs:documentation>Das Studienfach, für den ein Hochschulzeugnis ausgestellt wird mit studienfachspezifischen Eigenschaften.</xs:documentation>
+                        <xs:documentation>Als Studienfach bezeichnet man an Hochschulen den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums.</xs:documentation>
                      </xs:annotation>
-                     <xs:complexType>
-                        <xs:sequence>
-                           <xs:element name="identifikation" minOccurs="0" type="xbd:Identifikation">
-                              <xs:annotation>
-                                 <xs:documentation>eindeutige Identifikation eines Studienfachs im Kontext des Hochschulabschlusszeugnisses</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="name"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xbd:String.Localized">
-                              <xs:annotation>
-                                 <xs:documentation>Freitextfeld für die Bezeichnung des Studienbereichs, in den das Studienfach einzuordnen ist.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="studienfach"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xhs:Studienfach">
-                              <xs:annotation>
-                                 <xs:documentation>Freitextfeld für die Bezeichnung eines Studienfachs</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="studienbereichCode"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xhs:Code.Studienbereich">
-                              <xs:annotation>
-                                 <xs:documentation>Bezeichnung des Studienbereichs nach DESTATIS Code. Dieses Verzeichnis des Statistischen Bundesamtes (DESTATIS) wird in XHochschule nachgenutzt, um Studienbereichen nicht neue bundesweit einheitliche Schlüssel zuordnen zu müssen.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="studienbereichBezeichnung"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xbd:String.Localized">
-                              <xs:annotation>
-                                 <xs:documentation>Freitextfeld für die Bezeichnung des Studienbereichs, in den das Studienfach einzuordnen ist.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="angabenLehramt" minOccurs="0" type="xhs:Lehramt">
-                              <xs:annotation>
-                                 <xs:documentation>Spezialisierung eines Studienfachs mit lehramtspezifischen Angaben.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                        </xs:sequence>
-                     </xs:complexType>
                   </xs:element>
                   <xs:element name="benotung" minOccurs="0" maxOccurs="unbounded">
                      <xs:annotation>

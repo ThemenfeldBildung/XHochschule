@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <!-- 
-    Exmatrikulationsbescheinigung nach XHochschule Version 0.91, inklusive einer digitalen Signatur.
+    Exmatrikulationsbescheinigung nach XHochschule Version 0.92, inklusive einer digitalen Signatur.
     Nichtnormative Beispielinstanz für eine Exmatrikulationsbescheinigung. Diese wird (z.B.) bei einem 
     Studienplatzwechsel benötigt, um die Höhe von etwaigen Studiengebühren zu berechnen.  
-    Die digitale Signatur verwendet Beispielwerte, so dass das XML validiert, die Inhalte können aber nicht 
-    kryptografisch geprüft werden können.
-    Version: XHochschule 0.91
-    Letzte Aktualisierung: 07.04.2022 
+    Version: XHochschule 0.92
+    Letzte Aktualisierung: 27.05.2022 
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag des BMBF und Land Sachsen-Anhalt"
 -->
 <xhs:exmatrikulationsbescheinigung xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd"
-    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.91/xsd"
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.92/xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.91/xsd https://xhochschule.de/def/xhochschule/0.91/xsd/xhochschule.xsd                         http://www.w3.org/2000/09/xmldsig#             http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd">
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.92/xsd https://xhochschule.de/def/xhochschule/0.92/xsd/xhochschule.xsd
+    http://www.w3.org/2000/09/xmldsig# 
+    http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd">
 
     <!-- Angaben zur digitalen Signatur des Dokuments -->
     <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -96,7 +96,6 @@
     </xbd:sprache>
     <xbd:ausstellung>
         <xbd:datum>2020-10-01</xbd:datum>
-        <xbd:ort>Saarbrücken</xbd:ort>
     </xbd:ausstellung>
     <xbd:gueltigkeitszeitraum>
         <xbd:beginn>2020-09-30</xbd:beginn>
@@ -106,11 +105,6 @@
         listVersionID="0.91">
         <code>http://www.xbildung.de/def/xbildung/0.91/code/ArtDerBescheinigung/Exmatrikulationsbescheinigung</code>
     </xbd:artDerBescheinigung>
-    <xhs:exmatrikulationsgrund listURI="urn:xhochschule-de:destatis:codeliste:exmatrikulationsgrund"
-        listVersionID="WS21">
-        <code>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/1</code>
-        <!-- Code 1: Beendigung des Studiums nach bestandener Prüfung, siehe Spezifikationsdokument -->
-    </xhs:exmatrikulationsgrund>
     <xhs:exmatrikulationsdatum>2020-09-30</xhs:exmatrikulationsdatum>
 
     <!-- Angaben zur studierenden Person -->

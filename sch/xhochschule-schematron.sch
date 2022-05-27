@@ -7,7 +7,7 @@
    <sch:ns prefix="ds" uri="http://www.w3.org/2000/09/xmldsig#"/>
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
    <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/0.91/xsd"/>
-   <sch:ns prefix="xhs" uri="http://xhochschule.de/def/xhochschule/0.91/xsd"/>
+   <sch:ns prefix="xhs" uri="http://xhochschule.de/def/xhochschule/0.92/xsd"/>
    <sch:ns prefix="xiaa" uri="http://www.osci.de/xinneres/auslandsanschrift/3"/>
    <sch:ns prefix="xian" uri="http://www.osci.de/xinneres/allgemeinername/2"/>
    <sch:ns prefix="xiaz" uri="http://www.osci.de/xinneres/azrnummer/1"/>
@@ -41,6 +41,11 @@
          <sch:assert id="SCH-XHS-0006-KeinEinsatzzweckExmatrikulationsbescheinigung"
                      test="empty(xbd:einsatzzweck)">Ein Einsatzzweck ist an dieser Stelle nicht anzugeben.</sch:assert>
       </sch:rule>
+      <sch:rule id="rule-SCH-XHS-0020-KeinAusstellungsortExmatrikulationsbescheinigung"
+                abstract="true">
+         <sch:assert id="SCH-XHS-0020-KeinAusstellungsortExmatrikulationsbescheinigung"
+                     test="empty(xbd:ausstellung//xbd:ort)">Ein Ausstellungsort ist auf der Exmatrikulationsbescheinigung nicht anzugeben</sch:assert>
+      </sch:rule>
       <!-- /Data/XHochschule/Bildungsnachweise/hochschulabschlusszeugnis -->
       <sch:rule id="rule-SCH-XHS-0019-KeinEinsatzzweckHochschulabschlusszeugnis"
                 abstract="true">
@@ -55,7 +60,7 @@
       <sch:rule id="rule-SCH-XHS-0001-WennBeurlaubtDannBeurlaubungsgrund"
                 abstract="true">
          <sch:assert id="SCH-XHS-0001-WennBeurlaubtDannBeurlaubungsgrund"
-                     test="if (xhs:beurlaubungsstatus/code = 'http://xhochschule.de/def/xhochschule/0.91/code/beurlaubungsstatus/beurlaubt') then exists(xhs:beurlaubungsgrund) else empty(xhs:beurlaubungsgrund)">Für eine Bescheinigung zur Vorlage bei der Deutschen Rentenversicherung muss der Grund der Beurlaubung angegeben werden, wenn der Studierende beurlaubt ist.</sch:assert>
+                     test="if (xhs:beurlaubungsstatus/code = 'http://xhochschule.de/def/xhochschule/0.92/code/beurlaubungsstatus/beurlaubt') then exists(xhs:beurlaubungsgrund) else empty(xhs:beurlaubungsgrund)">Der Beurlaubungsgrund muss und darf nur angegeben werden, wenn der Berulaubungsstatus "beurlaubt" ist. Sonst soll das Feld Beurlaubungsgrund nicht benutzt werden.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-XHS-0002-MussAusbildungsstaetteRentenbescheinigung"
                 abstract="true">
@@ -111,7 +116,7 @@
                      test="empty(xbd:geschlecht)">Das Feld xbd:geschlecht ist an dieser Stelle nicht anzugeben.</sch:assert>
       </sch:rule>
       <!--Konkrete Regeln-->
-      <sch:rule context="xhs:rentenbescheinigung//xhs:studienabschnitte">
+      <sch:rule context="xhs:rentenbescheinigung//xhs:studienabschnitt">
          <sch:extends rule="rule-SCH-XHS-0001-WennBeurlaubtDannBeurlaubungsgrund"/>
          <sch:extends rule="rule-SCH-XHS-0002-MussAusbildungsstaetteRentenbescheinigung"/>
       </sch:rule>
@@ -144,6 +149,7 @@
       </sch:rule>
       <sch:rule context="xhs:exmatrikulationsbescheinigung">
          <sch:extends rule="rule-SCH-XHS-0006-KeinEinsatzzweckExmatrikulationsbescheinigung"/>
+         <sch:extends rule="rule-SCH-XHS-0020-KeinAusstellungsortExmatrikulationsbescheinigung"/>
       </sch:rule>
       <sch:rule context="xhs:rentenbescheinigung">
          <sch:extends rule="rule-SCH-XHS-0017-KeinEinsatzzweckRentenbescheinigung"/>

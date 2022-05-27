@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.91/xsd"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.92/xsd"
            xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd"
-           targetNamespace="http://xhochschule.de/def/xhochschule/0.91/xsd"
-           version="0.91"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.92/xsd"
+           version="0.92"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -16,7 +16,7 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.91</version>
+            <version>0.92</version>
             <versionXOEVProfil>2.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
@@ -39,13 +39,6 @@
          <xs:complexContent>
             <xs:extension base="xbd:AllgemeineBescheinigung">
                <xs:sequence>
-                  <xs:element name="exmatrikulationsgrund"
-                              minOccurs="0"
-                              type="xhs:Code.Exmatrikulationsgrund">
-                     <xs:annotation>
-                        <xs:documentation>Durch den Exmatrikulationsgrund wird, im Falle einer Exmatrikulation, der Anlass für die Exmatrikulation in Form eines bundesweit einheitlichen Codes abgebildet.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
                   <xs:element name="exmatrikulationsdatum" minOccurs="0" type="xs:date">
                      <xs:annotation>
                         <xs:documentation>Datum der Exmatrikulation.</xs:documentation>
@@ -84,7 +77,7 @@
                               maxOccurs="unbounded"
                               type="xhs:Studienabschnitt">
                      <xs:annotation>
-                        <xs:documentation>Ein zeitlich, fachlich, und verwaltungstechnisch abgegrenztes Teil eines Studiums</xs:documentation>
+                        <xs:documentation>Ein zeitlich, fachlich, und verwaltungstechnisch abgegrenzter Teil eines Studiums</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="verifikation" minOccurs="0">
@@ -95,12 +88,12 @@
                         <xs:sequence>
                            <xs:element name="schluessel" type="xs:string">
                               <xs:annotation>
-                                 <xs:documentation>Studienbescheinigungen sind meist maschinell erstellt und tragen keine Unterschrift. Viele Universitäten bieten daher heute die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung eine für jeden Studenten einmalige Verifikationsnummer.</xs:documentation>
+                                 <xs:documentation>Studienbescheinigungen sind meist maschinell erstellt und tragen keine Unterschrift. Viele Universitäten bieten daher heute die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung eine für jeden Studenten und jede Bescheinigung einmalige Verifikationsnummer.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="adresse" type="xs:string">
+                           <xs:element name="adresse" type="xs:anyURI">
                               <xs:annotation>
-                                 <xs:documentation>Studienbescheinigungen sind meist maschinell erstellt und tragen keine Unterschrift. Viele Universitäten bieten daher heute die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung eine für jeden Studenten einmalige URI.</xs:documentation>
+                                 <xs:documentation>Studienbescheinigungen sind meist maschinell erstellt und tragen keine Unterschrift. Viele Universitäten bieten daher heute die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung eine für jeden Studenten und jede Bescheinigung einmalige URI.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                         </xs:sequence>
@@ -144,7 +137,7 @@
                         <xs:documentation>Hochschule, die die Bescheinigung ausstellt nach bundesweit einheitlicher Hochschulbezeichnung.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="studienabschnitte" maxOccurs="unbounded">
+                  <xs:element name="studienabschnitt" maxOccurs="unbounded">
                      <xs:annotation>
                         <xs:documentation>Aufzählung aller Studienabschnitte zum Nachweis des Studierendenstatus der empfangenden Person. Bei Beurlaubung muss immer der Beurlaubungsgrund aufgeführt werden.</xs:documentation>
                      </xs:annotation>
@@ -152,16 +145,16 @@
                         <xs:complexContent>
                            <xs:extension base="xhs:Studienabschnitt">
                               <xs:sequence>
-                                 <xs:element name="ausbildungsstaette" type="xhs:Hochschule">
-                                    <xs:annotation>
-                                       <xs:documentation>Hochschule, an der dieser Studienabschnitt stattgefunden hat. Diese kann eine andere als die ausstellende Hochschule sein.</xs:documentation>
-                                    </xs:annotation>
-                                 </xs:element>
                                  <xs:element name="beurlaubungsgrund"
                                              minOccurs="0"
                                              type="xhs:Code.Beurlaubungsgrund">
                                     <xs:annotation>
                                        <xs:documentation>Grund für die Beurlaubung nach DESTATIS Erhebungsschlüssel. Darf nur bei der Rentenbescheinigung angegeben werden.</xs:documentation>
+                                    </xs:annotation>
+                                 </xs:element>
+                                 <xs:element name="ausbildungsstaette" type="xhs:Hochschule">
+                                    <xs:annotation>
+                                       <xs:documentation>Hochschule, an der dieser Studienabschnitt stattgefunden hat. Diese kann eine andere als die ausstellende Hochschule sein.</xs:documentation>
                                     </xs:annotation>
                                  </xs:element>
                                  <xs:element name="abgeschlossenOderDatum">
@@ -190,12 +183,12 @@
                         <xs:sequence>
                            <xs:element name="schluessel" type="xs:string">
                               <xs:annotation>
-                                 <xs:documentation>Studienbescheinigungen sind meist maschinell erstellt und tragen keine Unterschrift. Viele Universitäten bieten daher heute die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung eine für jeden Studenten einmalige Verifikationsnummer.</xs:documentation>
+                                 <xs:documentation>Studienbescheinigungen sind meist maschinell erstellt und tragen keine Unterschrift. Viele Universitäten bieten daher heute die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung eine für jeden Studenten und jede Bescheinigung einmalige Verifikationsnummer.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="adresse" type="xs:string">
+                           <xs:element name="adresse" type="xs:anyURI">
                               <xs:annotation>
-                                 <xs:documentation>Studienbescheinigungen sind meist maschinell erstellt und tragen keine Unterschrift. Viele Universitäten bieten daher heute die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung eine für jeden Studenten einmalige URI.</xs:documentation>
+                                 <xs:documentation>Studienbescheinigungen sind meist maschinell erstellt und tragen keine Unterschrift. Viele Universitäten bieten daher heute die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung eine für jeden Studenten und jede Bescheinigung einmalige URI.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                         </xs:sequence>

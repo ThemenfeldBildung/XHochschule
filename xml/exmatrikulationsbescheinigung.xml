@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Exmatrikulationsbescheinigung nach XHochschule Version 0.91. Nichtnormative Beispielinstanz für eine  
+    Exmatrikulationsbescheinigung nach XHochschule Version 0.92. Nichtnormative Beispielinstanz für eine  
     Exmatrikulationsbescheinigung. Diese wird (z.B.) bei einem Studienplatzwechsel benötigt, um die Höhe 
     von etwaigen Studiengebühren zu berechnen.  
-    Version: XHochschule 0.91
-    Letzte Aktualisierung: 18.02.2022 
+    Version: XHochschule 0.92
+    Letzte Aktualisierung: 27.05.2022 
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag des BMBF und Land Sachsen-Anhalt"
 -->
 <xhs:exmatrikulationsbescheinigung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.91/xsd https://xhochschule.de/def/xhochschule/0.91/xsd/xhochschule.xsd"
- xmlns:xhs="http://xhochschule.de/def/xhochschule/0.91/xsd"
+ xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.92/xsd https://xhochschule.de/def/xhochschule/0.92/xsd/xhochschule.xsd"
+ xmlns:xhs="http://xhochschule.de/def/xhochschule/0.92/xsd"
  xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd"> 
     
     <!-- Allgemeine Eigenschaften der Exmatrikulationsbescheinigung -->
@@ -20,7 +20,6 @@
     </xbd:sprache>
     <xbd:ausstellung>
         <xbd:datum>2020-10-01</xbd:datum>
-        <xbd:ort>Saarbrücken</xbd:ort>
     </xbd:ausstellung>
     <xbd:gueltigkeitszeitraum>
         <xbd:beginn>2020-09-30</xbd:beginn>
@@ -29,10 +28,6 @@
     <xbd:artDerBescheinigung listURI="urn:xbildung-de:xbildung:codeliste:artderbescheinigung" listVersionID="0.91">
         <code>http://www.xbildung.de/def/xbildung/0.91/code/ArtDerBescheinigung/Exmatrikulationsbescheinigung</code>
     </xbd:artDerBescheinigung>   
-    <xhs:exmatrikulationsgrund listURI="urn:xhochschule-de:destatis:codeliste:exmatrikulationsgrund" listVersionID="WS21">
-        <code>http://xhochschule.de/def/destatis/WS21/code/exmatrikulationsgrund/1</code>
-        <!-- Code 1: Beendigung des Studiums nach bestandener Prüfung, siehe Spezifikationsdokument -->
-    </xhs:exmatrikulationsgrund>
     <xhs:exmatrikulationsdatum>2020-09-30</xhs:exmatrikulationsdatum>    
     
     <!-- Angaben zur studierenden Person -->

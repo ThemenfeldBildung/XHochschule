@@ -4,20 +4,20 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>Beurlaubungsstatus</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen des Status einer Beurlaubung eines Studierenden.</xoev-cl-4:codelistDescription>
-         <xoev-cl-4:agencyShortName>XHEIE.eu</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Für die Implementierung der Immatrikulationsbescheinigung nach §9 muss der Beurlaubungsstatus als Codeliste abgebildet werden.</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2021-09-06</xoev-cl-4:validFrom>
+         <xoev-cl-4:shortName>Semester</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Diese Codeliste enthält die möglichen Semesterbezeichnungen eines Studienabschnitts: Sommersemester oder Wintersemester.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>XHochschule</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionDescription>Art des betreffenden Semesters (Sommersemester oder Wintersemester)</xoev-cl-4:versionDescription>
+         <xoev-cl-4:validFrom>2021-11-01</xoev-cl-4:validFrom>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>Beurlaubungsstatus-Codes</ShortName>
-      <LongName>Beurlaubungsstatus</LongName>
+      <ShortName>Semester-Codes</ShortName>
+      <LongName>Semester</LongName>
       <Version>0.92</Version>
-      <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus_0.92</CanonicalVersionUri>
+      <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:semester</CanonicalUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:semester_0.92</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -30,7 +30,7 @@
       </Column>
       <Column Id="description-de-DE" Use="required">
          <ShortName>description-de-DE</ShortName>
-         <LongName>deutsche Übersetzung</LongName>
+         <LongName>Lateinische Bezeichnung</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -46,18 +46,18 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.92/code/beurlaubungsstatus/beurlaubt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.92/code/semester/sommersemester</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>Beurlaubt</SimpleValue>
+            <SimpleValue>Sommersemester</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.92/code/beurlaubungsstatus/nicht_beurlaubt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.92/code/semester/wintersemester</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>Nicht beurlaubt</SimpleValue>
+            <SimpleValue>Wintersemester</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Hochschulabschlusszeugnis nach XHochschule Version 0.91. Nichtnormative Beispielinstanz für ein  
+    Hochschulabschlusszeugnis nach XHochschule Version 0.92. Nichtnormative Beispielinstanz für ein  
     Hochschulabschlusszeugnis. Dieses wird (z.B.) für einem Studienplatzwechsel von einem Bachelorstudiengang 
     zu einem Masterstudiengang benötigt.
-    Version: XHochschule 0.91
-    Letzte Aktualisierung: 07.04.2022 
+    Version: XHochschule 0.92
+    Letzte Aktualisierung: 27.05.2022 
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag des BMBF und Land Sachsen-Anhalt"
 -->
 <xhs:hochschulabschlusszeugnis
     xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd" 
-    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.91/xsd"
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.92/xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.91/xsd 
-    http://xhochschule.de/def/xhochschule/0.91/xsd/xhochschule.xsd"> 
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.92/xsd https://xhochschule.de/def/xhochschule/0.92/xsd/xhochschule.xsd"> 
     
     <!-- Allgemeine Eigenschaften des Hochschulabschlusszeugnis -->
     <xbd:sprache>
@@ -113,33 +112,31 @@
     <!-- Angaben zum Studienfach -->
     <xhs:studienfach>       
         <xhs:name xml:lang="de-DE">B. Sc. Informatik</xhs:name>
-        <xhs:studienfach>            
-            <xhs:name xml:lang="de-DE">Informatik</xhs:name>
-            <xhs:angestrebterAbschluss listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.91">
-                <code>http://xbildung.de/def/xbildung/0.91/code/ArtDesAbschlusses/Bachelor</code>
-            </xhs:angestrebterAbschluss>
-            <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS21">
-                <code>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/079</code>  
-            </xhs:schluesselDESTATIS>
-            <xhs:fachsemester>8</xhs:fachsemester>
-            <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
-                <code>645</code>
-            </xhs:schluesselISCED2011>
-            <xhs:schluesselISCED2013 listURI="urn:xhochschule-de:unesco:codeliste:isced2013fieldofstudies" listVersionID="ISCED-2013">
-                <code>0610</code>
-            </xhs:schluesselISCED2013>
-        </xhs:studienfach>
-        <xhs:studienbereichCode listURI="urn:xhochschule-de:destatis:codeliste:studienbereich" listVersionID="WS21">
+        <xhs:name xml:lang="de-DE">Informatik</xhs:name>
+        <xhs:angestrebterAbschluss listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.91">
+            <code>http://xbildung.de/def/xbildung/0.91/code/ArtDesAbschlusses/Bachelor</code>
+        </xhs:angestrebterAbschluss>
+        <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS21">
+            <code>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/079</code>  
+        </xhs:schluesselDESTATIS>
+        <xhs:fachsemester>8</xhs:fachsemester>
+        <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
+            <code>645</code>
+        </xhs:schluesselISCED2011>
+        <xhs:schluesselISCED2013 listURI="urn:xhochschule-de:unesco:codeliste:isced2013fieldofstudies" listVersionID="ISCED-2013">
+            <code>0610</code>
+        </xhs:schluesselISCED2013>               
+        <xhs:studienbereichDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:studienbereich" listVersionID="WS21">
             <code>http://xhochschule.de/def/destatis/WS21/code/studienbereich/54</code>
-        </xhs:studienbereichCode>
+        </xhs:studienbereichDESTATIS>
         <xhs:studienbereichBezeichnung xml:lang="de-DE">Informatik</xhs:studienbereichBezeichnung>        
     </xhs:studienfach>
-    
+            
     <!-- Angaben zur Benotung -->    
     <xhs:benotung>
         <xhs:gesamtnote>1,4</xhs:gesamtnote>
-        <xhs:lateinischeEhrenbezeichnung listURI="urn:xhochschule-de:xhochschule:codeliste:lateinischeehrenbezeichnung" listVersionID="0.91">
-            <code>http://xhochschule.de/def/xhochschule/0.91/code/lateinischeehrenbezeichnung/cum_laude</code>
+        <xhs:lateinischeEhrenbezeichnung listURI="urn:xhochschule-de:xhochschule:codeliste:lateinischeehrenbezeichnung" listVersionID="0.92">
+            <code>http://xhochschule.de/def/xhochschule/0.92/code/lateinischeehrenbezeichnung/cum_laude</code>
         </xhs:lateinischeEhrenbezeichnung>
     </xhs:benotung>    
     <xhs:bezeichnung xml:lang="de-DE">Zeugnis</xhs:bezeichnung>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Rentenbescheinigung nach XHochschule Version 0.91. Nichtnormative Beispielinstanz für eine  
+    Rentenbescheinigung nach XHochschule Version 0.92. Nichtnormative Beispielinstanz für eine  
     Rentenbescheinigung. Diese wird z.B. benötigt, um Ansprüche gegenüber der Rentenversicherung geltend zu machen.  
-    Version: XHochschule 0.91
-    Letzte Aktualisierung: 07.04.2022 
+    Version: XHochschule 0.92
+    Letzte Aktualisierung: 27.05.2022 
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag des BMBF und Land Sachsen-Anhalt"
 -->
 <xhs:rentenbescheinigung
     xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd" 
-    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.91/xsd"
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.92/xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.91/xsd 
-    http://xhochschule.de/def/xhochschule/0.91/xsd/xhochschule.xsd">
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.92/xsd 
+    http://xhochschule.de/def/xhochschule/0.92/xsd/xhochschule.xsd">
     
     <!-- Allgemeine Eigenschaften der Rentenbescheinigung -->
     <xbd:sprache>
@@ -112,23 +112,15 @@
     </xhs:ausstellendeHochschule>
     
     <!-- Angaben zu den Studienabschnitten -->
-    <xhs:studienabschnitte>
+    <xhs:studienabschnitt>
         <xhs:studienzeitraum>
             <xhs:zeitraum>
                 <xbd:beginn>2017-10-01</xbd:beginn>
                 <xbd:ende>2018-04-15</xbd:ende>                
             </xhs:zeitraum>
-            <xhs:vorlesungszeitraum>
-                <xbd:beginn>2017-10-01</xbd:beginn>
-                <xbd:ende>2018-04-15</xbd:ende>    
-            </xhs:vorlesungszeitraum>
-            <xhs:periodenangabe>
-                <xhs:jahrVon>2017</xhs:jahrVon>
-                <xhs:jahrBis>2018</xhs:jahrBis>
-                <xhs:periode listURI="urn:xhochschule-de:xhochschule:codeliste:periode" listVersionID="0.91">
-                    <code>http://xhochschule.de/def/xhochschule/0.91/code/periode/wintersemester</code>
-                </xhs:periode>
-            </xhs:periodenangabe>
+            <xhs:semesterbezeichnung>
+               <code>http://xhochschule.de/def/xhochschule/0.92/code/semester/wintersemester</code>
+            </xhs:semesterbezeichnung>
         </xhs:studienzeitraum>
         <xhs:studienfach>
             <xhs:name xml:lang="de-DE">Informatik</xhs:name>
@@ -146,17 +138,16 @@
                 <code>0610</code>
             </xhs:schluesselISCED2013>            
         </xhs:studienfach>                
-        <xhs:einschreibungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:immatrikulationsstatus" listVersionID="0.91">
-            <code>http://xhochschule.de/def/xhochschule/0.91/code/immatrikulationsstatus/immatrikuliert</code>
-        </xhs:einschreibungsstatus>        
-        <xhs:beurlaubungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="0.91">
-            <code>http://xhochschule.de/def/xhochschule/0.91/code/beurlaubungsstatus/nicht_beurlaubt</code>
-        </xhs:beurlaubungsstatus>
-        <xhs:lernzeitmodell listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell" listVersionID="0.91">
-            <code>http://xhochschule.de/def/xhochschule/0.91/code/lernzeitmodell/vollzeit</code>
+        <xhs:einschreibungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:immatrikulationsstatus" listVersionID="0.92">
+            <code>http://xhochschule.de/def/xhochschule/0.92/code/immatrikulationsstatus/immatrikuliert</code>
+        </xhs:einschreibungsstatus>
+        <xhs:lernzeitmodell listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell" listVersionID="0.92">
+            <code>http://xhochschule.de/def/xhochschule/0.92/code/lernzeitmodell/vollzeit</code>
         </xhs:lernzeitmodell>
-        <xhs:fachstudienperiode>1</xhs:fachstudienperiode>
         <xhs:regelstudienzeit>6</xhs:regelstudienzeit>
+        <xhs:beurlaubungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="0.92">
+            <code>http://xhochschule.de/def/xhochschule/0.92/code/beurlaubungsstatus/nicht_beurlaubt</code>
+        </xhs:beurlaubungsstatus>
         <xhs:ausbildungsstaette>            
             <xbd:name>
                 <xbd:name>Universität des Saarlandes</xbd:name>
@@ -173,7 +164,7 @@
         <xhs:abgeschlossenOderDatum>
             <xhs:abgeschlossen>true</xhs:abgeschlossen>            
         </xhs:abgeschlossenOderDatum>
-    </xhs:studienabschnitte>
+    </xhs:studienabschnitt>
     
     <!-- Angaben für die Verifikation des Dokuments -->
     <xhs:verifikation>
