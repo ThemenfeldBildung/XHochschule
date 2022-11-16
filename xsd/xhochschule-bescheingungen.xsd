@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.92/xsd"
-           xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd"
-           targetNamespace="http://xhochschule.de/def/xhochschule/0.92/xsd"
-           version="0.92"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.93/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.93/xsd"
+           version="0.93"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -16,7 +16,7 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.92</version>
+            <version>0.93</version>
             <versionXOEVProfil>2.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
@@ -26,20 +26,20 @@
       </xs:appinfo>
    </xs:annotation>
    <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.91/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/0.91/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.93/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.93/xsd"/>
    <xs:element name="exmatrikulationsbescheinigung">
       <xs:annotation>
          <xs:appinfo>
             <rechtsgrundlage/>
          </xs:appinfo>
-         <xs:documentation>Exmatrikulationsbescheinigung für ein einzelnes Studienfach, die für einen Studienplatzwechsel benötigt wird.</xs:documentation>
+         <xs:documentation>Exmatrikulationsbescheinigung, die für einen Studienplatzwechsel benötigt wird.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
          <xs:complexContent>
-            <xs:extension base="xbd:AllgemeineBescheinigung">
+            <xs:extension base="xbd:Dokument">
                <xs:sequence>
-                  <xs:element name="exmatrikulationsdatum" minOccurs="0" type="xs:date">
+                  <xs:element name="exmatrikulationsdatum" type="xs:date">
                      <xs:annotation>
                         <xs:documentation>Datum der Exmatrikulation.</xs:documentation>
                      </xs:annotation>
@@ -54,22 +54,9 @@
                         </xs:complexContent>
                      </xs:complexType>
                   </xs:element>
-                  <xs:element name="ausstellendeHochschule">
+                  <xs:element name="ausstellendeHochschule" type="xhs:Hochschule">
                      <xs:annotation>
                         <xs:documentation>Die Hochschule, von der die Exmatrikulation erfolgt und die die Bescheinigung ausstellt nach bundesweit einheitlicher Hochschulbezeichnung.</xs:documentation>
-                     </xs:annotation>
-                     <xs:complexType>
-                        <xs:complexContent>
-                           <xs:extension base="xhs:Hochschule"/>
-                        </xs:complexContent>
-                     </xs:complexType>
-                  </xs:element>
-                  <xs:element name="studienfach"
-                              minOccurs="0"
-                              maxOccurs="unbounded"
-                              type="xhs:Studienfach">
-                     <xs:annotation>
-                        <xs:documentation>Als Studienfach bezeichnet man an Hochschulen den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="studienabschnitt"
@@ -77,27 +64,24 @@
                               maxOccurs="unbounded"
                               type="xhs:Studienabschnitt">
                      <xs:annotation>
-                        <xs:documentation>Ein zeitlich, fachlich, und verwaltungstechnisch abgegrenzter Teil eines Studiums</xs:documentation>
+                        <xs:documentation>Ein zeitlich, fachlich, und verwaltungstechnisch abgegrenzter Teil eines Studiums. Es gibt grundsätzlich zwei verschiedene Arten für die Nutzung der Klasse Studienabschnitt: Option 1: Angabe von genau einem einzigen Abschnitt pro Studienfach, der eine Zusammenfassung des Studiums eines Studierenden in diesem Studienfach darstellt, z.B. über einen Zeitraum von 3 Jahren und 6 Fachsemestern im Bachelorstudiengang Biologie. Oder Option 2: Angabe von je einem Studienabschnitt pro Semester, in dem ein Studierender eingeschrieben war. Die Angabe der Attribute "semesterbezeichnung" und "beurlaubungsstatus" ist nur sinnvoll bei Option 2.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="verifikation" minOccurs="0">
+                  <xs:element name="anmerkungRegelstudienzeit"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xbd:String.Localized">
                      <xs:annotation>
-                        <xs:documentation>Zusätzliche Informationen der Bildungseinrichtung. Diese enthalten unter anderem Informationen über die Adresse der Bildungseinrichtung.</xs:documentation>
+                        <xs:documentation>Falls beispielsweise die Regelstudienzeit aufgrund der Corona-Pandemie verlängert wurde, sollte diese Information hier angegeben werden.</xs:documentation>
                      </xs:annotation>
-                     <xs:complexType>
-                        <xs:sequence>
-                           <xs:element name="schluessel" type="xs:string">
-                              <xs:annotation>
-                                 <xs:documentation>Studienbescheinigungen sind meist maschinell erstellt und tragen keine Unterschrift. Viele Universitäten bieten daher heute die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung eine für jeden Studenten und jede Bescheinigung einmalige Verifikationsnummer.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="adresse" type="xs:anyURI">
-                              <xs:annotation>
-                                 <xs:documentation>Studienbescheinigungen sind meist maschinell erstellt und tragen keine Unterschrift. Viele Universitäten bieten daher heute die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung eine für jeden Studenten und jede Bescheinigung einmalige URI.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                        </xs:sequence>
-                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="verifikation"
+                              minOccurs="0"
+                              maxOccurs="2"
+                              type="xhs:Verifikation">
+                     <xs:annotation>
+                        <xs:documentation>Zusätzliche Informationen der Bildungseinrichtung zur Verifikation eines Dokuments. Es können bis zu zwei verschiedene Dokumenttypen verifiziert werden. Eine Angabe dient beispielsweise zur Verifikation eines PDF-Dokuments und die andere zur Verifikation einer XML-Datei.</xs:documentation>
+                     </xs:annotation>
                   </xs:element>
                </xs:sequence>
             </xs:extension>
@@ -109,11 +93,11 @@
          <xs:appinfo>
             <rechtsgrundlage/>
          </xs:appinfo>
-         <xs:documentation>Spezialisierung einer allgemeinen Bescheinigungen zur Vorlage bei der Deutschen Rentenversicherung durch den Studierenden</xs:documentation>
+         <xs:documentation>Bescheinigungen zur Vorlage bei der Deutschen Rentenversicherung</xs:documentation>
       </xs:annotation>
       <xs:complexType>
          <xs:complexContent>
-            <xs:extension base="xbd:AllgemeineBescheinigung">
+            <xs:extension base="xbd:Dokument">
                <xs:sequence>
                   <xs:element name="rentenversicherungsnummer"
                               minOccurs="0"
@@ -139,7 +123,7 @@
                   </xs:element>
                   <xs:element name="studienabschnitt" maxOccurs="unbounded">
                      <xs:annotation>
-                        <xs:documentation>Aufzählung aller Studienabschnitte zum Nachweis des Studierendenstatus der empfangenden Person. Bei Beurlaubung muss immer der Beurlaubungsgrund aufgeführt werden.</xs:documentation>
+                        <xs:documentation>Aufzählung aller Studienabschnitte zum Nachweis des Studierendenstatus der empfangenden Person. Bei Beurlaubung muss immer der Beurlaubungsgrund aufgeführt werden. Ein Studienabschnitt ist ein zeitlich, fachlich, und verwaltungstechnisch abgegrenzter Teil eines Studiums. Es gibt grundsätzlich zwei verschiedene Arten für die Nutzung der Klasse Studienabschnitt: Option 1: Angabe von genau einem einzigen Abschnitt pro Studienfach, der eine Zusammenfassung des Studiums eines Studierenden in diesem Studienfach darstellt, z.B. über einen Zeitraum von 3 Jahren und 6 Fachsemestern im Bachelorstudiengang Biologie. Oder Option 2: Angabe von je einem Studienabschnitt pro Semester, in dem ein Studierender eingeschrieben war. Die Angabe der Attribute "semesterbezeichnung" und "beurlaubungsstatus" ist nur sinnvoll bei Option 2.</xs:documentation>
                      </xs:annotation>
                      <xs:complexType>
                         <xs:complexContent>
@@ -178,21 +162,67 @@
                         </xs:complexContent>
                      </xs:complexType>
                   </xs:element>
-                  <xs:element name="verifikation">
+                  <xs:element name="verifikation"
+                              minOccurs="0"
+                              maxOccurs="2"
+                              type="xhs:Verifikation">
+                     <xs:annotation>
+                        <xs:documentation>Zusätzliche Informationen der Bildungseinrichtung zur Verifikation eines Dokuments. Es können bis zu zwei verschiedene Dokumenttypen verifiziert werden. Eine Angabe dient beispielsweise zur Verifikation eines PDF-Dokuments und die andere zur Verifikation einer XML-Datei.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="studienverlaufsbescheinigung">
+      <xs:annotation>
+         <xs:appinfo>
+            <rechtsgrundlage/>
+         </xs:appinfo>
+         <xs:documentation>Bescheinigung über den Verlauf des Studiums von Studierenden.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="xbd:Dokument">
+               <xs:sequence>
+                  <xs:element name="studierender">
+                     <xs:annotation>
+                        <xs:documentation>Beschreibung der Person, deren Studienverlauf bescheinigt wird.</xs:documentation>
+                     </xs:annotation>
                      <xs:complexType>
-                        <xs:sequence>
-                           <xs:element name="schluessel" type="xs:string">
-                              <xs:annotation>
-                                 <xs:documentation>Studienbescheinigungen sind meist maschinell erstellt und tragen keine Unterschrift. Viele Universitäten bieten daher heute die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung eine für jeden Studenten und jede Bescheinigung einmalige Verifikationsnummer.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="adresse" type="xs:anyURI">
-                              <xs:annotation>
-                                 <xs:documentation>Studienbescheinigungen sind meist maschinell erstellt und tragen keine Unterschrift. Viele Universitäten bieten daher heute die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung eine für jeden Studenten und jede Bescheinigung einmalige URI.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                        </xs:sequence>
+                        <xs:complexContent>
+                           <xs:extension base="xhs:Studierender"/>
+                        </xs:complexContent>
                      </xs:complexType>
+                  </xs:element>
+                  <xs:element name="ausstellendeHochschule" type="xhs:Hochschule">
+                     <xs:annotation>
+                        <xs:documentation>Die Hochschule, an welcher die studierenden ihr Studium absolviert haben und welche die Studienverlaufsbescheinigung ausstellt nach bundesweit einheitlicher Hochschulbezeichnung.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="studienabschnitt"
+                              maxOccurs="unbounded"
+                              type="xhs:Studienabschnitt">
+                     <xs:annotation>
+                        <xs:documentation>Ein zeitlich, fachlich, und verwaltungstechnisch abgegrenzter Teil eines Studiums. Es gibt grundsätzlich zwei verschiedene Arten für die Nutzung der Klasse Studienabschnitt: Option 1: Angabe von genau einem einzigen Abschnitt pro Studienfach, der eine Zusammenfassung des Studiums eines Studierenden in diesem Studienfach darstellt, z.B. über einen Zeitraum von 3 Jahren und 6 Fachsemestern im Bachelorstudiengang Biologie. Oder Option 2: Angabe von je einem Studienabschnitt pro Semester, in dem ein Studierender eingeschrieben war. Die Angabe der Attribute "semesterbezeichnung" und "beurlaubungsstatus" ist nur sinnvoll bei Option 2.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="anmerkungRegelstudienzeit"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xbd:String.Localized">
+                     <xs:annotation>
+                        <xs:documentation>Falls beispielsweise die Regelstudienzeit aufgrund der Corona-Pandemie verlängert wurde, sollte diese Information hier angegeben werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="verifikation"
+                              minOccurs="0"
+                              maxOccurs="2"
+                              type="xhs:Verifikation">
+                     <xs:annotation>
+                        <xs:documentation>Zusätzliche Informationen der Bildungseinrichtung zur Verifikation eines Dokuments. Es können bis zu zwei verschiedene Dokumenttypen verifiziert werden. Eine Angabe dient beispielsweise zur Verifikation eines PDF-Dokuments und die andere zur Verifikation einer XML-Datei.</xs:documentation>
+                     </xs:annotation>
                   </xs:element>
                </xs:sequence>
             </xs:extension>

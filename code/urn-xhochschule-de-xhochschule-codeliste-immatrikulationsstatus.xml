@@ -15,9 +15,9 @@
    <Identification>
       <ShortName>Immatrikulationsstatus-Codes</ShortName>
       <LongName>Immatrikulationsstatus</LongName>
-      <Version>0.92</Version>
+      <Version>0.93</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:immatrikulationsstatus</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:immatrikulationsstatus_0.92</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:immatrikulationsstatus_0.93</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -46,7 +46,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.92/code/immatrikulationsstatus/immatrikuliert</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.93/code/immatrikulationsstatus/immatrikuliert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>immatrikuliert</SimpleValue>
@@ -54,7 +54,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.92/code/immatrikulationsstatus/nichtImmatrikuliert</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.93/code/immatrikulationsstatus/nichtImmatrikuliert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>nicht immatrikuliert</SimpleValue>
@@ -62,7 +62,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.92/code/immatrikulationsstatus/vorlaeufigImmatrikuliert</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.93/code/immatrikulationsstatus/vorlaeufigImmatrikuliert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>vorläufig immatrikuliert</SimpleValue>

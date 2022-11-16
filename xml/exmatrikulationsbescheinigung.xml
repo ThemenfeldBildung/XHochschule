@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Exmatrikulationsbescheinigung nach XHochschule Version 0.92. Nichtnormative Beispielinstanz für eine  
+    Exmatrikulationsbescheinigung nach XHochschule Version 0.93. Nichtnormative Beispielinstanz für eine  
     Exmatrikulationsbescheinigung. Diese wird (z.B.) bei einem Studienplatzwechsel benötigt, um die Höhe 
     von etwaigen Studiengebühren zu berechnen.  
-    Version: XHochschule 0.92
-    Letzte Aktualisierung: 27.05.2022 
-    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag des BMBF und Land Sachsen-Anhalt"
+    Version: XHochschule 0.93 
+    Letzte Aktualisierung: 16.11.2022 
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt"
 -->
 <xhs:exmatrikulationsbescheinigung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.92/xsd https://xhochschule.de/def/xhochschule/0.92/xsd/xhochschule.xsd"
- xmlns:xhs="http://xhochschule.de/def/xhochschule/0.92/xsd"
- xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd"> 
+ xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.93/xsd https://xhochschule.de/def/xhochschule/0.93/xsd/xhochschule.xsd"
+ xmlns:xhs="http://xhochschule.de/def/xhochschule/0.93/xsd"
+ xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd"> 
     
     <!-- Allgemeine Eigenschaften der Exmatrikulationsbescheinigung -->
-    <xbd:sprache>
-        <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20210929-0">
-            <code>https://publications.europa.eu/resource/authority/language/DEU</code>
-        </xbd:sprache>
-    </xbd:sprache>
+    <xbd:titel xml:lang="de-DE">Exmatrikulationsbescheinigung</xbd:titel>
     <xbd:ausstellung>
         <xbd:datum>2020-10-01</xbd:datum>
     </xbd:ausstellung>
     <xbd:gueltigkeitszeitraum>
         <xbd:beginn>2020-09-30</xbd:beginn>
     </xbd:gueltigkeitszeitraum>
-    <xbd:titel xml:lang="de-DE">Exmatrikulationsbescheinigung</xbd:titel>
-    <xbd:artDerBescheinigung listURI="urn:xbildung-de:xbildung:codeliste:artderbescheinigung" listVersionID="0.91">
-        <code>http://www.xbildung.de/def/xbildung/0.91/code/ArtDerBescheinigung/Exmatrikulationsbescheinigung</code>
-    </xbd:artDerBescheinigung>   
+    <xbd:sprache>
+        <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20210929-0">
+            <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+        </xbd:sprache>
+    </xbd:sprache>     
     <xhs:exmatrikulationsdatum>2020-09-30</xhs:exmatrikulationsdatum>    
     
     <!-- Angaben zur studierenden Person -->
@@ -43,7 +40,10 @@
         <xbd:geburt>
             <xbd:datum>1983-08-12</xbd:datum>
             <xbd:geburtsort>               
-                <xbd:ort>Berlin</xbd:ort>                
+                <xbd:ort>Berlin</xbd:ort>
+                <xbd:staat listURI="urn:xoev-de:kosit:codeliste:country-codes" listVersionID="unbestimmt">
+                    <code>DE</code>
+                </xbd:staat>               
             </xbd:geburtsort>
         </xbd:geburt>               
         <!-- Optionale/zukünftige Identifikationsarten für die studierende Person -->
@@ -90,36 +90,48 @@
     
     <!-- Angaben zur ausstellenden Hochschule -->
     <xhs:ausstellendeHochschule>
-        <xbd:name>
-            <xbd:name>Universität des Saarlandes</xbd:name>            
-        </xbd:name>        
         <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="WS21">
             <code>http://xhochschule.de/def/destatis/WS21/code/hochschulsignatur/1360</code>
-        </xhs:hochschulsignatur>
+        </xhs:hochschulsignatur>        
+        <xhs:name>Universität des Saarlandes</xhs:name>    
     </xhs:ausstellendeHochschule>
     
-    <!-- Angaben zum Studienfach -->
-    <xhs:studienfach>
-        <xhs:name xml:lang="de-DE">Informatik</xhs:name>
-        <xhs:name xml:lang="en">Computer Science</xhs:name>
-        <xhs:angestrebterAbschluss listURI="urn:xbildung-de:xbildung:codeliste:artdesabschlusses" listVersionID="0.91">
-            <code>http://xbildung.de/def/xbildung/0.91/code/ArtDesAbschlusses/Bachelor</code>
-        </xhs:angestrebterAbschluss>
-        <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS21">
-            <code>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/079</code>
-        </xhs:schluesselDESTATIS>
-        <xhs:fachsemester>8</xhs:fachsemester>
-        <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
-            <code>645</code> <!-- First degree (3-4 years) -->
-        </xhs:schluesselISCED2011>
-        <xhs:schluesselISCED2013 listURI="urn:xhochschule-de:unesco:codeliste:isced2013fieldofstudies" listVersionID="ISCED-2013">
-            <code>0610</code> <!--  Information and Communication Technologies (ICTs) not further defined -->
-        </xhs:schluesselISCED2013>
-    </xhs:studienfach>
-
+    <!-- Angaben zum Studienabschnitt -->
+    <xhs:studienabschnitt>
+        <xhs:studienzeitraum>
+            <xhs:zeitraum>
+                <xbd:beginn>2017-10-01</xbd:beginn>
+                <xbd:ende>2020-09-30</xbd:ende>
+            </xhs:zeitraum>
+        </xhs:studienzeitraum>
+        <xhs:studienfach>
+            <xhs:name xml:lang="de-DE">Informatik</xhs:name>            
+            <xhs:angestrebterAbschluss>Bachelor</xhs:angestrebterAbschluss>
+            <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS21">
+                <code>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/079</code>
+            </xhs:schluesselDESTATIS>
+            <xhs:fachsemester>6</xhs:fachsemester>
+            <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
+                <code>645</code> <!-- First degree (3-4 years) -->
+            </xhs:schluesselISCED2011>
+            <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
+                <code>0610</code> <!--  Information and Communication Technologies (ICTs) not further defined -->
+            </xhs:schluesselISCED2013>
+        </xhs:studienfach>
+        <xhs:lernzeitmodell>
+            <code>http://xhochschule.de/def/xhochschule/0.93/code/lernzeitmodell/vollzeit</code>
+        </xhs:lernzeitmodell>
+        <xhs:regelstudienzeit>8</xhs:regelstudienzeit>
+    </xhs:studienabschnitt>
+    <xhs:anmerkungRegelstudienzeit>Die Regelstudienzeit des Fachs Informatik wurde wegen Covid-19 verlängert auf 8 Semester</xhs:anmerkungRegelstudienzeit>
+    
     <!-- Angaben für die Verifikation des Dokuments -->
     <xhs:verifikation>
         <xhs:schluessel>XXXCFM3P4UDF</xhs:schluessel>
         <xhs:adresse>https://verify.uni-saarland.de/de/XXXCFM3P4UDF</xhs:adresse>
+        <xhs:inhaltstyp>XML</xhs:inhaltstyp>
+        <xhs:gueltigkeit>
+            <xbd:beginn>2020-10-01</xbd:beginn>
+        </xhs:gueltigkeit>
     </xhs:verifikation>    
 </xhs:exmatrikulationsbescheinigung>

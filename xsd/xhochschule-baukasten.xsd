@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.92/xsd"
-           xmlns:xbd="http://xbildung.de/def/xbildung/0.91/xsd"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.93/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-           targetNamespace="http://xhochschule.de/def/xhochschule/0.92/xsd"
-           version="0.92"
+           xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.93/xsd"
+           version="0.93"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -17,7 +18,7 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.92</version>
+            <version>0.93</version>
             <versionXOEVProfil>2.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
@@ -26,8 +27,10 @@
          </versionStandard>
       </xs:appinfo>
    </xs:annotation>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.91/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/0.91/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.93/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.93/xsd"/>
+   <xs:import schemaLocation="http://xoev.de/latinchars/1_1/datatypes/latinchars.xsd"
+              namespace="http://xoev.de/latinchars/1_1/datatypes"/>
    <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
               namespace="http://xoev.de/schemata/code/1_0"/>
    <xs:complexType name="Code.ArtDesHochschulabschlusses">
@@ -44,6 +47,7 @@
             </codeliste>
             <versionCodeliste>
                <version>WS21</version>
+               <beschreibung>&lt;para&gt;Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie werden in XHochschule maschinenverbeitbar bereitgestellt, um die Verschlüsselung und Text der Art des Abschlusses anhand der Art der Abschlussprüfung darzustellen.&lt;/para&gt;</beschreibung>
                <datumGueltigkeitAb>2021-06-14</datumGueltigkeitAb>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
@@ -63,7 +67,7 @@
             </codelistenspalten>
             <genutzteCodeSpalte>code</genutzteCodeSpalte>
          </xs:appinfo>
-         <xs:documentation>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie werden in XHochschule maschinenverbeitbar bereitgestellt, um die möglichen Gründe für eine Beurlaubung anhand von eindeutigen Schlüsseln identifizieren zu können.</xs:documentation>
+         <xs:documentation>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie werden in XHochschule maschinenverbeitbar bereitgestellt, um die Verschlüsselung und Text der Art des Abschlusses anhand der Art der Abschlussprüfung darzustellen.</xs:documentation>
       </xs:annotation>
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
@@ -147,7 +151,7 @@
                <herausgebernameKurz>XHEIE.eu</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.92</version>
+               <version>0.93</version>
                <beschreibung>Für die Implementierung der Immatrikulationsbescheinigung nach §9 muss der Beurlaubungsstatus als Codeliste abgebildet werden.</beschreibung>
                <datumGueltigkeitAb>2021-09-06</datumGueltigkeitAb>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
@@ -184,7 +188,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.92"/>
+                          fixed="0.93"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -301,33 +305,6 @@
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
-   <xs:complexType name="Code.ISCED2013">
-      <xs:annotation>
-         <xs:appinfo>
-            <codeliste>
-               <nameLang>ISCED 2013 Field of Studies</nameLang>
-               <nameKurz>ISCED Field of Studies</nameKurz>
-               <nameTechnisch>ISCEDFieldOfStudies-Codes</nameTechnisch>
-               <kennung>urn:xhochschule-de:unesco:codeliste:isced2013fieldofstudies</kennung>
-               <beschreibung>International Standard Classification of Education 2013 Field of Studies</beschreibung>
-               <herausgebernameLang>United Nations Educational, Scientific and Cultural Organization</herausgebernameLang>
-               <herausgebernameKurz>UNESCO</herausgebernameKurz>
-            </codeliste>
-         </xs:appinfo>
-      </xs:annotation>
-      <xs:complexContent>
-         <xs:restriction base="xoev-code:Code">
-            <xs:sequence>
-               <xs:element name="code" type="xs:token" form="unqualified"/>
-            </xs:sequence>
-            <xs:attribute name="listURI"
-                          type="xs:anyURI"
-                          use="optional"
-                          fixed="urn:xhochschule-de:unesco:codeliste:isced2013fieldofstudies"/>
-            <xs:attribute name="listVersionID" type="xs:normalizedString" use="required"/>
-         </xs:restriction>
-      </xs:complexContent>
-   </xs:complexType>
    <xs:complexType name="Code.Immatrikulationsstatus">
       <xs:annotation>
          <xs:appinfo>
@@ -341,7 +318,7 @@
                <herausgebernameKurz>XHEIE.eu</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.92</version>
+               <version>0.93</version>
                <beschreibung>Diese Liste erfasst die Art der Einschreibung im Hochschulwesen.</beschreibung>
                <datumGueltigkeitAb>2021-09-06</datumGueltigkeitAb>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
@@ -380,7 +357,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.92"/>
+                          fixed="0.93"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -397,7 +374,7 @@
                <herausgebernameKurz>XHEIE.eu</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.92</version>
+               <version>0.93</version>
                <beschreibung>Diese Liste erfasst die Art eines Nachweises im Hochschulwesen.</beschreibung>
                <datumGueltigkeitAb>2021-09-06</datumGueltigkeitAb>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
@@ -443,7 +420,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.92"/>
+                          fixed="0.93"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -460,7 +437,7 @@
                <herausgebernameKurz>XHEIE.eu</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.92</version>
+               <version>0.93</version>
                <beschreibung>Mit Lernzeitmodell sei hier die Unterscheidung zwischen Voll- und Teilzeit gemeint.</beschreibung>
                <datumGueltigkeitAb>2021-09-06</datumGueltigkeitAb>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
@@ -504,61 +481,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.92"/>
-         </xs:restriction>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="Code.Semester">
-      <xs:annotation>
-         <xs:appinfo>
-            <codeliste>
-               <nameLang>Semester</nameLang>
-               <nameKurz>Semester</nameKurz>
-               <nameTechnisch>Semester-Codes</nameTechnisch>
-               <kennung>urn:xhochschule-de:xhochschule:codeliste:semester</kennung>
-               <beschreibung>Diese Codeliste enthält die möglichen Semesterbezeichnungen eines Studienabschnitts: Sommersemester oder Wintersemester.</beschreibung>
-               <herausgebernameLang>XHochschule</herausgebernameLang>
-               <herausgebernameKurz>XHochschule</herausgebernameKurz>
-            </codeliste>
-            <versionCodeliste>
-               <version>0.92</version>
-               <beschreibung>Art des betreffenden Semesters (Sommersemester oder Wintersemester)</beschreibung>
-               <datumGueltigkeitAb>2021-11-01</datumGueltigkeitAb>
-               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
-            </versionCodeliste>
-            <codelistenspalten>
-               <code>
-                  <spaltennameLang>Code</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>true</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
-               </code>
-               <description-de-DE>
-                  <spaltennameLang>Lateinische Bezeichnung</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </description-de-DE>
-            </codelistenspalten>
-            <genutzteCodeSpalte>code</genutzteCodeSpalte>
-         </xs:appinfo>
-         <xs:documentation>Diese Codeliste enthält die Art des betreffenden Semesters (Sommersemester oder Wintersemester).</xs:documentation>
-      </xs:annotation>
-      <xs:complexContent>
-         <xs:restriction base="xoev-code:Code">
-            <xs:sequence>
-               <xs:element name="code" form="unqualified" type="xhs:Semester-Codes"/>
-            </xs:sequence>
-            <xs:attribute name="listURI"
-                          type="xs:anyURI"
-                          use="optional"
-                          fixed="urn:xhochschule-de:xhochschule:codeliste:semester"/>
-            <xs:attribute name="listVersionID"
-                          type="xs:normalizedString"
-                          use="optional"
-                          fixed="0.92"/>
+                          fixed="0.93"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -624,26 +547,22 @@
    </xs:complexType>
    <xs:complexType name="Hochschule">
       <xs:annotation>
-         <xs:documentation>Spezialisierung einer XBildung:Bildungseinrichtung mit weiteren hochschulspezifischen Angaben wie etwa der Hochschulsignatur gemäß der Bundeshochschulstatistik.</xs:documentation>
+         <xs:documentation>Klasse mit den Eigenschaften einer Hochschule, welche für den Datenaustausch im Rahmen von XHochschule benötigt werden.</xs:documentation>
       </xs:annotation>
-      <xs:complexContent>
-         <xs:extension base="xbd:Bildungseinrichtung">
-            <xs:sequence>
-               <xs:element name="id" minOccurs="0" type="xs:ID">
-                  <xs:annotation>
-                     <xs:documentation>eindeutige, technische Identifikation einer Hochschule</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="hochschulsignatur"
-                           minOccurs="0"
-                           type="xhs:Code.Hochschulsignatur">
-                  <xs:annotation>
-                     <xs:documentation>Dieses Feld gibt den Schlüssel einer Hochschule nach dem Verzeichnis des Statistischen Bundesamtes (DESTATIS) an. Es handelt sich um Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie werden in XHochschule maschinenverbeitbar bereitgestellt, um Hochschulen anhand von eindeutigen Schlüsseln identifizieren zu können. Eine Hochschule mit mehreren Standorten kann dabei auch mehr als einen Schlüssel haben. In diesem Fall soll derjenige Schlüssel bzw. Standort verwendet werden, der für das betreffende XHochschule-Dokument am besten passt, bzw. am relevantesten ist.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
+      <xs:sequence>
+         <xs:element name="hochschulsignatur"
+                     minOccurs="0"
+                     type="xhs:Code.Hochschulsignatur">
+            <xs:annotation>
+               <xs:documentation>Dieses Feld gibt den Schlüssel einer Hochschule nach dem Verzeichnis des Statistischen Bundesamtes (DESTATIS) an. Es handelt sich um Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie werden in XHochschule maschinenverbeitbar bereitgestellt, um Hochschulen anhand von eindeutigen Schlüsseln identifizieren zu können. Eine Hochschule mit mehreren Standorten kann dabei auch mehr als einen Schlüssel haben. In diesem Fall soll derjenige Schlüssel bzw. Standort verwendet werden, der für das betreffende XHochschule-Dokument am besten passt, bzw. am relevantesten ist.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="name" type="xbd:String.Localized">
+            <xs:annotation>
+               <xs:documentation>Dieses Feld gibt den Namen der Hochschule an</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
    </xs:complexType>
    <xs:complexType name="Modul">
       <xs:annotation>
@@ -663,7 +582,7 @@
                <xs:element name="schluesselISCED2013"
                            minOccurs="0"
                            maxOccurs="unbounded"
-                           type="xhs:Code.ISCED2013">
+                           type="xbd:Code.ISCEDF2013">
                   <xs:annotation>
                      <xs:documentation>Bezeichnung des Studienfachs nach ISCED2013 Schlüssel.</xs:documentation>
                   </xs:annotation>
@@ -731,7 +650,7 @@
    </xs:complexType>
    <xs:complexType name="Studienabschnitt">
       <xs:annotation>
-         <xs:documentation>Ein zeitlich, fachlich, und verwaltungstechnisch abgegrenzter Teil eines Studiums</xs:documentation>
+         <xs:documentation>Ein zeitlich, fachlich, und verwaltungstechnisch abgegrenzter Teil eines Studiums. Es gibt grundsätzlich zwei verschiedene Arten für die Nutzung der Klasse Studienabschnitt: Option 1: Angabe von genau einem einzigen Abschnitt pro Studienfach, der eine Zusammenfassung des Studiums eines Studierenden in diesem Studienfach darstellt, z.B. über einen Zeitraum von 3 Jahren und 6 Fachsemestern im Bachelorstudiengang Biologie. Oder Option 2: Angabe von je einem Studienabschnitt pro Semester, in dem ein Studierender eingeschrieben war. Die Angabe der Attribute "semesterbezeichnung" und "beurlaubungsstatus" ist nur sinnvoll bei Option 2.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="studienzeitraum" type="xhs:Studienzeitraum">
@@ -744,14 +663,9 @@
                <xs:documentation>Mit dem Studienfach wird der spezifische Aufbau und die fachliche Ausrichtung eines Studiums mit fachspezifischen Angaben bezeichnet.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="einschreibungsstatus" type="xhs:Code.Immatrikulationsstatus">
+         <xs:element name="lernzeitmodell" minOccurs="0" type="xhs:Code.Lernzeitmodell">
             <xs:annotation>
-               <xs:documentation>Der Einschreibungsstatus gibt an, ob bzw. in welcher Rolle eine studierende Person in einem Studienabschnitt an der Hochschule eingeschrieben ist.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="lernzeitmodell" type="xhs:Code.Lernzeitmodell">
-            <xs:annotation>
-               <xs:documentation>Angabe, ob eine studierende Person in einem Studienabschnitt in Vollzeit oder in Teilzeit studiert.</xs:documentation>
+               <xs:documentation>Angabe, ob eine studierende Person in einem Studienabschnitt beispielsweise in Vollzeit oder in Teilzeit studiert.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="regelstudienzeit" minOccurs="0" type="xs:integer">
@@ -759,7 +673,9 @@
                <xs:documentation>Anzahl der Semester, die bis zum Abschluss eines Vollzeitstudienfachs nach der während des Studienabschnitts gültigen Prüfungs- oder Studienordnung als Regelstudienzeit vorgesehen sind.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="beurlaubungsstatus" type="xhs:Code.Beurlaubungsstatus">
+         <xs:element name="beurlaubungsstatus"
+                     minOccurs="0"
+                     type="xhs:Code.Beurlaubungsstatus">
             <xs:annotation>
                <xs:documentation>Der Beurlaubungsstatus gibt an, ob eine studierende Person in einem Studienabschnitt beurlaubt ist oder nicht.</xs:documentation>
             </xs:annotation>
@@ -771,32 +687,26 @@
          <xs:documentation>Als Studienfach bezeichnet man an Hochschulen den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="identifikation" minOccurs="0" type="xbd:Identifikation">
-            <xs:annotation>
-               <xs:documentation>eindeutige Identifikation eines Studienfachs im Hochschulwesen</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="name"
-                     minOccurs="0"
-                     maxOccurs="unbounded"
-                     type="xbd:String.Localized">
+         <xs:element name="name" type="xbd:String.Localized">
             <xs:annotation>
                <xs:documentation>Freitextbeschreibung des Studienfaches, die von der Identifikation abweichen kann.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="angestrebterAbschluss" type="xbd:Code.ArtDesAbschlusses">
+         <xs:element name="angestrebterAbschluss" type="xoev-lc:String.Latin">
             <xs:annotation>
-               <xs:documentation>Der Abschluss, der mit dem Studienfach angestrebt wird nach bundesweit einheitlicher Art des Abschlusses.</xs:documentation>
+               <xs:documentation>Der Abschluss, der mit dem Studienfach angestrebt wird, z.B. "Master of Science".</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="schluesselDESTATIS" type="xhs:Code.Faecherschluessel">
+         <xs:element name="schluesselDESTATIS"
+                     minOccurs="0"
+                     type="xhs:Code.Faecherschluessel">
             <xs:annotation>
                <xs:documentation>Bezeichnung des Studienfachs nach DESTATIS Code. Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik und werden in XHochschule nachgenutzt um Studienfächern nicht neue bundesweit einheitliche Schlüssel zuordnen zu müssen.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="fachsemester" minOccurs="0" type="xs:double">
+         <xs:element name="fachsemester" minOccurs="0" type="xs:decimal">
             <xs:annotation>
-               <xs:documentation>Absolvierte Fachsemester eines entsprechenden Studienfachs. Als Fachsemester werden die Semester bezeichnet, in denen ein Studierender in einem bestimmten Studienfach eingeschrieben und nicht beurlaubt ist. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet.</xs:documentation>
+               <xs:documentation>Anzahl der Semester, die ein Studierender in ein bestimmtes Studienfachs eingeschrieben ist ohne beurlaubt zu sein. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="schluesselISCED2011" minOccurs="0" type="xbd:Code.ISCED2011">
@@ -804,7 +714,7 @@
                <xs:documentation>Bezeichnung des Studienfachs nach ISCED2011 Schlüssel.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="schluesselISCED2013" minOccurs="0" type="xhs:Code.ISCED2013">
+         <xs:element name="schluesselISCED2013" minOccurs="0" type="xbd:Code.ISCEDF2013">
             <xs:annotation>
                <xs:documentation>Bezeichnung des Studienfachs nach ISCED2013 Schlüssel.</xs:documentation>
             </xs:annotation>
@@ -827,23 +737,6 @@
          </xs:element>
       </xs:sequence>
    </xs:complexType>
-   <xs:complexType name="Studienkurs">
-      <xs:annotation>
-         <xs:documentation>Ein zeitlich, fachlich, und verwaltungstechnisch abgegrenzter Teil eines Studiums</xs:documentation>
-      </xs:annotation>
-      <xs:complexContent>
-         <xs:extension base="xbd:Kurs">
-            <xs:sequence>
-               <xs:element name="studienfach" type="xhs:Studienfach">
-                  <xs:annotation>
-                     <xs:documentation>Als Studienfach bezeichnet man an Hochschulen den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="ects" type="xs:integer"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
    <xs:complexType name="Studienzeitraum">
       <xs:annotation>
          <xs:documentation>Der Zeitraum eines Studienabschnitts wird hier mit spezifischen Angaben beschrieben.</xs:documentation>
@@ -854,9 +747,11 @@
                <xs:documentation>Beginn und Ende eines Studienzeitraums.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="semesterbezeichnung" minOccurs="0" type="xhs:Code.Semester">
+         <xs:element name="semesterbezeichnung"
+                     minOccurs="0"
+                     type="xoev-lc:String.Latin">
             <xs:annotation>
-               <xs:documentation>Zusatzangabe, ob der betreffende Zeitraum ein Sommersemester oder Wintersemester ist.</xs:documentation>
+               <xs:documentation>Hier kann der angegebene Studienzeitraum noch näher bezeichnet werden, z.B. Wintersemester 2020/2021.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
@@ -870,7 +765,7 @@
             <xs:sequence>
                <xs:element name="matrikelnummer" minOccurs="0" type="xbd:Identifikation">
                   <xs:annotation>
-                     <xs:documentation>Kennung, die eine eingeschriebene Person zu einem Zeitpunkt an einer Hochschule eindeutig identifiziert. Um einer Person außerhalb des kontextes einer Hochschule hinaus eindeutig zu identifizieren, sollte zusätzlich zur Matrikelnummer die Signatur der Hochschule und der Zeitpunkt der Ausstellung betrachtet werden.</xs:documentation>
+                     <xs:documentation>Kennung, die eine eingeschriebene Person zu einem Zeitpunkt an einer Hochschule eindeutig identifiziert. Um einer Person außerhalb des Kontextes einer Hochschule hinaus eindeutig zu identifizieren, sollte zusätzlich zur Matrikelnummer die Signatur der Hochschule und der Zeitpunkt der Ausstellung betrachtet werden.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="ersteinschreibung" minOccurs="0" type="xs:date">
@@ -878,12 +773,12 @@
                      <xs:documentation>Datum der Ersteinschreibung</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="hochschulsemester" minOccurs="0" type="xs:double">
+               <xs:element name="hochschulsemester" minOccurs="0" type="xs:decimal">
                   <xs:annotation>
                      <xs:documentation>Hochschulsemester sind alle Semester, für die ein Studierender an jeglicher Hochschule in Deutschland immatrikuliert ist oder war. Dazu zählen z.B. auch Auslands- und Urlaubssemester. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="urlaubssemester" minOccurs="0" type="xs:double">
+               <xs:element name="urlaubssemester" minOccurs="0" type="xs:decimal">
                   <xs:annotation>
                      <xs:documentation>Anzahl der Urlaubssemester. Als Urlaubssemester werden die Semester bezeichnet, in denen ein Studierender in einer Hochschule immatrikuliert und beurlaubt ist. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet. Die Anzahl der Urlaubssemester ist Pflichtfeld auf allen Exmatrikulationsbescheinigungen, da sie wichtig für die Berechnung von Studiengebühren sind, etwa im Zuge eines Studienplatzwechsels.</xs:documentation>
                   </xs:annotation>
@@ -891,6 +786,33 @@
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Verifikation">
+      <xs:annotation>
+         <xs:documentation>Bescheinigungen und Bescheide sind meist maschinell erstellt und tragen keine Unterschrift. Viele Hochschulen bieten die Möglichkeit einer Verifikation über das Internet an. Diese Klasse beinhaltet die Eigenschaften einer solchen Verifikation.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="schluessel" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Bescheinigungen und Bescheide sind meist maschinell erstellt und tragen keine Unterschrift. Viele Hochschulen bieten die Möglichkeit einer Verifikation über das Internet an. Dazu enthält die Bescheinigung einen für jedes Dokument einmaligen Verifikationsschlüssel. Dieser darf nicht Teil der Verifikations-Adresse sein.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="adresse" type="xs:anyURI">
+            <xs:annotation>
+               <xs:documentation>Bescheinigungen und Bescheide sind meist maschinell erstellt und tragen keine Unterschrift. Viele Hochschulen bieten die Möglichkeit einer Verifikation über das Internet an. Dazu stellt die Hochschule eine adresse (URL) zu einer Verifikationsfunktion bereit, unter der durch Eingabe eines individuellen Verifikationsschlüssels ein Dokument verifiziert werden kann.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="inhaltstyp" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Der Inhaltstyp gibt an, ob es sich bei dem zu verifizierenden Dokument beispielsweise um ein "PDF" oder "XML" Dokument handelt.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="gueltigkeit" minOccurs="0" type="xbd:Zeitraum">
+            <xs:annotation>
+               <xs:documentation>Angabe des Gültigkeitzeitraums für die Verifikation des Dokuments. Das End-Datum gibt an, bis wann die Verifikation auf jeden Fall möglich ist. Dieses Datum sollte sich möglichst an der Lebenszeit des Dokuments orientieren.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
    </xs:complexType>
    <xs:simpleType name="ArtDesHochschulabschlusses-Codes">
       <xs:annotation>
@@ -906,6 +828,7 @@
             </codeliste>
             <versionCodeliste>
                <version>WS21</version>
+               <beschreibung>&lt;para&gt;Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie werden in XHochschule maschinenverbeitbar bereitgestellt, um die Verschlüsselung und Text der Art des Abschlusses anhand der Art der Abschlussprüfung darzustellen.&lt;/para&gt;</beschreibung>
                <datumGueltigkeitAb>2021-06-14</datumGueltigkeitAb>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
@@ -4099,7 +4022,7 @@
                <herausgebernameKurz>XHEIE.eu</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.92</version>
+               <version>0.93</version>
                <beschreibung>Für die Implementierung der Immatrikulationsbescheinigung nach §9 muss der Beurlaubungsstatus als Codeliste abgebildet werden.</beschreibung>
                <datumGueltigkeitAb>2021-09-06</datumGueltigkeitAb>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
@@ -4123,14 +4046,14 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/beurlaubungsstatus/beurlaubt">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/beurlaubungsstatus/beurlaubt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Beurlaubt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/beurlaubungsstatus/nicht_beurlaubt">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/beurlaubungsstatus/nicht_beurlaubt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Nicht beurlaubt</description-de-DE>
@@ -11218,7 +11141,7 @@
                <herausgebernameKurz>XHEIE.eu</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.92</version>
+               <version>0.93</version>
                <beschreibung>Diese Liste erfasst die Art der Einschreibung im Hochschulwesen.</beschreibung>
                <datumGueltigkeitAb>2021-09-06</datumGueltigkeitAb>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
@@ -11242,21 +11165,21 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/immatrikulationsstatus/immatrikuliert">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/immatrikulationsstatus/immatrikuliert">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>immatrikuliert</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/immatrikulationsstatus/nichtImmatrikuliert">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/immatrikulationsstatus/nichtImmatrikuliert">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>nicht immatrikuliert</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/immatrikulationsstatus/vorlaeufigImmatrikuliert">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/immatrikulationsstatus/vorlaeufigImmatrikuliert">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>vorläufig immatrikuliert</description-de-DE>
@@ -11278,7 +11201,7 @@
                <herausgebernameKurz>XHEIE.eu</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.92</version>
+               <version>0.93</version>
                <beschreibung>Diese Liste erfasst die Art eines Nachweises im Hochschulwesen.</beschreibung>
                <datumGueltigkeitAb>2021-09-06</datumGueltigkeitAb>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
@@ -11309,7 +11232,7 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/lateinischeehrenbezeichnung/cum_laude">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/lateinischeehrenbezeichnung/cum_laude">
             <xs:annotation>
                <xs:appinfo>
                   <description-en-GB>cum laude</description-en-GB>
@@ -11317,7 +11240,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/lateinischeehrenbezeichnung/insigni_cum_laude">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/lateinischeehrenbezeichnung/insigni_cum_laude">
             <xs:annotation>
                <xs:appinfo>
                   <description-en-GB>insigni cum laude</description-en-GB>
@@ -11325,7 +11248,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/lateinischeehrenbezeichnung/mana_cum_laude">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/lateinischeehrenbezeichnung/mana_cum_laude">
             <xs:annotation>
                <xs:appinfo>
                   <description-en-GB>magna cum laude</description-en-GB>
@@ -11333,7 +11256,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/lateinischeehrenbezeichnung/ritus">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/lateinischeehrenbezeichnung/ritus">
             <xs:annotation>
                <xs:appinfo>
                   <description-en-GB>ritus</description-en-GB>
@@ -11341,7 +11264,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/lateinischeehrenbezeichnung/summa_cum_laude">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/lateinischeehrenbezeichnung/summa_cum_laude">
             <xs:annotation>
                <xs:appinfo>
                   <description-en-GB>summa cum laude</description-en-GB>
@@ -11364,7 +11287,7 @@
                <herausgebernameKurz>XHEIE.eu</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.92</version>
+               <version>0.93</version>
                <beschreibung>Mit Lernzeitmodell sei hier die Unterscheidung zwischen Voll- und Teilzeit gemeint.</beschreibung>
                <datumGueltigkeitAb>2021-09-06</datumGueltigkeitAb>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
@@ -11395,7 +11318,7 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/lernzeitmodell/dual-ausbildungsintergiert">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/lernzeitmodell/dual-ausbildungsintergiert">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Dual (ausbildungsintergiert)</description-de-DE>
@@ -11403,7 +11326,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/lernzeitmodell/dual-praxisintegriert">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/lernzeitmodell/dual-praxisintegriert">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Dual (praxisintegriert)</description-de-DE>
@@ -11411,7 +11334,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/lernzeitmodell/teilzeit">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/lernzeitmodell/teilzeit">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Teilzeit</description-de-DE>
@@ -11419,64 +11342,11 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/lernzeitmodell/vollzeit">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.93/code/lernzeitmodell/vollzeit">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Vollzeit</description-de-DE>
                   <mapping-Europass>http://data.europa.eu/snb/learning-schedule/72a0ab92fa</mapping-Europass>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType name="Semester-Codes">
-      <xs:annotation>
-         <xs:appinfo>
-            <codeliste>
-               <nameLang>Semester</nameLang>
-               <nameKurz>Semester</nameKurz>
-               <nameTechnisch>Semester-Codes</nameTechnisch>
-               <kennung>urn:xhochschule-de:xhochschule:codeliste:semester</kennung>
-               <beschreibung>Diese Codeliste enthält die möglichen Semesterbezeichnungen eines Studienabschnitts: Sommersemester oder Wintersemester.</beschreibung>
-               <herausgebernameLang>XHochschule</herausgebernameLang>
-               <herausgebernameKurz>XHochschule</herausgebernameKurz>
-            </codeliste>
-            <versionCodeliste>
-               <version>0.92</version>
-               <beschreibung>Art des betreffenden Semesters (Sommersemester oder Wintersemester)</beschreibung>
-               <datumGueltigkeitAb>2021-11-01</datumGueltigkeitAb>
-               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
-            </versionCodeliste>
-            <codelistenspalten>
-               <code>
-                  <spaltennameLang>Code</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>true</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
-               </code>
-               <description-de-DE>
-                  <spaltennameLang>Lateinische Bezeichnung</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </description-de-DE>
-            </codelistenspalten>
-         </xs:appinfo>
-      </xs:annotation>
-      <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/semester/sommersemester">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Sommersemester</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.92/code/semester/wintersemester">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Wintersemester</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>

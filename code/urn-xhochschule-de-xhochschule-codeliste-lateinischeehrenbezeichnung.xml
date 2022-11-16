@@ -15,9 +15,9 @@
    <Identification>
       <ShortName>LateinischeEhrenbezeichnung-Codes</ShortName>
       <LongName>Lateinische Ehrenbezeichnungen</LongName>
-      <Version>0.92</Version>
+      <Version>0.93</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:lateinischeehrenbezeichnung</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:lateinischeehrenbezeichnung_0.92</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:lateinischeehrenbezeichnung_0.93</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -51,7 +51,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.92/code/lateinischeehrenbezeichnung/cum_laude</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.93/code/lateinischeehrenbezeichnung/cum_laude</SimpleValue>
          </Value>
          <Value ColumnRef="description-en-GB">
             <SimpleValue>cum laude</SimpleValue>
@@ -62,7 +62,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.92/code/lateinischeehrenbezeichnung/insigni_cum_laude</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.93/code/lateinischeehrenbezeichnung/insigni_cum_laude</SimpleValue>
          </Value>
          <Value ColumnRef="description-en-GB">
             <SimpleValue>insigni cum laude</SimpleValue>
@@ -73,7 +73,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.92/code/lateinischeehrenbezeichnung/mana_cum_laude</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.93/code/lateinischeehrenbezeichnung/mana_cum_laude</SimpleValue>
          </Value>
          <Value ColumnRef="description-en-GB">
             <SimpleValue>magna cum laude</SimpleValue>
@@ -84,7 +84,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.92/code/lateinischeehrenbezeichnung/ritus</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.93/code/lateinischeehrenbezeichnung/ritus</SimpleValue>
          </Value>
          <Value ColumnRef="description-en-GB">
             <SimpleValue>ritus</SimpleValue>
@@ -95,7 +95,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.92/code/lateinischeehrenbezeichnung/summa_cum_laude</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.93/code/lateinischeehrenbezeichnung/summa_cum_laude</SimpleValue>
          </Value>
          <Value ColumnRef="description-en-GB">
             <SimpleValue>summa cum laude</SimpleValue>

@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Rentenbescheinigung nach XHochschule Version 0.93. Nichtnormative Beispielinstanz für eine  
-    Rentenbescheinigung. Diese wird z.B. benötigt, um Ansprüche gegenüber der Rentenversicherung geltend zu machen.  
+    Studienverlaufsbescheinigung nach XHochschule Version 0.93. Nichtnormative Beispielinstanz für eine  
+    Studienverlaufsbescheinigung. Diese wird (z.B.) bei einem Studienplatzwechsel benötigt.  
     Version: XHochschule 0.93 
     Letzte Aktualisierung: 16.11.2022 
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt"
 -->
-<xhs:rentenbescheinigung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.93/xsd https://xhochschule.de/def/xhochschule/0.93/xsd/xhochschule.xsd"
-    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.93/xsd"
-    xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd"> 
-
-    <!-- Allgemeine Eigenschaften der Rentenbescheinigung -->
-    <xbd:titel xml:lang="de-DE">Rentenbescheinigung</xbd:titel>
+<xhs:studienverlaufsbescheinigung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.93/xsd https://xhochschule.de/def/xhochschule/0.93/xsd/xhochschule.xsd"
+ xmlns:xhs="http://xhochschule.de/def/xhochschule/0.93/xsd"
+ xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd"> 
+    
+    <!-- Allgemeine Eigenschaften der Studienverlaufsbescheinigung -->
+    <xbd:titel xml:lang="de-DE">Studienverlaufsbescheinigung</xbd:titel>
     <xbd:ausstellung>
         <xbd:datum>2022-10-01</xbd:datum>
-        <xbd:ort>Saarbrücken</xbd:ort>
     </xbd:ausstellung>
     <xbd:gueltigkeitszeitraum>
         <xbd:beginn>2022-10-01</xbd:beginn>
@@ -24,14 +23,7 @@
         <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20210929-0">
             <code>https://publications.europa.eu/resource/authority/language/DEU</code>
         </xbd:sprache>
-    </xbd:sprache>         
-    <xhs:rentenversicherungsnummer>
-        <xbd:id>04 120883 S 80</xbd:id>
-        <xbd:beschreibung>Rentenversicherungsnummer der studierenden Person bei der Deutschen Rentenversicherung</xbd:beschreibung>
-        <xbd:gueltigkeit>
-            <xbd:beginn>2001-08-12</xbd:beginn>           
-        </xbd:gueltigkeit>
-    </xhs:rentenversicherungsnummer>
+    </xbd:sprache>     
     
     <!-- Angaben zur studierenden Person -->
     <xhs:studierender>
@@ -46,7 +38,7 @@
         <xbd:geburt>
             <xbd:datum>1983-08-12</xbd:datum>
             <xbd:geburtsort>               
-                <xbd:ort>Berlin</xbd:ort>  
+                <xbd:ort>Berlin</xbd:ort>   
                 <xbd:staat listURI="urn:xoev-de:kosit:codeliste:country-codes" listVersionID="unbestimmt">
                     <code>DE</code>
                 </xbd:staat>
@@ -71,12 +63,12 @@
             <xbd:id>uuid:57a42c1a-be5e-460b-bf2b-7fa77ef0364a</xbd:id>
             <xbd:beschreibung>eIDAS ID der studierenden Person</xbd:beschreibung>
             <xbd:gueltigkeit>
-                <xbd:beginn>2013-08-12</xbd:beginn>
+                <xbd:beginn>2002-08-12</xbd:beginn>
             </xbd:gueltigkeit>
         </xbd:identifikationsnummer>
         <xbd:identifikationsnummer>
             <xbd:id>urn:schac:personalUniqueCode:int:esi:de:99-999-999-999</xbd:id>
-            <xbd:beschreibung>European Student Identifer der studierenden Person</xbd:beschreibung>
+            <xbd:beschreibung>European Student Identifier der studierenden Person</xbd:beschreibung>
             <xbd:gueltigkeit>
                 <xbd:beginn>2003-08-12</xbd:beginn>
             </xbd:gueltigkeit>
@@ -86,12 +78,12 @@
             <xbd:id>1023909</xbd:id>
             <xbd:beschreibung>Matrikelnummer der studierenden Person</xbd:beschreibung>
             <xbd:gueltigkeit>
-                <xbd:beginn>2017-10-01</xbd:beginn>
+                <xbd:beginn>2021-10-01</xbd:beginn>
             </xbd:gueltigkeit>
         </xhs:matrikelnummer>
-        <xhs:ersteinschreibung>2017-10-01</xhs:ersteinschreibung>
-        <xhs:hochschulsemester>10</xhs:hochschulsemester>
-        <xhs:urlaubssemester>1</xhs:urlaubssemester>        
+        <xhs:ersteinschreibung>2021-10-01</xhs:ersteinschreibung>
+        <xhs:hochschulsemester>2</xhs:hochschulsemester>
+        <xhs:urlaubssemester>1</xhs:urlaubssemester>
     </xhs:studierender>
     
     <!-- Angaben zur ausstellenden Hochschule -->
@@ -99,16 +91,17 @@
         <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="WS21">
             <code>http://xhochschule.de/def/destatis/WS21/code/hochschulsignatur/1360</code>
         </xhs:hochschulsignatur>        
-        <xhs:name>Universität des Saarlandes</xhs:name>  
-    </xhs:ausstellendeHochschule>    
-   
-    <!-- Angaben zum Studienabschnitt -->
+        <xhs:name>Universität des Saarlandes</xhs:name>    
+    </xhs:ausstellendeHochschule>
+    
+    <!-- Angaben zum 1. Studienabschnitt (ein Abschnitt pro Semester) -->
     <xhs:studienabschnitt>
         <xhs:studienzeitraum>
             <xhs:zeitraum>
-                <xbd:beginn>2017-10-01</xbd:beginn>
-                <xbd:ende>2022-09-30</xbd:ende>
+                <xbd:beginn>2021-10-01</xbd:beginn>
+                <xbd:ende>2022-03-31</xbd:ende>
             </xhs:zeitraum>
+            <xhs:semesterbezeichnung>Wintersemester 2021/2022</xhs:semesterbezeichnung>
         </xhs:studienzeitraum>
         <xhs:studienfach>
             <xhs:name xml:lang="de-DE">Informatik</xhs:name>            
@@ -116,7 +109,7 @@
             <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS21">
                 <code>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/079</code>
             </xhs:schluesselDESTATIS>
-            <xhs:fachsemester>10</xhs:fachsemester>
+            <xhs:fachsemester>1</xhs:fachsemester>
             <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
                 <code>645</code> <!-- First degree (3-4 years) -->
             </xhs:schluesselISCED2011>
@@ -126,21 +119,46 @@
         </xhs:studienfach>
         <xhs:lernzeitmodell>
             <code>http://xhochschule.de/def/xhochschule/0.93/code/lernzeitmodell/vollzeit</code>
-        </xhs:lernzeitmodell>
+        </xhs:lernzeitmodell>        
         <xhs:regelstudienzeit>8</xhs:regelstudienzeit>
-        <xhs:beurlaubungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="0.93">
+        <xhs:beurlaubungsstatus>
             <code>http://xhochschule.de/def/xhochschule/0.93/code/beurlaubungsstatus/nicht_beurlaubt</code>
         </xhs:beurlaubungsstatus>
-        <xhs:ausbildungsstaette>
-            <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="WS21">
-                <code>http://xhochschule.de/def/destatis/WS21/code/hochschulsignatur/1360</code>
-            </xhs:hochschulsignatur>        
-            <xhs:name>Universität des Saarlandes</xhs:name>  
-        </xhs:ausbildungsstaette>
-        <xhs:abgeschlossenOderDatum>
-            <xhs:abgeschlossen>true</xhs:abgeschlossen>    
-        </xhs:abgeschlossenOderDatum>
     </xhs:studienabschnitt>
+    
+    <!-- Angaben zum 2. Studienabschnitt (ein Abschnitt pro Semester) -->
+    <xhs:studienabschnitt>
+        <xhs:studienzeitraum>
+            <xhs:zeitraum>
+                <xbd:beginn>2022-04-01</xbd:beginn>
+                <xbd:ende>2022-09-30</xbd:ende>
+            </xhs:zeitraum>
+            <xhs:semesterbezeichnung>Sommersemester 2022</xhs:semesterbezeichnung>
+        </xhs:studienzeitraum>
+        <xhs:studienfach>
+            <xhs:name xml:lang="de-DE">Informatik</xhs:name>            
+            <xhs:angestrebterAbschluss>Bachelor</xhs:angestrebterAbschluss>
+            <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS21">
+                <code>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/079</code>
+            </xhs:schluesselDESTATIS>
+            <xhs:fachsemester>1</xhs:fachsemester>
+            <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
+                <code>645</code> <!-- First degree (3-4 years) -->
+            </xhs:schluesselISCED2011>
+            <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
+                <code>0610</code> <!--  Information and Communication Technologies (ICTs) not further defined -->
+            </xhs:schluesselISCED2013>
+        </xhs:studienfach>
+        <xhs:lernzeitmodell>
+            <code>http://xhochschule.de/def/xhochschule/0.93/code/lernzeitmodell/vollzeit</code>
+        </xhs:lernzeitmodell>        
+        <xhs:regelstudienzeit>8</xhs:regelstudienzeit>
+        <xhs:beurlaubungsstatus>
+            <code>http://xhochschule.de/def/xhochschule/0.93/code/beurlaubungsstatus/beurlaubt</code>
+        </xhs:beurlaubungsstatus>
+    </xhs:studienabschnitt>
+    
+    <xhs:anmerkungRegelstudienzeit>Die Regelstudienzeit des Fachs Informatik wurde wegen Covid-19 verlängert auf 8 Semester</xhs:anmerkungRegelstudienzeit>
     
     <!-- Angaben für die Verifikation des Dokuments -->
     <xhs:verifikation>
@@ -151,4 +169,4 @@
             <xbd:beginn>2022-10-01</xbd:beginn>
         </xhs:gueltigkeit>
     </xhs:verifikation>    
-</xhs:rentenbescheinigung>
+</xhs:studienverlaufsbescheinigung>
