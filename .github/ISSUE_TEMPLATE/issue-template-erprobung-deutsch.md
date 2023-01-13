@@ -1,5 +1,5 @@
 ---
-name: Rückmeldung im Rahmen der Pilotierung
+name: Rückmeldung im Rahmen der 2.Pilotierung
 about: Pilotierung von XHochschule
 title: 'Exma-Besch: '
 labels: Pilotierung, Open
