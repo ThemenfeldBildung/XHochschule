@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Testdatei: F06_SVB_negativ.xml
+    FEHLER_06: Das Element <name> fehlt in <ausstellendeHochschule>.
+    
+    Testdatei mit eingebautem Fehler. Datei enthält beispielhafte Angaben einer Studienverlaufsbescheinigung nach XHS v0.94.
+    Die fehlerhafte Stelle ist im Quelltext entsprechend kommentiert ("FEHLER_XY") und sollte beim Einlesen der Testdatei 
+    erkannt werden, da die Datei nicht gegen das XHochschule XML-Schema validiert (XSD-Fehler). 
+    
+    Letzte Aktualisierung: 13.01.2023 
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt"
+-->
+<xhs:studienverlaufsbescheinigung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.94/xsd https://xhochschule.de/def/xhochschule/0.94/xsd/xhochschule.xsd"
+ xmlns:xhs="http://xhochschule.de/def/xhochschule/0.94/xsd"
+ xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd"> 
+    
+    <!-- Allgemeine Eigenschaften der Studienverlaufsbescheinigung -->
+    <xbd:titel xml:lang="de-DE">Studienverlaufsbescheinigung</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2022-10-01</xbd:datum>
+    </xbd:ausstellung>
+    <xbd:gueltigkeitszeitraum>
+        <xbd:beginn>2022-10-01</xbd:beginn>
+    </xbd:gueltigkeitszeitraum>
+    <xbd:sprache>
+        <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20210929-0">
+            <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+        </xbd:sprache>
+    </xbd:sprache> 
+    
+    <!-- Angaben zur studierenden Person -->
+    <xhs:studierender>
+        <xbd:nameNatuerlichePerson>
+            <xbd:familienname>
+                <xbd:name>Mustermann</xbd:name>            
+            </xbd:familienname> 
+            <xbd:vorname>
+                <xbd:name>Erika</xbd:name>                                
+            </xbd:vorname>
+        </xbd:nameNatuerlichePerson>
+        <xbd:geburt>
+            <xbd:datum>1983-08-12</xbd:datum>
+            <xbd:geburtsort>
+                <xbd:ort>Berlin</xbd:ort>   
+                <xbd:staat listURI="urn:xoev-de:kosit:codeliste:country-codes" listVersionID="unbestimmt">
+                    <code>DE</code>
+                </xbd:staat>
+            </xbd:geburtsort>
+        </xbd:geburt>               
+        <!-- Optionale/zukünftige Identifikationsarten für die studierende Person -->
+        <xbd:identifikationsnummer>
+            <xbd:id>86095742719</xbd:id>
+            <xbd:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuerID)</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>1983-08-12</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>99-999-999-999</xbd:id>
+            <xbd:beschreibung>OZG-Landeskonto-ID der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2001-08-12</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>uuid:57a42c1a-be5e-460b-bf2b-7fa77ef0364a</xbd:id>
+            <xbd:beschreibung>eIDAS ID der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2002-08-12</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>urn:schac:personalUniqueCode:int:esi:de:99-999-999-999</xbd:id>
+            <xbd:beschreibung>European Student Identifier der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2003-08-12</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>  
+        <!-- Matrikelnummer der studierenden Person -->
+        <xhs:matrikelnummer>
+            <xbd:id>1023909</xbd:id>
+            <xbd:beschreibung>Matrikelnummer der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2021-10-01</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xhs:matrikelnummer>
+        <xhs:ersteinschreibung>2021-10-01</xhs:ersteinschreibung>
+        <xhs:hochschulsemester>2</xhs:hochschulsemester>
+        <xhs:urlaubssemester>1</xhs:urlaubssemester>
+    </xhs:studierender>
+    
+    <!-- Angaben zur ausstellenden Hochschule -->
+    <xhs:ausstellendeHochschule>
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="WS22">
+            <code>http://xhochschule.de/def/destatis/WS22/code/hochschulsignatur/1360</code>
+        </xhs:hochschulsignatur>        
+        <!-- 
+             FEHLER_06: Das Element <name> fehlt in <ausstellendeHochschule>. Der Name der ausstellenden Hochscule ist ein Pflichtfeld.
+             Fehlermeldung: "In content of element <ausstellendeHochschule>: The content is incomplete. 
+             Expected <Q{.../xsd}name>. 
+        -->
+    </xhs:ausstellendeHochschule>
+    
+    <!-- Angaben zum 1. Studienabschnitt (ein Abschnitt pro Semester) -->
+    <xhs:studienabschnitt>
+        <xhs:studienzeitraum>
+            <xhs:zeitraum>
+                <xbd:beginn>2021-10-01</xbd:beginn>
+                <xbd:ende>2022-03-31</xbd:ende>
+            </xhs:zeitraum>
+            <xhs:semesterbezeichnung>Wintersemester 2021/2022</xhs:semesterbezeichnung>
+        </xhs:studienzeitraum>
+        <xhs:studienfach>
+            <xhs:name xml:lang="de-DE">Informatik</xhs:name>            
+            <xhs:angestrebterAbschluss>Bachelor</xhs:angestrebterAbschluss>
+            <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS22">
+                <code>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/079</code>
+            </xhs:schluesselDESTATIS>
+            <xhs:fachsemester>1</xhs:fachsemester>
+            <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
+                <code>645</code> <!-- First degree (3-4 years) -->
+            </xhs:schluesselISCED2011>
+            <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
+                <code>0610</code> <!--  Information and Communication Technologies (ICTs) not further defined -->
+            </xhs:schluesselISCED2013>
+        </xhs:studienfach>
+        <xhs:lernzeitmodell>
+            <code>http://xhochschule.de/def/xhochschule/0.94/code/lernzeitmodell/vollzeit</code>
+        </xhs:lernzeitmodell>        
+        <xhs:regelstudienzeit>8</xhs:regelstudienzeit>
+        <xhs:beurlaubungsstatus>
+            <code>http://xhochschule.de/def/xhochschule/0.94/code/beurlaubungsstatus/nicht_beurlaubt</code>
+        </xhs:beurlaubungsstatus>
+    </xhs:studienabschnitt>
+    
+    <!-- Angaben zum 2. Studienabschnitt (ein Abschnitt pro Semester) -->
+    <xhs:studienabschnitt>
+        <xhs:studienzeitraum>
+            <xhs:zeitraum>
+                <xbd:beginn>2022-04-01</xbd:beginn>
+                <xbd:ende>2022-09-30</xbd:ende>
+            </xhs:zeitraum>
+            <xhs:semesterbezeichnung>Sommersemester 2022</xhs:semesterbezeichnung>
+        </xhs:studienzeitraum>
+        <xhs:studienfach>
+            <xhs:name xml:lang="de-DE">Informatik</xhs:name>            
+            <xhs:angestrebterAbschluss>Bachelor</xhs:angestrebterAbschluss>
+            <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS22">
+                <code>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/079</code>
+            </xhs:schluesselDESTATIS>
+            <xhs:fachsemester>1</xhs:fachsemester>
+            <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
+                <code>645</code> <!-- First degree (3-4 years) -->
+            </xhs:schluesselISCED2011>
+            <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
+                <code>0610</code> <!--  Information and Communication Technologies (ICTs) not further defined -->
+            </xhs:schluesselISCED2013>
+        </xhs:studienfach>
+        <xhs:lernzeitmodell>
+            <code>http://xhochschule.de/def/xhochschule/0.94/code/lernzeitmodell/vollzeit</code>
+        </xhs:lernzeitmodell>        
+        <xhs:regelstudienzeit>8</xhs:regelstudienzeit>
+        <xhs:beurlaubungsstatus>
+            <code>http://xhochschule.de/def/xhochschule/0.94/code/beurlaubungsstatus/beurlaubt</code>
+        </xhs:beurlaubungsstatus>
+    </xhs:studienabschnitt>
+    
+    <xhs:anmerkungRegelstudienzeit>Die Regelstudienzeit des Fachs Informatik wurde wegen Covid-19 verlängert auf 8 Semester</xhs:anmerkungRegelstudienzeit>
+    
+    <!-- Angaben für die Verifikation des Dokuments -->
+    <xhs:verifikation>
+        <xhs:schluessel>XXXCFM3P4UDF</xhs:schluessel>
+        <xhs:adresse>https://verify.uni-saarland.de/de/XXXCFM3P4UDF</xhs:adresse>
+        <xhs:inhaltstyp>XML</xhs:inhaltstyp>
+        <xhs:gueltigkeit>
+            <xbd:beginn>2022-10-01</xbd:beginn>
+        </xhs:gueltigkeit>
+    </xhs:verifikation>    
+</xhs:studienverlaufsbescheinigung>
