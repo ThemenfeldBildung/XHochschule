@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Hochschulabschlusszeugnis nach XHochschule Version 0.93. Nichtnormative Beispielinstanz für ein  
+    Hochschulabschlusszeugnis nach XHochschule Version 0.94. Nichtnormative Beispielinstanz für ein  
     Hochschulabschlusszeugnis. Dieses wird (z.B.) für einem Studienplatzwechsel von einem Bachelorstudiengang 
     zu einem Masterstudiengang benötigt.
-    Version: XHochschule 0.93 
-    Letzte Aktualisierung: 16.11.2022 
+    Version: XHochschule 0.94 
+    Letzte Aktualisierung: 13.01.2023
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt"
 -->
 <xhs:hochschulabschlusszeugnis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.93/xsd https://xhochschule.de/def/xhochschule/0.93/xsd/xhochschule.xsd"
-    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.93/xsd"
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.94/xsd https://xhochschule.de/def/xhochschule/0.94/xsd/xhochschule.xsd"
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.94/xsd"
     xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd"> 
     
     <!-- Allgemeine Eigenschaften des Hochschulabschlusszeugnis -->
@@ -26,9 +26,9 @@
             <code>https://publications.europa.eu/resource/authority/language/DEU</code>
         </xbd:sprache>
     </xbd:sprache>
-    <xhs:abschluss listURI="urn:xhochschule-de:destatis:codeliste:artdeshochschulabschlusses" listVersionID="WS21">
+    <xhs:abschluss listURI="urn:xhochschule-de:destatis:codeliste:artdeshochschulabschlusses" listVersionID="WS22">
         <!-- Art des Abschlusses als Code 182: Bachelor an Universitäten, Erststudium -->
-        <code>http://xhochschule.de/def/destatis/WS21/code/ArtDesHochschulabschlusses/182</code>
+        <code>http://xhochschule.de/def/destatis/WS22/code/ArtDesHochschulabschlusses/182</code>
     </xhs:abschluss>
     
     <!-- Angaben zur studierenden Person -->
@@ -79,7 +79,7 @@
                 <xbd:beginn>2003-08-12</xbd:beginn>
             </xbd:gueltigkeit>
         </xbd:identifikationsnummer>  
-        <!-- Pflichtfeld: Matrikelnummer der studierenden Person -->
+        <!-- Matrikelnummer der studierenden Person -->
         <xhs:matrikelnummer>
             <xbd:id>1023909</xbd:id>
             <xbd:beschreibung>Matrikelnummer der studierenden Person</xbd:beschreibung>
@@ -91,8 +91,8 @@
     
     <!-- Angaben zur ausstellenden Hochschule -->
     <xhs:ausstellendeHochschule>
-        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="WS21">
-            <code>http://xhochschule.de/def/destatis/WS21/code/hochschulsignatur/1360</code>
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="WS22">
+            <code>http://xhochschule.de/def/destatis/WS22/code/hochschulsignatur/1360</code>
         </xhs:hochschulsignatur>        
         <xhs:name>Universität des Saarlandes</xhs:name>    
     </xhs:ausstellendeHochschule>     
@@ -105,8 +105,8 @@
     <xhs:studienfach>       
         <xhs:name xml:lang="de-DE">Informatik</xhs:name>  
         <xhs:angestrebterAbschluss>Bachelor of Science</xhs:angestrebterAbschluss>
-        <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS21">
-            <code>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/079</code>  
+        <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS22">
+            <code>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/079</code>  
         </xhs:schluesselDESTATIS>
         <xhs:fachsemester>8</xhs:fachsemester>
         <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
@@ -115,8 +115,8 @@
         <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
             <code>0610</code>
         </xhs:schluesselISCED2013>               
-        <xhs:studienbereichDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:studienbereich" listVersionID="WS21">
-            <code>http://xhochschule.de/def/destatis/WS21/code/studienbereich/54</code>
+        <xhs:studienbereichDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:studienbereich" listVersionID="WS22">
+            <code>http://xhochschule.de/def/destatis/WS22/code/studienbereich/54</code>
         </xhs:studienbereichDESTATIS>
         <xhs:studienbereichBezeichnung xml:lang="de-DE">Informatik</xhs:studienbereichBezeichnung>        
     </xhs:studienfach>
@@ -128,8 +128,8 @@
             <xbd:wortbezeichnung xml:lang="de-DE">gut</xbd:wortbezeichnung>
             <xbd:punkte>540</xbd:punkte>            
         </xhs:gesamtnote>
-        <xhs:lateinischeEhrenbezeichnung listURI="urn:xhochschule-de:xhochschule:codeliste:lateinischeehrenbezeichnung" listVersionID="0.93">
-            <code>http://xhochschule.de/def/xhochschule/0.93/code/lateinischeehrenbezeichnung/cum_laude</code>
+        <xhs:lateinischeEhrenbezeichnung listURI="urn:xhochschule-de:xhochschule:codeliste:lateinischeehrenbezeichnung" listVersionID="0.94">
+            <code>http://xhochschule.de/def/xhochschule/0.94/code/lateinischeehrenbezeichnung/cum_laude</code>
         </xhs:lateinischeEhrenbezeichnung>
     </xhs:benotung>    
     <xhs:abschlussarbeit>

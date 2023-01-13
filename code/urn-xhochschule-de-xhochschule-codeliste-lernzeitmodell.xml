@@ -6,7 +6,7 @@
       <Description>
          <xoev-cl-4:shortName>Lernzeitmodell</xoev-cl-4:shortName>
          <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen von Lernzeitmodellen.</xoev-cl-4:codelistDescription>
-         <xoev-cl-4:agencyShortName>XHEIE.eu</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:agencyShortName>XHS</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionDescription>Mit Lernzeitmodell sei hier die Unterscheidung zwischen Voll- und Teilzeit gemeint.</xoev-cl-4:versionDescription>
          <xoev-cl-4:validFrom>2021-09-06</xoev-cl-4:validFrom>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
@@ -15,9 +15,9 @@
    <Identification>
       <ShortName>Lernzeitmodell-Codes</ShortName>
       <LongName>Lernzeitmodell</LongName>
-      <Version>0.93</Version>
+      <Version>0.94</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell_0.93</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell_0.94</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -51,10 +51,10 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.93/code/lernzeitmodell/dual-ausbildungsintergiert</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.94/code/lernzeitmodell/dual-ausbildungsintegriert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>Dual (ausbildungsintergiert)</SimpleValue>
+            <SimpleValue>Dual (ausbildungsintegriert)</SimpleValue>
          </Value>
          <Value ColumnRef="mapping-Europass">
             <SimpleValue>tbd</SimpleValue>
@@ -62,7 +62,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.93/code/lernzeitmodell/dual-praxisintegriert</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.94/code/lernzeitmodell/dual-praxisintegriert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Dual (praxisintegriert)</SimpleValue>
@@ -73,7 +73,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.93/code/lernzeitmodell/teilzeit</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.94/code/lernzeitmodell/teilzeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Teilzeit</SimpleValue>
@@ -84,7 +84,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.93/code/lernzeitmodell/vollzeit</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.94/code/lernzeitmodell/vollzeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Vollzeit</SimpleValue>

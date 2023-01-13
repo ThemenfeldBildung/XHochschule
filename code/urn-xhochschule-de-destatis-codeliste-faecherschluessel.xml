@@ -7,16 +7,16 @@
          <xoev-cl-4:shortName>Fächerschlüssel</xoev-cl-4:shortName>
          <xoev-cl-4:codelistDescription>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie werden in XHochschule maschinenverbeitbar bereitgestellt, um Studienfächer anhand von eindeutigen Schlüsseln identifizieren zu können.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>DESTATIS</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:validFrom>2021-06-14</xoev-cl-4:validFrom>
+         <xoev-cl-4:validFrom>2022-06-14</xoev-cl-4:validFrom>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Faecherschluessel-Codes</ShortName>
       <LongName>Fächerschlüssel gemäß Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik</LongName>
-      <Version>WS21</Version>
+      <Version>WS22</Version>
       <CanonicalUri>urn:xhochschule-de:destatis:codeliste:faecherschluessel</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:destatis:codeliste:faecherschluessel_WS21</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:destatis:codeliste:faecherschluessel_WS22</CanonicalVersionUri>
       <Agency>
          <LongName>Statistisches Bundesamt</LongName>
       </Agency>
@@ -45,7 +45,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/001</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/001</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Ägyptologie</SimpleValue>
@@ -56,7 +56,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/002</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/002</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Afrikanistik</SimpleValue>
@@ -67,7 +67,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/003</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/003</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Agrarwissenschaft/Landwirtschaft</SimpleValue>
@@ -78,7 +78,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/004</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/004</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Interdisziplinäre Studien (Schwerpunkt Sprach- und Kulturwissenschaften)</SimpleValue>
@@ -89,7 +89,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/005</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/005</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Klassische Philologie</SimpleValue>
@@ -100,7 +100,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/006</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/006</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Amerikanistik/Amerikakunde</SimpleValue>
@@ -111,7 +111,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/007</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/007</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Angewandte Kunst</SimpleValue>
@@ -122,7 +122,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/008</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/008</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Anglistik/Englisch</SimpleValue>
@@ -133,7 +133,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/009</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/009</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Anthropologie (Humanbiologie)</SimpleValue>
@@ -144,7 +144,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/010</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/010</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Arabisch/Arabistik</SimpleValue>
@@ -155,7 +155,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/011</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/011</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Arbeitslehre/Wirtschaftslehre</SimpleValue>
@@ -166,7 +166,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/012</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/012</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Archäologie</SimpleValue>
@@ -177,7 +177,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/013</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/013</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Architektur</SimpleValue>
@@ -188,7 +188,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/014</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/014</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Astronomie, Astrophysik</SimpleValue>
@@ -199,7 +199,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/015</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/015</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Außereuropäische Sprachen und Kulturen in Ozeanien und Amerika</SimpleValue>
@@ -210,7 +210,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/016</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/016</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Baltistik</SimpleValue>
@@ -221,7 +221,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/017</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/017</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bauingenieurwesen/Ingenieurbau</SimpleValue>
@@ -232,7 +232,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/018</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/018</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Berufsbezogene Fremdsprachenausbildung</SimpleValue>
@@ -243,7 +243,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/019</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/019</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Orientierungsstudium MINT</SimpleValue>
@@ -254,7 +254,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/020</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/020</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bergbau/Bergtechnik</SimpleValue>
@@ -265,7 +265,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/021</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/021</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Betriebswirtschaftslehre</SimpleValue>
@@ -276,7 +276,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/022</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/022</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bibliothekswissenschaft/-wesen (nicht für Studierende an Verwaltungs-FH)</SimpleValue>
@@ -287,7 +287,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/023</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/023</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bildende Kunst/Graphik</SimpleValue>
@@ -298,7 +298,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/024</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/024</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Europäische Ethnologie und Kulturwissenschaft</SimpleValue>
@@ -309,7 +309,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/025</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/025</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Biochemie</SimpleValue>
@@ -320,7 +320,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/026</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/026</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Biologie</SimpleValue>
@@ -331,7 +331,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/028</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/028</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Brauwesen/Getränketechnologie</SimpleValue>
@@ -342,7 +342,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/029</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/029</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sportwissenschaft</SimpleValue>
@@ -353,7 +353,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/030</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/030</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Interdisziplinäre Studien (Schwerpunkt Rechts-, Wirtschafts- und Sozialwissenschaften)</SimpleValue>
@@ -364,7 +364,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/031</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/031</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Byzantinistik</SimpleValue>
@@ -375,7 +375,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/032</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/032</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Chemie</SimpleValue>
@@ -386,7 +386,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/033</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/033</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Chemie-Ingenieurwesen/Chemietechnik</SimpleValue>
@@ -397,7 +397,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/034</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/034</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Dänisch</SimpleValue>
@@ -408,7 +408,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/035</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/035</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Darstellende Kunst/Bühnenkunst/Regie</SimpleValue>
@@ -419,7 +419,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/036</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/036</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sonstige Regionalwissenschaften</SimpleValue>
@@ -430,7 +430,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/037</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/037</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Dokumentationswissenschaft</SimpleValue>
@@ -441,7 +441,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/038</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/038</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Lateinamerika</SimpleValue>
@@ -452,7 +452,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/039</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/039</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Geowissenschaften</SimpleValue>
@@ -463,7 +463,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/040</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/040</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Interdisziplinäre Studien (Schwerpunkt Kunst, Kunstwissenschaft)</SimpleValue>
@@ -474,7 +474,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/041</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/041</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sonstiges Orientierungsstudium</SimpleValue>
@@ -485,7 +485,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/042</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/042</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschaftsrecht</SimpleValue>
@@ -496,7 +496,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/043</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/043</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Neugriechisch</SimpleValue>
@@ -507,7 +507,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/044</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/044</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Ost- und Südosteuropa</SimpleValue>
@@ -518,7 +518,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/048</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/048</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Elektrotechnik/Elektronik</SimpleValue>
@@ -529,7 +529,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/049</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/049</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Interdisziplinäre Studien (Schwerpunkt Naturwissenschaften)</SimpleValue>
@@ -540,7 +540,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/050</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/050</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Geographie/Erdkunde</SimpleValue>
@@ -551,7 +551,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/052</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/052</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Erziehungswissenschaft (Pädagogik)</SimpleValue>
@@ -562,7 +562,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/053</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/053</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Evang. Theologie, -Religionslehre</SimpleValue>
@@ -573,7 +573,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/054</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/054</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Film und Fernsehen</SimpleValue>
@@ -584,7 +584,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/054</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/055</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Orientierungsstudium Gesellschaftswissenschaften</SimpleValue>
@@ -595,7 +595,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/056</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/056</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Finno-Ugristik</SimpleValue>
@@ -606,7 +606,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/057</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/057</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Luft- und Raumfahrttechnik</SimpleValue>
@@ -617,7 +617,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/058</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/058</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Forstwissenschaft, -wirtschaft</SimpleValue>
@@ -628,7 +628,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/059</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/059</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Französisch</SimpleValue>
@@ -639,7 +639,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/060</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/060</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Gartenbau</SimpleValue>
@@ -650,7 +650,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/061</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/061</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Meliorationswesen</SimpleValue>
@@ -661,7 +661,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/064</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/064</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Naturschutz</SimpleValue>
@@ -672,7 +672,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/065</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/065</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Geologie/Paläontologie</SimpleValue>
@@ -683,7 +683,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/066</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/066</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Geophysik</SimpleValue>
@@ -694,7 +694,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/067</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/067</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Germanistik/Deutsch</SimpleValue>
@@ -705,7 +705,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/068</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/068</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Geschichte</SimpleValue>
@@ -716,7 +716,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/069</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/069</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Graphikdesign/Kommunikationsgestaltung</SimpleValue>
@@ -727,7 +727,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/070</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/070</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Griechisch</SimpleValue>
@@ -738,7 +738,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/071</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/071</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Haushalts- und Ernährungswissenschaft</SimpleValue>
@@ -749,7 +749,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/072</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/072</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Interdisziplinäre Studien (Schwerpunkt Ingenieurwissenschaften)</SimpleValue>
@@ -760,7 +760,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/073</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/073</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Judaistik/Hebräisch</SimpleValue>
@@ -771,7 +771,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/074</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/074</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Transport-/Fördertechnik</SimpleValue>
@@ -782,7 +782,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/075</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/075</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Holzwirtschaft</SimpleValue>
@@ -793,7 +793,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/076</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/076</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Hütten- und Gießereiwesen</SimpleValue>
@@ -804,7 +804,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/077</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/077</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wasserwirtschaft</SimpleValue>
@@ -815,7 +815,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/078</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/078</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Indologie</SimpleValue>
@@ -826,7 +826,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/079</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/079</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Informatik</SimpleValue>
@@ -837,7 +837,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/080</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/080</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Instrumentalmusik</SimpleValue>
@@ -848,7 +848,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/081</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/081</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Iranistik</SimpleValue>
@@ -859,7 +859,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/082</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/082</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Holz-/Fasertechnik</SimpleValue>
@@ -870,7 +870,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/083</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/083</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Islamwissenschaft</SimpleValue>
@@ -881,7 +881,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/084</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/084</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Italienisch</SimpleValue>
@@ -892,7 +892,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/085</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/085</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Japanologie</SimpleValue>
@@ -903,7 +903,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/086</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/086</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kath. Theologie, -Religionslehre</SimpleValue>
@@ -914,7 +914,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/088</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/088</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Optoelektronik</SimpleValue>
@@ -925,7 +925,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/089</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/089</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Verkehrsingenieurwesen</SimpleValue>
@@ -936,7 +936,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/090</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/090</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Lernbereich Sprach- und Kulturwissenschaften</SimpleValue>
@@ -947,7 +947,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/091</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/091</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kunsterziehung</SimpleValue>
@@ -958,7 +958,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/092</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/092</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kunstgeschichte, Kunstwissenschaft</SimpleValue>
@@ -969,7 +969,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/093</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/093</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Landespflege/Landschaftsgestaltung</SimpleValue>
@@ -980,7 +980,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/094</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/094</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wasserbau</SimpleValue>
@@ -991,7 +991,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/095</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/095</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Latein</SimpleValue>
@@ -1002,7 +1002,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/096</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/096</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Lebensmittelchemie</SimpleValue>
@@ -1013,7 +1013,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/097</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/097</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Lebensmitteltechnologie</SimpleValue>
@@ -1024,7 +1024,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/098</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/098</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sportpädagogik/Sportpsychologie</SimpleValue>
@@ -1035,7 +1035,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/101</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/101</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Restaurierungskunde</SimpleValue>
@@ -1046,7 +1046,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/102</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/102</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Schauspiel</SimpleValue>
@@ -1057,7 +1057,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/103</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/103</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Markscheidewesen</SimpleValue>
@@ -1068,7 +1068,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/104</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/104</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Maschinenbau/-wesen</SimpleValue>
@@ -1079,7 +1079,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/105</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/105</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Mathematik</SimpleValue>
@@ -1090,7 +1090,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/106</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/106</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Tanzpädagogik</SimpleValue>
@@ -1101,7 +1101,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/107</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/107</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Medizin (Allgemein-Medizin)</SimpleValue>
@@ -1112,7 +1112,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/108</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/108</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Metalltechnik</SimpleValue>
@@ -1123,7 +1123,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/110</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/110</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Meteorologie</SimpleValue>
@@ -1134,7 +1134,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/111</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/111</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Mineralogie</SimpleValue>
@@ -1145,7 +1145,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/113</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/113</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Musikerziehung</SimpleValue>
@@ -1156,7 +1156,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/114</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/114</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Musikwissenschaft/-geschichte</SimpleValue>
@@ -1167,7 +1167,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/115</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/115</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Grundschul-/Primarstufenpädagogik</SimpleValue>
@@ -1178,7 +1178,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/116</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/116</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Textilgestaltung</SimpleValue>
@@ -1189,7 +1189,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/117</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/117</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Ausländerpädagogik</SimpleValue>
@@ -1200,7 +1200,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/118</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/118</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Technomathematik</SimpleValue>
@@ -1211,7 +1211,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/119</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/119</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Niederländisch</SimpleValue>
@@ -1222,7 +1222,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/120</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/120</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Nordistik/Skandinavistik (Nordische Philologie, Einzelsprachen a.n.g.)</SimpleValue>
@@ -1233,7 +1233,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/121</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/121</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Medieninformatik</SimpleValue>
@@ -1244,7 +1244,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/122</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/122</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Orientalistik/Altorientalistik</SimpleValue>
@@ -1255,7 +1255,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/123</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/123</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Ingenieurinformatik/Technische Informatik</SimpleValue>
@@ -1266,7 +1266,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/124</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/124</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Ozeanographie</SimpleValue>
@@ -1277,7 +1277,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/125</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/125</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Agrarökonomie</SimpleValue>
@@ -1288,7 +1288,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/126</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/126</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Pharmazie</SimpleValue>
@@ -1299,7 +1299,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/127</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/127</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Philosophie</SimpleValue>
@@ -1310,7 +1310,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/128</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/128</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Physik</SimpleValue>
@@ -1321,7 +1321,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/129</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/129</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Politikwissenschaft/Politologie</SimpleValue>
@@ -1332,7 +1332,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/130</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/130</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Westslawisch (allgemein und a.n.g.)</SimpleValue>
@@ -1343,7 +1343,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/131</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/131</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Portugiesisch</SimpleValue>
@@ -1354,7 +1354,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/132</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/132</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Psychologie</SimpleValue>
@@ -1365,7 +1365,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/134</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/134</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Raumplanung</SimpleValue>
@@ -1376,7 +1376,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/135</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/135</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Rechtswissenschaft</SimpleValue>
@@ -1387,7 +1387,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/136</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/136</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Religionswissenschaft</SimpleValue>
@@ -1398,7 +1398,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/137</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/137</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Romanistik (Roman. Philologie, Einzelsprachen a.n.g.)</SimpleValue>
@@ -1409,7 +1409,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/138</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/138</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Agrarbiologie</SimpleValue>
@@ -1420,7 +1420,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/139</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/139</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Russisch</SimpleValue>
@@ -1431,7 +1431,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/140</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/140</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Angewandte Systemwissenschaften</SimpleValue>
@@ -1442,7 +1442,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/141</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/141</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Abfallwirtschaft</SimpleValue>
@@ -1453,7 +1453,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/142</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/142</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Schiffbau/Schiffstechnik</SimpleValue>
@@ -1464,7 +1464,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/143</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/143</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Augenoptik</SimpleValue>
@@ -1475,7 +1475,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/144</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/144</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Technische Kybernetik</SimpleValue>
@@ -1486,7 +1486,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/145</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/145</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sinologie/Koreanistik</SimpleValue>
@@ -1497,7 +1497,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/146</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/146</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Slawistik (Slaw. Philologie)</SimpleValue>
@@ -1508,7 +1508,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/147</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/147</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sozialkunde</SimpleValue>
@@ -1519,7 +1519,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/148</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/148</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sozialwissenschaft</SimpleValue>
@@ -1530,7 +1530,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/149</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/149</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Soziologie</SimpleValue>
@@ -1541,7 +1541,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/150</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/150</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Spanisch</SimpleValue>
@@ -1552,7 +1552,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/152</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/152</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Allgemeine Sprachwissenschaft/Indogermanistik</SimpleValue>
@@ -1563,7 +1563,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/153</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/153</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Südslawisch (Bulgarisch, Serbokroatisch Slowenisch usw.)</SimpleValue>
@@ -1574,7 +1574,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/154</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/154</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Lernbereich Gesellschaftslehre</SimpleValue>
@@ -1585,7 +1585,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/155</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/155</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Theaterwissenschaft</SimpleValue>
@@ -1596,7 +1596,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/156</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/156</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Tiermedizin/Veterinärmedizin</SimpleValue>
@@ -1607,7 +1607,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/157</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/157</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Mikroelektronik</SimpleValue>
@@ -1618,7 +1618,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/158</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/158</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Turkologie</SimpleValue>
@@ -1629,7 +1629,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/159</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/159</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Edelstein- und Schmuckdesign</SimpleValue>
@@ -1640,7 +1640,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/160</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/160</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Computerlinguistik</SimpleValue>
@@ -1651,7 +1651,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/161</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/161</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Diakoniewissenschaft</SimpleValue>
@@ -1662,7 +1662,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/162</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/162</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Caritaswissenschaft</SimpleValue>
@@ -1673,7 +1673,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/163</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/163</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Rhythmik</SimpleValue>
@@ -1684,7 +1684,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/164</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/164</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Jazz und Popularmusik</SimpleValue>
@@ -1695,7 +1695,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/165</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/165</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Orchestermusik</SimpleValue>
@@ -1706,7 +1706,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/166</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/166</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sportmanagement/Sportökonomie</SimpleValue>
@@ -1717,7 +1717,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/167</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/167</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Europäische Wirtschaft</SimpleValue>
@@ -1728,7 +1728,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/168</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/168</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Justizvollzug</SimpleValue>
@@ -1739,7 +1739,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/169</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/169</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Ethik</SimpleValue>
@@ -1750,7 +1750,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/171</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/171</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Vermessungswesen (Geodäsie)</SimpleValue>
@@ -1761,7 +1761,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/172</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/172</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Verwaltungswissenschaft/-wesen</SimpleValue>
@@ -1772,7 +1772,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/173</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/173</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Ethnologie</SimpleValue>
@@ -1783,7 +1783,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/174</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/174</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Volkskunde</SimpleValue>
@@ -1794,7 +1794,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/175</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/175</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Volkswirtschaftslehre</SimpleValue>
@@ -1805,7 +1805,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/176</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/176</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Werkerziehung</SimpleValue>
@@ -1816,7 +1816,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/177</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/177</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Werkstofftechnik</SimpleValue>
@@ -1827,7 +1827,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/178</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/178</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschafts-/Sozialgeographie</SimpleValue>
@@ -1838,7 +1838,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/179</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/179</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschaftsingenieurwesen mit wirtschaftswissenschaftlichem Schwerpunkt</SimpleValue>
@@ -1849,7 +1849,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/180</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/180</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kaukasistik</SimpleValue>
@@ -1860,7 +1860,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/181</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/181</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschaftspädagogik</SimpleValue>
@@ -1871,7 +1871,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/182</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/182</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Internationale Betriebswirtschaft/Management</SimpleValue>
@@ -1882,7 +1882,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/183</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/183</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschafts-/Sozialgeschichte</SimpleValue>
@@ -1893,7 +1893,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/184</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/184</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschaftswissenschaften</SimpleValue>
@@ -1904,7 +1904,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/185</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/185</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Zahnmedizin</SimpleValue>
@@ -1915,7 +1915,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/186</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/186</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Lernbereich Naturwissenschaften/Sachunterricht</SimpleValue>
@@ -1926,7 +1926,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/187</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/187</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Asiatische Sprachen und Kulturen/Asienwissenschaften</SimpleValue>
@@ -1937,7 +1937,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/188</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/188</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Allgemeine Literaturwissenschaft</SimpleValue>
@@ -1948,7 +1948,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/189</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/189</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Niederdeutsch</SimpleValue>
@@ -1959,7 +1959,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/190</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/190</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sonderpädagogik</SimpleValue>
@@ -1970,7 +1970,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/191</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/191</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Komposition</SimpleValue>
@@ -1981,7 +1981,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/192</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/192</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Dirigieren</SimpleValue>
@@ -1992,7 +1992,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/193</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/193</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kirchenmusik</SimpleValue>
@@ -2003,7 +2003,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/194</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/194</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Tonmeister</SimpleValue>
@@ -2014,7 +2014,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/195</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/195</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Gesundheitspädagogik</SimpleValue>
@@ -2025,7 +2025,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/196</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/196</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Studienkolleg</SimpleValue>
@@ -2036,7 +2036,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/197</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/197</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Holzbau</SimpleValue>
@@ -2047,7 +2047,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/199</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/199</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Lernbereich Technik</SimpleValue>
@@ -2058,7 +2058,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/200</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/200</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Computer- und Kommunikationstechniken</SimpleValue>
@@ -2069,7 +2069,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/201</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/201</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Werken (technisch)/Technologie</SimpleValue>
@@ -2080,7 +2080,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/202</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/202</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Fertigungs-/Produktionstechnik</SimpleValue>
@@ -2091,7 +2091,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/203</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/203</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Industriedesign/Produktgestaltung</SimpleValue>
@@ -2102,7 +2102,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/204</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/204</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Malerei</SimpleValue>
@@ -2113,7 +2113,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/205</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/205</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bildhauerei/Plastik</SimpleValue>
@@ -2124,7 +2124,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/206</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/206</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Polnisch</SimpleValue>
@@ -2135,7 +2135,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/207</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/207</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sorbisch</SimpleValue>
@@ -2146,7 +2146,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/208</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/208</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Soziale Arbeit</SimpleValue>
@@ -2157,7 +2157,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/209</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/209</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Tschechisch</SimpleValue>
@@ -2168,7 +2168,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/210</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/210</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Verkehrswirtschaft</SimpleValue>
@@ -2179,7 +2179,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/211</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/211</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Energietechnik (ohne Elektrotechnik)</SimpleValue>
@@ -2190,7 +2190,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/212</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/212</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Feinwerktechnik</SimpleValue>
@@ -2201,7 +2201,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/213</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/213</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Versorgungstechnik</SimpleValue>
@@ -2212,7 +2212,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/215</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/215</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Gesundheitstechnik</SimpleValue>
@@ -2223,7 +2223,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/216</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/216</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Glastechnik/Keramik</SimpleValue>
@@ -2234,7 +2234,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/219</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/219</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kunststofftechnik</SimpleValue>
@@ -2245,7 +2245,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/220</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/220</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Milch- und Molkereiwirtschaft</SimpleValue>
@@ -2256,7 +2256,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/221</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/221</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bioinformatik</SimpleValue>
@@ -2267,7 +2267,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/222</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/222</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kommunikations- und Informationstechnik</SimpleValue>
@@ -2278,7 +2278,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/223</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/223</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Nautik/Seefahrt</SimpleValue>
@@ -2289,7 +2289,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/224</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/224</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Physikalische Technik</SimpleValue>
@@ -2300,7 +2300,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/225</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/225</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Textil- und Bekleidungstechnik/-gewerbe</SimpleValue>
@@ -2311,7 +2311,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/226</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/226</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Verfahrenstechnik</SimpleValue>
@@ -2322,7 +2322,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/227</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/227</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Weinbau und Kellerwirtschaft</SimpleValue>
@@ -2333,7 +2333,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/230</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/230</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Gesang</SimpleValue>
@@ -2344,7 +2344,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/231</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/231</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Druck- und Reproduktionstechnik</SimpleValue>
@@ -2355,7 +2355,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/232</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/232</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Gesundheitswissenschaft/-management</SimpleValue>
@@ -2366,7 +2366,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/233</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/233</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Nichtärztliche Heilberufe/Therapien</SimpleValue>
@@ -2377,7 +2377,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/234</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/234</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Pflegewissenschaft/-management</SimpleValue>
@@ -2388,7 +2388,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/235</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/235</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Fahrzeugtechnik</SimpleValue>
@@ -2399,7 +2399,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/237</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/237</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Mathematische Statistik/Wahrscheinlichkeitsrechnung</SimpleValue>
@@ -2410,7 +2410,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/241</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/241</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kerntechnik/Kernverfahrenstechnik</SimpleValue>
@@ -2421,7 +2421,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/242</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/242</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Innenarchitektur</SimpleValue>
@@ -2432,7 +2432,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/245</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/245</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sozialpädagogik</SimpleValue>
@@ -2443,7 +2443,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/247</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/247</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Medizinische Informatik</SimpleValue>
@@ -2454,7 +2454,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/253</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/253</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sozialwesen</SimpleValue>
@@ -2465,7 +2465,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/254</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/254</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sachunterricht (einschl. Schulgarten)</SimpleValue>
@@ -2476,7 +2476,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/255</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/255</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Archivwesen</SimpleValue>
@@ -2487,7 +2487,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/256</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/256</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Rechtspflege</SimpleValue>
@@ -2498,7 +2498,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/257</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/257</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Arbeits- und Berufsberatung</SimpleValue>
@@ -2509,7 +2509,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/258</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/258</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Arbeitsverwaltung</SimpleValue>
@@ -2520,7 +2520,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/259</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/259</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Auswärtige Angelegenheiten</SimpleValue>
@@ -2531,7 +2531,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/260</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/260</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bundeswehrverwaltung</SimpleValue>
@@ -2542,7 +2542,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/261</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/261</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Innere Verwaltung</SimpleValue>
@@ -2553,7 +2553,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/262</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/262</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bibliothekswesen</SimpleValue>
@@ -2564,7 +2564,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/263</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/263</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Polizei/Verfassungsschutz</SimpleValue>
@@ -2575,7 +2575,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/264</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/264</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sozialversicherung</SimpleValue>
@@ -2586,7 +2586,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/265</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/265</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bankwesen</SimpleValue>
@@ -2597,7 +2597,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/266</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/266</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Finanzverwaltung</SimpleValue>
@@ -2608,7 +2608,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/268</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/268</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Verkehrswesen</SimpleValue>
@@ -2619,7 +2619,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/269</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/269</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Zoll- und Steuerverwaltung</SimpleValue>
@@ -2630,7 +2630,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/270</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/270</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Berufs- und Wirtschaftspädagogik</SimpleValue>
@@ -2641,7 +2641,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/271</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/271</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Deutsch als Fremdsprache oder als Zweitsprache</SimpleValue>
@@ -2652,7 +2652,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/272</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/272</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Alte Geschichte</SimpleValue>
@@ -2663,7 +2663,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/273</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/273</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Mittlere und neuere Geschichte</SimpleValue>
@@ -2674,7 +2674,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/274</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/274</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Tourismuswirtschaft</SimpleValue>
@@ -2685,7 +2685,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/275</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/275</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Geschichte der Mathematik und Naturwissenschaften</SimpleValue>
@@ -2696,7 +2696,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/276</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/276</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschaftsmathematik</SimpleValue>
@@ -2707,7 +2707,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/277</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/277</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschaftsinformatik</SimpleValue>
@@ -2718,7 +2718,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/280</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/280</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kartographie</SimpleValue>
@@ -2729,7 +2729,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/282</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/282</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Biotechnologie</SimpleValue>
@@ -2740,7 +2740,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/283</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/283</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Biogeographie</SimpleValue>
@@ -2751,7 +2751,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/284</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/284</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Angewandte Sprachwissenschaft</SimpleValue>
@@ -2762,7 +2762,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/286</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/286</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Mikrosystemtechnik</SimpleValue>
@@ -2773,7 +2773,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/287</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/287</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Neue Medien</SimpleValue>
@@ -2784,7 +2784,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/290</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/290</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>ohne Angabe/ungeklärt</SimpleValue>
@@ -2795,7 +2795,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/292</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/292</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Islamische Studien</SimpleValue>
@@ -2806,7 +2806,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/294</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/294</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Materialwissenschaft</SimpleValue>
@@ -2817,7 +2817,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/300</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/300</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Biomedizin</SimpleValue>
@@ -2828,7 +2828,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/302</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/302</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Medienwissenschaft</SimpleValue>
@@ -2839,7 +2839,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/303</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/303</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kommunikationswissenschaft/Publizistik</SimpleValue>
@@ -2850,7 +2850,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/304</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/304</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Medienwirtschaft/Medienmanagement</SimpleValue>
@@ -2861,7 +2861,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/305</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/305</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Medientechnik</SimpleValue>
@@ -2872,7 +2872,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/310</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/310</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Regenerative Energien</SimpleValue>
@@ -2883,7 +2883,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/316</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/316</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Elektrische Energietechnik</SimpleValue>
@@ -2894,7 +2894,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/320</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/320</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Ernährungswissenschaft</SimpleValue>
@@ -2905,7 +2905,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/321</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/321</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Erwachsenenbildung und außerschulische Jugendbildung</SimpleValue>
@@ -2916,7 +2916,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/333</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/333</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Haushaltswissenschaft</SimpleValue>
@@ -2927,7 +2927,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/353</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/353</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Pflanzenproduktion</SimpleValue>
@@ -2938,7 +2938,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/361</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/361</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Schulpädagogik</SimpleValue>
@@ -2949,7 +2949,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/365</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/365</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Pädagogik der frühen Kindheit</SimpleValue>
@@ -2960,7 +2960,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/370</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/370</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschaftsingenieurwesen mit ingenieurwissenschaftlichem Schwerpunkt</SimpleValue>
@@ -2971,7 +2971,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/371</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/371</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Tierproduktion</SimpleValue>
@@ -2982,7 +2982,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/380</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/380</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Mechatronik</SimpleValue>
@@ -2993,7 +2993,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/385</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/385</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Geoökologie</SimpleValue>
@@ -3004,7 +3004,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/390</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/390</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Archäometrie (Ingenieurarchäologie)</SimpleValue>
@@ -3015,7 +3015,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/429</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/429</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Stahlbau</SimpleValue>
@@ -3026,7 +3026,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/457</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/457</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Umwelttechnik (einschl. Recycling)</SimpleValue>
@@ -3037,7 +3037,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/458</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/458</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Umweltschutz</SimpleValue>
@@ -3048,7 +3048,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/464</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/464</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Facility Management</SimpleValue>
@@ -3059,7 +3059,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/544</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/544</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Evang. Religionspädagogik, kirchliche Bildungsarbeit</SimpleValue>
@@ -3070,7 +3070,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/545</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/545</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kath. Religionspädagogik, kirchliche Bildungsarbeit</SimpleValue>
@@ -3081,7 +3081,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/faecherschluessel/548</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/548</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Ur- und Frühgeschichte</SimpleValue>

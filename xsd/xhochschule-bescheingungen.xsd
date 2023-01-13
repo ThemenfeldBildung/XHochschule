@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.93/xsd"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.94/xsd"
            xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd"
-           targetNamespace="http://xhochschule.de/def/xhochschule/0.93/xsd"
-           version="0.93"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.94/xsd"
+           version="0.94"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -16,7 +16,7 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.93</version>
+            <version>0.94</version>
             <versionXOEVProfil>2.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
@@ -73,6 +73,136 @@
                               type="xbd:String.Localized">
                      <xs:annotation>
                         <xs:documentation>Falls beispielsweise die Regelstudienzeit aufgrund der Corona-Pandemie verlängert wurde, sollte diese Information hier angegeben werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="verifikation"
+                              minOccurs="0"
+                              maxOccurs="2"
+                              type="xhs:Verifikation">
+                     <xs:annotation>
+                        <xs:documentation>Zusätzliche Informationen der Bildungseinrichtung zur Verifikation eines Dokuments. Es können bis zu zwei verschiedene Dokumenttypen verifiziert werden. Eine Angabe dient beispielsweise zur Verifikation eines PDF-Dokuments und die andere zur Verifikation einer XML-Datei.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="immatrikulationsbescheinigung">
+      <xs:annotation>
+         <xs:documentation>Eine Bescheinigung, die Angaben enthält, um die Immatrikulation eines Studierenden an einer Hochschule allgemein nachweisen zu können.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="xbd:Dokument">
+               <xs:sequence>
+                  <xs:element name="ausstellendeHochschule" type="xhs:Hochschule">
+                     <xs:annotation>
+                        <xs:documentation>Hochschule, die die Bescheinigung ausstellt nach bundesweit einheitlicher Hochschulbezeichnung.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="studierender">
+                     <xs:annotation>
+                        <xs:documentation>Studierende Person, für die eine Immatrikulationsbescheinigung ausgestellt wird.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:complexContent>
+                           <xs:extension base="xhs:Studierender"/>
+                        </xs:complexContent>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="studienfach"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xhs:Studienfach">
+                     <xs:annotation>
+                        <xs:documentation>Als Studienfach bezeichnet man an Hochschulen den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="lernzeitmodell" minOccurs="0" type="xhs:Code.Lernzeitmodell">
+                     <xs:annotation>
+                        <xs:documentation>Mit Lernzeitmodell sei hier unter anderem die Unterscheidung zwischen Teil- und Vollzeit gemeint.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="studienzeitraum" type="xhs:Studienzeitraum">
+                     <xs:annotation>
+                        <xs:documentation>Bezeichnung des aktuellen Studienzeitraums, sowie dessen Anfangs- und Enddatums</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="einschreibungsstatus" type="xhs:Code.Immatrikulationsstatus">
+                     <xs:annotation>
+                        <xs:documentation>Angabe zum Immatrikulationsstatus des Studierenden</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="beurlaubungsstatus"
+                              minOccurs="0"
+                              type="xhs:Code.Beurlaubungsstatus">
+                     <xs:annotation>
+                        <xs:documentation>Angabe zum Beurlaubungsstatus des Studierenden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="verifikation"
+                              minOccurs="0"
+                              maxOccurs="2"
+                              type="xhs:Verifikation">
+                     <xs:annotation>
+                        <xs:documentation>Zusätzliche Informationen der Bildungseinrichtung zur Verifikation eines Dokuments. Es können bis zu zwei verschiedene Dokumenttypen verifiziert werden. Eine Angabe dient beispielsweise zur Verifikation eines PDF-Dokuments und die andere zur Verifikation einer XML-Datei.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="immatrikulationsbescheinigungBAfoeGP9">
+      <xs:annotation>
+         <xs:documentation>Eine Bescheinigung, die Angaben enthält, um die Immatrikulation eines Studierenden an einer Hochschule nach den Vorgaben von BAföG §9 nachzuweisen.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="xbd:Dokument">
+               <xs:sequence>
+                  <xs:element name="ausstellendeHochschule" type="xhs:Hochschule">
+                     <xs:annotation>
+                        <xs:documentation>Hochschule, die die Bescheinigung ausstellt nach bundesweit einheitlicher Hochschulbezeichnung.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="studierender">
+                     <xs:annotation>
+                        <xs:documentation>Studierende Person, für die eine Immatrikulationsbescheinigung ausgestellt wird.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:complexContent>
+                           <xs:extension base="xhs:Studierender"/>
+                        </xs:complexContent>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="studienfach"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xhs:Studienfach">
+                     <xs:annotation>
+                        <xs:documentation>Als Studienfach bezeichnet man an Hochschulen den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="lernzeitmodell" type="xhs:Code.Lernzeitmodell">
+                     <xs:annotation>
+                        <xs:documentation>Mit Lernzeitmodell sei hier nur die Unterscheidung zwischen Voll- und Teilzeit gemeint. Andere Lernzeitmodelle sind nicht anzugeben.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="studienzeitraum" type="xhs:Studienzeitraum">
+                     <xs:annotation>
+                        <xs:documentation>Bezeichnung des aktuellen Studienzeitraums, sowie dessen Anfangs- und Enddatums</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="einschreibungsstatus" type="xhs:Code.Immatrikulationsstatus">
+                     <xs:annotation>
+                        <xs:documentation>Angabe zum Immatrikulationsstatus des Studierenden</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="beurlaubungsstatus" type="xhs:Code.Beurlaubungsstatus">
+                     <xs:annotation>
+                        <xs:documentation>Angabe zum Beurlaubungsstatus des Studierenden.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="verifikation"

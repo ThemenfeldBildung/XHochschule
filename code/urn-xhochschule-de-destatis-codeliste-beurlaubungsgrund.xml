@@ -7,16 +7,16 @@
          <xoev-cl-4:shortName>Beurlaubungsgrund</xoev-cl-4:shortName>
          <xoev-cl-4:codelistDescription>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie werden in XHochschule maschinenverbeitbar bereitgestellt, um die möglichen Gründe für eine Beurlaubung anhand von eindeutigen Schlüsseln identifizieren zu können.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>DESTATIS</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:validFrom>2021-06-14</xoev-cl-4:validFrom>
+         <xoev-cl-4:validFrom>2022-06-14</xoev-cl-4:validFrom>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Beurlaubungsgrund-Codes</ShortName>
       <LongName>Grund für die Beurlaubung nach DESTATIS Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik  2020</LongName>
-      <Version>WS21</Version>
+      <Version>WS22</Version>
       <CanonicalUri>urn:xhochschule-de:destatis:codeliste:beurlaubungsgrund</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:destatis:codeliste:beurlaubungsgrund_WS21</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:destatis:codeliste:beurlaubungsgrund_WS22</CanonicalVersionUri>
       <Agency>
          <LongName>Statistisches Bundesamt</LongName>
       </Agency>
@@ -42,7 +42,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/beurlaubungsgrund/1</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/beurlaubungsgrund/1</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Krankheit</SimpleValue>
@@ -50,7 +50,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/beurlaubungsgrund/2</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/beurlaubungsgrund/2</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Vorbereitung auf eine Prüfung</SimpleValue>
@@ -58,7 +58,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/beurlaubungsgrund/3</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/beurlaubungsgrund/3</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Praktikum im Inland</SimpleValue>
@@ -66,7 +66,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/beurlaubungsgrund/4</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/beurlaubungsgrund/4</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Auslandsaufenthalt (einschl. Praktikum im Ausland)</SimpleValue>
@@ -74,7 +74,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/beurlaubungsgrund/5</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/beurlaubungsgrund/5</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Freiwilligendienst</SimpleValue>
@@ -82,7 +82,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/beurlaubungsgrund/6</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/beurlaubungsgrund/6</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Werkarbeit</SimpleValue>
@@ -90,7 +90,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/beurlaubungsgrund/7</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/beurlaubungsgrund/7</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Mutterschutz (Schwangerschaft), Elternzeit, familiäre Pflege</SimpleValue>
@@ -98,7 +98,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/destatis/WS21/code/beurlaubungsgrund/9</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/destatis/WS22/code/beurlaubungsgrund/9</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sonstige Gründe</SimpleValue>

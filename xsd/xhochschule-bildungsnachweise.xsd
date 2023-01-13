@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.93/xsd"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.94/xsd"
            xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd"
            xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-           targetNamespace="http://xhochschule.de/def/xhochschule/0.93/xsd"
-           version="0.93"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.94/xsd"
+           version="0.94"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -17,7 +17,7 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.93</version>
+            <version>0.94</version>
             <versionXOEVProfil>2.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
