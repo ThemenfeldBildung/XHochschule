@@ -2,8 +2,8 @@
 name: Rückmeldung zu der aktuellen Version
 about: Beteiligungsverfahren von XHochschule
 title: ''
-labels: ''
-assignees: XHochschuleDE
+labels: 2. Pilotierung 2023, Open
+assignees: XHochschuleDE, init-xhochschule
 
 ---
 
