@@ -1,5 +1,5 @@
 ---
-name: issue-template-pilotierung-alternative-deutsch
+name: Alternative Rückmeldung zur 2. Pilotierung
 about: 2.Pilotierung 01/23 bis 03/23
 title: "[Name Ihrer Organisation]: Rückmeldung zur 2. Pilotierung"
 labels: 2. Pilotierung 2023, Open
