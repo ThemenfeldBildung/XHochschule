@@ -10,12 +10,14 @@ assignees: init-xhochschule
 **Autor:** [bitte angeben]
 **Art der Organisation:** [CaMS-Hersteller / Hochschule / andere]
 
+<!-- Text in eckigen Klammern markiert die Textfelder, in die Sie schreiben können. Bitte ersetzen Sie die Felder in eckigen Klammern mit Ihren Rückmeldungen -->
+<!-- Die Pfeile und Ausrufzeichen kennzeichnen einen Kommentar, der Inhalt der Kommentars wird in dem fertigen Issue nicht angezeigt -->
+
 **Kurzbeschreibung Ihrer Pilotierungserfahrung:**
 ------------------------
-<!-- Beschreiben Sie bitte kurz: wie haben Sie das Einlesen / Ausstellen von XHS-Dokumenten technisch umgesetzt?   
-     Was waren dabei ggf. die Herausforderungen?
--->
-_[Ihre Kurzbeschreibung]_
+<!-- Beschreiben Sie bitte kurz: wie haben Sie das Einlesen / Ausstellen von XHS-Dokumenten technisch umgesetzt?   Was waren dabei ggf. die Herausforderungen?-->
+
+[Ihre Kurzbeschreibung]
 
 **Feedback zu 5.1. Einlesen von XHS-Dokumenten (Positiv-Testdateien)**
 ----------------------------------------------------
@@ -26,9 +28,9 @@ Bitte geben Sie uns Rückmeldung in den folgenden Fällen:
     - Feld nicht auslesbar, da Daten nicht im CAMS abgebildet werden können
     - Abweichende Granularität der Daten zwischen CAMS und XHS-Dokument 
     - Konflikte mit Kardinalität, Datentyp, etc. 
-    - Vorschlag für ein weiteres Pflichtfeld, das aus Ihrer Sicht in dem entsprechenden XHS-Dokumente enthalten sein muss, aber bisher noch nicht ist 
+    - Vorschlag für ein weiteres Pflichtfeld, das aus Ihrer Sicht in dem entsprechenden XHS-Dokument enthalten sein muss, aber bisher noch nicht ist 
     - Sonderfall, bei dem das Einlesen der Testdatei nicht ohne Weiteres funktioniert hat (betrifft insb. T07_Exma_sonderfaelle_positiv.xml) 
-    - 
+  
 
 Beispiele für Ihre Rückmeldung zum Einlesen von Positiv-Testdateien könnten so aussehen:  
 Testdatei: T01_Exma_min_positiv.xml
@@ -36,10 +38,12 @@ Testdatei: T01_Exma_min_positiv.xml
 - Datentyp des Elements X kann in unser CaMS nicht eingelesen werden, wir benutzen einen anderen Datentyp Y, der nicht kompatibel ist.
 - etc.
 
-- Testdatei: T02_SVB_min_positiv.xml
+-
+Testdatei: T02_SVB_min_positiv.xml
 - ...
 -->
-_[Ihr Feedback zum Einlesen der Positiv-Testdateien]_
+
+[Ihr Feedback zum Einlesen der Positiv-Testdateien]
 
 **Feedback zu 5.1. Einlesen von XHS-Dokumenten (Negativ-Testdateien)**
 ----------------------------------------------------
@@ -53,7 +57,8 @@ Beispiele für Ihre Rückmeldung zum Einlesen von Negativ-Testdateien könnten s
 - Der Fehler in der Testdatei wurde nicht erkannt. 
 ...
 -->
-_[Ihr Feedback zum Einlesen der Negativ-Testdateien]_
+
+[Ihr Feedback zum Einlesen der Negativ-Testdateien]
 
 **Feedback zu 5.2. Ausstellen von XHS-Dokumenten (Generierung von XHS-Dokumenten)**
 ----------------------------------------------------
@@ -63,19 +68,17 @@ Dokumentieren Sie bitte, welche Herausforderungen oder Besonderheiten es ggf. be
 - Bei welchen im CaMS enthaltenen Werten, z.B. in Codelisten, gab es keine vordefinierten Entsprechungen in XHS-Codelisten?
   (z.B. Waren im System erfasste Staaten abbildbar auf XHS?)
 -->
-_[Ihr Feedback zur Generierung von XHS-Dokumenten]_
 
-**Feedback zu 5.2. Ausstellen von XHS-Dokumenten (Validierung der generierten XHS-Dokumenten)**
+[Ihr Feedback zur Generierung von XHS-Dokumenten]
+
+**Feedback zu 5.2. Ausstellen von XHS-Dokumenten (Validierung der generierten XHS-Dokumente)**
 ----------------------------------------------------
+<!--  Dokumentieren Sie ggf. Fehler und Probleme bei der Validierung der generierten XHS-Dokumente (z.B. Pflichtfeld nicht in CaMS verfügbar). -->
 
-<!-- 
-Dokumentieren Sie ggf. Fehler und Probleme bei der Validierung der generierten XHS-Dokumente (z.B. Pflichtfeld nicht in CaMS verfügbar). 
--->
-_[Ihre Erfahrungen bei der Validierung]_
+[Ihre Erfahrungen bei der Validierung]
 
-**Upload zu 5.2. Ausgestellte XHS-Dokumenten hochladen**
+**Upload zu 5.2. Ausgestellte XHS-Dokumente hochladen**
 ----------------------------------------------------
-<!-- 
-Bitte laden Sie Ihre ausgestellten XHS-Dokumente in einem ZIP-Archiv als Anhang zu diesem Issue hoch.
--->
-_[Aufzählung der von Ihnen hochgeladenen Dateien]_
+<!--Bitte laden Sie Ihre ausgestellten XHS-Dokumente in einem ZIP-Archiv als Anhang zu diesem Issue hoch.-->
+
+[Aufzählung der von Ihnen hochgeladenen Dateien]
