@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><!ENTITY datentyp.ref.code.anerkanntoderangerechnet '<emphasis role="codebf">Code.AnerkanntOderAngerechnet</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.anerkanntoderangerechnet '<link linkend="XHochschule.Baukasten.Codes.Code.AnerkanntOderAngerechnet">Code.AnerkanntOderAngerechnet</link>'>
+                    <!ENTITY datentyp.ref.xref.code.anerkanntoderangerechnet '<xref linkend="XHochschule.Baukasten.Codes.Code.AnerkanntOderAngerechnet" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.beurlaubungsgrund '<emphasis role="codebf">Code.Beurlaubungsgrund</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.beurlaubungsgrund '<link linkend="XHochschule.Baukasten.Codes.Code.Beurlaubungsgrund">Code.Beurlaubungsgrund</link>'>
+                    <!ENTITY datentyp.ref.xref.code.beurlaubungsgrund '<xref linkend="XHochschule.Baukasten.Codes.Code.Beurlaubungsgrund" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.beurlaubungsstatus '<emphasis role="codebf">Code.Beurlaubungsstatus</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.beurlaubungsstatus '<link linkend="XHochschule.Baukasten.Codes.Code.Beurlaubungsstatus">Code.Beurlaubungsstatus</link>'>
+                    <!ENTITY datentyp.ref.xref.code.beurlaubungsstatus '<xref linkend="XHochschule.Baukasten.Codes.Code.Beurlaubungsstatus" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.hochschulsignatur '<emphasis role="codebf">Code.Hochschulsignatur</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.hochschulsignatur '<link linkend="XHochschule.Baukasten.Codes.Code.Hochschulsignatur">Code.Hochschulsignatur</link>'>
+                    <!ENTITY datentyp.ref.xref.code.hochschulsignatur '<xref linkend="XHochschule.Baukasten.Codes.Code.Hochschulsignatur" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.immatrikulationsstatus '<emphasis role="codebf">Code.Immatrikulationsstatus</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.immatrikulationsstatus '<link linkend="XHochschule.Baukasten.Codes.Code.Immatrikulationsstatus">Code.Immatrikulationsstatus</link>'>
+                    <!ENTITY datentyp.ref.xref.code.immatrikulationsstatus '<xref linkend="XHochschule.Baukasten.Codes.Code.Immatrikulationsstatus" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.lateinischeehrenbezeichnung '<emphasis role="codebf">Code.LateinischeEhrenbezeichnung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.lateinischeehrenbezeichnung '<link linkend="XHochschule.Baukasten.Codes.Code.LateinischeEhrenbezeichnung">Code.LateinischeEhrenbezeichnung</link>'>
+                    <!ENTITY datentyp.ref.xref.code.lateinischeehrenbezeichnung '<xref linkend="XHochschule.Baukasten.Codes.Code.LateinischeEhrenbezeichnung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.leistungsart '<emphasis role="codebf">Code.Leistungsart</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.leistungsart '<link linkend="XHochschule.Baukasten.Codes.Code.Leistungsart">Code.Leistungsart</link>'>
+                    <!ENTITY datentyp.ref.xref.code.leistungsart '<xref linkend="XHochschule.Baukasten.Codes.Code.Leistungsart" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.leistungsbenotungsstatus '<emphasis role="codebf">Code.Leistungsbenotungsstatus</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.leistungsbenotungsstatus '<link linkend="XHochschule.Baukasten.Codes.Code.Leistungsbenotungsstatus">Code.Leistungsbenotungsstatus</link>'>
+                    <!ENTITY datentyp.ref.xref.code.leistungsbenotungsstatus '<xref linkend="XHochschule.Baukasten.Codes.Code.Leistungsbenotungsstatus" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.leistungsstatus '<emphasis role="codebf">Code.Leistungsstatus</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.leistungsstatus '<link linkend="XHochschule.Baukasten.Codes.Code.Leistungsstatus">Code.Leistungsstatus</link>'>
+                    <!ENTITY datentyp.ref.xref.code.leistungsstatus '<xref linkend="XHochschule.Baukasten.Codes.Code.Leistungsstatus" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.lernzeitmodell '<emphasis role="codebf">Code.Lernzeitmodell</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.lernzeitmodell '<link linkend="XHochschule.Baukasten.Codes.Code.Lernzeitmodell">Code.Lernzeitmodell</link>'>
+                    <!ENTITY datentyp.ref.xref.code.lernzeitmodell '<xref linkend="XHochschule.Baukasten.Codes.Code.Lernzeitmodell" role="AS"/>'>
+                    <!ENTITY datentyp.ref.externerbrachteleistung '<emphasis role="codebf">ExternErbrachteLeistung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.externerbrachteleistung '<link linkend="XHochschule.Baukasten.ExternErbrachteLeistung">ExternErbrachteLeistung</link>'>
+                    <!ENTITY datentyp.ref.xref.externerbrachteleistung '<xref linkend="XHochschule.Baukasten.ExternErbrachteLeistung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.hochschule '<emphasis role="codebf">Hochschule</emphasis>'>
+                    <!ENTITY datentyp.ref.link.hochschule '<link linkend="XHochschule.Baukasten.Hochschule">Hochschule</link>'>
+                    <!ENTITY datentyp.ref.xref.hochschule '<xref linkend="XHochschule.Baukasten.Hochschule" role="AS"/>'>
+                    <!ENTITY datentyp.ref.leistung '<emphasis role="codebf">Leistung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.leistung '<link linkend="XHochschule.Baukasten.Leistung">Leistung</link>'>
+                    <!ENTITY datentyp.ref.xref.leistung '<xref linkend="XHochschule.Baukasten.Leistung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.leistungsbeschreibung '<emphasis role="codebf">Leistungsbeschreibung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.leistungsbeschreibung '<link linkend="XHochschule.Baukasten.Leistungsbeschreibung">Leistungsbeschreibung</link>'>
+                    <!ENTITY datentyp.ref.xref.leistungsbeschreibung '<xref linkend="XHochschule.Baukasten.Leistungsbeschreibung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.modulbeschreibungnachkmk '<emphasis role="codebf">ModulbeschreibungNachKMK</emphasis>'>
+                    <!ENTITY datentyp.ref.link.modulbeschreibungnachkmk '<link linkend="XHochschule.Baukasten.ModulbeschreibungNachKMK">ModulbeschreibungNachKMK</link>'>
+                    <!ENTITY datentyp.ref.xref.modulbeschreibungnachkmk '<xref linkend="XHochschule.Baukasten.ModulbeschreibungNachKMK" role="AS"/>'>
+                    <!ENTITY datentyp.ref.notenspiegel '<emphasis role="codebf">Notenspiegel</emphasis>'>
+                    <!ENTITY datentyp.ref.link.notenspiegel '<link linkend="XHochschule.Baukasten.Notenspiegel">Notenspiegel</link>'>
+                    <!ENTITY datentyp.ref.xref.notenspiegel '<xref linkend="XHochschule.Baukasten.Notenspiegel" role="AS"/>'>
+                    <!ENTITY datentyp.ref.studienabschnittaufzaehlung '<emphasis role="codebf">StudienabschnittAufzaehlung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.studienabschnittaufzaehlung '<link linkend="XHochschule.Baukasten.StudienabschnittAufzaehlung">StudienabschnittAufzaehlung</link>'>
+                    <!ENTITY datentyp.ref.xref.studienabschnittaufzaehlung '<xref linkend="XHochschule.Baukasten.StudienabschnittAufzaehlung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.studienabschnittaufzaehlungoderzusammenfassung '<emphasis role="codebf">StudienabschnittAufzaehlungOderZusammenfassung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.studienabschnittaufzaehlungoderzusammenfassung '<link linkend="XHochschule.Baukasten.StudienabschnittAufzaehlungOderZusammenfassung">StudienabschnittAufzaehlungOderZusammenfassung</link>'>
+                    <!ENTITY datentyp.ref.xref.studienabschnittaufzaehlungoderzusammenfassung '<xref linkend="XHochschule.Baukasten.StudienabschnittAufzaehlungOderZusammenfassung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.studienabschnittzusammenfassung '<emphasis role="codebf">StudienabschnittZusammenfassung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.studienabschnittzusammenfassung '<link linkend="XHochschule.Baukasten.StudienabschnittZusammenfassung">StudienabschnittZusammenfassung</link>'>
+                    <!ENTITY datentyp.ref.xref.studienabschnittzusammenfassung '<xref linkend="XHochschule.Baukasten.StudienabschnittZusammenfassung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.studienfach '<emphasis role="codebf">Studienfach</emphasis>'>
+                    <!ENTITY datentyp.ref.link.studienfach '<link linkend="XHochschule.Baukasten.Studienfach">Studienfach</link>'>
+                    <!ENTITY datentyp.ref.xref.studienfach '<xref linkend="XHochschule.Baukasten.Studienfach" role="AS"/>'>
+                    <!ENTITY datentyp.ref.studienzeitraum '<emphasis role="codebf">Studienzeitraum</emphasis>'>
+                    <!ENTITY datentyp.ref.link.studienzeitraum '<link linkend="XHochschule.Baukasten.Studienzeitraum">Studienzeitraum</link>'>
+                    <!ENTITY datentyp.ref.xref.studienzeitraum '<xref linkend="XHochschule.Baukasten.Studienzeitraum" role="AS"/>'>
+                    <!ENTITY datentyp.ref.studierender '<emphasis role="codebf">Studierender</emphasis>'>
+                    <!ENTITY datentyp.ref.link.studierender '<link linkend="XHochschule.Baukasten.Studierender">Studierender</link>'>
+                    <!ENTITY datentyp.ref.xref.studierender '<xref linkend="XHochschule.Baukasten.Studierender" role="AS"/>'>
+                    <!ENTITY datentyp.ref.verifikation '<emphasis role="codebf">Verifikation</emphasis>'>
+                    <!ENTITY datentyp.ref.link.verifikation '<link linkend="XHochschule.Baukasten.Verifikation">Verifikation</link>'>
+                    <!ENTITY datentyp.ref.xref.verifikation '<xref linkend="XHochschule.Baukasten.Verifikation" role="AS"/>'>
+                    

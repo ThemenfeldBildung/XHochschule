@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<chapter version="5" xml:id="spezifikation.dokumenteFuerDenDatenaustausch" xml:lang="de" xmlns="http://docbook.org/ns/docbook">
+    <info>
+        <title>Dokumente für den Datenaustausch</title>
+    </info>
+    <include href="bescheinigungen.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="bildungsnachweise.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <!--<include href="../sdgevidences/sdgevidences.xml" xmlns="http://www.w3.org/2001/XInclude" />-->
+</chapter>

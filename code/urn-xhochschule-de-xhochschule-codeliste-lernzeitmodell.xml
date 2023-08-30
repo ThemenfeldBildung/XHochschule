@@ -7,17 +7,15 @@
          <xoev-cl-4:shortName>Lernzeitmodell</xoev-cl-4:shortName>
          <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen von Lernzeitmodellen.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XHS</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Mit Lernzeitmodell sei hier die Unterscheidung zwischen Voll- und Teilzeit gemeint.</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2021-09-06</xoev-cl-4:validFrom>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Lernzeitmodell-Codes</ShortName>
       <LongName>Lernzeitmodell</LongName>
-      <Version>0.94</Version>
+      <Version>0.95</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell_0.94</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell_0.95</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -51,7 +49,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.94/code/lernzeitmodell/dual-ausbildungsintegriert</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/dual-ausbildungsintegriert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Dual (ausbildungsintegriert)</SimpleValue>
@@ -62,7 +60,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.94/code/lernzeitmodell/dual-praxisintegriert</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/dual-praxisintegriert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Dual (praxisintegriert)</SimpleValue>
@@ -73,7 +71,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.94/code/lernzeitmodell/teilzeit</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/teilzeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Teilzeit</SimpleValue>
@@ -84,7 +82,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.94/code/lernzeitmodell/vollzeit</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/vollzeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Vollzeit</SimpleValue>
@@ -92,6 +90,24 @@
          <Value ColumnRef="mapping-Europass">
             <SimpleValue>http://data.europa.eu/snb/learning-schedule/72a0ab92fa</SimpleValue>
          </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/~wert_nicht_bekannt</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht bekannt</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-Europass"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/~wert_nicht_in_liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-Europass"/>
       </Row>
    </SimpleCodeList>
 </gc:CodeList>

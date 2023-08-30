@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Transcript of Records nach XHochschule Version 0.95. Nichtnormative Beispielinstanz für ein  
+    Transcript of Records. Dieses wird (z.B.) für einen Studienplatzwechsel benötigt oder einem Hochschulabchlusszeugnis beigelegt.
+    Version: XHochschule 0.95 
+    Letzte Aktualisierung: 29.08.2023
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt"
+--> 
+    
+<xhs:transcriptOfRecords xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
+ xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
+ xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+ xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+ xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+ xmlns:xhs="http://xhochschule.de/def/xhochschule/0.95/xsd"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.95/xsd file:/C:/Code/ozg-xhsj/Spezifikation/build/xsd/xhochschule.xsd">
+    <!-- Allgemeine Eigenschaften des Dokuments. -->
+    <xbd:titel>Transcript of Records</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2022-06-15</xbd:datum>
+        <xbd:ort>Musterstadt</xbd:ort>
+    </xbd:ausstellung>
+    <!-- Das Element ausstellung kann mehrfach verwendet werden, z. B. falls das Dokument erneut ausgestellt werden muss. -->
+    <xbd:gueltigkeitszeitraum>
+        <xbd:beginn>2022-06-15</xbd:beginn>
+    </xbd:gueltigkeitszeitraum>
+    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20230614-0">
+        <code xmlns="">https://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+    
+    <!-- Angaben zur studierenden Person -->
+    <xhs:studierender>
+        <xbd:nameNatuerlichePerson>
+            <xbd:familienname>
+                <xbd:name>Musterfrau</xbd:name>
+            </xbd:familienname>
+            <xbd:vorname>
+                <xbd:name>Amélie</xbd:name>
+            </xbd:vorname>
+        </xbd:nameNatuerlichePerson>
+        <xbd:geburt>
+            <xbd:datum>
+                <xbd:jahrMonatTag>1995-04-16</xbd:jahrMonatTag>
+            </xbd:datum>
+            <xbd:geburtsort>
+                <xbd:ort>Oléans</xbd:ort>
+                <xbd:staat listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit" listVersionID="listVersionID9">
+                    <code>FR</code>
+                    <name>Frankreich</name>
+                </xbd:staat>
+            </xbd:geburtsort>
+        </xbd:geburt>
+        
+        <!-- Optionale und/oder zukünftige Identifikationsarten der studierenden Person -->
+        <xbd:identifikationsnummer>
+            <xbd:id>66666666</xbd:id>
+            <xbd:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuerID)</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>1995-04-16</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>
+        <xbd:identifikationsnummer>
+            <xbd:id>99-999-999-999</xbd:id>
+            <xbd:beschreibung>OZG-Landeskonto-ID der studierenden Person</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2006-05-04</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikationsnummer>
+        
+        <!-- Matrikelnummer der studierenden Person -->
+        <xhs:matrikelnummer>
+            <xbd:id>666666</xbd:id>
+            <xbd:beschreibung>Matrikelnummer</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2015-10-01</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xhs:matrikelnummer>
+        <xhs:ersteinschreibung>2015-10-01</xhs:ersteinschreibung>
+        <xhs:hochschulsemester>13</xhs:hochschulsemester>
+        <xhs:urlaubssemester>1</xhs:urlaubssemester>
+    </xhs:studierender>
+    
+    <!-- Angaben zur ausstellenden Hochschule -->
+    <xhs:ausstellendeHochschule>
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID33">
+            <!-- Hier den DESTATIS-Code der ausstellenden Hochschule eintragen -->
+            <code>Code X</code>
+        </xhs:hochschulsignatur>
+        <xhs:name xml:lang="de-DE">Technische Universität Musterstadt</xhs:name>
+    </xhs:ausstellendeHochschule>
+    
+    <!-- Angaben zu den Studienfächern.
+    Als oberste Klasse ist Leistung anzuwenden, wobei der Wert der Codeliste Leistungsart auf Studiengang oder Studienfach gesetzt wird.
+    Leistung kann sich unter dem Namen "teilleistung" selbst als Kind enthalten und so oft in sich selbst geschachtelt werden, bis die
+    Organisationsstruktur des Studienfachs abgebildet ist.
+    Beispielhaft ist hier im Studienfach Physik das Modul Experimentalphysik 2 mit den Teilleistungen Vorlesung, Praktikum, Übung und 
+    Abschlussprüfung abgebildet.-->
+    <xhs:leistung>
+        <xhs:bezeichnung xml:lang="de-DE">Physik</xhs:bezeichnung>
+        <xhs:angestrebterAbschluss xml:lang="de-DE">Bachelor of Science</xhs:angestrebterAbschluss>
+        <xhs:fachsemester>2</xhs:fachsemester>
+        <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
+            <code>645</code>
+        </xhs:schluesselISCED2011>
+        <xhs:schluesselISCEDF2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
+            <code>0610</code>
+        </xhs:schluesselISCEDF2013>
+        <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
+            <code>6</code>
+        </xhs:schluesselEQF>
+        <xhs:leistungsart listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart" listVersionID="0.95">
+            <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/studienfach</code>
+        </xhs:leistungsart>
+        <!--        <xhs:leistungsartFreitext xml:lang="en-US">leistungsartFreitext0</xhs:leistungsartFreitext>
+        Nur anzugeben, wenn der Wert der Codeloste leistungsart '~wert-nicht-liste' ist.-->
+        <xhs:id>
+            <xbd:id>Physik_BPO2021</xbd:id>
+        </xhs:id>
+        <xhs:beschreibung>
+            <xhs:beschreibung xml:lang="de-DE">Der 6-semestrige Bachelorstudiengang vermittelt die Grundlagen der experimentellen und der theoretischen Physik auf der Basis einer soliden mathematischen Ausbildung.</xhs:beschreibung>
+        </xhs:beschreibung>
+        <xhs:leistungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus" listVersionID="0.95">
+            <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/~wert_nicht_in_liste</code>
+        </xhs:leistungsstatus>
+        <xhs:leistungsstatusFreitext xml:lang="de-DE">Das Studienfach ist noch nicht abgeschlossen.</xhs:leistungsstatusFreitext>
+        <xhs:erforderlicheLeistungspunkteECTS>180</xhs:erforderlicheLeistungspunkteECTS>
+        <xhs:erbrachteLeistungspunkteECTS>20</xhs:erbrachteLeistungspunkteECTS>
+        <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20230614-0">
+            <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+        </xhs:sprache>
+        <xhs:unbedenklichkeitsvermerk xml:lang="de-DE">Die Studierende hat den Prüfungsanspruch im Fach Physik nicht endgültig verloren. </xhs:unbedenklichkeitsvermerk>
+        <xhs:teilleistung>
+            <xhs:bezeichnung xml:lang="de-DE">Experimentalphysik 2</xhs:bezeichnung>
+            <xhs:leistungsart listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart" listVersionID="0.95">
+                <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/modul</code>
+            </xhs:leistungsart>
+            <xhs:id>
+                <xbd:id>BP2102</xbd:id>
+            </xhs:id>
+            <xhs:beschreibung>
+                <xhs:beschreibung xml:lang="de-DE">Nach erfolgreichem Absolvieren des Moduls sind die Studierenden mit physikalischen Zusammenhängen und ihrer Anwendung im Experiment vertraut.
+                    Sie sollten die grundlegenden Begriffe und Methoden der Elektrostatik und -dynamik anwenden, einfache Feldverteilungen modellieren und mit den erlernten mathematischen Techniken behandeln können,
+                    die Grundlagen der guten wissenschaftlichen Praxis anwenden und im Team experimentelle Aufgaben lösen können.</xhs:beschreibung>
+                <xhs:umfangInSWS>6</xhs:umfangInSWS>
+                <xhs:weitereInformationen>https://physik.tu-musterstadt.de/studium/exphysik2/</xhs:weitereInformationen>
+            </xhs:beschreibung>
+            <xhs:leistungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus" listVersionID="0.95">
+                <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/bestanden</code>
+            </xhs:leistungsstatus>
+            <xhs:leistungsbenotungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus" listVersionID="0.95">
+                <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsbenotungsstatus/benotet</code>
+            </xhs:leistungsbenotungsstatus>
+            <xhs:note>
+                <xbd:note>2,3</xbd:note>
+                <xbd:wortbezeichnung xml:lang="de-DE">gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://physik.tu-musterstadt.de/studium/bewertungsschema</xbd:schemaURI>
+                    <xbd:beschreibung xml:lang="de-DE">Bewertungsschema für grundständige Studiengänge</xbd:beschreibung>
+                    <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                    <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                    <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
+                </xbd:bewertungsschemaNote>
+            </xhs:note>
+            <xhs:erforderlicheLeistungspunkteECTS>6</xhs:erforderlicheLeistungspunkteECTS>
+            <xhs:erbrachteLeistungspunkteECTS>6</xhs:erbrachteLeistungspunkteECTS>
+            <xhs:absolvierteVersuche>2</xhs:absolvierteVersuche>
+            <xhs:datumDerLeistungserbringung>2017-07-13</xhs:datumDerLeistungserbringung>
+            <xhs:semesterDerLeistungserbringung xml:lang="de-DE">Sommersemester 2017</xhs:semesterDerLeistungserbringung>
+            <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20230614-0">
+                <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+            </xhs:sprache>
+            <xhs:teilleistung>
+                <xhs:bezeichnung xml:lang="de-DE">Vorlesung Experimentalphysik 2</xhs:bezeichnung>
+                <xhs:leistungsart listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart" listVersionID="0.95">
+                    <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/vorlesung</code>
+                </xhs:leistungsart>
+                <xhs:id>
+                    <xbd:id>BP2102VL</xbd:id>
+                </xhs:id>
+                <xhs:beschreibung>
+                    <xhs:beschreibung xml:lang="de-DE">Teilnahme an mindestens der Hälfte der Vorlesungsermine.</xhs:beschreibung>
+                    <xhs:umfangInSWS>2</xhs:umfangInSWS>
+                    <xhs:weitereInformationen>https://physik.tu-musterstadt.de/studium/exphysik2</xhs:weitereInformationen>
+                </xhs:beschreibung>
+            </xhs:teilleistung>
+            <xhs:teilleistung>
+                <xhs:bezeichnung xml:lang="de-DE">Vorlesungsbegleitendes Praktikum zur Experimentalphysik 2</xhs:bezeichnung>
+                <xhs:leistungsart listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart" listVersionID="0.95">
+                    <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/praktikum</code>
+                </xhs:leistungsart>
+                <xhs:id>
+                    <xbd:id>BP2102PR</xbd:id>
+                </xhs:id>
+                <xhs:beschreibung>
+                    <xhs:beschreibung xml:lang="de-DE">Praktische Anwendung der Vorlesungsinhalte.</xhs:beschreibung>
+                    <xhs:umfangInSWS>2</xhs:umfangInSWS>
+                    <xhs:weitereInformationen>https://physik.tu-musterstadt.de/studium/exphysik2</xhs:weitereInformationen>
+                </xhs:beschreibung>
+                <xhs:leistungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus" listVersionID="0.95">
+                    <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/bestanden</code>
+                </xhs:leistungsstatus>
+                <xhs:leistungsbenotungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus" listVersionID="0.95">
+                    <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsbenotungsstatus/benotet</code>
+                </xhs:leistungsbenotungsstatus>
+                <xhs:note>
+                    <xbd:note>1,7</xbd:note>
+                    <xbd:wortbezeichnung xml:lang="de-DE">gut</xbd:wortbezeichnung>
+                </xhs:note>
+                <xhs:erforderlicheLeistungspunkteECTS>2</xhs:erforderlicheLeistungspunkteECTS>
+                <xhs:erbrachteLeistungspunkteECTS>2</xhs:erbrachteLeistungspunkteECTS>
+                <xhs:absolvierteVersuche>2</xhs:absolvierteVersuche>
+                <xhs:datumDerLeistungserbringung>2017-06-15</xhs:datumDerLeistungserbringung>
+                <xhs:semesterDerLeistungserbringung xml:lang="de-DE">Sommersemester 2017</xhs:semesterDerLeistungserbringung>
+                <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20230614-0">
+                    <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+                </xhs:sprache>
+            </xhs:teilleistung>
+            <xhs:teilleistung>
+                <xhs:bezeichnung xml:lang="de-DE">Übung zur Vorlesung Experimentalphysik 2</xhs:bezeichnung>
+                <xhs:leistungsart listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart" listVersionID="0.95">
+                    <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/~wert_nicht_in_liste</code>
+                </xhs:leistungsart>
+                <xhs:leistungsartFreitext xml:lang="de-DE">Übungstermine und Hausaufgaben.</xhs:leistungsartFreitext>
+                <xhs:id>
+                    <xbd:id>BP2102UE</xbd:id>
+                </xhs:id>
+                <xhs:beschreibung>
+                    <xhs:beschreibung xml:lang="de-DE">Erlangen der Zulassung zur Teilnahme an der Klausur: Mindestens 50 % der in den Hausaufgaben zu erreichenden Punkte
+                        sowie Anwesenheit bei mindestens der Hälfte der Übungstermine. </xhs:beschreibung>
+                    <xhs:umfangInSWS>2</xhs:umfangInSWS>
+                    <xhs:weitereInformationen>http://physik.tu-musterstadt.de/studium/exphysik2</xhs:weitereInformationen>
+                </xhs:beschreibung>
+                <xhs:leistungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus" listVersionID="0.95">
+                    <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/bestanden</code>
+                </xhs:leistungsstatus>
+                <xhs:leistungsbenotungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus" listVersionID="0.95">
+                    <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsbenotungsstatus/unbenotet</code>
+                </xhs:leistungsbenotungsstatus>
+                <xhs:erforderlicheLeistungspunkteECTS>2</xhs:erforderlicheLeistungspunkteECTS>
+                <xhs:erbrachteLeistungspunkteECTS>2</xhs:erbrachteLeistungspunkteECTS>
+                <xhs:absolvierteVersuche>2</xhs:absolvierteVersuche>
+                <xhs:datumDerLeistungserbringung>2017-06-15</xhs:datumDerLeistungserbringung>
+                <xhs:semesterDerLeistungserbringung xml:lang="de-DE">Sommersemester 2017</xhs:semesterDerLeistungserbringung>
+                <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20230614-0">
+                    <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+                </xhs:sprache>
+                <xhs:teilleistung>
+                    <xhs:bezeichnung xml:lang="de-DE">Modulabschlussprüfung zu Vorlesung und Praktikum Experimentalphysik 2</xhs:bezeichnung>
+                    <xhs:leistungsart listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart" listVersionID="0.95">
+                        <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/klausur</code>
+                    </xhs:leistungsart>
+                    <xhs:id>
+                        <xbd:id>BP2102KL</xbd:id>
+                    </xhs:id>
+                    <xhs:beschreibung>
+                        <xhs:beschreibung xml:lang="de-DE">Modulabschlussprüfung</xhs:beschreibung>
+                    </xhs:beschreibung>
+                    <xhs:leistungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus" listVersionID="0.95">
+                        <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/bestanden</code>
+                    </xhs:leistungsstatus>
+                    <xhs:leistungsbenotungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus" listVersionID="0.95">
+                        <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsbenotungsstatus/benotet</code>
+                    </xhs:leistungsbenotungsstatus>
+                    <xhs:note>
+                        <xbd:note>2,7</xbd:note>
+                        <xbd:wortbezeichnung xml:lang="de-DE">befriedigend</xbd:wortbezeichnung>
+                        <xbd:bewertungsschemaNote>
+                            <xbd:schemaURI>http://physik.tu-musterstadt.de/studium/bewertungsschema</xbd:schemaURI>
+                            <xbd:beschreibung xml:lang="de-DE">Bewertungsschema für grundständige Studiengänge</xbd:beschreibung>
+                            <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                            <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                            <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
+                        </xbd:bewertungsschemaNote>
+                    </xhs:note>
+                    <xhs:erforderlicheLeistungspunkteECTS>2</xhs:erforderlicheLeistungspunkteECTS>
+                    <xhs:erbrachteLeistungspunkteECTS>2</xhs:erbrachteLeistungspunkteECTS>
+                    <xhs:absolvierteVersuche>2</xhs:absolvierteVersuche>
+                    <xhs:datumDerLeistungserbringung>2017-07-13</xhs:datumDerLeistungserbringung>
+                    <xhs:semesterDerLeistungserbringung xml:lang="de-DE">Sommersemester 2017</xhs:semesterDerLeistungserbringung>
+                    <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20230614-0">
+                        <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+                    </xhs:sprache>
+                </xhs:teilleistung>
+            </xhs:teilleistung>
+            <xhs:teilleistung>
+                <xhs:bezeichnung xml:lang="de-DE">Modulabschlussprüfung zu Vorlesung und Praktikum Experimentalphysik 2</xhs:bezeichnung>
+                <xhs:leistungsart listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart" listVersionID="0.95">
+                    <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/klausur</code>
+                </xhs:leistungsart>
+                <xhs:id>
+                    <xbd:id>BP2102KL</xbd:id>
+                </xhs:id>
+                <xhs:beschreibung>
+                    <xhs:beschreibung xml:lang="de-DE">Modulabschlussprüfung</xhs:beschreibung>
+                </xhs:beschreibung>
+                <xhs:leistungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus" listVersionID="0.95">
+                    <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/bestanden</code>
+                </xhs:leistungsstatus>
+                <xhs:leistungsbenotungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus" listVersionID="0.95">
+                    <code>http://xhochschule.de/def/xhochschule/0.95/code/leistungsbenotungsstatus/benotet</code>
+                </xhs:leistungsbenotungsstatus>
+                <xhs:note>
+                    <xbd:note>2,7</xbd:note>
+                    <xbd:wortbezeichnung xml:lang="de-DE">befriedigend</xbd:wortbezeichnung>
+                    <xbd:bewertungsschemaNote>
+                        <xbd:schemaURI>http://physik.tu-musterstadt.de/studium/bewertungsschema</xbd:schemaURI>
+                        <xbd:beschreibung xml:lang="de-DE">Bewertungsschema für grundständige Studiengänge</xbd:beschreibung>
+                        <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                        <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                        <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
+                    </xbd:bewertungsschemaNote>
+                </xhs:note>
+                <xhs:erforderlicheLeistungspunkteECTS>2</xhs:erforderlicheLeistungspunkteECTS>
+                <xhs:erbrachteLeistungspunkteECTS>2</xhs:erbrachteLeistungspunkteECTS>
+                <xhs:absolvierteVersuche>2</xhs:absolvierteVersuche>
+                <xhs:datumDerLeistungserbringung>2017-07-13</xhs:datumDerLeistungserbringung>
+                <xhs:semesterDerLeistungserbringung xml:lang="de-DE">Sommersemester 2017</xhs:semesterDerLeistungserbringung>
+                <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20230614-0">
+                    <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+                </xhs:sprache>
+            </xhs:teilleistung>
+        </xhs:teilleistung>
+     </xhs:leistung>
+ </xhs:transcriptOfRecords>

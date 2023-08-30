@@ -1,154 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Rentenbescheinigung nach XHochschule Version 0.94. Nichtnormative Beispielinstanz für eine  
-    Rentenbescheinigung. Diese wird z.B. benötigt, um Ansprüche gegenüber der Rentenversicherung geltend zu machen.  
-    Version: XHochschule 0.94 
-    Letzte Aktualisierung: 13.01.2023 
+    Rentenbescheinigung nach XHochschule Version 0.95. Nichtnormative Beispielinstanz für eine Rentensbescheinigung.
+    Version: XHochschule 0.95 
+    Letzte Aktualisierung: 29.08.2023
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt"
 -->
-<xhs:rentenbescheinigung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.94/xsd https://xhochschule.de/def/xhochschule/0.94/xsd/xhochschule.xsd"
-    xmlns:xhs="http://xhochschule.de/def/xhochschule/0.94/xsd"
-    xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd"> 
-
-    <!-- Allgemeine Eigenschaften der Rentenbescheinigung -->
-    <xbd:titel xml:lang="de-DE">Rentenbescheinigung</xbd:titel>
+<xhs:rentenbescheinigung xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
+ xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+ xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
+ xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+ xmlns:xhs="http://xhochschule.de/def/xhochschule/0.95/xsd"
+ xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.95/xsd file:/C:/Code/ozg-xhsj/Spezifikation/build/xsd/xhochschule.xsd">
+    <xbd:titel>Rentenbescheinigung</xbd:titel>
     <xbd:ausstellung>
-        <xbd:datum>2022-10-01</xbd:datum>
-        <xbd:ort>Saarbrücken</xbd:ort>
+        <xbd:datum>2022-06-15</xbd:datum>
+        <xbd:ort>Musterstadt</xbd:ort>
     </xbd:ausstellung>
     <xbd:gueltigkeitszeitraum>
-        <xbd:beginn>2022-10-01</xbd:beginn>
+        <xbd:beginn>2022-06-15</xbd:beginn>
     </xbd:gueltigkeitszeitraum>
-    <xbd:sprache>
-        <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20210929-0">
-            <code>https://publications.europa.eu/resource/authority/language/DEU</code>
-        </xbd:sprache>
-    </xbd:sprache>         
+    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20230614-0">
+        <code xmlns="">https://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
     <xhs:rentenversicherungsnummer>
-        <xbd:id>04 120883 S 80</xbd:id>
-        <xbd:beschreibung>Rentenversicherungsnummer der studierenden Person bei der Deutschen Rentenversicherung</xbd:beschreibung>
+        <xbd:id>17 170595 M 666</xbd:id>
+        <xbd:beschreibung>Sozial-/ Rentenversicherungsnummer</xbd:beschreibung>
         <xbd:gueltigkeit>
-            <xbd:beginn>2001-08-12</xbd:beginn>           
+            <xbd:beginn>1995-05-17</xbd:beginn>
+            <xbd:zusatz>Gültig ab Geburt</xbd:zusatz>
         </xbd:gueltigkeit>
     </xhs:rentenversicherungsnummer>
-    
-    <!-- Angaben zur studierenden Person -->
     <xhs:studierender>
         <xbd:nameNatuerlichePerson>
             <xbd:familienname>
-                <xbd:name>Mustermann</xbd:name>            
-            </xbd:familienname>          
+                <xbd:name>Musterfrau</xbd:name>
+            </xbd:familienname>
+            <xbd:fruehererFamilienname>
+                <xbd:name>Mustermensch</xbd:name>
+            </xbd:fruehererFamilienname>
             <xbd:vorname>
-                <xbd:name>Erika</xbd:name>                                
-            </xbd:vorname>           
+                <xbd:name>Mechthild</xbd:name>
+            </xbd:vorname>
         </xbd:nameNatuerlichePerson>
         <xbd:geburt>
-            <xbd:datum>1983-08-12</xbd:datum>
-            <xbd:geburtsort>               
-                <xbd:ort>Berlin</xbd:ort>  
-                <xbd:staat listURI="urn:xoev-de:kosit:codeliste:country-codes" listVersionID="unbestimmt">
+            <xbd:datum>
+                <xbd:jahrMonatTag>1995-05-17</xbd:jahrMonatTag>
+            </xbd:datum>
+            <xbd:geburtsort>
+                <xbd:ort>Castrop-Rauxel</xbd:ort>
+                <xbd:staat listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit" listVersionID="listVersionID9">
                     <code>DE</code>
+                    <name>Deutschland</name>
                 </xbd:staat>
             </xbd:geburtsort>
-        </xbd:geburt>               
-        <!-- Optionale/zukünftige Identifikationsarten für die studierende Person -->
-        <xbd:identifikationsnummer>
-            <xbd:id>86095742719</xbd:id>
-            <xbd:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuerID)</xbd:beschreibung>
-            <xbd:gueltigkeit>
-                <xbd:beginn>1983-08-12</xbd:beginn>
-            </xbd:gueltigkeit>
-        </xbd:identifikationsnummer>
-        <xbd:identifikationsnummer>
-            <xbd:id>99-999-999-999</xbd:id>
-            <xbd:beschreibung>OZG-Landeskonto-ID der studierenden Person</xbd:beschreibung>
-            <xbd:gueltigkeit>
-                <xbd:beginn>2001-08-12</xbd:beginn>
-            </xbd:gueltigkeit>
-        </xbd:identifikationsnummer>
-        <xbd:identifikationsnummer>
-            <xbd:id>uuid:57a42c1a-be5e-460b-bf2b-7fa77ef0364a</xbd:id>
-            <xbd:beschreibung>eIDAS ID der studierenden Person</xbd:beschreibung>
-            <xbd:gueltigkeit>
-                <xbd:beginn>2013-08-12</xbd:beginn>
-            </xbd:gueltigkeit>
-        </xbd:identifikationsnummer>
-        <xbd:identifikationsnummer>
-            <xbd:id>urn:schac:personalUniqueCode:int:esi:de:99-999-999-999</xbd:id>
-            <xbd:beschreibung>European Student Identifer der studierenden Person</xbd:beschreibung>
-            <xbd:gueltigkeit>
-                <xbd:beginn>2003-08-12</xbd:beginn>
-            </xbd:gueltigkeit>
-        </xbd:identifikationsnummer>  
-        <!-- Matrikelnummer der studierenden Person -->
+        </xbd:geburt>
         <xhs:matrikelnummer>
-            <xbd:id>1023909</xbd:id>
-            <xbd:beschreibung>Matrikelnummer der studierenden Person</xbd:beschreibung>
+            <xbd:id>485623</xbd:id>
+            <xbd:beschreibung>Matrikelnummer</xbd:beschreibung>
             <xbd:gueltigkeit>
-                <xbd:beginn>2017-10-01</xbd:beginn>
+                <xbd:beginn>2015-10-01</xbd:beginn>
             </xbd:gueltigkeit>
         </xhs:matrikelnummer>
-        <xhs:ersteinschreibung>2017-10-01</xhs:ersteinschreibung>
-        <xhs:hochschulsemester>10</xhs:hochschulsemester>
-        <xhs:urlaubssemester>1</xhs:urlaubssemester>        
+        <xhs:ersteinschreibung>2015-10-01</xhs:ersteinschreibung>
+        <xhs:hochschulsemester>13</xhs:hochschulsemester>
+        <xhs:urlaubssemester>1</xhs:urlaubssemester>
     </xhs:studierender>
-    
-    <!-- Angaben zur ausstellenden Hochschule -->
     <xhs:ausstellendeHochschule>
-        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="WS22">
-            <code>http://xhochschule.de/def/destatis/WS22/code/hochschulsignatur/1360</code>
-        </xhs:hochschulsignatur>        
-        <xhs:name>Universität des Saarlandes</xhs:name>  
-    </xhs:ausstellendeHochschule>    
-   
-    <!-- Angaben zum Studienabschnitt -->
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID33">
+            <!-- Hier den DESTATIS-Code der ausstellenden Hochschule eintragen -->
+            <code>Code X</code>
+        </xhs:hochschulsignatur>
+        <xhs:name xml:lang="de-DE">Technische Universität Musterstadt</xhs:name>
+    </xhs:ausstellendeHochschule>
     <xhs:studienabschnitt>
         <xhs:studienzeitraum>
             <xhs:zeitraum>
-                <xbd:beginn>2017-10-01</xbd:beginn>
-                <xbd:ende>2022-09-30</xbd:ende>
+                <xbd:beginn>2020-10-01</xbd:beginn>
+                <xbd:ende>2021-03-31</xbd:ende>
             </xhs:zeitraum>
+            <xhs:semesterbezeichnung>Wintersemester 2020/2021</xhs:semesterbezeichnung>
         </xhs:studienzeitraum>
         <xhs:studienfach>
-            <xhs:name xml:lang="de-DE">Informatik</xhs:name>            
-            <xhs:angestrebterAbschluss>Bachelor</xhs:angestrebterAbschluss>
-            <xhs:schluesselDESTATIS listURI="urn:xhochschule-de:destatis:codeliste:faecherschluessel" listVersionID="WS22">
-                <code>http://xhochschule.de/def/destatis/WS22/code/faecherschluessel/079</code>
-            </xhs:schluesselDESTATIS>
-            <xhs:fachsemester>10</xhs:fachsemester>
+            <xhs:name>Physik</xhs:name>
+            <xhs:angestrebterAbschluss>Bachelor of Science</xhs:angestrebterAbschluss>
+            <!-- Hier den Schlüssel nach ISCED 2011 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
             <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
-                <code>645</code> <!-- First degree (3-4 years) -->
+                <code>6</code>
             </xhs:schluesselISCED2011>
+            <!-- Hier den Schlüssel nach ISCED 2013 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
             <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
-                <code>0610</code> <!--  Information and Communication Technologies (ICTs) not further defined -->
+                <code>6</code>
             </xhs:schluesselISCED2013>
+            <!-- Hier bei Code die URI nach EQF eintragen -->
+            <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
+                <code>http://data.europa.eu/snb/eqf/6</code>
+            </xhs:schluesselEQF>
+            <xhs:fachsemester>3</xhs:fachsemester>
+            <xhs:unbedenklichkeitsvermerk>-- Hier kann ein Unbedenklichkeitsvermerk eingetragen werden --</xhs:unbedenklichkeitsvermerk>
         </xhs:studienfach>
-        <xhs:lernzeitmodell>
-            <code>http://xhochschule.de/def/xhochschule/0.94/code/lernzeitmodell/vollzeit</code>
+        <xhs:lernzeitmodell listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell" listVersionID="0.95">
+            <code>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/vollzeit</code>
         </xhs:lernzeitmodell>
+        <!--
+    <xhs:lernzeitmodellFreitext>lernzeitmodellFreitext0</xhs:lernzeitmodellFreitext> 
+     nur für den Fall ausfüllen, dass der Wert für das Lernzeitmodell nicht in der Codeliste enthalten ist -->
         <xhs:regelstudienzeit>8</xhs:regelstudienzeit>
-        <xhs:beurlaubungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="0.94">
-            <code>http://xhochschule.de/def/xhochschule/0.94/code/beurlaubungsstatus/nicht_beurlaubt</code>
+        <xhs:beurlaubungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="0.95">
+            <code>http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/beurlaubt</code>
         </xhs:beurlaubungsstatus>
+        <!--
+            <xhs:beurlaubungsstatusFreitext xml:lang="en-US"> Freitext </xhs:beurlaubungsstatusFreitext>
+             nur für den Fall ausfüllen, dass der Wert für den Beurlaubungsstatus nicht in der Codeliste enthalten ist -->
+        <xhs:beurlaubungsgrund listURI="urn:xhochschule-de:destatis:codeliste:beurlaubungsgrund" listVersionID="listVersionID39">
+            <code>8</code>
+        </xhs:beurlaubungsgrund>
         <xhs:ausbildungsstaette>
-            <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="WS22">
-                <code>http://xhochschule.de/def/destatis/WS22/code/hochschulsignatur/1360</code>
-            </xhs:hochschulsignatur>        
-            <xhs:name>Universität des Saarlandes</xhs:name>  
+            <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID33">
+                <!-- Hier den DESTATIS-Code der ausstellenden Hochschule eintragen -->
+                <code>Code X</code>
+            </xhs:hochschulsignatur>
+            <xhs:name xml:lang="de-DE">Technische Universität Musterstadt</xhs:name>
         </xhs:ausbildungsstaette>
         <xhs:abgeschlossenOderDatum>
-            <xhs:abgeschlossen>true</xhs:abgeschlossen>    
+            <!--<xhs:enddatum>2006-05-04</xhs:enddatum> Alternativ Datum des Abschlusses angeben-->
+            <xhs:abgeschlossen>true</xhs:abgeschlossen>
+            <!-- Gibt an, ob der Studienabschnitt regulär abgeschlossen wurde. Wenn nicht, muss das Datum des Abschlusses angegeben werden. In diesem Element/Attribut ist nur Wert „true“ zulässig (fixed-Wert) -->
         </xhs:abgeschlossenOderDatum>
     </xhs:studienabschnitt>
-    
-    <!-- Angaben für die Verifikation des Dokuments -->
+    <xhs:studienabschnitt>
+        <xhs:studienzeitraum>
+            <xhs:zeitraum>
+                <xbd:beginn>2021-04-01</xbd:beginn>
+                <xbd:ende>2021-09-30</xbd:ende>
+            </xhs:zeitraum>
+            <xhs:semesterbezeichnung>Sommersemester 2021</xhs:semesterbezeichnung>
+        </xhs:studienzeitraum>
+        <xhs:studienfach>
+            <xhs:name>Physik</xhs:name>
+            <xhs:angestrebterAbschluss>Bachelor of Science</xhs:angestrebterAbschluss>
+            <!-- Hier den Schlüssel nach ISCED 2011 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
+            <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
+                <code>6</code>
+            </xhs:schluesselISCED2011>
+            <!-- Hier den Schlüssel nach ISCED 2013 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
+            <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
+                <code>6</code>
+            </xhs:schluesselISCED2013>
+            <!-- Hier bei Code die URI nach EQF eintragen -->
+            <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
+                <code>http://data.europa.eu/snb/eqf/6</code>
+            </xhs:schluesselEQF>
+            <xhs:fachsemester>11</xhs:fachsemester>
+            <xhs:unbedenklichkeitsvermerk>-- Hier kann ein Unbedenklichkeitsvermerk eingetragen werden --</xhs:unbedenklichkeitsvermerk>
+        </xhs:studienfach>
+        <xhs:lernzeitmodell listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell" listVersionID="0.95">
+            <code>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/vollzeit</code>
+        </xhs:lernzeitmodell>
+        <!--
+    <xhs:lernzeitmodellFreitext>lernzeitmodellFreitext0</xhs:lernzeitmodellFreitext> 
+     nur für den Fall ausfüllen, dass der Wert für das Lernzeitmodell nicht in der Codeliste enthalten ist -->
+        <xhs:regelstudienzeit>8</xhs:regelstudienzeit>
+        <xhs:beurlaubungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="0.95">
+            <code>http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/nicht_beurlaubt</code>
+        </xhs:beurlaubungsstatus>
+        <!--
+            <xhs:beurlaubungsstatusFreitext xml:lang="en-US"> Freitext </xhs:beurlaubungsstatusFreitext>
+             nur für den Fall ausfüllen, dass der Wert für den Beurlaubungsstatus nicht in der Codeliste enthalten ist -->
+        <!-- Beurlaubungsgrund muss nicht vorliegen, wenn keine Beurlaubung vorliegt
+        <xhs:beurlaubungsgrund listURI="urn:xhochschule-de:destatis:codeliste:beurlaubungsgrund" listVersionID="listVersionID46">
+            <code>8</code>
+        </xhs:beurlaubungsgrund>-->
+        <xhs:ausbildungsstaette>
+            <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID33">
+                <!-- Hier den DESTATIS-Code der ausstellenden Hochschule eintragen -->
+                <code>Code X</code>
+            </xhs:hochschulsignatur>
+            <xhs:name xml:lang="de-DE">Technische Universität Musterstadt</xhs:name>
+        </xhs:ausbildungsstaette>
+        <xhs:abgeschlossenOderDatum>
+            <!--<xhs:enddatum>2006-05-04</xhs:enddatum> Alternativ Datum des Abschlusses angeben-->
+            <xhs:abgeschlossen>true</xhs:abgeschlossen>
+            <!-- Gibt an, ob der Studienabschnitt regulär abgeschlossen wurde. Wenn nicht, muss das Datum des Abschlusses angegeben werden. In diesem Element/Attribut ist nur Wert „true“ zulässig (fixed-Wert) -->
+        </xhs:abgeschlossenOderDatum>
+    </xhs:studienabschnitt>
     <xhs:verifikation>
-        <xhs:schluessel>XXXCFM3P4UDF</xhs:schluessel>
-        <xhs:adresse>https://verify.uni-saarland.de/de/XXXCFM3P4UDF</xhs:adresse>
+        <xhs:schluessel>PASSWORT_XML</xhs:schluessel>
+        <xhs:adresse>https://verify.tu-musterstadt.de/PASSWORT_XML</xhs:adresse>
         <xhs:inhaltstyp>XML</xhs:inhaltstyp>
         <xhs:gueltigkeit>
-            <xbd:beginn>2022-10-01</xbd:beginn>
+            <xbd:beginn>2022-06-15</xbd:beginn>
         </xhs:gueltigkeit>
-    </xhs:verifikation>    
+    </xhs:verifikation>
+    <xhs:verifikation>
+        <xhs:schluessel>PASSWORT_PDF</xhs:schluessel>
+        <xhs:adresse>https://verify.tu-musterstadt.de/PASSWORT_PDF</xhs:adresse>
+        <xhs:inhaltstyp>PDF</xhs:inhaltstyp>
+        <xhs:gueltigkeit>
+            <xbd:beginn>2022-06-15</xbd:beginn>
+        </xhs:gueltigkeit>
+    </xhs:verifikation>
 </xhs:rentenbescheinigung>

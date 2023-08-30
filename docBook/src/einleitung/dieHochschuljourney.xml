@@ -1,0 +1,243 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE book [
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+<chapter version="5" xml:id="spezifikation.einleitung.dieHochschuljourney" xml:lang="de" xmlns="http://docbook.org/ns/docbook">
+  <info>
+    <title>"Die Hochschuljourney"</title>
+  </info>
+  <para><!--Für PIM &amp; &fachmodul; wurde aus fachlicher Sicht eine Bildungsjourney mit dem Schwerpunkt Hochschulwesen erstellt.--> Die Hochschuljourney beschreibt einen Weg durch den 
+    Lebensabschnitt Hochschulbildung mit den möglichen Etappen und Abzweigungen, die eine Person in ihrem Studium erleben kann. Die Stationen der Journey, die mit einem XML-Symbol versehen sind,
+  bieten neben weiterführenden Informationen auch XHochschule-gemäße Beispielnachrichten.</para>
+  <!--<para>
+    Diese Journey findet sich ebenfalls auf der Webseite und ist dort als interaktive Graphik eingebettet. Überall dort, wo ein XML-Symbol zu sehen ist, werden neben weiterführenden
+    Informationen auch Beispielnachrichten zum Download angeboten.-->
+  <para>
+    <table frame="all">
+      <title>Etappen der Hochschuljourney</title>
+      <tgroup cols="6">
+        <colspec colname="c1" colnum="1" colwidth="6mm" />
+        <colspec colname="c2" colnum="2" />
+        <colspec colname="c3" colnum="3" />
+        <colspec colname="c4" colnum="4" colwidth="47mm" />
+        <colspec colname="c5" colnum="5" colwidth="30mm"/>
+        <colspec colname="c6" colnum="6" />
+        <thead>
+          <row>
+            <entry>#</entry>
+            <entry>Schritt</entry>
+            <entry>Kurzbeschreibung</entry>
+            <entry>Beschreibung</entry>
+            <entry>Standardisierungsbedarf &fachmodul;</entry>
+            <entry>Standardisierungsbedarf allgemein</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>1.</entry>
+            <entry>Suchen und informieren</entry>
+            <entry>Online-Suche nach geeigneten Studienfächern</entry>
+            <entry>Studieninteressierte informieren sich über strukturierte Angebote (z.B. My Guide,
+              digitaler Campus, StudyInEurope) sowie Suchmaschinen (z.B. Google) über das
+              Studienangebot und konkrete Studienfächer in Deutschland.</entry>
+            <entry />
+            <entry>Strukturierte Informationsangebote</entry>
+          </row>
+          <row>
+            <entry>2.</entry>
+            <entry>Studium vorbereiten</entry>
+            <entry>Auswahl eines konkreten Studienfachs und Vorbereitung der Unterlagen</entry>
+            <entry>Nach einem Vergleich des Studienangebots entscheiden sich Studieninteressierte
+              i.d.R. für ein bis zwei konkrete Studienfächer.</entry>
+            <entry />
+            <entry>Vergleichbarkeit von Studienfächern und Anforderungsprofilen</entry>
+          </row>
+          <row>
+            <entry>3.</entry>
+            <entry>Zulassungsvoraussetzungen prüfen lassen</entry>
+            <entry>Eignung und/oder Kompetenznachweise vorab prüfen lassen</entry>
+            <entry>Für einige Studienfächer müssen Studieninteressierte bestimmte
+              Zulassungsvoraussetzungen erfüllen und vor bzw. im Zuge einer Bewerbung prüfen lassen:
+              Zum einen gibt es Studienfächer, für die eine bestimmte Eignung im Rahmen einer Prüfung
+              nachgewiesen werden müssen (künstlerische und sportliche Eignungsprüfung, Test für
+              medizinische Studienfächer (TMS)). Zum anderen müssen Studieninteressierte vor einer
+              Bewerbung teilweise auch Kompetenznachweise z.B. bei Dienstleistern wie uni-assist zur
+              Prüfung der Zulassungsvoraussetzungen für ein konkretes Studienfach (ggf. mit
+              Zweitwunsch) einreichen.</entry>
+            <entry>weitere Bildungsnachweise (Sprachzertifikate, Praktikumsnachweise)</entry>
+            <entry>Bildungsnachweise, Vergleichbarkeit von Kompetenzprofilen, Vergleichbarkeit von Anforderungen, Hochschulzugangsberechtigung</entry>
+          </row>
+          <row>
+            <entry>4.</entry>
+            <entry>Für Studienfach bewerben</entry>
+            <entry>Bewerbung für ein konkretes Studienfach bei Hochschule / SfH</entry>
+            <entry>Die Bewerbung für ein konkretes Studienfach mit Nachweisen etc. erfolgt i.d.R.
+              über die digitalen Bewerbungsplattformen der Hochschulen. Insbesondere bei den
+              bundesweit zulassungsbeschränkten Studienfächern (Medizin, Pharmazie, Tiermedizin und
+              Zahnmedizin) erfolgt die Bewerbung hingegen zentral über die sog.
+              DoSV-Bewerbungsplattform der Stiftung für Hochschulzulassung (SfH).</entry>
+            <entry>maschinenverarbeitbare Bildungsnachweise</entry>
+            <entry>Bewerbungsformulare und deren Anhänge</entry>
+          </row>
+          <row>
+            <entry>5.</entry>
+            <entry>Kompetenzen anerkennen lassen</entry>
+            <entry>Anerkennung von (ausländischen) Kompetenznachweisen durch die Hochschule</entry>
+            <entry>Das Prüfungsamt und/oder einzelne Fakultäten einer Hochschule erkennen
+              (ausländische) Kompetenznachweise ggf. studienfachsspezifisch an.</entry>
+            <entry>Mappings EU2DE</entry>
+            <entry>Mappings Taxonomien anderer Staaten in deutsches System (z.B. EQR vs DQR), Anerkennung von (ggf. ausländischen) Kompetenzen</entry>
+          </row>
+          <row>
+            <entry>6.</entry>
+            <entry>An Hochschule einschreiben</entry>
+            <entry>Immatrikulation in ein konkretes Studienfach</entry>
+            <entry>Bei Vorliegen aller Zulassungsvoraussetzungen erhalten Studieninteressierte ein Studienplatzangebot, welches sie annehmen können (Zusage). Nach der Bezahlung
+              einer Gebühr werden sie an der Hochschule immatrikuliert.</entry>
+            <entry>Immatrikulationsbescheid</entry>
+            <entry>Bescheide zur Immatrikulation, Kommunikation zu Sozialversicherungsträgern</entry>
+          </row>
+          <row>
+            <entry>7.</entry>
+            <entry>Studienfinanzierung beantragen</entry>
+            <entry>Zur Studienfinanzierung existieren verschiedene Förderungsmöglichkeiten</entry>
+            <entry>Zur Finanzierung einer Studiums können (angehende) Studierende verschiedene
+              Fördermöglichkeiten beantragen (z.B. BAföG, Stipendien), wobei die Möglichkeiten und
+              eine konkrete finanzielle Förderung von zahlreichen Faktoren abhängig sind (z.B.
+              persönliche Lebenslage, bisherige Leistungen, Hochschule, konkretes
+              Studienfach).</entry>
+            <entry />
+            <entry />
+          </row>
+          <row>
+            <entry>8.</entry>
+            <entry>Im Bachelor studieren</entry>
+            <entry>Absolvieren eines grundständigen Studiums</entry>
+            <entry>Die Hochschuljourney startet in Deutschland i.d.R. mit einem grundständigen Studiums (Bachelor).</entry>
+            <entry/>
+            <entry>Hochschulabschlusszeugnis Bachelor, Hochschulabschlusszeugnis+, ToR+Diploma Supplement</entry>
+          </row>
+          <row>
+            <entry>9.</entry>
+            <entry>Auslandsstudium vorbereiten</entry>
+            <entry>Vorbereitung und Bewerbung für ein Auslandssemester</entry>
+            <entry>Studierende informieren sich z.B. mit strukturierten Informationsangeboten oder
+              beim akademischen Auslandsamt ihrer Hochschule über die Möglichkeit eines
+              Auslandsaufenthalts bzw. Auslandssemesters (z.B. im Rahmen des EU-Programms Erasmus+)
+              und können sich nach einer Prüfung der Zulassungsvoraussetzungen im Ausland für einen
+              Studienplatz bewerben. Im Zuge von Erasmus+ kann außerdem ein sog. Learning Agreement
+              über die im Rahmen des Auslandsaufenthalts angestrebten Leistungen zwischen
+              Studierenden, der heimischen Hochschule sowie der ausgewählten ausländischen
+              Hochschule geschlossen werden.</entry>
+            <entry />
+            <entry>Anerkennung dt. Abschlüsse und Bildungsnachweise, Learning Agreements und Modulinformationen</entry>
+          </row>
+          <row>
+            <entry>10.</entry>
+            <entry>Auslandsstudium antreten</entry>
+            <entry>Immatrikulation an einer ausländischen Hochschule</entry>
+            <entry>Nach erfolgreicher Prüfung der (deutschen) Kompetenznachweise durch die ausländische Hochschule können die Studierenden ihr Studium im Ausland antreten.</entry>
+            <entry />
+            <entry />
+          </row>
+          <row>
+            <entry>11.</entry>
+            <entry>Im Ausland studieren</entry>
+            <entry>Absolvieren eines Studiensemesters im Ausland</entry>
+            <entry>Im Ausland absolvieren die Studierenden ein Studiensemester, wobei sie i.d.R. Veranstaltungen in ihrem Studienfach und auf ihrem Niveau besuchen.</entry>
+            <entry />
+            <entry>Mappings nationale Taxonomien in deutsches System</entry>
+          </row>
+          <row>
+            <entry>12.</entry>
+            <entry>Auslandsstudium beenden</entry>
+            <entry>Abschluss des Auslandssemesters und Anerkennung absolvierter Leistungen</entry>
+            <entry>Nach Abschluss des Auslandssemester können die Studierenden ihre im Rahmen des
+              Auslandsaufenthalts erbrachten Leistungen durch die heimische Hochschule für ihr
+              Studium anerkennen und anrechnen lassen.</entry>
+            <entry>Mappings EU2DE</entry>
+            <entry>Anerkennung ausländischer Bildungsabschlüsse, Anerkennung von Leistungen aus nicht-deutschen Modulen</entry>
+          </row>
+          <row>
+            <entry>13.</entry>
+            <entry>Hochschulabschlusszeugnis erhalten</entry>
+            <entry>Ausstellung eines Zeugnisses nach erfolgreichem Abschluss des Studiums</entry>
+            <entry>Zum erfolgreichen Abschluss ihres Bachelorstudiums wird Studierenden ein
+              digitales Hochschulabschlusszeugnis mit weiteren Dokumenten (ToR, Diploma Supplement)
+              ausgestellt.</entry>
+            <entry />
+            <entry>Hochschulabschlusszeugnis Bachelor, Transcript of Record, Diploma Supplement, Rentenversicherungsbescheid</entry>
+          </row>
+          <row>
+            <entry>14.</entry>
+            <entry>Studienfach wechseln</entry>
+            <entry>Übergang vom Bachelor zum Master</entry>
+            <entry>Studierende können nach erfolgreichem Abschluss ihres Bachelorstudiums ein Masterstudium aufnehmen, falls ihr Bachelorabschluss durch die entsprechende
+              Hochschule anerkannt wird und sie alle weiteren Zulassungsvoraussetzungen erfüllen.</entry>
+            <entry>Kerndatensatz "Studierender" bzw. OZG-Kontoabruf + Melderegisterabgleich</entry>
+            <entry>Studierendendaten zwischen Hochschulen, Hochschulzugangsberechtigung, Bachelorzugangsberechtigung, Masterzugangsberechtigung</entry>
+          </row>
+          <row>
+            <entry>15.</entry>
+            <entry>Im Master studieren</entry>
+            <entry>Absolvieren eines konsekutiven bzw. weiterführenden Studiums</entry>
+            <entry>Nach dem grundständigen Studium (Bachelor) absolvieren Studierende in Deutschland häufig ein konsekutives bzw. weiterführendes Studium (Master).</entry>
+            <entry>maschinenverarbeitbarer Bescheid zur Immatrikulation</entry>
+            <entry>Bescheide zur Immatrikulation, Kommunikation zu Sozialversicherungsträgern</entry>
+          </row>
+          <row>
+            <entry>16.</entry>
+            <entry>Hochschulabschlusszeugnis erhalten</entry>
+            <entry>Ausstellung eines Zeugnisses nach erfolgreichem Abschluss des Studiums</entry>
+            <entry>Zum erfolgreichen Abschluss ihres Masterstudiums wird Studierenden ein (digitales) Hochschulabschlusszeugnis mit weiteren Dokumenten und Informationen (ToR,
+              Diploma Supplement) ausgestellt.</entry>
+            <entry>HZB</entry>
+            <entry>Hochschulabschlusszeugnis Master, Transcript of Record, Diploma Supplement, Rentenversicherungsbescheid</entry>
+          </row>
+          <row>
+            <entry>17.</entry>
+            <entry>Suchen und informieren</entry>
+            <entry>Online-Suche nach geeigneten Jobs</entry>
+            <entry>Zu Beginn der Jobsuche informieren sich Arbeitssuchende mit strukturierten Informationsangeboten (z.B. Jobbörse der Bundesagentur für Arbeit, Indeed),
+              Suchmaschinen (z.B. Google) oder bei Beratungsstellen (z.B bei Vermittlungsfachkräften der Bundesagentur für Arbeit) zum deutschen Arbeitsmarkt und geeigneten
+              Beschäftigungsmöglichkeiten, vor allem in ihrem Beruf.</entry>
+            <entry />
+            <entry />
+          </row>
+          <!--<row>
+            <entry>Ü6</entry>
+            <entry>Bewerbung vorbereiten</entry>
+            <entry>Erstellen eines Online-Profils und Vorbereitung der Unterlagen</entry>
+            <entry>Zur Bewerbung für geeignete Jobs können sich Arbeitssuchende ein umfangreiches
+              Online-Bewerberprofil anlegen (z.B. europass, LinkedIn), welches über verschiedene
+              Features verfügt (z.B. CV, Kompetenzprofil, Wallet für digitale Nachweise) und die
+              Suche nach und Bewerbung für Lernangebote (z.B. auch Promotion) und Jobs ermöglicht.
+              Zudem bereiten Arbeitssuchende ihre Bewerbungsunterlagen entsprechend digital
+              auf.</entry>
+            <entry>XBildung:Bildungslebenslauf?</entry>
+            <entry>Bildungslebenslauf, Arten des Lernens, Liste der Hochschulen, Arten der Hochschule, Arten der Prüfung, Bildungsnachweise</entry>
+          </row>-->
+          <row>
+            <entry>18.</entry>
+            <entry>Für Job bewerben</entry>
+            <entry>Online-Bewerbung bei einem Arbeitgeber</entry>
+            <entry>Die Bewerbung für einen konkreten Job mit Nachweisen etc. erfolgt i.d.R. entweder über digitale Bewerbungsplattformen der Arbeitgeber oder zunehmend auch über
+              die digitalen Online-Profile der Bewerber.</entry>
+            <entry>Mappings XHochschule2EDCI</entry>
+            <entry />
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </para>
+  <figure>
+    <title>Die Hochschuljourney</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata align="center" fileref="../abbildungen/XHS_fuerSpezifikation_095.png" format="PNG" scale="90" />
+      </imageobject>
+    </mediaobject>
+  </figure>
+</chapter>

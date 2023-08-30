@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.94/xsd"
-           xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd"
-           xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-           targetNamespace="http://xhochschule.de/def/xhochschule/0.94/xsd"
-           version="0.94"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.95/xsd"
+           xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+           xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.95/xsd"
+           version="0.95"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -17,20 +18,22 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.94</version>
-            <versionXOEVProfil>2.0.0</versionXOEVProfil>
-            <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
-            <versionXGenerator>3.0.1</versionXGenerator>
+            <version>0.95</version>
+            <versionXOEVProfil>3.0.1</versionXOEVProfil>
+            <versionXOEVHandbuch>3.0.0</versionXOEVHandbuch>
+            <versionXGenerator>3.1.1</versionXGenerator>
             <versionModellierungswerkzeug>19.0 SP 3</versionModellierungswerkzeug>
             <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
          </versionStandard>
       </xs:appinfo>
    </xs:annotation>
    <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.93/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/0.93/xsd"/>
-   <xs:import schemaLocation="http://xoev.de/latinchars/1_1/datatypes/latinchars.xsd"
-              namespace="http://xoev.de/latinchars/1_1/datatypes"/>
+   <xs:import schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"
+              namespace="http://www.w3.org/2000/09/xmldsig#"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.95/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.95/xsd"/>
+   <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
+              namespace="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"/>
    <xs:element name="diplomaSupplement">
       <xs:annotation>
          <xs:appinfo>
@@ -42,116 +45,66 @@
          <xs:complexContent>
             <xs:extension base="xbd:Dokument">
                <xs:sequence>
-                  <xs:element name="ausstellendeHochschule"
-                              maxOccurs="unbounded"
-                              type="xhs:Hochschule">
-                     <xs:annotation>
-                        <xs:documentation>Die Hochschule, die das Diploma Supplement ausgestellt hat.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="transcriptOfRecordVerweis" minOccurs="0" type="xs:ID">
-                     <xs:annotation>
-                        <xs:documentation>Verweis auf ein gemeinsam mit einem Hochschulabschlusszeugnis (Diploma) ausgestelltes "Transcript Of Record"-Dokument</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
                   <xs:element name="angabenInhaber">
                      <xs:annotation>
-                        <xs:documentation>Studierende Person, für die ein Diploma Supplement ausgestellt wird. Das von xbd:NatuerlichePerson geerbte Element "nameNatuerlichePerson" deckt die Abschnitte 1.1 (vorname) und 1.2 (familienname) des Diploma Supplements ab. Das Element "geburt" den Abschnitt 1.3. Das Element "matrikelnummer" von xhs:Studierender entspricht dem Abschnitt 1.4 des Diploma Supplements.</xs:documentation>
+                        <xs:documentation>Bezieht sich auf Abschnitt 1. Angaben zum Inhaber/ zur Inhaberin der Qualifikation.</xs:documentation>
                      </xs:annotation>
                      <xs:complexType>
-                        <xs:complexContent>
-                           <xs:extension base="xhs:Studierender"/>
-                        </xs:complexContent>
+                        <xs:sequence>
+                           <xs:element name="familienname" type="din91379:datatypeC">
+                              <xs:annotation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 1.1. Familienname(n).</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="vorname" type="din91379:datatypeC">
+                              <xs:annotation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 1.2. Vorname(n).</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="geburtstdatum" type="xbd:TeilbekanntesDatum">
+                              <xs:annotation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 1.3. Geburtsdatum (TT/MM/JJJJ).</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="matrikelnummer" minOccurs="0" type="xs:string">
+                              <xs:annotation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 1.4. Matrikelnummer oder Code zur Identifizierung des/der Studierenden (wenn vorhanden).</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
                      </xs:complexType>
                   </xs:element>
                   <xs:element name="angabenQualifikation">
                      <xs:annotation>
-                        <xs:documentation>Beinhaltet Informationen über die durch den Abschluss verliehenen Qualifikationen. Abschnitt 2.</xs:documentation>
+                        <xs:documentation>Bezieht sich auf Abschnitt 2. Angaben zur Qualifikation.</xs:documentation>
                      </xs:annotation>
                      <xs:complexType>
                         <xs:sequence>
-                           <xs:element name="bezeichnungQualifikationBeschreibung"
+                           <xs:element name="bezeichnungQualifikationGrad" type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 2.1. Bezeichnung der Qualifikation und (wenn vorhanden) verliehener Grad (in der Originalsprache).</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="hauptstudienfach" type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 2.2. Hauptstudienfach oder -fächer für die Qualifikation.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="verleihendeEinrichtung" type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 2.3. Name und Status (Typ/Trägerschaft) der Einrichtung, die die Qualifikation verliehen hat (in der Originalsprache).</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="durchfuehrendeEinrichtung"
                                        minOccurs="0"
-                                       maxOccurs="unbounded"
                                        type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Mit dem Abschluss erworbene Qualifikation als Freitext. Beispiele sind: Diplom-Kaufmann (FH), Master of Science. Dieses Element deckt die in Abschnitt 2.1a des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 2.4. Name und Status (Typ/Trägerschaft) der Einrichtung (falls nicht mit 2.3 identisch), die das Studienfach durchgeführt hat (in der Originalsprache).</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="bezeichnungTitelBeschreibung"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xbd:String.Localized">
+                           <xs:element name="spracheUnterrichtPruefung" type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Mit dem Abschluss erworbener Titel als Freitext. Oftmals ist dieser gleich zu 2.1a (bezeichnungQualifikationCode bzw. Freitext), aber nicht immer: Bachelor in Bildungswissenschaften -&gt; Primarschullehrer/in. Dieses Element deckt die in Abschnitt 2.1b des Diploma Supplements gemachten Angaben ab.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="hauptstudienfach"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xhs:Studienfach">
-                              <xs:annotation>
-                                 <xs:documentation>Es sollen lediglich das Haupt-Studiengebiet (bzw. die Haupt-Studiengebiete) wie zum Beispiel „Politik und Geschichte“ angegeben werden. Dieses Element deckt die in Abschnitt 2.2 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="verleihendeInstitution" maxOccurs="unbounded">
-                              <xs:annotation>
-                                 <xs:documentation>Name und Status der Institution oder Institutionen, welche das Diploma Supplement ausgestellt haben. Dieses Element deckt die im Abschnitt 2.3 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
-                              </xs:annotation>
-                              <xs:complexType>
-                                 <xs:sequence>
-                                    <xs:element name="nameInstitution" type="xbd:NameOrganisation">
-                                       <xs:annotation>
-                                          <xs:documentation>Name der Bildungseinrichtung</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                    <xs:element name="statusInstitution"
-                                                minOccurs="0"
-                                                type="xbd:Code.ArtDerHochschule">
-                                       <xs:annotation>
-                                          <xs:documentation>Der Status einer Bildungseinrichtung sagt aus, auf welchem Niveau von Bildung sie akkreditiert ist.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                 </xs:sequence>
-                              </xs:complexType>
-                           </xs:element>
-                           <xs:element name="durchfuehrendeInstitution"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded">
-                              <xs:annotation>
-                                 <xs:documentation>Name und Status der Institution oder Institutionen, an denen die Ausbildung stattgefunden hat. Dieses Element deckt die im Abschnitt 2.4 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
-                              </xs:annotation>
-                              <xs:complexType>
-                                 <xs:sequence>
-                                    <xs:element name="nameInstitution" type="xbd:NameOrganisation">
-                                       <xs:annotation>
-                                          <xs:documentation>Name der Bildungseinrichtung</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                    <xs:element name="statusInstitution"
-                                                minOccurs="0"
-                                                type="xbd:Code.ArtDerHochschule">
-                                       <xs:annotation>
-                                          <xs:documentation>Der Status einer Bildungseinrichtung sagt aus, auf welchem Niveau von Bildung sie akkreditiert ist.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                 </xs:sequence>
-                              </xs:complexType>
-                           </xs:element>
-                           <xs:element name="spracheDerPruefung"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xbd:Sprache">
-                              <xs:annotation>
-                                 <xs:documentation>Sprachen, in denen Prüfungen durchgeführt wurden. Dieses Element deckt die im Abschnitt 2.5b des Diploma Supplements gemachten Angaben ab.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="spracheDesUnterrichts"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xbd:Sprache">
-                              <xs:annotation>
-                                 <xs:documentation>Sprachen, in denen Unterricht durchgeführt wurde. Dieses Element deckt die im Abschnitt 2.5a des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 2.5. Im Unterricht / in der Prüfung verwendete Sprache(n).</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                         </xs:sequence>
@@ -159,238 +112,122 @@
                   </xs:element>
                   <xs:element name="dauerUndEbeneQualifikation">
                      <xs:annotation>
-                        <xs:documentation>Beinhaltet Informationen über die durch den Abschluss verliehenen Qualifikationen. Abschnitt 3.</xs:documentation>
+                        <xs:documentation>Bezieht sich auf Abschnitt 3. Angaben zu Ebene und Zeitdauer der Qualifikation.</xs:documentation>
                      </xs:annotation>
                      <xs:complexType>
                         <xs:sequence>
-                           <xs:element name="dauerStudiumInECTS" minOccurs="0" type="xs:decimal">
+                           <xs:element name="ebeneDerQualifikation" type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Anzahl der ECTS, die für das Studium vorgesehen sind. Dieses Element deckt die in Abschnitt 3.2a des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 3.1. Ebene der Qualifikation.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="dauerStudiumInJahren" minOccurs="0" type="xs:decimal">
+                           <xs:element name="dauerStudiumInJahrenOderECTS" type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Dauer des Studiums nach Regelstudienzeit. Dieses Element deckt die in Abschnitt 3.2b des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 3.2. Offizielle Dauer des Studiums (Regelstudienzeit) in Leistungspunkten und/oder Jahren.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="ebeneDerQualifikation"
-                                       minOccurs="0"
-                                       type="xbd:String.Localized">
+                           <xs:element name="zugangsvorraussetzungen" type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Ebene der Qualifikation, die durch das Studium verliehen wird. Dieses Element deckt die in Abschnitt 3.1 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="zugangsvorraussetzungen"
-                                       minOccurs="0"
-                                       type="xbd:Code.ArtDesSchulabschlusses">
-                              <xs:annotation>
-                                 <xs:documentation>Level der benötigten Hochschulzugangsberechtigung. Dieses Element deckt die in Abschnitt 3.3 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="zugangsvorraussetzungenErgaenzung"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xbd:String.Localized">
-                              <xs:annotation>
-                                 <xs:documentation>Sollte nur verwendet werden, wenn die Codeliste nicht ausreicht. Z.B., wenn zusätzlich zu einer Hochschulzulassung ein Praktikum, Assessment Center oder eine Berufsausbildung notwendig war. Dieses Element deckt die in Abschnitt 3.3 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 3.3. Zugangsvoraussetzung(en).</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                         </xs:sequence>
                      </xs:complexType>
                   </xs:element>
-                  <xs:element name="erzielteErgebnisse" minOccurs="0">
+                  <xs:element name="erzielteErgebnisse">
                      <xs:annotation>
-                        <xs:documentation>Angaben zum Inhalt des Studiums und zu den erzielten Ergebnissen. Abschnitt 4.</xs:documentation>
+                        <xs:documentation>Bezieht sich auf Abschnitt 4. Angaben zum Inhalt des Studiums und zu den erzielten Ergebnissen.</xs:documentation>
                      </xs:annotation>
                      <xs:complexType>
                         <xs:sequence>
-                           <xs:element name="studienformCode" minOccurs="0" type="xhs:Code.Lernzeitmodell">
+                           <xs:element name="studienform" type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Hier soll das Lernzeitmodell angegeben werden, in dem das Studium absolviert wurde. Dieses Element deckt, ggf. gemeinsam mit studienformBeschreibung, die in Abschnitt 4.1 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 4.1. Studienform.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="studienformBeschreibung"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xbd:String.Localized">
+                           <xs:element name="lernergebnisse" type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Da neben Voll- und Teilzeit auch „intermittent/sandwich“, „e-learning“ oder „distance“ als Beispiele geführt werden, wird hier eine zusätzliche Möglichkeit gegeben, Studienformen anzugeben. Dieses Element deckt, ggf. gemeinsam mit studienformCode, die in Abschnitt 4.1 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 4.2. Lernergebnisse des Studienfachs.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="lernergebnisse" minOccurs="0" maxOccurs="unbounded">
+                           <xs:element name="studiendetails" type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Hier soll beschrieben werden, welches Wissen, welche Fähigkeiten, Kompetenzen und Skills der Absolvent im Laufe des Studiums erworben hat. Dieses Element deckt die in Abschnitt 4.2 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
-                              </xs:annotation>
-                              <xs:complexType>
-                                 <xs:sequence>
-                                    <xs:element name="beschreibung"
-                                                minOccurs="0"
-                                                maxOccurs="unbounded"
-                                                type="xbd:String.Localized">
-                                       <xs:annotation>
-                                          <xs:documentation>Name eines einzelnen Lernergebnisses.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                    <xs:element name="titel"
-                                                minOccurs="0"
-                                                maxOccurs="unbounded"
-                                                type="xbd:String.Localized">
-                                       <xs:annotation>
-                                          <xs:documentation>Beschreibung eines einzelnen Lernergebnisses.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                 </xs:sequence>
-                              </xs:complexType>
-                           </xs:element>
-                           <xs:element name="studiendetails"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xhs:Modul">
-                              <xs:annotation>
-                                 <xs:documentation>Einzelheiten zu belegten Modulen, individuell erworbene Leistungspunkte und erzielte Noten. Zu diesem Abschnitt gehören auch die im Kopfteil gemachten Angaben unter „abschluss“. Dieses Element deckt die in Abschnitt 4.3 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 4.3. Einzelheiten zum Studienfach, individuell erworbene Leistungspunkte und erzielte Noten.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="notenspiegel" minOccurs="0" type="xhs:Notenspiegel">
+                           <xs:element name="notensystem" type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Ein Notenspiegel ermöglicht es, die Note des Studenten in den Kontext mit den anderen Absolventen des Studienfachs zu setzen. Dieses Element deckt die in Abschnitt 4.4b des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 4.4. Notensystem und, wenn vorhanden, Notenspiegel.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="gesamtnote" minOccurs="0" type="xbd:Benotung">
+                           <xs:element name="gesamtnote" type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Die Benotung der absolvierenden Person, die sich aus Benotungselementen wie z.B. Gesamtnote und lateinischer Ehrenbezeichnung zusammensetzt. Identisch mit der „benotung“ im Hochschulabschlusszeugnis. Dieses Element deckt sowohl die in Abschnitt 4.5 gemachten Angaben (Gesamtnote) als auch die Angaben des Abschnitts 4.4a (die Beschreibung des Notensystems) ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 4.5. Gesamtnote (in Originalsprache).</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                         </xs:sequence>
                      </xs:complexType>
                   </xs:element>
-                  <xs:element name="hochschulabschlusszeugnisVerweis" minOccurs="0" type="xs:ID">
+                  <xs:element name="berechtigungenDurchQualifikation">
                      <xs:annotation>
-                        <xs:documentation>Verweis auf das Hochschulabschlusszeugnis (Diploma), für welches das Diploma Supplement ausgestellt wurde.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="berechtigungenDurchQualifikation" minOccurs="0">
-                     <xs:annotation>
-                        <xs:documentation>Angaben zu den Berechtigungen, die durch den Erwerb des Studienabschlusses erworben werden. Abschnitt 5.</xs:documentation>
+                        <xs:documentation>Bezieht sich auf Abschnitt 5. Angaben zur Berechtigung der Qualifikation.</xs:documentation>
                      </xs:annotation>
                      <xs:complexType>
                         <xs:sequence>
-                           <xs:element name="zugangsberechtigungWeiterfuehrendesStudiumBezeichnung"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xbd:String.Localized">
+                           <xs:element name="zugangWeiterfuehrendeStudien" type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Freitextbeschreibung des erworbenen Zugangs zu einem weiterführenden Studium. Dieses Element deckt, ggf. gemeinsam mit zugangsberechtigungWeiterfuehrendesStudiumCode, die in Abschnitt 5.1 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 5.1. Zugang zu weiterführenden Studien.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="zugangsberechtigungWeiterfuehrendesStudiumCode"
+                           <xs:element name="zugangZuReglementiertenBerufen"
                                        minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xbd:Code.ISCED2011">
-                              <xs:annotation>
-                                 <xs:documentation>Bezeichnung des erworbenen Zugangs zu einem weiterführenden Studium (ISCED Code 2011). Dieses Element deckt, ggf. gemeinsam mit zugangsberechtigungWeiterfuehrendesStudiumBezeichnung, die in Abschnitt 5.1 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="zulassungZuReglementiertemBerufBezeichnung"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
                                        type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Bezeichnung des reglementierten Berufs für den durch Erwerb des Hochschulabschlusses die Zugangsvoraussetzung erfüllt werden. Dieses Element deckt die in Abschnitt 5.2 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 5.2. Zugang zu reglementierten Berufen (sofern zutreffend).</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                         </xs:sequence>
                      </xs:complexType>
                   </xs:element>
-                  <xs:element name="sonstigeAngaben" minOccurs="0">
+                  <xs:element name="sonstigeAngaben">
                      <xs:annotation>
-                        <xs:documentation>Enthält weitere Angaben zum Dokument. Abschnitt 6.</xs:documentation>
+                        <xs:documentation>Bezieht sich auf Abschnitt 6. Weitere Angaben.</xs:documentation>
                      </xs:annotation>
                      <xs:complexType>
                         <xs:sequence>
-                           <xs:element name="weitereAngaben" minOccurs="0" maxOccurs="unbounded">
+                           <xs:element name="weitereAngaben" minOccurs="0" type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Dieses Element deckt die in Abschnitt 6.1 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 6.1. Weitere Angaben.</xs:documentation>
                               </xs:annotation>
-                              <xs:complexType>
-                                 <xs:sequence>
-                                    <xs:element name="beschreibung"
-                                                minOccurs="0"
-                                                maxOccurs="unbounded"
-                                                type="xbd:String.Localized">
-                                       <xs:annotation>
-                                          <xs:documentation>Inhalt des Abschnitts mit weiteren Angaben.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                    <xs:element name="titel"
-                                                minOccurs="0"
-                                                maxOccurs="unbounded"
-                                                type="xbd:String.Localized">
-                                       <xs:annotation>
-                                          <xs:documentation>Überschrift des Abschnitts mit weiteren Angaben.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                 </xs:sequence>
-                              </xs:complexType>
                            </xs:element>
                            <xs:element name="weitereInformationsquellen"
                                        minOccurs="0"
-                                       maxOccurs="unbounded">
+                                       type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Hier können weitere Informatiosquellen angegeben werden. Dieses Element deckt die in Abschnitt 6.2 des Diploma Supplements gemachten Angaben ab.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 6.2. Weitere Informationsquellen.</xs:documentation>
                               </xs:annotation>
-                              <xs:complexType>
-                                 <xs:sequence>
-                                    <xs:element name="beschreibung"
-                                                minOccurs="0"
-                                                maxOccurs="unbounded"
-                                                type="xbd:String.Localized">
-                                       <xs:annotation>
-                                          <xs:documentation>Beschreibung der Quelle.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                    <xs:element name="titel"
-                                                minOccurs="0"
-                                                maxOccurs="unbounded"
-                                                type="xbd:String.Localized">
-                                       <xs:annotation>
-                                          <xs:documentation>Titel der Quelle. Kann als Überschrift oder Link-Text verwendet werden.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                    <xs:element name="url" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI">
-                                       <xs:annotation>
-                                          <xs:documentation>URL unter der die weiteren Informationen erreicht werden können.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                 </xs:sequence>
-                              </xs:complexType>
                            </xs:element>
                         </xs:sequence>
                      </xs:complexType>
                   </xs:element>
-                  <xs:element name="angabenNationalesHochschulsystem" minOccurs="0">
+                  <xs:element name="angabenNationalesHochschulsystem">
                      <xs:annotation>
-                        <xs:documentation>Detailliertere Beschreibung des nationalen Hochschulsystems, in dem das Dokument ausgestellt wurde. Abschnitt 8.</xs:documentation>
+                        <xs:documentation>Bezieht sich auf Abschnitt 8. Angaben zum nationalen Hochschulsystem.</xs:documentation>
                      </xs:annotation>
                      <xs:complexType>
                         <xs:sequence>
-                           <xs:element name="beschreibung"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xbd:String.Localized">
+                           <xs:element name="beschreibung" type="xbd:String.Localized">
                               <xs:annotation>
-                                 <xs:documentation>Inhalt des Abschnitts bezüglich des nationalen Hochschulsystems.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="titel"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xbd:String.Localized">
-                              <xs:annotation>
-                                 <xs:documentation>Überschrift des Abschnitts bezüglich des nationalen Hochschulsystems.</xs:documentation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 8.Allgemeine Beschreibung des Hochschulsystems als Freitext oder als Verweis auf externe Dokumente.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                         </xs:sequence>
                      </xs:complexType>
+                  </xs:element>
+                  <xs:element ref="ds:Signature" minOccurs="0">
+                     <xs:annotation>
+                        <xs:documentation>Hier kann eine digitale Signatur angegeben werden.</xs:documentation>
+                     </xs:annotation>
                   </xs:element>
                </xs:sequence>
             </xs:extension>
@@ -408,11 +245,9 @@
          <xs:complexContent>
             <xs:extension base="xbd:Dokument">
                <xs:sequence>
-                  <xs:element name="abschluss"
-                              minOccurs="0"
-                              type="xhs:Code.ArtDesHochschulabschlusses">
+                  <xs:element name="abschluss" minOccurs="0" type="din91379:datatypeC">
                      <xs:annotation>
-                        <xs:documentation>Art des Hochschulabschlusses, unterschieden nach der Art der Abschlussprüfung.</xs:documentation>
+                        <xs:documentation>Bezeichnung des Abschlusses, z.B. "Master of Science".</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="studierender">
@@ -425,26 +260,24 @@
                         </xs:complexContent>
                      </xs:complexType>
                   </xs:element>
-                  <xs:element name="ausstellendeHochschule"
-                              maxOccurs="unbounded"
-                              type="xhs:Hochschule">
+                  <xs:element name="ausstellendeHochschule" type="xhs:Hochschule">
                      <xs:annotation>
                         <xs:documentation>Die Hochschule, die das Hochschulabschlusszeugnis ausgestellt hat.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="diplomaSupplementVerweis" minOccurs="0" type="xs:ID">
+                  <xs:element name="datumDesErwerbs" minOccurs="0" type="xs:date">
                      <xs:annotation>
-                        <xs:documentation>Verweis auf ein gemeinsam mit einem Hochschulabschlusszeugnis (Diploma) ausgestelltes Diploma Supplement</xs:documentation>
+                        <xs:documentation>Gibt das Datum an, an dem das Hochschulabschlusszeugnis erworben wurde.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="transcriptOfRecordVerweis" minOccurs="0" type="xs:ID">
+                  <xs:element name="transcriptOfRecordVerweis" minOccurs="0" type="xs:string">
                      <xs:annotation>
-                        <xs:documentation>Verweis auf ein gemeinsam mit einem Hochschulabschlusszeugnis (Diploma) ausgestelltes "Transcript Of Record"-Dokument</xs:documentation>
+                        <xs:documentation>Verweis auf ein gemeinsam mit einem Hochschulabschlusszeugnis (Diploma) ausgestelltes "Transcript of Record"-Dokument</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="studienfach" maxOccurs="unbounded" type="xhs:Studienfach">
+                  <xs:element name="leistung" maxOccurs="unbounded" type="xhs:Leistung">
                      <xs:annotation>
-                        <xs:documentation>Als Studienfach bezeichnet man an Hochschulen den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums.</xs:documentation>
+                        <xs:documentation>Element für die strukturierte Abbildung der Studienleistungen. An oberster Ebene dient die Klasse zur Spezifizierung des Studienfachs (Synonym zu Studiengang, bezeichnet den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums). Die jeweilige Art der Leistung, z.B. Studienfach, Modul, Klausur etc., wird durch das Kindelement "leistungsart" angegeben. "Leistung" kann sich selbst als Kindelement unter dem Namen "teilleistung" enthalten, um die aufgeschlüsselten Inhalte des Studienfachs abzubilden. "teilleistung" kann so oft in sich geschachtelt werden, wie es die organisatorische Aufteilung des Studienfachs erfordert. Z. B. kann das Studienfach "Biophysik" ("Leistung" mit "leistungsart" = Studienfach) mehrere Module ("teilleistung" mit "leistungsart" = Modul) enthalten, die wiederum jeweils mehrere Elemente "teilleistung" mit "leistungsart" = Vorlesungen, Praktika, Klausuren etc. enthalten.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="benotung">
@@ -463,6 +296,13 @@
                                        type="xhs:Code.LateinischeEhrenbezeichnung">
                               <xs:annotation>
                                  <xs:documentation>lateinische Ehrenbezeichnung falls vorhanden (z.B. "cum laude")</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="lateinischeEhrenbezeichnungFreitext"
+                                       minOccurs="0"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>In diesem Feld ist die lateinische Ehrenbezeichnung als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.LateinischeEhrenbezeichnung" enthalten ist, die über das Element "lateinischeEhrenbezeichnung" eingebunden ist, d.h. wenn dort der Codelisten-Wert "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                         </xs:sequence>
@@ -489,12 +329,71 @@
                         <xs:documentation>Freitextbeschreibung des erworbenen Zugangs zu einem weiterführenden Studium.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="zugangsberechtigungWeiterfuehrendesStudiumCode"
+                  <xs:element name="zugangsberechtigungWeiterfuehrendesStudiumCodeEQF"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xbd:Code.EQF">
+                     <xs:annotation>
+                        <xs:documentation>Niveau des erworbenen Zugangs zu einem weiterführenden Studium (European Qualifications Framework / EQF).</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="zugangsberechtigungWeiterfuehrendesStudiumCodeISCED2011"
                               minOccurs="0"
                               maxOccurs="unbounded"
                               type="xbd:Code.ISCED2011">
                      <xs:annotation>
-                        <xs:documentation>Bezeichnung des erworbenen Zugangs zu einem weiterführenden Studium (ISCED Code 2011).</xs:documentation>
+                        <xs:documentation>Bezeichnung des erworbenen Zugangs zu einem weiterführenden Studium (International Standard Classification of Qualification / ISCED).</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element ref="xhs:diplomaSupplement" minOccurs="0">
+                     <xs:annotation>
+                        <xs:documentation>Verweis auf ein gemeinsam mit einem Hochschulabschlusszeugnis (Diploma) ausgestelltes "Diploma Supplement"-Dokument</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element ref="ds:Signature" minOccurs="0">
+                     <xs:annotation>
+                        <xs:documentation>Hier kann eine digitale Signatur angegeben werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="transcriptOfRecords">
+      <xs:annotation>
+         <xs:appinfo>
+            <rechtsgrundlage/>
+         </xs:appinfo>
+         <xs:documentation>Das Transcript of Records (TOR) ist ein Bildungs- und Leistungsnachweis einer Hochschule und enthält üblicherweise Angaben wie Prüfungsleistungen, Prüfungsnoten, Auflistung besuchter Kurse, erreichte ECTS-Punkte, etc.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="xbd:Dokument">
+               <xs:sequence>
+                  <xs:element name="studierender">
+                     <xs:annotation>
+                        <xs:documentation>Studierende Person, für die ein Transcript of Records ausgestellt wird.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:complexContent>
+                           <xs:extension base="xhs:Studierender"/>
+                        </xs:complexContent>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="ausstellendeHochschule" type="xhs:Hochschule">
+                     <xs:annotation>
+                        <xs:documentation>Die Hochschule, die das Transcript of Records ausgestellt hat.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="leistung" maxOccurs="unbounded" type="xhs:Leistung">
+                     <xs:annotation>
+                        <xs:documentation>Element für die strukturierte Abbildung der Studienleistungen. An oberster Ebene dient die Klasse zur Spezifizierung des Studienfachs (Synonym zu Studiengang, bezeichnet den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums). Die jeweilige Art der Leistung, z.B. Studienfach, Modul, Klausur etc., wird durch das Kindelement "leistungsart" angegeben. "Leistung" kann sich selbst als Kindelement unter dem Namen "teilleistung" enthalten, um die aufgeschlüsselten Inhalte des Studienfachs abzubilden. "teilleistung" kann so oft in sich geschachtelt werden, wie es die organisatorische Aufteilung des Studienfachs erfordert. Z. B. kann das Studienfach "Biophysik" ("Leistung" mit "leistungsart" = Studienfach) mehrere Module ("teilleistung" mit "leistungsart" = Modul) enthalten, die wiederum jeweils mehrere Elemente "teilleistung" mit "leistungsart" = Vorlesungen, Praktika, Klausuren etc. enthalten.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element ref="ds:Signature" minOccurs="0">
+                     <xs:annotation>
+                        <xs:documentation>Hier kann eine digitale Signatur angegeben werden.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                </xs:sequence>

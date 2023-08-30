@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XHochschule.Baukasten.Studierender">
+   <title>Studierender</title>
+   <subtitle>Typ: <emphasis role="codebf">Studierender</emphasis>
+   </subtitle><para>Spezialisierung eines XBildung:NatuerlichePerson im Hochschulbereich. In einer Hochschule eingeschriebene Person. (<link xlink:href="http://eurovoc.europa.eu/897">Eurovoc Term</link>)</para><figure xml:id="figure.XHochschule.Baukasten.Studierender">
+      <title>Studierender</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../zeichnungen/XHochschule/Baukasten/Studierender.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <para>Dieser Typ  ist eine Erweiterung des Basistyps <emphasis role="codebf">NatuerlichePerson</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <informaltable xml:id="table.XHochschule.Baukasten.Studierender">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">Studierender</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">matrikelnummer</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Identifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Kennung, die eine eingeschriebene Person zu einem Zeitpunkt an einer Hochschule eindeutig identifiziert. Um einer Person außerhalb des Kontextes einer Hochschule hinaus eindeutig zu identifizieren, sollte zusätzlich zur Matrikelnummer die Signatur der Hochschule und der Zeitpunkt der Ausstellung betrachtet werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ersteinschreibung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:date</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Datum der Ersteinschreibung</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">hochschulsemester</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:decimal</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hochschulsemester sind alle Semester, für die ein Studierender an jeglicher Hochschule in Deutschland immatrikuliert ist oder war. Dazu zählen z.B. auch Auslands- und Urlaubssemester. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">urlaubssemester</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:decimal</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Anzahl der Urlaubssemester. Als Urlaubssemester werden die Semester bezeichnet, in denen ein Studierender in einer Hochschule immatrikuliert und beurlaubt ist. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet. Die Anzahl der Urlaubssemester ist Pflichtfeld auf allen Exmatrikulationsbescheinigungen, da sie wichtig für die Berechnung von Studiengebühren sind, etwa im Zuge eines Studienplatzwechsels. </para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../anhang/verwendung/complexTypes/studierender_list.xml"/>
+</section>

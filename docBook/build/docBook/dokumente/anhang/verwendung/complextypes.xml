@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE appendix [<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent"> %complete;]><appendix xmlns="http://docbook.org/ns/docbook"
+          version="5"
+          xml:lang="de"
+          xml:id="anhang.verwendung.complextype"
+          status="&specstatus;"
+          revision="&xrecent;">
+   <title xmlns:xlink="http://www.w3.org/1999/xlink">Verwendung von Datenypen in Nachrichten</title>
+   <para xmlns:xlink="http://www.w3.org/1999/xlink">Der Abschnitt <emphasis>Verwendung des Typs in Nachrichten</emphasis> am Ende einer Beschreibung eines Datentypen listet die Nummern der Nachrichten auf, in denen der vorher beschriebene Typ verwendet wird.</para>
+   <para xmlns:xlink="http://www.w3.org/1999/xlink">Ein Typ gilt als verwendet, wenn er </para>
+   <itemizedlist xmlns:xlink="http://www.w3.org/1999/xlink">
+      <listitem>
+         <para>direkt oder indirekt von einer Nachricht eingebunden wird. Im XML-Schema besitzt die Nachricht also mindestens ein Kindelement, von diesem Typen oder einer Spezialisierung dieses Typen.</para>
+      </listitem>
+      <listitem>
+         <para>ein Obertyp der Nachricht verwendet diesen Typen auf die vorherige Art.</para>
+      </listitem>
+   </itemizedlist>
+   <section xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title>Nicht in Nachrichten verwendete Datentypen</title>
+      <itemizedlist>
+         <listitem>
+            <para>Notenspiegel</para>
+         </listitem>
+         <listitem>
+            <para>Studierender</para>
+         </listitem>
+      </itemizedlist>
+   </section>
+</appendix>

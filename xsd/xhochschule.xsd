@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://xhochschule.de/def/xhochschule/0.94/xsd"
-           version="0.94"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.95/xsd"
+           version="0.95"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
