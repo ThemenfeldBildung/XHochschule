@@ -10,7 +10,7 @@
                 xmlns:oxy="http://www.oxygenxml.com/schematron/validation"
                 xmlns:saxon="http://saxon.sf.net/"
                 xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
-                xmlns:xhs="http://xhochschule.de/def/xhochschule/0.95/xsd"
+                xmlns:xhs="http://xhochschule.de/def/xhochschule/1.0/xsd"
                 xmlns:xhtml="http://www.w3.org/1999/xhtml"
                 xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
                 xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"

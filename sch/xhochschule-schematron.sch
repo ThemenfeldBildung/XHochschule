@@ -15,7 +15,7 @@
    <sch:ns prefix="ds" uri="http://www.w3.org/2000/09/xmldsig#"/>
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
    <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/1.0/xsd"/>
-   <sch:ns prefix="xhs" uri="http://xhochschule.de/def/xhochschule/0.95/xsd"/>
+   <sch:ns prefix="xhs" uri="http://xhochschule.de/def/xhochschule/1.0/xsd"/>
    <sch:ns prefix="xml" uri="http://www.w3.org/XML/1998/namespace"/>
    <sch:ns prefix="xoev-code" uri="http://xoev.de/schemata/code/1_0"/>
    <sch:ns prefix="xoev-lc" uri="http://xoev.de/latinchars/1_1/datatypes"/>
