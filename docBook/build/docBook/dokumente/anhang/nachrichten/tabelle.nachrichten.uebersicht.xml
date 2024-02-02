@@ -14,12 +14,17 @@
       <tbody>
          <row>
             <entry align="center" namest="c1" nameend="c5">
+               <emphasis role="bold">Schema-Datei: Kernkomponenten.xsd</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry align="center" namest="c1" nameend="c5">
                <emphasis role="bold">Schema-Datei: xhochschule-baukasten.xsd</emphasis>
             </entry>
          </row>
          <row>
             <entry align="center" namest="c1" nameend="c5">
-               <emphasis role="bold">Schema-Datei: xhochschule-bescheingungen.xsd</emphasis>
+               <emphasis role="bold">Schema-Datei: xhochschule-bescheinigungen.xsd</emphasis>
             </entry>
          </row>
          <row>
@@ -90,7 +95,10 @@ Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des D
             <entry align="left">
                <para>hochschulabschlusszeugnis</para>
             </entry>
-            <entry><para>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Hochschulabschlusszeugnisses erhält.</para></entry>
+            <entry><para>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Hochschulabschlusszeugnisses erhält. 
+Alle Module wie auch die Abschlussarbeit kann über das Element "leistung " mit der zugehörigen Codeliste "leistungsart" abgebildet werden.
+Zum Beispiel: kann das Element "leistung" mit "leistungsart" = Vorlesungen, Praktika, Klausuren, Abschlussarbeit etc. enthalten.</para>
+</entry>
             <entry align="center">
                <xref role="Seite"
                      linkend="XHochschule.Bildungsnachweise.hochschulabschlusszeugnis"/>

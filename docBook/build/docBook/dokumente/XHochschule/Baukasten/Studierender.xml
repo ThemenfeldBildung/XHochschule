@@ -8,7 +8,7 @@
          xml:id="XHochschule.Baukasten.Studierender">
    <title>Studierender</title>
    <subtitle>Typ: <emphasis role="codebf">Studierender</emphasis>
-   </subtitle><para>Spezialisierung eines XBildung:NatuerlichePerson im Hochschulbereich. In einer Hochschule eingeschriebene Person. (<link xlink:href="http://eurovoc.europa.eu/897">Eurovoc Term</link>)</para><figure xml:id="figure.XHochschule.Baukasten.Studierender">
+   </subtitle><para>In einer Hochschule eingeschriebene Person (<link xlink:href="http://eurovoc.europa.eu/897">Eurovoc Term</link>), Spezialisierung einer natürlichen Person im Hochschulbereich (erbt von der XÖV-Kernkomponente natuerlichePerson). </para><figure xml:id="figure.XHochschule.Baukasten.Studierender">
       <title>Studierender</title>
       <mediaobject>
          <imageobject>
@@ -19,7 +19,7 @@
          </imageobject>
       </mediaobject>
    </figure>
-   <para>Dieser Typ  ist eine Erweiterung des Basistyps <emphasis role="codebf">NatuerlichePerson</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <para>Dieser Typ  ist eine Erweiterung des Basistyps <emphasis role="codebf">NatuerlichePerson</emphasis> (siehe <xref linkend="XHochschule.Kernkomponenten.NatuerlichePerson" role="AS"/>).</para>
    <informaltable xml:id="table.XHochschule.Baukasten.Studierender">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
@@ -58,10 +58,11 @@
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XHochschule.Kernkomponenten.Identifikation"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XHochschule.Kernkomponenten.Identifikation" role="Seitenzahl"/>
                </entry>
             </row>
             <row>

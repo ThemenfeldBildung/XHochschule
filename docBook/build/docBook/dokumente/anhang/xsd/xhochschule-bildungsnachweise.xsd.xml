@@ -59,7 +59,7 @@
                      <para>din-norm-91379-datatypes.xsd (din91379 : urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08)</para>
                   </listitem>
                   <listitem>
-                     <para>xbildung-baukasten.xsd (xbd : http://xbildung.de/def/xbildung/0.95/xsd)</para>
+                     <para>xbildung-baukasten.xsd (xbd : http://xbildung.de/def/xbildung/1.0/xsd)</para>
                   </listitem>
                </itemizedlist>
             </entry>

@@ -8,13 +8,15 @@
          xml:id="XHochschule.Baukasten.Leistung">
    <title>Leistung</title>
    <subtitle>Typ: <emphasis role="codebf">Leistung</emphasis>
-   </subtitle><para>Klasse zur generischen Abbildung einer Leistung. Sie kann sich selbst unter dem Namen "teilleistung" als Kindelement enthalten und dient sowohl der organisatorischen als auch der inhaltlichen Darstellung des Studienfachs (Synonym zu Studiengang, bezeichnet den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums). "Leistung" enthält zudem auch "leistungsart" als Kindelement, eine Codeliste, mit deren Inhalten die Art der Leistung (Studienfach, Modul, Klausur etc.) angegeben werden kann. Ein Anwendungsbeispiel: Eine studierende Person ist im Studienfach Biophysik eingeschrieben. Bei der Ausstellung eines Transcript of Records wird die Klasse "Leistung" verwendet, um die oberste organisatorische Ebene "Studienfach" = Biophysik abzubilden. In der Klasse "Leistung" wird daher das Kindelement "leistungsart" auf "Studienfach" gesetzt. Das Studienfach enthält beispielhaft sechs Teilleistungen wie z. B. die Module Experimentalphysik und Genetik. Es wird daher"teilleistung" als Kindelement sechs mal eingebunden, um alle sechs Module abzubilden, jeweils mit "leistungsart"= Modul. "teilleistung" kann wiederum "teilleistung" mit entsprechender "leistungsart" enthalten, bis die entsprechenden Bestandteile der Module oder der sonstigen Organisationseinheiten des Studienfachs abgebildet sind, z.B. Kurs, Seminar, Vorlesung, Praktikum, Klausur, mündliche Prüfung, Seminararbeit, etc.</para><figure xml:id="figure.XHochschule.Baukasten.Leistung">
+   </subtitle><para>Klasse zur generischen Abbildung einer Leistung. Sie kann in sich selbst geschachtelt werden und sich somit selbst als Kindelement enthalten. Sie dient sowohl der organisatorischen als auch der inhaltlichen Darstellung des Studienfachs bzw. Studiengangs -  Studienfach soll  als Synonym zu Studiengang aufgefasst werden und bezeichnet den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums.</para>
+<para> "Leistung" enthält "leistungsart" als Kindelement, wo entweder mit den Inhalten der Codeliste "leistungsartCode" die Leistungsart (Studienfach, Modul, Klausur etc.) angegeben werden kann, oder ein Freitextfeld ausgegeben wird. "leistungsart" bezieht sich immer auf sein Elternelement "leistung". Das Freitextfeld wird nur dann ausgegeben, wenn kein Codelisteneintrag inhaltlich zutreffend ist und somit nur "Wert nicht in Liste" sinnvoll ausgewählt werden kann. </para>
+<para> Ein Anwendungsbeispiel: Eine studierende Person ist im Studienfach Biophysik eingeschrieben. Bei der Ausstellung eines Transcript of Records wird die Klasse "leistung" verwendet, um die oberste organisatorische Ebene "Studienfach" = Biophysik abzubilden. In der Klasse "leistungart" wird daher der Wert der Codeliste "leistungsartCode" auf "Studienfach" gesetzt. Das Studienfach enthält beispielhaft sechs Teilleistungen, wie z. B. die Module Experimentalphysik und Genetik. Es wird daher "leistung" als Kindelement sechs Mal eingebunden, um die sechs Module abzubilden, wo jeweils in "leistungsart" die Codeliste "leistungsartCode" auf den Wert "Modul" gesetzt werden kann. "leistung" kann wiederum "leistung" mit entsprechender "leistungsart" enthalten, bis die entsprechenden Bestandteile der Module oder der sonstigen Organisationseinheiten des Studienfachs abgebildet sind, z.B. Kurs, Seminar, Vorlesung, Praktikum, Klausur, mündliche Prüfung, Seminararbeit, etc.</para><figure xml:id="figure.XHochschule.Baukasten.Leistung">
       <title>Leistung</title>
       <mediaobject>
          <imageobject>
             <imagedata format="svg"
                        align="center"
-                       scale="86"
+                       scale="74"
                        fileref="../../../zeichnungen/XHochschule/Baukasten/Leistung.svg"/>
          </imageobject>
       </mediaobject>
@@ -68,6 +70,26 @@
             </row>
             <row>
                <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">bezeichnungAlsHTML</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeE</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Bezeichnung einer Leistung mittels HTML-Code.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
                   <emphasis role="bold">angestrebterAbschluss</emphasis>
                </entry>
                <entry>
@@ -84,7 +106,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Der Abschluss, der mit dem Studienfach angestrebt wird, z.B. Master of Science.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Der Abschluss, der mit dem Studienfach angestrebt wird, z. B. Master of Science.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -100,7 +122,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Anzahl der Semester, die ein Studierender in ein bestimmtes Studienfachs eingeschrieben ist ohne beurlaubt zu sein. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet. Diese Angabe bezieht sich auf die Anzahl der zum Zeitpunkt der Ausstellung des Dokuments angefangenen Fachsemester, d.h. ein laufendes Semester wird mitgezählt. Bei vergangenen Studienabschnitten stellt diese Angabe die laufende Anzahl an Fachsemestern im entsprechenden Zeitraum dar.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Anzahl der Semester, die ein Studierender in ein bestimmtes Studienfach eingeschrieben ist, ohne beurlaubt zu sein. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet. Diese Angabe bezieht sich auf die Anzahl der zum Zeitpunkt der Ausstellung des Dokuments angefangenen Fachsemester, d. h. ein laufendes Semester wird mitgezählt. Bei vergangenen Studienabschnitten stellt diese Angabe die laufende Anzahl an Fachsemestern im entsprechenden Zeitraum dar.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -120,7 +142,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Beschreibt das Qualifikationsniveaus nach ISCED 2011.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Beschreibt das Qualifikationsniveau nach ISCED 2011.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -144,6 +166,28 @@
             </row>
             <row>
                <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">faecherschluesselDESTATIS</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Faecherschluessel</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Codes.Code.Faecherschluessel"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Codes.Code.Faecherschluessel"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Bezeichnung des Studienfachs nach dem DESTATIS-Fächerschlüssel.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
                   <emphasis role="bold">schluesselEQF</emphasis>
                </entry>
                <entry>
@@ -160,11 +204,26 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Beschreibt das Qualifikationsniveaus nach EQF.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Beschreibt das Qualifikationsniveau nach EQF.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">leistungsart</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Art der Leistung wahlweise als Codelisten-Eintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisten-Eintrag vorliegt. Das "Modul" orientiert sich an den <link xlink:href="https://www.kmk.org/fileadmin/pdf/PresseUndAktuelles/2000/module.pdf"> Rahmenvorgaben der KMK. </link> Wenn "Modul" ausgewählt ist, besteht die Möglichkeit der Angabe einer "Modulbeschreibung nach KMK". </para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">code</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">Code.Leistungsart</emphasis>
@@ -182,11 +241,14 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Diese Codeliste gibt an, um welche Art der Leistung es sich bei einer bestimmten Leistung handelt. Die Leistungen, z.B. Modul, Kurs, Seminar, Vorlesung, Praktikum, Klausur, mündliche Prüfung, Seminararbeit, etc., können weitere Teilleistungen beinhalten, die wiederum vom Typ Leistung sind. So lässt sich z.B. spezifizieren, dass ein Kurs mehrere Klausuren beinhaltet. </para></entry>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Diese Codeliste gibt an, um welche Art der Leistung es sich bei einer bestimmten Leistung handelt. Die Leistungen, z.B. Modul, Kurs, Seminar, Vorlesung, Praktikum, Klausur, mündliche Prüfung, Seminararbeit, etc., können weitere Leistungen beinhalten, um Teilleistungen abzubilden und z. B. zu spezifizieren, dass ein Kurs mehrere Klausuren beinhaltet. </para>
+</entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">leistungsartFreitext</emphasis>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">String.Localized</emphasis>
@@ -202,7 +264,8 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>In diesem Feld ist die Art einer Leistung als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Leistungsart" enthalten ist, die über das Element "leistungsart" eingebunden ist. In diesem Fall muss der Codelisten-Wert "Wert nicht in Liste" ausgewählt werden.</para></entry>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>In diesem Feld ist die Art einer Leistung als Freitext anzugeben.  Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -215,14 +278,19 @@
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XHochschule.Kernkomponenten.Identifikation"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XHochschule.Kernkomponenten.Identifikation" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>ID für eine Leistung, die von der ausstellenden Hochschule vergeben wird, dies kann z.B. eine Modulnummer oder eine Prüfungsnummer sein.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Die ID sichert die eindeutige Identifikation von Objekten in einem fachlichen Kontext.</para>
+
+<para>ID für eine Leistung, die von der ausstellenden Hochschule vergeben wird, dies kann z.B. eine Modulnummer oder eine Prüfungsnummer sein.</para>
+
+<para>Über "Beschreibung" in der Klasse Identifikation kann die Art der ID genauer bezeichnet werden.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -249,11 +317,26 @@
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">leistungsstatus</emphasis>
                </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Status der Leistung wahlweise als Codelisten-Eintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisten-Eintrag vorliegt. </para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
                <entry>
                   <emphasis role="codebf">Code.Leistungsstatus</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XHochschule.Baukasten.Codes.Code.Leistungsstatus"
@@ -265,11 +348,13 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, nicht bestanden etc.</para></entry>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, nicht bestanden etc.</para></entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">leistungsstatusFreitext</emphasis>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">String.Localized</emphasis>
@@ -285,17 +370,33 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>In diesem Feld ist der Status der Leistung als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Leistungsstatus" enthalten ist, die über das Element "leistungsstatus" eingebunden ist. In diesem Fall muss der Codelisten-Wert "Wert nicht in Liste" ausgewählt werden.</para></entry>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>In diesem Feld ist der Status der Leistung als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">leistungsbenotungsstatus</emphasis>
                </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Diese Codeliste gibt den Status einer Leistung in Bezug auf die Benotung an. Eine Note kann z.B. final, vorläufig, oder nicht vorhanden sein.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
                <entry>
                   <emphasis role="codebf">Code.Leistungsbenotungsstatus</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XHochschule.Baukasten.Codes.Code.Leistungsbenotungsstatus"
@@ -307,11 +408,50 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Diese Codeliste gibt den Status einer Leistung in Bezug auf die Benotung an. Eine Leistung kann benotet, unbenotet, oder vorläufig benotet sein.</para></entry>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Diese Codeliste gibt den Status einer Leistung in Bezug auf die Benotung an. Eine Note kann z.B. final, vorläufig, oder nicht vorhanden sein.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>In diesem Feld ist der Status der Benotung als Freitext anzugeben.  Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">note</emphasis>
+                  <emphasis role="bold">benotet</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:boolean</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angabe, ob eine Leistung benotet ist. Die Angabe 'true' gibt an, dass die Leistung benotet ist.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">benotung</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">Benotung</emphasis>
@@ -411,7 +551,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Semester in dem die Leistung erbracht wurde, z.B. "Wintersemester 2020/2021". Bei Leistungen, die über mehrere Semester hinweg erbracht werden ist das dasjenige Semester anzugeben, in dem die Leistung abgeschlossen wurde.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Semester in dem die Leistung erbracht wurde, z.B. "Wintersemester 2020/2021". Bei Leistungen, die über mehrere Semester hinweg erbracht wurden, ist das dasjenige Semester anzugeben, in dem die Leistung abgeschlossen wurde.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -477,7 +617,7 @@
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">teilleistung</emphasis>
+                  <emphasis role="bold">leistung</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">Leistung</emphasis>
@@ -515,18 +655,313 @@
             </thead>
             <tbody>
                <row>
-                  <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">xhs:note/xbd:note</emphasis>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;0&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;e&#x200B;S&#x200B;W&#x200B;S&#x200B;B&#x200B;e&#x200B;i&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;e&#x200B;n&#x200B;</entry>
+                  <entry>XHS-0020 Der Wert "UmfangInSWS" darf nicht angegeben werden, wenn der Inhalt des Codewertes von "leistungsart" mit "klausur" oder "pruefung" endet. Bei Prüfungen handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/leistungsartCode/code/text(), 'klausur') or  ends-with(*:leistungsart/leistungsartCode/code/text(), 'pruefung')) then not(exists(*:beschreibung/*:umfangInSWS)) else (not(exists(*:beschreibung/*:umfangInSWS)) or exists(*:beschreibung/*:umfangInSWS))</emphasis>
+                     </para>
                   </entry>
                </row>
                <row>
-                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;3&#x200B;3&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;</entry>
-                  <entry>XHS-0033 das Feld Benotung muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</entry>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;1&#x200B;-&#x200B;U&#x200B;n&#x200B;b&#x200B;e&#x200B;d&#x200B;e&#x200B;n&#x200B;k&#x200B;l&#x200B;i&#x200B;c&#x200B;h&#x200B;k&#x200B;e&#x200B;i&#x200B;t&#x200B;N&#x200B;u&#x200B;r&#x200B;B&#x200B;e&#x200B;i&#x200B;S&#x200B;t&#x200B;u&#x200B;d&#x200B;i&#x200B;e&#x200B;n&#x200B;f&#x200B;a&#x200B;c&#x200B;h&#x200B;</entry>
+                  <entry>XHS-0021 Der Unbedenklichkeitsvermerk darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:unbedenklichkeitsvermerk) or not(exists(*:unbedenklichkeitsvermerk))) else not(exists(*:unbedenklichkeitsvermerk))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;2&#x200B;-&#x200B;a&#x200B;n&#x200B;g&#x200B;e&#x200B;s&#x200B;t&#x200B;r&#x200B;e&#x200B;b&#x200B;t&#x200B;e&#x200B;r&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;</entry>
+                  <entry>XHS-0022 Der angestrebte Abschluss darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:angestrebterAbschluss) or not(exists(*:angestrebterAbschluss))) else not(exists(*:angestrebterAbschluss))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;3&#x200B;-&#x200B;f&#x200B;a&#x200B;c&#x200B;h&#x200B;s&#x200B;e&#x200B;m&#x200B;e&#x200B;s&#x200B;t&#x200B;e&#x200B;r&#x200B;</entry>
+                  <entry>XHS-0023 Das Fachsemester darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:fachsemester) or not(exists(*:fachsemester))) else not(exists(*:fachsemester))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;4&#x200B;-&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;e&#x200B;s&#x200B;s&#x200B;e&#x200B;l&#x200B;I&#x200B;S&#x200B;C&#x200B;E&#x200B;D&#x200B;2&#x200B;0&#x200B;1&#x200B;1&#x200B;</entry>
+                  <entry>XHS-0024 Der Schlüssel nach ISCED2011 darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselISCED2011) or not(exists(*:schluesselISCED2011))) else not(exists(*:schluesselISCED2011))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;5&#x200B;-&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;e&#x200B;s&#x200B;s&#x200B;e&#x200B;l&#x200B;I&#x200B;S&#x200B;C&#x200B;E&#x200B;D&#x200B;F&#x200B;2&#x200B;0&#x200B;1&#x200B;3&#x200B;</entry>
+                  <entry>XHS-0025 Der Schlüssel nach ISCEDF2013 darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselISCEDF2013) or not(exists(*:schluesselISCEDF2013))) else not(exists(*:schluesselISCEDF2013))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;6&#x200B;-&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;e&#x200B;s&#x200B;s&#x200B;e&#x200B;l&#x200B;E&#x200B;Q&#x200B;F&#x200B;</entry>
+                  <entry>XHS-0026 Der Schlüssel nach EQF darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselEQF) or not(exists(*:schluesselEQF))) else not(exists(*:schluesselEQF))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;7&#x200B;-&#x200B;n&#x200B;u&#x200B;r&#x200B;W&#x200B;e&#x200B;n&#x200B;n&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;t&#x200B;L&#x200B;e&#x200B;i&#x200B;s&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;b&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;t&#x200B;a&#x200B;t&#x200B;u&#x200B;s&#x200B;</entry>
+                  <entry>XHS-0027 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll der Leistungsbenotungsstatus angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:leistungsbenotungsstatus)) else (not(exists(*:leistungsbenotungsstatus)))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;8&#x200B;-&#x200B;n&#x200B;u&#x200B;r&#x200B;W&#x200B;e&#x200B;n&#x200B;n&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;t&#x200B;N&#x200B;o&#x200B;t&#x200B;e&#x200B;</entry>
+                  <entry>XHS-0028 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll die Benotung angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:benotung)) else (not(exists(*:benotung)))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;9&#x200B;-&#x200B;n&#x200B;u&#x200B;r&#x200B;W&#x200B;e&#x200B;n&#x200B;n&#x200B;M&#x200B;o&#x200B;d&#x200B;u&#x200B;l&#x200B;M&#x200B;o&#x200B;d&#x200B;u&#x200B;l&#x200B;b&#x200B;e&#x200B;s&#x200B;c&#x200B;h&#x200B;r&#x200B;e&#x200B;i&#x200B;b&#x200B;u&#x200B;n&#x200B;g&#x200B;N&#x200B;a&#x200B;c&#x200B;h&#x200B;K&#x200B;M&#x200B;K&#x200B;</entry>
+                  <entry>XHS-0029 Nur wenn der Wert der Codeliste Leistungsart auf 'modul' gesetzt wurde, soll die Beschreibung nach den Vorgaben der KMK ausgefüllt werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">((ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK)) or exists(*:beschreibung/*:modulbeschreibungNachKMK))) or (not(ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK))))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;3&#x200B;1&#x200B;-&#x200B;f&#x200B;a&#x200B;e&#x200B;c&#x200B;h&#x200B;e&#x200B;r&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;e&#x200B;s&#x200B;s&#x200B;e&#x200B;l&#x200B;D&#x200B;E&#x200B;S&#x200B;T&#x200B;A&#x200B;T&#x200B;I&#x200B;S&#x200B;</entry>
+                  <entry>XHS-0031 Der Fächerschlüssel nach DESTATIS darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesseDESTATIS) or not(exists(*:faecherschluesseDESTATIS))) else not(exists(*:faecherschluesseDESTATIS))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">benotung/note</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;8&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;</entry>
+                  <entry>XHS-0018 Das Feld Note muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
                         <emphasis role="codebf">(matches(., '^\d+,\d+$'))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">leistung</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;0&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;e&#x200B;S&#x200B;W&#x200B;S&#x200B;B&#x200B;e&#x200B;i&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;e&#x200B;n&#x200B;</entry>
+                  <entry>XHS-0020 Der Wert "UmfangInSWS" darf nicht angegeben werden, wenn der Inhalt des Codewertes von "leistungsart" mit "klausur" oder "pruefung" endet. Bei Prüfungen handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/leistungsartCode/code/text(), 'klausur') or  ends-with(*:leistungsart/leistungsartCode/code/text(), 'pruefung')) then not(exists(*:beschreibung/*:umfangInSWS)) else (not(exists(*:beschreibung/*:umfangInSWS)) or exists(*:beschreibung/*:umfangInSWS))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;1&#x200B;-&#x200B;U&#x200B;n&#x200B;b&#x200B;e&#x200B;d&#x200B;e&#x200B;n&#x200B;k&#x200B;l&#x200B;i&#x200B;c&#x200B;h&#x200B;k&#x200B;e&#x200B;i&#x200B;t&#x200B;N&#x200B;u&#x200B;r&#x200B;B&#x200B;e&#x200B;i&#x200B;S&#x200B;t&#x200B;u&#x200B;d&#x200B;i&#x200B;e&#x200B;n&#x200B;f&#x200B;a&#x200B;c&#x200B;h&#x200B;</entry>
+                  <entry>XHS-0021 Der Unbedenklichkeitsvermerk darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:unbedenklichkeitsvermerk) or not(exists(*:unbedenklichkeitsvermerk))) else not(exists(*:unbedenklichkeitsvermerk))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;2&#x200B;-&#x200B;a&#x200B;n&#x200B;g&#x200B;e&#x200B;s&#x200B;t&#x200B;r&#x200B;e&#x200B;b&#x200B;t&#x200B;e&#x200B;r&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;</entry>
+                  <entry>XHS-0022 Der angestrebte Abschluss darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:angestrebterAbschluss) or not(exists(*:angestrebterAbschluss))) else not(exists(*:angestrebterAbschluss))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;3&#x200B;-&#x200B;f&#x200B;a&#x200B;c&#x200B;h&#x200B;s&#x200B;e&#x200B;m&#x200B;e&#x200B;s&#x200B;t&#x200B;e&#x200B;r&#x200B;</entry>
+                  <entry>XHS-0023 Das Fachsemester darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:fachsemester) or not(exists(*:fachsemester))) else not(exists(*:fachsemester))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;4&#x200B;-&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;e&#x200B;s&#x200B;s&#x200B;e&#x200B;l&#x200B;I&#x200B;S&#x200B;C&#x200B;E&#x200B;D&#x200B;2&#x200B;0&#x200B;1&#x200B;1&#x200B;</entry>
+                  <entry>XHS-0024 Der Schlüssel nach ISCED2011 darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselISCED2011) or not(exists(*:schluesselISCED2011))) else not(exists(*:schluesselISCED2011))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;5&#x200B;-&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;e&#x200B;s&#x200B;s&#x200B;e&#x200B;l&#x200B;I&#x200B;S&#x200B;C&#x200B;E&#x200B;D&#x200B;F&#x200B;2&#x200B;0&#x200B;1&#x200B;3&#x200B;</entry>
+                  <entry>XHS-0025 Der Schlüssel nach ISCEDF2013 darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselISCEDF2013) or not(exists(*:schluesselISCEDF2013))) else not(exists(*:schluesselISCEDF2013))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;6&#x200B;-&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;e&#x200B;s&#x200B;s&#x200B;e&#x200B;l&#x200B;E&#x200B;Q&#x200B;F&#x200B;</entry>
+                  <entry>XHS-0026 Der Schlüssel nach EQF darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselEQF) or not(exists(*:schluesselEQF))) else not(exists(*:schluesselEQF))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;7&#x200B;-&#x200B;n&#x200B;u&#x200B;r&#x200B;W&#x200B;e&#x200B;n&#x200B;n&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;t&#x200B;L&#x200B;e&#x200B;i&#x200B;s&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;b&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;t&#x200B;a&#x200B;t&#x200B;u&#x200B;s&#x200B;</entry>
+                  <entry>XHS-0027 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll der Leistungsbenotungsstatus angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:leistungsbenotungsstatus)) else (not(exists(*:leistungsbenotungsstatus)))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;8&#x200B;-&#x200B;n&#x200B;u&#x200B;r&#x200B;W&#x200B;e&#x200B;n&#x200B;n&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;t&#x200B;N&#x200B;o&#x200B;t&#x200B;e&#x200B;</entry>
+                  <entry>XHS-0028 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll die Benotung angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:benotung)) else (not(exists(*:benotung)))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;9&#x200B;-&#x200B;n&#x200B;u&#x200B;r&#x200B;W&#x200B;e&#x200B;n&#x200B;n&#x200B;M&#x200B;o&#x200B;d&#x200B;u&#x200B;l&#x200B;M&#x200B;o&#x200B;d&#x200B;u&#x200B;l&#x200B;b&#x200B;e&#x200B;s&#x200B;c&#x200B;h&#x200B;r&#x200B;e&#x200B;i&#x200B;b&#x200B;u&#x200B;n&#x200B;g&#x200B;N&#x200B;a&#x200B;c&#x200B;h&#x200B;K&#x200B;M&#x200B;K&#x200B;</entry>
+                  <entry>XHS-0029 Nur wenn der Wert der Codeliste Leistungsart auf 'modul' gesetzt wurde, soll die Beschreibung nach den Vorgaben der KMK ausgefüllt werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">((ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK)) or exists(*:beschreibung/*:modulbeschreibungNachKMK))) or (not(ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK))))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;3&#x200B;1&#x200B;-&#x200B;f&#x200B;a&#x200B;e&#x200B;c&#x200B;h&#x200B;e&#x200B;r&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;e&#x200B;s&#x200B;s&#x200B;e&#x200B;l&#x200B;D&#x200B;E&#x200B;S&#x200B;T&#x200B;A&#x200B;T&#x200B;I&#x200B;S&#x200B;</entry>
+                  <entry>XHS-0031 Der Fächerschlüssel nach DESTATIS darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesseDESTATIS) or not(exists(*:faecherschluesseDESTATIS))) else not(exists(*:faecherschluesseDESTATIS))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">leistungsart</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;2&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;L&#x200B;e&#x200B;i&#x200B;s&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;a&#x200B;r&#x200B;t&#x200B;</entry>
+                  <entry>XHS-0012 Wenn und nur wenn der Wert der Codeliste Leistungsart 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">leistungsbenotungsstatus</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;3&#x200B;0&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;L&#x200B;e&#x200B;i&#x200B;s&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;b&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;t&#x200B;a&#x200B;t&#x200B;u&#x200B;s&#x200B;</entry>
+                  <entry>XHS-0030 Wenn und nur wenn der Wert der Codeliste Leistungsbenotungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">leistungsstatus</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;3&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;L&#x200B;e&#x200B;i&#x200B;s&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;t&#x200B;a&#x200B;t&#x200B;u&#x200B;s&#x200B;</entry>
+                  <entry>XHS-0013 Wenn und nur wenn der Wert der Codeliste Leistungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
                      </para>
                   </entry>
                </row>

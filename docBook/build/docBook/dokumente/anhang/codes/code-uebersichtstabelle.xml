@@ -59,7 +59,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.anerkanntoderangerechnet.AnerkanntOderAngerechnet-Codes">AnerkanntOderAngerechnet</link>
                </entry>
-               <entry align="left">0.95</entry>
+               <entry align="left">1.0</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -83,8 +83,20 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.beurlaubungsstatus.Beurlaubungsstatus-Codes">Beurlaubungsstatus</link>
                </entry>
-               <entry align="left">0.95</entry>
+               <entry align="left">1.0</entry>
                <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XHochschule.Baukasten.Codes.Code.Faecherschluessel">Code.Faecherschluessel</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.destatis.codeliste.faecherschluessel.Faecherschluessel-Codes">Faecherschluessel</link>
+               </entry>
+               <entry align="left">--</entry>
+               <entry align="left">3</entry>
             </row>
             <row>
                <entry align="left">
@@ -107,7 +119,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.immatrikulationsstatus.Immatrikulationsstatus-Codes">Immatrikulationsstatus</link>
                </entry>
-               <entry align="left">0.95</entry>
+               <entry align="left">1.0</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -119,7 +131,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.lateinischeehrenbezeichnung.LateinischeEhrenbezeichnung-Codes">Lateinische Ehrenbezeichnungen</link>
                </entry>
-               <entry align="left">0.95</entry>
+               <entry align="left">1.0</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -130,7 +142,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsart.Leistungsart-Codes">Leistungsart</link>
                </entry>
-               <entry align="left">0.95</entry>
+               <entry align="left">1.0</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -142,7 +154,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsbenotungsstatus.Leistungsbenotungsstatus-Codes">Leistungsbenotungsstatus</link>
                </entry>
-               <entry align="left">0.95</entry>
+               <entry align="left">1.0</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -154,7 +166,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsstatus.Leistungsstatus-Codes">Leistungsstatus</link>
                </entry>
-               <entry align="left">0.95</entry>
+               <entry align="left">1.0</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -166,7 +178,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.lernzeitmodell.Lernzeitmodell-Codes">Lernzeitmodell</link>
                </entry>
-               <entry align="left">0.95</entry>
+               <entry align="left">1.0</entry>
                <entry align="left">1</entry>
             </row>
          </tbody>

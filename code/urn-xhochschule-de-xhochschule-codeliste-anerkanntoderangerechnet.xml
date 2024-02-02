@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>AnerkanntOderAngerechnet-Codes</ShortName>
       <LongName>AnerkanntOderAngerechnet</LongName>
-      <Version>0.95</Version>
+      <Version>1.0</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:anerkanntoderangerechnet</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:anerkanntoderangerechnet_0.95</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:anerkanntoderangerechnet_1.0</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -44,7 +44,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/anerkanntoderangerechnet/anerkannt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/anerkanntoderangerechnet/anerkannt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>anerkannt</SimpleValue>
@@ -52,7 +52,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/anerkanntoderangerechnet/angerechnet</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/anerkanntoderangerechnet/angerechnet</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>angerechnet</SimpleValue>
@@ -60,7 +60,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/anerkanntoderangerechnet/~wert_nicht_bekannt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/anerkanntoderangerechnet/~wert_nicht_bekannt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht bekannt</SimpleValue>

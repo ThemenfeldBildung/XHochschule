@@ -10,6 +10,8 @@
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XHochschule/Baukasten/Codes/Code.Beurlaubungsstatus.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Codes/Code.Faecherschluessel.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XHochschule/Baukasten/Codes/Code.Hochschulsignatur.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XHochschule/Baukasten/Codes/Code.Immatrikulationsstatus.xml"/>

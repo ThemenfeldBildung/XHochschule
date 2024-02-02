@@ -2,11 +2,11 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:xhs="http://xhochschule.de/def/xhochschule/0.95/xsd"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-           xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
            targetNamespace="http://xhochschule.de/def/xhochschule/0.95/xsd"
            version="0.95"
-           elementFormDefault="qualified"
+           elementFormDefault="unqualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
       <xs:appinfo>
@@ -27,8 +27,9 @@
          </versionStandard>
       </xs:appinfo>
    </xs:annotation>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.95/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/0.95/xsd"/>
+   <xs:include schemaLocation="Kernkomponenten.xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.0/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/1.0/xsd"/>
    <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
               namespace="http://xoev.de/schemata/code/1_0"/>
    <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
@@ -46,7 +47,7 @@
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -72,9 +73,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code"
-                           form="unqualified"
-                           type="xhs:AnerkanntOderAngerechnet-Codes"/>
+               <xs:element name="code" type="xhs:AnerkanntOderAngerechnet-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -83,7 +82,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.95"/>
+                          fixed="1.0"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -104,7 +103,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" type="xs:token" form="unqualified"/>
+               <xs:element name="code" type="xs:token"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -127,7 +126,7 @@
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -153,7 +152,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" form="unqualified" type="xhs:Beurlaubungsstatus-Codes"/>
+               <xs:element name="code" type="xhs:Beurlaubungsstatus-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -162,7 +161,35 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.95"/>
+                          fixed="1.0"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Faecherschluessel">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Fächerschluessel nach DESTATIS Schüsselverzeichnis. Übersicht der Fächergruppen, Studienbereiche und Studienfächer. (Bundesfächerschüssel)</nameLang>
+               <nameKurz>Faecherschluessel</nameKurz>
+               <nameTechnisch>Faecherschluessel-Codes</nameTechnisch>
+               <kennung>urn:xhochschule-de:destatis:codeliste:faecherschluessel</kennung>
+               <beschreibung>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten. Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von DESTATIS bereitgestellt. Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. In dem Dokument ist eine Erläuterung vermerkt zur Handhabung der Systematik der Fächergruppen und der Verschlüsselung der Studienfächer. Zusammen mit dem Schlüssel muss die verwendete Version des Schlüsselverzeichnisses im XML-Element in dem Attribut listVersionID angegeben werden. Für Schlüssel aus dem Schlüsselverzeichnis "WS 2022/2023 und SS 2023" würde die Version wie folgt angegeben: listVersionID="WS_2022". Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI" an.</beschreibung>
+               <herausgebernameLang>Statistisches Bundesamt</herausgebernameLang>
+               <herausgebernameKurz>DESTATIS</herausgebernameKurz>
+            </codeliste>
+         </xs:appinfo>
+         <xs:documentation>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten. Zusammen mit dem Schlüssel muss die verwendete Version des Schlüsselverzeichnisses im XML-Element in dem Attribut listVersionID angegeben werden. Für Schlüssel aus dem Schlüsselverzeichnis "WS 2022/2023 und SS 2023" würde die Version wie folgt angegeben: listVersionID="WS_2022".</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" type="xs:token"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xhochschule-de:destatis:codeliste:faecherschluessel"/>
+            <xs:attribute name="listVersionID" type="xs:normalizedString" use="required"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -183,7 +210,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" type="xs:token" form="unqualified"/>
+               <xs:element name="code" type="xs:token"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -206,7 +233,7 @@
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -232,9 +259,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code"
-                           form="unqualified"
-                           type="xhs:Immatrikulationsstatus-Codes"/>
+               <xs:element name="code" type="xhs:Immatrikulationsstatus-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -243,7 +268,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.95"/>
+                          fixed="1.0"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -260,7 +285,7 @@
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -293,9 +318,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code"
-                           form="unqualified"
-                           type="xhs:LateinischeEhrenbezeichnung-Codes"/>
+               <xs:element name="code" type="xhs:LateinischeEhrenbezeichnung-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -304,7 +327,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.95"/>
+                          fixed="1.0"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -316,12 +339,12 @@
                <nameKurz>Leistungsart</nameKurz>
                <nameTechnisch>Leistungsart-Codes</nameTechnisch>
                <kennung>urn:xhochschule-de:xhochschule:codeliste:leistungsart</kennung>
-               <beschreibung>Diese Coldeiste gibt an, um welche Art der Leistung es sich bei einer konkreten Leistung handelt, z.B. Modul oder Klausur, etc.</beschreibung>
+               <beschreibung>Diese Codeliste gibt an, um welche Art der Leistung es sich bei einer konkreten Leistung handelt, z.B. Modul oder Klausur, etc.</beschreibung>
                <herausgebernameLang>XHochschule</herausgebernameLang>
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -347,7 +370,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" form="unqualified" type="xhs:Leistungsart-Codes"/>
+               <xs:element name="code" type="xhs:Leistungsart-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -356,7 +379,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.95"/>
+                          fixed="1.0"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -373,7 +396,7 @@
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -394,14 +417,12 @@
             </codelistenspalten>
             <genutzteCodeSpalte>code</genutzteCodeSpalte>
          </xs:appinfo>
-         <xs:documentation>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, unbenotet, etc. Der Begriff "benotet" wird im Modell auf zwei Weisen benutzt, die von ihrer Verbindung zum Wert der Klasse "Leistungsstatus" abhängen. 1. Der Wert "benotet" aus der Klasse "Leistungsbenotungsstatus" bedeutet in Verbindung mit der Klasse "Leistungsstatus" mit dem Wert "angemeldet", dass diese Leistung zukünftig eine Benotung erhält. (benotet = "diese Leistung wird benotet") 2. Der Wert "benotet" aus der Klasse "Leistungsbenotungsstatus" bedeutet in Verbindung mit der Klasse "Leistungsstatus" mit dem Wert "bestanden", dass diese Leistung eine Benotung erhalten hat, welche zum Bestehen der Leistung ausreichte. (benotet = "diese Leistung wurde benotet") Der Begriff "unbenotet" wird hingegen nur auf eine Art benutzt. (unbenotet = "diese Leistung wird unbenotet sein" und "diese Leistung ist/war unbenotet")</xs:documentation>
+         <xs:documentation>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, unbenotet, etc. Der Begriff "benotet" wird im Modell auf zwei Weisen benutzt, die von ihrer Verbindung zum Wert der Klasse "Leistungsstatus" abhängen. 1. Der Wert "benotet" aus der Klasse "Leistungsbenotungsstatus" bedeutet in Verbindung mit der Klasse "Leistungsstatus" mit dem Wert "angemeldet", dass diese Leistung zukünftig eine Benotung erhält (benotet = "diese Leistung wird benotet"). 2. Der Wert "benotet" aus der Klasse "Leistungsbenotungsstatus" bedeutet in Verbindung mit der Klasse "Leistungsstatus" mit dem Wert "bestanden", dass diese Leistung eine Benotung erhalten hat, welche zum Bestehen der Leistung ausreichte (benotet = "diese Leistung wurde benotet"). Der Begriff "unbenotet" wird hingegen nur auf eine Art benutzt (unbenotet = "diese Leistung ist grundsätzlich unbenotet").</xs:documentation>
       </xs:annotation>
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code"
-                           form="unqualified"
-                           type="xhs:Leistungsbenotungsstatus-Codes"/>
+               <xs:element name="code" type="xhs:Leistungsbenotungsstatus-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -410,7 +431,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.95"/>
+                          fixed="1.0"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -422,12 +443,12 @@
                <nameKurz>Leistungsstatus</nameKurz>
                <nameTechnisch>Leistungsstatus-Codes</nameTechnisch>
                <kennung>urn:xhochschule-de:xhochschule:codeliste:leistungsstatus</kennung>
-               <beschreibung>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden unbenontet, etc.</beschreibung>
+               <beschreibung>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, etc.</beschreibung>
                <herausgebernameLang>XHochschule</herausgebernameLang>
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -448,12 +469,12 @@
             </codelistenspalten>
             <genutzteCodeSpalte>code</genutzteCodeSpalte>
          </xs:appinfo>
-         <xs:documentation>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, unbenontet, etc.</xs:documentation>
+         <xs:documentation>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, unbenotet, etc.</xs:documentation>
       </xs:annotation>
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" form="unqualified" type="xhs:Leistungsstatus-Codes"/>
+               <xs:element name="code" type="xhs:Leistungsstatus-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -462,7 +483,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.95"/>
+                          fixed="1.0"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -479,7 +500,7 @@
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -512,7 +533,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" form="unqualified" type="xhs:Lernzeitmodell-Codes"/>
+               <xs:element name="code" type="xhs:Lernzeitmodell-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -521,7 +542,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.95"/>
+                          fixed="1.0"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -567,14 +588,14 @@
          </xs:element>
          <xs:element name="name" type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Dieses Feld gibt den Namen der Hochschule an</xs:documentation>
+               <xs:documentation>Dieses Feld gibt den Namen der Hochschule an.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="Leistung">
       <xs:annotation>
-         <xs:documentation>Klasse zur generischen Abbildung einer Leistung. Sie kann sich selbst unter dem Namen "teilleistung" als Kindelement enthalten und dient sowohl der organisatorischen als auch der inhaltlichen Darstellung des Studienfachs (Synonym zu Studiengang, bezeichnet den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums). "Leistung" enthält zudem auch "leistungsart" als Kindelement, eine Codeliste, mit deren Inhalten die Art der Leistung (Studienfach, Modul, Klausur etc.) angegeben werden kann. Ein Anwendungsbeispiel: Eine studierende Person ist im Studienfach Biophysik eingeschrieben. Bei der Ausstellung eines Transcript of Records wird die Klasse "Leistung" verwendet, um die oberste organisatorische Ebene "Studienfach" = Biophysik abzubilden. In der Klasse "Leistung" wird daher das Kindelement "leistungsart" auf "Studienfach" gesetzt. Das Studienfach enthält beispielhaft sechs Teilleistungen wie z. B. die Module Experimentalphysik und Genetik. Es wird daher"teilleistung" als Kindelement sechs mal eingebunden, um alle sechs Module abzubilden, jeweils mit "leistungsart"= Modul. "teilleistung" kann wiederum "teilleistung" mit entsprechender "leistungsart" enthalten, bis die entsprechenden Bestandteile der Module oder der sonstigen Organisationseinheiten des Studienfachs abgebildet sind, z.B. Kurs, Seminar, Vorlesung, Praktikum, Klausur, mündliche Prüfung, Seminararbeit, etc.</xs:documentation>
+         <xs:documentation>Klasse zur generischen Abbildung einer Leistung. Sie kann in sich selbst geschachtelt werden und sich somit selbst als Kindelement enthalten. Sie dient sowohl der organisatorischen als auch der inhaltlichen Darstellung des Studienfachs bzw. Studiengangs - Studienfach soll als Synonym zu Studiengang aufgefasst werden und bezeichnet den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums. "Leistung" enthält "leistungsart" als Kindelement, wo entweder mit den Inhalten der Codeliste "leistungsartCode" die Leistungsart (Studienfach, Modul, Klausur etc.) angegeben werden kann, oder ein Freitextfeld ausgegeben wird. "leistungsart" bezieht sich immer auf sein Elternelement "leistung". Das Freitextfeld wird nur dann ausgegeben, wenn kein Codelisteneintrag inhaltlich zutreffend ist und somit nur "Wert nicht in Liste" sinnvoll ausgewählt werden kann. Ein Anwendungsbeispiel: Eine studierende Person ist im Studienfach Biophysik eingeschrieben. Bei der Ausstellung eines Transcript of Records wird die Klasse "leistung" verwendet, um die oberste organisatorische Ebene "Studienfach" = Biophysik abzubilden. In der Klasse "leistungart" wird daher der Wert der Codeliste "leistungsartCode" auf "Studienfach" gesetzt. Das Studienfach enthält beispielhaft sechs Teilleistungen, wie z. B. die Module Experimentalphysik und Genetik. Es wird daher "leistung" als Kindelement sechs Mal eingebunden, um die sechs Module abzubilden, wo jeweils in "leistungsart" die Codeliste "leistungsartCode" auf den Wert "Modul" gesetzt werden kann. "leistung" kann wiederum "leistung" mit entsprechender "leistungsart" enthalten, bis die entsprechenden Bestandteile der Module oder der sonstigen Organisationseinheiten des Studienfachs abgebildet sind, z.B. Kurs, Seminar, Vorlesung, Praktikum, Klausur, mündliche Prüfung, Seminararbeit, etc.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="bezeichnung" type="xbd:String.Localized">
@@ -582,21 +603,26 @@
                <xs:documentation>Bezeichnung einer Leistung, z.B. "Analysis 3"</xs:documentation>
             </xs:annotation>
          </xs:element>
+         <xs:element name="bezeichnungAlsHTML" minOccurs="0" type="din91379:datatypeE">
+            <xs:annotation>
+               <xs:documentation>Bezeichnung einer Leistung mittels HTML-Code.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
          <xs:element name="angestrebterAbschluss"
                      minOccurs="0"
                      type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Der Abschluss, der mit dem Studienfach angestrebt wird, z.B. Master of Science.</xs:documentation>
+               <xs:documentation>Der Abschluss, der mit dem Studienfach angestrebt wird, z. B. Master of Science.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="fachsemester" minOccurs="0" type="xs:decimal">
             <xs:annotation>
-               <xs:documentation>Anzahl der Semester, die ein Studierender in ein bestimmtes Studienfachs eingeschrieben ist ohne beurlaubt zu sein. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet. Diese Angabe bezieht sich auf die Anzahl der zum Zeitpunkt der Ausstellung des Dokuments angefangenen Fachsemester, d.h. ein laufendes Semester wird mitgezählt. Bei vergangenen Studienabschnitten stellt diese Angabe die laufende Anzahl an Fachsemestern im entsprechenden Zeitraum dar.</xs:documentation>
+               <xs:documentation>Anzahl der Semester, die ein Studierender in ein bestimmtes Studienfach eingeschrieben ist, ohne beurlaubt zu sein. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet. Diese Angabe bezieht sich auf die Anzahl der zum Zeitpunkt der Ausstellung des Dokuments angefangenen Fachsemester, d. h. ein laufendes Semester wird mitgezählt. Bei vergangenen Studienabschnitten stellt diese Angabe die laufende Anzahl an Fachsemestern im entsprechenden Zeitraum dar.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="schluesselISCED2011" minOccurs="0" type="xbd:Code.ISCED2011">
             <xs:annotation>
-               <xs:documentation>Beschreibt das Qualifikationsniveaus nach ISCED 2011.</xs:documentation>
+               <xs:documentation>Beschreibt das Qualifikationsniveau nach ISCED 2011.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="schluesselISCEDF2013"
@@ -606,26 +632,45 @@
                <xs:documentation>Bezeichnung des Studienfachs nach ISCED-F 2013.</xs:documentation>
             </xs:annotation>
          </xs:element>
+         <xs:element name="faecherschluesselDESTATIS"
+                     minOccurs="0"
+                     type="xhs:Code.Faecherschluessel">
+            <xs:annotation>
+               <xs:documentation>Bezeichnung des Studienfachs nach dem DESTATIS-Fächerschlüssel.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
          <xs:element name="schluesselEQF" minOccurs="0" type="xbd:Code.EQF">
             <xs:annotation>
-               <xs:documentation>Beschreibt das Qualifikationsniveaus nach EQF.</xs:documentation>
+               <xs:documentation>Beschreibt das Qualifikationsniveau nach EQF.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="leistungsart" type="xhs:Code.Leistungsart">
+         <xs:element name="leistungsart">
             <xs:annotation>
-               <xs:documentation>Diese Codeliste gibt an, um welche Art der Leistung es sich bei einer bestimmten Leistung handelt. Die Leistungen, z.B. Modul, Kurs, Seminar, Vorlesung, Praktikum, Klausur, mündliche Prüfung, Seminararbeit, etc., können weitere Teilleistungen beinhalten, die wiederum vom Typ Leistung sind. So lässt sich z.B. spezifizieren, dass ein Kurs mehrere Klausuren beinhaltet.</xs:documentation>
+               <xs:documentation>Art der Leistung wahlweise als Codelisten-Eintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisten-Eintrag vorliegt. Das "Modul" orientiert sich an den Rahmenvorgaben der KMK. Wenn "Modul" ausgewählt ist, besteht die Möglichkeit der Angabe einer "Modulbeschreibung nach KMK".</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xhs:Code.Leistungsart">
+                     <xs:annotation>
+                        <xs:documentation>Diese Codeliste gibt an, um welche Art der Leistung es sich bei einer bestimmten Leistung handelt. Die Leistungen, z.B. Modul, Kurs, Seminar, Vorlesung, Praktikum, Klausur, mündliche Prüfung, Seminararbeit, etc., können weitere Leistungen beinhalten, um Teilleistungen abzubilden und z. B. zu spezifizieren, dass ein Kurs mehrere Klausuren beinhaltet.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert"
+                              minOccurs="0"
+                              type="xbd:String.Localized">
+                     <xs:annotation>
+                        <xs:documentation>In diesem Feld ist die Art einer Leistung als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
-         <xs:element name="leistungsartFreitext"
+         <xs:element name="id"
                      minOccurs="0"
-                     type="xbd:String.Localized">
+                     type="xhs:Identifikation"
+                     form="unqualified">
             <xs:annotation>
-               <xs:documentation>In diesem Feld ist die Art einer Leistung als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Leistungsart" enthalten ist, die über das Element "leistungsart" eingebunden ist. In diesem Fall muss der Codelisten-Wert "Wert nicht in Liste" ausgewählt werden.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="id" minOccurs="0" type="xbd:Identifikation">
-            <xs:annotation>
-               <xs:documentation>ID für eine Leistung, die von der ausstellenden Hochschule vergeben wird, dies kann z.B. eine Modulnummer oder eine Prüfungsnummer sein.</xs:documentation>
+               <xs:documentation>Die ID sichert die eindeutige Identifikation von Objekten in einem fachlichen Kontext. ID für eine Leistung, die von der ausstellenden Hochschule vergeben wird, dies kann z.B. eine Modulnummer oder eine Prüfungsnummer sein. Über "Beschreibung" in der Klasse Identifikation kann die Art der ID genauer bezeichnet werden.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="beschreibung" minOccurs="0" type="xhs:Leistungsbeschreibung">
@@ -633,28 +678,54 @@
                <xs:documentation>Beschreibung einer Leistung</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="leistungsstatus"
-                     minOccurs="0"
-                     type="xhs:Code.Leistungsstatus">
+         <xs:element name="leistungsstatus" minOccurs="0">
             <xs:annotation>
-               <xs:documentation>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, nicht bestanden etc.</xs:documentation>
+               <xs:documentation>Status der Leistung wahlweise als Codelisten-Eintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisten-Eintrag vorliegt.</xs:documentation>
+            </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xhs:Code.Leistungsstatus">
+                     <xs:annotation>
+                        <xs:documentation>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, nicht bestanden etc.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert"
+                              minOccurs="0"
+                              type="xbd:String.Localized">
+                     <xs:annotation>
+                        <xs:documentation>In diesem Feld ist der Status der Leistung als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="leistungsbenotungsstatus" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Diese Codeliste gibt den Status einer Leistung in Bezug auf die Benotung an. Eine Note kann z.B. final, vorläufig, oder nicht vorhanden sein.</xs:documentation>
+            </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xhs:Code.Leistungsbenotungsstatus">
+                     <xs:annotation>
+                        <xs:documentation>Diese Codeliste gibt den Status einer Leistung in Bezug auf die Benotung an. Eine Note kann z.B. final, vorläufig, oder nicht vorhanden sein.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert"
+                              minOccurs="0"
+                              type="xbd:String.Localized">
+                     <xs:annotation>
+                        <xs:documentation>In diesem Feld ist der Status der Benotung als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="benotet" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation>Angabe, ob eine Leistung benotet ist. Die Angabe 'true' gibt an, dass die Leistung benotet ist.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="leistungsstatusFreitext"
-                     minOccurs="0"
-                     type="xbd:String.Localized">
-            <xs:annotation>
-               <xs:documentation>In diesem Feld ist der Status der Leistung als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Leistungsstatus" enthalten ist, die über das Element "leistungsstatus" eingebunden ist. In diesem Fall muss der Codelisten-Wert "Wert nicht in Liste" ausgewählt werden.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="leistungsbenotungsstatus"
-                     minOccurs="0"
-                     type="xhs:Code.Leistungsbenotungsstatus">
-            <xs:annotation>
-               <xs:documentation>Diese Codeliste gibt den Status einer Leistung in Bezug auf die Benotung an. Eine Leistung kann benotet, unbenotet, oder vorläufig benotet sein.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="note" minOccurs="0" type="xbd:Benotung">
+         <xs:element name="benotung" minOccurs="0" type="xbd:Benotung">
             <xs:annotation>
                <xs:documentation>Ermöglicht eine eindeutige Bewertung einer Leistung. Bei nicht bewerteten Leistungen wird dies durch Verwendung des Attributs "benotungsstatus" durch Angabe des Wertes "unbenotet" ausgedrückt.</xs:documentation>
             </xs:annotation>
@@ -687,7 +758,7 @@
                      minOccurs="0"
                      type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Semester in dem die Leistung erbracht wurde, z.B. "Wintersemester 2020/2021". Bei Leistungen, die über mehrere Semester hinweg erbracht werden ist das dasjenige Semester anzugeben, in dem die Leistung abgeschlossen wurde.</xs:documentation>
+               <xs:documentation>Semester in dem die Leistung erbracht wurde, z.B. "Wintersemester 2020/2021". Bei Leistungen, die über mehrere Semester hinweg erbracht wurden, ist das dasjenige Semester anzugeben, in dem die Leistung abgeschlossen wurde.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="sprache"
@@ -712,7 +783,7 @@
                <xs:documentation>Angabe zur Unbedenklichkeit in Bezug auf Studienfach.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="teilleistung"
+         <xs:element name="leistung"
                      minOccurs="0"
                      maxOccurs="unbounded"
                      type="xhs:Leistung">
@@ -729,7 +800,12 @@
       <xs:sequence>
          <xs:element name="beschreibung" minOccurs="0" type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Beschreibung einer Leistung als Freitext</xs:documentation>
+               <xs:documentation>In diesem Freitextfeld soll der Inhalt einer Leistung beschrieben werden. Um die Interoperabilität gewährleisten zu können sollte dieses Feld immer befüllt werden. Es ist entscheidend, Informationen über eine Leistung in XHS zu transportieren, um interoperabel zu bleiben. Denn, für Verweise, die in diesem Feld auf andere Quellen zeigen, kann die dauerhafte Verfügbarkeit nicht gewährleistet bzw. garantiert werden.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="beschreibungAlsHTML" minOccurs="0" type="din91379:datatypeE">
+            <xs:annotation>
+               <xs:documentation>In diesem Freitextfeld kann der Inhalt einer Leistung mittels HTML beschrieben werden.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="umfangInSWS" minOccurs="0" type="xs:decimal">
@@ -741,7 +817,14 @@
                      minOccurs="0"
                      type="xhs:ModulbeschreibungNachKMK">
             <xs:annotation>
-               <xs:documentation>Falls es sich bei der Leistung um ein Modul handelt, kann in diesem Feld die Modulbeschreibung nach den Rahmenvorgaben der KMK (laut Beschluss der Kultusministerkonferenz vom 15.09.2000) erfasst werden. Weitere Informationen verfügbar unter: https://www.kmk.org/fileadmin/pdf/PresseUndAktuelles/2000/module.pdf</xs:documentation>
+               <xs:documentation>Klasse zur strukturierten Erfassung einer Modulbeschreibung nach Rahmenvorgaben der KMK (laut Beschluss der Kultusministerkonferenz vom 15.09.2000). Weitere Informationen verfügbar in den Rahmenvorgaben der KMK.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="versionDesModulhandbuchs"
+                     minOccurs="0"
+                     type="xbd:String.Localized">
+            <xs:annotation>
+               <xs:documentation>Das Feld "Version des Modulhandbuchs" ist optional und sollte nur die Versionsnummer ggf. Versionsbezeichnung enthalten. Anmerkung: Aufnehmende Hochschulen benötigen bei Angabe einer Modul-ID die Referenz, auf welche Fassung eines Modulhandbuchs sich diese bezieht.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="weitereInformationen" minOccurs="0" type="xs:anyURI">
@@ -753,54 +836,54 @@
    </xs:complexType>
    <xs:complexType name="ModulbeschreibungNachKMK">
       <xs:annotation>
-         <xs:documentation>Klasse zur strukturierten Erfassung einer Modulbeschreibung nach Rahmenvorgaben der KMK (laut Beschluss der Kultusministerkonferenz vom 15.09.2000). Weitere Informationen verfügbar unter: https://www.kmk.org/fileadmin/pdf/PresseUndAktuelles/2000/module.pdf</xs:documentation>
+         <xs:documentation>Klasse zur strukturierten Erfassung einer Modulbeschreibung nach Rahmenvorgaben der KMK (laut Beschluss der Kultusministerkonferenz vom 15.09.2000). Weitere Informationen verfügbar in den Rahmenvorgaben der KMK.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="inhalteUndQualifikationsziele"
                      minOccurs="0"
                      type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Inhalte und Qualifikationsziele des Moduls</xs:documentation>
+               <xs:documentation>Angaben zu fachlichen, methodischen, fachpraktischen und fächerübergreifenden Inhalten und Lernzielen eines Moduls.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="lehrformen" minOccurs="0" type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Lehrformen des Moduls</xs:documentation>
+               <xs:documentation>Beschreibung der Lehrformen eines Moduls (Vorlesung, Übung, Seminar, Praktikum, Projektarbeit, Selbststudium u.ä.).</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="voraussetzungenFuerDieTeilnahme"
                      minOccurs="0"
                      type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Voraussetzungen für die Teilnahme am Modul</xs:documentation>
+               <xs:documentation>Angaben zu Kenntnissen, Fähigkeiten und Fertigkeiten oder bereits besuchten Modulen, die Voraussetzung zur Teilnahme sind. Auch Hinweise auf vorbereitende Maßnahmen (Literaturangaben, multimediale Lehr- und Lernprogramme) sind möglich.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="verwendbarkeitDesModuls"
                      minOccurs="0"
                      type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Angaben zur Verwendbarkeit des Moduls</xs:documentation>
+               <xs:documentation>Angaben zum Zusammenhang des Moduls mit anderen Modulen des Studiengangs oder zur Verwendbarkeit des Moduls in anderen, auch weiterbildenden oder postgradualen Studiengängen.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="voraussetzungenFuerDieVergabeVonLeistungspunkten"
                      minOccurs="0"
                      type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Voraussetzungen für die Vergabe von Leistungspunkten für das Modul</xs:documentation>
+               <xs:documentation>Angaben zu den Spezifika der studienbegleitenden Prüfungsleistungen (Semesterarbeiten, Exkursionsberichte, Hausarbeiten u.ä.), wie z.B. ob es sich um eine schriftliche oder mündliche Prüfung handelt.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="leistungspunkteUndNoten"
                      minOccurs="0"
                      type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Angaben zu Leistungspunkten und Noten für das Modul. Diese sind getrennt auszuweisen</xs:documentation>
+               <xs:documentation>Angaben zu Leistungspunkten und Noten für das Modul. Diese sind getrennt auszuweisen. Grundlage sollte die Umrechung deutscher Noten in die ECTS-Skala nach Vorgabe der HRK sein.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="haeufigkeitDesAngebotsDesModuls"
                      minOccurs="0"
                      type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Angaben zur Haeufigkeit des Angebots des Moduls</xs:documentation>
+               <xs:documentation>Angaben zur Häufigkeit des Angebots des Moduls (z.B. jedes Semester; jedes Studienjahr; größere Abstände).</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="arbeitsaufwand" minOccurs="0" type="xbd:String.Localized">
@@ -810,7 +893,7 @@
          </xs:element>
          <xs:element name="dauerDesModuls" minOccurs="0" type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Angaben zur Dauer des Moduls</xs:documentation>
+               <xs:documentation>Angaben zur Dauer des Moduls .</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
@@ -871,36 +954,52 @@
                <xs:documentation>Mit dem Studienfach wird der spezifische Aufbau und die fachliche Ausrichtung eines Studiums mit fachspezifischen Angaben bezeichnet.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="lernzeitmodell" minOccurs="0" type="xhs:Code.Lernzeitmodell">
+         <xs:element name="lernzeitmodell" minOccurs="0">
             <xs:annotation>
-               <xs:documentation>Angabe, ob eine studierende Person in einem Studienabschnitt beispielsweise in Vollzeit oder in Teilzeit studiert.</xs:documentation>
+               <xs:documentation>Angabe, ob eine studierende Person in einem Studienabschnitt beispielsweise in Vollzeit oder in Teilzeit studiert. Für den Fall, dass kein Codelistenwert passend ist, soll 'Wert nicht in Liste' und das dann angezeigte Freitextfeld genutzt werden.</xs:documentation>
             </xs:annotation>
-         </xs:element>
-         <xs:element name="lernzeitmodellFreitext"
-                     minOccurs="0"
-                     type="xbd:String.Localized">
-            <xs:annotation>
-               <xs:documentation>In diesem Feld ist das Lernzeitmodell als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Lernzeitmodell" enthalten ist, die über das Element "lernzeitmodell" eingebunden ist, d.h. wenn dort der Codelisten-Wert "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
-            </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xhs:Code.Lernzeitmodell">
+                     <xs:annotation>
+                        <xs:documentation>Mit Lernzeitmodell sei hier unter anderem die Unterscheidung zwischen Teil- und Vollzeit gemeint.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert"
+                              minOccurs="0"
+                              type="xbd:String.Localized">
+                     <xs:annotation>
+                        <xs:documentation>In diesem Feld ist das Lernzeitmodell als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
          <xs:element name="regelstudienzeit" minOccurs="0" type="xs:integer">
             <xs:annotation>
                <xs:documentation>Anzahl der Semester, die bis zum Abschluss eines Vollzeitstudienfachs nach der während des Studienabschnitts gültigen Prüfungs- oder Studienordnung als Regelstudienzeit vorgesehen sind.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="beurlaubungsstatus"
-                     minOccurs="0"
-                     type="xhs:Code.Beurlaubungsstatus">
+         <xs:element name="beurlaubungsstatus" minOccurs="0">
             <xs:annotation>
-               <xs:documentation>Der Beurlaubungsstatus gibt an, ob eine studierende Person in einem Studienabschnitt beurlaubt ist oder nicht.</xs:documentation>
+               <xs:documentation>Der Beurlaubungsstatus gibt an, ob eine studierende Person in einem Studienabschnitt beurlaubt ist oder nicht. Für den Fall, dass kein Codelistenwert passend ist, soll 'Wert nicht in Liste' und das dann angezeigte Freitextfeld genutzt werden.</xs:documentation>
             </xs:annotation>
-         </xs:element>
-         <xs:element name="beurlaubungsstatusFreitext"
-                     minOccurs="0"
-                     type="xbd:String.Localized">
-            <xs:annotation>
-               <xs:documentation>In diesem Feld ist der Beurlaubungsstatus als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Beurlaubungsstatus" enthalten ist, die über das Element "beurlaubungsstatus" eingebunden ist, d.h. wenn dort der Codelisten-Wert "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
-            </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xhs:Code.Beurlaubungsstatus">
+                     <xs:annotation>
+                        <xs:documentation>Angabe zum Beurlaubungsstatus des Studierenden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert"
+                              minOccurs="0"
+                              type="xbd:String.Localized">
+                     <xs:annotation>
+                        <xs:documentation>In diesem Feld ist der Beurlaubungsstatus als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
@@ -936,17 +1035,26 @@
                <xs:documentation>Mit dem Studienfach wird der spezifische Aufbau und die fachliche Ausrichtung eines Studiums mit fachspezifischen Angaben bezeichnet.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="lernzeitmodell" minOccurs="0" type="xhs:Code.Lernzeitmodell">
+         <xs:element name="lernzeitmodell" minOccurs="0">
             <xs:annotation>
-               <xs:documentation>Angabe, ob eine studierende Person in einem Studienabschnitt beispielsweise in Vollzeit oder in Teilzeit studiert.</xs:documentation>
+               <xs:documentation>Angabe, ob eine studierende Person in einem Studienabschnitt beispielsweise in Vollzeit oder in Teilzeit studiert. Für den Fall, dass kein Codelistenwert passend ist, soll 'Wert nicht in Liste' und das dann angezeigte Freitextfeld genutzt werden.</xs:documentation>
             </xs:annotation>
-         </xs:element>
-         <xs:element name="lernzeitmodellFreitext"
-                     minOccurs="0"
-                     type="xbd:String.Localized">
-            <xs:annotation>
-               <xs:documentation>In diesem Feld ist das Lernzeitmodell als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Lernzeitmodell" enthalten ist, die über das Element "lernzeitmodell" eingebunden ist, d.h. wenn dort der Codelisten-Wert "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
-            </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xhs:Code.Lernzeitmodell">
+                     <xs:annotation>
+                        <xs:documentation>Mit Lernzeitmodell sei hier unter anderem die Unterscheidung zwischen Teil- und Vollzeit gemeint.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert"
+                              minOccurs="0"
+                              type="xbd:String.Localized">
+                     <xs:annotation>
+                        <xs:documentation>In diesem Feld ist das Lernzeitmodell als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
          <xs:element name="regelstudienzeit" minOccurs="0" type="xs:integer">
             <xs:annotation>
@@ -989,7 +1097,7 @@
          </xs:element>
          <xs:element name="fachsemester" minOccurs="0" type="xs:decimal">
             <xs:annotation>
-               <xs:documentation>Anzahl der Semester, die ein Studierender in ein bestimmtes Studienfachs eingeschrieben ist ohne beurlaubt zu sein. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet. Diese Angabe bezieht sich auf die Anzahl der zum Zeitpunkt der Ausstellung des Dokuments angefangenen Fachsemester, d.h. ein laufendes Semester wird mitgezählt. Bei vergangenen Studienabschnitten stellt diese Angabe die laufende Anzahl an Fachsemestern im entsprechenden Zeitraum dar.</xs:documentation>
+               <xs:documentation>Anzahl der Semester, die ein Studierender in ein bestimmtes Studienfachs eingeschrieben ist, ohne beurlaubt zu sein. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet. Diese Angabe bezieht sich auf die Anzahl der zum Zeitpunkt der Ausstellung des Dokuments angefangenen Fachsemester, d.h. ein laufendes Semester wird mitgezählt. Bei vergangenen Studienabschnitten stellt diese Angabe die laufende Anzahl an Fachsemestern im entsprechenden Zeitraum dar.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="unbedenklichkeitsvermerk"
@@ -1022,12 +1130,12 @@
    </xs:complexType>
    <xs:complexType name="Studierender">
       <xs:annotation>
-         <xs:documentation>Spezialisierung eines XBildung:NatuerlichePerson im Hochschulbereich. In einer Hochschule eingeschriebene Person. (Eurovoc Term)</xs:documentation>
+         <xs:documentation>In einer Hochschule eingeschriebene Person (Eurovoc Term), Spezialisierung einer natürlichen Person im Hochschulbereich (erbt von der XÖV-Kernkomponente natuerlichePerson).</xs:documentation>
       </xs:annotation>
       <xs:complexContent>
-         <xs:extension base="xbd:NatuerlichePerson">
+         <xs:extension base="xhs:NatuerlichePerson">
             <xs:sequence>
-               <xs:element name="matrikelnummer" minOccurs="0" type="xbd:Identifikation">
+               <xs:element name="matrikelnummer" minOccurs="0" type="xhs:Identifikation">
                   <xs:annotation>
                      <xs:documentation>Kennung, die eine eingeschriebene Person zu einem Zeitpunkt an einer Hochschule eindeutig identifiziert. Um einer Person außerhalb des Kontextes einer Hochschule hinaus eindeutig zu identifizieren, sollte zusätzlich zur Matrikelnummer die Signatur der Hochschule und der Zeitpunkt der Ausstellung betrachtet werden.</xs:documentation>
                   </xs:annotation>
@@ -1091,7 +1199,7 @@
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1113,21 +1221,21 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/anerkanntoderangerechnet/anerkannt">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/anerkanntoderangerechnet/anerkannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>anerkannt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/anerkanntoderangerechnet/angerechnet">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/anerkanntoderangerechnet/angerechnet">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>angerechnet</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/anerkanntoderangerechnet/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/anerkanntoderangerechnet/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht bekannt</description-de-DE>
@@ -1149,7 +1257,7 @@
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1171,28 +1279,28 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/beurlaubt">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/beurlaubt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>beurlaubt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/nicht_beurlaubt">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/nicht_beurlaubt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>nicht beurlaubt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht bekannt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
@@ -1214,7 +1322,7 @@
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1236,28 +1344,28 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/immatrikulationsstatus/immatrikuliert">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/immatrikuliert">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>immatrikuliert</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/immatrikulationsstatus/nicht_immatrikuliert">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/nicht_immatrikuliert">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>nicht immatrikuliert</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/immatrikulationsstatus/vorlaeufig_immatrikuliert">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/vorlaeufig_immatrikuliert">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>vorläufig immatrikuliert</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/immatrikulationsstatus/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
@@ -1279,7 +1387,7 @@
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1308,7 +1416,7 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lateinischeehrenbezeichnung/cum_laude">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/cum_laude">
             <xs:annotation>
                <xs:appinfo>
                   <description-en-GB>cum laude</description-en-GB>
@@ -1316,7 +1424,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lateinischeehrenbezeichnung/insigni_cum_laude">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/insigni_cum_laude">
             <xs:annotation>
                <xs:appinfo>
                   <description-en-GB>insigni cum laude</description-en-GB>
@@ -1324,7 +1432,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lateinischeehrenbezeichnung/mana_cum_laude">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/magna_cum_laude">
             <xs:annotation>
                <xs:appinfo>
                   <description-en-GB>magna cum laude</description-en-GB>
@@ -1332,15 +1440,15 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lateinischeehrenbezeichnung/ritus">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/rite">
             <xs:annotation>
                <xs:appinfo>
-                  <description-en-GB>ritus</description-en-GB>
+                  <description-en-GB>rite</description-en-GB>
                   <description-de-DE>ordnungsgemäß</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lateinischeehrenbezeichnung/summa_cum_laude">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/summa_cum_laude">
             <xs:annotation>
                <xs:appinfo>
                   <description-en-GB>summa cum laude</description-en-GB>
@@ -1348,7 +1456,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lateinischeehrenbezeichnung/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-en-GB>Value unknown</description-en-GB>
@@ -1356,7 +1464,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lateinischeehrenbezeichnung/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-en-GB>Value not in list</description-en-GB>
@@ -1374,12 +1482,12 @@
                <nameKurz>Leistungsart</nameKurz>
                <nameTechnisch>Leistungsart-Codes</nameTechnisch>
                <kennung>urn:xhochschule-de:xhochschule:codeliste:leistungsart</kennung>
-               <beschreibung>Diese Coldeiste gibt an, um welche Art der Leistung es sich bei einer konkreten Leistung handelt, z.B. Modul oder Klausur, etc.</beschreibung>
+               <beschreibung>Diese Codeliste gibt an, um welche Art der Leistung es sich bei einer konkreten Leistung handelt, z.B. Modul oder Klausur, etc.</beschreibung>
                <herausgebernameLang>XHochschule</herausgebernameLang>
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1401,238 +1509,245 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/abschlusspruefung">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/abschlusspruefung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Abschlussprüfung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/bachelorarbeit">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/bachelorarbeit">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Bachelorarbeit</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/diplomarbeit">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/diplomarbeit">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Diplomarbeit</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/doktorarbeit">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/doktorarbeit">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Doktorarbeit</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/fach">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/fach">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Fach</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/fachbereich">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/fachbereich">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Fachbereich</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/forschungspraktikum">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/forschungspraktikum">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Forschungspraktikum</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/hausarbeit">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/hausarbeit">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Hausarbeit</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/industriepraktikum">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/industriepraktikum">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Industriepraktikum</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/klausur">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/klausur">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Klausur</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/kolloquium">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/kolloquium">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Kolloquium</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/kurs">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/kurs">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Kurs</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/laborpraktikum">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/laborpraktikum">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Laborpraktikum</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/masterarbeit">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/masterarbeit">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Masterarbeit</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/modul">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Modul</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/modul_nach_kmk">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modulteilleistung">
             <xs:annotation>
                <xs:appinfo>
-                  <description-de-DE>Modul nach KMK</description-de-DE>
+                  <description-de-DE>Modulteilleistung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/muendliche_pruefung">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/muendliche_pruefung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Mündliche Prüfung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/pflichtbereich">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/pflichtbereich">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Pflichtbereich</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/praktikum">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/praktikum">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Praktikum</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/praxissemester">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/praxissemester">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Praxissemester</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/schriftliche_pruefung">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/schriftliche_pruefung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Schriftliche Prüfung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/seminar">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/seminar">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Seminar</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/seminararbeit">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/seminararbeit">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Seminararbeit</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/studienfach">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studienfach">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Studienfach</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/studiengang">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studiengang">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Studiengang</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/thesis">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/thesis">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Thesis</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/vorlesung">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/tutorium">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Tutorium</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/vorlesung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Vorlesung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/wahlbereich">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlbereich">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wahlbereich</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/wahlfach">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlfach">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wahlfach</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/wahlmodul">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlmodul">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wahlmodul</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/wahlpflichtbereich">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtbereich">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wahlpflichtbereich</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/wahlpflichtfach">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtfach">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wahlpflichtfach</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/wahlpflichtmodul">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtmodul">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wahlpflichtmodul</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
@@ -1654,7 +1769,7 @@
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1676,24 +1791,31 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsbenotungsstatus/benotet">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note">
             <xs:annotation>
                <xs:appinfo>
-                  <description-de-DE>benotet</description-de-DE>
+                  <description-de-DE>Finale Note</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsbenotungsstatus/unbenotet">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/note_liegt_nicht_vor">
             <xs:annotation>
                <xs:appinfo>
-                  <description-de-DE>unbenotet</description-de-DE>
+                  <description-de-DE>Note liegt nicht vor</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsbenotungsstatus/vorlaeufig">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/vorlaeufige_note">
             <xs:annotation>
                <xs:appinfo>
-                  <description-de-DE>vorläufig</description-de-DE>
+                  <description-de-DE>Vorläufige Note</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/~wert_nicht_in_liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
@@ -1707,12 +1829,12 @@
                <nameKurz>Leistungsstatus</nameKurz>
                <nameTechnisch>Leistungsstatus-Codes</nameTechnisch>
                <kennung>urn:xhochschule-de:xhochschule:codeliste:leistungsstatus</kennung>
-               <beschreibung>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden unbenontet, etc.</beschreibung>
+               <beschreibung>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, etc.</beschreibung>
                <herausgebernameLang>XHochschule</herausgebernameLang>
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1734,49 +1856,49 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/angemeldet">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/angemeldet">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>angemeldet</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/bestanden">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>bestanden</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/endgueltig_nicht_bestanden">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/endgueltig_nicht_bestanden">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>endgültig nicht bestanden</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/entschuldigt">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/entschuldigt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>entschuldigt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/nicht_bestanden">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/nicht_bestanden">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>nicht bestanden</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/nicht_vollstaendig">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/nicht_vollstaendig">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>nicht vollständig</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/leistungsstatus/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
@@ -1798,7 +1920,7 @@
                <herausgebernameKurz>XHS</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.95</version>
+               <version>1.0</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1827,7 +1949,7 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/dual-ausbildungsintegriert">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/dual-ausbildungsintegriert">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Dual (ausbildungsintegriert)</description-de-DE>
@@ -1835,7 +1957,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/dual-praxisintegriert">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/dual-praxisintegriert">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Dual (praxisintegriert)</description-de-DE>
@@ -1843,7 +1965,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/teilzeit">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/teilzeit">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Teilzeit</description-de-DE>
@@ -1851,7 +1973,7 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/vollzeit">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/vollzeit">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Vollzeit</description-de-DE>
@@ -1859,14 +1981,14 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht bekannt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>

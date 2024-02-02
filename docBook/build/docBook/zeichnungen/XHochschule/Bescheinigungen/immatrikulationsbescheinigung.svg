@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="418.3" height="634">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="500.42499999999995"
+     height="634">
    <defs>
       <style type="text/css">
                         text {
@@ -37,7 +39,7 @@
                         } 
                     </style>
    </defs>
-   <rect width="408.3"
+   <rect width="490.42499999999995"
          height="624"
          stroke-dasharray="3,3"
          rx="1"
@@ -71,13 +73,14 @@
             y2="18"
             class="type-structure-required"/>
       <g transform="translate(55,48)">
-         <rect width="83.346875" height="18" class="element-upper"/>
-         <rect width="83.346875" height="18" y="18" class="element-lower"/>
+         <rect width="132.015625" height="18" class="element-upper"/>
+         <rect width="132.015625" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">studierender</text>
-         <line x1="0" y1="18" x2="83.346875" y2="18"/>
+         <line x1="0" y1="18" x2="132.015625" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <g transform="translate(83.346875,0)"/>
+         <text font-size="12" x="35.353125" y="30">xhs:Studierender</text>
+         <g transform="translate(132.015625,0)"/>
       </g>
       <line x1="33"
             y1="66"
@@ -116,14 +119,75 @@
             y2="114"
             class="type-structure-required"/>
       <g transform="translate(55,144)">
-         <rect width="173.6875" height="18" class="element-upper"/>
-         <rect width="173.6875" height="18" y="18" class="element-lower"/>
+         <rect width="89.45625" height="18" class="element-upper"/>
+         <rect width="89.45625" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">lernzeitmodell</text>
-         <line x1="0" y1="18" x2="173.6875" y2="18"/>
+         <line x1="0" y1="18" x2="89.45625" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xhs:Code.Lernzeitmodell</text>
-         <g transform="translate(173.6875,0)"/>
+         <g transform="translate(89.45625,0)">
+            <g transform="translate(55,0)">
+               <rect width="173.6875" height="18" class="element-upper"/>
+               <rect width="173.6875" height="18" y="18" class="element-lower"/>
+               <text font-size="12" x="3.6" y="12" font-weight="bold">code</text>
+               <line x1="0" y1="18" x2="173.6875" y2="18"/>
+               <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+               <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+               <text font-size="12" x="35.353125" y="30">xhs:Code.Lernzeitmodell</text>
+               <g transform="translate(173.6875,0)"/>
+            </g>
+            <line x1="33"
+                  y1="18"
+                  x2="55"
+                  y2="18"
+                  class="type-structure-required"/>
+            <text font-size="11" fill="black" x="53" y="16" text-anchor="end"/>
+            <line x1="33"
+                  y1="18"
+                  x2="33"
+                  y2="18"
+                  class="type-structure-required"/>
+            <g transform="translate(55,48)">
+               <rect width="146.671875" height="18" class="element-upper"/>
+               <rect width="146.671875" height="18" y="18" class="element-lower"/>
+               <text font-size="12" x="3.6" y="12" font-weight="bold">nichtGelisteterWert</text>
+               <line x1="0" y1="18" x2="146.671875" y2="18"/>
+               <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+               <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+               <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
+               <g transform="translate(146.671875,0)"/>
+            </g>
+            <line x1="33"
+                  y1="66"
+                  x2="55"
+                  y2="66"
+                  class="type-structure-optional"/>
+            <text font-size="11" fill="black" x="53" y="64" text-anchor="end">0..1</text>
+            <line x1="33"
+                  y1="18"
+                  x2="33"
+                  y2="66"
+                  class="type-structure-optional"/>
+            <circle cx="15"
+                    cy="18"
+                    r="10"
+                    stroke="black"
+                    fill="rgb(251, 251, 251)"/>
+            <line x1="0"
+                  y1="18"
+                  x2="5"
+                  y2="18"
+                  class="type-structure-required"/>
+            <line x1="25"
+                  y1="18"
+                  x2="33"
+                  y2="18"
+                  class="type-structure-required"/>
+            <circle cx="10" cy="18" r="1.2" stroke="black" fill="black"/>
+            <circle cx="15" cy="18" r="1.2" stroke="black" fill="black"/>
+            <circle cx="20" cy="18" r="1.2" stroke="black" fill="black"/>
+            <line x1="7" y1="18" x2="23" y2="18"/>
+         </g>
       </g>
       <line x1="33"
             y1="162"
@@ -139,31 +203,6 @@
             y1="114"
             x2="33"
             y2="162"
-            class="type-structure-required"/>
-      <g transform="translate(55,192)">
-         <rect width="146.671875" height="18" class="element-upper"/>
-         <rect width="146.671875" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">lernzeitmodellFreitext</text>
-         <line x1="0" y1="18" x2="146.671875" y2="18"/>
-         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
-         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
-         <g transform="translate(146.671875,0)"/>
-      </g>
-      <line x1="33"
-            y1="210"
-            x2="55"
-            y2="210"
-            class="type-structure-optional"/>
-      <text font-size="11"
-            fill="black"
-            x="53"
-            y="208"
-            text-anchor="end">0..1</text>
-      <line x1="33"
-            y1="162"
-            x2="33"
-            y2="210"
             class="type-structure-required"/>
       <g transform="translate(55,240)">
          <rect width="148.078125" height="18" class="element-upper"/>
@@ -186,19 +225,83 @@
             y="256"
             text-anchor="end"/>
       <line x1="33"
-            y1="210"
+            y1="162"
             x2="33"
             y2="258"
             class="type-structure-required"/>
       <g transform="translate(55,288)">
-         <rect width="218.390625" height="18" class="element-upper"/>
-         <rect width="218.390625" height="18" y="18" class="element-lower"/>
+         <rect width="141.03437499999998" height="18" class="element-upper"/>
+         <rect width="141.03437499999998"
+               height="18"
+               y="18"
+               class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">immatrikulationsstatus</text>
-         <line x1="0" y1="18" x2="218.390625" y2="18"/>
+         <line x1="0" y1="18" x2="141.03437499999998" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xhs:Code.Immatrikulationsstatus</text>
-         <g transform="translate(218.390625,0)"/>
+         <g transform="translate(141.03437499999998,0)">
+            <g transform="translate(55,0)">
+               <rect width="218.390625" height="18" class="element-upper"/>
+               <rect width="218.390625" height="18" y="18" class="element-lower"/>
+               <text font-size="12" x="3.6" y="12" font-weight="bold">code</text>
+               <line x1="0" y1="18" x2="218.390625" y2="18"/>
+               <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+               <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+               <text font-size="12" x="35.353125" y="30">xhs:Code.Immatrikulationsstatus</text>
+               <g transform="translate(218.390625,0)"/>
+            </g>
+            <line x1="33"
+                  y1="18"
+                  x2="55"
+                  y2="18"
+                  class="type-structure-required"/>
+            <text font-size="11" fill="black" x="53" y="16" text-anchor="end"/>
+            <line x1="33"
+                  y1="18"
+                  x2="33"
+                  y2="18"
+                  class="type-structure-required"/>
+            <g transform="translate(55,48)">
+               <rect width="146.671875" height="18" class="element-upper"/>
+               <rect width="146.671875" height="18" y="18" class="element-lower"/>
+               <text font-size="12" x="3.6" y="12" font-weight="bold">nichtGelisteterWert</text>
+               <line x1="0" y1="18" x2="146.671875" y2="18"/>
+               <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+               <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+               <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
+               <g transform="translate(146.671875,0)"/>
+            </g>
+            <line x1="33"
+                  y1="66"
+                  x2="55"
+                  y2="66"
+                  class="type-structure-optional"/>
+            <text font-size="11" fill="black" x="53" y="64" text-anchor="end">0..1</text>
+            <line x1="33"
+                  y1="18"
+                  x2="33"
+                  y2="66"
+                  class="type-structure-optional"/>
+            <circle cx="15"
+                    cy="18"
+                    r="10"
+                    stroke="black"
+                    fill="rgb(251, 251, 251)"/>
+            <line x1="0"
+                  y1="18"
+                  x2="5"
+                  y2="18"
+                  class="type-structure-required"/>
+            <line x1="25"
+                  y1="18"
+                  x2="33"
+                  y2="18"
+                  class="type-structure-required"/>
+            <circle cx="10" cy="18" r="1.2" stroke="black" fill="black"/>
+            <circle cx="15" cy="18" r="1.2" stroke="black" fill="black"/>
+            <circle cx="20" cy="18" r="1.2" stroke="black" fill="black"/>
+            <line x1="7" y1="18" x2="23" y2="18"/>
+         </g>
       </g>
       <line x1="33"
             y1="306"
@@ -215,43 +318,76 @@
             x2="33"
             y2="306"
             class="type-structure-required"/>
-      <g transform="translate(55,336)">
-         <rect width="184.78437499999998" height="18" class="element-upper"/>
-         <rect width="184.78437499999998"
-               height="18"
-               y="18"
-               class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">immatrikulationsstatusFreitext</text>
-         <line x1="0" y1="18" x2="184.78437499999998" y2="18"/>
-         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
-         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
-         <g transform="translate(184.78437499999998,0)"/>
-      </g>
-      <line x1="33"
-            y1="354"
-            x2="55"
-            y2="354"
-            class="type-structure-optional"/>
-      <text font-size="11"
-            fill="black"
-            x="53"
-            y="352"
-            text-anchor="end">0..1</text>
-      <line x1="33"
-            y1="306"
-            x2="33"
-            y2="354"
-            class="type-structure-optional"/>
       <g transform="translate(55,384)">
-         <rect width="204.390625" height="18" class="element-upper"/>
-         <rect width="204.390625" height="18" y="18" class="element-lower"/>
+         <rect width="123.096875" height="18" class="element-upper"/>
+         <rect width="123.096875" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">beurlaubungsstatus</text>
-         <line x1="0" y1="18" x2="204.390625" y2="18"/>
+         <line x1="0" y1="18" x2="123.096875" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xhs:Code.Beurlaubungsstatus</text>
-         <g transform="translate(204.390625,0)"/>
+         <g transform="translate(123.096875,0)">
+            <g transform="translate(55,0)">
+               <rect width="204.390625" height="18" class="element-upper"/>
+               <rect width="204.390625" height="18" y="18" class="element-lower"/>
+               <text font-size="12" x="3.6" y="12" font-weight="bold">code</text>
+               <line x1="0" y1="18" x2="204.390625" y2="18"/>
+               <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+               <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+               <text font-size="12" x="35.353125" y="30">xhs:Code.Beurlaubungsstatus</text>
+               <g transform="translate(204.390625,0)"/>
+            </g>
+            <line x1="33"
+                  y1="18"
+                  x2="55"
+                  y2="18"
+                  class="type-structure-required"/>
+            <text font-size="11" fill="black" x="53" y="16" text-anchor="end"/>
+            <line x1="33"
+                  y1="18"
+                  x2="33"
+                  y2="18"
+                  class="type-structure-required"/>
+            <g transform="translate(55,48)">
+               <rect width="146.671875" height="18" class="element-upper"/>
+               <rect width="146.671875" height="18" y="18" class="element-lower"/>
+               <text font-size="12" x="3.6" y="12" font-weight="bold">nichtGelisteterWert</text>
+               <line x1="0" y1="18" x2="146.671875" y2="18"/>
+               <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+               <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+               <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
+               <g transform="translate(146.671875,0)"/>
+            </g>
+            <line x1="33"
+                  y1="66"
+                  x2="55"
+                  y2="66"
+                  class="type-structure-optional"/>
+            <text font-size="11" fill="black" x="53" y="64" text-anchor="end">0..1</text>
+            <line x1="33"
+                  y1="18"
+                  x2="33"
+                  y2="66"
+                  class="type-structure-optional"/>
+            <circle cx="15"
+                    cy="18"
+                    r="10"
+                    stroke="black"
+                    fill="rgb(251, 251, 251)"/>
+            <line x1="0"
+                  y1="18"
+                  x2="5"
+                  y2="18"
+                  class="type-structure-required"/>
+            <line x1="25"
+                  y1="18"
+                  x2="33"
+                  y2="18"
+                  class="type-structure-required"/>
+            <circle cx="10" cy="18" r="1.2" stroke="black" fill="black"/>
+            <circle cx="15" cy="18" r="1.2" stroke="black" fill="black"/>
+            <circle cx="20" cy="18" r="1.2" stroke="black" fill="black"/>
+            <line x1="7" y1="18" x2="23" y2="18"/>
+         </g>
       </g>
       <line x1="33"
             y1="402"
@@ -264,37 +400,9 @@
             y="400"
             text-anchor="end">0..1</text>
       <line x1="33"
-            y1="354"
+            y1="306"
             x2="33"
             y2="402"
-            class="type-structure-optional"/>
-      <g transform="translate(55,432)">
-         <rect width="166.84687499999998" height="18" class="element-upper"/>
-         <rect width="166.84687499999998"
-               height="18"
-               y="18"
-               class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">beurlaubungsstatusFreitext</text>
-         <line x1="0" y1="18" x2="166.84687499999998" y2="18"/>
-         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
-         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
-         <g transform="translate(166.84687499999998,0)"/>
-      </g>
-      <line x1="33"
-            y1="450"
-            x2="55"
-            y2="450"
-            class="type-structure-optional"/>
-      <text font-size="11"
-            fill="black"
-            x="53"
-            y="448"
-            text-anchor="end">0..1</text>
-      <line x1="33"
-            y1="402"
-            x2="33"
-            y2="450"
             class="type-structure-optional"/>
       <g transform="translate(55,480)">
          <rect width="119.703125" height="18" class="element-upper"/>
@@ -317,7 +425,7 @@
             y="496"
             text-anchor="end">0..2</text>
       <line x1="33"
-            y1="450"
+            y1="402"
             x2="33"
             y2="498"
             class="type-structure-optional"/>

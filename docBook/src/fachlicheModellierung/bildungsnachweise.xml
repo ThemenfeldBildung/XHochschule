@@ -6,6 +6,6 @@
     </info>
     <include href="../../build/docBook/dokumente/anhang/xsd/xhochschule-bildungsnachweise.xsd.xml" xmlns="http://www.w3.org/2001/XInclude" />
     <include href="../../build/docBook/dokumente/xhochschule/bildungsnachweise/hochschulabschlusszeugnis.xml" xmlns="http://www.w3.org/2001/XInclude" />
-    <include href="../../build/docBook/dokumente/xhochschule/bildungsnachweise/diplomaSupplement.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include xml:id="spezifikation.bildungsnachweise.diplomasupplement" href="../../build/docBook/dokumente/xhochschule/bildungsnachweise/diplomaSupplement.xml" xmlns="http://www.w3.org/2001/XInclude" />
 	<include href="../../build/docBook/dokumente/xhochschule/bildungsnachweise/transcriptOfRecords.xml" xmlns="http://www.w3.org/2001/XInclude" />
 </section>

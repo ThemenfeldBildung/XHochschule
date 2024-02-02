@@ -58,8 +58,10 @@
                 </row>
                 <row>
                     <entry>Einstufung</entry>
-                    <entry>In Anerkennungsverfahren, z.B. im Kontext eines Studienplatzwechsels, werden nachgewiesene Vorkenntnisse anhand eines festen Bewertungsrasters dazu
-                        genutzt, um Bewerber in ein bestimmtes Fachsemester einzustufen.</entry>
+                    <entry>In Anerkennungsverfahren, z.B. im Kontext eines Studienplatzwechsels,
+                        werden nachgewiesene Vorkenntnisse anhand eines festen Bewertungsrasters
+                        dazu genutzt, um Bewerberinnen und Bewerber in ein bestimmtes Fachsemester
+                        einzustufen.</entry>
                 </row>
                 <row>
                     <entry>EMREX / ELMO</entry>
@@ -89,12 +91,18 @@
                 </row>
                 <row>
                     <entry>Immatrikulation</entry>
-                    <entry>Mit der Immatrikulation erfolgt die Einschreibung in ein Studienfach an einer Hochschule während der dafür vorgesehen Immatrikulationsfrist. Die
-                        Immatrikulation unterscheidet sich zwischen zulassungsbeschränkten, zulassungsfreien oder weiterbildenden Studienfächern. Für zulassungsbeschränkte
-                        Studienfächer/Fachsemester erhalten erfolgreiche Bewerber einen Zulassungsbescheid, in dem dazu aufgefordert wird, die Immatrikulation innerhalb der
-                        angegebenen Frist vorzunehmen. Dies erfolgt in der Regel durch Zahlung des Semesterbeitrags. Mit dem Antrag auf
-                        Immatrikulation / Antrag auf Änderung des Studienfachs sind weitere Unterlagen einzureichen. Wer Haupthörer an einer anderen Hochschule ist, kann sich
-                        unter bestimmten Voraussetzungen mehrfach immatrikulieren.</entry>
+                    <entry>Mit der Immatrikulation erfolgt die Einschreibung in ein Studienfach an
+                        einer Hochschule während der dafür vorgesehen Immatrikulationsfrist. Die
+                        Immatrikulation unterscheidet sich zwischen zulassungsbeschränkten,
+                        zulassungsfreien oder weiterbildenden Studienfächern. Für
+                        zulassungsbeschränkte Studienfächer/Fachsemester erhalten erfolgreiche
+                        Bewerberinnen und Bewerber einen Zulassungsbescheid, in dem dazu
+                        aufgefordert wird, die Immatrikulation innerhalb der angegebenen Frist
+                        vorzunehmen. Dies erfolgt in der Regel durch Zahlung des Semesterbeitrags.
+                        Mit dem Antrag auf Immatrikulation / Antrag auf Änderung des Studienfachs
+                        sind weitere Unterlagen einzureichen. Wer Haupthörer an einer anderen
+                        Hochschule ist, kann sich unter bestimmten Voraussetzungen mehrfach
+                        immatrikulieren.</entry>
                 </row>
                 <row>
                     <entry>Modul</entry>
@@ -109,10 +117,12 @@
                 </row>
                 <row>
                     <entry>Nachrückverfahren</entry>
-                    <entry><emphasis role="bold">Im Nachrückverfahren werden die aus dem Hauptverfahren </emphasis><emphasis role="bold"
-                            >unbesetzten Studienplätze an Bewerber
-                    verteilt.</emphasis> Teilweise werden mehrere Nachrückverfahren durchgeführt, bis sämtliche Plätze vergeben sind. Im Ablehnungsbescheid (des
-                    Hauptverfahrens) werden dem Bewerber die Modalitäten zur Bewerbung für das Nachrückverfahren genannt.</entry>
+                    <entry><emphasis role="bold">Im Nachrückverfahren werden die aus dem
+                            Hauptverfahren </emphasis><emphasis role="bold">unbesetzten
+                            Studienplätze an Bewerberinnen und Bewerber verteilt.</emphasis>
+                        Teilweise werden mehrere Nachrückverfahren durchgeführt, bis sämtliche
+                        Plätze vergeben sind. Im Ablehnungsbescheid (des Hauptverfahrens) werden die
+                        Modalitäten zur Bewerbung für das Nachrückverfahren genannt.</entry>
                 </row>
                 <row>
                     <entry>Nutzerkonto</entry>
@@ -126,9 +136,9 @@
                     <entry>PIM</entry>
                     <entry>Die Plattform für Internationale Studierendenmobilität (PIM) ist eine
                         digitale Plattform für Leistungsanerkennung bei nationaler und
-                        internationaler Studierendenmobilität. Zentrale Ziele sind
-                        eindigitalisierter Ablauf für Anerkennungen sowie ein zentraler Zugang für
-                        alle Anerkennungsverfahren für Studierende.</entry>
+                        internationaler Studierendenmobilität. Zentrale Ziele sind ein
+                        digitalisierter Ablauf für Anerkennungen sowie ein zentraler Zugang für alle
+                        Anerkennungsverfahren für Studierende.</entry>
                 </row>
                 <row>
                     <entry>SDG-VO</entry>
@@ -152,7 +162,7 @@
                     <entry>Zulassung</entry>
                     <entry>Eine Zulassung zu einem Studium folgt auf Bewerbungs- und ggf. Anerkennungs- und Einstufungsverfahren durch die jeweilige Hochschule oder die SfH. Zur
                         Zulassung zum Studium sind Voraussetzungen zu erfüllen. Grundlegende Zulassungsvoraussetzung für das Studium ist der Besitz der Hochschulzugangsberechtigung. Grundsätzlich ist auch ein <link
-                            xlink:href="https://www.bachelor-studium.net/studieren-ohne-abitur" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="https://www.kmk.org/themen/hochschulen/studium-und-pruefungen/lebenslanges-lernen.html" xmlns:xlink="http://www.w3.org/1999/xlink"
                         >Studium ohne Hochschulreife</link>
                         unter bestimmten Voraussetzungen möglich. Zum Teil genügen eine Ausbildung sowie mehrjährige Berufserfahrung oder eine anderweitige Prüfung für die
                         Zulassung zu einem fachspezifischen Studienfach. Weiterhin können Studienfächer andere Zulassungsvoraussetzungen beinhalten, die für eine Bewerbung

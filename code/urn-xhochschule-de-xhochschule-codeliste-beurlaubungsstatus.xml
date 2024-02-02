@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Beurlaubungsstatus-Codes</ShortName>
       <LongName>Beurlaubungsstatus</LongName>
-      <Version>0.95</Version>
+      <Version>1.0</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus_0.95</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus_1.0</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -44,7 +44,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/beurlaubt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/beurlaubt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>beurlaubt</SimpleValue>
@@ -52,7 +52,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/nicht_beurlaubt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/nicht_beurlaubt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>nicht beurlaubt</SimpleValue>
@@ -60,7 +60,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/~wert_nicht_bekannt</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/~wert_nicht_bekannt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
@@ -68,7 +68,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/~wert_nicht_in_liste</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/~wert_nicht_in_liste</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>

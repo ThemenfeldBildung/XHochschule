@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Immatrikulationsstatus-Codes</ShortName>
       <LongName>Immatrikulationsstatus</LongName>
-      <Version>0.95</Version>
+      <Version>1.0</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:immatrikulationsstatus</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:immatrikulationsstatus_0.95</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:immatrikulationsstatus_1.0</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -44,7 +44,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/immatrikulationsstatus/immatrikuliert</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/immatrikuliert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>immatrikuliert</SimpleValue>
@@ -52,7 +52,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/immatrikulationsstatus/nicht_immatrikuliert</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/nicht_immatrikuliert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>nicht immatrikuliert</SimpleValue>
@@ -60,7 +60,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/immatrikulationsstatus/vorlaeufig_immatrikuliert</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/vorlaeufig_immatrikuliert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>vorläufig immatrikuliert</SimpleValue>
@@ -68,7 +68,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/immatrikulationsstatus/~wert_nicht_in_liste</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/~wert_nicht_in_liste</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>

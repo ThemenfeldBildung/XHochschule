@@ -160,7 +160,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Anzahl der Semester, die ein Studierender in ein bestimmtes  Studienfachs eingeschrieben ist ohne beurlaubt zu sein. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet. Diese Angabe bezieht sich auf die Anzahl der zum Zeitpunkt der Ausstellung des Dokuments angefangenen Fachsemester, d.h. ein laufendes Semester wird mitgezählt. Bei vergangenen Studienabschnitten stellt diese Angabe die laufende Anzahl an Fachsemestern im entsprechenden Zeitraum dar.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Anzahl der Semester, die ein Studierender in ein bestimmtes  Studienfachs eingeschrieben ist, ohne beurlaubt zu sein. Trimester und andere Zeiteinteilungen werden entsprechend auf Semesteranteile umgerechnet. Diese Angabe bezieht sich auf die Anzahl der zum Zeitpunkt der Ausstellung des Dokuments angefangenen Fachsemester, d.h. ein laufendes Semester wird mitgezählt. Bei vergangenen Studienabschnitten stellt diese Angabe die laufende Anzahl an Fachsemestern im entsprechenden Zeitraum dar.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">

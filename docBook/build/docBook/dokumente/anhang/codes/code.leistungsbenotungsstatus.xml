@@ -10,9 +10,9 @@
          revision="&xrecent;">
    <title>Code.Leistungsbenotungsstatus</title><para>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, unbenotet, etc.</para> <para> Der Begriff "benotet" wird im Modell auf zwei Weisen benutzt, die von ihrer Verbindung zum Wert der Klasse "Leistungsstatus" abhängen.</para>
 
-<para>1. Der Wert "benotet" aus der Klasse "Leistungsbenotungsstatus" bedeutet in Verbindung mit der Klasse "Leistungsstatus" mit dem Wert "angemeldet", dass diese Leistung zukünftig eine Benotung erhält. (benotet = "diese Leistung wird benotet")</para>
-<para>2. Der Wert "benotet" aus der Klasse "Leistungsbenotungsstatus" bedeutet in Verbindung mit der Klasse "Leistungsstatus" mit dem Wert "bestanden", dass diese Leistung eine Benotung erhalten hat, welche zum Bestehen der Leistung ausreichte. (benotet = "diese Leistung wurde benotet")</para>
-<para>Der Begriff "unbenotet" wird hingegen nur auf eine Art benutzt. (unbenotet = "diese Leistung wird unbenotet sein" und "diese Leistung ist/war unbenotet")</para><informaltable>
+<para>1. Der Wert "benotet" aus der Klasse "Leistungsbenotungsstatus" bedeutet in Verbindung mit der Klasse "Leistungsstatus" mit dem Wert "angemeldet", dass diese Leistung zukünftig eine Benotung erhält (benotet = "diese Leistung wird benotet").</para>
+<para>2. Der Wert "benotet" aus der Klasse "Leistungsbenotungsstatus" bedeutet in Verbindung mit der Klasse "Leistungsstatus" mit dem Wert "bestanden", dass diese Leistung eine Benotung erhalten hat, welche zum Bestehen der Leistung ausreichte (benotet = "diese Leistung wurde benotet").</para>
+<para>Der Begriff "unbenotet" wird hingegen nur auf eine Art benutzt (unbenotet = "diese Leistung ist grundsätzlich unbenotet").</para><informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
          <colspec colnum="2" colname="val" colwidth="138mm"/>
@@ -39,7 +39,7 @@
             </row>
             <row>
                <entry>-version</entry>
-               <entry>0.95</entry>
+               <entry>1.0</entry>
             </row>
          </tbody>
       </tgroup>

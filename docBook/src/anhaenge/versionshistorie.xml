@@ -12,6 +12,116 @@
         In der Versionshistorie werden die wesentlichen Änderungen der aktuellen Version zu Vorversionen der Spezifikation dargestellt.
     </para>
     
+    <sect1 xml:id="spezifikation.anhang.versionshistorie100">
+        <info>
+            <title>Version 1.0 Pre-Release</title>
+        </info>
+        <para>Veröffentlichungsdatum: 01.02.2024</para> 
+        <sect2>
+            <title>Strukturelle Änderungen</title>
+            <simplesect>
+                <title>Direkte Einbindung von XÖV-Kernkomponenten</title>
+                <para>Die XÖV-Kernkomponenten wurden aus XBildung entfernt, da sie zukünftig von den Vorhaben XSchule, XHochschule und XBerufsbildung 
+                    direkt über die XÖV-Bibliothek eingebunden werden. Ausnahmen bilden die Kernkomponenten „Zeitraum“ und „Ortsangabe“ 
+                    (ehemals Geburtsort, basierend auf Anschrift), diese verbleiben im Modell von XBildung.
+                    „Ortsangabe“, bestehend aus Ort und Staat, wird als reduzierte Anschrift genutzt. 
+                    Sie ersetzt in Dokument und Praktikum die bisherige Angabe des Orts als Text.</para>
+            </simplesect>
+            <simplesect>
+                <title>Teilweises Ersetzen von Schematron-Regeln durch Restrictions</title>
+                <para>Innerhalb des Modells wurden zum Zwecke der Verschlankung eine Reihe von Schematron-Regeln durch XML-Schema-Restrictions ersetzt. 
+                    Die verbleibenden Schematron-Regeln wurden vereinheitlicht, insbesondere hinsichtlich der Angabe von "wert_nicht_in_liste" bei Codelisten. 
+                    Eine neue Regeln verbietet Leerfelder bei Pflichtangaben.</para>                               
+            </simplesect>
+            <simplesect>
+                <title>Direkte Einbindung des XBD-Modells</title>
+                <para>Das XBildung-Modell wird nun direkt mit XHochschule ausgeliefert.</para>
+            </simplesect>
+            <simplesect>
+                <title>Nutzung von HTML in speziellen Feldern</title>
+                <para>Für weniger Felder, in denen HTML-Code notwendig sein könnte um Datensätze abzubilden („Beschreibung“ in „Leistungsbeschreibung“ / 
+                    „Bezeichnung“ in „Leistung“) ist dies zukünftig mittels HTML-Escape-Zeichen möglich. Eine Erläuterung und eine Tabelle der 
+                    nutzbaren Zeichen finden sich im Kapitel „Wichtige Hinweise zur Implementierung“.</para>
+            </simplesect>
+        </sect2>
+        <sect2>
+            <title>Änderungen am Modell</title>
+            <simplesect>
+                <title>Änderungen in Klasse „Leistung“</title>
+                <para>In der Klasse „Leistung“, die mit Version 0.95 in das Datenmodell eingeführt wurde, wurden verschiedene Änderungen vorgenommen. 
+                    Die Codeliste „Leistungsart“ wurde um die Einträge „Modulteilleistung“ und „Tutorium“ ergänzt. Weiterhin wurde „ModulNachKMK“ entfernt 
+                    und die „ModulbeschreibungNachKMK“ überarbeitet und an den Codelisten-Wert „Modul“ als optionales Element angehängt. 
+                    Für das „Modulhandbuch“ wurde ein Feld zur Angabe einer Versionierung hinzugefügt. Das Element „Abschlussarbeit“ wurde aus dem 
+                    Hochschulabschlusszeugnis entfernt und kann zukünftig allein über die Einbindung von „Leistung“ in das Hochschulabschlusszeugnis 
+                    als „Leistungsart“ dargestellt werden. Der Destatis-Fächerschlüssel wurde auf der Ebene „Leistung“ aufgrund Stakeholder-Anforderung 
+                    als Typ3-Codeliste wieder eingebaut. Um einheitliche Geschäftsregeln durch alle Rekursivitätsstufen zu ermöglichen, 
+                    wurde „Teilleistung“ in „Leistung“ überführt.</para>
+                      </simplesect>
+            <simplesect>
+                <title>Eindeutige Semantik im Hinblick auf den Status und die Benotung von Leistungen</title>
+                <para>Es wurden Anpassungen vorgenommen, die eine klare semantische Trennung ermöglichen, inwieweit es sich um eine grundsätzlich benotete oder 
+                    unbenotete Leistung handelt und in welchem sich Status die Leistungserbringung befindet. Entsprechend wurden auch die Beschreibungen angepasst.</para>
+            </simplesect>                   
+        </sect2>
+        <sect2>
+            <title>Weitere Änderungen</title>
+            <simplesect>
+                <title>Überarbeiten der Spezifikation</title>
+                <para>Die Spezifikation wurde umfassend überarbeitet im Hinblick auf die allgemeine Verständlichkeit. So wurde die „Hochschuljourney“ graphisch überarbeitet 
+                    und die einzelnen Stationen in ein besser lesbares Format überführt. Weiterhin wurden einleitende Abschnitte überarbeitet und aktualisiert sowie ein 
+                    im Hinblick auf die Implementierung wichtiges Kapitel mit Hinweisen für Campus-Management-System-Hersteller eingefügt.</para>
+            </simplesect>
+        </sect2>
+        <sect2>
+            <title>Liste der umgesetzten Tickets</title>
+            <para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
+            <itemizedlist>
+              <listitem><para>XHS-521: Studienabschnitt: AbgeschlossenOderDatum wird zu VorzeitigBeendet</para></listitem>
+                <listitem><para>XHS-563: Redirect-URL auf aktuelle Spezifikation erstellen/anpassen</para></listitem>
+                <listitem><para>XHS-595: Schematron-Regeln überarbeiten und vereinheitlichen</para></listitem> 
+                <listitem><para>XHS-606: Anpassen der Spezifikation</para></listitem>
+                 <listitem><para>XHS-608: Version des Modulhandbuchs in Leistungsbeschreibung einfügen</para></listitem>
+                <listitem><para>XHS-619: Codeliste Lateinische Ehrenbezeichnung Errata</para></listitem>
+                <listitem><para>XHS-629: Anpassung Benotungsstatus</para></listitem>
+                
+                <listitem><para>XHS-630: Formulierung Schematron-Regeln</para></listitem>
+                
+                <listitem><para>XHS-633: Schematron-Regeln durch Restrictions ersetzen / Kernkomponenten einbinden</para></listitem> 
+                <listitem><para>XHS-634: Renovieren der Spezifikation</para></listitem>
+                <listitem><para>XHS-635: Anpassung aller Schematronregeln, die "wert_nicht_in_liste" ausdrücken.</para></listitem>
+                
+                 <listitem><para>XHS-636: Benotungsstatus Datenfelder überarbeiten</para></listitem>
+                
+                <listitem><para>XHS-637: Prüfen: Beschränkung in "Geburt" aus natürlichePerson in XBD</para></listitem>
+                <listitem><para>XHS-640: Errata in HAZ: Verweis auf ToR entfernen und DS-Verweis überarbeiten</para></listitem>
+                <listitem><para>XHS-641: Codeliste Leistungsart ergänzen</para></listitem>
+                
+                <listitem><para>XHS-642: Element Abschlussarbeit aus HAZ entfernen</para></listitem> 
+                
+                <listitem><para>XHS-643: Umsetzung der Schritte zur Nutzung von HTML in speziellen Feldern</para></listitem>
+                
+               <listitem><para>XHS-644: Anpassen von Modul/ModulnachKMK</para></listitem> 
+                
+               <listitem><para>XHS-646: Leistung und entsprechende Schematron-Regeln anpassen</para></listitem> 
+                <listitem><para>XHS-649: Erratum: "rite" als lateinische Ehrenbezeichnung</para></listitem>
+                <listitem><para>XHS-653: Versionierung von Codelisten prüfen und ggf. anpassen</para></listitem>
+                <listitem><para>XHS-656: Empfehlungen und Hinweise für Hersteller</para></listitem>
+                <listitem><para>XHS-659: Schreibfehler in angabenStudierender im DiplomaSupplement</para></listitem>
+                
+                <listitem><para>XHS-661: Einbindung des XBD-Modells nach Vorbild anderer Teilvorhaben</para></listitem>
+                
+                <listitem><para>XHS-665: Nachnutzung von XBD "Ortsangabe"</para></listitem>
+                <listitem><para>XHS-666: Rechtschreibfehler in Beschreibung von "Identifikation" beheben</para></listitem>
+                <listitem><para>XHS-668: Beschreibung von "Identifikation" ändern</para></listitem>
+                  <listitem><para>XHS-669: Destatis-FS wieder einbauen</para></listitem>
+                <listitem><para>XHS-670: Erratum: DatatypeE doppelt eingebunden?</para></listitem>                
+            </itemizedlist>
+        </sect2>
+        
+        
+        
+    </sect1>
+    
     <sect1 xml:id="spezifikation.anhang.versionshistorie095">
         <info>
             <title>Version 0.95</title>
@@ -184,22 +294,6 @@
             </itemizedlist>
         </sect2>
     </sect1>
-    <sect1 xml:id="spezifikation.anhang.versionshistorie094">
-        <info>
-            <title>Version 0.94</title>
-        </info>
-        <para>Veröffentlichungsdatum: 13. Januar 2023</para>
-        <para><emphasis role="bold">Veränderungen zur vorherigen Version</emphasis></para>
-        <!--<orderedlist continuation="restarts" inheritnum="ignore">
-            <listitem>-->
-                <para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:
-                </para>
-                <para>XHS-545: DESTATIS Codelisten auf Version WS2022 updaten</para>
-                <para>XHS-546: Immatrikulationsbescheinigung nach §9 BAföG einfügen</para>
-                <para>XHS-550: Generische Immatrikulationsbescheinigung erstellen</para>
-                <para>XHS-549: Schematron-Regeln ergänzen</para>
-            <!--</listitem>
-        </orderedlist>-->
-    </sect1>
+   
     
 </appendix>

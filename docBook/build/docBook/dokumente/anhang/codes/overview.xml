@@ -10,6 +10,7 @@
             href="code.anerkanntoderangerechnet.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude" href="code.beurlaubungsgrund.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude" href="code.beurlaubungsstatus.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude" href="code.faecherschluessel.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude" href="code.hochschulsignatur.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="code.immatrikulationsstatus.xml"/>

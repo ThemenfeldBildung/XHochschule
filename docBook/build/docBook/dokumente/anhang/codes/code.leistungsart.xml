@@ -21,7 +21,7 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry>Diese Coldeiste gibt an, um welche Art der Leistung es sich bei einer konkreten Leistung handelt, z.B. Modul oder Klausur, etc.</entry>
+               <entry>Diese Codeliste gibt an, um welche Art der Leistung es sich bei einer konkreten Leistung handelt, z.B. Modul oder Klausur, etc.</entry>
             </row>
             <row>
                <entry>-nutzung</entry>
@@ -35,7 +35,7 @@
             </row>
             <row>
                <entry>-version</entry>
-               <entry>0.95</entry>
+               <entry>1.0</entry>
             </row>
          </tbody>
       </tgroup>

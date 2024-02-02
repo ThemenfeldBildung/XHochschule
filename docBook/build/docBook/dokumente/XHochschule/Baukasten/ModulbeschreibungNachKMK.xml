@@ -8,7 +8,7 @@
          xml:id="XHochschule.Baukasten.ModulbeschreibungNachKMK">
    <title>ModulbeschreibungNachKMK</title>
    <subtitle>Typ: <emphasis role="codebf">ModulbeschreibungNachKMK</emphasis>
-   </subtitle><para>Klasse zur strukturierten Erfassung einer Modulbeschreibung nach Rahmenvorgaben der KMK (laut Beschluss der Kultusministerkonferenz vom 15.09.2000). Weitere Informationen verfügbar unter:  https://www.kmk.org/fileadmin/pdf/PresseUndAktuelles/2000/module.pdf</para><figure xml:id="figure.XHochschule.Baukasten.ModulbeschreibungNachKMK">
+   </subtitle><para>Klasse zur strukturierten Erfassung einer Modulbeschreibung nach Rahmenvorgaben der KMK (laut Beschluss der Kultusministerkonferenz vom 15.09.2000). Weitere Informationen verfügbar in den <link xlink:href="https://www.kmk.org/fileadmin/pdf/PresseUndAktuelles/2000/module.pdf"> Rahmenvorgaben der KMK. </link>  </para><figure xml:id="figure.XHochschule.Baukasten.ModulbeschreibungNachKMK">
       <title>ModulbeschreibungNachKMK</title>
       <mediaobject>
          <imageobject>
@@ -64,7 +64,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Inhalte und Qualifikationsziele des Moduls</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zu fachlichen, methodischen, fachpraktischen und fächerübergreifenden Inhalten und Lernzielen eines Moduls.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -84,7 +84,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Lehrformen des Moduls</para></entry>
+               <entry namest="indent0" nameend="page"><para>Beschreibung der Lehrformen eines Moduls (Vorlesung, Übung, Seminar, Praktikum, Projektarbeit, Selbststudium u.ä.).</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -104,7 +104,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Voraussetzungen für die Teilnahme am Modul</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zu Kenntnissen, Fähigkeiten und Fertigkeiten oder bereits besuchten Modulen, die Voraussetzung zur Teilnahme sind. Auch Hinweise auf vorbereitende Maßnahmen (Literaturangaben, multimediale Lehr- und Lernprogramme) sind möglich.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -124,7 +124,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angaben zur Verwendbarkeit des Moduls</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zum Zusammenhang des Moduls mit anderen Modulen des Studiengangs oder zur Verwendbarkeit des Moduls in anderen, auch weiterbildenden oder postgradualen Studiengängen.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -144,7 +144,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Voraussetzungen für die Vergabe von Leistungspunkten für das Modul</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zu den Spezifika der studienbegleitenden Prüfungsleistungen (Semesterarbeiten, Exkursionsberichte, Hausarbeiten u.ä.), wie z.B. ob es sich um eine schriftliche oder mündliche Prüfung handelt.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -164,7 +164,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angaben zu Leistungspunkten und Noten für das Modul. Diese sind getrennt auszuweisen</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zu Leistungspunkten und Noten für das Modul. Diese sind getrennt auszuweisen. Grundlage sollte die Umrechung deutscher Noten in die ECTS-Skala nach Vorgabe der HRK sein.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -184,7 +184,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angaben zur Haeufigkeit des Angebots des Moduls</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Häufigkeit des Angebots des Moduls (z.B. jedes Semester; jedes Studienjahr; größere Abstände).</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -224,7 +224,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angaben zur Dauer des Moduls&#xD;</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Dauer des Moduls&#xD;.</para></entry>
             </row>
          </tbody>
       </tgroup>

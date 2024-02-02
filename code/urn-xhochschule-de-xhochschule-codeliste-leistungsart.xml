@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Leistungsart</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Diese Coldeiste gibt an, um welche Art der Leistung es sich bei einer konkreten Leistung handelt, z.B. Modul oder Klausur, etc.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Diese Codeliste gibt an, um welche Art der Leistung es sich bei einer konkreten Leistung handelt, z.B. Modul oder Klausur, etc.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XHS</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Leistungsart-Codes</ShortName>
       <LongName>Leistungsart</LongName>
-      <Version>0.95</Version>
+      <Version>1.0</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:leistungsart</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:leistungsart_0.95</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:leistungsart_1.0</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -44,7 +44,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/abschlusspruefung</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/abschlusspruefung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Abschlussprüfung</SimpleValue>
@@ -52,7 +52,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/bachelorarbeit</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/bachelorarbeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bachelorarbeit</SimpleValue>
@@ -60,7 +60,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/diplomarbeit</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/diplomarbeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Diplomarbeit</SimpleValue>
@@ -68,7 +68,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/doktorarbeit</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/doktorarbeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Doktorarbeit</SimpleValue>
@@ -76,7 +76,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/fach</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/fach</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Fach</SimpleValue>
@@ -84,7 +84,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/fachbereich</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/fachbereich</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Fachbereich</SimpleValue>
@@ -92,7 +92,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/forschungspraktikum</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/forschungspraktikum</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Forschungspraktikum</SimpleValue>
@@ -100,7 +100,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/hausarbeit</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/hausarbeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Hausarbeit</SimpleValue>
@@ -108,7 +108,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/industriepraktikum</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/industriepraktikum</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Industriepraktikum</SimpleValue>
@@ -116,7 +116,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/klausur</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/klausur</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Klausur</SimpleValue>
@@ -124,7 +124,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/kolloquium</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/kolloquium</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kolloquium</SimpleValue>
@@ -132,7 +132,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/kurs</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/kurs</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kurs</SimpleValue>
@@ -140,7 +140,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/laborpraktikum</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/laborpraktikum</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Laborpraktikum</SimpleValue>
@@ -148,7 +148,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/masterarbeit</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/masterarbeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Masterarbeit</SimpleValue>
@@ -156,7 +156,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/modul</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Modul</SimpleValue>
@@ -164,15 +164,15 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/modul_nach_kmk</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modulteilleistung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>Modul nach KMK</SimpleValue>
+            <SimpleValue>Modulteilleistung</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/muendliche_pruefung</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/muendliche_pruefung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Mündliche Prüfung</SimpleValue>
@@ -180,7 +180,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/pflichtbereich</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/pflichtbereich</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Pflichtbereich</SimpleValue>
@@ -188,7 +188,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/praktikum</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/praktikum</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Praktikum</SimpleValue>
@@ -196,7 +196,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/praxissemester</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/praxissemester</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Praxissemester</SimpleValue>
@@ -204,7 +204,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/schriftliche_pruefung</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/schriftliche_pruefung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Schriftliche Prüfung</SimpleValue>
@@ -212,7 +212,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/seminar</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/seminar</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Seminar</SimpleValue>
@@ -220,7 +220,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/seminararbeit</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/seminararbeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Seminararbeit</SimpleValue>
@@ -228,7 +228,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/studienfach</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studienfach</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Studienfach</SimpleValue>
@@ -236,7 +236,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/studiengang</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studiengang</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Studiengang</SimpleValue>
@@ -244,7 +244,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/thesis</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/thesis</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Thesis</SimpleValue>
@@ -252,7 +252,15 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/vorlesung</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/tutorium</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Tutorium</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/vorlesung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Vorlesung</SimpleValue>
@@ -260,7 +268,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/wahlbereich</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlbereich</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wahlbereich</SimpleValue>
@@ -268,7 +276,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/wahlfach</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlfach</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wahlfach</SimpleValue>
@@ -276,7 +284,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/wahlmodul</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlmodul</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wahlmodul</SimpleValue>
@@ -284,7 +292,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/wahlpflichtbereich</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtbereich</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wahlpflichtbereich</SimpleValue>
@@ -292,7 +300,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/wahlpflichtfach</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtfach</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wahlpflichtfach</SimpleValue>
@@ -300,7 +308,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/wahlpflichtmodul</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtmodul</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wahlpflichtmodul</SimpleValue>
@@ -308,7 +316,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsart/~wert_nicht_in_liste</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/~wert_nicht_in_liste</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>

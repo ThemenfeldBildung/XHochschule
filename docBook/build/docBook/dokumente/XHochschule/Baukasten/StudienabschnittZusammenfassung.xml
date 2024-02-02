@@ -90,11 +90,26 @@
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">lernzeitmodell</emphasis>
                </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angabe, ob eine studierende Person in einem Studienabschnitt beispielsweise in Vollzeit oder in Teilzeit studiert. Für den Fall, dass kein Codelistenwert passend ist, soll 'Wert nicht in Liste' und das dann angezeigte Freitextfeld genutzt werden.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
                <entry>
                   <emphasis role="codebf">Code.Lernzeitmodell</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XHochschule.Baukasten.Codes.Code.Lernzeitmodell"
@@ -106,11 +121,13 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angabe, ob eine studierende Person in einem Studienabschnitt beispielsweise in Vollzeit oder in Teilzeit studiert.</para></entry>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Mit Lernzeitmodell sei hier unter anderem die Unterscheidung zwischen Teil- und Vollzeit gemeint.</para></entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">lernzeitmodellFreitext</emphasis>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">String.Localized</emphasis>
@@ -126,7 +143,8 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>In diesem Feld ist das Lernzeitmodell als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Lernzeitmodell" enthalten ist, die über das Element "lernzeitmodell" eingebunden ist, d.h. wenn dort der Codelisten-Wert "Wert nicht in Liste" ausgewählt wird.</para></entry>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>In diesem Feld ist das Lernzeitmodell als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -164,13 +182,29 @@
             </thead>
             <tbody>
                <row>
-                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;3&#x200B;8&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;S&#x200B;t&#x200B;u&#x200B;d&#x200B;i&#x200B;e&#x200B;n&#x200B;a&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;n&#x200B;i&#x200B;t&#x200B;t&#x200B;Z&#x200B;u&#x200B;s&#x200B;a&#x200B;m&#x200B;m&#x200B;e&#x200B;n&#x200B;f&#x200B;a&#x200B;s&#x200B;s&#x200B;u&#x200B;n&#x200B;g&#x200B;</entry>
-                  <entry>XHS-0026 Wenn und nur wenn der Wert von lernzeitmodell 'wert_nicht_in_liste' ist, soll das Feld lernzeitmodellFreitext angegeben werden.</entry>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">null#/xhs:StudienabschnittAufzaehlung/lernzeitmodell</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;V&#x200B;o&#x200B;l&#x200B;l&#x200B;O&#x200B;d&#x200B;e&#x200B;r&#x200B;T&#x200B;e&#x200B;i&#x200B;l&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
+                  <entry>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung "Teilzeit" oder "Vollzeit" haben.</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">(exists(*:lernzeitmodellFreitext) and ends-with(*:lernzeitmodell/code/text(), 'wert_nicht_in_liste')) or (empty(*:lernzeitmodellFreitext) and not(ends-with(*:lernzeitmodell/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                        <emphasis role="codebf">ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;4&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;</entry>
+                  <entry>XHS-0014 Wenn und nur wenn der Wert der Codeliste Lernzeitmodell 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
                      </para>
                   </entry>
                </row>

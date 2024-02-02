@@ -71,13 +71,14 @@
             y2="18"
             class="type-structure-required"/>
       <g transform="translate(55,48)">
-         <rect width="83.346875" height="18" class="element-upper"/>
-         <rect width="83.346875" height="18" y="18" class="element-lower"/>
+         <rect width="132.015625" height="18" class="element-upper"/>
+         <rect width="132.015625" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">studierender</text>
-         <line x1="0" y1="18" x2="83.346875" y2="18"/>
+         <line x1="0" y1="18" x2="132.015625" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <g transform="translate(83.346875,0)"/>
+         <text font-size="12" x="35.353125" y="30">xhs:Studierender</text>
+         <g transform="translate(132.015625,0)"/>
       </g>
       <line x1="33"
             y1="66"

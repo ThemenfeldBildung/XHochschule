@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><!ENTITY datentyp.ref.code.anerkanntoderangerechnet '<emphasis role="codebf">Code.AnerkanntOderAngerechnet</emphasis>'>
+<?xml version="1.0" encoding="UTF-8"?><!ENTITY datentyp.ref.allgemeinername '<emphasis role="codebf">AllgemeinerName</emphasis>'>
+                    <!ENTITY datentyp.ref.link.allgemeinername '<link linkend="XHochschule.Kernkomponenten.AllgemeinerName">AllgemeinerName</link>'>
+                    <!ENTITY datentyp.ref.xref.allgemeinername '<xref linkend="XHochschule.Kernkomponenten.AllgemeinerName" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.anerkanntoderangerechnet '<emphasis role="codebf">Code.AnerkanntOderAngerechnet</emphasis>'>
                     <!ENTITY datentyp.ref.link.code.anerkanntoderangerechnet '<link linkend="XHochschule.Baukasten.Codes.Code.AnerkanntOderAngerechnet">Code.AnerkanntOderAngerechnet</link>'>
                     <!ENTITY datentyp.ref.xref.code.anerkanntoderangerechnet '<xref linkend="XHochschule.Baukasten.Codes.Code.AnerkanntOderAngerechnet" role="AS"/>'>
                     <!ENTITY datentyp.ref.code.beurlaubungsgrund '<emphasis role="codebf">Code.Beurlaubungsgrund</emphasis>'>
@@ -7,6 +10,9 @@
                     <!ENTITY datentyp.ref.code.beurlaubungsstatus '<emphasis role="codebf">Code.Beurlaubungsstatus</emphasis>'>
                     <!ENTITY datentyp.ref.link.code.beurlaubungsstatus '<link linkend="XHochschule.Baukasten.Codes.Code.Beurlaubungsstatus">Code.Beurlaubungsstatus</link>'>
                     <!ENTITY datentyp.ref.xref.code.beurlaubungsstatus '<xref linkend="XHochschule.Baukasten.Codes.Code.Beurlaubungsstatus" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.faecherschluessel '<emphasis role="codebf">Code.Faecherschluessel</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.faecherschluessel '<link linkend="XHochschule.Baukasten.Codes.Code.Faecherschluessel">Code.Faecherschluessel</link>'>
+                    <!ENTITY datentyp.ref.xref.code.faecherschluessel '<xref linkend="XHochschule.Baukasten.Codes.Code.Faecherschluessel" role="AS"/>'>
                     <!ENTITY datentyp.ref.code.hochschulsignatur '<emphasis role="codebf">Code.Hochschulsignatur</emphasis>'>
                     <!ENTITY datentyp.ref.link.code.hochschulsignatur '<link linkend="XHochschule.Baukasten.Codes.Code.Hochschulsignatur">Code.Hochschulsignatur</link>'>
                     <!ENTITY datentyp.ref.xref.code.hochschulsignatur '<xref linkend="XHochschule.Baukasten.Codes.Code.Hochschulsignatur" role="AS"/>'>
@@ -31,9 +37,15 @@
                     <!ENTITY datentyp.ref.externerbrachteleistung '<emphasis role="codebf">ExternErbrachteLeistung</emphasis>'>
                     <!ENTITY datentyp.ref.link.externerbrachteleistung '<link linkend="XHochschule.Baukasten.ExternErbrachteLeistung">ExternErbrachteLeistung</link>'>
                     <!ENTITY datentyp.ref.xref.externerbrachteleistung '<xref linkend="XHochschule.Baukasten.ExternErbrachteLeistung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.geburt '<emphasis role="codebf">Geburt</emphasis>'>
+                    <!ENTITY datentyp.ref.link.geburt '<link linkend="XHochschule.Kernkomponenten.Geburt">Geburt</link>'>
+                    <!ENTITY datentyp.ref.xref.geburt '<xref linkend="XHochschule.Kernkomponenten.Geburt" role="AS"/>'>
                     <!ENTITY datentyp.ref.hochschule '<emphasis role="codebf">Hochschule</emphasis>'>
                     <!ENTITY datentyp.ref.link.hochschule '<link linkend="XHochschule.Baukasten.Hochschule">Hochschule</link>'>
                     <!ENTITY datentyp.ref.xref.hochschule '<xref linkend="XHochschule.Baukasten.Hochschule" role="AS"/>'>
+                    <!ENTITY datentyp.ref.identifikation '<emphasis role="codebf">Identifikation</emphasis>'>
+                    <!ENTITY datentyp.ref.link.identifikation '<link linkend="XHochschule.Kernkomponenten.Identifikation">Identifikation</link>'>
+                    <!ENTITY datentyp.ref.xref.identifikation '<xref linkend="XHochschule.Kernkomponenten.Identifikation" role="AS"/>'>
                     <!ENTITY datentyp.ref.leistung '<emphasis role="codebf">Leistung</emphasis>'>
                     <!ENTITY datentyp.ref.link.leistung '<link linkend="XHochschule.Baukasten.Leistung">Leistung</link>'>
                     <!ENTITY datentyp.ref.xref.leistung '<xref linkend="XHochschule.Baukasten.Leistung" role="AS"/>'>
@@ -43,6 +55,12 @@
                     <!ENTITY datentyp.ref.modulbeschreibungnachkmk '<emphasis role="codebf">ModulbeschreibungNachKMK</emphasis>'>
                     <!ENTITY datentyp.ref.link.modulbeschreibungnachkmk '<link linkend="XHochschule.Baukasten.ModulbeschreibungNachKMK">ModulbeschreibungNachKMK</link>'>
                     <!ENTITY datentyp.ref.xref.modulbeschreibungnachkmk '<xref linkend="XHochschule.Baukasten.ModulbeschreibungNachKMK" role="AS"/>'>
+                    <!ENTITY datentyp.ref.namenatuerlicheperson '<emphasis role="codebf">NameNatuerlichePerson</emphasis>'>
+                    <!ENTITY datentyp.ref.link.namenatuerlicheperson '<link linkend="XHochschule.Kernkomponenten.NameNatuerlichePerson">NameNatuerlichePerson</link>'>
+                    <!ENTITY datentyp.ref.xref.namenatuerlicheperson '<xref linkend="XHochschule.Kernkomponenten.NameNatuerlichePerson" role="AS"/>'>
+                    <!ENTITY datentyp.ref.natuerlicheperson '<emphasis role="codebf">NatuerlichePerson</emphasis>'>
+                    <!ENTITY datentyp.ref.link.natuerlicheperson '<link linkend="XHochschule.Kernkomponenten.NatuerlichePerson">NatuerlichePerson</link>'>
+                    <!ENTITY datentyp.ref.xref.natuerlicheperson '<xref linkend="XHochschule.Kernkomponenten.NatuerlichePerson" role="AS"/>'>
                     <!ENTITY datentyp.ref.notenspiegel '<emphasis role="codebf">Notenspiegel</emphasis>'>
                     <!ENTITY datentyp.ref.link.notenspiegel '<link linkend="XHochschule.Baukasten.Notenspiegel">Notenspiegel</link>'>
                     <!ENTITY datentyp.ref.xref.notenspiegel '<xref linkend="XHochschule.Baukasten.Notenspiegel" role="AS"/>'>
@@ -67,4 +85,7 @@
                     <!ENTITY datentyp.ref.verifikation '<emphasis role="codebf">Verifikation</emphasis>'>
                     <!ENTITY datentyp.ref.link.verifikation '<link linkend="XHochschule.Baukasten.Verifikation">Verifikation</link>'>
                     <!ENTITY datentyp.ref.xref.verifikation '<xref linkend="XHochschule.Baukasten.Verifikation" role="AS"/>'>
+                    <!ENTITY datentyp.ref.zeitraum '<emphasis role="codebf">Zeitraum</emphasis>'>
+                    <!ENTITY datentyp.ref.link.zeitraum '<link linkend="XHochschule.Kernkomponenten.Zeitraum">Zeitraum</link>'>
+                    <!ENTITY datentyp.ref.xref.zeitraum '<xref linkend="XHochschule.Kernkomponenten.Zeitraum" role="AS"/>'>
                     

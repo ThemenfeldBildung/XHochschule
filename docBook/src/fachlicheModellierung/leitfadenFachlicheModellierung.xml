@@ -12,7 +12,7 @@
         den folgenden Abschnitt zu verstehen, sind dabei zwei Aspekte hervorzuheben: </para>
     <orderedlist>
         <listitem>
-            <para>Die Nachnutzung von Komponenten aus dem XÖV-Baukasten der Koordinationsstelle für
+            <para>Die Nachnutzung von Komponenten aus dem XÖV-Baukasten der Koordinierungsstelle für
                 IT-Standards (KOSIT): Diese enthalten grundlegende Klassen des Datenaustauschs, die
                 für alle XÖV-Standards nutzbar und für XHochschule spezifisch beschränkt oder
                 erweitert werden. Ein Beispiel hierfür ist die Klasse „NatuerlichePerson“, die
@@ -27,7 +27,8 @@
         </listitem>
     </orderedlist>
     <para> Diese eingebundenen externen Modelle werden in <xref linkend="externe.modelle"
-            role="AbschnittNummer"/> aufgelistet und genauer beschrieben. Weiterhin werden bei
+        role="AbschnittNummer"/> aufgelistet und genauer beschrieben. <xref linkend="spezifikation.xoevKernkomponenten"
+            role="AbschnittNummer"/> enthält die im Fachmodell eingebundenen XÖV-Kernkomponenten. Weiterhin werden bei
         XHochschule für eine Reihe von Angaben kontrollierte Vokabulare mittels Codelisten
         eingebunden. Diese finden sich in <xref linkend="spezifikation.code-Datentypen"
             role="AbschnittNummer"/>. </para>   
@@ -77,12 +78,8 @@
             </listitem>
         </itemizedlist>
     </para>
-    
-    <para>Kindelemente mit Multiplizität „0...1“ sind also zum Beispiel optional und können entweder
-        einmal vorkommen oder gar nicht. Bei einer Multiplizität „1“ wären sie verpflichtend und
-        müssten genau einmal vorkommen.</para>
-    
-    <para> Unterhalb der Bezeichnung der Kindelemente findet sich die Angabe zu ihrem Datentyp („type“). Hier wird ersichtlich, woher dieses Kindelement ursprünglich stammt: aus der technischen Grundlage von XML-Schema („xs“), dem XÖV-Baukasten („xoev“), XBildung („xbd“) oder ob es sich um ein Spezifikum von Xhochschule („xhs“) handelt. </para>
+        
+    <para> Im Diagramm findet sich unterhalb der Bezeichnung der Kindelemente die Angabe zu ihrem Datentyp („type“). Hier wird ersichtlich, woher dieses Kindelement ursprünglich stammt: aus der technischen Grundlage von XML-Schema („xs“), dem XÖV-Baukasten („xoev“), XBildung („xbd“) oder ob es sich um ein Spezifikum von Xhochschule („xhs“) handelt. </para>
     <para>Um weitere Informationen zu den Kindelementen zu erhalten, sollte unterhalb des Diagramms auf die tabellarische Darstellung zurückgegriffen werden: </para>
     
     <para>

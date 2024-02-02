@@ -58,10 +58,11 @@
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XHochschule.Kernkomponenten.Identifikation"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XHochschule.Kernkomponenten.Identifikation" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -72,7 +73,8 @@
                   <emphasis role="bold">studierender</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Studierender</emphasis> (Basistyp)</entry>
+                  <emphasis role="codebf">Studierender</emphasis>
+               </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
@@ -176,55 +178,20 @@
             <row>
                <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">abgeschlossenOderDatum</emphasis>
-               </entry>
-               <entry/>
-               <entry>
-                  <emphasis role="bold">1</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent2" nameend="child">
-                  <emphasis role="bold">abgeschlossen</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">xs:boolean</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">1</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent2" nameend="page"><para>Gibt an, ob der Studienabschnitt regulär abgeschlossen wurde. Wenn nicht, muss das Datum des Abschlusses angegeben werden.</para><para>In diesem Element/Attribut ist nur Wert <quote>true</quote> zulässig (fixed-Wert).</para>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent2" nameend="child">
-                  <emphasis role="bold">enddatum</emphasis>
+                  <emphasis role="bold">vorzeitigBeendet</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">xs:date</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry/>
                <entry/>
             </row>
             <row>
-               <entry rowsep="1" colsep="0"/>
                <entry rowsep="1" colsep="1"/>
-               <entry namest="indent2" nameend="page"><para>Muss angegeben werden, wenn der Studienabschnitt nicht regulär beendet wurde</para></entry>
+               <entry namest="indent1" nameend="page"><para>Angabe eines Datums für den Fall, dass der Studienabschnitt außerplanmässig vorzeitig beendet wurde.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -281,78 +248,29 @@
             </thead>
             <tbody>
                <row>
-                  <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/xhs:studierender</emphasis>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;3&#x200B;-&#x200B;E&#x200B;r&#x200B;l&#x200B;a&#x200B;u&#x200B;b&#x200B;t&#x200B;S&#x200B;t&#x200B;u&#x200B;d&#x200B;i&#x200B;e&#x200B;r&#x200B;e&#x200B;n&#x200B;d&#x200B;e&#x200B;r&#x200B;</entry>
-                  <entry>XHS-0003 KindElement:_ Das Feld "&lt;sch:name/&gt;" darf in "&lt;sch:value-of select="ancestor::*/name()"/&gt;" nicht angegeben werden. Erlaubt sind nur xbd:nameNatuerlichePerson, xbd:geburt, xhs:matrikelnummer, xbd:identifikationsnummer, xhs:hochschulsemester, xhs:urlaubssemester, xhs:ersteinschreibung</entry>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;6&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;R&#x200B;e&#x200B;n&#x200B;t&#x200B;e&#x200B;n&#x200B;b&#x200B;e&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;i&#x200B;n&#x200B;i&#x200B;g&#x200B;u&#x200B;n&#x200B;g&#x200B;</entry>
+                  <entry>XHS-0006 Ein Ausstellungsort darf auf der Rentenbescheinigung nicht angegeben werden.</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">ends-with(name(),':nameNatuerlichePerson') or ends-with(name(),':geburt') or ends-with(name(),':matrikelnummer') or ends-with(name(),':identifikationsnummer') or ends-with(name(),':hochschulsemester') or ends-with(name(),':ersteinschreibung') or ends-with(name(),':urlaubssemester')</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;4&#x200B;-&#x200B;E&#x200B;r&#x200B;l&#x200B;a&#x200B;u&#x200B;b&#x200B;t&#x200B;N&#x200B;a&#x200B;m&#x200B;e&#x200B;N&#x200B;a&#x200B;t&#x200B;u&#x200B;e&#x200B;r&#x200B;l&#x200B;i&#x200B;c&#x200B;h&#x200B;e&#x200B;P&#x200B;e&#x200B;r&#x200B;s&#x200B;o&#x200B;n&#x200B;</entry>
-                  <entry>XHS-0004 KindUnterElement:_xbd:nameNatuerlichePerson__ Das Feld "&lt;sch:name/&gt;" darf in "&lt;sch:value-of select="ancestor::*/name()"/&gt;" nicht angegeben werden. Erlaubt sind nur xbd:name, xbd:familienname, xbd:fruehererFamilienname.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">ends-with(name(),':familienname') or ends-with(name(),':vorname') or ends-with(name(),':fruehererFamilienname')</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;P&#x200B;f&#x200B;l&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;f&#x200B;e&#x200B;l&#x200B;d&#x200B;e&#x200B;r&#x200B;S&#x200B;t&#x200B;u&#x200B;d&#x200B;i&#x200B;e&#x200B;r&#x200B;e&#x200B;n&#x200B;d&#x200B;e&#x200B;r&#x200B;N&#x200B;a&#x200B;m&#x200B;e&#x200B;</entry>
-                  <entry>XHS-0005 Fehlende Angaben in xhs:Studierender/xbd:nameNatuerlichePerson. Es müssen angegeben werden: xbd:vorname, xbd:nachname</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">exists(*:nameNatuerlichePerson/*:vorname) and exists(*:nameNatuerlichePerson/*:familienname)</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;6&#x200B;-&#x200B;P&#x200B;f&#x200B;l&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;f&#x200B;e&#x200B;l&#x200B;d&#x200B;e&#x200B;r&#x200B;S&#x200B;t&#x200B;u&#x200B;d&#x200B;i&#x200B;e&#x200B;r&#x200B;e&#x200B;n&#x200B;d&#x200B;e&#x200B;r&#x200B;G&#x200B;e&#x200B;b&#x200B;u&#x200B;r&#x200B;t&#x200B;</entry>
-                  <entry>XHS-0016 Fehlende Angabe in xhs:studierender/xbd:geburt. Es muss angegeben werden: xbd:datum.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">exists(*:geburt/*:datum)</emphasis>
+                        <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
                      </para>
                   </entry>
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">xhs:studienabschnitt</emphasis>
+                     <emphasis role="codebf">studienabschnitt</emphasis>
                   </entry>
                </row>
                <row>
                   <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;1&#x200B;-&#x200B;W&#x200B;e&#x200B;n&#x200B;n&#x200B;B&#x200B;e&#x200B;u&#x200B;r&#x200B;l&#x200B;a&#x200B;u&#x200B;b&#x200B;t&#x200B;D&#x200B;a&#x200B;n&#x200B;n&#x200B;B&#x200B;e&#x200B;u&#x200B;r&#x200B;l&#x200B;a&#x200B;u&#x200B;b&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;g&#x200B;r&#x200B;u&#x200B;n&#x200B;d&#x200B;</entry>
-                  <entry>XHS-0001 Der Beurlaubungsgrund muss und darf nur angegeben werden, wenn der Berulaubungsstatus "beurlaubt" ist. Sonst soll das Feld Beurlaubungsgrund nicht benutzt werden.</entry>
+                  <entry>XHS-0001 Wenn und nur wenn der Beurlaubungsstatus "beurlaubt" ist, darf der Beurlaubungsgrund angegeben werden.</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">if (*:beurlaubungsstatus/code = 'http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/beurlaubt') then exists(*:beurlaubungsgrund) else empty(*:beurlaubungsgrund)</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;M&#x200B;u&#x200B;s&#x200B;s&#x200B;A&#x200B;u&#x200B;s&#x200B;b&#x200B;i&#x200B;l&#x200B;d&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;t&#x200B;a&#x200B;e&#x200B;t&#x200B;t&#x200B;e&#x200B;R&#x200B;e&#x200B;n&#x200B;t&#x200B;e&#x200B;n&#x200B;b&#x200B;e&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;i&#x200B;n&#x200B;i&#x200B;g&#x200B;u&#x200B;n&#x200B;g&#x200B;</entry>
-                  <entry>XHS-0002 Die Ausbildungsstätte für den Studienabschnitt muss angegeben werden.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">exists(*:ausbildungsstaette)</emphasis>
+                        <emphasis role="codebf">if (*:beurlaubungsstatus/code/code = 'http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/beurlaubt') then exists(*:beurlaubungsgrund) else empty(*:beurlaubungsgrund)</emphasis>
                      </para>
                   </entry>
                </row>

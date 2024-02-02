@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
      width="548.6312499999999"
-     height="1162">
+     height="1258">
    <defs>
       <style type="text/css">
                         text {
@@ -40,7 +40,7 @@
                     </style>
    </defs>
    <rect width="538.6312499999999"
-         height="1152"
+         height="1248"
          stroke-dasharray="3,3"
          rx="1"
          ry="1"
@@ -101,7 +101,7 @@
             <g transform="translate(55,96)">
                <rect width="174.078125" height="18" class="element-upper"/>
                <rect width="174.078125" height="18" y="18" class="element-lower"/>
-               <text font-size="12" x="3.6" y="12" font-weight="bold">geburtstdatum</text>
+               <text font-size="12" x="3.6" y="12" font-weight="bold">geburtsdatum</text>
                <line x1="0" y1="18" x2="174.078125" y2="18"/>
                <text font-size="12" fill="grey" x="3.6" y="30">type</text>
                <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
@@ -378,14 +378,66 @@
                   y1="18"
                   x2="55"
                   y2="18"
-                  class="type-structure-required"/>
-            <text font-size="11" fill="black" x="53" y="16" text-anchor="end"/>
+                  class="type-structure-optional"/>
+            <text font-size="11" fill="black" x="53" y="16" text-anchor="end">0..1</text>
             <line x1="33"
                   y1="18"
                   x2="33"
                   y2="18"
                   class="type-structure-required"/>
             <g transform="translate(55,48)">
+               <rect width="188.20624999999998" height="18" class="element-upper"/>
+               <rect width="188.20624999999998"
+                     height="18"
+                     y="18"
+                     class="element-lower"/>
+               <text font-size="12" x="3.6" y="12" font-weight="bold">ebeneDerQualifikationCodeEQF</text>
+               <line x1="0" y1="18" x2="188.20624999999998" y2="18"/>
+               <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+               <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+               <text font-size="12" x="35.353125" y="30">xbd:Code.EQF</text>
+               <g transform="translate(188.20624999999998,0)"/>
+            </g>
+            <line x1="33"
+                  y1="66"
+                  x2="55"
+                  y2="66"
+                  class="type-structure-optional"/>
+            <text font-size="11" fill="black" x="53" y="64" text-anchor="end">0..1</text>
+            <line x1="33"
+                  y1="18"
+                  x2="33"
+                  y2="66"
+                  class="type-structure-required"/>
+            <g transform="translate(55,96)">
+               <rect width="225.14374999999998" height="18" class="element-upper"/>
+               <rect width="225.14374999999998"
+                     height="18"
+                     y="18"
+                     class="element-lower"/>
+               <text font-size="12" x="3.6" y="12" font-weight="bold">ebeneDerQualifikationCodeISCED2011</text>
+               <line x1="0" y1="18" x2="225.14374999999998" y2="18"/>
+               <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+               <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+               <text font-size="12" x="35.353125" y="30">xbd:Code.ISCED2011</text>
+               <g transform="translate(225.14374999999998,0)"/>
+            </g>
+            <line x1="33"
+                  y1="114"
+                  x2="55"
+                  y2="114"
+                  class="type-structure-optional"/>
+            <text font-size="11"
+                  fill="black"
+                  x="53"
+                  y="112"
+                  text-anchor="end">0..1</text>
+            <line x1="33"
+                  y1="66"
+                  x2="33"
+                  y2="114"
+                  class="type-structure-required"/>
+            <g transform="translate(55,144)">
                <rect width="197.72187499999998" height="18" class="element-upper"/>
                <rect width="197.72187499999998"
                      height="18"
@@ -399,17 +451,21 @@
                <g transform="translate(197.72187499999998,0)"/>
             </g>
             <line x1="33"
-                  y1="66"
+                  y1="162"
                   x2="55"
-                  y2="66"
+                  y2="162"
                   class="type-structure-required"/>
-            <text font-size="11" fill="black" x="53" y="64" text-anchor="end"/>
+            <text font-size="11"
+                  fill="black"
+                  x="53"
+                  y="160"
+                  text-anchor="end"/>
             <line x1="33"
-                  y1="18"
+                  y1="114"
                   x2="33"
-                  y2="66"
+                  y2="162"
                   class="type-structure-required"/>
-            <g transform="translate(55,96)">
+            <g transform="translate(55,192)">
                <rect width="161.11249999999998" height="18" class="element-upper"/>
                <rect width="161.11249999999998"
                      height="18"
@@ -423,19 +479,19 @@
                <g transform="translate(161.11249999999998,0)"/>
             </g>
             <line x1="33"
-                  y1="114"
+                  y1="210"
                   x2="55"
-                  y2="114"
+                  y2="210"
                   class="type-structure-required"/>
             <text font-size="11"
                   fill="black"
                   x="53"
-                  y="112"
+                  y="208"
                   text-anchor="end"/>
             <line x1="33"
-                  y1="66"
+                  y1="162"
                   x2="33"
-                  y2="114"
+                  y2="210"
                   class="type-structure-required"/>
             <circle cx="15"
                     cy="18"
@@ -473,7 +529,7 @@
             x2="33"
             y2="450"
             class="type-structure-required"/>
-      <g transform="translate(55,576)">
+      <g transform="translate(55,672)">
          <rect width="115.6125" height="18" class="element-upper"/>
          <rect width="115.6125" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">erzielteErgebnisse</text>
@@ -620,21 +676,21 @@
          </g>
       </g>
       <line x1="33"
-            y1="594"
+            y1="690"
             x2="55"
-            y2="594"
+            y2="690"
             class="type-structure-required"/>
       <text font-size="11"
             fill="black"
             x="53"
-            y="592"
+            y="688"
             text-anchor="end"/>
       <line x1="33"
             y1="450"
             x2="33"
-            y2="594"
+            y2="690"
             class="type-structure-required"/>
-      <g transform="translate(55,816)">
+      <g transform="translate(55,912)">
          <rect width="203.51874999999998" height="18" class="element-upper"/>
          <rect width="203.51874999999998"
                height="18"
@@ -715,21 +771,21 @@
          </g>
       </g>
       <line x1="33"
-            y1="834"
+            y1="930"
             x2="55"
-            y2="834"
+            y2="930"
             class="type-structure-required"/>
       <text font-size="11"
             fill="black"
             x="53"
-            y="832"
+            y="928"
             text-anchor="end"/>
       <line x1="33"
-            y1="594"
+            y1="690"
             x2="33"
-            y2="834"
+            y2="930"
             class="type-structure-required"/>
-      <g transform="translate(55,912)">
+      <g transform="translate(55,1008)">
          <rect width="109.034375" height="18" class="element-upper"/>
          <rect width="109.034375" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">sonstigeAngaben</text>
@@ -804,21 +860,21 @@
          </g>
       </g>
       <line x1="33"
-            y1="930"
+            y1="1026"
             x2="55"
-            y2="930"
+            y2="1026"
             class="type-structure-required"/>
       <text font-size="11"
             fill="black"
             x="53"
-            y="928"
+            y="1024"
             text-anchor="end"/>
       <line x1="33"
-            y1="834"
+            y1="930"
             x2="33"
-            y2="930"
+            y2="1026"
             class="type-structure-required"/>
-      <g transform="translate(55,1008)">
+      <g transform="translate(55,1104)">
          <rect width="220.26874999999998" height="18" class="element-upper"/>
          <rect width="220.26874999999998"
                height="18"
@@ -872,21 +928,21 @@
          </g>
       </g>
       <line x1="33"
-            y1="1026"
+            y1="1122"
             x2="55"
-            y2="1026"
+            y2="1122"
             class="type-structure-required"/>
       <text font-size="11"
             fill="black"
             x="53"
-            y="1024"
+            y="1120"
             text-anchor="end"/>
       <line x1="33"
-            y1="930"
+            y1="1026"
             x2="33"
-            y2="1026"
+            y2="1122"
             class="type-structure-required"/>
-      <g transform="translate(55,1056)">
+      <g transform="translate(55,1152)">
          <rect width="137.78125" height="18" class="element-upper"/>
          <rect width="137.78125" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">ds:Signature (ref)</text>
@@ -897,19 +953,19 @@
          <g transform="translate(137.78125,0)"/>
       </g>
       <line x1="33"
-            y1="1074"
+            y1="1170"
             x2="55"
-            y2="1074"
+            y2="1170"
             class="type-structure-optional"/>
       <text font-size="11"
             fill="black"
             x="53"
-            y="1072"
+            y="1168"
             text-anchor="end">0..1</text>
       <line x1="33"
-            y1="1026"
+            y1="1122"
             x2="33"
-            y2="1074"
+            y2="1170"
             class="type-structure-optional"/>
       <circle cx="15"
               cy="18"

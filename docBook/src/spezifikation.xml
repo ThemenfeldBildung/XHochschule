@@ -29,10 +29,12 @@
         </info>
         <include href="fachlicheModellierung/leitfadenFachlicheModellierung.xml" xmlns="http://www.w3.org/2001/XInclude" />
         <include href="fachlicheModellierung/grundlegendeDesignentscheidungen.xml" xmlns="http://www.w3.org/2001/XInclude" />
+        <include href="fachlicheModellierung/wichtigeHinweiseZurImplementierung.xml" xmlns="http://www.w3.org/2001/XInclude" />
         <include href="../build/docBook/dokumente/anhang/externeModelle/externeModelle.xml" xmlns="http://www.w3.org/2001/XInclude" />  
+        <include href="fachlicheModellierung/xoevKernkomponenten.xml" xmlns="http://www.w3.org/2001/XInclude" />
         <include href="fachlicheModellierung/code-Datentypen.xml" xmlns="http://www.w3.org/2001/XInclude" />
         <include href="fachlicheModellierung/klassenFuerDenDatenaustausch.xml" xmlns="http://www.w3.org/2001/XInclude" />
-        <include href="fachlicheModellierung/dokumenteFuerDenDatenaustauch.xml" xmlns="http://www.w3.org/2001/XInclude" />
+        <include href="fachlicheModellierung/dokumenteFuerDenDatenaustausch.xml" xmlns="http://www.w3.org/2001/XInclude" />
     </part>
     <part version="5" xml:id="spezifikation.anhaenge" xml:lang="de" xmlns="http://docbook.org/ns/docbook">
         <info>

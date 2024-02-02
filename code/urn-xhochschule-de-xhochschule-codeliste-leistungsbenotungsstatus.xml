@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Leistungsbenotungsstatus-Codes</ShortName>
       <LongName>Leistungsbenotungsstatus</LongName>
-      <Version>0.95</Version>
+      <Version>1.0</Version>
       <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus</CanonicalUri>
-      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus_0.95</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus_1.0</CanonicalVersionUri>
       <Agency>
          <LongName>XHochschule</LongName>
       </Agency>
@@ -44,26 +44,34 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsbenotungsstatus/benotet</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>benotet</SimpleValue>
+            <SimpleValue>Finale Note</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsbenotungsstatus/unbenotet</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/note_liegt_nicht_vor</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>unbenotet</SimpleValue>
+            <SimpleValue>Note liegt nicht vor</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xhochschule.de/def/xhochschule/0.95/code/leistungsbenotungsstatus/vorlaeufig</SimpleValue>
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/vorlaeufige_note</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>vorläufig</SimpleValue>
+            <SimpleValue>Vorläufige Note</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/~wert_nicht_in_liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

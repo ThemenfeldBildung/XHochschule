@@ -4,7 +4,7 @@
     <info>
         <title>Bescheinigungen</title>
     </info>
-    <include href="../../build/docBook/dokumente/anhang/xsd/xhochschule-bescheingungen.xsd.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="../../build/docBook/dokumente/anhang/xsd/xhochschule-bescheinigungen.xsd.xml" xmlns="http://www.w3.org/2001/XInclude" />
 	<include href="../../build/docBook/dokumente/xhochschule/bescheinigungen/immatrikulationsbescheinigung.xml" xmlns="http://www.w3.org/2001/XInclude" />
     <include href="../../build/docBook/dokumente/xhochschule/bescheinigungen/immatrikulationsbescheinigungBAfoeGP9.xml" xmlns="http://www.w3.org/2001/XInclude" />
     <include href="../../build/docBook/dokumente/xhochschule/bescheinigungen/exmatrikulationsbescheinigung.xml" xmlns="http://www.w3.org/2001/XInclude" />

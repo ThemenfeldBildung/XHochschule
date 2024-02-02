@@ -14,67 +14,57 @@
    <section xmlns:xlink="http://www.w3.org/1999/xlink"
             xml:id="externe.modelle.XBildung">
       <title>XBildung</title>
-      <para>XBildung; Version 0.95</para>
+      <para>XBildung; Version 1.0</para>
       <para>Folgende Datentypen aus dem externen Modell werden in dieser Spezifikation verwendet:</para>
       <itemizedlist>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Baukasten.Abschlussarbeit">Abschlussarbeit</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Benotung">Benotung</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Baukasten.Benotung">Benotung</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.EQF">Code.EQF</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Baukasten.Codes.Code.EQF">Code.EQF</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.ISCED2011">Code.ISCED2011</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Baukasten.Codes.Code.ISCED2011">Code.ISCED2011</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.ISCEDF2013">Code.ISCEDF2013</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Baukasten.Codes.Code.ISCEDF2013">Code.ISCEDF2013</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.Language">Code.Language</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Baukasten.Codes.Code.Language">Code.Language</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Dokument">Dokument</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Baukasten.Dokument">Dokument</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Ortsangabe">Ortsangabe</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Baukasten.Identifikation">Identifikation</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Basisdatentypen.String.Localized">String.Localized</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Baukasten.NatuerlichePerson">NatuerlichePerson</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.TeilbekanntesDatum">TeilbekanntesDatum</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Basisdatentypen.String.Localized">String.Localized</link>
-            </para>
-         </listitem>
-         <listitem>
-            <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Baukasten.TeilbekanntesDatum">TeilbekanntesDatum</link>
-            </para>
-         </listitem>
-         <listitem>
-            <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Baukasten.Zeitraum">Zeitraum</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Zeitraum">Zeitraum</link>
             </para>
          </listitem>
       </itemizedlist>
@@ -90,6 +80,9 @@
          </listitem>
          <listitem>
             <para>datatypeC</para>
+         </listitem>
+         <listitem>
+            <para>datatypeE</para>
          </listitem>
       </itemizedlist>
    </section>

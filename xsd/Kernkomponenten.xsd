@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/0.95/xsd"
+           xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+           xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+           targetNamespace="http://xhochschule.de/def/xhochschule/0.95/xsd"
+           version="0.95"
+           elementFormDefault="unqualified"
+           attributeFormDefault="unqualified">
+   <xs:annotation>
+      <xs:appinfo>
+         <standard>
+            <nameLang>XHochschule</nameLang>
+            <nameKurz>XHochschule</nameKurz>
+            <nameTechnisch>xhochschule</nameTechnisch>
+            <kennung>urn:xoev-de:xhochschule-de:def:standard:xhochschule</kennung>
+            <beschreibung>XHochschule</beschreibung>
+         </standard>
+         <versionStandard>
+            <version>0.95</version>
+            <versionXOEVProfil>3.0.1</versionXOEVProfil>
+            <versionXOEVHandbuch>3.0.0</versionXOEVHandbuch>
+            <versionXGenerator>3.1.1</versionXGenerator>
+            <versionModellierungswerkzeug>19.0 SP 3</versionModellierungswerkzeug>
+            <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+         </versionStandard>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.0/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/1.0/xsd"/>
+   <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
+              namespace="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"/>
+   <xs:complexType name="AllgemeinerName">
+      <xs:annotation>
+         <xs:documentation>Der AllgemeineName dient der Darstellung von Vor- und Nachnamen und fasst deren gemeinsame Eigenschaften zusammen.</xs:documentation>
+      </xs:annotation>
+      <xs:choice>
+         <xs:element name="name" type="din91379:datatypeC" form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Die Komponente "name" ist der eigentliche Familien- oder Vorname als Zeichenkette. Nachnamen, z.B. mit Adelstiteln bzw. ausländische Nachnamen werden als ein Name übermittelt und nicht in verschiedene Bestandteile aufgeteilt.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="nichtVorhanden" type="xs:boolean" form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Diese Komponente beinhaltet eine Feststellung (wahr oder falsch), ob zu Recht kein Name angegeben wurde. Über das Setzen auf TRUE wird angezeigt, dass zurecht kein Name angegeben wurde. Diese Komponente sollte nur bei der Verwendung der Komponente "AllgemeinerName" als Vorname oder Familienname verwendet werden.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:choice>
+   </xs:complexType>
+   <xs:complexType name="Geburt">
+      <xs:annotation>
+         <xs:documentation>Unter "Geburt" werden geburtsbezogene Informationen zusammengefasst.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="datum"
+                     minOccurs="0"
+                     type="xbd:TeilbekanntesDatum"
+                     form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Das "datum" beinhaltet das Geburtsdatum, also Tag, Monat und Jahr der Vollendung der Geburt. Bei Bedarf einer höheren Genauigkeit kann auch die Uhrzeit angegeben werden. Anmerkung: Bei Bedarf einer höheren Genauigkeit kann auch die Uhrzeit angegeben werden, indem der W3C-Datentyp "dateTime" verwendet wird. Auch ungenaue Datumsangaben dürfen gemacht werden (Nutzung der Datentypen "gYear" bzw. "gYearMonth").</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="geburtsort"
+                     minOccurs="0"
+                     type="xbd:Ortsangabe"
+                     form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Hier werden Angaben zum Ort einer Geburt gemacht (z. B. Geburtsort, Geburtsstaat)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="zusatz"
+                     minOccurs="0"
+                     type="din91379:datatypeC"
+                     form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Der Zusatz umfasst ggf. erforderliche weitere Erläuterungen zur Geburt. Anmerkung: Der Zusatz kann der Geburt hinzugefügt werden, um die Orts- bzw. Zeitangaben zu konkretisieren oder ein Objekt genauer zu beschreiben, als es mit den klassischen Attributen einer Anschrift allein möglich ist. Beispiel: Geburt auf See, Schiff unter Bundesdeutscher Flagge</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Identifikation">
+      <xs:annotation>
+         <xs:documentation>Unter "Identifikation" werden die Informationen zusammengefasst, die die eindeutige Identifikation von Objekten in einem fachlichen Kontext erlauben.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="id"
+                     minOccurs="0"
+                     type="din91379:datatypeC"
+                     form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Die ID sichert die eindeutige Identifikation von Objekten in einem fachlichen Kontext. Anmerkung: Hier geht es ausschließlich um fachliche Identifikationen wie Steuernummer, Krankenversicherungsnummer, Personalausweisnummer ...</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="gueltigkeit"
+                     minOccurs="0"
+                     type="xhs:Zeitraum"
+                     form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Angaben zum Gültigkeitszeitraum einer Identifikationsnummer.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="beschreibung"
+                     minOccurs="0"
+                     type="din91379:datatypeC"
+                     form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Die "beschreibung" dient der näheren Charakterisierung des fachlichen Kontext der Identifikation.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="NameNatuerlichePerson">
+      <xs:annotation>
+         <xs:documentation>Der Name einer Person ist eine Benennung dieser Person, die dazu dient, diese Person von anderen Personen zu unterscheiden.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="familienname" type="xhs:AllgemeinerName" form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Der Familienname ist der aktuelle Nachname einer Person und Ausdruck einer bestimmten Familienzugehörigkeit dieser Person.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="vorname" type="xhs:AllgemeinerName" form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Der Vorname ist der Name bzw. der Teil des Namens, der nicht die Zugehörigkeit zu einer Familie ausdrückt, sondern das Individuum innerhalb der Familie bezeichnet und dazu dient, es von anderen Familienmitgliedern zu unterscheiden.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="NatuerlichePerson">
+      <xs:annotation>
+         <xs:documentation>Eine natürliche Person ist der Mensch in seiner Rolle als Rechtssubjekt, d. h. als Träger von Rechten und Pflichten. Mit der Vollendung seiner Geburt wird ein Mensch rechtsfähig und damit zu einer natürlichen Person (§ 1 BGB). Der Mensch verliert seine Rechtsfähigkeit mit dem Tod. Rechtssubjekte, die keine natürlichen Personen sind, nennt man juristische Personen.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="nameNatuerlichePerson"
+                     type="xhs:NameNatuerlichePerson"
+                     form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Hier werden Informationen zu den Namen einer natürlichen Person zusammengefasst.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="geburt"
+                     minOccurs="0"
+                     type="xhs:Geburt"
+                     form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Hier werden Angaben zur Geburt einer natürlichen Person gemacht.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="identifikationsnummer"
+                     minOccurs="0"
+                     maxOccurs="unbounded"
+                     type="xhs:Identifikation"
+                     form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Persönliche Identifikationsnummer einer natürlichen Person, die sie kontextbezogen von allen anderen Personen eindeutig unterscheidet. Eine natürliche Person kann mehrere Identifikationsnummern haben.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Zeitraum">
+      <xs:annotation>
+         <xs:documentation>Der Zeitraum kennzeichnet einen Abschnitt auf einem Zeitstrahl durch Angabe von Beginn und/oder Ende.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="beginn" minOccurs="0" type="xs:date" form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Der Beginn eines Zeitraums beschreibt den Zeitpunkt, ab dem ein Sachverhalt eintritt bzw. rechtskräftig wirksam ist. Der Beginn ist immer Teil der Dauer des Zeitraumes. Anmerkung: Bei der Ableitung von Fachkomponenten sollten zusätzliche Festlegungen getroffen werden wie der Beginn des Zeitraums zu interpretieren ist. z.B.: "Wird ein Monat als Beginn angegeben, dann gilt der erste Tag des Monats als Beginn des Zeitraums" Beispiel: identisch mit *Fristbeginn (BKA) *Wirksamkeitsdatum der Änderung des Familiennamens (Personenstand) *Eheschließungsdatum (Personenstand)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ende" minOccurs="0" type="xs:date" form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Das Ende eines Zeitraumes beschreibt den Zeitpunkt, ab dem ein Sachverhalt endet bzw. nicht mehr rechtskräftig ist. Das Ende ist Teil der Dauer des Zeitraumes. Anmerkung: Bei der Ableitung von Fachkomponenten sollten zusätzliche Festlegungen getroffen werden wie das Ende des Zeitraums zu interpretieren ist. z.B.: "Wird ein Monat als Ende angegeben, dann gilt der letzte Tag des Monats als Ende des Zeitraums" Beispiel: identisch mit *Fristdatum (Bau) *Ablaufdatum (Finanz) *Faelligkeitsdatum (Finanz) *Wirksamkeitsdatum der Aufhebung/Scheidung der Ehe (Personenstand)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="zusatz"
+                     minOccurs="0"
+                     type="din91379:datatypeC"
+                     form="unqualified">
+            <xs:annotation>
+               <xs:documentation>Der Zusatz enthält weitere textuelle Beschreibungen des festgelegten Zeitraums.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

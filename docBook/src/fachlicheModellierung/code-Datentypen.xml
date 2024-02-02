@@ -15,4 +15,5 @@
     <include href="../../build/docBook/dokumente/anhang/codes/code.leistungsbenotungsstatus.xml" xmlns="http://www.w3.org/2001/XInclude" />
     <include href="../../build/docBook/dokumente/anhang/codes/code.leistungsstatus.xml" xmlns="http://www.w3.org/2001/XInclude" />
 	<include href="../../build/docBook/dokumente/anhang/codes/code.lernzeitmodell.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="../../build/docBook/dokumente/anhang/codes/code.faecherschluessel.xml" xmlns="http://www.w3.org/2001/XInclude" />
 </chapter>

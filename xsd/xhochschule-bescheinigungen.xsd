@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:xhs="http://xhochschule.de/def/xhochschule/0.95/xsd"
+           xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
            xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-           xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
            targetNamespace="http://xhochschule.de/def/xhochschule/0.95/xsd"
            version="0.95"
-           elementFormDefault="qualified"
+           elementFormDefault="unqualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
       <xs:appinfo>
@@ -29,8 +30,10 @@
    <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
    <xs:import schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"
               namespace="http://www.w3.org/2000/09/xmldsig#"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.95/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/0.95/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.0/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/1.0/xsd"/>
+   <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
+              namespace="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"/>
    <xs:element name="exmatrikulationsbescheinigung">
       <xs:annotation>
          <xs:appinfo>
@@ -47,15 +50,10 @@
                         <xs:documentation>Datum der Exmatrikulation.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="studierender">
+                  <xs:element name="studierender" type="xhs:Studierender">
                      <xs:annotation>
                         <xs:documentation>Beschreibung der zu exmatrikulierenden Person.</xs:documentation>
                      </xs:annotation>
-                     <xs:complexType>
-                        <xs:complexContent>
-                           <xs:extension base="xhs:Studierender"/>
-                        </xs:complexContent>
-                     </xs:complexType>
                   </xs:element>
                   <xs:element name="ausstellendeHochschule" type="xhs:Hochschule">
                      <xs:annotation>
@@ -107,15 +105,10 @@
                         <xs:documentation>Hochschule, die die Bescheinigung ausstellt nach bundesweit einheitlicher Hochschulbezeichnung.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="studierender">
+                  <xs:element name="studierender" type="xhs:Studierender">
                      <xs:annotation>
                         <xs:documentation>Studierende Person, für die eine Immatrikulationsbescheinigung ausgestellt wird.</xs:documentation>
                      </xs:annotation>
-                     <xs:complexType>
-                        <xs:complexContent>
-                           <xs:extension base="xhs:Studierender"/>
-                        </xs:complexContent>
-                     </xs:complexType>
                   </xs:element>
                   <xs:element name="studienfach"
                               minOccurs="0"
@@ -125,48 +118,73 @@
                         <xs:documentation>Als Studienfach bezeichnet man an Hochschulen den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="lernzeitmodell" minOccurs="0" type="xhs:Code.Lernzeitmodell">
+                  <xs:element name="lernzeitmodell" minOccurs="0">
                      <xs:annotation>
-                        <xs:documentation>Mit Lernzeitmodell sei hier unter anderem die Unterscheidung zwischen Teil- und Vollzeit gemeint.</xs:documentation>
+                        <xs:documentation>Mit Lernzeitmodell sei hier vor allen Dingen der Unterschied zwischen Voll- und Teilzeit gemeint. Kann dies nicht über einen Codelistenwert ausgedrückt werden, so soll der Wert 'Wert nicht in Liste' gewählt und das dann vorgesehene Freitextfeld ausgefüllt werden.</xs:documentation>
                      </xs:annotation>
-                  </xs:element>
-                  <xs:element name="lernzeitmodellFreitext"
-                              minOccurs="0"
-                              type="xbd:String.Localized">
-                     <xs:annotation>
-                        <xs:documentation>In diesem Feld ist das Lernzeitmodell als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Lernzeitmodell" enthalten ist, die über das Element "lernzeitmodell" eingebunden ist, d.h. wenn dort der Codelisten-Wert "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
-                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="code" type="xhs:Code.Lernzeitmodell">
+                              <xs:annotation>
+                                 <xs:documentation>Mit Lernzeitmodell sei hier unter anderem die Unterscheidung zwischen Teil- und Vollzeit gemeint.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="nichtGelisteterWert"
+                                       minOccurs="0"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>In diesem Feld ist das Lernzeitmodell als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
                   </xs:element>
                   <xs:element name="studienzeitraum" type="xhs:Studienzeitraum">
                      <xs:annotation>
                         <xs:documentation>Bezeichnung des aktuellen Studienzeitraums, sowie dessen Anfangs- und Enddatums</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="immatrikulationsstatus" type="xhs:Code.Immatrikulationsstatus">
+                  <xs:element name="immatrikulationsstatus">
                      <xs:annotation>
-                        <xs:documentation>Angabe zum Immatrikulationsstatus des Studierenden</xs:documentation>
+                        <xs:documentation>Angabe zum Immatrikulationsstatus des Studierenden. Kann dies nicht über einen Codelistenwert ausgedrückt werden, so soll der Wert 'Wert nicht in Liste' gewählt und das dann vorgesehene Freitextfeld ausgefüllt werden.</xs:documentation>
                      </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="code" type="xhs:Code.Immatrikulationsstatus">
+                              <xs:annotation>
+                                 <xs:documentation>Angabe zum Immatrikulationsstatus des Studierenden</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="nichtGelisteterWert"
+                                       minOccurs="0"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>In diesem Feld ist der Immatrikulationsstatus als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
                   </xs:element>
-                  <xs:element name="immatrikulationsstatusFreitext"
-                              minOccurs="0"
-                              type="xbd:String.Localized">
+                  <xs:element name="beurlaubungsstatus" minOccurs="0">
                      <xs:annotation>
-                        <xs:documentation>In diesem Feld ist der Immatrikulationsstatus als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Immatrikulationsstatus" enthalten ist, die über das Element "immatrikulationsstatus" eingebunden ist, d.h. wenn dort der Codelisten-Wert "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                        <xs:documentation>Angabe über den Beurlaubungsstatus des Studierenden. Kann dies nicht über einen Codelistenwert ausgedrückt werden, so soll der Wert 'Wert nicht in Liste' gewählt und das dann vorgesehene Freitextfeld ausgefüllt werden.</xs:documentation>
                      </xs:annotation>
-                  </xs:element>
-                  <xs:element name="beurlaubungsstatus"
-                              minOccurs="0"
-                              type="xhs:Code.Beurlaubungsstatus">
-                     <xs:annotation>
-                        <xs:documentation>Angabe zum Beurlaubungsstatus des Studierenden.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="beurlaubungsstatusFreitext"
-                              minOccurs="0"
-                              type="xbd:String.Localized">
-                     <xs:annotation>
-                        <xs:documentation>In diesem Feld ist der Beurlaubungsstatus als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Beurlaubungsstatus" enthalten ist, die über das Element "beurlaubungsstatus" eingebunden ist, d.h. wenn dort der Codelisten-Wert "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
-                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="code" type="xhs:Code.Beurlaubungsstatus">
+                              <xs:annotation>
+                                 <xs:documentation>Angabe zum Beurlaubungsstatus des Studierenden.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="nichtGelisteterWert"
+                                       minOccurs="0"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>In diesem Feld ist der Beurlaubungsstatus als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
                   </xs:element>
                   <xs:element name="verifikation"
                               minOccurs="0"
@@ -204,9 +222,54 @@
                         <xs:documentation>Studierende Person, für die eine Immatrikulationsbescheinigung ausgestellt wird.</xs:documentation>
                      </xs:annotation>
                      <xs:complexType>
-                        <xs:complexContent>
-                           <xs:extension base="xhs:Studierender"/>
-                        </xs:complexContent>
+                        <xs:sequence>
+                           <xs:element name="name">
+                              <xs:annotation>
+                                 <xs:documentation>Variante von NameNatuerlichePerson, in der die Angabe eine Familiennamens verpflichtend ist.</xs:documentation>
+                              </xs:annotation>
+                              <xs:complexType>
+                                 <xs:sequence>
+                                    <xs:element name="familienname" type="xhs:AllgemeinerName" form="unqualified">
+                                       <xs:annotation>
+                                          <xs:documentation>Der Familienname ist der aktuelle Nachname einer Person und Ausdruck einer bestimmten Familienzugehörigkeit dieser Person.</xs:documentation>
+                                       </xs:annotation>
+                                    </xs:element>
+                                    <xs:element name="vorname"
+                                                minOccurs="0"
+                                                type="xhs:AllgemeinerName"
+                                                form="unqualified">
+                                       <xs:annotation>
+                                          <xs:documentation>Der Vorname ist der Name bzw. der Teil des Namens, der nicht die Zugehörigkeit zu einer Familie ausdrückt, sondern das Individuum innerhalb der Familie bezeichnet und dazu dient, es von anderen Familienmitgliedern zu unterscheiden.</xs:documentation>
+                                       </xs:annotation>
+                                    </xs:element>
+                                 </xs:sequence>
+                              </xs:complexType>
+                           </xs:element>
+                           <xs:element name="geburt">
+                              <xs:annotation>
+                                 <xs:documentation>Angaben zur Geburt, benötigt bei der Immatrikulationsbescheinigung nach BAföG §9. In dieser Klasse ist die Angabe des Geburtsdatums und Geburtsorts verpflichtend</xs:documentation>
+                              </xs:annotation>
+                              <xs:complexType>
+                                 <xs:sequence>
+                                    <xs:element name="datum" type="xbd:TeilbekanntesDatum" form="unqualified">
+                                       <xs:annotation>
+                                          <xs:documentation>Das "datum" beinhaltet das Geburtsdatum, also Tag, Monat und Jahr der Vollendung der Geburt. Bei Bedarf einer höheren Genauigkeit kann auch die Uhrzeit angegeben werden. Anmerkung: Bei Bedarf einer höheren Genauigkeit kann auch die Uhrzeit angegeben werden, indem der W3C-Datentyp "dateTime" verwendet wird. Auch ungenaue Datumsangaben dürfen gemacht werden (Nutzung der Datentypen "gYear" bzw. "gYearMonth").</xs:documentation>
+                                       </xs:annotation>
+                                    </xs:element>
+                                    <xs:element name="geburtsort" type="xbd:Ortsangabe" form="unqualified">
+                                       <xs:annotation>
+                                          <xs:documentation>Hier werden Angaben zum Ort einer Geburt gemacht (z. B. Geburtsort, Geburtsstaat)</xs:documentation>
+                                       </xs:annotation>
+                                    </xs:element>
+                                 </xs:sequence>
+                              </xs:complexType>
+                           </xs:element>
+                           <xs:element name="ersteinschreibung" type="xs:date">
+                              <xs:annotation>
+                                 <xs:documentation>Datum der Ersteinschreibung</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
                      </xs:complexType>
                   </xs:element>
                   <xs:element name="studienfach"
@@ -217,46 +280,73 @@
                         <xs:documentation>Als Studienfach bezeichnet man an Hochschulen den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="lernzeitmodell" type="xhs:Code.Lernzeitmodell">
+                  <xs:element name="lernzeitmodell">
                      <xs:annotation>
-                        <xs:documentation>Mit Lernzeitmodell sei hier nur die Unterscheidung zwischen Voll- und Teilzeit gemeint. Andere Lernzeitmodelle sind nicht anzugeben.</xs:documentation>
+                        <xs:documentation>Mit Lernzeitmodell sei hier vor allen Dingen der Unterschied zwischen Voll- und Teilzeit gemeint. Kann dies nicht über einen Codelistenwert ausgedrückt werden, so soll der Wert 'Wert nicht in Liste' gewählt und das dann vorgesehene Freitextfeld ausgefüllt werden.</xs:documentation>
                      </xs:annotation>
-                  </xs:element>
-                  <xs:element name="lernzeitmodellFreitext"
-                              minOccurs="0"
-                              type="xbd:String.Localized">
-                     <xs:annotation>
-                        <xs:documentation>In diesem Feld ist das Lernzeitmodell als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Lernzeitmodell" enthalten ist, die über das Element "lernzeitmodell" eingebunden ist, d.h. wenn dort der Codelisten-Wert "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
-                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="code" type="xhs:Code.Lernzeitmodell">
+                              <xs:annotation>
+                                 <xs:documentation>Mit Lernzeitmodell sei hier unter anderem die Unterscheidung zwischen Teil- und Vollzeit gemeint.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="nichtGelisteterWert"
+                                       minOccurs="0"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>In diesem Feld ist das Lernzeitmodell als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
                   </xs:element>
                   <xs:element name="studienzeitraum" type="xhs:Studienzeitraum">
                      <xs:annotation>
                         <xs:documentation>Bezeichnung des aktuellen Studienzeitraums, sowie dessen Anfangs- und Enddatums</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="immatrikulationsstatus" type="xhs:Code.Immatrikulationsstatus">
+                  <xs:element name="immatrikulationsstatus">
                      <xs:annotation>
-                        <xs:documentation>Angabe zum Immatrikulationsstatus des Studierenden</xs:documentation>
+                        <xs:documentation>Angabe zum Immatrikulationsstatus des Studierenden. Kann dies nicht über einen Codelistenwert ausgedrückt werden, so soll der Wert 'Wert nicht in Liste' gewählt und das dann vorgesehene Freitextfeld ausgefüllt werden.</xs:documentation>
                      </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="code" type="xhs:Code.Immatrikulationsstatus">
+                              <xs:annotation>
+                                 <xs:documentation>Angabe zum Immatrikulationsstatus des Studierenden</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="nichtGelisteterWert"
+                                       minOccurs="0"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>In diesem Feld ist der Immatrikulationsstatus als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
                   </xs:element>
-                  <xs:element name="immatrikulationsstatusFreitext"
-                              minOccurs="0"
-                              type="xbd:String.Localized">
+                  <xs:element name="beurlaubungsstatus">
                      <xs:annotation>
-                        <xs:documentation>In diesem Feld ist der Immatrikulationsstatus als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Immatrikulationsstatus" enthalten ist, die über das Element "immatrikulationsstatus" eingebunden ist, d.h. wenn dort der Codelisten-Wert "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                        <xs:documentation>Angabe über den Beurlaubungsstatus des Studierenden. Kann dies nicht über einen Codelistenwert ausgedrückt werden, so soll der Wert 'Wert nicht in Liste' gewählt und das dann vorgesehene Freitextfeld ausgefüllt werden.</xs:documentation>
                      </xs:annotation>
-                  </xs:element>
-                  <xs:element name="beurlaubungsstatus" type="xhs:Code.Beurlaubungsstatus">
-                     <xs:annotation>
-                        <xs:documentation>Angabe zum Beurlaubungsstatus des Studierenden.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="beurlaubungsstatusFreitext"
-                              minOccurs="0"
-                              type="xbd:String.Localized">
-                     <xs:annotation>
-                        <xs:documentation>In diesem Feld ist der Beurlaubungsstatus als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der entsprechenden Codeliste "Code.Beurlaubungsstatus" enthalten ist, die über das Element "beurlaubungsstatus" eingebunden ist, d.h. wenn dort der Codelisten-Wert "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
-                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="code" type="xhs:Code.Beurlaubungsstatus">
+                              <xs:annotation>
+                                 <xs:documentation>Angabe zum Beurlaubungsstatus des Studierenden.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="nichtGelisteterWert"
+                                       minOccurs="0"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>In diesem Feld ist der Beurlaubungsstatus als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
                   </xs:element>
                   <xs:element name="verifikation"
                               minOccurs="0"
@@ -289,20 +379,15 @@
                <xs:sequence>
                   <xs:element name="rentenversicherungsnummer"
                               minOccurs="0"
-                              type="xbd:Identifikation">
+                              type="xhs:Identifikation">
                      <xs:annotation>
                         <xs:documentation>Rentenversicherungsnummer der studierenden Person, der eine Bescheinigung ausgestellt wird.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="studierender">
+                  <xs:element name="studierender" type="xhs:Studierender">
                      <xs:annotation>
                         <xs:documentation>Beschreibung der empfangenden Person.</xs:documentation>
                      </xs:annotation>
-                     <xs:complexType>
-                        <xs:complexContent>
-                           <xs:extension base="xhs:Studierender"/>
-                        </xs:complexContent>
-                     </xs:complexType>
                   </xs:element>
                   <xs:element name="ausstellendeHochschule" type="xhs:Hochschule">
                      <xs:annotation>
@@ -329,21 +414,10 @@
                                        <xs:documentation>Hochschule, an der dieser Studienabschnitt stattgefunden hat. Diese kann eine andere als die ausstellende Hochschule sein.</xs:documentation>
                                     </xs:annotation>
                                  </xs:element>
-                                 <xs:element name="abgeschlossenOderDatum">
-                                    <xs:complexType>
-                                       <xs:choice>
-                                          <xs:element name="abgeschlossen" fixed="true" type="xs:boolean">
-                                             <xs:annotation>
-                                                <xs:documentation>Gibt an, ob der Studienabschnitt regulär abgeschlossen wurde. Wenn nicht, muss das Datum des Abschlusses angegeben werden.</xs:documentation>
-                                             </xs:annotation>
-                                          </xs:element>
-                                          <xs:element name="enddatum" type="xs:date">
-                                             <xs:annotation>
-                                                <xs:documentation>Muss angegeben werden, wenn der Studienabschnitt nicht regulär beendet wurde</xs:documentation>
-                                             </xs:annotation>
-                                          </xs:element>
-                                       </xs:choice>
-                                    </xs:complexType>
+                                 <xs:element name="vorzeitigBeendet" minOccurs="0" type="xs:date">
+                                    <xs:annotation>
+                                       <xs:documentation>Angabe eines Datums für den Fall, dass der Studienabschnitt außerplanmässig vorzeitig beendet wurde.</xs:documentation>
+                                    </xs:annotation>
                                  </xs:element>
                               </xs:sequence>
                            </xs:extension>
@@ -379,15 +453,10 @@
          <xs:complexContent>
             <xs:extension base="xbd:Dokument">
                <xs:sequence>
-                  <xs:element name="studierender">
+                  <xs:element name="studierender" type="xhs:Studierender">
                      <xs:annotation>
                         <xs:documentation>Beschreibung der Person, deren Studienverlauf bescheinigt wird.</xs:documentation>
                      </xs:annotation>
-                     <xs:complexType>
-                        <xs:complexContent>
-                           <xs:extension base="xhs:Studierender"/>
-                        </xs:complexContent>
-                     </xs:complexType>
                   </xs:element>
                   <xs:element name="ausstellendeHochschule" type="xhs:Hochschule">
                      <xs:annotation>

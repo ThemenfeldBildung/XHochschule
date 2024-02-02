@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" standalone="yes" ?>
+<?xml version="1.0" standalone="yes" ?>
 <?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!DOCTYPE preface [
     <!ENTITY % complete SYSTEM "../../ent/complete.ent">
@@ -8,6 +8,10 @@
 	<info>
 		<title>Spezifikation &fachmodul;</title>
 	</info>
+	<section>
+		<title>Disclaimer</title>
+		<para>Es handelt sich bei dem vorliegenden Dokument um die Spezifikation eines XÖV-Standardisierungsvorhabens. Aufgrund der Notwendigkeit der technischen Verarbeitbarkeit der Begriffe wird, wo eine genderneutrale Formulierung nicht möglich ist, das generische Maskulinum verwendet. Die verwendeten Personenbezeichnungen beziehen sich – sofern nicht anders kenntlich gemacht – auf alle Geschlechter.</para>
+	</section>
 	<section>
 		<title>Aufbau</title>
 		<para>Das Dokument ist in drei Teile gegliedert, einer Einleitung mit dem <link linkend="spezifikation.einleitung.hintergrundZuXHochschule">Hintergrund zu XHochschule</link>
@@ -22,16 +26,17 @@
 		<para>Das Vorgehen bei der Erarbeitung von &fachmodul; ist transparent und partizipativ. Bereits zu Beginn der Vorarbeiten von &fachmodul; wurden alle Wissenschaftsministerien
 			der Länder, Hochschulen und weitere Organisationen (wie z.B. UniAssist oder die Stiftung für Hochschulzulassung (SfH)) in die Arbeiten einbezogen. Diese Vorarbeiten
 			wurden in einer Standardisierungsstrategie zusammengeführt und mit den Hochschulen, den Wissenschaftsministerien der Länder und weiteren Stakeholdern abgestimmt. Im
-			April 2020 begann dann darauf aufbauend die Dokumentation des Standardisierungsbedarfes und erste Bearbeitung des Bedarfs durch Aufnahme von Umsetzungsarbeiten die in
-			frühe Versionen einer im November 2020 veröffentlichten Spezifikation münden. </para>
+			April 2020 begann darauf aufbauend die Dokumentation des Standardisierungsbedarfes und erste Bearbeitung des Bedarfs durch Aufnahme von Umsetzungsarbeiten die in
+			frühe Versionen einer im November 2020 veröffentlichten Spezifikation mündeten. </para>
 		<para>Seitdem wurden in Standardisierungsmeetings die ersten Anwendungsfälle und Anforderungen an
 			den Datenaustausch zwischen Hochschulen analysiert und der Fokus von &fachmodul;
 			geschärft. <link xlink:href="https://&fachmodul_in_uri;.de/web/webmeetings2021">Weitere
 				Treffen</link> wurden im Jahr 2021 zur Erarbeitung von Folgeversionen zur Abdeckung
 			weiterer Nachweise und Datenaustauschmomente durchgeführt. Diese Reihe wurde <link
-				xlink:href="https://&fachmodul_in_uri;.de/web/webmeetings2022">im Jahr 2022</link>
-			und <link xlink:href="https://&fachmodul_in_uri;.de/web/webmeetings2023">im Jahr
-				2023</link>  fortgesetzt.</para>
+				xlink:href="https://&fachmodul_in_uri;.de/web/webmeetings2022">im Jahr 2022</link>,
+				<link xlink:href="https://&fachmodul_in_uri;.de/web/webmeetings2023">im Jahr
+				2023</link> und <link xlink:href="https://&fachmodul_in_uri;.de/web/webmeetings2024"
+				>im Jahr 2024</link> fortgesetzt.</para>
 		<para>Das methodische Vorgehen der Datenmodellierung ist an zwei bewährte Methodiken angelehnt: <itemizedlist>
 				<listitem>
 					<para>deutsches XÖV-Vorgehen und</para>
@@ -46,10 +51,10 @@
 			Nachnutzung von bereits Bewährtem und die Verwendung von nicht-proprietären,
 			zukunftssicheren und freien Technologien z.B. des W3C Technology Stacks (XML, XSD;
 			Schematron). </para>
-		<para>Die Spezifikation &fachmodul; als Fachmodul des Basismoduls XBildung versucht die Komplexität im Bildungswesen soweit abzubilden, dass störende und unnötige Flexibilität
-			zugunsten von Interoperabilität zwischen den Fachverfahren im Hochschulwesen aufgelöst wird. Dazu ist der Einsatz von abgestimmten harmonisierten
-			Interoperabilitätsartefakten wie gemeinsame Datenmodelle, Wertelisten und Datentypen notwendig. Es gilt vor dem Hintergrund des Bildungsföderalismus in Deutschland und
-			unter Wahrung der Hochschulautonomie der Grundsatz "So viel Vielfalt wie möglich bei soviel Einheit wie nötig".</para>
+		<para>Die Spezifikation &fachmodul; als Fachmodul des Basismoduls XBildung versucht die Komplexität im Bildungswesen abzubilden. Unnötige oder gar störende Flexibilität wird
+			zugunsten von Interoperabilität zwischen den Fachverfahren im Hochschulwesen aufgelöst. Dazu ist der Einsatz von abgestimmten harmonisierten
+			Interoperabilitätsartefakten wie gemeinsamen Datenmodellen, Wertelisten und Datentypen notwendig. Es gilt vor dem Hintergrund des Bildungsföderalismus in Deutschland und
+			unter Wahrung der Hochschulautonomie der Grundsatz "So viel Vielfalt wie möglich bei so viel Einheit wie nötig".</para>
 	</section>
 	<section>
 		<title>Bestandteile</title>

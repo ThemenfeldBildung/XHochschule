@@ -2,9 +2,10 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://xhochschule.de/def/xhochschule/0.95/xsd"
            version="0.95"
-           elementFormDefault="qualified"
+           elementFormDefault="unqualified"
            attributeFormDefault="unqualified">
+   <xs:include schemaLocation="Kernkomponenten.xsd"/>
    <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
-   <xs:include schemaLocation="xhochschule-bescheingungen.xsd"/>
+   <xs:include schemaLocation="xhochschule-bescheinigungen.xsd"/>
    <xs:include schemaLocation="xhochschule-bildungsnachweise.xsd"/>
 </xs:schema>

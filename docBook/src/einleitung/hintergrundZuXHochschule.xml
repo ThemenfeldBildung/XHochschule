@@ -14,7 +14,7 @@
             role="bold"
         >Interoperabilität zwischen den Hochschulsystemen</emphasis> (Campus Management Systeme genannt) zur medienbruchfreien Abwicklung von zukünftig digitalen
 		Verwaltungsleistungen hergestellt werden kann.</para>
-    <para>Dafür werden bei europäischen und nationalen Standardisierungsvorhaben bewährten Vorgehen entlang </para>
+    <para>Dafür wurden/werden entlang eines bewährten Vorgehens bei europäischen und nationalen Standardisierungsvorhaben </para>
     <itemizedlist>
         <listitem>
             <para>eine <link xlink:href="http://&fachmodul_in_uri;.de/def/strat/0.7/2020-04-19-Standardisierungsstrategie_im_Hochschulwesen_V07b.pdf"
@@ -40,18 +40,27 @@
     <para>Im Ergebnis wird mit der hier vorliegenden <emphasis role="bold">Spezifikation &fachmodul;</emphasis> eine
 		Spezifikation erstellt, die den Hochschulen im Rahmen der Digitalisierung Auskunft darüber gibt, wie die hochschulübergreifende Datenkommunikation geregelt ist. Ein <link
 		    xlink:href="https://www.youtube.com/watch?v=dPkTbENMl_E">Animationsvideo</link> illustriert den fachlichen Bedarf dieser Spezifikation im Hochschulwesen.</para>
-    <para>Die Grundlage dieses Vorhabens bildet das Onlinezugangsgesetz (kurz: OZG), das im August 2017 in Kraft getreten ist. Das OZG verpflichtet alle deutschen Behörden und
-		damit auch Hochschulen ihre Verwaltungsdienstleistungen bis zum Ende des Jahres 2023 auch digital den Bürgerinnen und Bürgern bzw. den Studierenden anzubieten.<mediaobject>
+    <para>Den Anstoß für dieses Vorhaben gab das Onlinezugangsgesetz (kurz: OZG), das im August 2017
+        in Kraft getreten ist. Das OZG verpflichtet alle deutschen Behörden und damit auch
+        Hochschulen ihre Verwaltungsleistungen den Bürgerinnen und Bürgern bzw. Studierenden digital anzubieten.
+        <mediaobject>
             <imageobject>
-                <imagedata align="center" fileref="../abbildungen/Logo_und_Federfuehrer.png" format="PNG" scale="50" />
+                <imagedata align="center" fileref="../abbildungen/Logo_und_Federfuehrer.png"
+                    format="PNG" scale="50"/>
             </imageobject>
         </mediaobject></para>
-    <para>&fachmodul; stellt im Kontext der Vereinheitlichung des Datenaustauschs im Bildungswesen für die Lebenslage Studium ein Baustein dar, der sich in ein übergreifendes
-        Konstrukt <link xlink:href="https://xbildung.de/web/">XBildung</link> einfügt. Als XBildung wird ein übergreifender
-		Datenaustauschstandard bezeichnet, der das gesamte Bildungswesen in den Blick nimmt. Das Ziel des Vorhabens ist es, dass Akteure im Bildungswesen (z.B. Hochschulen,
-		Schulen, Bildungsträger) elektronische Daten standardisiert untereinander austauschen, um sowohl Bildungsteilnehmer als auch die genannten Akteure zu entlasten (weniger
-		analoge Nachweise, Fehlerreduktion, schnellere (Prüf-)Verfahren etc.). XBildung mit seinem Basismodul bildet eine inhaltliche Klammer um verschiedene Fachmodule bzw.
-		-standards wie zum Beispiel &fachmodul;, XSchule und regelt diejenigen Aspekte, die für mindestens zwei Fachmodule und damit übergreifend relevant sind. Zurzeit wird an der
-		Erstellung der Fachstandards &fachmodul;, <link xlink:href="https://xschule.digital/web/"
-		    >XSchule</link> und <link xlink:href="https://xberufsbildung.de/web/">XBerufsbildung</link> gearbeitet.</para>
+    <para>&fachmodul; stellt im Kontext der Vereinheitlichung des Datenaustauschs im Bildungswesen
+        für die Lebenslage Studium einen Baustein dar, der sich in ein übergreifendes Konstrukt
+            <link xlink:href="https://xbildung.de/web/">XBildung</link> einfügt. Als XBildung wird
+        ein übergreifender Datenaustauschstandard bezeichnet, der das gesamte Bildungswesen in den
+        Blick nimmt. Das Ziel des Vorhabens ist es, dass Akteure im Bildungswesen (z.B. Hochschulen,
+        Schulen, Bildungsträger) elektronische Daten standardisiert untereinander austauschen, um
+        sowohl Bildungsteilnehmer als auch die genannten Akteure zu entlasten (weniger analoge
+        Nachweise, Fehlerreduktion, schnellere (Prüf-)Verfahren etc.). XBildung mit seinem
+        Basismodul bildet eine inhaltliche Klammer um verschiedene Fachmodule bzw. -standards wie
+        zum Beispiel &fachmodul;, XSchule und regelt diejenigen Aspekte, die für mindestens zwei
+        Fachmodule und damit übergreifend relevant sind. Zurzeit wird an der Erstellung der
+        Fachstandards &fachmodul;, <link xlink:href="https://xschule.digital/web/">XSchule</link>
+        und <link xlink:href="https://xberufsbildung.de/web/">XBerufsbildung</link>
+        gearbeitet.</para>
 </chapter>

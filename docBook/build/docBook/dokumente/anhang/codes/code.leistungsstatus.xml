@@ -8,7 +8,7 @@
          xml:id="XHochschule.Baukasten.Codes.Code.Leistungsstatus"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.Leistungsstatus</title><para>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, unbenontet, etc.</para><informaltable>
+   <title>Code.Leistungsstatus</title><para>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, unbenotet, etc.</para><informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
          <colspec colnum="2" colname="val" colwidth="138mm"/>
@@ -21,7 +21,7 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden unbenontet, etc.</entry>
+               <entry>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, etc.</entry>
             </row>
             <row>
                <entry>-nutzung</entry>
@@ -35,7 +35,7 @@
             </row>
             <row>
                <entry>-version</entry>
-               <entry>0.95</entry>
+               <entry>1.0</entry>
             </row>
          </tbody>
       </tgroup>

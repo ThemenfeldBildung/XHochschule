@@ -20,10 +20,10 @@
       <title>Nicht in Nachrichten verwendete Datentypen</title>
       <itemizedlist>
          <listitem>
-            <para>Notenspiegel</para>
+            <para>NatuerlichePerson</para>
          </listitem>
          <listitem>
-            <para>Studierender</para>
+            <para>Notenspiegel</para>
          </listitem>
       </itemizedlist>
    </section>
