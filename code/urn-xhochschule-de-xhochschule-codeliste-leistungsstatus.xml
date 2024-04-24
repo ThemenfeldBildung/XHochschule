@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Leistungsstatus</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, etc.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>XHS</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>Leistungsstatus-Codes</ShortName>
+      <LongName>Leistungsstatus</LongName>
+      <Version>1.0</Version>
+      <CanonicalUri>urn:xhochschule-de:xhochschule:codeliste:leistungsstatus</CanonicalUri>
+      <CanonicalVersionUri>urn:xhochschule-de:xhochschule:codeliste:leistungsstatus_1.0</CanonicalVersionUri>
+      <Agency>
+         <LongName>XHochschule</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName>Code</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>deutsche Übersetzung</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/angemeldet</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>angemeldet</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>bestanden</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/endgueltig_nicht_bestanden</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>endgültig nicht bestanden</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/entschuldigt</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>entschuldigt</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/nicht_bestanden</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>nicht bestanden</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/nicht_vollstaendig</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>nicht vollständig</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/~wert_nicht_in_liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>
