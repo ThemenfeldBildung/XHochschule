@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Rentenbescheinigung nach XHochschule Version 1.0 (Pre-Release). Nichtnormative Beispielinstanz.
-    Version: XHochschule 1.0 (Pre-Release) 
-    Letzte Aktualisierung: 1.02.2024
+<!--Rentenbescheinigung nach XHochschule Version 1.0 . Nichtnormative Beispielinstanz.
+    Version: XHochschule 1.0
+    Letzte Aktualisierung: 01.07.2024
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
 <xhs:rentenbescheinigung xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
     xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"

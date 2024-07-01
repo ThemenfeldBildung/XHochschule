@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Diploma Supplement nach XHochschule Version 1.0 . Nichtnormative Beispielinstanz.
+    Version: XHochschule 1.0 
+    Letzte Aktualisierung: 01.07.2024
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
+<xhs:diplomaSupplement xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/1.0/xsd"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+    xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.0/xsd file:http://xhochschule.de/def/xhochschule/1.0/xsd/xhochschule-bildungsnachweise.xsd">
+    <titel xml:lang="de-DE">Diploma Supplement</titel>
+    <ausstellung>
+        <datum>2024-03-31</datum> 
+    </ausstellung>
+    <gueltigkeitsdatum>2024-03-31</gueltigkeitsdatum>
+    <sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20231213-0">
+        <code>DEU</code>
+    </sprache>
+    <!-- Angaben zum Inhaber des Dokumentes -->
+    <angabenInhaber>
+        <familienname>Musterfrau</familienname>
+        <vorname>Erika</vorname>
+        <geburtsdatum>
+            <jahr>1994</jahr>
+        </geburtsdatum>
+        <matrikelnummer>123456789</matrikelnummer>
+    </angabenInhaber>
+    <!-- Angaben zur Qualifikation -->
+    <angabenQualifikation>
+        <bezeichnungQualifikationGrad xml:lang="de-DE">Diplom-Kaufmann</bezeichnungQualifikationGrad>
+        <hauptstudienfach xml:lang="de-DE">Business Studies</hauptstudienfach>
+        <verleihendeEinrichtung xml:lang="de-DE">Technische Universität Musterstadt </verleihendeEinrichtung>
+        <durchfuehrendeEinrichtung xml:lang="de-DE">Technische Universität Musterstadt</durchfuehrendeEinrichtung>
+        <spracheUnterrichtPruefung xml:lang="de-DE">Deutsch</spracheUnterrichtPruefung>
+    </angabenQualifikation>
+    <dauerUndEbeneQualifikation>
+        <ebeneDerQualifikation xml:lang="de-DE">First Degree including thesis</ebeneDerQualifikation>
+        <ebeneDerQualifikationCodeEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
+            <code>Level 5</code>
+        </ebeneDerQualifikationCodeEQF>
+        <ebeneDerQualifikationCodeISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
+            <code>ISCED level 4</code>
+        </ebeneDerQualifikationCodeISCED2011>
+        <dauerStudiumInJahrenOderECTS xml:lang="de-DE">3 Jahres/ 180 ECTS</dauerStudiumInJahrenOderECTS>
+        <zugangsvorraussetzungen xml:lang="de-DE">Allgemeine Hochschulreife</zugangsvorraussetzungen>
+    </dauerUndEbeneQualifikation>
+    <!-- Angaben zu den erzielten Lernergebnissen -->
+    <erzielteErgebnisse>
+        <studienform xml:lang="de-DE">Vollzeit</studienform>
+        <lernergebnisse xml:lang="de-DE">Die Studierende hat durch die im Studiengebiet absolvierten Kurse umfangreiche Kenntnisse und praktische Fähigkeiten erlangt. Für weitere Informationen kann die aktuelle Studienordnung eingesehen werden.</lernergebnisse>
+        <studiendetails xml:lang="de-DE">Für eine vollständige Aufzählung der Studiendetails wird auf das beiliegende Transcript of Records verwiesen.</studiendetails>
+        <notensystem xml:lang="de-DE">Abbildung des deutschen Notensystems</notensystem>
+        <gesamtnote xml:lang="de-DE">Gut (good)</gesamtnote>
+    </erzielteErgebnisse>
+    <!-- Angaben zu der durch die Qualifikation erlangten Berechtigungen -->
+    <berechtigungenDurchQualifikation>
+        <zugangWeiterfuehrendeStudien xml:lang="de-DE">Dieser Abschluss ermöglicht dem Studierenden das Studium im Master in einem fachähnlichen Studiengang.</zugangWeiterfuehrendeStudien>
+        <zugangZuReglementiertenBerufen xml:lang="de-DE">Der Absolvent hat mach dem Abschluss Zugang zu einer breiten Auswahl an möglichen Berufen. Mehr Informationen in der aktuellen Studienordnung.</zugangZuReglementiertenBerufen>
+    </berechtigungenDurchQualifikation>
+    <!-- Sonstige Angaben -->
+    <sonstigeAngaben>
+        <weitereAngaben xml:lang="de-DE">Weitere Angaben zum Studiengang.</weitereAngaben>
+        <weitereInformationsquellen xml:lang="de-DE">http://musterhochschule.com/Informatik/studienordnung</weitereInformationsquellen>
+    </sonstigeAngaben>
+    <angabenNationalesHochschulsystem>
+        <beschreibung xml:lang="de-DE">Beschreibung des nationalen Hochschulesystems</beschreibung>
+    </angabenNationalesHochschulsystem>
+</xhs:diplomaSupplement>

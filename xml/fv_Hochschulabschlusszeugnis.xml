@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Hochschulabschlusszeugnis nach XHochschule Version 1.0 (Pre-Release). Nichtnormative Beispielinstanz.
-    Version: XHochschule 1.0 (Pre-Release) 
-    Letzte Aktualisierung: 1.02.2024
+<!-- Hochschulabschlusszeugnis nach XHochschule Version 1.0 . Nichtnormative Beispielinstanz.
+    Version: XHochschule 1.0 
+    Letzte Aktualisierung: 01.07.2024
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
 <xhs:hochschulabschlusszeugnis xmlns:xhs="http://xhochschule.de/def/xhochschule/1.0/xsd"
  xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
@@ -11,7 +11,7 @@
  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.0/xsd">
-    <titel>Transcript of Records</titel>
+    <titel>Hochschulabschlusszeugnis</titel>
     <ausstellung>
         <datum>2024-02-01</datum>
         <!--<ort>
@@ -21,7 +21,7 @@
                 <name>name0</name>
             </staat>
         </ort>-->
-        <!-- Gemäß SCH-XHS-00009 darf auf einem Transcript of Records kein Ausstellungsort angegeben werden. -->   
+        <!-- Gemäß SCH-XHS-0007 darf auf einem Hochschulabschlusszeugnis kein Ausstellungsort angegeben werden. -->   
     </ausstellung>
     <gueltigkeitsdatum>2024-02-01</gueltigkeitsdatum>
     <sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20231213-0">
