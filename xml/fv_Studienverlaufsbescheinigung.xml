@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Studienverlaufsbescheinigung nach XHochschule Version 1.0 . Nichtnormative Beispielinstanz für eine Studienverlaufsbescheinigung.
+    Version: XHochschule 1.0 
+    Letzte Aktualisierung: 01.07.2024
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt"
+-->
+<xhs:studienverlaufsbescheinigung xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/1.0/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.0/xsd http://xhochschule.de/def/xhochschule/1.0/xsd/xhochschule-bescheinigungen.xsd">
+    <titel xml:lang="de-DE">Studienverlaufsbescheinigung</titel>
+    <ausstellung>
+        <datum>2022-06-15</datum>
+    </ausstellung>
+    <gueltigkeitsdatum>2022-06-15</gueltigkeitsdatum>
+    <sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+        listVersionID="20231213-0">
+        <code>https://publications.europa.eu/resource/dataset/language/DEU</code>
+    </sprache>
+    <studierender>
+        <nameNatuerlichePerson>
+            <familienname>
+                <name>Musterfrau</name>
+            </familienname>
+            <vorname>
+                <name>Gundula</name>
+            </vorname>
+        </nameNatuerlichePerson>
+        <geburt>
+            <datum>
+                <jahrMonatTag>1997-05-17</jahrMonatTag>
+            </datum>
+            <geburtsort>
+                <ort>Castrop-Rauxel</ort>
+                <staat
+                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
+                    listVersionID="Version 2023-02-24">
+                    <code>000</code>
+                    <name>Deutschland</name>
+                </staat>
+            </geburtsort>
+        </geburt>
+        <matrikelnummer>
+            <id>485623</id>
+            <gueltigkeit>
+                <beginn>2015-10-01</beginn>
+            </gueltigkeit>
+            <beschreibung>Matrikelnummer</beschreibung>
+        </matrikelnummer>
+        <ersteinschreibung>2015-10-01</ersteinschreibung>
+        <hochschulsemester>13</hochschulsemester>
+        <urlaubssemester>1</urlaubssemester>
+    </studierender>
+    <ausstellendeHochschule>
+        <hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur"
+            listVersionID="Version WS22">
+            <!-- Hier den DESTATIS-Code der ausstellenden Hochschule eintragen -->
+            <code>http://xhochschule.de/def/destatis/WS22/code/hochschulsignatur/7312</code>
+        </hochschulsignatur>
+        <name xml:lang="de-DE">Hochschule für angewandte Wissenschaften Weihenstephan-Triesdorf in Triesdorf (FH)</name>
+    </ausstellendeHochschule>
+    <studienabschnitt>
+        <!--Das Element "Studienabschnitt" besitzt 2 Unterklassen 1. "zusammenfassung" und 2. "aufzaehlung" (siehe XHS Spezifikation)-->
+        <zusammenfassung>
+            <zeitraum>
+                <beginn>2015-10-01</beginn>
+                <ende>2022-03-31</ende>
+            </zeitraum>
+            <studienfach>
+                <name xml:lang="de-DE">Physik</name>
+                <angestrebterAbschluss xml:lang="de-DE">Bachelor of Science</angestrebterAbschluss>
+                <!-- Hier den Schlüssel nach ISCED 2011 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
+                <schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011"
+                    listVersionID="ISCED-2011">
+                    <code>6</code>
+                </schluesselISCED2011>
+                <!-- Hier den Schlüssel nach ISCED 2013 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
+                <schluesselISCEDF2013
+                    listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013"
+                    listVersionID="20230628-0">
+                    <code>6</code>
+                </schluesselISCEDF2013>
+                <!-- Hier bei Code die URI nach EQF eintragen -->
+                <schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf"
+                    listVersionID="20230118-0">
+                    <code>http://data.europa.eu/snb/eqf/6</code>
+                </schluesselEQF>
+                <fachsemester>11</fachsemester>
+                <unbedenklichkeitsvermerk xml:lang="de-DE">-- Hier kann ein Unbedenklichkeitsvermerk eingetragen werden --</unbedenklichkeitsvermerk>
+            </studienfach>
+            <lernzeitmodell>
+                <code listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/vollzeit</code>
+                </code>
+            </lernzeitmodell>
+            <!--<xhs:lernzeitmodellFreitext>lernzeitmodellFreitext0</xhs:lernzeitmodellFreitext> nur für den Fall ausfüllen, 
+dass der Wert für das Lernzeitmodell nicht in der Codeliste enthalten ist -->
+            <regelstudienzeit>8</regelstudienzeit>
+        </zusammenfassung>
+    </studienabschnitt>
+    <studienabschnitt>
+        <aufzaehlung>
+            <studienzeitraum>
+                <zeitraum>
+                    <beginn>2015-10-01</beginn>
+                    <ende>2016-03-31</ende>
+                </zeitraum>
+                <semesterbezeichnung xml:lang="de-DE">Wintersemester 15/16</semesterbezeichnung>
+            </studienzeitraum>
+            <studienfach>
+                <name xml:lang="de-DE">Physik</name>
+                <angestrebterAbschluss xml:lang="de-DE">Bachelor of Science</angestrebterAbschluss>
+                <!-- Hier den Schlüssel nach ISCED 2011 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
+                <schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011"
+                    listVersionID="ISCED-2011">
+                    <code>6</code>
+                </schluesselISCED2011>
+                <!-- Hier den Schlüssel nach ISCED 2013 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
+                <schluesselISCEDF2013
+                    listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013"
+                    listVersionID="20230628-0">
+                    <code>6</code>
+                </schluesselISCEDF2013>
+                <!-- Hier bei Code die URI nach EQF eintragen -->
+                <schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf"
+                    listVersionID="20230118-0">
+                    <code>http://data.europa.eu/snb/eqf/6</code>
+                </schluesselEQF>
+                <fachsemester>1</fachsemester>
+                <unbedenklichkeitsvermerk xml:lang="de-DE">-- Hier kann ein Unbedenklichkeitsvermerk eingetragen werden --</unbedenklichkeitsvermerk>
+            </studienfach>
+            <lernzeitmodell>
+                <code listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/vollzeit</code>
+                </code>
+            </lernzeitmodell>
+            <!--<xhs:lernzeitmodellFreitext>lernzeitmodellFreitext0</xhs:lernzeitmodellFreitext> nur für den Fall ausfüllen, 
+dass der Wert für das Lernzeitmodell nicht in der Codeliste enthalten ist -->
+            <regelstudienzeit>8</regelstudienzeit>
+            <beurlaubungsstatus>
+                <code listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/nicht_beurlaubt</code>
+                </code>
+                <!--<nichtGelisteterWert xml:lang="de-DE">nichtGelisteterWert1</nichtGelisteterWert> wird nur ausgefüllt, wenn Beurlaubungsstatus = /-wert_nicht_in_liste-->
+            </beurlaubungsstatus>
+        </aufzaehlung>
+    </studienabschnitt>
+    <anmerkungRegelstudienzeit xml:lang="de-DE">anmerkungRegelstudienzeit0</anmerkungRegelstudienzeit>
+    <verifikation>
+        <schluessel>schluessel0</schluessel>
+        <adresse>http://www.oxygenxml.com/</adresse>
+        <inhaltstyp>inhaltstyp0</inhaltstyp>
+        <gueltigkeit>
+            <beginn>2006-05-04</beginn>
+            <ende>2006-05-04</ende>
+            <zusatz>zusatz6</zusatz>
+        </gueltigkeit>
+    </verifikation>
+    <verifikation>
+        <schluessel>schluessel1</schluessel>
+        <adresse>http://www.oxygenxml.com/</adresse>
+        <inhaltstyp>inhaltstyp1</inhaltstyp>
+        <gueltigkeit>
+            <beginn>2006-05-04</beginn>
+            <ende>2006-05-04</ende>
+            <zusatz>zusatz7</zusatz>
+        </gueltigkeit>
+    </verifikation>
+</xhs:studienverlaufsbescheinigung>
