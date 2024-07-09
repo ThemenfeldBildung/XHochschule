@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hochschulabschlusszeugnis nach XHochschule Version 1.0 . Nichtnormative Beispielinstanz.
+    Version: XHochschule 1.0 
+    Letzte Aktualisierung: 01.07.2024
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
+<xhs:hochschulabschlusszeugnis xmlns:xhs="http://xhochschule.de/def/xhochschule/1.0/xsd"
+ xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+ xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+ xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
+ xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+ xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.0/xsd">
+    <titel>Hochschulabschlusszeugnis</titel>
+    <ausstellung>
+        <datum>2024-02-01</datum>
+        <!--<ort>
+            <ort>ort0</ort>
+            <staat listVersionID="listVersionID0">
+                <code>code0</code>
+                <name>name0</name>
+            </staat>
+        </ort>-->
+        <!-- Gemäß SCH-XHS-0007 darf auf einem Hochschulabschlusszeugnis kein Ausstellungsort angegeben werden. -->   
+    </ausstellung>
+    <gueltigkeitsdatum>2024-02-01</gueltigkeitsdatum>
+    <sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20231213-0">
+        <code xmlns="">https://publications.europa.eu/resource/authority/language/DEU</code>
+    </sprache>
+    <!-- titel, ausstellung, gueltigkeitsdatum und sprache werden aus XBildung geerbt (Klasse Dokument) -->
+    
+    <!-- Angaben zur studierenden Person -->
+    <studierender>
+        <nameNatuerlichePerson>
+            <familienname>
+                <name>Musterfrau</name>
+            </familienname>
+            <vorname>
+                <name>Erika</name>
+            </vorname>
+        </nameNatuerlichePerson>
+        <geburt>
+            <datum>
+                <jahrMonatTag>1994-04-16</jahrMonatTag>
+            </datum>
+        </geburt>
+        <matrikelnummer>
+            <id>123456789</id>
+        </matrikelnummer>
+        <ersteinschreibung>2012-09-01</ersteinschreibung>
+        <hochschulsemester>12</hochschulsemester>
+        <urlaubssemester>1</urlaubssemester>
+    </studierender>
+    
+    <!-- Angaben zur ausstellenden Hochschule -->
+    <ausstellendeHochschule>
+        <hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID33">
+            <!-- Hier den DESTATIS-Code der ausstellenden Hochschule eintragen -->
+            <code>Code X</code>
+        </hochschulsignatur>
+        <name xml:lang="de-DE">Technische Universität Musterstadt</name>
+    </ausstellendeHochschule>
+    
+    <datumDesErwerbs>2024-01-30</datumDesErwerbs>
+    
+    <!-- ab hier folgt die Leistungsdarstellung. 'leistung' wird einmal eingebunden, um das Studienfach oder den Studiengang zu beschreiben, und einmal für die Beschreibung der Abschlussarbeit. -->
+    
+    
+    <leistung>
+        <bezeichnung>Physiklalische Technologien</bezeichnung>
+        <angestrebterAbschluss>Master of Science</angestrebterAbschluss>
+       <leistungsart>
+            <code>
+                <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studienfach</code>
+            </code>
+       </leistungsart>
+       <leistungsbenotungsstatus>
+            <code>
+                <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
+            </code>
+        </leistungsbenotungsstatus>
+        <benotet>1</benotet>
+        <benotung>
+            <note>1,6</note>
+            <wortbezeichnung>gut</wortbezeichnung>
+        </benotung>
+    </leistung>
+    <leistung>
+        <bezeichnung>Masterarbeit</bezeichnung>
+        <leistungsart>
+            <code>
+                <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/masterarbeit</code>
+            </code>
+        </leistungsart>
+        <beschreibung>
+            <beschreibung>Referenzuntersuchungen zur Oberflächendesoxidation rostfreier Stähle beim Vakuumlöten</beschreibung>
+        </beschreibung>
+        <leistungsbenotungsstatus>
+            <code>
+                <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
+            </code>
+        </leistungsbenotungsstatus>
+        <benotet>1</benotet>
+        <benotung>
+            <note>1,3</note>
+            <wortbezeichnung>sehr gut</wortbezeichnung>
+        </benotung>
+    </leistung>
+    
+    <benotung>
+        <gesamtnote>
+            <note>1,6</note>
+            <wortbezeichnung>gut</wortbezeichnung>
+        </gesamtnote>
+        <lateinischeEhrenbezeichnung>
+            <code>
+                <code>http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/magna_cum_laude</code>
+            </code>
+        </lateinischeEhrenbezeichnung>
+    </benotung>
+  
+    
+    
+    
+    
+</xhs:hochschulabschlusszeugnis>
