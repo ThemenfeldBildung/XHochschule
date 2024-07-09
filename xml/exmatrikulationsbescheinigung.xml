@@ -1,322 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-    Exmatrikulationsbescheinigung nach XHochschule Version 0.95. Nichtnormative Beispielinstanz für eine Exmatrikulationsbescheinigung.
-    Version: XHochschule 0.95 
-    Letzte Aktualisierung: 29.08.2023
-    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt"
--->
-<xhs:exmatrikulationsbescheinigung xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
- xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
- xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
- xmlns:xhs="http://xhochschule.de/def/xhochschule/0.95/xsd"
- xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
- xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
- xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://xhochschule.de/def/xhochschule/0.95/xsd file:/C:/Code/ozg-xhsj/Spezifikation/build/xsd/xhochschule.xsd">
-    <xbd:titel>Exmatrikulationsbescheinigung</xbd:titel>
-    <xbd:ausstellung>
-        <xbd:datum>2022-06-15</xbd:datum>
-    </xbd:ausstellung>
-    <xbd:gueltigkeitszeitraum>
-        <xbd:zusatz>Diese Bescheinigung ist uneingeschränkt rückwirkend gültig ab dem Exmatrikulationsdatum.</xbd:zusatz>
-    </xbd:gueltigkeitszeitraum>
-    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20230614-0">
-        <code xmlns="">https://publications.europa.eu/resource/authority/language/DEU</code>
-    </xbd:sprache>
-    <xhs:exmatrikulationsdatum>2022-04-01</xhs:exmatrikulationsdatum>
-    <xhs:studierender>
-        <xbd:nameNatuerlichePerson>
-             <xbd:familienname>
-                <xbd:name>Musterfrau</xbd:name>
-            </xbd:familienname>
-            <xbd:fruehererFamilienname>
-                <xbd:name>Mustermensch</xbd:name>
-            </xbd:fruehererFamilienname>
-            <xbd:vorname>
-                <xbd:name>Cordula</xbd:name>
-            </xbd:vorname>
-        </xbd:nameNatuerlichePerson>
-        <xbd:geburt>
-            <xbd:datum>
-                <xbd:jahrMonatTag>1995-04-16</xbd:jahrMonatTag>
-            </xbd:datum>
-            <xbd:geburtsort>
-                <xbd:ort>Ste. Foy-lès-Lyon</xbd:ort>
-                <xbd:staat listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit" listVersionID="listVersionID9">
-                    <code>FR</code>
-                    <name>Frankreich</name>
-                </xbd:staat>
-            </xbd:geburtsort>
-        </xbd:geburt>
-        <xhs:matrikelnummer>
-            <xbd:id>702908</xbd:id>
-            <xbd:beschreibung>Matrikelnummer</xbd:beschreibung>
-        </xhs:matrikelnummer>
-        <xhs:ersteinschreibung>2019-10-01</xhs:ersteinschreibung>
-        <xhs:hochschulsemester>12</xhs:hochschulsemester>
-        <xhs:urlaubssemester>1</xhs:urlaubssemester>
-    </xhs:studierender>
-    <xhs:ausstellendeHochschule>
-        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID33">
-            <!-- Hier den DESTATIS-Code der ausstellenden Hochschule eintragen -->
-            <code>Code X</code>
-        </xhs:hochschulsignatur>
-        <xhs:name xml:lang="de-DE">Technische Universität Musterstadt</xhs:name>
-    </xhs:ausstellendeHochschule>
-    <xhs:studienabschnitt>
-        <xhs:aufzaehlung>
-            <xhs:studienzeitraum>
-                <xhs:zeitraum>
-                    <xbd:beginn>2019-10-01</xbd:beginn>
-                    <xbd:ende>2020-03-31</xbd:ende>
-                </xhs:zeitraum>
-                <xhs:semesterbezeichnung>Wintersemester 2019/2020</xhs:semesterbezeichnung>
-            </xhs:studienzeitraum>
-            <xhs:studienfach>
-                <xhs:name>Physikalische Technologien</xhs:name>
-                <xhs:angestrebterAbschluss>Master of Science</xhs:angestrebterAbschluss>
-                <!-- Hier den Schlüssel nach ISCED 2011 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
-                <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
-                    <code>7</code>
-                </xhs:schluesselISCED2011>
-                <!-- Hier den Schlüssel nach ISCED 2013 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
-                <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
-                    <code>7</code>
-                </xhs:schluesselISCED2013>
-                <!-- Hier bei Code die URI nach EQF eintragen -->
-                <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
-                    <code>http://data.europa.eu/snb/eqf/7</code>
-                </xhs:schluesselEQF>
-                <xhs:fachsemester>12</xhs:fachsemester>
-                </xhs:studienfach>
-            <xhs:lernzeitmodell listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell" listVersionID="0.95">
-                <code>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/vollzeit</code>
-            </xhs:lernzeitmodell>
-            <!--
-            <xhs:lernzeitmodellFreitext>lernzeitmodellFreitext0</xhs:lernzeitmodellFreitext> 
-            nur für den Fall ausfüllen, dass der Wert für das Lernzeitmodell nicht in der Codeliste enthalten ist -->
-            <xhs:regelstudienzeit>6</xhs:regelstudienzeit>
-            <xhs:beurlaubungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="0.95">
-                <code>http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/nicht_beurlaubt</code>
-            </xhs:beurlaubungsstatus>
-            <!--
-            <xhs:beurlaubungsstatusFreitext xml:lang="en-US">beurlaubungsstatusFreitext0</xhs:beurlaubungsstatusFreitext>
-            nur für den Fall ausfüllen, dass der Wert für den Beurlaubungsstatus nicht in der Codeliste enthalten ist -->
-        </xhs:aufzaehlung>
-    </xhs:studienabschnitt>
-    <xhs:studienabschnitt>
-        <xhs:aufzaehlung>
-            <xhs:studienzeitraum>
-                <xhs:zeitraum>
-                    <xbd:beginn>2020-04-01</xbd:beginn>
-                    <xbd:ende>2020-09-30</xbd:ende>
-                </xhs:zeitraum>
-                <xhs:semesterbezeichnung>Sommersemester 2020</xhs:semesterbezeichnung>
-            </xhs:studienzeitraum>
-            <xhs:studienfach>
-                <xhs:name>Physikalische Technologien</xhs:name>
-                <xhs:angestrebterAbschluss>Master of Science</xhs:angestrebterAbschluss>
-                <!-- Hier den Schlüssel nach ISCED 2011 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
-                <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
-                    <code>7</code>
-                </xhs:schluesselISCED2011>
-                <!-- Hier den Schlüssel nach ISCED 2013 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
-                <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
-                    <code>7</code>
-                </xhs:schluesselISCED2013>
-                <!-- Hier bei Code die URI nach EQF eintragen -->
-                <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
-                    <code>http://data.europa.eu/snb/eqf/7</code>
-                </xhs:schluesselEQF>
-                <xhs:fachsemester>12</xhs:fachsemester>
-            </xhs:studienfach>
-            <xhs:lernzeitmodell listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell" listVersionID="0.95">
-                <code>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/vollzeit</code>
-            </xhs:lernzeitmodell>
-            <!--
-            <xhs:lernzeitmodellFreitext>lernzeitmodellFreitext0</xhs:lernzeitmodellFreitext> 
-            nur für den Fall ausfüllen, dass der Wert für das Lernzeitmodell nicht in der Codeliste enthalten ist -->
-            <xhs:regelstudienzeit>6</xhs:regelstudienzeit>
-            <xhs:beurlaubungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="0.95">
-                <code>http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/nicht_beurlaubt</code>
-            </xhs:beurlaubungsstatus>
-            <!--
-            <xhs:beurlaubungsstatusFreitext xml:lang="en-US">beurlaubungsstatusFreitext0</xhs:beurlaubungsstatusFreitext>
-            nur für den Fall ausfüllen, dass der Wert für den Beurlaubungsstatus nicht in der Codeliste enthalten ist -->
-        </xhs:aufzaehlung>
-    </xhs:studienabschnitt>
-    <xhs:studienabschnitt>
-        <xhs:aufzaehlung>
-            <xhs:studienzeitraum>
-                <xhs:zeitraum>
-                    <xbd:beginn>2020-10-01</xbd:beginn>
-                    <xbd:ende>2021-03-31</xbd:ende>
-                </xhs:zeitraum>
-                <xhs:semesterbezeichnung>Wintersemester 2020/2021</xhs:semesterbezeichnung>
-            </xhs:studienzeitraum>
-            <xhs:studienfach>
-                <xhs:name>Physikalische Technologien</xhs:name>
-                <xhs:angestrebterAbschluss>Master of Science</xhs:angestrebterAbschluss>
-                <!-- Hier den Schlüssel nach ISCED 2011 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
-                <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
-                    <code>7</code>
-                </xhs:schluesselISCED2011>
-                <!-- Hier den Schlüssel nach ISCED 2013 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
-                <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
-                    <code>7</code>
-                </xhs:schluesselISCED2013>
-                <!-- Hier bei Code die URI nach EQF eintragen -->
-                <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
-                    <code>http://data.europa.eu/snb/eqf/7</code>
-                </xhs:schluesselEQF>
-                <xhs:fachsemester>12</xhs:fachsemester>
-            </xhs:studienfach>
-            <xhs:lernzeitmodell listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell" listVersionID="0.95">
-                <code>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/vollzeit</code>
-            </xhs:lernzeitmodell>
-            <!--
-            <xhs:lernzeitmodellFreitext>lernzeitmodellFreitext0</xhs:lernzeitmodellFreitext> 
-            nur für den Fall ausfüllen, dass der Wert für das Lernzeitmodell nicht in der Codeliste enthalten ist -->
-            <xhs:regelstudienzeit>6</xhs:regelstudienzeit>
-            <xhs:beurlaubungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="0.95">
-                <code>http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/beurlaubt</code>
-            </xhs:beurlaubungsstatus>
-            <!--
-            <xhs:beurlaubungsstatusFreitext xml:lang="en-US">beurlaubungsstatusFreitext0</xhs:beurlaubungsstatusFreitext>
-            nur für den Fall ausfüllen, dass der Wert für den Beurlaubungsstatus nicht in der Codeliste enthalten ist -->
-        </xhs:aufzaehlung>
-    </xhs:studienabschnitt>
-    <xhs:studienabschnitt>
-        <xhs:aufzaehlung>
-            <xhs:studienzeitraum>
-                <xhs:zeitraum>
-                    <xbd:beginn>2021-04-01</xbd:beginn>
-                    <xbd:ende>2021-09-30</xbd:ende>
-                </xhs:zeitraum>
-                <xhs:semesterbezeichnung>Sommersemester 2021</xhs:semesterbezeichnung>
-            </xhs:studienzeitraum>
-            <xhs:studienfach>
-                <xhs:name>Physikalische Technologien</xhs:name>
-                <xhs:angestrebterAbschluss>Master of Science</xhs:angestrebterAbschluss>
-                <!-- Hier den Schlüssel nach ISCED 2011 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
-                <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
-                    <code>7</code>
-                </xhs:schluesselISCED2011>
-                <!-- Hier den Schlüssel nach ISCED 2013 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
-                <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
-                    <code>7</code>
-                </xhs:schluesselISCED2013>
-                <!-- Hier bei Code die URI nach EQF eintragen -->
-                <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
-                    <code>http://data.europa.eu/snb/eqf/7</code>
-                </xhs:schluesselEQF>
-                <xhs:fachsemester>12</xhs:fachsemester>
-            </xhs:studienfach>
-            <xhs:lernzeitmodell listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell" listVersionID="0.95">
-                <code>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/vollzeit</code>
-            </xhs:lernzeitmodell>
-            <!--
-            <xhs:lernzeitmodellFreitext>lernzeitmodellFreitext0</xhs:lernzeitmodellFreitext> 
-            nur für den Fall ausfüllen, dass der Wert für das Lernzeitmodell nicht in der Codeliste enthalten ist -->
-            <xhs:regelstudienzeit>6</xhs:regelstudienzeit>
-            <xhs:beurlaubungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="0.95">
-                <code>http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/nicht_beurlaubt</code>
-            </xhs:beurlaubungsstatus>
-            <!--
-            <xhs:beurlaubungsstatusFreitext xml:lang="en-US">beurlaubungsstatusFreitext0</xhs:beurlaubungsstatusFreitext>
-            nur für den Fall ausfüllen, dass der Wert für den Beurlaubungsstatus nicht in der Codeliste enthalten ist -->
-        </xhs:aufzaehlung>
-    </xhs:studienabschnitt>
-    <xhs:studienabschnitt>
-        <xhs:aufzaehlung>
-            <xhs:studienzeitraum>
-                <xhs:zeitraum>
-                    <xbd:beginn>2021-10-01</xbd:beginn>
-                    <xbd:ende>2022-03-31</xbd:ende>
-                </xhs:zeitraum>
-                <xhs:semesterbezeichnung>Wintersemester 2021/2022</xhs:semesterbezeichnung>
-            </xhs:studienzeitraum>
-            <xhs:studienfach>
-                <xhs:name>Physikalische Technologien</xhs:name>
-                <xhs:angestrebterAbschluss>Master of Science</xhs:angestrebterAbschluss>
-                <!-- Hier den Schlüssel nach ISCED 2011 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
-                <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
-                    <code>7</code>
-                </xhs:schluesselISCED2011>
-                <!-- Hier den Schlüssel nach ISCED 2013 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
-                <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
-                    <code>7</code>
-                </xhs:schluesselISCED2013>
-                <!-- Hier bei Code die URI nach EQF eintragen -->
-                <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
-                    <code>http://data.europa.eu/snb/eqf/7</code>
-                </xhs:schluesselEQF>
-                <xhs:fachsemester>12</xhs:fachsemester>
-            </xhs:studienfach>
-            <xhs:lernzeitmodell listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell" listVersionID="0.95">
-                <code>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/vollzeit</code>
-            </xhs:lernzeitmodell>
-            <!--
-            <xhs:lernzeitmodellFreitext>lernzeitmodellFreitext0</xhs:lernzeitmodellFreitext> 
-            nur für den Fall ausfüllen, dass der Wert für das Lernzeitmodell nicht in der Codeliste enthalten ist -->
-            <xhs:regelstudienzeit>6</xhs:regelstudienzeit>
-            <xhs:beurlaubungsstatus listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="0.95">
-                <code>http://xhochschule.de/def/xhochschule/0.95/code/beurlaubungsstatus/nicht_beurlaubt</code>
-            </xhs:beurlaubungsstatus>
-            <!--
-            <xhs:beurlaubungsstatusFreitext xml:lang="en-US">beurlaubungsstatusFreitext0</xhs:beurlaubungsstatusFreitext>
-            nur für den Fall ausfüllen, dass der Wert für den Beurlaubungsstatus nicht in der Codeliste enthalten ist -->
-        </xhs:aufzaehlung>
-    </xhs:studienabschnitt>
-    <xhs:studienabschnitt>
-        <xhs:zusammenfassung>
-            <xhs:zeitraum>
-                <xbd:beginn>2021-10-01</xbd:beginn>
-                <xbd:ende>2022-03-31</xbd:ende>
-            </xhs:zeitraum>
-            <xhs:studienfach>
-                <xhs:name>Physikalische Technologien</xhs:name>
-                <xhs:angestrebterAbschluss>Master of Science</xhs:angestrebterAbschluss>
-                <!-- Hier den Schlüssel nach ISCED 2011 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
-                <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
-                    <code>7</code>
-                </xhs:schluesselISCED2011>
-                <!-- Hier den Schlüssel nach ISCED 2013 als Ziffer eintragen, die als Angabe für das Bildungsniveau dient. -->
-                <xhs:schluesselISCED2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="ISCED-F 2013">
-                    <code>7</code>
-                </xhs:schluesselISCED2013>
-                <!-- Hier bei Code die URI nach EQF eintragen -->
-                <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
-                    <code>http://data.europa.eu/snb/eqf/7</code>
-                </xhs:schluesselEQF>
-                <xhs:fachsemester>12</xhs:fachsemester>
-              </xhs:studienfach>
-            <xhs:lernzeitmodell listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell" listVersionID="0.95">
-                <code>http://xhochschule.de/def/xhochschule/0.95/code/lernzeitmodell/vollzeit</code>
-            </xhs:lernzeitmodell>
-            <!--
-            <xhs:lernzeitmodellFreitext>lernzeitmodellFreitext0</xhs:lernzeitmodellFreitext> 
-            nur für den Fall ausfüllen, dass der Wert für das Lernzeitmodell nicht in der Codeliste enthalten ist -->
-            <xhs:regelstudienzeit>6</xhs:regelstudienzeit>
-        </xhs:zusammenfassung>
-    </xhs:studienabschnitt>
-    <xhs:anmerkungRegelstudienzeit>Aufgrund der Corona-Pandemie wurde die Regelstudienzeit von vier auf sechs Semester erhöht.</xhs:anmerkungRegelstudienzeit>
-    <!-- die folgenden Angaben sind für die fiktive TU Musterstadt eingetragen -->
-    <xhs:verifikation>
-        <xhs:schluessel>PASSWORT_XML</xhs:schluessel>
-        <xhs:adresse>https://verify.tu-musterstadt.de/PASSWORT_XML</xhs:adresse>
-        <xhs:inhaltstyp>XML</xhs:inhaltstyp>
-        <xhs:gueltigkeit>
-            <xbd:beginn>2022-06-15</xbd:beginn>
-        </xhs:gueltigkeit>
-    </xhs:verifikation>
-    <xhs:verifikation>
-        <xhs:schluessel>PASSWORT_PDF</xhs:schluessel>
-        <xhs:adresse>https://verify.tu-musterstadt.de/PASSWORT_PDF</xhs:adresse>
-        <xhs:inhaltstyp>PDF</xhs:inhaltstyp>
-        <xhs:gueltigkeit>
-            <xbd:beginn>2022-06-15</xbd:beginn>
-        </xhs:gueltigkeit>
-    </xhs:verifikation>
+<!-- Exmatrikulationsbescheinigung nach XHochschule Version 1.0 . Nichtnormative Beispielinstanz.
+    Version: XHochschule 1.0 
+    Letzte Aktualisierung: 01.07.2024
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
+<xhs:exmatrikulationsbescheinigung 
+    xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/1.0/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.0/xsd file:http://xhochschule.de/def/xhochschule/1.0/xsd/xhochschule-bescheinigungen.xsd">
+    <titel xml:lang="de-DE">Exmatrikulationsbescheinigung</titel>
+    <ausstellung>
+        <datum>2024-03-31</datum>
+    </ausstellung>
+    <gueltigkeitsdatum>2024-05-04</gueltigkeitsdatum>
+    <sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" 
+        listVersionID="20231213-0">
+        <code>DEU</code>
+    </sprache>
+    <exmatrikulationsdatum>2024-05-04</exmatrikulationsdatum>
+    <!-- Angaben zur studiereden Person -->
+    <studierender>
+        <nameNatuerlichePerson>
+            <familienname>
+                <name>Musterfrau</name>
+            </familienname>
+            <vorname>
+                <name>Erika</name>
+            </vorname>
+        </nameNatuerlichePerson>
+        <geburt>
+            <datum>
+                <jahr>1994</jahr>
+            </datum>
+            <geburtsort>
+                <ort>Berlin</ort>
+                <staat listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit" 
+                    listVersionID="listVersionID3">
+                    <code>000</code>
+                    <name>Bundesrepublik Deutschland</name>
+                </staat>
+            </geburtsort>
+        </geburt>
+        <identifikationsnummer>
+            <id>86095742719</id>
+            <gueltigkeit>
+                <beginn>1995-04-16</beginn>
+                <ende>2006-05-04</ende>
+            </gueltigkeit>
+            <beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuernID)</beschreibung>
+        </identifikationsnummer>
+        <identifikationsnummer>
+            <id>99-999-999-999-999</id>
+            <gueltigkeit>
+                <beginn>2006-05-04</beginn>
+                <ende>2006-05-04</ende>
+            </gueltigkeit>
+            <beschreibung>OZG-Landeskontonummer-ID der studierenden Person</beschreibung>
+        </identifikationsnummer>
+        <matrikelnummer>
+            <id>123546789</id>
+            <gueltigkeit>
+                <beginn>2020-10-01</beginn>
+                <ende>2024-05-04</ende>
+            </gueltigkeit>
+            <beschreibung>Matrikelnummer</beschreibung>
+        </matrikelnummer>
+        <ersteinschreibung>2020-10-01</ersteinschreibung>
+        <hochschulsemester>7</hochschulsemester>
+        <urlaubssemester>0</urlaubssemester>
+    </studierender>
+    <!-- Angaben zur ausstellenden Hochschule -->
+    <ausstellendeHochschule>
+        <hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" 
+            listVersionID="Verson WS22">
+            <code>0360</code>
+            <!-- Anmerkung: Hier kann gerne eine real existierende Hochschule mit entsprechender Hochschulsignatur verwendet werden. 
+                Bitte beachten, Code X entspricht nicht einem Wert in der Codeliste.-->
+        </hochschulsignatur>
+        <name xml:lang="de-DE">Universität Leipzig</name>
+    </ausstellendeHochschule>
+    <!-- Angaben zum Studium -->
+    <studienabschnitt>
+        <zusammenfassung>
+            <zeitraum>
+                <beginn>2020-10-01</beginn>
+                <ende>2024-03-31</ende>
+                <zusatz>zusatz4</zusatz>
+                <!-- Anmerkung: Zusatz kann weggelassen werden -->
+            </zeitraum>
+            <studienfach>
+                <name xml:lang="de-DE">Politikwissenschaft</name>
+                <angestrebterAbschluss xml:lang="de-DE">Bachelor of Arts</angestrebterAbschluss>
+                <schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" 
+                    listVersionID="ISCED-2011">
+                    <code>645</code>
+                </schluesselISCED2011>
+                <schluesselISCEDF2013 
+                    listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" 
+                    listVersionID="20230628-0">
+                    <code>0312</code>
+                </schluesselISCEDF2013>
+                <schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" 
+                    listVersionID="20230118-0">
+                    <code>6</code>
+                </schluesselEQF>
+                <fachsemester>7</fachsemester>
+                <unbedenklichkeitsvermerk xml:lang="de-DE">Im Studienfach Politikwissenschaften wurde keine nach der Prüfungsordnung erforderliche Studienleistung/Prüfung endgültig nicht bestanden und der Prüfungsanspruch nicht verloren.</unbedenklichkeitsvermerk>
+            </studienfach>
+            <lernzeitmodell>
+                <code listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell" 
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/vollzeit</code>
+                </code>
+            </lernzeitmodell>
+            <regelstudienzeit>6</regelstudienzeit>
+        </zusammenfassung>
+    </studienabschnitt>
+    <anmerkungRegelstudienzeit xml:lang="de-DE">Regelstudienzeit beträgt 6 Semester</anmerkungRegelstudienzeit>
+    <!-- Angaben zur Verifikation des ausgestellen Dokuments -->
+    <verifikation>
+        <schluessel>VLBKBESVK</schluessel>
+        <adresse>https://almaweb.uni-leipzig.de/verifikation</adresse>
+        <inhaltstyp>XML</inhaltstyp>
+        <gueltigkeit>
+            <beginn>2024-03-31</beginn>
+            <ende>2025-03-31</ende>
+        </gueltigkeit>
+    </verifikation>
 </xhs:exmatrikulationsbescheinigung>
