@@ -381,3 +381,4 @@
    </sch:pattern>
    <!--Konkrete Regeln mit Kindelementen-->
 </sch:schema>
+
