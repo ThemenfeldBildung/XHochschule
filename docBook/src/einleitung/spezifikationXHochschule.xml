@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE preface [
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+<chapter version="5" xml:id="spezifikation.einleitung.spezifikationXHochschule" xml:lang="de" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<info>
+		<title>Spezifikation &fachmodul;</title>
+	</info>
+	<section>
+		<title>Disclaimer</title>
+		<para>Es handelt sich bei dem vorliegenden Dokument um die Spezifikation eines XÖV-Standardisierungsvorhabens. Aufgrund der Notwendigkeit der technischen Verarbeitbarkeit der Begriffe wird, wo eine genderneutrale Formulierung nicht möglich ist, das generische Maskulinum verwendet. Die verwendeten Personenbezeichnungen beziehen sich – sofern nicht anders kenntlich gemacht – auf alle Geschlechter.</para>
+	</section>
+	<section>
+		<title>Aufbau</title>
+		<para>Das Dokument ist in drei Teile gegliedert, einer Einleitung mit dem <link linkend="spezifikation.einleitung.hintergrundZuXHochschule">Hintergrund zu XHochschule</link>
+			und der <link linkend="spezifikation.einleitung.dieHochschuljourney">Hochschuljourney</link>, einem inhaltlichen Kapitel zur <link linkend="spezifikation.fachlicheModellierung"
+				>fachlichen Modellierung</link> mit Klassen und Dokumenten für den Datenaustausch im Hochschulwesen, sowie einem <link linkend="spezifikation.anhaenge"
+			>Anhang</link>, welcher unter anderem konkrete Werte von aus der Hochschulstatistik übernommenen oder eigens geschaffenen Wertelisten führt.</para>
+	</section>
+	<section>
+		<info>
+			<title>Vorgehen zur Erarbeitung</title>
+		</info>
+		<para>Das Vorgehen bei der Erarbeitung von &fachmodul; ist transparent und partizipativ. Bereits zu Beginn der Vorarbeiten von &fachmodul; wurden alle Wissenschaftsministerien
+			der Länder, Hochschulen und weitere Organisationen (wie z.B. UniAssist oder die Stiftung für Hochschulzulassung (SfH)) in die Arbeiten einbezogen. Diese Vorarbeiten
+			wurden in einer Standardisierungsstrategie zusammengeführt und mit den Hochschulen, den Wissenschaftsministerien der Länder und weiteren Stakeholdern abgestimmt. Im
+			April 2020 begann darauf aufbauend die Dokumentation des Standardisierungsbedarfes und erste Bearbeitung des Bedarfs durch Aufnahme von Umsetzungsarbeiten die in
+			frühe Versionen einer im November 2020 veröffentlichten Spezifikation mündeten. </para>
+		<para>Seitdem wurden in Standardisierungsmeetings die ersten Anwendungsfälle und Anforderungen an
+			den Datenaustausch zwischen Hochschulen analysiert und der Fokus von &fachmodul;
+			geschärft. <link xlink:href="https://&fachmodul_in_uri;.de/web/webmeetings2021">Weitere
+				Treffen</link> wurden im Jahr 2021 zur Erarbeitung von Folgeversionen zur Abdeckung
+			weiterer Nachweise und Datenaustauschmomente durchgeführt. Diese Reihe wurde <link
+				xlink:href="https://&fachmodul_in_uri;.de/web/webmeetings2022">im Jahr 2022</link>,
+				<link xlink:href="https://&fachmodul_in_uri;.de/web/webmeetings2023">im Jahr
+				2023</link> und <link xlink:href="https://&fachmodul_in_uri;.de/web/webmeetings2024"
+				>im Jahr 2024</link> fortgesetzt.</para>
+		<para>Das methodische Vorgehen der Datenmodellierung ist an zwei bewährte Methodiken angelehnt: <itemizedlist>
+				<listitem>
+					<para>deutsches XÖV-Vorgehen und</para>
+				</listitem>
+				<listitem>
+					<para>europäische Methodik der Entwicklung von Core Vocabularies.</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>Beiden Methoden gemeinsam ist die modellgetriebene Spezifikationsentwicklung, transparente
+			Erarbeitung durch Veröffentlichung von Änderungsanmerkungen, der Aspekt der starken
+			Nachnutzung von bereits Bewährtem und die Verwendung von nicht-proprietären,
+			zukunftssicheren und freien Technologien z.B. des W3C Technology Stacks (XML, XSD;
+			Schematron). </para>
+		<para>Die Spezifikation &fachmodul; als Fachmodul des Basismoduls XBildung versucht die Komplexität im Bildungswesen abzubilden. Unnötige oder gar störende Flexibilität wird
+			zugunsten von Interoperabilität zwischen den Fachverfahren im Hochschulwesen aufgelöst. Dazu ist der Einsatz von abgestimmten harmonisierten
+			Interoperabilitätsartefakten wie gemeinsamen Datenmodellen, Wertelisten und Datentypen notwendig. Es gilt vor dem Hintergrund des Bildungsföderalismus in Deutschland und
+			unter Wahrung der Hochschulautonomie der Grundsatz "So viel Vielfalt wie möglich bei so viel Einheit wie nötig".</para>
+	</section>
+	<section>
+		<title>Bestandteile</title>
+		<para>Diese Spezifikation besteht aus verschiedenen Artefakten, welche einem URI-Konzept folgend versioniert im Internet erreichbar abgelegt sind. &fachmodul; setzt sich
+			zusammen...</para>
+		<itemizedlist>
+			<listitem>
+				<para>aus dem hier vorliegenden <link xlink:href="http://&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/spec/">Spezifikationsdokument</link></para>
+			</listitem>
+			<listitem>
+				<para>aus <link xlink:href="http://www.&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/xsd/">XML Schema-Definitionen</link></para>
+			</listitem>
+			<listitem>
+				<para>aus <link xlink:href="http://www.&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/sch/">Geschäftsregeln in ISO Schematron</link></para>
+			</listitem>
+			<listitem>
+				<para>aus Codelisten und Mappings zu <link xlink:href="http://&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/code/"
+					>EU-Vokabularen</link> von DG EMPL Europass und Publications
+					Office</para>
+			</listitem>
+			<listitem>
+				<para>
+					<link xlink:href="http://www.&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/xml/">XML-Beispielinstanzen</link>
+				</para>
+			</listitem>
+		</itemizedlist>
+		<para>Zusätzlich wird erhaltenes Feedback zur Spezifikation auf <link xlink:href="https://github.com/OZG-TFBildung/&fachmodul_in_uri;/issues">Github.com</link>
+			veröffentlicht und in Folgeversionen eingearbeitet.</para>
+	</section>
+</chapter>

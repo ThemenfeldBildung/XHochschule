@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XHochschule.Bescheinigungen.immatrikulationsbescheinigungBAfoeGP9">
+   <title>immatrikulationsbescheinigungBAfoeGP9</title>
+   <subtitle>Nachricht: <emphasis role="codebf">immatrikulationsbescheinigungBAfoeGP9</emphasis>
+   </subtitle><para>Eine Bescheinigung, die Angaben enthält, um die Immatrikulation eines Studierenden an einer Hochschule nach den Vorgaben von BAföG §9 nachzuweisen.</para><figure xml:id="figure.XHochschule.Bescheinigungen.immatrikulationsbescheinigungBAfoeGP9">
+      <title>immatrikulationsbescheinigungBAfoeGP9</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../zeichnungen/XHochschule/Bescheinigungen/immatrikulationsbescheinigungBAfoeGP9.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <informaltable xml:id="table.XHochschule.Bescheinigungen.immatrikulationsbescheinigungBAfoeGP9">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">immatrikulationsbescheinigungBAfoeGP9</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ausstellendeHochschule</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Hochschule</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Hochschule" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Hochschule" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hochschule, die die Bescheinigung ausstellt nach bundesweit einheitlicher Hochschulbezeichnung.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">studierender</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Studierende Person, für die eine Immatrikulationsbescheinigung ausgestellt wird.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">name</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Variante von NameNatuerlichePerson, in der die Angabe eine Familiennamens verpflichtend ist.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">familienname</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">AllgemeinerName</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Kernkomponenten.AllgemeinerName"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Kernkomponenten.AllgemeinerName" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Der Familienname ist der aktuelle Nachname einer Person und Ausdruck einer bestimmten Familienzugehörigkeit dieser Person.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">vorname</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">AllgemeinerName</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Kernkomponenten.AllgemeinerName"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Kernkomponenten.AllgemeinerName" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Der Vorname ist der Name bzw. der Teil des Namens, der nicht die Zugehörigkeit zu einer Familie ausdrückt, sondern das Individuum innerhalb der Familie bezeichnet und dazu dient, es von anderen Familienmitgliedern zu unterscheiden.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">geburt</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zur Geburt, benötigt bei der Immatrikulationsbescheinigung nach BAföG §9.</para>
+<para>In dieser Klasse ist die Angabe des Geburtsdatums und Geburtsorts verpflichtend</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">datum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">TeilbekanntesDatum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Das "datum" beinhaltet das Geburtsdatum, also Tag, Monat und Jahr der Vollendung der Geburt.</para>
+
+<para>Bei Bedarf einer höheren Genauigkeit kann auch die Uhrzeit angegeben werden.</para>
+
+<para>Anmerkung: Bei Bedarf einer höheren Genauigkeit kann auch die Uhrzeit angegeben werden, indem der W3C-Datentyp "dateTime" verwendet wird. Auch ungenaue Datumsangaben dürfen gemacht werden (Nutzung der Datentypen "gYear" bzw. "gYearMonth").</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">geburtsort</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Ortsangabe</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Hier werden Angaben zum Ort einer Geburt gemacht (z. B. Geburtsort, Geburtsstaat)</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">ersteinschreibung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:date</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Datum der Ersteinschreibung</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">studienfach</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Studienfach</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Studienfach" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Studienfach" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Als Studienfach bezeichnet man an Hochschulen den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">lernzeitmodell</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Mit Lernzeitmodell sei hier vor allen Dingen der Unterschied zwischen Voll- und Teilzeit gemeint. Kann dies nicht über einen Codelistenwert ausgedrückt werden, so soll der Wert 'Wert nicht in Liste' gewählt und das dann vorgesehene Freitextfeld ausgefüllt werden.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Lernzeitmodell</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Codes.Code.Lernzeitmodell"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Codes.Code.Lernzeitmodell"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Mit Lernzeitmodell sei hier unter anderem die Unterscheidung zwischen Teil- und Vollzeit gemeint.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>In diesem Feld ist das Lernzeitmodell als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">studienzeitraum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Studienzeitraum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Studienzeitraum" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Studienzeitraum" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Bezeichnung des aktuellen Studienzeitraums, sowie dessen Anfangs- und Enddatums</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">immatrikulationsstatus</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angabe zum Immatrikulationsstatus des Studierenden. Kann dies nicht über einen Codelistenwert ausgedrückt werden, so soll der Wert 'Wert nicht in Liste' gewählt und das dann vorgesehene Freitextfeld ausgefüllt werden.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Immatrikulationsstatus</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Codes.Code.Immatrikulationsstatus"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Codes.Code.Immatrikulationsstatus"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe zum Immatrikulationsstatus des Studierenden</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>In diesem Feld ist der Immatrikulationsstatus als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">beurlaubungsstatus</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angabe über den Beurlaubungsstatus des Studierenden. Kann dies nicht über einen Codelistenwert ausgedrückt werden, so soll der Wert 'Wert nicht in Liste' gewählt und das dann vorgesehene Freitextfeld ausgefüllt werden.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Beurlaubungsstatus</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Codes.Code.Beurlaubungsstatus"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Codes.Code.Beurlaubungsstatus"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe zum Beurlaubungsstatus des Studierenden.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>In diesem Feld ist der Beurlaubungsstatus als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">verifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Verifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..2</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Verifikation" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Verifikation" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Zusätzliche Informationen der Bildungseinrichtung zur Verifikation eines Dokuments. Es können bis zu zwei verschiedene Dokumenttypen verifiziert werden. Eine Angabe dient beispielsweise zur Verifikation eines PDF-Dokuments und die andere zur Verifikation einer XML-Datei.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">Signature</emphasis> (ref)</entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle." role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle." role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier kann eine digitale Signatur angegeben werden.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <section>
+      <title>Geschäftsregeln</title>
+      <informaltable xml:id="table.XHochschule.Bescheinigungen.immatrikulationsbescheinigungBAfoeGP9.rules">
+         <tgroup cols="2">
+            <colspec colname="id" colnum="1" colwidth="20mm"/>
+            <colspec colname="regel" colnum="2" colwidth="140mm"/>
+            <thead>
+               <row>
+                  <entry>ID</entry>
+                  <entry>Regel / XPath</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;4&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;I&#x200B;m&#x200B;m&#x200B;a&#x200B;t&#x200B;r&#x200B;i&#x200B;k&#x200B;u&#x200B;l&#x200B;a&#x200B;t&#x200B;i&#x200B;o&#x200B;n&#x200B;s&#x200B;b&#x200B;e&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;i&#x200B;n&#x200B;i&#x200B;g&#x200B;u&#x200B;n&#x200B;g&#x200B;B&#x200B;A&#x200B;f&#x200B;o&#x200B;e&#x200B;G&#x200B;P&#x200B;9&#x200B;</entry>
+                  <entry>XHS-0004 Ein Ausstellungsort darf auf der Immatrikulationsbescheinigung nach BaföG § 9 nicht angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/studienabschnitt/aufzaehlung/beurlaubungsstatus</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;5&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;B&#x200B;e&#x200B;u&#x200B;r&#x200B;l&#x200B;a&#x200B;u&#x200B;b&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;t&#x200B;a&#x200B;t&#x200B;u&#x200B;s&#x200B;</entry>
+                  <entry>XHS-0015 Wenn und nur wenn der Wert der Codeliste Beurlaubungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/studienabschnitt/aufzaehlung/lernzeitmodell</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;V&#x200B;o&#x200B;l&#x200B;l&#x200B;O&#x200B;d&#x200B;e&#x200B;r&#x200B;T&#x200B;e&#x200B;i&#x200B;l&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
+                  <entry>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung "Teilzeit" oder "Vollzeit" haben.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;4&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;</entry>
+                  <entry>XHS-0014 Wenn und nur wenn der Wert der Codeliste Lernzeitmodell 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">null#/xhs:immatrikulationsbescheinigung/immatrikulationsstatus</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;6&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;I&#x200B;m&#x200B;m&#x200B;a&#x200B;t&#x200B;r&#x200B;i&#x200B;k&#x200B;u&#x200B;l&#x200B;a&#x200B;t&#x200B;i&#x200B;o&#x200B;n&#x200B;s&#x200B;s&#x200B;t&#x200B;a&#x200B;t&#x200B;u&#x200B;s&#x200B;</entry>
+                  <entry>XHS-0016 Wenn und nur wenn der Wert der Codeliste Immatrikulationsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </informaltable>
+   </section>
+</section>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent"> %complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xml:id="datentypen.aggregiert.XHochschule.Baukasten">
+   <title>Datentypen</title>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Codes/Code.AnerkanntOderAngerechnet.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Codes/Code.Beurlaubungsgrund.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Codes/Code.Beurlaubungsstatus.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Codes/Code.Faecherschluessel.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Codes/Code.Hochschulsignatur.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Codes/Code.Immatrikulationsstatus.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Codes/Code.LateinischeEhrenbezeichnung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Codes/Code.Leistungsart.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Codes/Code.Leistungsbenotungsstatus.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Codes/Code.Leistungsstatus.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Codes/Code.Lernzeitmodell.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/ExternErbrachteLeistung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Hochschule.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Leistung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Leistungsbeschreibung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/ModulbeschreibungNachKMK.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Notenspiegel.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/StudienabschnittAufzaehlung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/StudienabschnittAufzaehlungOderZusammenfassung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/StudienabschnittZusammenfassung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Studienfach.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Studienzeitraum.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Studierender.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XHochschule/Baukasten/Verifikation.xml"/>
+</section>

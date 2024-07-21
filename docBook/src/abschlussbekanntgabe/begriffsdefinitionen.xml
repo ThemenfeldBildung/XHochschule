@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<section version="5" xml:id="spezifikation.abschlussbekanntgabe.begriffsdefinitionen" xml:lang="de" xmlns="http://docbook.org/ns/docbook">
+    <info>
+        <title>Begriffsdefinitionen</title>
+    </info>
+    <para />
+</section>
