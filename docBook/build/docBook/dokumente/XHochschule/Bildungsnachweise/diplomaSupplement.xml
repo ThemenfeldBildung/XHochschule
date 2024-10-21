@@ -9,7 +9,7 @@
    <title>diplomaSupplement</title>
    <subtitle>Nachricht: <emphasis role="codebf">diplomaSupplement</emphasis>
    </subtitle><para>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Diploma Supplement erhält.
-Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des Diploma Supplements ab.</para><figure xml:id="figure.XHochschule.Bildungsnachweise.diplomaSupplement">
+Dabei deckt die im Element Dokument enthaltene Klasse "ausstellung" den Abschnitt 7.1 des Diploma Supplements ab.</para><figure xml:id="figure.XHochschule.Bildungsnachweise.diplomaSupplement">
       <title>diplomaSupplement</title>
       <mediaobject>
          <imageobject>
@@ -20,7 +20,7 @@ Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des D
          </imageobject>
       </mediaobject>
    </figure>
-   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="XHochschule.Baukasten.Dokument" role="AS"/>).</para>
    <informaltable xml:id="table.XHochschule.Bildungsnachweise.diplomaSupplement">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
@@ -255,7 +255,7 @@ Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des D
                   <emphasis role="bold">spracheUnterrichtPruefung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
+                  <emphasis role="codebf">Code.Language</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
@@ -290,6 +290,23 @@ Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des D
                <entry namest="indent1" nameend="child">
                   <emphasis role="bold">ebeneDerQualifikation</emphasis>
                </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Bezieht sich auf Abschnitt 3.1. Ebene der Qualifikation.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">freitext</emphasis>
+               </entry>
                <entry>
                   <emphasis role="codebf">String.Localized</emphasis>
                </entry>
@@ -304,12 +321,14 @@ Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des D
                </entry>
             </row>
             <row>
+               <entry rowsep="0" colsep="0"/>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Bezieht sich auf Abschnitt 3.1. Ebene der Qualifikation.</para></entry>
+               <entry namest="indent2" nameend="page"><para>Das Feld "freitext" kann verwendet werden, wenn die Ebene der Qualifikation nicht aus den Codelisten auswählbar ist bzw. wenn zusätzliche Eintragungen gemacht werden müssen.</para></entry>
             </row>
             <row>
+               <entry rowsep="0" colsep="0"/>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
+               <entry namest="indent2" nameend="child">
                   <emphasis role="bold">ebeneDerQualifikationCodeEQF</emphasis>
                </entry>
                <entry>
@@ -326,12 +345,14 @@ Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des D
                </entry>
             </row>
             <row>
+               <entry rowsep="0" colsep="0"/>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Bezieht sich auf Abschnitt 3.1. Ebene der Qualifikation.</para></entry>
+               <entry namest="indent2" nameend="page"><para>Bezieht sich auf Abschnitt 3.1. Ebene der Qualifikation.</para></entry>
             </row>
             <row>
+               <entry rowsep="0" colsep="0"/>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
+               <entry namest="indent2" nameend="child">
                   <emphasis role="bold">ebeneDerQualifikationCodeISCED2011</emphasis>
                </entry>
                <entry>
@@ -348,30 +369,65 @@ Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des D
                </entry>
             </row>
             <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Bezieht sich auf Abschnitt 3.1. Ebene der Qualifikation.</para></entry>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Bezieht sich auf Abschnitt 3.1. Ebene der Qualifikation.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="child">
                   <emphasis role="bold">dauerStudiumInJahrenOderECTS</emphasis>
                </entry>
-               <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
-               </entry>
+               <entry/>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
+               <entry/>
+               <entry/>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="page"><para>Bezieht sich auf Abschnitt 3.2. Offizielle Dauer des Studiums (Regelstudienzeit) in Leistungspunkten und/oder Jahren.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">dauerInJahren</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:decimal</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Das Feld "dauerInJahren" wird zum Angeben der bis Dato vergangenen Studienzeit in Jahren (ohne Tag und Monat) verwendet.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">umfangInECTS</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:integer</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Das Feld "umfangInECTS" wird zur Angabe der bis Dato erworbenen (erreichten) ECTS-Punkte verwendet.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -479,32 +535,10 @@ Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des D
             <row>
                <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">notensystem</emphasis>
+                  <emphasis role="bold">gesamtnoteUndNotensystem</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Bezieht sich auf Abschnitt 4.4. Notensystem und, wenn vorhanden, Notenspiegel.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">gesamtnote</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
+                  <emphasis role="codebf">Benotung</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
@@ -657,16 +691,16 @@ Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des D
                   <emphasis role="bold">beschreibung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
+                  <emphasis role="codebf">datatypeE</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -694,32 +728,4 @@ Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des D
       </tgroup>
    </informaltable>
    <para/>
-   <section>
-      <title>Geschäftsregeln</title>
-      <informaltable xml:id="table.XHochschule.Bildungsnachweise.diplomaSupplement.rules">
-         <tgroup cols="2">
-            <colspec colname="id" colnum="1" colwidth="20mm"/>
-            <colspec colname="regel" colnum="2" colwidth="140mm"/>
-            <thead>
-               <row>
-                  <entry>ID</entry>
-                  <entry>Regel / XPath</entry>
-               </row>
-            </thead>
-            <tbody>
-               <row>
-                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;8&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;D&#x200B;S&#x200B;</entry>
-                  <entry>XHS-0008 Ein Ausstellungsort darf auf dem Diploma Supplement nicht angegeben werden.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-            </tbody>
-         </tgroup>
-      </informaltable>
-   </section>
 </section>

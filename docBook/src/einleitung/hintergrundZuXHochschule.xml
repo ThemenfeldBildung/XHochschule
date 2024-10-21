@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" standalone="yes" ?>
+<?xml version="1.0" standalone="yes" ?>
 <?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!DOCTYPE preface [
     <!ENTITY % complete SYSTEM "../../ent/complete.ent">
@@ -27,7 +27,7 @@
         </listitem>
         <listitem>
             <para>die Anforderungen für die Vereinheitlichung zusammen mit den Hochschulen, Wissenschaftsministerien der Länder, Fachverfahrensherstellern und weiteren Stakeholdern
-                in <link xlink:href="https://&fachmodul_in_uri;.de/web/aktuelles">virtuellen Workshops</link> erhoben, und</para>
+                in <link xlink:href="https://www.xbildung.de/web/events/xhochschule">virtuellen Workshops</link> erhoben, und</para>
         </listitem>
         <listitem>
             <para>die Bearbeitung des Bedarfs iterativ in Form dieser öffentlich einsehbaren Spezifikation mit PDF-Dokumentation und maschinenverarbeitbaren Dateien 

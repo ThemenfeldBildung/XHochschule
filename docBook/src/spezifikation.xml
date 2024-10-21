@@ -7,12 +7,11 @@
 <book status="&specstatus;" version="5" xml:lang="de" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
     <info revision="1.0">
         <title>Spezifikation &fachmodul;</title>
-        <subtitle>Version &version;</subtitle>
+        <subtitle>Version &version; &version_title;</subtitle>
         <abstract>
             <para>Fassung: &fassung;</para>
             <para>Herausgeber: BMBF, Land Sachsen-Anhalt</para>
-            <para>Bezugsort: <link xlink:href="https://&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/spec/&fachmodul_abk;_spezifikation_&version;.pdf" xmlns:xlink="http://www.w3.org/1999/xlink"
-                >https://&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/spec/&fachmodul_abk;_spezifikation_&version;.pdf</link></para>
+            <para>Bezugsort: <link xlink:href="http://&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/spec/&fachmodul_kurz;_spezifikation_&version;.pdf" xmlns:xlink="http://www.w3.org/1999/xlink">http://&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/spec/&fachmodul_kurz;_spezifikation_&version;.pdf</link></para>
         </abstract>
     </info>
     <part version="5" xml:id="spezifikation.einleitung" xml:lang="de" xmlns="http://docbook.org/ns/docbook">
@@ -41,9 +40,10 @@
             <title>Anhänge</title>
         </info>
         <include href="anhaenge/uebersichtUeberAlleDokumente.xml" xmlns="http://www.w3.org/2001/XInclude" />
+        <include href="anhaenge/schematronregeln.xml" xmlns="http://www.w3.org/2001/XInclude" />
         <include href="../build/docBook/dokumente/anhang/schluesseltabellen/schluesseltabellen.xml" xmlns="http://www.w3.org/2001/XInclude" />
         <include href="anhaenge/glossar.xml" xmlns="http://www.w3.org/2001/XInclude" />
         <include href="anhaenge/abkuerzungen.xml" xmlns="http://www.w3.org/2001/XInclude" />
-        <include href="anhaenge/versionshistorie.xml" xmlns="http://www.w3.org/2001/XInclude" />
+        <include href="anhaenge/versionshistorie.xml" xmlns="http://www.w3.org/2001/XInclude"/>
     </part>
 </book>

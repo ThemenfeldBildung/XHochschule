@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="538.425" height="1342">
+<svg xmlns="http://www.w3.org/2000/svg" width="538.425" height="1390">
    <defs>
       <style type="text/css">
                         text {
@@ -38,7 +38,7 @@
                     </style>
    </defs>
    <rect width="528.425"
-         height="1332"
+         height="1380"
          stroke-dasharray="3,3"
          rx="1"
          ry="1"
@@ -680,17 +680,14 @@
             y2="978"
             class="type-structure-optional"/>
       <g transform="translate(55,1008)">
-         <rect width="183.86249999999998" height="18" class="element-upper"/>
-         <rect width="183.86249999999998"
-               height="18"
-               y="18"
-               class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">datumDerLeistungserbringung</text>
-         <line x1="0" y1="18" x2="183.86249999999998" y2="18"/>
+         <rect width="146.671875" height="18" class="element-upper"/>
+         <rect width="146.671875" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">lehrendeOderPruefende</text>
+         <line x1="0" y1="18" x2="146.671875" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xs:date</text>
-         <g transform="translate(183.86249999999998,0)"/>
+         <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
+         <g transform="translate(146.671875,0)"/>
       </g>
       <line x1="33"
             y1="1026"
@@ -708,17 +705,17 @@
             y2="1026"
             class="type-structure-optional"/>
       <g transform="translate(55,1056)">
-         <rect width="203.08124999999998" height="18" class="element-upper"/>
-         <rect width="203.08124999999998"
+         <rect width="183.86249999999998" height="18" class="element-upper"/>
+         <rect width="183.86249999999998"
                height="18"
                y="18"
                class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">semesterDerLeistungserbringung</text>
-         <line x1="0" y1="18" x2="203.08124999999998" y2="18"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">datumDerLeistungserbringung</text>
+         <line x1="0" y1="18" x2="183.86249999999998" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
-         <g transform="translate(203.08124999999998,0)"/>
+         <text font-size="12" x="35.353125" y="30">xs:date</text>
+         <g transform="translate(183.86249999999998,0)"/>
       </g>
       <line x1="33"
             y1="1074"
@@ -736,14 +733,17 @@
             y2="1074"
             class="type-structure-optional"/>
       <g transform="translate(55,1104)">
-         <rect width="149.03125" height="18" class="element-upper"/>
-         <rect width="149.03125" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">sprache</text>
-         <line x1="0" y1="18" x2="149.03125" y2="18"/>
+         <rect width="203.08124999999998" height="18" class="element-upper"/>
+         <rect width="203.08124999999998"
+               height="18"
+               y="18"
+               class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">semesterDerLeistungserbringung</text>
+         <line x1="0" y1="18" x2="203.08124999999998" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xbd:Code.Language</text>
-         <g transform="translate(149.03125,0)"/>
+         <text font-size="12" x="35.353125" y="30">xhs:Studienzeitraum</text>
+         <g transform="translate(203.08124999999998,0)"/>
       </g>
       <line x1="33"
             y1="1122"
@@ -754,21 +754,21 @@
             fill="black"
             x="53"
             y="1120"
-            text-anchor="end">0..*</text>
+            text-anchor="end">0..1</text>
       <line x1="33"
             y1="1074"
             x2="33"
             y2="1122"
             class="type-structure-optional"/>
       <g transform="translate(55,1152)">
-         <rect width="194.734375" height="18" class="element-upper"/>
-         <rect width="194.734375" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">externErbrachteLeistung</text>
-         <line x1="0" y1="18" x2="194.734375" y2="18"/>
+         <rect width="149.03125" height="18" class="element-upper"/>
+         <rect width="149.03125" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">sprache</text>
+         <line x1="0" y1="18" x2="149.03125" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xhs:ExternErbrachteLeistung</text>
-         <g transform="translate(194.734375,0)"/>
+         <text font-size="12" x="35.353125" y="30">xbd:Code.Language</text>
+         <g transform="translate(149.03125,0)"/>
       </g>
       <line x1="33"
             y1="1170"
@@ -779,24 +779,21 @@
             fill="black"
             x="53"
             y="1168"
-            text-anchor="end">0..1</text>
+            text-anchor="end">0..*</text>
       <line x1="33"
             y1="1122"
             x2="33"
             y2="1170"
             class="type-structure-optional"/>
       <g transform="translate(55,1200)">
-         <rect width="161.53437499999998" height="18" class="element-upper"/>
-         <rect width="161.53437499999998"
-               height="18"
-               y="18"
-               class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">unbedenklichkeitsvermerk</text>
-         <line x1="0" y1="18" x2="161.53437499999998" y2="18"/>
+         <rect width="194.734375" height="18" class="element-upper"/>
+         <rect width="194.734375" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">externErbrachteLeistung</text>
+         <line x1="0" y1="18" x2="194.734375" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
-         <g transform="translate(161.53437499999998,0)"/>
+         <text font-size="12" x="35.353125" y="30">xhs:ExternErbrachteLeistung</text>
+         <g transform="translate(194.734375,0)"/>
       </g>
       <line x1="33"
             y1="1218"
@@ -814,14 +811,17 @@
             y2="1218"
             class="type-structure-optional"/>
       <g transform="translate(55,1248)">
-         <rect width="107.734375" height="18" class="element-upper"/>
-         <rect width="107.734375" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">leistung</text>
-         <line x1="0" y1="18" x2="107.734375" y2="18"/>
+         <rect width="161.53437499999998" height="18" class="element-upper"/>
+         <rect width="161.53437499999998"
+               height="18"
+               y="18"
+               class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">unbedenklichkeitsvermerk</text>
+         <line x1="0" y1="18" x2="161.53437499999998" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xhs:Leistung</text>
-         <g transform="translate(107.734375,0)"/>
+         <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
+         <g transform="translate(161.53437499999998,0)"/>
       </g>
       <line x1="33"
             y1="1266"
@@ -832,11 +832,36 @@
             fill="black"
             x="53"
             y="1264"
-            text-anchor="end">0..*</text>
+            text-anchor="end">0..1</text>
       <line x1="33"
             y1="1218"
             x2="33"
             y2="1266"
+            class="type-structure-optional"/>
+      <g transform="translate(55,1296)">
+         <rect width="107.734375" height="18" class="element-upper"/>
+         <rect width="107.734375" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">leistung</text>
+         <line x1="0" y1="18" x2="107.734375" y2="18"/>
+         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+         <text font-size="12" x="35.353125" y="30">xhs:Leistung</text>
+         <g transform="translate(107.734375,0)"/>
+      </g>
+      <line x1="33"
+            y1="1314"
+            x2="55"
+            y2="1314"
+            class="type-structure-optional"/>
+      <text font-size="11"
+            fill="black"
+            x="53"
+            y="1312"
+            text-anchor="end">0..*</text>
+      <line x1="33"
+            y1="1266"
+            x2="33"
+            y2="1314"
             class="type-structure-optional"/>
       <circle cx="15"
               cy="18"

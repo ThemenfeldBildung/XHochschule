@@ -46,7 +46,7 @@
          ry="1"
          style="stroke: grey;fill: white;"/>
    <text font-size="14" x="3.6" y="18" font-weight="bold">element immatrikulationsbescheinigung (anonymous type)</text>
-   <text font-size="12" x="3.6" y="34.8"> (extension of xbd:Dokument)</text>
+   <text font-size="12" x="3.6" y="34.8"> (extension of xhs:Dokument)</text>
    <g transform="translate(10,46)">
       <g transform="translate(55,0)">
          <rect width="149.56562499999998" height="18" class="element-upper"/>
@@ -133,7 +133,7 @@
                <line x1="0" y1="18" x2="173.6875" y2="18"/>
                <text font-size="12" fill="grey" x="3.6" y="30">type</text>
                <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-               <text font-size="12" x="35.353125" y="30">xhs:Code.Lernzeitmodell</text>
+               <text font-size="12" x="35.353125" y="30">xbd:Code.Lernzeitmodell</text>
                <g transform="translate(173.6875,0)"/>
             </g>
             <line x1="33"

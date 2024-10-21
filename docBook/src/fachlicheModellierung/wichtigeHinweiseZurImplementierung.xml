@@ -28,9 +28,9 @@
                     Verfügung gestellt. Erhaltene Nachrichten können mittels frei lizensierbarer
                     Programme (Microsoft XML Notepad; Saxon Home Edition) gegen diese XSLT-Dateien
                     validiert werden. Eine Validierung allein gegen das XML-Schema genügt nicht um
-                    den gesamten logischen Umfang des Datenmodells abzubilden.<link
+                    den gesamten logischen Umfang des Datenmodells abzubilden. XML-Schema und Schematron werden beide zur Validierung eines XHS-konformen Dokuments benötigt.<link
                         xlink:href="https://xbildung.de/web/validierung"
-                        > Anleitung zur Validierung mit Schematron</link></para>
+                        > Anleitung zur Validierung mit Schematron</link>.</para>
                 <para></para>
             </listitem>
         </varlistentry>

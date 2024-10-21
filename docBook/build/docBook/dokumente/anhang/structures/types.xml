@@ -2,39 +2,12 @@
 <kosit:types xmlns:kosit="http://www.xoev.de/de/kosit-zubehoer/3_0_0"
              xmlns="http://docbook.org/ns/docbook"
              xmlns:xlink="http://www.w3.org/1999/xlink">
-   <kosit:type name="Abschlussarbeit" prefix="xbd">
-      <kosit:property name="noteDerArbeit"/>
-      <kosit:property name="noteDerArbeit/note"/>
-      <kosit:property name="noteDerArbeit/wortbezeichnung"/>
-      <kosit:property name="noteDerArbeit/wortbezeichnung/@lang"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/schemaURI"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/beschreibung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/beschreibung/@lang"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/schlechtesteBewertung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/bestandenAbBewertung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/besteBewertung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/weitereInformationen"/>
-      <kosit:property name="noteDerArbeit/punkte"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/schemaURI"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/beschreibung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/beschreibung/@lang"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/schlechtesteBewertung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/bestandenAbBewertung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/besteBewertung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/weitereInformationen"/>
-      <kosit:property name="titelDerArbeit"/>
-      <kosit:property name="titelDerArbeit/@lang"/>
-      <kosit:property name="urlDerArbeit"/>
-   </kosit:type>
    <kosit:type name="AllgemeinerName"
                id="XHochschule.Kernkomponenten.AllgemeinerName"
                prefix="xhs">
       <kosit:property name="name"/>
       <kosit:property name="nichtVorhanden"/>
    </kosit:type>
-   <kosit:type name="Anschriftstyp-Codes" prefix=""/>
    <kosit:type name="BehoerdeType" prefix="bn-beh">
       <kosit:property name="erreichbarkeit"/>
       <kosit:property name="erreichbarkeit/kanal"/>
@@ -103,7 +76,7 @@
    <kosit:type name="Code.AnerkanntOderAngerechnet"
                id="XHochschule.Baukasten.Codes.Code.AnerkanntOderAngerechnet"
                prefix="xhs"/>
-   <kosit:type name="Code.Anschriftstyp" prefix="xbd"/>
+   <kosit:type name="Code.ArtDerBemerkung" prefix="xbd"/>
    <kosit:type name="Code.ArtDerPruefung" prefix="xbd"/>
    <kosit:type name="Code.ArtDerSchule" prefix="xbd"/>
    <kosit:type name="Code.ArtDerTraegerschaft" prefix="xbd"/>
@@ -124,6 +97,7 @@
                id="XHochschule.Baukasten.Codes.Code.Faecherschluessel"
                prefix="xhs"/>
    <kosit:type name="Code.Geschlecht" prefix="xbd"/>
+   <kosit:type name="Code.GesetzlicherVertreter" prefix="xbd"/>
    <kosit:type name="Code.Hochschulsignatur"
                id="XHochschule.Baukasten.Codes.Code.Hochschulsignatur"
                prefix="xhs"/>
@@ -137,7 +111,6 @@
    <kosit:type name="Code.Kommunikation.KanalType" prefix="bn-uq-g2g"/>
    <kosit:type name="Code.Kommunikation.KanalType" prefix="bn-uq-g2g"/>
    <kosit:type name="Code.Kreis" prefix="xbd"/>
-   <kosit:type name="Code.Kursstatus" prefix="xbd"/>
    <kosit:type name="Code.Language" prefix="xbd"/>
    <kosit:type name="Code.LateinischeEhrenbezeichnung"
                id="XHochschule.Baukasten.Codes.Code.LateinischeEhrenbezeichnung"
@@ -151,10 +124,7 @@
    <kosit:type name="Code.Leistungsstatus"
                id="XHochschule.Baukasten.Codes.Code.Leistungsstatus"
                prefix="xhs"/>
-   <kosit:type name="Code.Lernzeitmodell"
-               id="XHochschule.Baukasten.Codes.Code.Lernzeitmodell"
-               prefix="xhs"/>
-   <kosit:type name="Code.Namensart" prefix="xbd"/>
+   <kosit:type name="Code.Lernzeitmodell" prefix="xbd"/>
    <kosit:type name="Code.Regionalschluessel" prefix="xbd"/>
    <kosit:type name="Code.Staat" prefix="xbd"/>
    <kosit:type name="Code.Staatsangehoerigkeit" prefix="xbd"/>
@@ -168,6 +138,14 @@
       <kosit:property name="ausstellung/ort"/>
       <kosit:property name="ausstellung/ort/ort"/>
       <kosit:property name="ausstellung/ort/staat"/>
+      <kosit:property name="gueltigkeitsdatum"/>
+      <kosit:property name="nonce"/>
+      <kosit:property name="sprache"/>
+      <kosit:property name="titel"/>
+      <kosit:property name="titel/@lang"/>
+   </kosit:type>
+   <kosit:type name="Dokument" id="XHochschule.Baukasten.Dokument" prefix="xhs">
+      <kosit:property name="ausstellungsdatum"/>
       <kosit:property name="gueltigkeitsdatum"/>
       <kosit:property name="sprache"/>
       <kosit:property name="titel"/>
@@ -339,6 +317,8 @@
       <kosit:property name="id/gueltigkeit/ende"/>
       <kosit:property name="id/gueltigkeit/zusatz"/>
       <kosit:property name="id/beschreibung"/>
+      <kosit:property name="lehrendeOderPruefende"/>
+      <kosit:property name="lehrendeOderPruefende/@lang"/>
       <kosit:property name="leistung"/>
       <kosit:property name="leistungsart"/>
       <kosit:property name="leistungsart/nichtGelisteterWert"/>
@@ -356,7 +336,12 @@
       <kosit:property name="schluesselISCED2011"/>
       <kosit:property name="schluesselISCEDF2013"/>
       <kosit:property name="semesterDerLeistungserbringung"/>
-      <kosit:property name="semesterDerLeistungserbringung/@lang"/>
+      <kosit:property name="semesterDerLeistungserbringung/zeitraum"/>
+      <kosit:property name="semesterDerLeistungserbringung/zeitraum/beginn"/>
+      <kosit:property name="semesterDerLeistungserbringung/zeitraum/ende"/>
+      <kosit:property name="semesterDerLeistungserbringung/zeitraum/zusatz"/>
+      <kosit:property name="semesterDerLeistungserbringung/semesterbezeichnung"/>
+      <kosit:property name="semesterDerLeistungserbringung/semesterbezeichnung/@lang"/>
       <kosit:property name="sprache"/>
       <kosit:property name="unbedenklichkeitsvermerk"/>
       <kosit:property name="unbedenklichkeitsvermerk/@lang"/>

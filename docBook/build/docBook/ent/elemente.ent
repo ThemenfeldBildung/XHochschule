@@ -2,6 +2,14 @@
                         <!ENTITY element.datentyp.ref.allgemeinername.name 'Element <emphasis role="codebf">name</emphasis> in Datentyp <emphasis role="codebf">AllgemeinerName</emphasis>'>
                         <!ENTITY element.ref.allgemeinername.nichtvorhanden '<emphasis role="codebf">nichtVorhanden</emphasis>'>
                         <!ENTITY element.datentyp.ref.allgemeinername.nichtvorhanden 'Element <emphasis role="codebf">nichtVorhanden</emphasis> in Datentyp <emphasis role="codebf">AllgemeinerName</emphasis>'>
+                        <!ENTITY element.ref.dokument.ausstellungsdatum '<emphasis role="codebf">ausstellungsdatum</emphasis>'>
+                        <!ENTITY element.datentyp.ref.dokument.ausstellungsdatum 'Element <emphasis role="codebf">ausstellungsdatum</emphasis> in Datentyp <emphasis role="codebf">Dokument</emphasis>'>
+                        <!ENTITY element.ref.dokument.gueltigkeitsdatum '<emphasis role="codebf">gueltigkeitsdatum</emphasis>'>
+                        <!ENTITY element.datentyp.ref.dokument.gueltigkeitsdatum 'Element <emphasis role="codebf">gueltigkeitsdatum</emphasis> in Datentyp <emphasis role="codebf">Dokument</emphasis>'>
+                        <!ENTITY element.ref.dokument.sprache '<emphasis role="codebf">sprache</emphasis>'>
+                        <!ENTITY element.datentyp.ref.dokument.sprache 'Element <emphasis role="codebf">sprache</emphasis> in Datentyp <emphasis role="codebf">Dokument</emphasis>'>
+                        <!ENTITY element.ref.dokument.titel '<emphasis role="codebf">titel</emphasis>'>
+                        <!ENTITY element.datentyp.ref.dokument.titel 'Element <emphasis role="codebf">titel</emphasis> in Datentyp <emphasis role="codebf">Dokument</emphasis>'>
                         <!ENTITY element.ref.externerbrachteleistung.anerkanntoderangerechnet '<emphasis role="codebf">anerkanntOderAngerechnet</emphasis>'>
                         <!ENTITY element.datentyp.ref.externerbrachteleistung.anerkanntoderangerechnet 'Element <emphasis role="codebf">anerkanntOderAngerechnet</emphasis> in Datentyp <emphasis role="codebf">ExternErbrachteLeistung</emphasis>'>
                         <!ENTITY element.ref.externerbrachteleistung.einrichtungderleistungserbringung '<emphasis role="codebf">einrichtungDerLeistungserbringung</emphasis>'>
@@ -52,6 +60,8 @@
                         <!ENTITY element.datentyp.ref.leistung.faecherschluesseldestatis 'Element <emphasis role="codebf">faecherschluesselDESTATIS</emphasis> in Datentyp <emphasis role="codebf">Leistung</emphasis>'>
                         <!ENTITY element.ref.leistung.id '<emphasis role="codebf">id</emphasis>'>
                         <!ENTITY element.datentyp.ref.leistung.id 'Element <emphasis role="codebf">id</emphasis> in Datentyp <emphasis role="codebf">Leistung</emphasis>'>
+                        <!ENTITY element.ref.leistung.lehrendeoderpruefende '<emphasis role="codebf">lehrendeOderPruefende</emphasis>'>
+                        <!ENTITY element.datentyp.ref.leistung.lehrendeoderpruefende 'Element <emphasis role="codebf">lehrendeOderPruefende</emphasis> in Datentyp <emphasis role="codebf">Leistung</emphasis>'>
                         <!ENTITY element.ref.leistung.leistung '<emphasis role="codebf">leistung</emphasis>'>
                         <!ENTITY element.datentyp.ref.leistung.leistung 'Element <emphasis role="codebf">leistung</emphasis> in Datentyp <emphasis role="codebf">Leistung</emphasis>'>
                         <!ENTITY element.ref.leistung.leistungsart '<emphasis role="codebf">leistungsart</emphasis>'>

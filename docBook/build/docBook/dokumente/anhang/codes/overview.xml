@@ -20,5 +20,4 @@
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="code.leistungsbenotungsstatus.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude" href="code.leistungsstatus.xml"/>
-   <include xmlns="http://www.w3.org/2001/XInclude" href="code.lernzeitmodell.xml"/>
 </section>

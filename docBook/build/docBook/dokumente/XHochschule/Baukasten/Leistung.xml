@@ -16,7 +16,7 @@
          <imageobject>
             <imagedata format="svg"
                        align="center"
-                       scale="74"
+                       scale="71"
                        fileref="../../../zeichnungen/XHochschule/Baukasten/Leistung.svg"/>
          </imageobject>
       </mediaobject>
@@ -218,7 +218,8 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Art der Leistung wahlweise als Codelisten-Eintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisten-Eintrag vorliegt. Das "Modul" orientiert sich an den <link xlink:href="https://www.kmk.org/fileadmin/pdf/PresseUndAktuelles/2000/module.pdf"> Rahmenvorgaben der KMK. </link> Wenn "Modul" ausgewählt ist, besteht die Möglichkeit der Angabe einer "Modulbeschreibung nach KMK". </para></entry>
+               <entry namest="indent0" nameend="page"><para> Leistungsart ist eine zusätzliche Möglichkeit eine Leistung näher zu beschreiben. </para>
+<para>Art der Leistung wahlweise als Codelisten-Eintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisten-Eintrag vorliegt. Das "Modul" orientiert sich an den <link xlink:href="https://www.kmk.org/fileadmin/pdf/PresseUndAktuelles/2000/module.pdf"> Rahmenvorgaben der KMK. </link> Wenn "Modul" ausgewählt ist, besteht die Möglichkeit der Angabe einer "Modulbeschreibung nach KMK". </para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -325,7 +326,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Status der Leistung wahlweise als Codelisten-Eintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisten-Eintrag vorliegt. </para></entry>
+               <entry namest="indent0" nameend="page"><para>Status der Leistung (z.B. angemeldet, bestanden, endgültig nicht bestanden), wahlweise als Codelisten-Eintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisten-Eintrag vorliegt. Die Felder "Leistungsstatus", "Leistungsbenotungsstatus" und "Benotet" in Verbindung mit der optionalen Angabe einer Note erlauben eine Vielzahl von logischen Kombinationen (z.B. dass eine Leistung bestanden ist, eine finale Note aber noch nicht vorliegt).</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -385,7 +386,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Diese Codeliste gibt den Status einer Leistung in Bezug auf die Benotung an. Eine Note kann z.B. final, vorläufig, oder nicht vorhanden sein.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Diese Codeliste gibt den Status der Benotung an. Eine Note kann z.B. final, vorläufig, oder nicht vorhanden sein. Die Felder "Leistungsstatus", "Leistungsbenotungsstatus" und "Benotet" in Verbindung mit der optionalen Angabe einer Note erlauben eine Vielzahl von logischen Kombinationen (z.B. dass eine Leistung bestanden ist, eine finale Note aber noch nicht vorliegt).</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -447,7 +448,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angabe, ob eine Leistung benotet ist. Die Angabe 'true' gibt an, dass die Leistung benotet ist.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angabe, ob es sich um eine benotete oder unbenotete Leistung handelt. Die Angabe 'true' gibt an, dass die Leistung benotet ist.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -519,6 +520,26 @@
             </row>
             <row>
                <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">lehrendeOderPruefende</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Gibt die lehrende oder prüfende Person der Leistung an.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
                   <emphasis role="bold">datumDerLeistungserbringung</emphasis>
                </entry>
                <entry>
@@ -538,20 +559,21 @@
                   <emphasis role="bold">semesterDerLeistungserbringung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
+                  <emphasis role="codebf">Studienzeitraum</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XHochschule.Baukasten.Studienzeitraum" role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XHochschule.Baukasten.Studienzeitraum" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Semester in dem die Leistung erbracht wurde, z.B. "Wintersemester 2020/2021". Bei Leistungen, die über mehrere Semester hinweg erbracht wurden, ist das dasjenige Semester anzugeben, in dem die Leistung abgeschlossen wurde.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Semester, in dem die Leistung erbracht wurde. Die Angabe erfolgt auf Basis der Klasse Studienzeitraum. Dadurch kann ein Semester eindeutig durch ein konkretes Start- und Enddatum spezifiziert werden. Zudem kann über das Feld "semesterbezeichnung" ein Freitext angegeben werden, z.B. "Wintersemester 2020/2021". 
+Bei Leistungen, die über mehrere Semester hinweg erbracht wurden, ist nur das dasjenige Semester anzugeben, in dem die Leistung abgeschlossen wurde.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -656,7 +678,7 @@
             <tbody>
                <row>
                   <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;0&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;e&#x200B;S&#x200B;W&#x200B;S&#x200B;B&#x200B;e&#x200B;i&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;e&#x200B;n&#x200B;</entry>
-                  <entry>XHS-0020 Der Wert "UmfangInSWS" darf nicht angegeben werden, wenn der Inhalt des Codewertes von "leistungsart" mit "klausur" oder "pruefung" endet. Bei Prüfungen handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</entry>
+                  <entry>XHS-0020 Der Wert 'UmfangInSWS' darf nicht angegeben werden, wenn der Inhalt des Codewertes von 'leistungsart' mit 'klausur' oder 'pruefung' endet. Bei Prüfungenund Klausuren handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</entry>
                </row>
                <row>
                   <entry align="left">
@@ -766,39 +788,39 @@
                </row>
                <row>
                   <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;3&#x200B;1&#x200B;-&#x200B;f&#x200B;a&#x200B;e&#x200B;c&#x200B;h&#x200B;e&#x200B;r&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;e&#x200B;s&#x200B;s&#x200B;e&#x200B;l&#x200B;D&#x200B;E&#x200B;S&#x200B;T&#x200B;A&#x200B;T&#x200B;I&#x200B;S&#x200B;</entry>
-                  <entry>XHS-0031 Der Fächerschlüssel nach DESTATIS darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+                  <entry>XHS-0031 Der Fächerschlüssel nach Destatis darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesseDESTATIS) or not(exists(*:faecherschluesseDESTATIS))) else not(exists(*:faecherschluesseDESTATIS))</emphasis>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesselDESTATIS) or not(exists(*:faecherschluesselDESTATIS))) else not(exists(*:faecherschluesselDESTATIS))</emphasis>
                      </para>
                   </entry>
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">benotung/note</emphasis>
+                     <emphasis role="codebf">xhs:benotung/xbd:note</emphasis>
                   </entry>
                </row>
                <row>
                   <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;8&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;</entry>
-                  <entry>XHS-0018 Das Feld Note muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</entry>
+                  <entry>XHS-0018 Das Feld Note muss in dem Format 'Zahl,Komma,Zahl' angegeben werden. Ein Beispiel hierfür wäre '2,5'.</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">(matches(., '^\d+,\d+$'))</emphasis>
+                        <emphasis role="codebf">(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))$'))</emphasis>
                      </para>
                   </entry>
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">leistung</emphasis>
+                     <emphasis role="codebf">xhs:leistung</emphasis>
                   </entry>
                </row>
                <row>
                   <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;0&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;e&#x200B;S&#x200B;W&#x200B;S&#x200B;B&#x200B;e&#x200B;i&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;e&#x200B;n&#x200B;</entry>
-                  <entry>XHS-0020 Der Wert "UmfangInSWS" darf nicht angegeben werden, wenn der Inhalt des Codewertes von "leistungsart" mit "klausur" oder "pruefung" endet. Bei Prüfungen handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</entry>
+                  <entry>XHS-0020 Der Wert 'UmfangInSWS' darf nicht angegeben werden, wenn der Inhalt des Codewertes von 'leistungsart' mit 'klausur' oder 'pruefung' endet. Bei Prüfungenund Klausuren handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</entry>
                </row>
                <row>
                   <entry align="left">
@@ -908,18 +930,18 @@
                </row>
                <row>
                   <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;3&#x200B;1&#x200B;-&#x200B;f&#x200B;a&#x200B;e&#x200B;c&#x200B;h&#x200B;e&#x200B;r&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;e&#x200B;s&#x200B;s&#x200B;e&#x200B;l&#x200B;D&#x200B;E&#x200B;S&#x200B;T&#x200B;A&#x200B;T&#x200B;I&#x200B;S&#x200B;</entry>
-                  <entry>XHS-0031 Der Fächerschlüssel nach DESTATIS darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+                  <entry>XHS-0031 Der Fächerschlüssel nach Destatis darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesseDESTATIS) or not(exists(*:faecherschluesseDESTATIS))) else not(exists(*:faecherschluesseDESTATIS))</emphasis>
+                        <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesselDESTATIS) or not(exists(*:faecherschluesselDESTATIS))) else not(exists(*:faecherschluesselDESTATIS))</emphasis>
                      </para>
                   </entry>
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">leistungsart</emphasis>
+                     <emphasis role="codebf">xhs:leistungsart</emphasis>
                   </entry>
                </row>
                <row>
@@ -935,7 +957,7 @@
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">leistungsbenotungsstatus</emphasis>
+                     <emphasis role="codebf">xhs:leistungsbenotungsstatus</emphasis>
                   </entry>
                </row>
                <row>
@@ -951,7 +973,7 @@
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">leistungsstatus</emphasis>
+                     <emphasis role="codebf">xhs:leistungsstatus</emphasis>
                   </entry>
                </row>
                <row>

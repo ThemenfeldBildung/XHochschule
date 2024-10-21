@@ -4,6 +4,7 @@
     <info>
         <title>Klassen für den Datenaustausch</title>
     </info>
+    <include href="../../build/docBook/dokumente/XHochschule/Baukasten/Dokument.xml" xmlns="http://www.w3.org/2001/XInclude" />
     <include href="../../build/docBook/dokumente/XHochschule/Baukasten/ExternErbrachteLeistung.xml" xmlns="http://www.w3.org/2001/XInclude" />
     <include href="../../build/docBook/dokumente/XHochschule/Baukasten/Hochschule.xml" xmlns="http://www.w3.org/2001/XInclude" />
     <include href="../../build/docBook/dokumente/XHochschule/Baukasten/Leistung.xml" xmlns="http://www.w3.org/2001/XInclude" />

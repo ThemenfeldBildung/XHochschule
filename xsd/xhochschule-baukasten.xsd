@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/1.0/xsd"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-           xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-           targetNamespace="http://xhochschule.de/def/xhochschule/1.0/xsd"
-           version="1.0"
-           elementFormDefault="unqualified"
+           targetNamespace="http://xhochschule.de/def/xhochschule/1.1/xsd"
+           version="1.1"
+           elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
       <xs:appinfo>
@@ -18,7 +18,7 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>1.0</version>
+            <version>1.1</version>
             <versionXOEVProfil>3.0.1</versionXOEVProfil>
             <versionXOEVHandbuch>3.0.0</versionXOEVHandbuch>
             <versionXGenerator>3.1.1</versionXGenerator>
@@ -28,8 +28,8 @@
       </xs:appinfo>
    </xs:annotation>
    <xs:include schemaLocation="Kernkomponenten.xsd"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.0/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/1.0/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.1/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/1.1/xsd"/>
    <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
               namespace="http://xoev.de/schemata/code/1_0"/>
    <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
@@ -73,7 +73,9 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" type="xhs:AnerkanntOderAngerechnet-Codes"/>
+               <xs:element name="code"
+                           form="unqualified"
+                           type="xhs:AnerkanntOderAngerechnet-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -94,7 +96,7 @@
                <nameKurz>Beurlaubungsgrund</nameKurz>
                <nameTechnisch>Beurlaubungsgrund-Codes</nameTechnisch>
                <kennung>urn:xhochschule-de:destatis:codeliste:beurlaubungsgrund</kennung>
-               <beschreibung>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik, mit denen Hochschulen eindeutig identifiziert werden können. Der Beurlaubungsgrund ist aus dem Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik entnommen. Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von Statistik Nord bereitgestellt. Als Schlüssel wird der Eintrag (Ziffer zwischen 1 und 9) in der Spalte "Signatur" der Tabelle "Gründe der Beurlaubung" verwendet. Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. Zusammen mit dem Schlüssel muss die verwendete Version des Schlüsselverzeichnisses im XML-Element in dem Attribut listVersionID angegeben werden. Für Schlüssel aus dem Schlüsselverzeichnis "WS 2022/2023 und SS 2023" würde die Version wie folgt angegeben: listVersionID="WS_2022". Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI" an.</beschreibung>
+               <beschreibung>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik, mit denen Hochschulen eindeutig identifiziert werden können. Der Beurlaubungsgrund ist aus dem Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik entnommen. Diese wurde von Statistik Nord veröffentlicht. Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von Statistik Nord bereitgestellt. Als Schlüssel wird der Eintrag (Ziffer zwischen 1 und 9) in der Spalte "Signatur" der Tabelle "Gründe der Beurlaubung" auf dem Blatt 253 verwendet. Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI" an.</beschreibung>
                <herausgebernameLang>Statistisches Bundesamt</herausgebernameLang>
                <herausgebernameKurz>DESTATIS</herausgebernameKurz>
             </codeliste>
@@ -103,7 +105,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" type="xs:token"/>
+               <xs:element name="code" type="xs:token" form="unqualified"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -152,7 +154,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" type="xhs:Beurlaubungsstatus-Codes"/>
+               <xs:element name="code" form="unqualified" type="xhs:Beurlaubungsstatus-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -173,17 +175,16 @@
                <nameKurz>Faecherschluessel</nameKurz>
                <nameTechnisch>Faecherschluessel-Codes</nameTechnisch>
                <kennung>urn:xhochschule-de:destatis:codeliste:faecherschluessel</kennung>
-               <beschreibung>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten. Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von DESTATIS bereitgestellt. Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. In dem Dokument ist eine Erläuterung vermerkt zur Handhabung der Systematik der Fächergruppen und der Verschlüsselung der Studienfächer. Zusammen mit dem Schlüssel muss die verwendete Version des Schlüsselverzeichnisses im XML-Element in dem Attribut listVersionID angegeben werden. Für Schlüssel aus dem Schlüsselverzeichnis "WS 2022/2023 und SS 2023" würde die Version wie folgt angegeben: listVersionID="WS_2022". Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI" an.</beschreibung>
+               <beschreibung>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten. Die Codeliste wird von Statisitk Nord zur Verfügung gestellt. Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von Statistik Nord bereitgestellt. Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. In dem Dokument ist eine Erläuterung vermerkt zur Handhabung der Systematik der Fächergruppen und der Verschlüsselung der Studienfächer. Zu Finden sind die Fächerschlüssel ab Blatt 166 fortfolgende. Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI" an.</beschreibung>
                <herausgebernameLang>Statistisches Bundesamt</herausgebernameLang>
                <herausgebernameKurz>DESTATIS</herausgebernameKurz>
             </codeliste>
          </xs:appinfo>
-         <xs:documentation>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten. Zusammen mit dem Schlüssel muss die verwendete Version des Schlüsselverzeichnisses im XML-Element in dem Attribut listVersionID angegeben werden. Für Schlüssel aus dem Schlüsselverzeichnis "WS 2022/2023 und SS 2023" würde die Version wie folgt angegeben: listVersionID="WS_2022".</xs:documentation>
       </xs:annotation>
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" type="xs:token"/>
+               <xs:element name="code" type="xs:token" form="unqualified"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -201,7 +202,7 @@
                <nameKurz>Hochschulsignaturen</nameKurz>
                <nameTechnisch>Hochschulsignatur-Codes</nameTechnisch>
                <kennung>urn:xhochschule-de:destatis:codeliste:hochschulsignatur</kennung>
-               <beschreibung>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik, mit denen Hochschulen eindeutig identifiziert werden können. Die Hochschulsignatur ist aus dem Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik entnommen. Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von Statistik Nord bereitgestellt. Als Schlüssel wird der Eintrag "Signatur" aus der Tabelle "Hochschulen, numerisch" verwendet. Der Schlüssel muss als eine vierstellige Zeichenkette dargestellt werden. Zugelassen sind Zahlen und Großbuchstaben. Führende Nullen im Schlüssel müssen erhalten bleiben. Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. Zusammen mit dem Schlüssel muss die verwendete Version des Schlüsselverzeichnisses im XML-Element in dem Attribut listVersionID angegeben werden. Für Schlüssel aus dem Schlüsselverzeichnis "WS 2022/2023 und SS 2023" würde die Version wie folgt angegeben: listVersionID="WS_2022". Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI" an.</beschreibung>
+               <beschreibung>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik, mit denen Hochschulen eindeutig identifiziert werden können. Die Hochschulsignatur ist aus dem Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik entnommen. Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von Statistik Nord bereitgestellt. Als Schlüssel wird der Eintrag "Signatur" aus der Tabelle "Hochschulen, numerisch" verwendet. Der Schlüssel muss als eine vierstellige Zeichenkette dargestellt werden. Zugelassen sind Zahlen und Großbuchstaben. Führende Nullen im Schlüssel müssen erhalten bleiben. Die jeweiligen Schlüssel sind ab Blatt 41 fortfolgende zu finden. Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI" an.</beschreibung>
                <herausgebernameLang>Statistisches Bundesamt</herausgebernameLang>
                <herausgebernameKurz>DESTATIS</herausgebernameKurz>
             </codeliste>
@@ -210,7 +211,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" type="xs:token"/>
+               <xs:element name="code" type="xs:token" form="unqualified"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -259,7 +260,9 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" type="xhs:Immatrikulationsstatus-Codes"/>
+               <xs:element name="code"
+                           form="unqualified"
+                           type="xhs:Immatrikulationsstatus-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -318,7 +321,9 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" type="xhs:LateinischeEhrenbezeichnung-Codes"/>
+               <xs:element name="code"
+                           form="unqualified"
+                           type="xhs:LateinischeEhrenbezeichnung-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -370,7 +375,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" type="xhs:Leistungsart-Codes"/>
+               <xs:element name="code" form="unqualified" type="xhs:Leistungsart-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -422,7 +427,9 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" type="xhs:Leistungsbenotungsstatus-Codes"/>
+               <xs:element name="code"
+                           form="unqualified"
+                           type="xhs:Leistungsbenotungsstatus-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -474,7 +481,7 @@
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" type="xhs:Leistungsstatus-Codes"/>
+               <xs:element name="code" form="unqualified" type="xhs:Leistungsstatus-Codes"/>
             </xs:sequence>
             <xs:attribute name="listURI"
                           type="xs:anyURI"
@@ -487,64 +494,32 @@
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
-   <xs:complexType name="Code.Lernzeitmodell">
+   <xs:complexType name="Dokument">
       <xs:annotation>
-         <xs:appinfo>
-            <codeliste>
-               <nameLang>Lernzeitmodell</nameLang>
-               <nameKurz>Lernzeitmodell</nameKurz>
-               <nameTechnisch>Lernzeitmodell-Codes</nameTechnisch>
-               <kennung>urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell</kennung>
-               <beschreibung>Diese Codeliste enthält mögliche Ausprägungen von Lernzeitmodellen.</beschreibung>
-               <herausgebernameLang>XHochschule</herausgebernameLang>
-               <herausgebernameKurz>XHS</herausgebernameKurz>
-            </codeliste>
-            <versionCodeliste>
-               <version>1.0</version>
-               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
-            </versionCodeliste>
-            <codelistenspalten>
-               <code>
-                  <spaltennameLang>Code</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>true</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
-               </code>
-               <description-de-DE>
-                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </description-de-DE>
-               <mapping-Europass>
-                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </mapping-Europass>
-            </codelistenspalten>
-            <genutzteCodeSpalte>code</genutzteCodeSpalte>
-         </xs:appinfo>
-         <xs:documentation>Diese Codeliste enthält mögliche Ausprägungen von Lernzeitmodellen.</xs:documentation>
+         <xs:documentation>Die Klasse Dokument bildet die Grundlage für alle Bildungsnachweise und Bescheinigungen, die mit XHochschule als XML-Dateien für den Datenaustausch generiert werden. Die Klasse enthält allgemeine Eigenschaften von Dokumenten, die zum Zwecke generischerer Verarbeitung übergreifend modelliert wurden.</xs:documentation>
       </xs:annotation>
-      <xs:complexContent>
-         <xs:restriction base="xoev-code:Code">
-            <xs:sequence>
-               <xs:element name="code" type="xhs:Lernzeitmodell-Codes"/>
-            </xs:sequence>
-            <xs:attribute name="listURI"
-                          type="xs:anyURI"
-                          use="optional"
-                          fixed="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell"/>
-            <xs:attribute name="listVersionID"
-                          type="xs:normalizedString"
-                          use="optional"
-                          fixed="1.0"/>
-         </xs:restriction>
-      </xs:complexContent>
+      <xs:sequence>
+         <xs:element name="titel" type="xbd:String.Localized">
+            <xs:annotation>
+               <xs:documentation>Vollständiger Titel des Dokuments.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ausstellungsdatum" minOccurs="0" type="xs:date">
+            <xs:annotation>
+               <xs:documentation>Datum, an dem das Dokument ausgestellt wurde.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="gueltigkeitsdatum" minOccurs="0" type="xs:date">
+            <xs:annotation>
+               <xs:documentation>Datum, ab dem das Dokument gültig ist.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="sprache" type="xbd:Code.Language">
+            <xs:annotation>
+               <xs:documentation>Sprachkennzeichnung des Dokuments. Die Sprache eines Elements vom Typ xbd:String.Localized muss nur angegeben werden, wenn sie von der hier gewählten Sprache des Dokuments abweicht.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
    </xs:complexType>
    <xs:complexType name="ExternErbrachteLeistung">
       <xs:annotation>
@@ -646,7 +621,7 @@
          </xs:element>
          <xs:element name="leistungsart">
             <xs:annotation>
-               <xs:documentation>Art der Leistung wahlweise als Codelisten-Eintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisten-Eintrag vorliegt. Das "Modul" orientiert sich an den Rahmenvorgaben der KMK. Wenn "Modul" ausgewählt ist, besteht die Möglichkeit der Angabe einer "Modulbeschreibung nach KMK".</xs:documentation>
+               <xs:documentation>Leistungsart ist eine zusätzliche Möglichkeit eine Leistung näher zu beschreiben. Art der Leistung wahlweise als Codelisten-Eintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisten-Eintrag vorliegt. Das "Modul" orientiert sich an den Rahmenvorgaben der KMK. Wenn "Modul" ausgewählt ist, besteht die Möglichkeit der Angabe einer "Modulbeschreibung nach KMK".</xs:documentation>
             </xs:annotation>
             <xs:complexType>
                <xs:sequence>
@@ -668,7 +643,7 @@
          <xs:element name="id"
                      minOccurs="0"
                      type="xhs:Identifikation"
-                     form="unqualified">
+                     form="qualified">
             <xs:annotation>
                <xs:documentation>Die ID sichert die eindeutige Identifikation von Objekten in einem fachlichen Kontext. ID für eine Leistung, die von der ausstellenden Hochschule vergeben wird, dies kann z.B. eine Modulnummer oder eine Prüfungsnummer sein. Über "Beschreibung" in der Klasse Identifikation kann die Art der ID genauer bezeichnet werden.</xs:documentation>
             </xs:annotation>
@@ -680,7 +655,7 @@
          </xs:element>
          <xs:element name="leistungsstatus" minOccurs="0">
             <xs:annotation>
-               <xs:documentation>Status der Leistung wahlweise als Codelisten-Eintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisten-Eintrag vorliegt.</xs:documentation>
+               <xs:documentation>Status der Leistung (z.B. angemeldet, bestanden, endgültig nicht bestanden), wahlweise als Codelisten-Eintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisten-Eintrag vorliegt. Die Felder "Leistungsstatus", "Leistungsbenotungsstatus" und "Benotet" in Verbindung mit der optionalen Angabe einer Note erlauben eine Vielzahl von logischen Kombinationen (z.B. dass eine Leistung bestanden ist, eine finale Note aber noch nicht vorliegt).</xs:documentation>
             </xs:annotation>
             <xs:complexType>
                <xs:sequence>
@@ -701,7 +676,7 @@
          </xs:element>
          <xs:element name="leistungsbenotungsstatus" minOccurs="0">
             <xs:annotation>
-               <xs:documentation>Diese Codeliste gibt den Status einer Leistung in Bezug auf die Benotung an. Eine Note kann z.B. final, vorläufig, oder nicht vorhanden sein.</xs:documentation>
+               <xs:documentation>Diese Codeliste gibt den Status der Benotung an. Eine Note kann z.B. final, vorläufig, oder nicht vorhanden sein. Die Felder "Leistungsstatus", "Leistungsbenotungsstatus" und "Benotet" in Verbindung mit der optionalen Angabe einer Note erlauben eine Vielzahl von logischen Kombinationen (z.B. dass eine Leistung bestanden ist, eine finale Note aber noch nicht vorliegt).</xs:documentation>
             </xs:annotation>
             <xs:complexType>
                <xs:sequence>
@@ -722,7 +697,7 @@
          </xs:element>
          <xs:element name="benotet" type="xs:boolean">
             <xs:annotation>
-               <xs:documentation>Angabe, ob eine Leistung benotet ist. Die Angabe 'true' gibt an, dass die Leistung benotet ist.</xs:documentation>
+               <xs:documentation>Angabe, ob es sich um eine benotete oder unbenotete Leistung handelt. Die Angabe 'true' gibt an, dass die Leistung benotet ist.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="benotung" minOccurs="0" type="xbd:Benotung">
@@ -749,6 +724,13 @@
                <xs:documentation>Anzahl der absolvierten Versuche zur Erbringung einer Leistung, z.B. "3" für den dritten Versuch bei einer Klausur.</xs:documentation>
             </xs:annotation>
          </xs:element>
+         <xs:element name="lehrendeOderPruefende"
+                     minOccurs="0"
+                     type="xbd:String.Localized">
+            <xs:annotation>
+               <xs:documentation>Gibt die lehrende oder prüfende Person der Leistung an.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
          <xs:element name="datumDerLeistungserbringung" minOccurs="0" type="xs:date">
             <xs:annotation>
                <xs:documentation>Gibt das Datum des Abschließens einer Leistung an, z.B. das Datum des Bestehens einer Prüfung.</xs:documentation>
@@ -756,9 +738,9 @@
          </xs:element>
          <xs:element name="semesterDerLeistungserbringung"
                      minOccurs="0"
-                     type="xbd:String.Localized">
+                     type="xhs:Studienzeitraum">
             <xs:annotation>
-               <xs:documentation>Semester in dem die Leistung erbracht wurde, z.B. "Wintersemester 2020/2021". Bei Leistungen, die über mehrere Semester hinweg erbracht wurden, ist das dasjenige Semester anzugeben, in dem die Leistung abgeschlossen wurde.</xs:documentation>
+               <xs:documentation>Semester, in dem die Leistung erbracht wurde. Die Angabe erfolgt auf Basis der Klasse Studienzeitraum. Dadurch kann ein Semester eindeutig durch ein konkretes Start- und Enddatum spezifiziert werden. Zudem kann über das Feld "semesterbezeichnung" ein Freitext angegeben werden, z.B. "Wintersemester 2020/2021". Bei Leistungen, die über mehrere Semester hinweg erbracht wurden, ist nur das dasjenige Semester anzugeben, in dem die Leistung abgeschlossen wurde.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="sprache"
@@ -960,7 +942,7 @@
             </xs:annotation>
             <xs:complexType>
                <xs:sequence>
-                  <xs:element name="code" type="xhs:Code.Lernzeitmodell">
+                  <xs:element name="code" type="xbd:Code.Lernzeitmodell">
                      <xs:annotation>
                         <xs:documentation>Mit Lernzeitmodell sei hier unter anderem die Unterscheidung zwischen Teil- und Vollzeit gemeint.</xs:documentation>
                      </xs:annotation>
@@ -1025,7 +1007,7 @@
          <xs:documentation>Ein Studienabschnitt ist ein zeitlich, fachlich, und verwaltungstechnisch abgegrenzter Teil eines Studiums. Diese Klasse wird verwendet, wenn eingeschränkte Angaben über einen Studienabschnitt ausreichend sind.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="zeitraum" type="xbd:Zeitraum">
+         <xs:element name="zeitraum" type="xhs:Zeitraum">
             <xs:annotation>
                <xs:documentation>Angaben zur zeitlichen Einteilung eines Studienabschnitts</xs:documentation>
             </xs:annotation>
@@ -1041,7 +1023,7 @@
             </xs:annotation>
             <xs:complexType>
                <xs:sequence>
-                  <xs:element name="code" type="xhs:Code.Lernzeitmodell">
+                  <xs:element name="code" type="xbd:Code.Lernzeitmodell">
                      <xs:annotation>
                         <xs:documentation>Mit Lernzeitmodell sei hier unter anderem die Unterscheidung zwischen Teil- und Vollzeit gemeint.</xs:documentation>
                      </xs:annotation>
@@ -1114,7 +1096,7 @@
          <xs:documentation>Der Zeitraum eines Studienabschnitts wird hier mit spezifischen Angaben beschrieben.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="zeitraum" type="xbd:Zeitraum">
+         <xs:element name="zeitraum" type="xhs:Zeitraum">
             <xs:annotation>
                <xs:documentation>Beginn und Ende eines Studienzeitraums.</xs:documentation>
             </xs:annotation>
@@ -1179,7 +1161,7 @@
                <xs:documentation>Der Inhaltstyp gibt an, ob es sich bei dem zu verifizierenden Dokument beispielsweise um ein "PDF" oder "XML" Dokument handelt.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="gueltigkeit" minOccurs="0" type="xbd:Zeitraum">
+         <xs:element name="gueltigkeit" minOccurs="0" type="xhs:Zeitraum">
             <xs:annotation>
                <xs:documentation>Angabe des Gültigkeitzeitraums für die Verifikation des Dokuments. Das End-Datum gibt an, bis wann die Verifikation auf jeden Fall möglich ist. Dieses Datum sollte sich möglichst an der Lebenszeit des Dokuments orientieren.</xs:documentation>
             </xs:annotation>
@@ -1899,96 +1881,6 @@
             </xs:annotation>
          </xs:enumeration>
          <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/~wert_nicht_in_liste">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Wert nicht in Liste</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType name="Lernzeitmodell-Codes">
-      <xs:annotation>
-         <xs:appinfo>
-            <codeliste>
-               <nameLang>Lernzeitmodell</nameLang>
-               <nameKurz>Lernzeitmodell</nameKurz>
-               <nameTechnisch>Lernzeitmodell-Codes</nameTechnisch>
-               <kennung>urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell</kennung>
-               <beschreibung>Diese Codeliste enthält mögliche Ausprägungen von Lernzeitmodellen.</beschreibung>
-               <herausgebernameLang>XHochschule</herausgebernameLang>
-               <herausgebernameKurz>XHS</herausgebernameKurz>
-            </codeliste>
-            <versionCodeliste>
-               <version>1.0</version>
-               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
-            </versionCodeliste>
-            <codelistenspalten>
-               <code>
-                  <spaltennameLang>Code</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>true</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
-               </code>
-               <description-de-DE>
-                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </description-de-DE>
-               <mapping-Europass>
-                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </mapping-Europass>
-            </codelistenspalten>
-         </xs:appinfo>
-      </xs:annotation>
-      <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/dual-ausbildungsintegriert">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Dual (ausbildungsintegriert)</description-de-DE>
-                  <mapping-Europass>tbd</mapping-Europass>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/dual-praxisintegriert">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Dual (praxisintegriert)</description-de-DE>
-                  <mapping-Europass>tbd</mapping-Europass>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/teilzeit">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Teilzeit</description-de-DE>
-                  <mapping-Europass>http://data.europa.eu/snb/learning-schedule/f230bae523</mapping-Europass>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/vollzeit">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Vollzeit</description-de-DE>
-                  <mapping-Europass>http://data.europa.eu/snb/learning-schedule/72a0ab92fa</mapping-Europass>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/~wert_nicht_bekannt">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Wert nicht bekannt</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>

@@ -44,7 +44,7 @@
          ry="1"
          style="stroke: grey;fill: white;"/>
    <text font-size="14" x="3.6" y="18" font-weight="bold">element rentenbescheinigung (anonymous type)</text>
-   <text font-size="12" x="3.6" y="34.8"> (extension of xbd:Dokument)</text>
+   <text font-size="12" x="3.6" y="34.8"> (extension of xhs:Dokument)</text>
    <g transform="translate(10,46)">
       <g transform="translate(55,0)">
          <rect width="176.83124999999998" height="18" class="element-upper"/>

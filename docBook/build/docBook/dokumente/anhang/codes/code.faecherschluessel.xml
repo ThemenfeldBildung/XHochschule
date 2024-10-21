@@ -8,12 +8,8 @@
          xml:id="XHochschule.Baukasten.Codes.Code.Faecherschluessel"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.Faecherschluessel</title><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für
-Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten.</para>
-<para>Zusammen mit dem Schlüssel muss die verwendete Version des Schlüsselverzeichnisses
-im XML-Element in dem Attribut listVersionID angegeben werden. Für Schlüssel aus dem
-Schlüsselverzeichnis "WS 2022/2023 und SS 2023" würde die Version wie folgt angegeben:
-listVersionID="WS_2022".</para><informaltable>
+   <title>Code.Faecherschluessel</title>
+   <informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
          <colspec colnum="2" colname="val" colwidth="138mm"/>
@@ -27,14 +23,14 @@ listVersionID="WS_2022".</para><informaltable>
             <row>
                <entry>-beschreibung</entry>
                <entry><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für
-Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten.</para>
-<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.destatis.de/DE/Methoden/Klassifikationen/Bildung/studenten-pruefungsstatistik.html">DESTATIS</link> bereitgestellt.</para>
+Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten. Die Codeliste wird von Statisitk Nord zur Verfügung gestellt.</para>
+
+<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/fileadmin/Dokumente/Erhebungen/Hochschulstatistiken/1_Studenten_2_Pr%C3%BCfungen/Schluesselverzeichnis_WS_2024.pdf">Statistik Nord</link> bereitgestellt.</para>
+
 <para>Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. </para>
-<para>In dem Dokument ist eine Erläuterung vermerkt zur Handhabung der Systematik der Fächergruppen und der Verschlüsselung der Studienfächer. </para>
-<para>Zusammen mit dem Schlüssel muss die verwendete Version des Schlüsselverzeichnisses
-im XML-Element in dem Attribut listVersionID angegeben werden. Für Schlüssel aus dem
-Schlüsselverzeichnis "WS 2022/2023 und SS 2023" würde die Version wie folgt angegeben:
-listVersionID="WS_2022".</para>
+
+<para>In dem Dokument ist eine Erläuterung vermerkt zur Handhabung der Systematik der Fächergruppen und der Verschlüsselung der Studienfächer. Zu Finden sind die Fächerschlüssel ab Blatt 166 fortfolgende.</para>
+
 <para>Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI"  an.
 </para></entry>
             </row>

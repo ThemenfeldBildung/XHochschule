@@ -1,4 +1,4 @@
-Aktuelle Version: XHochschule 1.0 / Rückmeldungen werden bis 30.06.2024 entgegengenommen
+Aktuelle Version: XHochschule 1.1 / Rückmeldungen werden bis 13.12.2024 entgegengenommen
 
 
 # XHochschule
