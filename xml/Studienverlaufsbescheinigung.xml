@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Studienverlaufsbescheinigung nach XHochschule Version 1.1 . Nichtnormative Beispielinstanz für eine Studienverlaufsbescheinigung.
+    Version: XHochschule 1.1 
+    Letzte Aktualisierung: 15.10.2024
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt"
+-->
+<xhs:studienverlaufsbescheinigung xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
+ xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+ xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+ xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+ xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.1/xsd file:http://xhochschule.de/def/xhochschule/1.1/xsd">
+    <xhs:titel xml:lang="de-DE">Studienverlaufsbescheinigung</xhs:titel>
+    <xhs:ausstellungsdatum>2022-06-15</xhs:ausstellungsdatum>
+    <xhs:gueltigkeitsdatum>2022-06-15</xhs:gueltigkeitsdatum>
+    <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20240925-0">
+        <code>https://publications.europa.eu/resource/dataset/language/DEU</code>
+    </xhs:sprache>
+    <!-- Angaben zum Inhaber des Dokumentes -->
+    <xhs:studierender>
+        <xhs:nameNatuerlichePerson>
+            <xhs:familienname>
+                <xhs:name>Musterfrau</xhs:name>
+            </xhs:familienname>
+            <xhs:vorname>
+                <xhs:name>Erika</xhs:name>
+            </xhs:vorname>
+        </xhs:nameNatuerlichePerson>
+        <xhs:geburt>
+            <xhs:datum>
+                <xbd:jahrMonat>2008-09</xbd:jahrMonat>
+            </xhs:datum>
+            <xhs:geburtsort>
+                <xbd:ort>Musterstadt</xbd:ort>
+                <xbd:staat listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit" listVersionID="listVersionID1">
+                    <code>000</code>
+                    <name>Bundesrepublik Deutschland</name>
+                </xbd:staat>
+            </xhs:geburtsort>
+        </xhs:geburt>
+        <xhs:matrikelnummer>
+            <xhs:id>123456789</xhs:id>
+            <xhs:gueltigkeit>
+                <xhs:beginn>2022-05-04</xhs:beginn>
+            </xhs:gueltigkeit>
+            <xhs:beschreibung>Matrikelnummer</xhs:beschreibung>
+        </xhs:matrikelnummer>
+        <xhs:ersteinschreibung>2022-05-04</xhs:ersteinschreibung>
+        <xhs:hochschulsemester>4</xhs:hochschulsemester>
+        <xhs:urlaubssemester>0</xhs:urlaubssemester>
+    </xhs:studierender>
+    <!-- Angaben zur ausstellenden Hochschule -->
+    <xhs:ausstellendeHochschule>
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID2">
+            <code>7312</code>
+        </xhs:hochschulsignatur>
+        <xhs:name xml:lang="de-DE">Hochschule für angewandte Wissenschaften Weihenstephan-Triesdorf in Triesdorf (FH)</xhs:name>
+    </xhs:ausstellendeHochschule>
+    <!--Das Element "Studienabschnitt" besitzt 2 Unterklassen 1. "zusammenfassung" und 2. "aufzaehlung" (siehe XHS Spezifikation)-->
+    <xhs:studienabschnitt>
+        <xhs:zusammenfassung>
+            <xhs:zeitraum>
+                <xhs:beginn>2022-05-04</xhs:beginn>
+            </xhs:zeitraum>
+            <xhs:studienfach>
+                <xhs:name xml:lang="de-DE">Physik</xhs:name>
+                <xhs:angestrebterAbschluss xml:lang="de-DE">Bachelor of Science</xhs:angestrebterAbschluss>
+                <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
+                    <code>6</code>
+                </xhs:schluesselISCED2011>
+                <xhs:schluesselISCEDF2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="20240110-0">
+                    <code>6</code>
+                </xhs:schluesselISCEDF2013>
+                <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
+                    <code>6</code>
+                </xhs:schluesselEQF>
+                <xhs:fachsemester>4</xhs:fachsemester>
+                <xhs:unbedenklichkeitsvermerk xml:lang="de-DE">-- Hier kann ein Unbedenklichkeitsvermerk eingetragen werden --</xhs:unbedenklichkeitsvermerk>
+            </xhs:studienfach>
+            <xhs:lernzeitmodell>
+                <xhs:code>
+                    <code>http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/dual-ausbildungsintegriert</code>
+                </xhs:code>
+            </xhs:lernzeitmodell>
+            <xhs:regelstudienzeit>0</xhs:regelstudienzeit>
+        </xhs:zusammenfassung>
+    </xhs:studienabschnitt>
+    <xhs:verifikation>
+        <xhs:schluessel>LFBEBDSZW</xhs:schluessel>
+        <xhs:adresse>www.musterhochschule.de/verify</xhs:adresse>
+        <xhs:inhaltstyp>PDF</xhs:inhaltstyp>
+        <xhs:gueltigkeit>
+            <xhs:beginn>2006-05-04</xhs:beginn>
+            <xhs:ende>2006-05-04</xhs:ende>
+        </xhs:gueltigkeit>
+    </xhs:verifikation>
+</xhs:studienverlaufsbescheinigung>

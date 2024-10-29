@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Immatrikulationsbescheinigung nach XHochschule Version 1.1. Nichtnormative Beispielinstanz für eine Immatrikulationsbescheinigung.
+    Immatrikulationsbescheinigung nach § 9 BAföG nach XHochschule Version 1.1. Nichtnormative Beispielinstanz für eine Immatrikulationsbescheinigung nach § 9 BAfÖG.
     Version: XHochschule 1.1 
     Letzte Aktualisierung: 15.10.2024
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt"
 -->
-<xhs:immatrikulationsbescheinigung xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+<xhs:immatrikulationsbescheinigungBAfoeGP9 xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
  xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+ xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
  xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
- xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.1/xsd/xhochschule.xsd">
-    <xhs:titel xml:lang="de-DE">Immatrikulationsbescheinigung</xhs:titel>
+    <xhs:titel xml:lang="de-DE">Immatrikulationsbescheinigung nach § 9 BAföG</xhs:titel>
     <xhs:ausstellungsdatum>2024-10-21</xhs:ausstellungsdatum>
-    <xhs:gueltigkeitsdatum>2006-05-04</xhs:gueltigkeitsdatum>
+    <xhs:gueltigkeitsdatum>2025-03-31</xhs:gueltigkeitsdatum>
     <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20240925-0">
         <code>http://publications.europa.eu/resource/authority/language/DEU</code>
     </xhs:sprache>
     <xhs:ausstellendeHochschule>
         <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="Version WS22">
-            <code>http://xhochschule.de/def/destatis/WS22/code/hochschulsignatur/7312</code>
+            <code>7312</code>
         </xhs:hochschulsignatur>
         <xhs:name xml:lang="de-DE">Hochschule für angewandte Wissenschaften Weihenstephan-Triesdorf in Triesdorf (FH)</xhs:name>
     </xhs:ausstellendeHochschule>
-   <!-- Angaben zur studierenden Peron --> 
+    <!-- Angaben zum Inhaber des Dokumentes -->
     <xhs:studierender>
-        <xhs:nameNatuerlichePerson>
+        <xhs:name>
             <xhs:familienname>
-                <xhs:name>Mustermann</xhs:name>
+                <xhs:name>Musterfrau</xhs:name>
             </xhs:familienname>
             <xhs:vorname>
                 <xhs:name>Erika</xhs:name>
             </xhs:vorname>
-        </xhs:nameNatuerlichePerson>
+        </xhs:name>
         <xhs:geburt>
             <xhs:datum>
-                <xbd:jahrMonat>2006-05</xbd:jahrMonat>
+                <xbd:jahr>2006</xbd:jahr>
             </xhs:datum>
             <xhs:geburtsort>
                 <xbd:ort>Musterstadt</xbd:ort>
@@ -46,38 +46,9 @@
                 </xbd:staat>
             </xhs:geburtsort>
         </xhs:geburt>
-        <xhs:identifikationsnummer>
-            <xhs:id>1234567890</xhs:id>
-            <xhs:gueltigkeit>
-                <xhs:beginn>2006-05-04</xhs:beginn>
-                <xhs:ende>2026-05-04</xhs:ende>
-            </xhs:gueltigkeit>
-            <xhs:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuerID)</xhs:beschreibung>
-        </xhs:identifikationsnummer>
-        <xhs:identifikationsnummer>
-            <xhs:id>99-999-999-999</xhs:id>
-            <xhs:gueltigkeit>
-                <xhs:beginn>2006-05-04</xhs:beginn>
-                <xhs:ende>2026-09-13</xhs:ende>
-            </xhs:gueltigkeit>
-            <xhs:beschreibung>OZG-Landeskonto-ID der studierenden Person</xhs:beschreibung>
-        </xhs:identifikationsnummer>
-        <xhs:identifikationsnummer>
-            <xhs:id>urn:schac:personalUniqueCode:int:esi:de:99-999-999-999</xhs:id>
-            <xhs:gueltigkeit>
-                <xhs:beginn>2021-05-04</xhs:beginn>
-                <xhs:ende>2028-03-21</xhs:ende>
-            </xhs:gueltigkeit>
-            <xhs:beschreibung>European Student Identifier der studierenden Person</xhs:beschreibung>
-        </xhs:identifikationsnummer>
-        <xhs:matrikelnummer>
-            <xhs:id>123456789</xhs:id>
-            <xhs:beschreibung>>Matrikelnummer</xhs:beschreibung>
-        </xhs:matrikelnummer>
-        <xhs:ersteinschreibung>2022-10-01</xhs:ersteinschreibung>
-        <xhs:hochschulsemester>4</xhs:hochschulsemester>
-        <xhs:urlaubssemester>0</xhs:urlaubssemester>
+        <xhs:ersteinschreibung>2022-09-04</xhs:ersteinschreibung>
     </xhs:studierender>
+    <!-- Angaben zum Studienfach --> 
     <xhs:studienfach>
         <xhs:name xml:lang="de-DE">Klimaschutz und Klimaanpassung</xhs:name>
         <xhs:angestrebterAbschluss xml:lang="de-DE">Bachelor of Science (B. Sc.)</xhs:angestrebterAbschluss>
@@ -100,8 +71,8 @@
     </xhs:lernzeitmodell>
     <xhs:studienzeitraum>
         <xhs:zeitraum>
-            <xhs:beginn>2024-04-01</xhs:beginn>
-            <xhs:ende>2025-03-31</xhs:ende>
+            <xhs:beginn>2022-10-01</xhs:beginn>
+            <xhs:ende>2024-03-31</xhs:ende>
         </xhs:zeitraum>
         <xhs:semesterbezeichnung xml:lang="de-DE">Wintersemester 2024/2025</xhs:semesterbezeichnung>
     </xhs:studienzeitraum>
@@ -116,11 +87,11 @@
         </xhs:code>
     </xhs:beurlaubungsstatus>
     <xhs:verifikation>
-        <xhs:schluessel>OBIBZCRXR</xhs:schluessel>
-        <xhs:adresse>https://verify.hs.weihenstephan-triesdorf/PASSWORD_XML/</xhs:adresse>
-        <xhs:inhaltstyp>XML</xhs:inhaltstyp>
+        <xhs:schluessel>HODTCKBL</xhs:schluessel>
+        <xhs:adresse>https://verify.hs.weihenstephan-triesdorf/PASSWORD_PDF</xhs:adresse>
+        <xhs:inhaltstyp>PDF</xhs:inhaltstyp>
         <xhs:gueltigkeit>
-            <xhs:beginn>2024-10-01</xhs:beginn>
+            <xhs:beginn>2024-10-21</xhs:beginn>
         </xhs:gueltigkeit>
-    </xhs:verifikation> 
-</xhs:immatrikulationsbescheinigung>
+    </xhs:verifikation>
+</xhs:immatrikulationsbescheinigungBAfoeGP9>

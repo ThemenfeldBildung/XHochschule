@@ -1,126 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Hochschulabschlusszeugnis nach XHochschule Version 1.0 . Nichtnormative Beispielinstanz.
-    Version: XHochschule 1.0 
-    Letzte Aktualisierung: 01.07.2024
+<!-- Hochschulabschlusszeugnis nach XHochschule Version 1.1 . Nichtnormative Beispielinstanz.
+    Version: XHochschule 1.1 
+    Letzte Aktualisierung: 15.10.2024
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
-<xhs:hochschulabschlusszeugnis xmlns:xhs="http://xhochschule.de/def/xhochschule/1.0/xsd"
- xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
- xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
- xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
- xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+<xhs:hochschulabschlusszeugnis xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+ xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+ xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
+ xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.0/xsd">
-    <titel>Hochschulabschlusszeugnis</titel>
-    <ausstellung>
-        <datum>2024-02-01</datum>
-        <!--<ort>
-            <ort>ort0</ort>
-            <staat listVersionID="listVersionID0">
-                <code>code0</code>
-                <name>name0</name>
-            </staat>
-        </ort>-->
-        <!-- Gemäß SCH-XHS-0007 darf auf einem Hochschulabschlusszeugnis kein Ausstellungsort angegeben werden. -->   
-    </ausstellung>
-    <gueltigkeitsdatum>2024-02-01</gueltigkeitsdatum>
-    <sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20231213-0">
-        <code xmlns="">https://publications.europa.eu/resource/authority/language/DEU</code>
-    </sprache>
-    <!-- titel, ausstellung, gueltigkeitsdatum und sprache werden aus XBildung geerbt (Klasse Dokument) -->
+ xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.1/xsd/xhochschule.xsd">
     
+    <xhs:titel xml:lang="de-DE">Hochschulabschlusszeugnis</xhs:titel>
+    <xhs:ausstellungsdatum>2024-02-01</xhs:ausstellungsdatum>
+    <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20240925-0">
+        <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+    </xhs:sprache>
     <!-- Angaben zur studierenden Person -->
-    <studierender>
-        <nameNatuerlichePerson>
-            <familienname>
-                <name>Musterfrau</name>
-            </familienname>
-            <vorname>
-                <name>Erika</name>
-            </vorname>
-        </nameNatuerlichePerson>
-        <geburt>
-            <datum>
-                <jahrMonatTag>1994-04-16</jahrMonatTag>
-            </datum>
-        </geburt>
-        <matrikelnummer>
-            <id>123456789</id>
-        </matrikelnummer>
-        <ersteinschreibung>2012-09-01</ersteinschreibung>
-        <hochschulsemester>12</hochschulsemester>
-        <urlaubssemester>1</urlaubssemester>
-    </studierender>
-    
+    <xhs:studierender>
+        <xhs:nameNatuerlichePerson>
+            <xhs:familienname>
+                <xhs:name>Musterfrau</xhs:name>
+            </xhs:familienname>
+            <xhs:vorname>
+                <xhs:nichtVorhanden>false</xhs:nichtVorhanden>
+            </xhs:vorname>
+        </xhs:nameNatuerlichePerson>
+        <xhs:geburt>
+            <xhs:datum>
+                <xbd:jahr>1994</xbd:jahr>
+            </xhs:datum>
+            <xhs:geburtsort>
+                <xbd:ort>Berlin</xbd:ort>
+                <xbd:staat listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit" listVersionID="listVersionID1">
+                    <code>000</code>
+                    <name>Bundesrepublik Deutschland</name>
+                </xbd:staat>
+            </xhs:geburtsort>
+        </xhs:geburt>
+        <xhs:identifikationsnummer>
+            <xhs:id>86095742719</xhs:id>
+            <xhs:gueltigkeit>
+                <xhs:beginn>2006-05-04</xhs:beginn>
+                <xhs:ende>2006-05-04</xhs:ende>
+            </xhs:gueltigkeit>
+            <xhs:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuernID)</xhs:beschreibung>
+        </xhs:identifikationsnummer>
+        <xhs:matrikelnummer>
+            <xhs:id>123456789</xhs:id>
+            <xhs:gueltigkeit>
+                <xhs:beginn>2020-10-01</xhs:beginn>
+                <xhs:ende>2024-05-04</xhs:ende>
+            </xhs:gueltigkeit>
+            <xhs:beschreibung>Matrikelnummer</xhs:beschreibung>
+        </xhs:matrikelnummer>
+        <xhs:ersteinschreibung>2020-10-01</xhs:ersteinschreibung>
+        <xhs:hochschulsemester>7</xhs:hochschulsemester>
+        <xhs:urlaubssemester>0</xhs:urlaubssemester>
+    </xhs:studierender>
+   
     <!-- Angaben zur ausstellenden Hochschule -->
-    <ausstellendeHochschule>
-        <hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID33">
+    <xhs:ausstellendeHochschule>
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID2">
             <!-- Hier den DESTATIS-Code der ausstellenden Hochschule eintragen -->
             <code>Code X</code>
-        </hochschulsignatur>
-        <name xml:lang="de-DE">Technische Universität Musterstadt</name>
-    </ausstellendeHochschule>
-    
-    <datumDesErwerbs>2024-01-30</datumDesErwerbs>
+        </xhs:hochschulsignatur>
+        <xhs:name xml:lang="de-DE">Technische Universität Musterstadt</xhs:name>
+    </xhs:ausstellendeHochschule>
+    <xhs:datumDesErwerbs>2024-01-30</xhs:datumDesErwerbs>
     
     <!-- ab hier folgt die Leistungsdarstellung. 'leistung' wird einmal eingebunden, um das Studienfach oder den Studiengang zu beschreiben, und einmal für die Beschreibung der Abschlussarbeit. -->
     
-    
-    <leistung>
-        <bezeichnung>Physiklalische Technologien</bezeichnung>
-        <angestrebterAbschluss>Master of Science</angestrebterAbschluss>
-       <leistungsart>
-            <code>
+    <xhs:leistung>
+        <xhs:bezeichnung xml:lang="de-DE">Physikalische Technologien</xhs:bezeichnung>
+        <xhs:leistungsart>
+            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart" listVersionID="1.0">
                 <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studienfach</code>
-            </code>
-       </leistungsart>
-       <leistungsbenotungsstatus>
-            <code>
+            </xhs:code>
+        </xhs:leistungsart>   
+        <xhs:leistungsbenotungsstatus>
+            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus" listVersionID="1.0">
                 <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
-            </code>
-        </leistungsbenotungsstatus>
-        <benotet>1</benotet>
-        <benotung>
-            <note>1,6</note>
-            <wortbezeichnung>gut</wortbezeichnung>
-        </benotung>
-    </leistung>
-    <leistung>
-        <bezeichnung>Masterarbeit</bezeichnung>
-        <leistungsart>
-            <code>
+            </xhs:code>
+        </xhs:leistungsbenotungsstatus>
+        <xhs:benotet>1</xhs:benotet>
+        <xhs:benotung>
+            <xbd:note>1,6</xbd:note>
+            <xbd:wortbezeichnung xml:lang="de-DE">gut</xbd:wortbezeichnung>
+            <xbd:bewertungsschemaNote>
+                <xbd:schemaURI>https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/2003/2003_10_10-Laendergemeinsame-Strukturvorgaben.pdf/</xbd:schemaURI>
+                <xbd:beschreibung xml:lang="de-DE">Abbildung des deutschen Notensystems für Bachelor- und Masterstudiengänge/xbd:beschreibung</xbd:beschreibung>
+                <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
+            </xbd:bewertungsschemaNote>
+        </xhs:benotung>
+    </xhs:leistung>
+    <xhs:leistung>
+        <xhs:bezeichnung xml:lang="de-DE">Masterarbeit</xhs:bezeichnung>
+        <xhs:leistungsart>
+            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart" listVersionID="1.0">
                 <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/masterarbeit</code>
-            </code>
-        </leistungsart>
-        <beschreibung>
-            <beschreibung>Referenzuntersuchungen zur Oberflächendesoxidation rostfreier Stähle beim Vakuumlöten</beschreibung>
-        </beschreibung>
-        <leistungsbenotungsstatus>
-            <code>
+            </xhs:code>
+        </xhs:leistungsart>
+        <xhs:beschreibung>
+            <xhs:beschreibung>Referenzuntersuchungen zur Oberflächendesoxidation rostfreier Stähle beim Vakuumlöten</xhs:beschreibung>
+        </xhs:beschreibung>
+        <xhs:leistungsbenotungsstatus>
+            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus" listVersionID="1.0">
                 <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
-            </code>
-        </leistungsbenotungsstatus>
-        <benotet>1</benotet>
-        <benotung>
-            <note>1,3</note>
-            <wortbezeichnung>sehr gut</wortbezeichnung>
-        </benotung>
-    </leistung>
-    
-    <benotung>
-        <gesamtnote>
-            <note>1,6</note>
-            <wortbezeichnung>gut</wortbezeichnung>
-        </gesamtnote>
-        <lateinischeEhrenbezeichnung>
-            <code>
-                <code>http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/magna_cum_laude</code>
-            </code>
-        </lateinischeEhrenbezeichnung>
-    </benotung>
-  
-    
-    
-    
-    
+            </xhs:code>
+        </xhs:leistungsbenotungsstatus>
+        <xhs:benotet>true</xhs:benotet>
+        <xhs:benotung>
+                <xbd:note>1,5</xbd:note>
+        </xhs:benotung>
+    </xhs:leistung> 
+    <xhs:benotung>
+        <xhs:gesamtnote>
+            <xbd:note>1,5</xbd:note>
+        </xhs:gesamtnote>
+    </xhs:benotung>
 </xhs:hochschulabschlusszeugnis>
