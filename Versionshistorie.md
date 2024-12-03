@@ -1,6 +1,7 @@
 # XHochschule - Versionshistorie
 
-## Pre-Release Version 1.1 - Veröffentlichungsdatum: 21.10.2024
+## Pre-Release Version 1.1
+Veröffentlichungsdatum: 21.10.2024
 
 ### 1. Strukturelle Änderungen
 #### 1.1 Codelisten
