@@ -129,7 +129,7 @@ Die Spezifikation wurde umfassend überarbeitet im Hinblick auf die allgemeine V
 <!-- TOC --><a name="version-095"></a>
 # Version 0.95
 
-**Veröffentlichungsdatum:** 1. Februar 2024
+**Veröffentlichungsdatum:** 30.08.2023
 
 ## 1. Einheitliches Vorgehen für String-basierte Datentypen in Anlehnung an XBildung
 
