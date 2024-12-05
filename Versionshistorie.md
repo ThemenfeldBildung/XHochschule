@@ -1,13 +1,14 @@
-XHochschule - Versionshistorie
+**XHochschule - Versionshistorie**
 
 <!-- TOC start -->
 
-- Pre-Release Version 1.1
-- Version 1.0
-- Version 0.95
+- [Pre-Release Version 1.1](#pre-release-version-11)
+- [Version 1.0](#version-10)
+- [Version 0.95](#version-095)
 
 <!-- TOC end -->
 
+<!-- TOC --><a name="pre-release-version-11"></a>
 # Pre-Release Version 1.1
 **Veröffentlichungsdatum:** 21.10.2024
 
@@ -55,6 +56,7 @@ Die URIs aller Codelisten wurden auf Übereinstimmung mit dem XRepository geprü
 * XHS-705 Codeliste "Lernzeitmodell" von XBD neu einbinden
 * XHS-707 Datentyp anpassen für "semesterDerLeistungserbringung"
 
+<!-- TOC --><a name="version-10"></a>
 # Version 1.0
 
 **Veröffentlichungsdatum:** 01.02.2024
@@ -124,6 +126,7 @@ Die Spezifikation wurde umfassend überarbeitet im Hinblick auf die allgemeine V
 * XHS-669: Destatis-FS wieder einbauen
 * XHS-670: Erratum: DatatypeE doppelt eingebunden?
 
+<!-- TOC --><a name="version-095"></a>
 # Version 0.95
 
 **Veröffentlichungsdatum:** 1. Februar 2024
