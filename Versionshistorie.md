@@ -1,5 +1,13 @@
 XHochschule - Versionshistorie
 
+<!-- TOC start -->
+
+- Pre-Release Version 1.1
+- Version 1.0
+- Version 0.95
+
+<!-- TOC end -->
+
 # Pre-Release Version 1.1
 **Veröffentlichungsdatum:** 21.10.2024
 
