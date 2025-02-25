@@ -1,6 +1,3 @@
-Aktuelle Version: XHochschule 1.1 Pre-Release / Rückmeldungen werden bis 13.12.2024 entgegengenommen
-
-
 # XHochschule
 
 ![Logo und Federfuehrer](http://www.xhochschule.de/images/logo_und_federfuehrer.png)
