@@ -147,12 +147,12 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;8&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;</entry>
-            <entry>XHS-0018 Das Feld Note muss in dem Format 'Zahl,Komma,Zahl' angegeben werden. Ein Beispiel hierfür wäre '2,5'.</entry>
+            <entry>XHS-0018 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>
          </row>
          <row>
             <entry align="left">
                <para>
-                  <emphasis role="codebf">(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))$'))</emphasis>
+                  <emphasis role="codebf">(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))</emphasis>
                </para>
             </entry>
          </row>

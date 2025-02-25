@@ -15,6 +15,11 @@
                     festgelegt. Die Versionsnummer bereits in Version 1.0 oder höher vorliegender
                     XBildung-Teilvorhaben entspricht dabei immer der vorab veröffentlichten
                     Versionsnummer der XBildung-Spezifikation.</para>
+                <para>Codelisten, die mit Version 1.0 eingeführt wurden, verbleiben auf dieser Version, bis eine Änderung
+                    erfolgt. Bei Änderung wird das Veröffentlichungsdatum der Version des Spezifikationsdokuments
+                    angegeben, in deren Rahmen die Codeliste geändert wurde. Dies erfolgt nach der ISO-Systematik
+                    "JJJJ-MM-TT". Neu eingeführte Codelisten erhalten ebenfalls das Veröffentlichungsdatum der Ver-
+                    sion des Spezifikationsdokuments, in deren Rahmen die Codeliste eingeführt wurde.</para>
                 <para></para>
             </listitem>
         </varlistentry>

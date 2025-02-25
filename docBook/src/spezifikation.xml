@@ -27,7 +27,6 @@
             <title>Fachliche Modellierung</title>
         </info>
         <include href="fachlicheModellierung/leitfadenFachlicheModellierung.xml" xmlns="http://www.w3.org/2001/XInclude" />
-        <include href="fachlicheModellierung/grundlegendeDesignentscheidungen.xml" xmlns="http://www.w3.org/2001/XInclude" />
         <include href="fachlicheModellierung/wichtigeHinweiseZurImplementierung.xml" xmlns="http://www.w3.org/2001/XInclude" />
         <include href="../build/docBook/dokumente/anhang/externeModelle/externeModelle.xml" xmlns="http://www.w3.org/2001/XInclude" />  
         <include href="fachlicheModellierung/xoevKernkomponenten.xml" xmlns="http://www.w3.org/2001/XInclude" />

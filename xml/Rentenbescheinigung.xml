@@ -1,126 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Rentenbescheinigung nach XHochschule Version 1.1 . Nichtnormative Beispielinstanz.
-    Version: XHochschule 1.1
-    Letzte Aktualisierung: 15.10.2024
+<!-- Rentenbescheinigung nach XHochschule Version 1.1. Nichtnormative Beispielinstanz.
+    Version: XHochschule 1.1 
+    Letzte Aktualisierung: 25.02.2025
     Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
-<xhs:rentenbescheinigung xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+<xhs:rentenbescheinigung xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
  xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+ xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
  xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
- xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.1/xsd/xhochschule.xsd">
+ xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.1/xsd">
     <xhs:titel xml:lang="de-DE">Rentenbescheinigung</xhs:titel>
-    <xhs:ausstellungsdatum>2024-10-21</xhs:ausstellungsdatum>
-    <xhs:gueltigkeitsdatum>2025-03-31</xhs:gueltigkeitsdatum>
+    <xhs:ausstellungsdatum>2006-05-04</xhs:ausstellungsdatum>
+    <xhs:gueltigkeitsdatum>2006-05-04</xhs:gueltigkeitsdatum>
     <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20240925-0">
-        <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+        <code>DEU</code>
     </xhs:sprache>
-    <!-- titel, ausstellung, gueltigkeitsdatum und sprache werden aus XBildung geerbt (Klasse Dokument) -->
+    <!-- Angaben zur Rentenversicherungsnummer -->
     <xhs:rentenversicherungsnummer>
-        <xhs:id>17 170595 M 666</xhs:id>
+        <xhs:id>12 345678 A 123</xhs:id>
         <xhs:gueltigkeit>
-            <xhs:beginn>2002-09-04</xhs:beginn>
+            <xhs:beginn>2006-05-04</xhs:beginn>
         </xhs:gueltigkeit>
-        <xhs:beschreibung>Sozial-/ Rentenversicherungsnummer</xhs:beschreibung>
     </xhs:rentenversicherungsnummer>
-   
-    <!-- Angaben zur studierenden Person -->
+    <!-- Angaben zur studiereden Person -->
     <xhs:studierender>
         <xhs:nameNatuerlichePerson>
             <xhs:familienname>
-                <xhs:name>Mustermaus</xhs:name>
+                <xhs:name>Mustermann</xhs:name>
             </xhs:familienname>
             <xhs:vorname>
-                <xhs:name>Max</xhs:name>
+                <xhs:name>Erik</xhs:name>
             </xhs:vorname>
         </xhs:nameNatuerlichePerson>
         <xhs:geburt>
             <xhs:datum>
-                <xbd:jahrMonat>2000-09</xbd:jahrMonat>
+                <xbd:jahrMonatTag>2006-01-29</xbd:jahrMonatTag>
             </xhs:datum>
             <xhs:geburtsort>
-                <xbd:ort>Munster</xbd:ort>
+                <xbd:ort>Stuttgart</xbd:ort>
                 <xbd:staat listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit" listVersionID="listVersionID1">
                     <code>000</code>
-                    <name>Deutschland</name>
+                    <name>Bundesrepublik Deutschland</name>
                 </xbd:staat>
             </xhs:geburtsort>
-            <xhs:zusatz>BL: Sachsen</xhs:zusatz>
         </xhs:geburt>
-        <xhs:matrikelnummer>
-            <xhs:id>987654321</xhs:id>
+        <xhs:identifikationsnummer>
+            <xhs:id>86095742719</xhs:id>
             <xhs:gueltigkeit>
-                <xhs:beginn>2020-05-04</xhs:beginn>
-                <xhs:ende>2023-05-04</xhs:ende>
+                <xhs:beginn>1998-05-04</xhs:beginn>
             </xhs:gueltigkeit>
+            <xhs:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuernID)</xhs:beschreibung>
+        </xhs:identifikationsnummer>
+        <xhs:identifikationsnummer>
+            <xhs:id>99-999-999-999-999</xhs:id>
+            <xhs:gueltigkeit>
+                <xhs:beginn>2010-08-27</xhs:beginn>
+            </xhs:gueltigkeit>
+            <xhs:beschreibung>OZG-Landeskontonummer-ID der studierenden Person</xhs:beschreibung>
+        </xhs:identifikationsnummer>
+        <xhs:matrikelnummer>
+            <xhs:id>123546789</xhs:id>
+            <xhs:gueltigkeit>
+                <xhs:beginn>2020-10-01</xhs:beginn>
+                <xhs:ende>2024-05-04</xhs:ende>
+            </xhs:gueltigkeit>
+            <xhs:beschreibung>Matrikelnummer der Universität Leipzig</xhs:beschreibung>
         </xhs:matrikelnummer>
-        <xhs:ersteinschreibung>2020-05-04</xhs:ersteinschreibung>
-        <xhs:hochschulsemester>6</xhs:hochschulsemester>
-        <xhs:urlaubssemester>0</xhs:urlaubssemester>
+        <xhs:ersteinschreibung>2020-10-01</xhs:ersteinschreibung>
+        <xhs:hochschulsemester>5</xhs:hochschulsemester>
+        <xhs:urlaubssemester>2</xhs:urlaubssemester>
     </xhs:studierender>
-   
     <!-- Angaben zur ausstellenden Hochschule -->
     <xhs:ausstellendeHochschule>
-        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID2">
-            <code>6742</code>
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID1">
+            <code>7312</code>
         </xhs:hochschulsignatur>
-        <xhs:name xml:lang="de-DE">Hochschule für Technik und Wirtschaft (FH) Villingen-Schwenningen</xhs:name>
+        <xhs:name xml:lang="de-DE">Hochschule für angewandte Wissenschaften Weihenstephan-Triesdorf in Triesdorf (FH</xhs:name>
     </xhs:ausstellendeHochschule>
-    
-    <!-- Angaben zum Studium der studierenden Person -->
+    <!-- Angaben zum Studium -->
     <xhs:studienabschnitt>
         <xhs:studienzeitraum>
             <xhs:zeitraum>
-                <xhs:beginn>2020-05-04</xhs:beginn>
-                <xhs:ende>2023-05-04</xhs:ende>
+                <xhs:beginn>2024-10-01</xhs:beginn>
+                <xhs:ende>2025-03-31</xhs:ende>
             </xhs:zeitraum>
-            <xhs:semesterbezeichnung xml:lang="de-DE">Wintersemester 22/23</xhs:semesterbezeichnung>
+            <xhs:semesterbezeichnung xml:lang="de-DE">Wintersemester 2024</xhs:semesterbezeichnung>
         </xhs:studienzeitraum>
         <xhs:studienfach>
-            <xhs:name xml:lang="de-DE">Ingenieurinformatik / Technische Informatik</xhs:name>
-            <xhs:angestrebterAbschluss xml:lang="de-DE">Bachelor of Science</xhs:angestrebterAbschluss>
+            <xhs:name xml:lang="de-DE">Agrartechnik</xhs:name>
+            <xhs:angestrebterAbschluss xml:lang="de-DE">Bachelor of Engineering</xhs:angestrebterAbschluss>
             <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
-                <code>64</code>
+                <code>645</code>
             </xhs:schluesselISCED2011>
             <xhs:schluesselISCEDF2013 listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013" listVersionID="20240110-0">
-                <code>061</code>
+                <code>0312</code>
             </xhs:schluesselISCEDF2013>
             <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
-                <code>Niveau 5</code>
+                <code>6</code>
             </xhs:schluesselEQF>
-            <xhs:fachsemester>6</xhs:fachsemester>
-            <xhs:unbedenklichkeitsvermerk xml:lang="de-DE">Unbedenklich</xhs:unbedenklichkeitsvermerk>
+            <xhs:fachsemester>7</xhs:fachsemester>
+            <xhs:unbedenklichkeitsvermerk xml:lang="de-DE">Im Studienfach Agrartechnik wurde keine nach der Prüfungsordnung erforderliche Studienleistung/Prüfung endgültig nicht bestanden und der Prüfungsanspruch nicht verloren.</xhs:unbedenklichkeitsvermerk>
         </xhs:studienfach>
         <xhs:lernzeitmodell>
-            <xhs:code listURI="urn:xbildung-de:xbildung:codeliste:lernzeitmodell" listVersionID="1.0">
-                <code>http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/vollzeit</code>
+            <xhs:code listURI="urn:xbildung-de:xbildung:codeliste:lernzeitmodell" listVersionID="2025-02-04">
+                <code>http://xbildung.de/def/xbildung/2025-02-04/code/lernzeitmodell/dual-ausbildungsintegriert</code>
             </xhs:code>
         </xhs:lernzeitmodell>
-        <xhs:regelstudienzeit>6</xhs:regelstudienzeit>
+        <xhs:regelstudienzeit>8</xhs:regelstudienzeit>
         <xhs:beurlaubungsstatus>
             <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus" listVersionID="1.0">
-                <code>http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/beurlaubt</code>
+                <code>http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/nicht_beurlaubt</code>
             </xhs:code>
         </xhs:beurlaubungsstatus>
-            <xhs:beurlaubungsgrund listURI="urn:xhochschule-de:destatis:codeliste:beurlaubungsgrund" listVersionID="listVersionID9">
-            <code>Freiwilligendienst</code>
-        </xhs:beurlaubungsgrund>
+        <!-- Angaben zur ausstellenden Hochschule -->
         <xhs:ausbildungsstaette>
-            <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID9">
-                <code>6742</code>
+            <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID1">
+                <code>7312</code>
             </xhs:hochschulsignatur>
-            <xhs:name xml:lang="de-DE">Hochschule für Technik und Wirtschaft (FH) Villingen-Schwenningen</xhs:name>
+            <xhs:name xml:lang="de-DE">Hochschule für angewandte Wissenschaften Weihenstephan-Triesdorf in Triesdorf (FH</xhs:name>
         </xhs:ausbildungsstaette>
     </xhs:studienabschnitt>
-    
+    <!-- Angaben zur Verifikation des ausgestellen Dokuments -->
     <xhs:verifikation>
-        <xhs:schluessel>LDIBSFA</xhs:schluessel>
-        <xhs:adresse>https://www.hs-furtwangen.de/verify</xhs:adresse>
-        <xhs:inhaltstyp>PDF</xhs:inhaltstyp>
+        <xhs:schluessel>AJNJUVFXJ</xhs:schluessel>
+        <xhs:adresse>https://www.hswt.de/verifikation</xhs:adresse>
+        <xhs:inhaltstyp>XML</xhs:inhaltstyp>
         <xhs:gueltigkeit>
             <xhs:beginn>2024-05-04</xhs:beginn>
-            <xhs:ende>2025-05-04</xhs:ende>
+            <xhs:ende>2026-05-04</xhs:ende>
         </xhs:gueltigkeit>
     </xhs:verifikation>
 </xhs:rentenbescheinigung>

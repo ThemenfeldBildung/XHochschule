@@ -45,7 +45,7 @@
 		<para>Seitdem wurden in Standardisierungsmeetings die ersten Anwendungsfälle und
 			Anforderungen an den Datenaustausch zwischen Hochschulen analysiert und der Fokus von
 			&fachmodul; geschärft. <link
-				xlink:href="https://&fachmodul_in_uri;.de/web/webmeetings2021">Weitere
+				xlink:href="https://www.xbildung.de/web/events/xhochschule">Weitere
 				Treffen</link> wurden im Jahr 2021 zur Erarbeitung von Folgeversionen zur Abdeckung
 			weiterer Nachweise und Datenaustauschmomente durchgeführt. Diese Reihe wir bis heute mit
 			der Durchführung von Workshops und Arbeitskreisen im Rahmen von XHochschule und
@@ -65,9 +65,9 @@
 			starken Nachnutzung von bereits Bewährtem und die Verwendung von nicht-proprietären,
 			zukunftssicheren und freien Technologien z.B. des W3C Technology Stacks (XML, XSD;
 			Schematron). </para>
-		<para>Die Spezifikation &fachmodul; als Fachmodul des Basismoduls XBildung versucht die
-			Komplexität im Bildungswesen abzubilden. Unnötige oder gar störende Flexibilität wird
-			zugunsten von Interoperabilität zwischen den Fachverfahren im Hochschulwesen aufgelöst.
+		<para>Die Spezifikation &fachmodul; als Teilmodul des Basismoduls XBildung versucht die
+			Komplexität im Hochschulwesen abzubilden. Unnötige oder gar störende Flexibilität wird
+			zugunsten von Interoperabilität für den Datenaustausch im Hochschulwesen aufgelöst.
 			Dazu ist der Einsatz von abgestimmten harmonisierten Interoperabilitätsartefakten wie
 			gemeinsamen Datenmodellen, Wertelisten und Datentypen notwendig. Es gilt vor dem
 			Hintergrund des Bildungsföderalismus in Deutschland und unter Wahrung der

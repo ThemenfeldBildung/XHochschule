@@ -14,9 +14,9 @@
 
     <sect1 xml:id="spezifikation.anhang.versionshistorie110">
         <info>
-            <title>Version 1.1 Pre-Release</title>
+            <title>Version 1.1</title>
         </info>
-        <para>Veröffentlichungsdatum: 21.10.2024</para>
+        <para>Veröffentlichungsdatum: 25.02.2025</para>
 
         <sect2>
             <title>Strukturelle Änderungen</title>
@@ -28,6 +28,17 @@
                     geändert.</para>
                 <para>Die aktuellen Versionen der Destatis-Codelisten „Beurlaubungsgrund“,
                     „Hochschulsignatur“ und „Fächerschlüssel“ wurden referenziert.</para>
+                <para>Ergänzend zur bereits in Version XHochschule 0.95 erfolgten Änderung der
+                    Codelisten "Beurlaubungsgrund", "Fächerschlüssel" und "Hochschulsignatur" von Typ 1
+                    auf Typ 3 ist diese Änderung nun auch in der Beschreibung der Codelisten
+                    reflektiert. Der Bezugslink zu Statistik Nord verweist nun auf eine
+                    übergreifende Seite, auf der die Downloads aller Versionen zu finden
+                    sind.</para>
+                <para>Alle Codelisten wurde nach ihrer Anpassung an eine neue einheitliche
+                    Versionierung geprüft. Ein Abschnitt zur Erklärung dieser Änderung wurde in
+                    Kapitel <link
+                        linkend="modellierung.wichtigeHinweiseZurImplementierung"> II. 2 Wichtige Hinweise
+                        zur Implementierung</link> eingeführt.</para>
             </simplesect>
 
 
@@ -40,6 +51,12 @@
                     zukünftig nicht mehr von XBildung nachgenutzt.</para>
                 <para>Die Einbindung der Namensraumpräfixe in den Instanzdateien wurde
                     korrigiert.</para>
+                <para>Das Kapitel "Grundlegende Designentscheidungen" wurde entfernt. Dieses ist
+                    jetzt übergreifend für alle Vorhaben im XBildungsmodell zu finden. Eine
+                    entsprechende Verlinkung wurde in der XHochschule-Spezifikation im Kapitel <link
+                        linkend="spezifikation.leitfadenFachlicheModellierung">Leitfaden zur
+                        fachlichen Modellierung: Wie lese ich dieses Dokument?</link>
+                    hinzugefügt.</para>
             </simplesect>
 
             <simplesect>
@@ -51,8 +68,13 @@
                 <para>Die Gesamtdarstellung der Schematron-Regeln wurde im Hinblick auf
                     Verständlichkeit überarbeitet.</para>
                 <para>Ein Satz zur Relevanz von Schematron wurde im Abschnitt <link
-                    linkend="modellierung.wichtigeHinweiseZurImplementierung"
-                        >Wichtige Hinweise zur Implementierung</link> eingefügt.</para>
+                        linkend="modellierung.wichtigeHinweiseZurImplementierung">Wichtige Hinweise
+                        zur Implementierung</link> eingefügt.</para>
+                <para>Die Codelistenwerte der Klasse "Note" wurden in den Schematronregeln
+                    erweitert. Werte von A-F mit den optionalen Zusätzen (+/-) sind jetzt
+                    möglich.</para>
+                <para>Die Schemavalidierungen der Instanznachrichten wurden erneut überprüft und
+                    validiert.</para>
             </simplesect>
         </sect2>
         <sect2>
@@ -94,7 +116,7 @@
                         0.95 </para>
                 </listitem>
                 <listitem>
-                    <para> XHS-657 Tbd: Leistungsarten inhaltlich definieren? </para>
+                    <para> XHS-657 Leistungsarten inhaltlich definieren</para>
                 </listitem>
                 <listitem>
                     <para> XHS-662 Diploma Supplement stärker strukturiert modellieren </para>
@@ -121,7 +143,7 @@
                     <para> XHS-685 Tabelle der Schematron-Regeln: Spalten umbenennen </para>
                 </listitem>
                 <listitem>
-                    <para> XHS-686 Fehlerhafte Schematronregel "Lernzeitmodell" </para>
+                    <para> XHS-686 Fehlerhafte Schematronregel "Lernzeitmodell" korrigieren</para>
                 </listitem>
                 <listitem>
                     <para> XHS-687 RDF-Erzeugung aktualisieren </para>
@@ -131,10 +153,6 @@
                     </para>
                 </listitem>
                 <listitem>
-                    <para> XHS-689 Release Routine nach Vorbild von XBildung anpassen oder
-                        übernehmen </para>
-                </listitem>
-                <listitem>
                     <para> XHS-690 Codelisten-URNs auf Konsistenz mit XRepository prüfen </para>
                 </listitem>
                 <listitem>
@@ -142,14 +160,14 @@
                         nachziehen </para>
                 </listitem>
                 <listitem>
-                    <para> XHS-698 Prüfen und Diskutieren: Feld "Prüfende/Lehrende" bei Leistungen
+                    <para> XHS-698 Feld "Prüfende/Lehrende" bei Leistungen hinzufügen
                     </para>
                 </listitem>
                 <listitem>
-                    <para> XHS-700 Einheitlich "Ortsangabe" verwenden </para>
+                    <para>XHS-699 Schemavalidierung der Instanznachrichten überprüfen</para>
                 </listitem>
                 <listitem>
-                    <para> XHS-701 Übernahme von Satz aus XBD-Spezifikation </para>
+                    <para> XHS-700 Einheitlich "Ortsangabe" verwenden </para>
                 </listitem>
                 <listitem>
                     <para> XHS-704 Konsistente Nachnutzung von XBD- und XÖV-Datentypen sicherstellen
@@ -159,7 +177,19 @@
                     <para> XHS-705 Codeliste "Lernzeitmodell" von XBD neu einbinden </para>
                 </listitem>
                 <listitem>
-                    <para> XHS-707 Datentyp anpassen für "semesterDerLeistungserbringung" </para>
+                    <para>XHS-706 Alternative Repräsentation von "note"</para>
+                </listitem>
+                <listitem>
+                    <para>XHS-707 Datentyp anpassen für "semesterDerLeistungserbringung" </para>
+                </listitem>
+                <listitem>
+                    <para>XHS-709 Kapitel "Grundlegende Designentscheidungen" überarbeiten</para>
+                </listitem>
+                <listitem>
+                    <para>XHS-710 Destatis Codelisten prüfen</para>
+                </listitem>
+                <listitem>
+                    <para>XHS-714 Versionierung von Codelisten an neue Systematik anpassen</para>
                 </listitem>
             </itemizedlist>
 
@@ -356,332 +386,6 @@
                 <listitem>
                     <para>XHS-670: Erratum: DatatypeE doppelt eingebunden?</para>
                 </listitem>
-            </itemizedlist>
-        </sect2>
-
-
-
-    </sect1>
-
-    <sect1 xml:id="spezifikation.anhang.versionshistorie095">
-        <info>
-            <title>Version 0.95</title>
-        </info>
-        <para>Veröffentlichungsdatum: 30.08.2023</para>
-
-        <sect2>
-            <title>Einheitliches Vorgehen für String-basierte Datentypen in Anlehnung an
-                XBildung</title>
-            <simplesect>
-                <title>Wahl des Datentyps</title>
-                <para> Für String-basierte Elemente kommen fünf verschiedene Datentypen in Frage:
-                    xs:string, xbd:String.Localized, din91379:datatypeB, din91379:datatypeC und
-                    din91379:datatypeE. Die Datentypen der DIN-Norm werden für Namen und
-                    einsprachige Texte verwendet. xs:string für "technische" Angaben, wie IDs.
-                    String.Localized für Texte, die theoretisch auch in einer von der
-                    Dokumentensprache abweichenden Sprache vorliegen können. </para>
-            </simplesect>
-            <simplesect>
-                <title>Umgang mit Mehrsprachigkeit</title>
-                <para> Mit dieser Version wird Mehrsprachigkeit nicht mehr auf Datenfeld-Ebene
-                    abgebildet. Muss das ganze Dokument in mehreren Sprachen vorliegen, wird davon
-                    ausgegangen, dass je Sprache ein XML-Dokumente erstellt wird. Dieser Ansatz
-                    führt zu folgenden Änderungen: In der Klasse Dokument ist die Eigenschaft
-                    "sprache" nun verpflichtend (Häufigkeit 1, statt 0..n). Damit wird die
-                    Standard-Sprache des Dokuments festgelegt. Die Sprache eines Elements vom Typ
-                    xbd:String.Localized muss nur noch angegeben werden, wenn sie davon abweicht.
-                </para>
-            </simplesect>
-            <simplesect>
-                <title>Häufigkeit bei xbd:String.Localized</title>
-                <para> Statt wie bisher Eigenschaften vom Typ xbd:String.Localized immer beliebig
-                    oft zu erlauben, um Mehrsprachigkeit abzubilden, sind sie nun nur so oft
-                    erlaubt, wie sie tatsächlich vorkommen dürfen. Daher wurde die Kardinalität der
-                    Eigenschaften vom Typ xbd:String.Localized in mehreren Klassen von 0..n auf 0..1
-                    geändert. </para>
-            </simplesect>
-        </sect2>
-
-        <sect2>
-            <title>Änderungen an Codelisten</title>
-
-            <simplesect>
-                <title>Streichung der Destatis-Codelisten "Studienbereich", "Fächerschlüssel", "Art
-                    der Hochschule" und "Art des Hochschulabschlusses"</title>
-                <para> Beide Codelisten haben sich in mehrfacher Hinsicht als nicht sinnvoll zur
-                    weiteren Verwendung im Datenmodell erwiesen. Um Probleme bei der Konsistenz wie
-                    der Persistenz der Identifikatoren zu vermeiden und wegen des geringen Mehrwerts
-                    für das Datenmodell werden diese ausgebaut.</para>
-            </simplesect>
-
-            <simplesect>
-                <title>Umstellung von Destatis-Codelisten auf XÖV-Codelisten-Nutzungstyp 3</title>
-                <para>Verbleibende Destatis-Codelisten "Hochschulsignatur" und "Beurlaubungsgrund"
-                    werden als Typ3-Codelisten ("Benannte Codeliste") eingebunden, damit ihre Werte
-                    über verschiedene Versionen hinweg gültig und referenzierbar bleiben, siehe
-                        <link xlink:type="simple"
-                        xlink:href="https://www.xoev.de/sixcms/media.php/13/Codelisten-Handbuch_1.2.1.pdf"
-                        xlink:show="new">XÖV-Codelisten-Handbuch der KoSIT, S. 11</link>.</para>
-            </simplesect>
-
-            <simplesect>
-                <title>Einführung von Standard-Codes</title>
-                <para>Für einige Codelisten werden die Codes "Wert nicht in Liste" und/oder „Wert
-                    nicht bekannt“ zur Verfügung gestellt.</para>
-            </simplesect>
-
-            <simplesect>
-                <title>Aufnahme der Codeliste „European Qualifications Framework“</title>
-                <para>Für das European Qualifications Framework wird die Codeliste EQF als
-                    zusätzliche Möglichkeit zur Bestimmung des Qualifikationsniveaus
-                    aufgenommen.</para>
-            </simplesect>
-        </sect2>
-
-        <sect2>
-            <title>Änderungen an Dokumenten für den Datenaustausch</title>
-            <simplesect>
-                <title>Überarbeitung des "Diploma Supplement"</title>
-                <para>Das Diploma Supplement wurde entsprechend der Vorgaben der HRK (<link
-                        xlink:type="simple"
-                        xlink:href="https://www.hrk.de/mitglieder/arbeitsmaterialien/diploma-supplement/"
-                        xlink:show="new">HRK Diploma Supplement</link>) überarbeitet und
-                    referenziert in den Beschreibungen der Datenfelder die jeweiligen Sektionen des
-                    HRK-Dokuments. Optional wird die Möglichkeit einer Signatur sowie die direkte
-                    Einbindung in das Hochschulabschlusszeugnis angeboten. Um den internationalen
-                    Austausch zu erleichtern, werden Datenfelder als Freitext modelliert und
-                    kleinere Anpassungen der Datenfelder vorgenommen.</para>
-            </simplesect>
-            <simplesect>
-                <title>Erstellung eines "Transcript of Records" und Modellierung von
-                    Leistungen</title>
-                <para>Als Dokument für den Datenaustausch wird erstmalig ein "Transcript of Records"
-                    aufgenommen. Dieses basiert auf einem Modell zur Darstellung von Leistungen
-                    anhand der Klassen "Leistung" und "Leistungsbeschreibung", das das durch die
-                    Möglichkeit zur Verschachtelung von individuell festlegbaren "Teilleistungen"
-                    die Divergenzen zwischen Hochschulen berücksichtigt und bestmögliche
-                    Abbildbarkeit bei höchstmöglicher Vereinheitlichung anbietet. Als oberste Ebene
-                    ist stets "Studiengang" oder "Studienfach" anzulegen. Das Feld "ModulNachKMK"
-                    und die Klasse "ModulbeschreibungNachKMK" besitzen normierenden Charakter. Es
-                    lässt sich festlegen, ob es sich um Wahl-, Pflicht- oder
-                    Wahlpflichtveranstaltungen handelt. Bei einer als "Studienfach" angelegten
-                    Leistung besteht die Möglichkeit, einen Unbedenklichkeitsvermerk anzugeben.
-                </para>
-            </simplesect>
-            <simplesect>
-                <title>Änderungen an der Verweisstruktur zwischen Dokumenten</title>
-                <para>Für die Bildungsnachweise des Hochschulabschlusszeugnisses, des Diploma
-                    Supplement und des Transcript of Records wird zukünftig auf Datenfelder zum
-                    gegenseitigen Verweis und die Nutzung von xs:ID verzichtet. In das
-                    Hochschulabschlusszeugnis kann optional ein vollständiges Diploma Supplement
-                    integriert werden. Der Verweis auf das Transcript of Records innerhalb des
-                    Hochschulabschlusszeugnisses wird durch die direkte Angabe von Leistungen
-                    ersetzt. </para>
-            </simplesect>
-        </sect2>
-
-        <sect2>
-            <title>Weitere Änderungen mit Auswirkung auf das Datenmodell</title>
-            <simplesect>
-                <title>Einbindung der Kernkomponenten von XÖV 3.0</title>
-                <para> XHochschule bindet nun XÖV 3.0.1 ein. </para>
-            </simplesect>
-            <simplesect>
-                <title>Möglichkeit zur Angabe einer XML-Signatur</title>
-                <para> Alle XHochschule-Dokumente können nun mit einer digitalen XML-Signatur
-                    signiert werden. Die Signatur ist ein optionales Element, für das keine Vorgaben
-                    über das Format ds:signature hinaus gemacht werden. </para>
-            </simplesect>
-            <simplesect>
-                <title>Änderungen an der Klasse „Studienabschnitt“</title>
-                <para> Die Klasse „studienabschnitt“ wird ersetzt durch
-                    „studienabschnittAufzaehlungOderZusammenfassung“, die die Auswahl zwischen 
-                    „studienabschnittAufzaehlung" als detaillierte Angabe und
-                    „studienabschnittZusammenfassung“ als zusammengefasste Angabe zulässt. Dies
-                    berücksichtigt die unterschiedlichen zeitlichen Bezüge je nach Verwendungsart,
-                    insbesondere bei der Exmatrikulationsbescheinigung. </para>
-            </simplesect>
-        </sect2>
-
-        <sect2>
-            <title>Weitere Änderungen</title>
-            <simplesect>
-                <title>Korrekter Dateiname für die Spezifikation</title>
-                <para>Der Name der PDF-Datei enthält nun den Verweis auf XHochschule und die
-                    Versionsnummer (XHS_spezifikation_versionsnummer) um diese von anderen
-                    XBildung-Spezifikationen unterscheidbar zu machen.</para>
-            </simplesect>
-            <simplesect>
-                <title>Leitfaden - Wie lese ich die Spezifikation?</title>
-                <para>Den Nutzenden wird eine kurze Anleitung zur Verfügung gestellt, wie das
-                    Dokument der Spezifikation zu lesen ist.</para>
-            </simplesect>
-        </sect2>
-        <sect2>
-            <title>Liste der umgesetzten Tickets</title>
-            <para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
-            <itemizedlist>
-                <listitem>
-                    <para>XHS-460: Externe Modelle: XÖV-Kernkomponenten neu einbinden </para>
-                </listitem>
-                <listitem>
-                    <para>XHS-462: Diploma Supplement fachliche Fragen klären und neu modellieren
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>XHS-470: URIs case-insensitiv gestalten</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-480: Stereotypen für ImmaBesch anpassen, sobald diese wieder im Modell
-                        aufgenommen ist.</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-485: Unbedenklichkeitsvermerk als Feld ergänzen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-492: Klasse Transcript of Records (ToR) erstellen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-493: Prüfen: Bedarf an Verweisen auf Notensysteme (GradingScheme) im
-                        Hochschulwesenn</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-495: Recherche zu ToR Dokumenten</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-499: Mehrsprachigkeit von XHS-Feldern vereinheitlichen in Abstimmung
-                        mit XBD</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-523: Kardinalität von Ausstellende Hochschule auf 1 setzen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-528: Standard-Codes in Codelisten überarbeiten</para>
-                </listitem>
-                <!--<listitem><para>XHS-530: Anleitung für die Nutzung der Spezifikation schreiben</para></listitem>-->
-                <listitem>
-                    <para>XHS-534: Prüfen: Sollte Diploma Supplement als optionale Eigenschaft von
-                        Hochschulabschlusszeugnis abgebildet werden?</para>
-                </listitem>
-                <!--<listitem><para>XHS-535: Schritt 1.5: Instanzen, RDF-Files und Schematron generieren</para></listitem>-->
-                <listitem>
-                    <para>XHS-539: Studienabschnitt anpassen je nach Anwendungstyp</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-540: xhs:fachsemester als letztes Element in Studienfach setzen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-541: Elemente bei Studierender in Hochschulabschlusszeugnis
-                        anpassen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-542: Dateinamen der Spezifikation ändern</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-548: Im Kapitel "Externe Modelle" den Link auf XBildung
-                        anpassen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-552: Spezifikation, S. 49, Layoutfehler beheben</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-553: Beschreibungen im Notenspiegel den passenden Eigenschaften
-                        zuweisen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-555: Datum des Erwerbs in Hochschulabschlusszeugnis aufnehmen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-557: Prüfen: Kann das ToR Modell aus ELMO als Vorbild dienen? Und
-                        wie?</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-558: Klasse für die Notenübersicht erstellen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-559: DESTATIS Studienbereich und Fächerschlüssel ausbauen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-560: Codeliste Art des Hochschulabschlusses löschen und Bedarf weiter
-                        klären</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-564: Schematron-Regeln für XBD:Benotung einführen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-571: Codeliste "Art der Hochschule" entfernen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-572: Datenfelder zu einer einzelnen Leistung modellieren</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-573: XML-Signatur einbauen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-576: Verwendung von xs:ID überarbeiten</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-578: Fehler aus XÖV-Suite dokumentieren und ggf. beheben</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-579: EQF als Feld einbauen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-580: DESTATIS Codelisten umstellen auf Typ 3</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-583: Metadaten zur Konfiguration im Modell aktualisieren</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-585: Modellieren der Lösungen aus dem AK "Leistungsnachweise"</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-586: Klären, inwiefern "angabenQualifikation/-haupstudienfach" sich
-                        auf "Studienfach" beziehen sollte</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-587: XBildung-Baukasten "Sprache" ersetzen durch Codeliste
-                        Language</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-588: Prüfen: Ausbauen von anonymer Klasse "Location"</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-589: Sektion "Eingebundene externe Modelle" in Spezifikation auf XBD
-                        0.95 anpassen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-591: Zur Prüfung und Diskussion: Umgang mit "VerweisAufDS" im
-                        HAZ</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-592: Schematron-Regeln für "Wert nicht in Liste" erstellen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-593: Schematron-Regeln für Klasse "Leistung" erstellen</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-597: Ergänzungen zu Werten in der Klasse Leistungsart</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-598: Diskussion: Definition der Begriffe "benotet" und "unbenotet" in
-                        Verbindung mit Leistungsstatus "angemeldet"</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-599: absolvierteVersuche: Austausch des Datentyps Integer</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-601: "Studiengang" in allen Beschreibungen ersetzen durch
-                        "Studienfach"</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-602: Text für Nutzung des generischen Ansatzes bei Leistungsdaten
-                        formulieren</para>
-                </listitem>
-                <listitem>
-                    <para>XHS-609: Anpassung der Modellierung der Klasse Leistung</para>
-                </listitem>
-                <!--<listitem><para>XHS-594: Changelog in Textform erarbeiten</para></listitem>-->
             </itemizedlist>
         </sect2>
     </sect1>

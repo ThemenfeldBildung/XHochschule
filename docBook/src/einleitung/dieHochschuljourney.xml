@@ -8,8 +8,7 @@
   <info>
     <title>Die Hochschuljourney</title>
   </info>
-  <para><!--Für PIM &amp; &fachmodul; wurde aus fachlicher Sicht eine Bildungsjourney mit dem Schwerpunkt Hochschulwesen erstellt.--> Die Hochschuljourney beschreibt einen Weg durch den 
-    Lebensabschnitt Hochschulbildung mit den möglichen Etappen und Abzweigungen, die eine Person in ihrem Studium erleben kann. Diese Journey findet sich ebenfalls auf der 
+  <para>Die Hochschuljourney beschreibt einen Weg durch den Lebensabschnitt Hochschulbildung mit den möglichen Etappen und Abzweigungen, die eine Person in ihrem Studium erleben kann. Diese Journey findet sich ebenfalls auf der 
     <link xlink:href="https://xhochschule.de/web/journey">Webseite</link> und ist dort als interaktive Grafik eingebettet. 
     Überall dort, wo ein XML-Symbol zu sehen ist, werden neben weiterführenden Informationen auch Beispielnachrichten zum Download angeboten.</para>
   <para>Im Folgenden werden diese Stationen beschrieben. Beispielnachrichten wie Zeugnisse oder Bescheinigungen, die Teil von &fachmodul; sind, sind mit einer Verlinkung auf die entsprechende

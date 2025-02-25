@@ -76,14 +76,14 @@
                 <row>
                     <entry>XHS-0018</entry>
                     <entry>-note : string [0..1]</entry>
-                    <entry>(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))$'))</entry>
-                    <entry>Im Feld Note kann nur eine Note mit dem Format von 0,0123456789 bis 6,0 angegeben werden.</entry>    
+                    <entry>(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))</entry>
+                    <entry>XHS-0018 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>    
                 </row>
                 <row>
                     <entry>XHS-0019</entry>
                     <entry>-note : string [0..1]</entry>
-                    <entry>(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))$'))</entry>
-                    <entry>Im Feld Note kann nur eine Note mit dem Format von 0,0123456789 bis 6,0 angegeben werden.</entry>    
+                    <entry>(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))</entry>
+                    <entry>XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>    
                 </row>
                 <row>
                     <entry>XHS-0020</entry>

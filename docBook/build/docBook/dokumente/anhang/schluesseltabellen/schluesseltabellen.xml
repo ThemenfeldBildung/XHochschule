@@ -249,9 +249,9 @@
       <section xml:id="tabelle.urn.xhochschule-de.destatis.codeliste.beurlaubungsgrund.Beurlaubungsgrund-Codes">
          <title>Beurlaubungsgrund</title><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik, mit denen Hochschulen eindeutig identifiziert werden können. Der Beurlaubungsgrund  ist aus dem Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik entnommen. Diese wurde von Statistik Nord veröffentlicht.</para>
 
-<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/fileadmin/Dokumente/Erhebungen/Hochschulstatistiken/1_Studenten_2_Pr%C3%BCfungen/Schluesselverzeichnis_WS_2023.pdf">Statistik Nord</link> bereitgestellt.</para>
+<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">Statistik Nord</link> bereitgestellt.</para>
 
-<para>Als Schlüssel wird der Eintrag (Ziffer zwischen 1 und 9) in der Spalte "Signatur" der Tabelle "Gründe der Beurlaubung" auf dem Blatt 253 verwendet.</para>
+<para>Als Schlüssel wird der Eintrag (Ziffer zwischen 1 und 9) in der Spalte "Signatur" der Tabelle "Gründe der Beurlaubung" unter dem Schlüsselverzeichnis "7.2 Gründe der Beurlaubung" aufgelistet.</para>
 
 <para>Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. </para>
 
@@ -380,13 +380,13 @@
       </section>
       <section xml:id="tabelle.urn.xhochschule-de.destatis.codeliste.faecherschluessel.Faecherschluessel-Codes">
          <title>Faecherschluessel</title><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für
-Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten. Die Codeliste wird von Statisitk Nord zur Verfügung gestellt.</para>
+Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten. Die Codeliste wird von Statistik Nord zur Verfügung gestellt.</para>
 
-<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/fileadmin/Dokumente/Erhebungen/Hochschulstatistiken/1_Studenten_2_Pr%C3%BCfungen/Schluesselverzeichnis_WS_2024.pdf">Statistik Nord</link> bereitgestellt.</para>
+<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">Statistik Nord</link> bereitgestellt.</para>
 
 <para>Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. </para>
 
-<para>In dem Dokument ist eine Erläuterung vermerkt zur Handhabung der Systematik der Fächergruppen und der Verschlüsselung der Studienfächer. Zu Finden sind die Fächerschlüssel ab Blatt 166 fortfolgende.</para>
+<para>In dem Dokument ist eine Erläuterung vermerkt zur Handhabung der Systematik der Fächergruppen und der Verschlüsselung der Studienfächer. Die Fächerschlüssel sind unter "4. Studienfächer, Studienbereiche und Fächergruppen" des Schlüsselverzeichnis lokalisierbar.</para>
 
 <para>Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI"  an.
 </para><section>
@@ -430,9 +430,9 @@ Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizi
       </section>
       <section xml:id="tabelle.urn.xhochschule-de.destatis.codeliste.hochschulsignatur.Hochschulsignatur-Codes">
          <title>Hochschulsignaturen</title><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik, mit denen Hochschulen eindeutig identifiziert werden können. Die Hochschulsignatur ist aus dem Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik entnommen. 
-Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/fileadmin/Dokumente/Erhebungen/Hochschulstatistiken/1_Studenten_2_Pr%C3%BCfungen/Schluesselverzeichnis_WS_2024.pdf">Statistik Nord</link> bereitgestellt.</para>
+Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">Statistik Nord</link> bereitgestellt.</para>
 
-<para>Als Schlüssel wird der Eintrag "Signatur" aus der Tabelle "Hochschulen, numerisch" verwendet. Der Schlüssel muss als eine vierstellige Zeichenkette dargestellt werden. Zugelassen sind Zahlen und Großbuchstaben. Führende Nullen im Schlüssel müssen erhalten bleiben. Die jeweiligen Schlüssel sind ab Blatt 41 fortfolgende zu finden.
+<para>Als Schlüssel wird der Eintrag "Signatur" aus der Tabelle "Hochschulen, numerisch" verwendet. Der Schlüssel muss als eine vierstellige Zeichenkette dargestellt werden. Zugelassen sind Zahlen und Großbuchstaben. Führende Nullen im Schlüssel müssen erhalten bleiben. Die jeweiligen Schlüssel finden sich unter "2. Hochschulen" im Schlüsselverzeichnis.
 Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig.</para>
 
 <para>Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI"  an.

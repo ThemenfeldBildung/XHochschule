@@ -22,7 +22,7 @@
    <sch:pattern><!--Abstrakte Regeln--><!-- /Data/XHochschule/Baukasten/Leistung -->
       <sch:rule id="rule-SCH-XHS-0018-Benotungsschema" abstract="true">
          <sch:assert id="SCH-XHS-0018-Benotungsschema"
-                     test="(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))$'))">XHS-0018 Das Feld Note muss in dem Format 'Zahl,Komma,Zahl' angegeben werden. Ein Beispiel hierfür wäre '2,5'.</sch:assert>
+                     test="(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))">XHS-0018 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-XHS-0020-KeineSWSBeiPruefungen" abstract="true">
          <sch:assert id="SCH-XHS-0020-KeineSWSBeiPruefungen"
@@ -96,7 +96,7 @@
       <sch:rule id="rule-SCH-XHS-0019-BenotungsschemaGesamtnoteundAbschlussarbeit"
                 abstract="true">
          <sch:assert id="SCH-XHS-0019-BenotungsschemaGesamtnoteundAbschlussarbeit"
-                     test="(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))$'))">XHS-0019 Das Feld Note muss in dem Format 'Zahl,Komma,Zahl' angegeben werden. Ein Beispiel hierfür wäre '2,5.</sch:assert>
+                     test="(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))">XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</sch:assert>
       </sch:rule>
       <!-- /Data/XHochschule/Bescheinigungen/immatrikulationsbescheinigungBAfoeGP9 -->
       <sch:rule id="rule-SCH-XHS-0010-LernzeitmodellVollOderTeilzeit" abstract="true">
