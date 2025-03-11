@@ -2,32 +2,33 @@
 
 <!-- TOC start -->
 
-- [Pre-Release Version 1.1](#pre-release-version-11)
+- [Version 1.1](#version-11)
 - [Version 1.0](#version-10)
 - [Version 0.95](#version-095)
 
 <!-- TOC end -->
 
-<!-- TOC --><a name="pre-release-version-11"></a>
-# Pre-Release Version 1.1
-**Veröffentlichungsdatum:** 21.10.2024
+<!-- TOC --><a name="version-11"></a>
+# Version 1.1
+**Veröffentlichungsdatum:** 25.02.2025
 
 ## 1. Strukturelle Änderungen
 ### 1.1 Codelisten
-Die Codeliste „Lernzeitmodell“ wird zukünftig von XBildung bezogen und nicht mehr in XHochschule bereitgestellt. Die Codelistenwerte haben sich nicht geändert. Die aktuellen Versionen der Destatis-Codelisten „Beurlaubungsgrund“, „Hochschulsignatur“ und „Fächerschlüssel“ wurden referenziert.
+Die Codeliste „Lernzeitmodell“ wird zukünftig von XBildung bezogen und nicht mehr in XHochschule bereitgestellt. Die Codelistenwerte haben sich nicht geändert. Die aktuellen Versionen der Destatis-Codelisten „Beurlaubungsgrund“, „Hochschulsignatur“ und „Fächerschlüssel“ wurden referenziert. Ergänzend zur bereits in Version XHochschule 0.95 erfolgten Änderung der Codelisten "Beurlaubungsgrund", "Fächerschlüssel" und "Hochschulsignatur" von Typ 1 auf Typ 3 ist diese Änderung nun auch in der Beschreibung der Codelisten reflektiert. Der Bezugslink zu Statistik Nord verweist nun auf eine übergreifende Seite, auf der die Downloads aller Versionen zu finden sind. Alle Codelisten wurde nach ihrer Anpassung an eine neue einheitliche Versionierung geprüft. Ein Abschnitt zur Erklärung dieser Änderung wurde in Kapitel II.2 "Wichtige Hinweise zur Implementierung" eingeführt.
 
 ### 1.2 Beziehung zu externen Modellen
-Die Nachnutzung von XÖV-Kernkomponenten wurde systematisch geprüft. "Zeitraum" wird zukünftig als XÖV-Kernkomponente eingebunden und nicht mehr über XBildung. Die Klasse „Dokument“ wurde als Klasse in XHochschule modelliert und wird zukünftig nicht mehr von XBildung nachgenutzt. Die Einbindung der Namensraumpräfixe in den Instanzdateien wurde korrigiert.
+Die Nachnutzung von XÖV-Kernkomponenten wurde systematisch geprüft. "Zeitraum" wird zukünftig als XÖV-Kernkomponente eingebunden und nicht mehr über XBildung. Die Klasse „Dokument“ wurde als Klasse in XHochschule modelliert und wird zukünftig nicht mehr von XBildung nachgenutzt. Die Einbindung der Namensraumpräfixe in den Instanzdateien wurde korrigiert. Das Kapitel "Grundlegende Designentscheidungen" wurde entfernt. Dieses ist jetzt übergreifend für alle Vorhaben im XBildungsmodell zu finden. Eine entsprechende Verlinkung wurde in der XHochschule-Spezifikation im Kapitel "Leitfaden zur fachlichen Modellierung: Wie lese ich dieses Dokument?" hinzugefügt.
 
 ### 1.3 Schematron
-Die Schematron-Regel zur logischen Prüfung des Verbots leerer Elemente wurde entfernt um der gemeinsamen Handhabung der XBildung-Projekte zu entsprechen. Eine fehlerhafte Regel zum „Lernzeitmodell“ wurde korrigiert. Die Gesamtdarstellung der Schematron-Regeln wurde im Hinblick auf Verständlichkeit überarbeitet. Ein Satz zur Relevanz von Schematron wurde im Abschnitt „Hinweise zur Implementierung“ eingefügt.
+Die Schematron-Regel zur logischen Prüfung des Verbots leerer Elemente wurde entfernt um der gemeinsamen Handhabung der XBildung-Projekte zu entsprechen. Eine fehlerhafte Regel zum „Lernzeitmodell“ wurde korrigiert. Die Gesamtdarstellung der Schematron-Regeln wurde im Hinblick auf Verständlichkeit überarbeitet. Ein Satz zur Relevanz von Schematron wurde im Abschnitt Wichtige Hinweise zur Implementierung eingefügt. Die Codelistenwerte der Klasse "Note" wurden in den Schematronregeln erweitert. Werte von A-F mit den optionalen Zusätzen (+/-) sind jetzt möglich. Die Schemavalidierungen der Instanznachrichten wurden erneut überprüft und validiert.
 
 ## 2. Änderungen am Modell
 ### 2.1 Nachweis „Diploma Supplement“
-Das Diploma Supplement wurde um optionale Felder erweitert um bei "Sprache" sowie bei mehreren Elementen der " Dauer und Ebene der Qualifikation" sowie der Erzielte Ergebnisse" Codelistenwerte mit angeben zu können. Hiermit soll die Konsistenz und die Interoperabilität des Datenmodells erhöht werden.
+Das Diploma Supplement wurde um optionale Felder erweitert, die die Angabe von Codelistenwerten für "Sprache" sowie für mehrere Elemente von "Dauer und Ebene der Qualifikation" und "Erzielte Ergebnisse" ermöglichen. Hiermit soll die Konsistenz und die Interoperabilität des Datenmodells erhöht werden.
 
 ### 2.2 Änderungen in Klasse „Leistung"
-Um Darstellungen von Benotungen außerhalb eines Dezimalschemas zu ermöglichen, wurde als Stakeholder-Anforderung eine optionale alternative Repräsentation eingeführt.Ein neues Feld zur Angabe einer lehrenden oder prüfenden Person in Bezug auf eine Leistung wurde eingeführt. Die Beschreibung der „Leistungsart“ wurde präzisiert. Die Beschreibungen von „Leistungsstatus“, „Leistungsbenotungsstatus“ und „Benotet“ wurden präzisiert, um ihren logischen Zusammenhang zu verdeutlichen. Der Datentyp von "semesterDerLeistungserbringung" wurde geändert auf xhs:Studienzeitraum, um eine automatisierte Auswertung zu gewährleisten.
+Ein neues Feld zur Angabe einer lehrenden oder prüfenden Person in Bezug auf eine Leistung wurde eingeführt. Die Beschreibung der „Leistungsart“ wurde präzisiert.
+Die Beschreibungen von „Leistungsstatus“, „Leistungsbenotungsstatus“ und „Benotet“ wurden präzisiert, um ihren logischen Zusammenhang zu verdeutlichen. Der Datentyp von "semesterDerLeistungserbringung" wurde geändert auf xhs:Studienzeitraum, um eine automatisierte Auswertung zu gewährleisten.
 
 ## 3. Sonstiges
 Die URIs aller Codelisten wurden auf Übereinstimmung mit dem XRepository geprüft. Es wurden keine Auffälligkeiten festgestellt.
@@ -35,7 +36,7 @@ Die URIs aller Codelisten wurden auf Übereinstimmung mit dem XRepository geprü
 ## 4. Liste der umgestezten Tickets
 * XHS-630 Darstellung von Schematron-Regeln überarbeiten
 * XHS-647 Systematisch Prüfen: Rückmeldung aus CaMS-Gesprächen zu XHS v 0.95
-* XHS-657 Tbd: Leistungsarten inhaltlich definieren?
+* XHS-657 Leistungsarten inhaltlich definieren
 * XHS-662 Diploma Supplement stärker strukturiert modellieren
 * XHS-676 Prüfen: zeigeNamensraumpraefix
 * XHS-678 "4,0-Bescheinigung" - noch nicht endgültig benotete Leistung als bestanden kennzeichnen können
@@ -43,18 +44,21 @@ Die URIs aller Codelisten wurden auf Übereinstimmung mit dem XRepository geprü
 * XHS-680 Verlinkung zum Glossar anpassen / Vereinheitlichung mit XBD
 * XHS-681 Anpassen der Anleitung für Schematron-Prüfung nach XBildung
 * XHS-685 Tabelle der Schematron-Regeln: Spalten umbenennen
-* XHS-686 Fehlerhafte Schematronregel "Lernzeitmodell"
+* XHS-686 Fehlerhafte Schematronregel "Lernzeitmodell" korrigieren
 * XHS-687 RDF-Erzeugung aktualisieren
 * XHS-688 Modellierung von Ausstellungsort in XHS-Dokumenten überarbeiten
-* XHS-689 Release Routine nach Vorbild von XBildung anpassen oder übernehmen
 * XHS-690 Codelisten-URNs auf Konsistenz mit XRepository prüfen
 * XHS-695 Versionsangaben bei externen Codelisten überprüfen und ggf. nachziehen
-* XHS-698 Prüfen und Diskutieren: Feld "Prüfende/Lehrende" bei Leistungen
+* XHS-698 Feld "Prüfende/Lehrende" bei Leistungen hinzufügen
+* XHS-699 Schemavalidierung der Instanznachrichten überprüfen
 * XHS-700 Einheitlich "Ortsangabe" verwenden
-* XHS-701 Übernahme von Satz aus XBD-Spezifikation
 * XHS-704 Konsistente Nachnutzung von XBD- und XÖV-Datentypen sicherstellen
 * XHS-705 Codeliste "Lernzeitmodell" von XBD neu einbinden
+* XHS-706 Alternative Repräsentation von "note"
 * XHS-707 Datentyp anpassen für "semesterDerLeistungserbringung"
+* XHS-709 Kapitel "Grundlegende Designentscheidungen" überarbeiten
+* XHS-710 Destatis Codelisten prüfen
+* XHS-714 Versionierung von Codelisten an neue Systematik anpassen
 
 <!-- TOC --><a name="version-10"></a>
 # Version 1.0
