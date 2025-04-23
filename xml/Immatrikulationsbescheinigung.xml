@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Immatrikulationsbescheinigung nach XHochschule Version 1.0. Nichtnormative Beispielinstanz.
+    Version: XHochschule 1.0
+    Letzte Aktualisierung: 15.04.2025
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
+<xhs:immatrikulationsbescheinigung
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/1.0/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.0/xsd http://xhochschule.de/def/xhochschule/1.0/xsd/xhochschule.xsd">
+    <titel xml:lang="de-DE">Immatrikulationsbescheinigung</titel>
+    <ausstellung>
+        <datum>2022-05-04</datum>
+    </ausstellung>
+    <gueltigkeitsdatum>2026-05-04</gueltigkeitsdatum>
+    <sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+        listVersionID="20231213-0">
+        <code>DEU</code>
+    </sprache>
+    <!-- Angaben zur ausstellenden Hochschule -->
+    <xhs:ausstellendeHochschule>
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur"
+            listVersionID="listVersionID2">
+            <code>7312</code>
+        </xhs:hochschulsignatur>
+        <xhs:name xml:lang="de-DE">Hochschule für angewandte Wissenschaften Weihenstephan-Triesdorf in Triesdorf (FH)</xhs:name>
+    </xhs:ausstellendeHochschule>
+    <!-- Angaben zur studierenden Person -->
+    <xhs:studierender>
+        <xhs:nameNatuerlichePerson>
+            <xhs:familienname>
+                <xhs:name>Erika</xhs:name>
+            </xhs:familienname>
+            <xhs:vorname>
+                <xhs:name>Mustermann</xhs:name>
+            </xhs:vorname>
+        </xhs:nameNatuerlichePerson>
+        <xhs:geburt>
+            <xhs:datum>
+                <jahrMonatTag>1994-05-04</jahrMonatTag>
+            </xhs:datum>
+            <xhs:geburtsort>
+                <ort>Hamburg</ort>
+                <staat
+                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
+                    listVersionID="listVersionID3">
+                    <code>000</code>
+                    <name>Bundesrepublik Deutschland</name>
+                </staat>
+            </xhs:geburtsort>
+            <xhs:zusatz>zusatz0</xhs:zusatz>
+        </xhs:geburt>
+        <xhs:identifikationsnummer>
+            <xhs:id>86095742719</xhs:id>
+            <xhs:gueltigkeit>
+                <xhs:beginn>1998-05-04</xhs:beginn>
+            </xhs:gueltigkeit>
+            <xhs:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuernID)</xhs:beschreibung>
+        </xhs:identifikationsnummer>
+        <xhs:identifikationsnummer>
+            <xhs:id>99-999-999-999-999</xhs:id>
+            <xhs:gueltigkeit>
+                <xhs:beginn>2010-08-27</xhs:beginn>
+            </xhs:gueltigkeit>
+            <xhs:beschreibung>OZG-Landeskontonummer-ID der studierenden Person</xhs:beschreibung>
+        </xhs:identifikationsnummer>
+        <xhs:matrikelnummer>
+            <xhs:id>123546789</xhs:id>
+            <xhs:gueltigkeit>
+                <xhs:beginn>2020-10-01</xhs:beginn>
+                <xhs:ende>2024-05-04</xhs:ende>
+            </xhs:gueltigkeit>
+            <xhs:beschreibung>Matrikelnummer der Hochschule für angewandte Wissenschaften Weihenstephan-Triesdorf in Triesdorf</xhs:beschreibung>
+        </xhs:matrikelnummer>
+        <xhs:ersteinschreibung>2020-10-01</xhs:ersteinschreibung>
+        <xhs:hochschulsemester>5</xhs:hochschulsemester>
+        <xhs:urlaubssemester>2</xhs:urlaubssemester>
+    </xhs:studierender>
+    <!-- Angaben zum Studium -->
+    <xhs:studienfach>
+        <xhs:name xml:lang="de-DE">Physik</xhs:name>
+        <xhs:angestrebterAbschluss xml:lang="de-DE">Bachelor of Science</xhs:angestrebterAbschluss>
+        <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011"
+            listVersionID="ISCED-2011">
+            <code>645</code>
+        </xhs:schluesselISCED2011>
+        <xhs:schluesselISCEDF2013
+            listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013"
+            listVersionID="20230628-0">
+            <code>0312</code>
+        </xhs:schluesselISCEDF2013>
+        <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf"
+            listVersionID="20230118-0">
+            <code>6</code>
+        </xhs:schluesselEQF>
+        <xhs:fachsemester>0</xhs:fachsemester>
+        <xhs:unbedenklichkeitsvermerk xml:lang="de-DE">Im Studienfach Physik wurde keine nach der Prüfungsordnung erforderliche Studienleistung/Prüfung endgültig nicht bestanden und der Prüfungsanspruch nicht verloren.</xhs:unbedenklichkeitsvermerk>
+    </xhs:studienfach>
+    <xhs:lernzeitmodell>
+        <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell"
+            listVersionID="1.0">
+            <code>http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/vollzeit</code>
+        </xhs:code>
+    </xhs:lernzeitmodell>
+    <xhs:studienzeitraum>
+        <xhs:zeitraum>
+            <beginn>2021-05-04</beginn>
+        </xhs:zeitraum>
+        <xhs:semesterbezeichnung xml:lang="de-DE">Sommersemester 2021</xhs:semesterbezeichnung>
+    </xhs:studienzeitraum>
+    <xhs:immatrikulationsstatus>
+        <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:immatrikulationsstatus"
+            listVersionID="1.0">
+            <code>http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/immatrikuliert</code>
+        </xhs:code>
+    </xhs:immatrikulationsstatus>
+    <xhs:beurlaubungsstatus>
+        <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus"
+            listVersionID="1.0">
+            <code>http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/nicht_beurlaubt</code>
+        </xhs:code>
+    </xhs:beurlaubungsstatus>
+    <!-- Angaben zur Verifikation des ausgestellen Dokuments -->
+    <xhs:verifikation>
+        <xhs:schluessel>HOLHTDKÜ</xhs:schluessel>
+        <xhs:adresse>https://almaweb.uni-leipzig.de/verifikation</xhs:adresse>
+        <xhs:inhaltstyp>XML</xhs:inhaltstyp>
+        <xhs:gueltigkeit>
+            <beginn>2024-05-04</beginn>
+            <ende>2026-05-04</ende>
+        </xhs:gueltigkeit>
+    </xhs:verifikation>
+</xhs:immatrikulationsbescheinigung>
