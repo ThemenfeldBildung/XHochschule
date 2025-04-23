@@ -57,10 +57,10 @@
                   <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XHochschule.Kernkomponenten.Zeitraum" role="AbschnittNummer"/>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
                </entry>
                <entry>
-                  <xref linkend="XHochschule.Kernkomponenten.Zeitraum" role="Seitenzahl"/>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
                </entry>
             </row>
             <row>

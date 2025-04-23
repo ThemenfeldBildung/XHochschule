@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/1.0/xsd"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-           xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
-           targetNamespace="http://xhochschule.de/def/xhochschule/1.1/xsd"
-           version="1.1"
+           xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+           targetNamespace="http://xhochschule.de/def/xhochschule/1.0/xsd"
+           version="1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -17,7 +17,7 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>1.1</version>
+            <version>1.0</version>
             <versionXOEVProfil>3.0.1</versionXOEVProfil>
             <versionXOEVHandbuch>3.0.0</versionXOEVHandbuch>
             <versionXGenerator>3.1.1</versionXGenerator>
@@ -26,8 +26,8 @@
          </versionStandard>
       </xs:appinfo>
    </xs:annotation>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.1/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/1.1/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.0/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/1.0/xsd"/>
    <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
               namespace="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"/>
    <xs:complexType name="AllgemeinerName">

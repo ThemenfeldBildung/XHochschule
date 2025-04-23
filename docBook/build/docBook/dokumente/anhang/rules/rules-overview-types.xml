@@ -21,7 +21,7 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;0&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;e&#x200B;S&#x200B;W&#x200B;S&#x200B;B&#x200B;e&#x200B;i&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;e&#x200B;n&#x200B;</entry>
-            <entry>XHS-0020 Der Wert 'UmfangInSWS' darf nicht angegeben werden, wenn der Inhalt des Codewertes von 'leistungsart' mit 'klausur' oder 'pruefung' endet. Bei Prüfungenund Klausuren handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</entry>
+            <entry>XHS-0020 Der Wert "UmfangInSWS" darf nicht angegeben werden, wenn der Inhalt des Codewertes von "leistungsart" mit "klausur" oder "pruefung" endet. Bei Prüfungen handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</entry>
          </row>
          <row>
             <entry align="left">
@@ -131,39 +131,39 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;3&#x200B;1&#x200B;-&#x200B;f&#x200B;a&#x200B;e&#x200B;c&#x200B;h&#x200B;e&#x200B;r&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;e&#x200B;s&#x200B;s&#x200B;e&#x200B;l&#x200B;D&#x200B;E&#x200B;S&#x200B;T&#x200B;A&#x200B;T&#x200B;I&#x200B;S&#x200B;</entry>
-            <entry>XHS-0031 Der Fächerschlüssel nach Destatis darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+            <entry>XHS-0031 Der Fächerschlüssel nach DESTATIS darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
          </row>
          <row>
             <entry align="left">
                <para>
-                  <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesselDESTATIS) or not(exists(*:faecherschluesselDESTATIS))) else not(exists(*:faecherschluesselDESTATIS))</emphasis>
+                  <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesseDESTATIS) or not(exists(*:faecherschluesseDESTATIS))) else not(exists(*:faecherschluesseDESTATIS))</emphasis>
                </para>
             </entry>
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:benotung/xbd:note</emphasis>
+               <emphasis role="codebf">benotung/note</emphasis>
             </entry>
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;8&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;</entry>
-            <entry>XHS-0018 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>
+            <entry>XHS-0018 Das Feld Note muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</entry>
          </row>
          <row>
             <entry align="left">
                <para>
-                  <emphasis role="codebf">(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))</emphasis>
+                  <emphasis role="codebf">(matches(., '^\d+,\d+$'))</emphasis>
                </para>
             </entry>
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:leistung</emphasis>
+               <emphasis role="codebf">leistung</emphasis>
             </entry>
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;2&#x200B;0&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;e&#x200B;S&#x200B;W&#x200B;S&#x200B;B&#x200B;e&#x200B;i&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;e&#x200B;n&#x200B;</entry>
-            <entry>XHS-0020 Der Wert 'UmfangInSWS' darf nicht angegeben werden, wenn der Inhalt des Codewertes von 'leistungsart' mit 'klausur' oder 'pruefung' endet. Bei Prüfungenund Klausuren handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</entry>
+            <entry>XHS-0020 Der Wert "UmfangInSWS" darf nicht angegeben werden, wenn der Inhalt des Codewertes von "leistungsart" mit "klausur" oder "pruefung" endet. Bei Prüfungen handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</entry>
          </row>
          <row>
             <entry align="left">
@@ -273,18 +273,18 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;3&#x200B;1&#x200B;-&#x200B;f&#x200B;a&#x200B;e&#x200B;c&#x200B;h&#x200B;e&#x200B;r&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;e&#x200B;s&#x200B;s&#x200B;e&#x200B;l&#x200B;D&#x200B;E&#x200B;S&#x200B;T&#x200B;A&#x200B;T&#x200B;I&#x200B;S&#x200B;</entry>
-            <entry>XHS-0031 Der Fächerschlüssel nach Destatis darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
+            <entry>XHS-0031 Der Fächerschlüssel nach DESTATIS darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</entry>
          </row>
          <row>
             <entry align="left">
                <para>
-                  <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesselDESTATIS) or not(exists(*:faecherschluesselDESTATIS))) else not(exists(*:faecherschluesselDESTATIS))</emphasis>
+                  <emphasis role="codebf">if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesseDESTATIS) or not(exists(*:faecherschluesseDESTATIS))) else not(exists(*:faecherschluesseDESTATIS))</emphasis>
                </para>
             </entry>
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:leistungsart</emphasis>
+               <emphasis role="codebf">leistungsart</emphasis>
             </entry>
          </row>
          <row>
@@ -300,7 +300,7 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:leistungsbenotungsstatus</emphasis>
+               <emphasis role="codebf">leistungsbenotungsstatus</emphasis>
             </entry>
          </row>
          <row>
@@ -316,7 +316,7 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:leistungsstatus</emphasis>
+               <emphasis role="codebf">leistungsstatus</emphasis>
             </entry>
          </row>
          <row>
@@ -339,7 +339,7 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:beurlaubungsstatus</emphasis>
+               <emphasis role="codebf">beurlaubungsstatus</emphasis>
             </entry>
          </row>
          <row>
@@ -355,7 +355,18 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:lernzeitmodell</emphasis>
+               <emphasis role="codebf">lernzeitmodell</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;V&#x200B;o&#x200B;l&#x200B;l&#x200B;O&#x200B;d&#x200B;e&#x200B;r&#x200B;T&#x200B;e&#x200B;i&#x200B;l&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
+            <entry>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung "Teilzeit" oder "Vollzeit" haben.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')</emphasis>
+               </para>
             </entry>
          </row>
          <row>
@@ -378,7 +389,18 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">null#/xhs:StudienabschnittAufzaehlung/xhs:lernzeitmodell</emphasis>
+               <emphasis role="codebf">null#/xhs:StudienabschnittAufzaehlung/lernzeitmodell</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;V&#x200B;o&#x200B;l&#x200B;l&#x200B;O&#x200B;d&#x200B;e&#x200B;r&#x200B;T&#x200B;e&#x200B;i&#x200B;l&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
+            <entry>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung "Teilzeit" oder "Vollzeit" haben.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')</emphasis>
+               </para>
             </entry>
          </row>
          <row>

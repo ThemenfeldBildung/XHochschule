@@ -20,9 +20,6 @@
       <title>Nicht in Nachrichten verwendete Datentypen</title>
       <itemizedlist>
          <listitem>
-            <para>Dokument</para>
-         </listitem>
-         <listitem>
             <para>NatuerlichePerson</para>
          </listitem>
          <listitem>

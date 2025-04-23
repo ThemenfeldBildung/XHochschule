@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/1.0/xsd"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
            xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-           xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
-           targetNamespace="http://xhochschule.de/def/xhochschule/1.1/xsd"
-           version="1.1"
+           xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+           targetNamespace="http://xhochschule.de/def/xhochschule/1.0/xsd"
+           version="1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -18,7 +18,7 @@
             <beschreibung>XHochschule</beschreibung>
          </standard>
          <versionStandard>
-            <version>1.1</version>
+            <version>1.0</version>
             <versionXOEVProfil>3.0.1</versionXOEVProfil>
             <versionXOEVHandbuch>3.0.0</versionXOEVHandbuch>
             <versionXGenerator>3.1.1</versionXGenerator>
@@ -30,8 +30,8 @@
    <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
    <xs:import schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"
               namespace="http://www.w3.org/2000/09/xmldsig#"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.1/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/1.1/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.0/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/1.0/xsd"/>
    <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
               namespace="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"/>
    <xs:element name="diplomaSupplement">
@@ -39,11 +39,11 @@
          <xs:appinfo>
             <rechtsgrundlage/>
          </xs:appinfo>
-         <xs:documentation>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Diploma Supplement erhält. Dabei deckt die im Element Dokument enthaltene Klasse "ausstellung" den Abschnitt 7.1 des Diploma Supplements ab.</xs:documentation>
+         <xs:documentation>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Diploma Supplement erhält. Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des Diploma Supplements ab.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
          <xs:complexContent>
-            <xs:extension base="xhs:Dokument">
+            <xs:extension base="xbd:Dokument">
                <xs:sequence>
                   <xs:element name="angabenInhaber">
                      <xs:annotation>
@@ -102,7 +102,7 @@
                                  <xs:documentation>Bezieht sich auf Abschnitt 2.4. Name und Status (Typ/Trägerschaft) der Einrichtung (falls nicht mit 2.3 identisch), die das Studienfach durchgeführt hat (in der Originalsprache).</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="spracheUnterrichtPruefung" type="xbd:Code.Language">
+                           <xs:element name="spracheUnterrichtPruefung" type="xbd:String.Localized">
                               <xs:annotation>
                                  <xs:documentation>Bezieht sich auf Abschnitt 2.5. Im Unterricht / in der Prüfung verwendete Sprache(n).</xs:documentation>
                               </xs:annotation>
@@ -116,52 +116,31 @@
                      </xs:annotation>
                      <xs:complexType>
                         <xs:sequence>
-                           <xs:element name="ebeneDerQualifikation">
+                           <xs:element name="ebeneDerQualifikation"
+                                       minOccurs="0"
+                                       type="xbd:String.Localized">
                               <xs:annotation>
                                  <xs:documentation>Bezieht sich auf Abschnitt 3.1. Ebene der Qualifikation.</xs:documentation>
                               </xs:annotation>
-                              <xs:complexType>
-                                 <xs:choice>
-                                    <xs:element name="freitext" minOccurs="0" type="xbd:String.Localized">
-                                       <xs:annotation>
-                                          <xs:documentation>Das Feld "freitext" kann verwendet werden, wenn die Ebene der Qualifikation nicht aus den Codelisten auswählbar ist bzw. wenn zusätzliche Eintragungen gemacht werden müssen.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                    <xs:element name="ebeneDerQualifikationCodeEQF"
-                                                minOccurs="0"
-                                                type="xbd:Code.EQF">
-                                       <xs:annotation>
-                                          <xs:documentation>Bezieht sich auf Abschnitt 3.1. Ebene der Qualifikation.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                    <xs:element name="ebeneDerQualifikationCodeISCED2011"
-                                                minOccurs="0"
-                                                type="xbd:Code.ISCED2011">
-                                       <xs:annotation>
-                                          <xs:documentation>Bezieht sich auf Abschnitt 3.1. Ebene der Qualifikation.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                 </xs:choice>
-                              </xs:complexType>
                            </xs:element>
-                           <xs:element name="dauerStudiumInJahrenOderECTS">
+                           <xs:element name="ebeneDerQualifikationCodeEQF"
+                                       minOccurs="0"
+                                       type="xbd:Code.EQF">
+                              <xs:annotation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 3.1. Ebene der Qualifikation.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="ebeneDerQualifikationCodeISCED2011"
+                                       minOccurs="0"
+                                       type="xbd:Code.ISCED2011">
+                              <xs:annotation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 3.1. Ebene der Qualifikation.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="dauerStudiumInJahrenOderECTS" type="xbd:String.Localized">
                               <xs:annotation>
                                  <xs:documentation>Bezieht sich auf Abschnitt 3.2. Offizielle Dauer des Studiums (Regelstudienzeit) in Leistungspunkten und/oder Jahren.</xs:documentation>
                               </xs:annotation>
-                              <xs:complexType>
-                                 <xs:choice>
-                                    <xs:element name="dauerInJahren" minOccurs="0" type="xs:decimal">
-                                       <xs:annotation>
-                                          <xs:documentation>Das Feld "dauerInJahren" wird zum Angeben der bis Dato vergangenen Studienzeit in Jahren (ohne Tag und Monat) verwendet.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                    <xs:element name="umfangInECTS" minOccurs="0" type="xs:integer">
-                                       <xs:annotation>
-                                          <xs:documentation>Das Feld "umfangInECTS" wird zur Angabe der bis Dato erworbenen (erreichten) ECTS-Punkte verwendet.</xs:documentation>
-                                       </xs:annotation>
-                                    </xs:element>
-                                 </xs:choice>
-                              </xs:complexType>
                            </xs:element>
                            <xs:element name="zugangsvorraussetzungen" type="xbd:String.Localized">
                               <xs:annotation>
@@ -192,7 +171,12 @@
                                  <xs:documentation>Bezieht sich auf Abschnitt 4.3. Einzelheiten zum Studienfach, individuell erworbene Leistungspunkte und erzielte Noten.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="gesamtnoteUndNotensystem" type="xbd:Benotung">
+                           <xs:element name="notensystem" type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Bezieht sich auf Abschnitt 4.4. Notensystem und, wenn vorhanden, Notenspiegel.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="gesamtnote" type="xbd:String.Localized">
                               <xs:annotation>
                                  <xs:documentation>Bezieht sich auf Abschnitt 4.5. Gesamtnote (in Originalsprache).</xs:documentation>
                               </xs:annotation>
@@ -248,7 +232,7 @@
                      </xs:annotation>
                      <xs:complexType>
                         <xs:sequence>
-                           <xs:element name="beschreibung" type="din91379:datatypeE">
+                           <xs:element name="beschreibung" type="xbd:String.Localized">
                               <xs:annotation>
                                  <xs:documentation>Bezieht sich auf Abschnitt 8.Allgemeine Beschreibung des Hochschulsystems als Freitext oder als Verweis auf externe Dokumente.</xs:documentation>
                               </xs:annotation>
@@ -271,11 +255,11 @@
          <xs:appinfo>
             <rechtsgrundlage/>
          </xs:appinfo>
-         <xs:documentation>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Hochschulabschlusszeugnisses erhält. Alle Module, wie auch die Abschlussarbeit, können über das Element "leistung " mit der zugehörigen Codeliste "leistungsart" abgebildet werden. Zum Beispiel kann das Element "leistung" in sich geschachtelt werden und mit den Werten von "leistungsart" wie Vorlesungen, Praktika, Klausuren, Abschlussarbeit etc. alle möglichen Szenarien zur Beschreibung eines Studiums und dessen Unterelemente abdecken.</xs:documentation>
+         <xs:documentation>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Hochschulabschlusszeugnisses erhält. Alle Module wie auch die Abschlussarbeit kann über das Element "leistung " mit der zugehörigen Codeliste "leistungsart" abgebildet werden. Zum Beispiel: kann das Element "leistung" mit "leistungsart" = Vorlesungen, Praktika, Klausuren, Abschlussarbeit etc. enthalten.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
          <xs:complexContent>
-            <xs:extension base="xhs:Dokument">
+            <xs:extension base="xbd:Dokument">
                <xs:sequence>
                   <xs:element name="abschluss" minOccurs="0" type="din91379:datatypeC">
                      <xs:annotation>
@@ -389,11 +373,11 @@
          <xs:appinfo>
             <rechtsgrundlage/>
          </xs:appinfo>
-         <xs:documentation>Das Transcript of Records (TOR) ist ein Bildungs- und Leistungsnachweis einer Hochschule und enthält üblicherweise Angaben wie Prüfungsleistungen, Prüfungsnoten, Auflistung besuchter Kurse und erreichter ECTS-Punkte.</xs:documentation>
+         <xs:documentation>Das Transcript of Records (TOR) ist ein Bildungs- und Leistungsnachweis einer Hochschule und enthält üblicherweise Angaben wie Prüfungsleistungen, Prüfungsnoten, Auflistung besuchter Kurse, erreichte ECTS-Punkte, etc.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
          <xs:complexContent>
-            <xs:extension base="xhs:Dokument">
+            <xs:extension base="xbd:Dokument">
                <xs:sequence>
                   <xs:element name="studierender" type="xhs:Studierender">
                      <xs:annotation>

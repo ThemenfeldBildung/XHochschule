@@ -19,7 +19,7 @@
          </imageobject>
       </mediaobject>
    </figure>
-   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="XHochschule.Baukasten.Dokument" role="AS"/>).</para>
+   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
    <informaltable xml:id="table.XHochschule.Bescheinigungen.immatrikulationsbescheinigung">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
@@ -133,10 +133,12 @@
                   <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XHochschule.Baukasten.Codes.Code.Lernzeitmodell"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XHochschule.Baukasten.Codes.Code.Lernzeitmodell"
+                        role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -360,8 +362,19 @@
             </thead>
             <tbody>
                <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;I&#x200B;m&#x200B;m&#x200B;a&#x200B;t&#x200B;r&#x200B;i&#x200B;k&#x200B;u&#x200B;l&#x200B;a&#x200B;t&#x200B;i&#x200B;o&#x200B;n&#x200B;s&#x200B;b&#x200B;e&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;i&#x200B;n&#x200B;i&#x200B;g&#x200B;u&#x200B;n&#x200B;g&#x200B;</entry>
+                  <entry>XHS-0005 Ein Ausstellungsort darf auf der Immatrikulationsbescheinigung nicht angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/xhs:studienabschnitt/xhs:aufzaehlung/xhs:beurlaubungsstatus</emphasis>
+                     <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/studienabschnitt/aufzaehlung/beurlaubungsstatus</emphasis>
                   </entry>
                </row>
                <row>
@@ -377,7 +390,18 @@
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/xhs:studienabschnitt/xhs:aufzaehlung/xhs:lernzeitmodell</emphasis>
+                     <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/studienabschnitt/aufzaehlung/lernzeitmodell</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;V&#x200B;o&#x200B;l&#x200B;l&#x200B;O&#x200B;d&#x200B;e&#x200B;r&#x200B;T&#x200B;e&#x200B;i&#x200B;l&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
+                  <entry>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung "Teilzeit" oder "Vollzeit" haben.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')</emphasis>
+                     </para>
                   </entry>
                </row>
                <row>
@@ -393,7 +417,7 @@
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">xhs:immatrikulationsstatus</emphasis>
+                     <emphasis role="codebf">immatrikulationsstatus</emphasis>
                   </entry>
                </row>
                <row>

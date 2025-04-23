@@ -31,9 +31,9 @@
                     <!ENTITY datentyp.ref.code.leistungsstatus '<emphasis role="codebf">Code.Leistungsstatus</emphasis>'>
                     <!ENTITY datentyp.ref.link.code.leistungsstatus '<link linkend="XHochschule.Baukasten.Codes.Code.Leistungsstatus">Code.Leistungsstatus</link>'>
                     <!ENTITY datentyp.ref.xref.code.leistungsstatus '<xref linkend="XHochschule.Baukasten.Codes.Code.Leistungsstatus" role="AS"/>'>
-                    <!ENTITY datentyp.ref.dokument '<emphasis role="codebf">Dokument</emphasis>'>
-                    <!ENTITY datentyp.ref.link.dokument '<link linkend="XHochschule.Baukasten.Dokument">Dokument</link>'>
-                    <!ENTITY datentyp.ref.xref.dokument '<xref linkend="XHochschule.Baukasten.Dokument" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.lernzeitmodell '<emphasis role="codebf">Code.Lernzeitmodell</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.lernzeitmodell '<link linkend="XHochschule.Baukasten.Codes.Code.Lernzeitmodell">Code.Lernzeitmodell</link>'>
+                    <!ENTITY datentyp.ref.xref.code.lernzeitmodell '<xref linkend="XHochschule.Baukasten.Codes.Code.Lernzeitmodell" role="AS"/>'>
                     <!ENTITY datentyp.ref.externerbrachteleistung '<emphasis role="codebf">ExternErbrachteLeistung</emphasis>'>
                     <!ENTITY datentyp.ref.link.externerbrachteleistung '<link linkend="XHochschule.Baukasten.ExternErbrachteLeistung">ExternErbrachteLeistung</link>'>
                     <!ENTITY datentyp.ref.xref.externerbrachteleistung '<xref linkend="XHochschule.Baukasten.ExternErbrachteLeistung" role="AS"/>'>

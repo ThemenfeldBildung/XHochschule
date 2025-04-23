@@ -1,4 +1,4 @@
-<?xml version="1.0" standalone="yes" ?>
+﻿<?xml version="1.0" standalone="yes" ?>
 <?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!DOCTYPE preface [
     <!ENTITY % complete SYSTEM "../../ent/complete.ent">
@@ -8,16 +8,12 @@
     <info>
         <title>Hintergrund zu &fachmodul;</title>
     </info>
-    <para>&fachmodul; ist ein vom <link
-            xlink:href="https://www.it-planungsrat.de/beschluss/beschluss-2020-52"
-            >IT-Planungsrat</link> auf die Standardisierungsagenda gehobene, die Lebenslage Studium
-        betreffende, fachliche Ausprägung des IT-Standards XBildung, welcher ein
-        Standardisierungsvorhaben des Landes Sachsen-Anhalt und des Bundesministeriums für Bildung
-        und Forschung (kurz: BMBF) ist. Es verfolgt das Ziel, den Austausch von Studierendendaten im
-        nationalen Hochschulwesen zu vereinheitlichen, sodass die erforderliche <emphasis
-            role="bold">Interoperabilität zwischen den Hochschulsystemen</emphasis> (Campus
-        Management Systeme genannt) zur medienbruchfreien Abwicklung von zukünftig digitalen
-        Verwaltungsleistungen hergestellt werden kann.</para>
+    <para>&fachmodul; ist ein vom <link xlink:href="https://www.it-planungsrat.de/beschluss/beschluss-2020-52">IT-Planungsrat</link> auf die
+		Standardisierungsagenda gehobenes, die Lebenslage Studium betreffendes Standardisierungsvorhaben des Landes Sachsen-Anhalt und des Bundesministeriums für Bildung und
+		Forschung (kurz: BMBF). Es verfolgt das Ziel, den Austausch von Studierendendaten im nationalen Hochschulwesen zu vereinheitlichen, sodass die erforderliche <emphasis
+            role="bold"
+        >Interoperabilität zwischen den Hochschulsystemen</emphasis> (Campus Management Systeme genannt) zur medienbruchfreien Abwicklung von zukünftig digitalen
+		Verwaltungsleistungen hergestellt werden kann.</para>
     <para>Dafür wurden/werden entlang eines bewährten Vorgehens bei europäischen und nationalen Standardisierungsvorhaben </para>
     <itemizedlist>
         <listitem>
@@ -31,7 +27,7 @@
         </listitem>
         <listitem>
             <para>die Anforderungen für die Vereinheitlichung zusammen mit den Hochschulen, Wissenschaftsministerien der Länder, Fachverfahrensherstellern und weiteren Stakeholdern
-                in <link xlink:href="https://www.xbildung.de/web/events/xhochschule">virtuellen Workshops</link> erhoben, und</para>
+                in <link xlink:href="https://&fachmodul_in_uri;.de/web/aktuelles">virtuellen Workshops</link> erhoben, und</para>
         </listitem>
         <listitem>
             <para>die Bearbeitung des Bedarfs iterativ in Form dieser öffentlich einsehbaren Spezifikation mit PDF-Dokumentation und maschinenverarbeitbaren Dateien 
@@ -60,11 +56,11 @@
         Blick nimmt. Das Ziel des Vorhabens ist es, dass Akteure im Bildungswesen (z.B. Hochschulen,
         Schulen, Bildungsträger) elektronische Daten standardisiert untereinander austauschen, um
         sowohl Bildungsteilnehmer als auch die genannten Akteure zu entlasten (weniger analoge
-        Nachweise, Fehlerreduktion, schnellere (Prüf-)Verfahren etc.). XBildung als IT-Standard
-        bildet eine inhaltliche Klammer um die Teilmodule &fachmodul;, <link
-            xlink:href="https://xschule.digital/web/">XSchule</link> und <link
-            xlink:href="https://xberufsbildung.de/web/">XBerufsbildung</link> und regelt diejenigen
-        Aspekte, die für die Teilmodule übergreifend relevant sind. Konkret definiert der
-        Datenaustauschstandard semantische und fachlich übergreifende Bausteine zur Wiederverwendung
-        wie <link linkend="XHochschule.Baukasten.Dokument">Dokument</link>.</para>
+        Nachweise, Fehlerreduktion, schnellere (Prüf-)Verfahren etc.). XBildung mit seinem
+        Basismodul bildet eine inhaltliche Klammer um verschiedene Fachmodule bzw. -standards wie
+        zum Beispiel &fachmodul;, XSchule und regelt diejenigen Aspekte, die für mindestens zwei
+        Fachmodule und damit übergreifend relevant sind. Zurzeit wird an der Erstellung der
+        Fachstandards &fachmodul;, <link xlink:href="https://xschule.digital/web/">XSchule</link>
+        und <link xlink:href="https://xberufsbildung.de/web/">XBerufsbildung</link>
+        gearbeitet.</para>
 </chapter>
