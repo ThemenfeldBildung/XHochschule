@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [<!ENTITY % complete SYSTEM "../../../../../../ent/complete.ent"> %complete;]><section xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de">
-   <title xmlns:xlink="http://www.w3.org/1999/xlink">Nutzung des Datentyps</title>
-   <para xmlns:xlink="http://www.w3.org/1999/xlink" role="left-aligned">Dieser Typ kann in den folgenden Nachrichten übermittelt werden: <link linkend="XHochschule.Bescheinigungen.exmatrikulationsbescheinigung">exmatrikulationsbescheinigung</link>, <link linkend="XHochschule.Bildungsnachweise.hochschulabschlusszeugnis">hochschulabschlusszeugnis</link>, <link linkend="XHochschule.Bescheinigungen.immatrikulationsbescheinigung">immatrikulationsbescheinigung</link>, <link linkend="XHochschule.Bescheinigungen.immatrikulationsbescheinigungBAfoeGP9">immatrikulationsbescheinigungBAfoeGP9</link>, <link linkend="XHochschule.Bescheinigungen.rentenbescheinigung">rentenbescheinigung</link>, <link linkend="XHochschule.Bescheinigungen.studienverlaufsbescheinigung">studienverlaufsbescheinigung</link>, <link linkend="XHochschule.Bildungsnachweise.transcriptOfRecords">transcriptOfRecords</link>
-   </para>
-</section>
