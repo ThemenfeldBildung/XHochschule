@@ -1,7 +1,6 @@
 <?xml version="1.0" standalone="yes" ?>
 <?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<appendix version="5" xml:id="spezifikation.anhang.glossar" xml:lang="de"
-    xmlns="http://docbook.org/ns/docbook">
+<appendix version="5" xml:id="spezifikation.anhang.glossar" xml:lang="de" xmlns="http://docbook.org/ns/docbook">
     <info>
         <title>Glossar</title>
     </info>
@@ -16,15 +15,12 @@
             <tbody>
                 <row>
                     <entry>Anerkennung</entry>
-                    <entry>In Anerkennungsverfahren werden erbrachte Leistungen (etwa aus dem
-                        Auslandsstudium) oder Vorleistungen (etwa bei einem Studienplatzwechsel)
-                        bewertet. Oftmals schließen Einstufungsverfahren an Anerkennungsverfahren
-                        an. </entry>
+                    <entry>In Anerkennungsverfahren werden erbrachte Leistungen (etwa aus dem Auslandsstudium) oder Vorleistungen (etwa bei einem Studienplatzwechsel) bewertet.
+                        Oftmals schließen Einstufungsverfahren an Anerkennungsverfahren an. </entry>
                 </row>
                 <row>
                     <entry>Bewerbung</entry>
-                    <entry>Studierende müssen sich für einen Studienplatz bei der Hochschule oder
-                        der SfH bei zulassungsbeschränkten Studienfächern bewerben. Erfolgreiche
+                    <entry>Studierende müssen sich für einen Studienplatz bei der Hochschule oder der SfH bei zulassungsbeschränkten Studienfächern bewerben. Erfolgreiche
                         Bewerbungen haben Zulassungsverfahren zur Folge.</entry>
                 </row>
                 <!--<row>
@@ -44,27 +40,21 @@
                 </row>-->
                 <row>
                     <entry>ECTS</entry>
-                    <entry>Das European Credit Transfer and Accumulation System stellt einen
-                        einheitlichen Rahmen dar, um Schwerpunkte eines Studienfachs transparent zu
-                        machen. In der Regel bildet ein Leistungspunkt nach ECTS einen gewissen
-                        zeitlichen Aufwand ab, den Studierende erbracht haben. Festlegungen hierzu
-                        werden zumeist in Modulhandbüchern getroffen.</entry>
+                    <entry>Das European Credit Transfer and Accumulation System stellt einen einheitlichen Rahmen dar, um Schwerpunkte eines Studienfachs transparent zu machen. In
+                        der Regel bildet ein Leistungspunkt nach ECTS einen gewissen zeitlichen Aufwand ab, den Studierende erbracht haben. Festlegungen hierzu werden zumeist in
+                        Modulhandbüchern getroffen.</entry>
                 </row>
                 <row>
                     <entry>EDCI</entry>
-                    <entry>Die Europass Digital Credentials Infrastructure fungiert als technische
-                        Infrastruktur zur Ausstellung von digitalen Bildungszertifikaten im Rahmen
-                        des Europass-Vorhabens.</entry>
+                    <entry>Die Europass Digital Credentials Infrastructure fungiert als technische Infrastruktur zur Ausstellung von digitalen Bildungszertifikaten im Rahmen des
+                        Europass-Vorhabens.</entry>
                 </row>
                 <row>
                     <entry>eIDAS</entry>
-                    <entry>Verordnung des Europäischen Parlaments und des Rates vom 23. Juli 2014
-                        über elektronische Identifizierung und Vertrauensdienste für elektronische
-                        Transaktionen im Binnenmarkt und zur Aufhebung der Richtlinie 1999/93/EG. In
-                        der Verordnung, die in der Bundesrepublik Deutschland mit dem
-                        eIDAS-Durchführungsgesetz vom 29.07.2017 im nationalen Recht umgesetzt
-                        wurde, wird europaweit der Einsatz von Vertrauensdiensten bzw. die
-                        elektronische Identifizierung geregelt.</entry>
+                    <entry>Verordnung des Europäischen Parlaments und des Rates vom 23. Juli 2014 über elektronische Identifizierung und Vertrauensdienste für elektronische
+                        Transaktionen im Binnenmarkt und zur Aufhebung der Richtlinie 1999/93/EG. In der Verordnung, die in der Bundesrepublik Deutschland mit dem
+                        eIDAS-Durchführungsgesetz vom 29.07.2017 im nationalen Recht umgesetzt wurde, wird europaweit der Einsatz von Vertrauensdiensten bzw. die elektronische
+                        Identifizierung geregelt.</entry>
                 </row>
                 <row>
                     <entry>Einstufung</entry>
@@ -81,8 +71,7 @@
                 </row>
                 <row>
                     <entry>Erasmus</entry>
-                    <entry>Das Erasmus-Programm bzw. Erasmus-Stipendium der Europäischen Kommission
-                        ist eine bekannte und bedeutende Initiative zur Förderung internationaler
+                    <entry>Das Erasmus-Programm bzw. Erasmus-Stipendium der Europäischen Kommission ist eine bekannte und bedeutende Initiative zur Förderung internationaler
                         Studierendenmobilität.</entry>
                 </row>
                 <row>
@@ -97,10 +86,8 @@
                 </row>
                 <row>
                     <entry>Hochschulzugangsberechtigung</entry>
-                    <entry>Die Hochschulzugangsberechtigung kann auf verschiedene Arten erworben
-                        werden. Zu einer Hochschulzugangsberechtigung zählen die Allgemeine
-                        Hochschulreife, die fachgebundene Hochschulreife, die Fachhochschulreife
-                        oder eine gleichwertige, anerkannte Zugangsberechtigung.</entry>
+                    <entry>Die Hochschulzugangsberechtigung kann auf verschiedene Arten erworben werden. Zu einer Hochschulzugangsberechtigung zählen die Allgemeine Hochschulreife,
+                        die fachgebundene Hochschulreife, die Fachhochschulreife oder eine gleichwertige, anerkannte Zugangsberechtigung.</entry>
                 </row>
                 <row>
                     <entry>Immatrikulation</entry>
@@ -130,24 +117,20 @@
                 </row>
                 <row>
                     <entry>Nachrückverfahren</entry>
-                    <entry>Im Nachrückverfahren werden die aus dem Hauptverfahren unbesetzten
-                        Studienplätze an Bewerberinnen und Bewerber verteilt.Teilweise werden
-                        mehrere Nachrückverfahren durchgeführt, bis sämtliche Plätze vergeben sind.
-                        Im Ablehnungsbescheid (des Hauptverfahrens) werden die Modalitäten zur
-                        Bewerbung für das Nachrückverfahren genannt.</entry>
+                    <entry><emphasis role="bold">Im Nachrückverfahren werden die aus dem
+                            Hauptverfahren </emphasis><emphasis role="bold">unbesetzten
+                            Studienplätze an Bewerberinnen und Bewerber verteilt.</emphasis>
+                        Teilweise werden mehrere Nachrückverfahren durchgeführt, bis sämtliche
+                        Plätze vergeben sind. Im Ablehnungsbescheid (des Hauptverfahrens) werden die
+                        Modalitäten zur Bewerbung für das Nachrückverfahren genannt.</entry>
                 </row>
                 <row>
                     <entry>Nutzerkonto</entry>
-                    <entry>Bürger/innen und Unternehmen / Organisationen können eine Identität im
-                        Nutzerkonto erstellen und diese bei der Beantragung von
-                        Verwaltungsleistungen zur Authentisierung nutzen. Die Schnittstelle für den
-                        Nachrichtenversand an das Postfach im Nutzerkonto bietet externen Online
-                        Leistungen und Fachverfahren die Möglichkeit, Nachrichten in das Postfach
-                        einer bestimmten Identität abzulegen. Im Nutzerkonto werden folgende
-                        personenbezogene Stammdaten geführt: Vorname(n), Nachname, E-Mail-Adresse,
-                        Straße, PLZ, Wohnort, Akad. Titel, Anrede, Geburtsdatum, Geburtsort. Diese
-                        personenbezogenen Daten sollen in Antragsverfahren, die im Rahmen der
-                        OZG-Umsetzung digitalisiert werden, genutzt werden können.</entry>
+                    <entry>Bürger/innen und Unternehmen / Organisationen können eine Identität im Nutzerkonto erstellen und diese bei der Beantragung von Verwaltungsleistungen zur
+                        Authentisierung nutzen. Die Schnittstelle für den Nachrichtenversand an das Postfach im Nutzerkonto bietet externen Online Leistungen und Fachverfahren die
+                        Möglichkeit, Nachrichten in das Postfach einer bestimmten Identität abzulegen. Im Nutzerkonto werden folgende personenbezogene Stammdaten geführt:
+                        Vorname(n), Nachname, E-Mail-Adresse, Straße, PLZ, Wohnort, Akad. Titel, Anrede, Geburtsdatum, Geburtsort. Diese personenbezogenen Daten sollen in
+                        Antragsverfahren, die im Rahmen der OZG-Umsetzung digitalisiert werden, genutzt werden können.</entry>
                 </row>
                 <row>
                     <entry>PIM</entry>
@@ -159,60 +142,43 @@
                 </row>
                 <row>
                     <entry>SDG-VO</entry>
-                    <entry>Die Single Digital Gateway-Verordnung der EU legt Verwaltungsverfahren
-                        fest, die bis 12.12.2023 für alle Bürger der EU digital umzusetzen sind.
-                        Dabei soll ein einheitlicher Zugang zu diesen Verfahren geboten werden.
-                        Mittels des SDG sollen Bürgerinnen und Bürger sowie Unternehmen
-                        nutzerfreundlich online Zugriff auf Informationen, Verfahren und Hilfs- und
-                        Problemlösungsdienste in allen EU-Mitgliedstaaten erhalten. Von der SDG sind
-                        drei konkrete Verfahren im Bildungsbereich betroffen.</entry>
+                    <entry>Die Single Digital Gateway-Verordnung der EU legt Verwaltungsverfahren fest, die bis 12.12.2023 für alle Bürger der EU digital umzusetzen sind. Dabei
+                        soll ein einheitlicher Zugang zu diesen Verfahren geboten werden. Mittels des SDG sollen Bürgerinnen und Bürger sowie Unternehmen nutzerfreundlich online
+                        Zugriff auf Informationen, Verfahren und Hilfs- und Problemlösungsdienste in allen EU-Mitgliedstaaten erhalten. Von der SDG sind drei konkrete Verfahren im
+                        Bildungsbereich betroffen.</entry>
                 </row>
                 <row>
                     <entry>Semesterbeiträge</entry>
-                    <entry>Semesterbeiträge werden von Hochschulen erhoben und müssen durch
-                        Studierende im Rahmen der Immatrikulation oder Rückmeldung beglichen werden,
-                        um sich ordentlich einschreiben zu können.</entry>
+                    <entry>Semesterbeiträge werden von Hochschulen erhoben und müssen durch Studierende im Rahmen der Immatrikulation oder Rückmeldung beglichen werden, um sich
+                        ordentlich einschreiben zu können.</entry>
                 </row>
                 <row>
                     <entry>Studienplatzwechsel</entry>
-                    <entry>Ein Studienplatzwechsel kann viele Ausformungen haben, von denen die
-                        geläufigsten der Studienortwechsel und / oder der Studienfachwechsel sind.
-                        Der Begriff Studienplatzwechsel wird im Rahmen der Bedarfsbeschreibung daher
-                        als Überbegriff für diverse (potentielle) Anwendungsszenarien der
-                        Spezifikation genutzt.</entry>
+                    <entry>Ein Studienplatzwechsel kann viele Ausformungen haben, von denen die geläufigsten der Studienortwechsel und / oder der Studienfachwechsel sind. Der
+                        Begriff Studienplatzwechsel wird im Rahmen der Bedarfsbeschreibung daher als Überbegriff für diverse (potentielle) Anwendungsszenarien der Spezifikation
+                        genutzt.</entry>
                 </row>
                 <row>
                     <entry>Zulassung</entry>
-                    <entry>Eine Zulassung zu einem Studium folgt auf Bewerbungs- und ggf.
-                        Anerkennungs- und Einstufungsverfahren durch die jeweilige Hochschule oder
-                        die SfH. Zur Zulassung zum Studium sind Voraussetzungen zu erfüllen.
-                        Grundlegende Zulassungsvoraussetzung für das Studium ist der Besitz der
-                        Hochschulzugangsberechtigung. Grundsätzlich ist auch ein <link
-                            xlink:href="https://www.kmk.org/themen/hochschulen/studium-und-pruefungen/lebenslanges-lernen.html"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">Studium ohne
-                            Hochschulreife</link> unter bestimmten Voraussetzungen möglich. Zum Teil
-                        genügen eine Ausbildung sowie mehrjährige Berufserfahrung oder eine
-                        anderweitige Prüfung für die Zulassung zu einem fachspezifischen
-                        Studienfach. Weiterhin können Studienfächer andere Zulassungsvoraussetzungen
-                        beinhalten, die für eine Bewerbung erfüllt werden müssen. Für
-                        zulassungsbeschränkte Studienfächer sind ggf. weitere Auswahlverfahren
-                        (Vorabverfahren, Nachrückverfahren) relevant, in denen Studienplätze in
-                        Studienfächern mit Numerus Clausus vergeben werden.</entry>
+                    <entry>Eine Zulassung zu einem Studium folgt auf Bewerbungs- und ggf. Anerkennungs- und Einstufungsverfahren durch die jeweilige Hochschule oder die SfH. Zur
+                        Zulassung zum Studium sind Voraussetzungen zu erfüllen. Grundlegende Zulassungsvoraussetzung für das Studium ist der Besitz der Hochschulzugangsberechtigung. Grundsätzlich ist auch ein <link
+                            xlink:href="https://www.kmk.org/themen/hochschulen/studium-und-pruefungen/lebenslanges-lernen.html" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >Studium ohne Hochschulreife</link>
+                        unter bestimmten Voraussetzungen möglich. Zum Teil genügen eine Ausbildung sowie mehrjährige Berufserfahrung oder eine anderweitige Prüfung für die
+                        Zulassung zu einem fachspezifischen Studienfach. Weiterhin können Studienfächer andere Zulassungsvoraussetzungen beinhalten, die für eine Bewerbung
+                        erfüllt werden müssen. Für zulassungsbeschränkte Studienfächer sind ggf. weitere Auswahlverfahren
+                        (Vorabverfahren, Nachrückverfahren) relevant, in denen Studienplätze in Studienfächern mit Numerus Clausus vergeben werden.</entry>
                 </row>
                 <row>
                     <entry>Zulassungsbeschränktes Studienfach</entry>
-                    <entry>Für ein zulassungsbeschränktes Studienfach steht nur eine begrenzte
-                        Anzahl von Studienplätzen zur Verfügung. Die Studienfächer Medizin,
-                        Zahnmedizin und Tiermedizin sind in der Regel zulassungsbeschränkt und
-                        Studienplätze werden über die SfH vergeben. </entry>
+                    <entry>Für ein zulassungsbeschränktes Studienfach steht nur eine begrenzte Anzahl von Studienplätzen zur Verfügung. Die Studienfächer Medizin, Zahnmedizin und
+                        Tiermedizin sind in der Regel zulassungsbeschränkt und Studienplätze werden über die SfH vergeben. </entry>
                 </row>
                 <row>
                     <entry>Zweitstudium</entry>
-                    <entry>Ein Zweitstudium ist kein konsekutives Studienfach (wie im Fall eines
-                        Masterstudiums nach Bachelorabschluss), sondern ein grundsätzlich
-                        eigenständiges (neues) Studium. Bei Aufnahme eines Zweitstudiums lassen sich
-                        ggf. Leistungen aus dem Erststudium anerkennen und eine Einstufung in ein
-                        bestimmtes Fachsemester erreichen.</entry>
+                    <entry>Ein Zweitstudium ist kein konsekutives Studienfach (wie im Fall eines Masterstudiums nach Bachelorabschluss), sondern ein grundsätzlich eigenständiges
+                        (neues) Studium. Bei Aufnahme eines Zweitstudiums lassen sich ggf. Leistungen aus dem Erststudium anerkennen und eine Einstufung in ein bestimmtes
+                        Fachsemester erreichen.</entry>
                 </row>
             </tbody>
         </tgroup>

@@ -169,6 +169,18 @@
                <entry align="left">1.0</entry>
                <entry align="left">1</entry>
             </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XHochschule.Baukasten.Codes.Code.Lernzeitmodell">Code.Lernzeitmodell</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.lernzeitmodell.Lernzeitmodell-Codes">Lernzeitmodell</link>
+               </entry>
+               <entry align="left">1.0</entry>
+               <entry align="left">1</entry>
+            </row>
          </tbody>
       </tgroup>
    </informaltable>

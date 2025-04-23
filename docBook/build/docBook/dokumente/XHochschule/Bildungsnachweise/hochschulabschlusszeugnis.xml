@@ -9,8 +9,8 @@
    <title>hochschulabschlusszeugnis</title>
    <subtitle>Nachricht: <emphasis role="codebf">hochschulabschlusszeugnis</emphasis>
    </subtitle><para>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Hochschulabschlusszeugnisses erhält. 
-Alle Module, wie auch die Abschlussarbeit, können über das Element "leistung " mit der zugehörigen Codeliste "leistungsart" abgebildet werden.
-Zum Beispiel kann das Element "leistung" in sich geschachtelt werden und mit den Werten von "leistungsart" wie Vorlesungen, Praktika, Klausuren, Abschlussarbeit etc. alle möglichen Szenarien zur Beschreibung eines Studiums und dessen Unterelemente abdecken.</para>
+Alle Module wie auch die Abschlussarbeit kann über das Element "leistung " mit der zugehörigen Codeliste "leistungsart" abgebildet werden.
+Zum Beispiel: kann das Element "leistung" mit "leistungsart" = Vorlesungen, Praktika, Klausuren, Abschlussarbeit etc. enthalten.</para>
 <figure xml:id="figure.XHochschule.Bildungsnachweise.hochschulabschlusszeugnis">
       <title>hochschulabschlusszeugnis</title>
       <mediaobject>
@@ -22,7 +22,7 @@ Zum Beispiel kann das Element "leistung" in sich geschachtelt werden und mit den
          </imageobject>
       </mediaobject>
    </figure>
-   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="XHochschule.Baukasten.Dokument" role="AS"/>).</para>
+   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
    <informaltable xml:id="table.XHochschule.Bildungsnachweise.hochschulabschlusszeugnis">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
@@ -383,8 +383,19 @@ Zum Beispiel kann das Element "leistung" in sich geschachtelt werden und mit den
             </thead>
             <tbody>
                <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;7&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;H&#x200B;A&#x200B;Z&#x200B;</entry>
+                  <entry>XHS-0007 Ein Ausstellungsort darf auf dem Hochschulabschlusszeugnis nicht angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">xhs:benotung</emphasis>
+                     <emphasis role="codebf">benotung</emphasis>
                   </entry>
                </row>
                <row>
@@ -400,23 +411,23 @@ Zum Beispiel kann das Element "leistung" in sich geschachtelt werden und mit den
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">xhs:benotung/xhs:gesamtnote/xbd:note</emphasis>
+                     <emphasis role="codebf">benotung/gesamtnote/note</emphasis>
                   </entry>
                </row>
                <row>
                   <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;9&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;G&#x200B;e&#x200B;s&#x200B;a&#x200B;m&#x200B;t&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;u&#x200B;n&#x200B;d&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;a&#x200B;r&#x200B;b&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
-                  <entry>XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>
+                  <entry>XHS-0019 Das Feld Note muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))</emphasis>
+                        <emphasis role="codebf">(matches(., '^\d+,\d+$'))</emphasis>
                      </para>
                   </entry>
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">xhs:benotung/xhs:lateinischeEhrenbezeichnung</emphasis>
+                     <emphasis role="codebf">benotung/lateinischeEhrenbezeichnung</emphasis>
                   </entry>
                </row>
                <row>
@@ -432,33 +443,33 @@ Zum Beispiel kann das Element "leistung" in sich geschachtelt werden und mit den
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">xhs:diplomaSupplement/xhs:erzielteErgebnisse/xhs:gesamtnoteUndNotensystem/xbd:note</emphasis>
+                     <emphasis role="codebf">diplomaSupplement</emphasis>
                   </entry>
                </row>
                <row>
-                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;9&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;G&#x200B;e&#x200B;s&#x200B;a&#x200B;m&#x200B;t&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;u&#x200B;n&#x200B;d&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;a&#x200B;r&#x200B;b&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
-                  <entry>XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;8&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;D&#x200B;S&#x200B;</entry>
+                  <entry>XHS-0008 Ein Ausstellungsort darf auf dem Diploma Supplement nicht angegeben werden.</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))</emphasis>
+                        <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
                      </para>
                   </entry>
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">xhs:leistung/xhs:benotung/xbd:note</emphasis>
+                     <emphasis role="codebf">leistung/benotung/note</emphasis>
                   </entry>
                </row>
                <row>
                   <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;9&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;G&#x200B;e&#x200B;s&#x200B;a&#x200B;m&#x200B;t&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;u&#x200B;n&#x200B;d&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;a&#x200B;r&#x200B;b&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
-                  <entry>XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>
+                  <entry>XHS-0019 Das Feld Note muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))</emphasis>
+                        <emphasis role="codebf">(matches(., '^\d+,\d+$'))</emphasis>
                      </para>
                   </entry>
                </row>

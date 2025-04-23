@@ -31,7 +31,7 @@
             <entry align="left">
                <para>exmatrikulationsbescheinigung</para>
             </entry>
-            <entry><para>Exmatrikulationsbescheinigung, die für einen Studienplatzwechsel benötigt wird. Diese enthält üblicherweise Angaben zum Zeitraum des Studiums und dem Datum der Exmatrikulation.</para></entry>
+            <entry><para>Exmatrikulationsbescheinigung, die für einen Studienplatzwechsel benötigt wird.</para></entry>
             <entry align="center">
                <xref role="Seite"
                      linkend="XHochschule.Bescheinigungen.exmatrikulationsbescheinigung"/>
@@ -61,7 +61,7 @@
             <entry align="left">
                <para>rentenbescheinigung</para>
             </entry>
-            <entry><para>Bescheinigung zur Vorlage bei der Deutschen Rentenversicherung.</para></entry>
+            <entry><para>Bescheinigungen zur Vorlage bei der Deutschen Rentenversicherung</para></entry>
             <entry align="center">
                <xref role="Seite" linkend="XHochschule.Bescheinigungen.rentenbescheinigung"/>
             </entry>
@@ -70,7 +70,7 @@
             <entry align="left">
                <para>studienverlaufsbescheinigung</para>
             </entry>
-            <entry><para>Bescheinigung über den Verlauf des Studiums, angeordnet nach Studiengang oder Studienfach. Diese enthält die Semesterabschnitte, die ein ein Studierender immatrikuliert oder auch gegebenenfalls beurlaubt war.</para></entry>
+            <entry><para>Bescheinigung über den Verlauf des Studiums von Studierenden.</para></entry>
             <entry align="center">
                <xref role="Seite"
                      linkend="XHochschule.Bescheinigungen.studienverlaufsbescheinigung"/>
@@ -86,7 +86,7 @@
                <para>diplomaSupplement</para>
             </entry>
             <entry><para>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Diploma Supplement erhält.
-Dabei deckt die im Element Dokument enthaltene Klasse "ausstellung" den Abschnitt 7.1 des Diploma Supplements ab.</para></entry>
+Das von xbd:Dokument geerbte Element "ausstellung" deckt den Abschnitt 7.1 des Diploma Supplements ab.</para></entry>
             <entry align="center">
                <xref role="Seite" linkend="XHochschule.Bildungsnachweise.diplomaSupplement"/>
             </entry>
@@ -96,8 +96,8 @@ Dabei deckt die im Element Dokument enthaltene Klasse "ausstellung" den Abschnit
                <para>hochschulabschlusszeugnis</para>
             </entry>
             <entry><para>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Hochschulabschlusszeugnisses erhält. 
-Alle Module, wie auch die Abschlussarbeit, können über das Element "leistung " mit der zugehörigen Codeliste "leistungsart" abgebildet werden.
-Zum Beispiel kann das Element "leistung" in sich geschachtelt werden und mit den Werten von "leistungsart" wie Vorlesungen, Praktika, Klausuren, Abschlussarbeit etc. alle möglichen Szenarien zur Beschreibung eines Studiums und dessen Unterelemente abdecken.</para>
+Alle Module wie auch die Abschlussarbeit kann über das Element "leistung " mit der zugehörigen Codeliste "leistungsart" abgebildet werden.
+Zum Beispiel: kann das Element "leistung" mit "leistungsart" = Vorlesungen, Praktika, Klausuren, Abschlussarbeit etc. enthalten.</para>
 </entry>
             <entry align="center">
                <xref role="Seite"
@@ -108,7 +108,7 @@ Zum Beispiel kann das Element "leistung" in sich geschachtelt werden und mit den
             <entry align="left">
                <para>transcriptOfRecords</para>
             </entry>
-            <entry><para>Das Transcript of Records (TOR) ist ein Bildungs- und Leistungsnachweis einer Hochschule und enthält üblicherweise Angaben wie Prüfungsleistungen, Prüfungsnoten, Auflistung besuchter Kurse und erreichter ECTS-Punkte. </para></entry>
+            <entry><para>Das Transcript of Records (TOR) ist ein Bildungs- und Leistungsnachweis einer Hochschule und enthält üblicherweise Angaben wie Prüfungsleistungen, Prüfungsnoten, Auflistung besuchter Kurse, erreichte ECTS-Punkte, etc. </para></entry>
             <entry align="center">
                <xref role="Seite"
                      linkend="XHochschule.Bildungsnachweise.transcriptOfRecords"/>

@@ -14,6 +14,24 @@
       <tbody>
          <row>
             <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Globales Element diplomaSupplement</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;8&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;D&#x200B;S&#x200B;</entry>
+            <entry>XHS-0008 Ein Ausstellungsort darf auf dem Diploma Supplement nicht angegeben werden.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
                <emphasis role="bold">Globales Element exmatrikulationsbescheinigung</emphasis>
                <?dbhtml bgcolor="#EEEEEE"?>
                <?dbfo bgcolor="#EEEEEE"?>
@@ -31,6 +49,17 @@
             </entry>
          </row>
          <row>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;3&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;E&#x200B;x&#x200B;m&#x200B;a&#x200B;t&#x200B;r&#x200B;i&#x200B;k&#x200B;u&#x200B;l&#x200B;a&#x200B;t&#x200B;i&#x200B;o&#x200B;n&#x200B;s&#x200B;b&#x200B;e&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;i&#x200B;n&#x200B;i&#x200B;g&#x200B;u&#x200B;n&#x200B;g&#x200B;</entry>
+            <entry>XHS-0003 Ein Ausstellungsort darf auf der Exmatrikulationsbescheinigung nicht angegeben werden.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
             <entry namest="id" nameend="regel" align="center">
                <emphasis role="bold">Globales Element hochschulabschlusszeugnis</emphasis>
                <?dbhtml bgcolor="#EEEEEE"?>
@@ -38,8 +67,19 @@
             </entry>
          </row>
          <row>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;7&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;H&#x200B;A&#x200B;Z&#x200B;</entry>
+            <entry>XHS-0007 Ein Ausstellungsort darf auf dem Hochschulabschlusszeugnis nicht angegeben werden.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:benotung</emphasis>
+               <emphasis role="codebf">benotung</emphasis>
             </entry>
          </row>
          <row>
@@ -55,23 +95,23 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:benotung/xhs:gesamtnote/xbd:note</emphasis>
+               <emphasis role="codebf">benotung/gesamtnote/note</emphasis>
             </entry>
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;9&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;G&#x200B;e&#x200B;s&#x200B;a&#x200B;m&#x200B;t&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;u&#x200B;n&#x200B;d&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;a&#x200B;r&#x200B;b&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
-            <entry>XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>
+            <entry>XHS-0019 Das Feld Note muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</entry>
          </row>
          <row>
             <entry align="left">
                <para>
-                  <emphasis role="codebf">(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))</emphasis>
+                  <emphasis role="codebf">(matches(., '^\d+,\d+$'))</emphasis>
                </para>
             </entry>
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:benotung/xhs:lateinischeEhrenbezeichnung</emphasis>
+               <emphasis role="codebf">benotung/lateinischeEhrenbezeichnung</emphasis>
             </entry>
          </row>
          <row>
@@ -87,33 +127,33 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:diplomaSupplement/xhs:erzielteErgebnisse/xhs:gesamtnoteUndNotensystem/xbd:note</emphasis>
+               <emphasis role="codebf">diplomaSupplement</emphasis>
             </entry>
          </row>
          <row>
-            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;9&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;G&#x200B;e&#x200B;s&#x200B;a&#x200B;m&#x200B;t&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;u&#x200B;n&#x200B;d&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;a&#x200B;r&#x200B;b&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
-            <entry>XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;8&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;D&#x200B;S&#x200B;</entry>
+            <entry>XHS-0008 Ein Ausstellungsort darf auf dem Diploma Supplement nicht angegeben werden.</entry>
          </row>
          <row>
             <entry align="left">
                <para>
-                  <emphasis role="codebf">(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))</emphasis>
+                  <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
                </para>
             </entry>
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:leistung/xhs:benotung/xbd:note</emphasis>
+               <emphasis role="codebf">leistung/benotung/note</emphasis>
             </entry>
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;9&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;G&#x200B;e&#x200B;s&#x200B;a&#x200B;m&#x200B;t&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;u&#x200B;n&#x200B;d&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;a&#x200B;r&#x200B;b&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
-            <entry>XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>
+            <entry>XHS-0019 Das Feld Note muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</entry>
          </row>
          <row>
             <entry align="left">
                <para>
-                  <emphasis role="codebf">(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))</emphasis>
+                  <emphasis role="codebf">(matches(., '^\d+,\d+$'))</emphasis>
                </para>
             </entry>
          </row>
@@ -125,8 +165,19 @@
             </entry>
          </row>
          <row>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;I&#x200B;m&#x200B;m&#x200B;a&#x200B;t&#x200B;r&#x200B;i&#x200B;k&#x200B;u&#x200B;l&#x200B;a&#x200B;t&#x200B;i&#x200B;o&#x200B;n&#x200B;s&#x200B;b&#x200B;e&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;i&#x200B;n&#x200B;i&#x200B;g&#x200B;u&#x200B;n&#x200B;g&#x200B;</entry>
+            <entry>XHS-0005 Ein Ausstellungsort darf auf der Immatrikulationsbescheinigung nicht angegeben werden.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/xhs:studienabschnitt/xhs:aufzaehlung/xhs:beurlaubungsstatus</emphasis>
+               <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/studienabschnitt/aufzaehlung/beurlaubungsstatus</emphasis>
             </entry>
          </row>
          <row>
@@ -142,7 +193,18 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/xhs:studienabschnitt/xhs:aufzaehlung/xhs:lernzeitmodell</emphasis>
+               <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/studienabschnitt/aufzaehlung/lernzeitmodell</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;V&#x200B;o&#x200B;l&#x200B;l&#x200B;O&#x200B;d&#x200B;e&#x200B;r&#x200B;T&#x200B;e&#x200B;i&#x200B;l&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
+            <entry>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung "Teilzeit" oder "Vollzeit" haben.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')</emphasis>
+               </para>
             </entry>
          </row>
          <row>
@@ -158,7 +220,7 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:immatrikulationsstatus</emphasis>
+               <emphasis role="codebf">immatrikulationsstatus</emphasis>
             </entry>
          </row>
          <row>
@@ -180,8 +242,19 @@
             </entry>
          </row>
          <row>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;4&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;I&#x200B;m&#x200B;m&#x200B;a&#x200B;t&#x200B;r&#x200B;i&#x200B;k&#x200B;u&#x200B;l&#x200B;a&#x200B;t&#x200B;i&#x200B;o&#x200B;n&#x200B;s&#x200B;b&#x200B;e&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;i&#x200B;n&#x200B;i&#x200B;g&#x200B;u&#x200B;n&#x200B;g&#x200B;B&#x200B;A&#x200B;f&#x200B;o&#x200B;e&#x200B;G&#x200B;P&#x200B;9&#x200B;</entry>
+            <entry>XHS-0004 Ein Ausstellungsort darf auf der Immatrikulationsbescheinigung nach BaföG § 9 nicht angegeben werden.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/xhs:studienabschnitt/xhs:aufzaehlung/xhs:beurlaubungsstatus</emphasis>
+               <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/studienabschnitt/aufzaehlung/beurlaubungsstatus</emphasis>
             </entry>
          </row>
          <row>
@@ -197,7 +270,18 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/xhs:studienabschnitt/xhs:aufzaehlung/xhs:lernzeitmodell</emphasis>
+               <emphasis role="codebf">null#/xhs:exmatrikulationsbescheinigung/studienabschnitt/aufzaehlung/lernzeitmodell</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;V&#x200B;o&#x200B;l&#x200B;l&#x200B;O&#x200B;d&#x200B;e&#x200B;r&#x200B;T&#x200B;e&#x200B;i&#x200B;l&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
+            <entry>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung "Teilzeit" oder "Vollzeit" haben.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')</emphasis>
+               </para>
             </entry>
          </row>
          <row>
@@ -213,7 +297,7 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">null#/xhs:immatrikulationsbescheinigung/xhs:immatrikulationsstatus</emphasis>
+               <emphasis role="codebf">null#/xhs:immatrikulationsbescheinigung/immatrikulationsstatus</emphasis>
             </entry>
          </row>
          <row>
@@ -228,22 +312,6 @@
             </entry>
          </row>
          <row>
-            <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:lernzeitmodell</emphasis>
-            </entry>
-         </row>
-         <row>
-            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;V&#x200B;o&#x200B;l&#x200B;l&#x200B;O&#x200B;d&#x200B;e&#x200B;r&#x200B;T&#x200B;e&#x200B;i&#x200B;l&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
-            <entry>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung 'Teilzeit' oder 'Vollzeit' haben.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
             <entry namest="id" nameend="regel" align="center">
                <emphasis role="bold">Globales Element rentenbescheinigung</emphasis>
                <?dbhtml bgcolor="#EEEEEE"?>
@@ -251,29 +319,65 @@
             </entry>
          </row>
          <row>
-            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;3&#x200B;2&#x200B;-&#x200B;k&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;b&#x200B;l&#x200B;a&#x200B;u&#x200B;f&#x200B;d&#x200B;a&#x200B;t&#x200B;u&#x200B;m&#x200B;R&#x200B;e&#x200B;n&#x200B;t&#x200B;e&#x200B;n&#x200B;v&#x200B;e&#x200B;r&#x200B;s&#x200B;i&#x200B;c&#x200B;h&#x200B;e&#x200B;r&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;n&#x200B;u&#x200B;m&#x200B;m&#x200B;e&#x200B;r&#x200B;</entry>
-            <entry>XHS-0032 Die Rentenversicheurngsnummer ist ab Geburt ein Leben lang gültig. Ablaufdatum darf nicht angezeigt werden.</entry>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;6&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;R&#x200B;e&#x200B;n&#x200B;t&#x200B;e&#x200B;n&#x200B;b&#x200B;e&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;i&#x200B;n&#x200B;i&#x200B;g&#x200B;u&#x200B;n&#x200B;g&#x200B;</entry>
+            <entry>XHS-0006 Ein Ausstellungsort darf auf der Rentenbescheinigung nicht angegeben werden.</entry>
          </row>
          <row>
             <entry align="left">
                <para>
-                  <emphasis role="codebf">not(exists(*:rentenversicherungsnummer/gueltigkeit/ende))</emphasis>
+                  <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
                </para>
             </entry>
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xhs:studienabschnitt</emphasis>
+               <emphasis role="codebf">studienabschnitt</emphasis>
             </entry>
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;1&#x200B;-&#x200B;W&#x200B;e&#x200B;n&#x200B;n&#x200B;B&#x200B;e&#x200B;u&#x200B;r&#x200B;l&#x200B;a&#x200B;u&#x200B;b&#x200B;t&#x200B;D&#x200B;a&#x200B;n&#x200B;n&#x200B;B&#x200B;e&#x200B;u&#x200B;r&#x200B;l&#x200B;a&#x200B;u&#x200B;b&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;g&#x200B;r&#x200B;u&#x200B;n&#x200B;d&#x200B;</entry>
-            <entry>XHS-0001 Wenn und nur wenn der Beurlaubungsstatus 'beurlaubt' ist, darf der Beurlaubungsgrund angegeben werden.</entry>
+            <entry>XHS-0001 Wenn und nur wenn der Beurlaubungsstatus "beurlaubt" ist, darf der Beurlaubungsgrund angegeben werden.</entry>
          </row>
          <row>
             <entry align="left">
                <para>
                   <emphasis role="codebf">if (*:beurlaubungsstatus/code/code = 'http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/beurlaubt') then exists(*:beurlaubungsgrund) else empty(*:beurlaubungsgrund)</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Globales Element studienverlaufsbescheinigung</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;S&#x200B;V&#x200B;B&#x200B;</entry>
+            <entry>XHS-0002 Ein Ausstellungsort darf auf der Studienverlaufsbescheinigung nicht angegeben werden.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Globales Element transcriptOfRecords</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;9&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;T&#x200B;O&#x200B;R&#x200B;</entry>
+            <entry>XHS-0009 Ein Ausstellungsort darf auf dem Transcript of Records nicht angegeben werden.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
                </para>
             </entry>
          </row>

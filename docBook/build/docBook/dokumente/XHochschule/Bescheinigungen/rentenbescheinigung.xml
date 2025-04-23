@@ -8,7 +8,7 @@
          xml:id="XHochschule.Bescheinigungen.rentenbescheinigung">
    <title>rentenbescheinigung</title>
    <subtitle>Nachricht: <emphasis role="codebf">rentenbescheinigung</emphasis>
-   </subtitle><para>Bescheinigung zur Vorlage bei der Deutschen Rentenversicherung.</para><figure xml:id="figure.XHochschule.Bescheinigungen.rentenbescheinigung">
+   </subtitle><para>Bescheinigungen zur Vorlage bei der Deutschen Rentenversicherung</para><figure xml:id="figure.XHochschule.Bescheinigungen.rentenbescheinigung">
       <title>rentenbescheinigung</title>
       <mediaobject>
          <imageobject>
@@ -19,7 +19,7 @@
          </imageobject>
       </mediaobject>
    </figure>
-   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="XHochschule.Baukasten.Dokument" role="AS"/>).</para>
+   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
    <informaltable xml:id="table.XHochschule.Bescheinigungen.rentenbescheinigung">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
@@ -248,24 +248,24 @@
             </thead>
             <tbody>
                <row>
-                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;3&#x200B;2&#x200B;-&#x200B;k&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;b&#x200B;l&#x200B;a&#x200B;u&#x200B;f&#x200B;d&#x200B;a&#x200B;t&#x200B;u&#x200B;m&#x200B;R&#x200B;e&#x200B;n&#x200B;t&#x200B;e&#x200B;n&#x200B;v&#x200B;e&#x200B;r&#x200B;s&#x200B;i&#x200B;c&#x200B;h&#x200B;e&#x200B;r&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;n&#x200B;u&#x200B;m&#x200B;m&#x200B;e&#x200B;r&#x200B;</entry>
-                  <entry>XHS-0032 Die Rentenversicheurngsnummer ist ab Geburt ein Leben lang gültig. Ablaufdatum darf nicht angezeigt werden.</entry>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;6&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;R&#x200B;e&#x200B;n&#x200B;t&#x200B;e&#x200B;n&#x200B;b&#x200B;e&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;i&#x200B;n&#x200B;i&#x200B;g&#x200B;u&#x200B;n&#x200B;g&#x200B;</entry>
+                  <entry>XHS-0006 Ein Ausstellungsort darf auf der Rentenbescheinigung nicht angegeben werden.</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">not(exists(*:rentenversicherungsnummer/gueltigkeit/ende))</emphasis>
+                        <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
                      </para>
                   </entry>
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">xhs:studienabschnitt</emphasis>
+                     <emphasis role="codebf">studienabschnitt</emphasis>
                   </entry>
                </row>
                <row>
                   <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;1&#x200B;-&#x200B;W&#x200B;e&#x200B;n&#x200B;n&#x200B;B&#x200B;e&#x200B;u&#x200B;r&#x200B;l&#x200B;a&#x200B;u&#x200B;b&#x200B;t&#x200B;D&#x200B;a&#x200B;n&#x200B;n&#x200B;B&#x200B;e&#x200B;u&#x200B;r&#x200B;l&#x200B;a&#x200B;u&#x200B;b&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;g&#x200B;r&#x200B;u&#x200B;n&#x200B;d&#x200B;</entry>
-                  <entry>XHS-0001 Wenn und nur wenn der Beurlaubungsstatus 'beurlaubt' ist, darf der Beurlaubungsgrund angegeben werden.</entry>
+                  <entry>XHS-0001 Wenn und nur wenn der Beurlaubungsstatus "beurlaubt" ist, darf der Beurlaubungsgrund angegeben werden.</entry>
                </row>
                <row>
                   <entry align="left">

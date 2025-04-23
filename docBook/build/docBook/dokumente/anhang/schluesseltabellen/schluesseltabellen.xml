@@ -162,6 +162,17 @@
                            linkend="XHochschule.Baukasten.Codes.Code.Leistungsstatus">Code.Leistungsstatus</link>
                   </entry>
                </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.lernzeitmodell.Lernzeitmodell-Codes">Lernzeitmodell</link>
+                  </entry>
+                  <entry align="left">1.0</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XHochschule.Baukasten.Codes.Code.Lernzeitmodell">Code.Lernzeitmodell</link>
+                  </entry>
+               </row>
             </tbody>
          </tgroup>
       </informaltable>
@@ -247,14 +258,15 @@
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xhochschule-de.destatis.codeliste.beurlaubungsgrund.Beurlaubungsgrund-Codes">
-         <title>Beurlaubungsgrund</title><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik, mit denen Hochschulen eindeutig identifiziert werden können. Der Beurlaubungsgrund  ist aus dem Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik entnommen. Diese wurde von Statistik Nord veröffentlicht.</para>
+         <title>Beurlaubungsgrund</title><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik, mit denen Hochschulen eindeutig identifiziert werden können. Der Beurlaubungsgrund  ist aus dem Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik entnommen. </para>
 
-<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">Statistik Nord</link> bereitgestellt.</para>
+<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/pruefungsstatistik">Statistik Nord</link> bereitgestellt.</para>
 
-<para>Als Schlüssel wird der Eintrag (Ziffer zwischen 1 und 9) in der Spalte "Signatur" der Tabelle "Gründe der Beurlaubung" unter dem Schlüsselverzeichnis "7.2 Gründe der Beurlaubung" aufgelistet.</para>
+<para>Als Schlüssel wird der Eintrag (Ziffer zwischen 1 und 9) in der Spalte "Signatur" der Tabelle "Gründe der Beurlaubung" verwendet.</para>
 
 <para>Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. </para>
 
+<para>Zusammen mit dem Schlüssel muss die verwendete Version des Schlüsselverzeichnisses im XML-Element in dem Attribut listVersionID angegeben werden. Für Schlüssel aus dem Schlüsselverzeichnis "WS 2022/2023 und SS 2023" würde die Version wie folgt angegeben: listVersionID="WS_2022".</para>
 <para>Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI"  an.
 </para><section>
             <title>Metadaten</title>
@@ -380,14 +392,14 @@
       </section>
       <section xml:id="tabelle.urn.xhochschule-de.destatis.codeliste.faecherschluessel.Faecherschluessel-Codes">
          <title>Faecherschluessel</title><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für
-Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten. Die Codeliste wird von Statistik Nord zur Verfügung gestellt.</para>
-
-<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">Statistik Nord</link> bereitgestellt.</para>
-
+Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten.</para>
+<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.destatis.de/DE/Methoden/Klassifikationen/Bildung/studenten-pruefungsstatistik.html">DESTATIS</link> bereitgestellt.</para>
 <para>Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. </para>
-
-<para>In dem Dokument ist eine Erläuterung vermerkt zur Handhabung der Systematik der Fächergruppen und der Verschlüsselung der Studienfächer. Die Fächerschlüssel sind unter "4. Studienfächer, Studienbereiche und Fächergruppen" des Schlüsselverzeichnis lokalisierbar.</para>
-
+<para>In dem Dokument ist eine Erläuterung vermerkt zur Handhabung der Systematik der Fächergruppen und der Verschlüsselung der Studienfächer. </para>
+<para>Zusammen mit dem Schlüssel muss die verwendete Version des Schlüsselverzeichnisses
+im XML-Element in dem Attribut listVersionID angegeben werden. Für Schlüssel aus dem
+Schlüsselverzeichnis "WS 2022/2023 und SS 2023" würde die Version wie folgt angegeben:
+listVersionID="WS_2022".</para>
 <para>Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI"  an.
 </para><section>
             <title>Metadaten</title>
@@ -430,11 +442,11 @@ Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizi
       </section>
       <section xml:id="tabelle.urn.xhochschule-de.destatis.codeliste.hochschulsignatur.Hochschulsignatur-Codes">
          <title>Hochschulsignaturen</title><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik, mit denen Hochschulen eindeutig identifiziert werden können. Die Hochschulsignatur ist aus dem Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik entnommen. 
-Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">Statistik Nord</link> bereitgestellt.</para>
+Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/pruefungsstatistik">Statistik Nord</link> bereitgestellt.</para>
 
-<para>Als Schlüssel wird der Eintrag "Signatur" aus der Tabelle "Hochschulen, numerisch" verwendet. Der Schlüssel muss als eine vierstellige Zeichenkette dargestellt werden. Zugelassen sind Zahlen und Großbuchstaben. Führende Nullen im Schlüssel müssen erhalten bleiben. Die jeweiligen Schlüssel finden sich unter "2. Hochschulen" im Schlüsselverzeichnis.
+<para>Als Schlüssel wird der Eintrag "Signatur" aus der Tabelle "Hochschulen, numerisch" verwendet. Der Schlüssel muss als eine vierstellige Zeichenkette dargestellt werden. Zugelassen sind Zahlen und Großbuchstaben. Führende Nullen im Schlüssel müssen erhalten bleiben.
 Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig.</para>
-
+<para>Zusammen mit dem Schlüssel muss die verwendete Version des Schlüsselverzeichnisses im XML-Element in dem Attribut listVersionID angegeben werden. Für Schlüssel aus dem Schlüsselverzeichnis "WS 2022/2023 und SS 2023" würde die Version wie folgt angegeben: listVersionID="WS_2022".</para>
 <para>Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI"  an.
 </para><section>
             <title>Metadaten</title>
@@ -1114,6 +1126,113 @@ Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokume
                            <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/~wert_nicht_in_liste">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​s​t​a​t​u​s​/​~​w​e​r​t​_​n​i​c​h​t​_​i​n​_​l​i​s​t​e</link>
                         </entry>
                         <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xhochschule-de.xhochschule.codeliste.lernzeitmodell.Lernzeitmodell-Codes">
+         <title>Lernzeitmodell</title>
+         <para>Diese Codeliste enthält mögliche Ausprägungen von Lernzeitmodellen.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Lernzeitmodell</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Lernzeitmodell</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xhochschule-de:xhochschule:codeliste:lernzeitmodell</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XHochschule (XHS)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>1.0</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="3">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <colspec colnum="3" colname="desc"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">description-de-DE (deutsche Übersetzung)</entry>
+                        <entry align="left">mapping-Europass (deutsche Übersetzung)</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/dual-ausbildungsintegriert">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​r​n​z​e​i​t​m​o​d​e​l​l​/​d​u​a​l​-​a​u​s​b​i​l​d​u​n​g​s​i​n​t​e​g​r​i​e​r​t</link>
+                        </entry>
+                        <entry align="left">Dual (ausbildungsintegriert)</entry>
+                        <entry align="left">tbd</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/dual-praxisintegriert">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​r​n​z​e​i​t​m​o​d​e​l​l​/​d​u​a​l​-​p​r​a​x​i​s​i​n​t​e​g​r​i​e​r​t</link>
+                        </entry>
+                        <entry align="left">Dual (praxisintegriert)</entry>
+                        <entry align="left">tbd</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/teilzeit">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​r​n​z​e​i​t​m​o​d​e​l​l​/​t​e​i​l​z​e​i​t</link>
+                        </entry>
+                        <entry align="left">Teilzeit</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/learning-schedule/f230bae523">h​t​t​p​:​/​/​d​a​t​a​.​e​u​r​o​p​a​.​e​u​/​s​n​b​/​l​e​a​r​n​i​n​g​-​s​c​h​e​d​u​l​e​/​f​2​3​0​b​a​e​5​2​3</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/vollzeit">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​r​n​z​e​i​t​m​o​d​e​l​l​/​v​o​l​l​z​e​i​t</link>
+                        </entry>
+                        <entry align="left">Vollzeit</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/learning-schedule/72a0ab92fa">h​t​t​p​:​/​/​d​a​t​a​.​e​u​r​o​p​a​.​e​u​/​s​n​b​/​l​e​a​r​n​i​n​g​-​s​c​h​e​d​u​l​e​/​7​2​a​0​a​b​9​2​f​a</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/~wert_nicht_bekannt">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​r​n​z​e​i​t​m​o​d​e​l​l​/​~​w​e​r​t​_​n​i​c​h​t​_​b​e​k​a​n​n​t</link>
+                        </entry>
+                        <entry align="left">Wert nicht bekannt</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lernzeitmodell/~wert_nicht_in_liste">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​r​n​z​e​i​t​m​o​d​e​l​l​/​~​w​e​r​t​_​n​i​c​h​t​_​i​n​_​l​i​s​t​e</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                        <entry align="left"/>
                      </row>
                   </tbody>
                </tgroup>

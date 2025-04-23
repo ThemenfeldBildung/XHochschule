@@ -23,11 +23,11 @@
             <row>
                <entry>-beschreibung</entry>
                <entry><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik, mit denen Hochschulen eindeutig identifiziert werden können. Die Hochschulsignatur ist aus dem Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik entnommen. 
-Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">Statistik Nord</link> bereitgestellt.</para>
+Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/pruefungsstatistik">Statistik Nord</link> bereitgestellt.</para>
 
-<para>Als Schlüssel wird der Eintrag "Signatur" aus der Tabelle "Hochschulen, numerisch" verwendet. Der Schlüssel muss als eine vierstellige Zeichenkette dargestellt werden. Zugelassen sind Zahlen und Großbuchstaben. Führende Nullen im Schlüssel müssen erhalten bleiben. Die jeweiligen Schlüssel finden sich unter "2. Hochschulen" im Schlüsselverzeichnis.
+<para>Als Schlüssel wird der Eintrag "Signatur" aus der Tabelle "Hochschulen, numerisch" verwendet. Der Schlüssel muss als eine vierstellige Zeichenkette dargestellt werden. Zugelassen sind Zahlen und Großbuchstaben. Führende Nullen im Schlüssel müssen erhalten bleiben.
 Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig.</para>
-
+<para>Zusammen mit dem Schlüssel muss die verwendete Version des Schlüsselverzeichnisses im XML-Element in dem Attribut listVersionID angegeben werden. Für Schlüssel aus dem Schlüsselverzeichnis "WS 2022/2023 und SS 2023" würde die Version wie folgt angegeben: listVersionID="WS_2022".</para>
 <para>Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI"  an.
 </para></entry>
             </row>

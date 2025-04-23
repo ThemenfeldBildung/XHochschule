@@ -24,7 +24,7 @@
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XHochschule/Baukasten/Codes/Code.Leistungsstatus.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../XHochschule/Baukasten/Dokument.xml"/>
+            href="../../XHochschule/Baukasten/Codes/Code.Lernzeitmodell.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XHochschule/Baukasten/ExternErbrachteLeistung.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"

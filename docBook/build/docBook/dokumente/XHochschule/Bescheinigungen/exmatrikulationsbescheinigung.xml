@@ -8,7 +8,7 @@
          xml:id="XHochschule.Bescheinigungen.exmatrikulationsbescheinigung">
    <title>exmatrikulationsbescheinigung</title>
    <subtitle>Nachricht: <emphasis role="codebf">exmatrikulationsbescheinigung</emphasis>
-   </subtitle><para>Exmatrikulationsbescheinigung, die für einen Studienplatzwechsel benötigt wird. Diese enthält üblicherweise Angaben zum Zeitraum des Studiums und dem Datum der Exmatrikulation.</para><figure xml:id="figure.XHochschule.Bescheinigungen.exmatrikulationsbescheinigung">
+   </subtitle><para>Exmatrikulationsbescheinigung, die für einen Studienplatzwechsel benötigt wird.</para><figure xml:id="figure.XHochschule.Bescheinigungen.exmatrikulationsbescheinigung">
       <title>exmatrikulationsbescheinigung</title>
       <mediaobject>
          <imageobject>
@@ -19,7 +19,7 @@
          </imageobject>
       </mediaobject>
    </figure>
-   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="XHochschule.Baukasten.Dokument" role="AS"/>).</para>
+   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
    <informaltable xml:id="table.XHochschule.Bescheinigungen.exmatrikulationsbescheinigung">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
@@ -208,6 +208,17 @@ hier angegeben werden.</para></entry>
                   <entry align="left">
                      <para>
                         <emphasis role="codebf">normalize-space(string())!=''</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;3&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;E&#x200B;x&#x200B;m&#x200B;a&#x200B;t&#x200B;r&#x200B;i&#x200B;k&#x200B;u&#x200B;l&#x200B;a&#x200B;t&#x200B;i&#x200B;o&#x200B;n&#x200B;s&#x200B;b&#x200B;e&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;i&#x200B;n&#x200B;i&#x200B;g&#x200B;u&#x200B;n&#x200B;g&#x200B;</entry>
+                  <entry>XHS-0003 Ein Ausstellungsort darf auf der Exmatrikulationsbescheinigung nicht angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
                      </para>
                   </entry>
                </row>
