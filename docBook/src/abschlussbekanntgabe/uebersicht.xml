@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<section version="5" xml:id="spezifikation.abschlussbekanntgabe.uebersicht" xml:lang="de" xmlns="http://docbook.org/ns/docbook">
+	<info>
+		<title>Übersicht über den Ablauf</title>
+	</info>
+	<figure xml:id="bild.abschlussbekanntgabe.usecase">
+		<info>
+			<title>Hochschulabschulabschluss bekanntgeben</title>
+		</info>
+		<mediaobject>
+			<imageobject>
+				<imagedata align="center" contentdepth="100%" fileref="abbildungen/Abschlussbekanntgabe_Akteure.svg" scalefit="1" width="80%" />
+			</imageobject>
+		</mediaobject>
+	</figure>
+</section>

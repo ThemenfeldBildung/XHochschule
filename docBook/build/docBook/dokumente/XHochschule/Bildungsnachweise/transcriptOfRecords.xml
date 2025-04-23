@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XHochschule.Bildungsnachweise.transcriptOfRecords">
+   <title>transcriptOfRecords</title>
+   <subtitle>Nachricht: <emphasis role="codebf">transcriptOfRecords</emphasis>
+   </subtitle><para>Das Transcript of Records (TOR) ist ein Bildungs- und Leistungsnachweis einer Hochschule und enthält üblicherweise Angaben wie Prüfungsleistungen, Prüfungsnoten, Auflistung besuchter Kurse und erreichter ECTS-Punkte. </para><figure xml:id="figure.XHochschule.Bildungsnachweise.transcriptOfRecords">
+      <title>transcriptOfRecords</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../zeichnungen/XHochschule/Bildungsnachweise/transcriptOfRecords.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="XHochschule.Baukasten.Dokument" role="AS"/>).</para>
+   <informaltable xml:id="table.XHochschule.Bildungsnachweise.transcriptOfRecords">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">transcriptOfRecords</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">studierender</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Studierender</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Studierender" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Studierender" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Studierende Person, für die ein Transcript of Records ausgestellt wird.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ausstellendeHochschule</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Hochschule</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Hochschule" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Hochschule" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die Hochschule, die das Transcript of Records ausgestellt hat.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">leistung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Leistung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Leistung" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Leistung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Element für die strukturierte Abbildung der Studienleistungen. An oberster Ebene dient die Klasse zur Spezifizierung des Studienfachs (Synonym zu Studiengang, bezeichnet den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums). Die jeweilige Art der Leistung, z.B. Studienfach, Modul, Klausur etc., wird durch das Kindelement "leistungsart" angegeben. "Leistung" kann sich selbst als Kindelement enthalten, um die aufgeschlüsselten Inhalte des Studienfachs abzubilden. "leistung" kann so oft in sich geschachtelt werden, wie es die organisatorische Aufteilung des Studienfachs erfordert. Z. B. kann das Studienfach "Biophysik" ("Leistung" mit "leistungsart" = Studienfach) mehrere Module ("leistung" mit "leistungsart" = Modul) enthalten, die wiederum jeweils mehrere Elemente "leistung" mit "leistungsart" = Abschlussarbeit, Vorlesungen, Praktika, Klausuren etc. enthalten.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">Signature</emphasis> (ref)</entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle." role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle." role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier kann eine digitale Signatur angegeben werden.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+</section>

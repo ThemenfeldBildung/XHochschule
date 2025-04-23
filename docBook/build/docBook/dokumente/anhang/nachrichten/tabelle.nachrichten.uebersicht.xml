@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE informaltable [<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent"> %complete;]><informaltable xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de">
+   <tgroup xmlns:xlink="http://www.w3.org/1999/xlink" cols="3">
+      <colspec colnum="1" colname="c1" colwidth="48mm"/>
+      <colspec colnum="2" colname="c3" colwidth="90mm"/>
+      <colspec colnum="3" colname="c5" colwidth="22mm"/>
+      <thead>
+         <row>
+            <entry align="center">Bezeichnung</entry>
+            <entry align="center">Beschreibung</entry>
+            <entry align="center">Seite</entry>
+         </row>
+      </thead>
+      <tbody>
+         <row>
+            <entry align="center" namest="c1" nameend="c5">
+               <emphasis role="bold">Schema-Datei: Kernkomponenten.xsd</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry align="center" namest="c1" nameend="c5">
+               <emphasis role="bold">Schema-Datei: xhochschule-baukasten.xsd</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry align="center" namest="c1" nameend="c5">
+               <emphasis role="bold">Schema-Datei: xhochschule-bescheinigungen.xsd</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>exmatrikulationsbescheinigung</para>
+            </entry>
+            <entry><para>Exmatrikulationsbescheinigung, die für einen Studienplatzwechsel benötigt wird. Diese enthält üblicherweise Angaben zum Zeitraum des Studiums und dem Datum der Exmatrikulation.</para></entry>
+            <entry align="center">
+               <xref role="Seite"
+                     linkend="XHochschule.Bescheinigungen.exmatrikulationsbescheinigung"/>
+            </entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>immatrikulationsbescheinigung</para>
+            </entry>
+            <entry><para>Eine Bescheinigung, die Angaben enthält, um die Immatrikulation eines Studierenden an einer Hochschule allgemein nachweisen zu können.</para></entry>
+            <entry align="center">
+               <xref role="Seite"
+                     linkend="XHochschule.Bescheinigungen.immatrikulationsbescheinigung"/>
+            </entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>immatrikulationsbescheinigungBAfoeGP9</para>
+            </entry>
+            <entry><para>Eine Bescheinigung, die Angaben enthält, um die Immatrikulation eines Studierenden an einer Hochschule nach den Vorgaben von BAföG §9 nachzuweisen.</para></entry>
+            <entry align="center">
+               <xref role="Seite"
+                     linkend="XHochschule.Bescheinigungen.immatrikulationsbescheinigungBAfoeGP9"/>
+            </entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>rentenbescheinigung</para>
+            </entry>
+            <entry><para>Bescheinigung zur Vorlage bei der Deutschen Rentenversicherung.</para></entry>
+            <entry align="center">
+               <xref role="Seite" linkend="XHochschule.Bescheinigungen.rentenbescheinigung"/>
+            </entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>studienverlaufsbescheinigung</para>
+            </entry>
+            <entry><para>Bescheinigung über den Verlauf des Studiums, angeordnet nach Studiengang oder Studienfach. Diese enthält die Semesterabschnitte, die ein ein Studierender immatrikuliert oder auch gegebenenfalls beurlaubt war.</para></entry>
+            <entry align="center">
+               <xref role="Seite"
+                     linkend="XHochschule.Bescheinigungen.studienverlaufsbescheinigung"/>
+            </entry>
+         </row>
+         <row>
+            <entry align="center" namest="c1" nameend="c5">
+               <emphasis role="bold">Schema-Datei: xhochschule-bildungsnachweise.xsd</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>diplomaSupplement</para>
+            </entry>
+            <entry><para>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Diploma Supplement erhält.
+Dabei deckt die im Element Dokument enthaltene Klasse "ausstellung" den Abschnitt 7.1 des Diploma Supplements ab.</para></entry>
+            <entry align="center">
+               <xref role="Seite" linkend="XHochschule.Bildungsnachweise.diplomaSupplement"/>
+            </entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>hochschulabschlusszeugnis</para>
+            </entry>
+            <entry><para>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Hochschulabschlusszeugnisses erhält. 
+Alle Module, wie auch die Abschlussarbeit, können über das Element "leistung " mit der zugehörigen Codeliste "leistungsart" abgebildet werden.
+Zum Beispiel kann das Element "leistung" in sich geschachtelt werden und mit den Werten von "leistungsart" wie Vorlesungen, Praktika, Klausuren, Abschlussarbeit etc. alle möglichen Szenarien zur Beschreibung eines Studiums und dessen Unterelemente abdecken.</para>
+</entry>
+            <entry align="center">
+               <xref role="Seite"
+                     linkend="XHochschule.Bildungsnachweise.hochschulabschlusszeugnis"/>
+            </entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>transcriptOfRecords</para>
+            </entry>
+            <entry><para>Das Transcript of Records (TOR) ist ein Bildungs- und Leistungsnachweis einer Hochschule und enthält üblicherweise Angaben wie Prüfungsleistungen, Prüfungsnoten, Auflistung besuchter Kurse und erreichter ECTS-Punkte. </para></entry>
+            <entry align="center">
+               <xref role="Seite"
+                     linkend="XHochschule.Bildungsnachweise.transcriptOfRecords"/>
+            </entry>
+         </row>
+      </tbody>
+   </tgroup>
+</informaltable>

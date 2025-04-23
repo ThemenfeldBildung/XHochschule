@@ -1,0 +1,127 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE chapter [
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+<chapter version="5" xml:id="modellierung.wichtigeHinweiseZurImplementierung" xml:lang="de"
+    xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Wichtige Hinweise zur Implementierung</title>
+    <variablelist>
+        <varlistentry>
+            <term>Versionierung</term>
+            <listitem>
+                <para>Die Version einer XML-Nachricht wird über den verwendeten Namespace
+                    festgelegt. Die Versionsnummer bereits in Version 1.0 oder höher vorliegender
+                    XBildung-Teilvorhaben entspricht dabei immer der vorab veröffentlichten
+                    Versionsnummer der XBildung-Spezifikation.</para>
+                <para>Codelisten, die mit Version 1.0 eingeführt wurden, verbleiben auf dieser Version, bis eine Änderung
+                    erfolgt. Bei Änderung wird das Veröffentlichungsdatum der Version des Spezifikationsdokuments
+                    angegeben, in deren Rahmen die Codeliste geändert wurde. Dies erfolgt nach der ISO-Systematik
+                    "JJJJ-MM-TT". Neu eingeführte Codelisten erhalten ebenfalls das Veröffentlichungsdatum der Ver-
+                    sion des Spezifikationsdokuments, in deren Rahmen die Codeliste eingeführt wurde.</para>
+                <para></para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Notwendigkeit von Schematron</term>
+            <listitem>
+                <para>Innerhalb der Teilvorhaben existieren Beschränkungen, die nicht über
+                    XML-Schema abgebildet werden können (z.B. das Verbieten leerer Felder). Hierzu
+                    werden mittels Schematron Geschäftsregeln festgelegt. Diese Geschäftsregeln
+                    werden mittels Schematron- und XSLT-Dateien gemeinsam mit jedem Release zur
+                    Verfügung gestellt. Erhaltene Nachrichten können mittels frei lizensierbarer
+                    Programme (Microsoft XML Notepad; Saxon Home Edition) gegen diese XSLT-Dateien
+                    validiert werden. Eine Validierung allein gegen das XML-Schema genügt nicht um
+                    den gesamten logischen Umfang des Datenmodells abzubilden. XML-Schema und Schematron werden beide zur Validierung eines XHS-konformen Dokuments benötigt.<link
+                        xlink:href="https://xbildung.de/web/validierung"
+                        > Anleitung zur Validierung mit Schematron</link>.</para>
+                <para></para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Umgang mit Daten</term>
+            <listitem>
+                <para>Grundsätzlich sollten bei der Informationsübertragung aus internen Systemen in
+                    XBildung-Dokumente stets der Grundsatz der Datensparsamkeit sowie etwaige
+                    gesetzliche Regeln zur Informationsfreizügigkeit beachtet werden. Weiterhin
+                    konnten in einigen Fällen im Rahmen der Bedarfserhebung für XBildung-Vorhaben
+                    keine föderal übergreifende Einheitlichkeit in Bezug auf erfasste oder bisher in
+                    Papierform bereitgestellte Daten festgestellt werden. Aus genannten Gründen
+                    enthalten XBildung-Datenmodelle nur wenige verpflichtende und viele optionale
+                    Felder. Für eine sinnvolle Nutzung sollte der Grundsatz gelten, Daten
+                    bereitzustellen, die für eine interne Nutzung eines eingehenden Dokuments
+                    ebenfalls benötigt werden.</para>
+                <para></para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Nutzung von HTML</term>
+            <listitem>
+                <para>Grundsätzlich ist eine Nutzung von HTML-Code in XHochschule nicht vorgesehen.
+                    Ausnahmen bestehen lediglich für das Datenfeld "Beschreibung" in <link linkend="XHochschule.Baukasten.Leistungsbeschreibung">Leistungsbeschreibung</link> sowie das Datenfeld "Bezeichnung" in <link linkend="XHochschule.Baukasten.Leistung">Leistung</link>,
+                    sofern es sich um eine Leistungsart handelt, die in ihrem Namen
+                    Sonderformatierungen notwendig macht (z.B. Titel von Lehrveranstaltungen oder
+                    Abschlussarbeiten). In diesen Fällen besteht die Möglichkeit, optional HTML-Code
+                    mittels sog. "Escaping" in einem zusätzlichen Datenfeld einzubinden. Folgende
+                    "Escape"-Befehle sind möglich:   </para>
+   <table>
+       <title>HTML-Escapezeichen</title>
+       <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="20mm" />
+        <colspec colname="c2" colnum="2" colwidth="40mm"/>
+        <thead>
+            <row>
+                <entry>Zeichen</entry>
+                <entry>Escape-String</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+                <entry>&lt;</entry>
+                <entry>&amp;lt;</entry>
+            </row>
+            <row>
+                <entry>&gt;</entry>
+                <entry>&amp;gt;</entry>
+            </row>
+            <row>
+                <entry>&quot;</entry>
+                <entry>&amp;quot;</entry>
+            </row>
+            <row>
+                <entry>&apos;</entry>
+                <entry>&amp;apos;</entry>
+            </row>
+            <row>
+                <entry>&amp;</entry>
+                <entry>&amp;amp;</entry>
+            </row>
+            
+        </tbody>
+    </tgroup>
+</table>                
+                <!--<para>
+                    <inlinemediaobject>
+                    <imageobject>
+                        <imagedata align="center" fileref="../abbildungen/escapeZeichen.jpg" format="JPG" scale="60" />
+                    </imageobject>
+                </inlinemediaobject></para>-->
+            </listitem>
+        </varlistentry>
+        <!-- <varlistentry>
+            <term>Entsprechung von Datenfeldern</term>
+            <listitem>
+                <para>Datenfelder in XBildung-Teilvorhaben finden begrifflich nicht immer genaue
+                    Entsprechungen in internen Systemen. Weiterhin können Datenfelder eventuell
+                    gemeinsame Informationen enthalten, die an anderer Stelle an unterschiedlichen
+                    Stellen abgebildet sind (z.B. das Feld „NameNatuerlichePerson“ enthält keine
+                    Unterteilung zwischen Nachnamen und ggfs. mehreren Vornamen). Für beide
+                    Problematiken sei an dieser Stelle besonders auf die Beschreibung der
+                    Datenfelder hingewiesen, in der sich genauere Angaben zur Bedeutung und Nutzung
+                    der Datenfelder finden.</para>
+                <para></para>
+            </listitem>
+        </varlistentry> -->
+    </variablelist>
+</chapter>

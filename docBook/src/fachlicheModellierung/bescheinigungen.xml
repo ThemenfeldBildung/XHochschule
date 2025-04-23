@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<section version="5" xml:id="spezifikation.bescheinigungen" xml:lang="de" xmlns="http://docbook.org/ns/docbook">
+    <info>
+        <title>Bescheinigungen</title>
+    </info>
+    <include href="../../build/docBook/dokumente/anhang/xsd/xhochschule-bescheinigungen.xsd.xml" xmlns="http://www.w3.org/2001/XInclude" />
+	<include href="../../build/docBook/dokumente/xhochschule/bescheinigungen/immatrikulationsbescheinigung.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="../../build/docBook/dokumente/xhochschule/bescheinigungen/immatrikulationsbescheinigungBAfoeGP9.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="../../build/docBook/dokumente/xhochschule/bescheinigungen/exmatrikulationsbescheinigung.xml" xmlns="http://www.w3.org/2001/XInclude" />
+	<include href="../../build/docBook/dokumente/xhochschule/bescheinigungen/rentenbescheinigung.xml" xmlns="http://www.w3.org/2001/XInclude" />
+	<include href="../../build/docBook/dokumente/xhochschule/bescheinigungen/studienverlaufsbescheinigung.xml" xmlns="http://www.w3.org/2001/XInclude" />
+</section>

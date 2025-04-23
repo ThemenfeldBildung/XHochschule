@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Diese RDF-Datei enthält maschinenverarbeitbare Informationen über die Codeliste "Lateinische Ehrenbezeichnungen" in der Version 1.0. Die Codeliste wird bereitgestellt durch das Vorhaben XHochschule (https://xhochschule.de/web/). Bei technischen Fragen zur Bereitstellung der Datei kontaktieren Sie uns bitte unter https://xhochschule.de/web/contact. -->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/insigni_cum_laude">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>insigni_cum_laude</dcterms:identifier>
+      <skos:notation>insigni_cum_laude</skos:notation>
+      <skos:prefLabel xml:lang="en">insigni cum laude</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">(DE-CH) sehr gut</skos:prefLabel>
+   </skos:Concept>
+</rdf:RDF>

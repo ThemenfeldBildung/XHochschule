@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Diese RDF-Datei enthält maschinenverarbeitbare Informationen über die Codeliste "Immatrikulationsstatus" in der Version 1.0. Die Codeliste wird bereitgestellt durch das Vorhaben XHochschule (https://xhochschule.de/web/). Bei technischen Fragen zur Bereitstellung der Datei kontaktieren Sie uns bitte unter https://xhochschule.de/web/contact. -->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+   <skos:ConceptScheme rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus">
+      <dcterms:identifier>immatrikulationsstatus</dcterms:identifier>
+      <rdfs:label>Immatrikulationsstatus</rdfs:label>
+      <skos:prefLabel>Immatrikulationsstatus</skos:prefLabel>
+      <dcterms:title>Immatrikulationsstatus</dcterms:title>
+      <dcterms:description>Diese Codeliste enthält mögliche Ausprägungen des Status der Immatrikulation an einer Hochschule.</dcterms:description>
+      <dcterms:creator>XHS</dcterms:creator>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/immatrikuliert"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/nicht_immatrikuliert"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/vorlaeufig_immatrikuliert"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/~wert_nicht_in_liste"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/immatrikuliert">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>immatrikuliert</dcterms:identifier>
+      <skos:notation>immatrikuliert</skos:notation>
+      <skos:prefLabel xml:lang="de">immatrikuliert</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/nicht_immatrikuliert">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>nicht_immatrikuliert</dcterms:identifier>
+      <skos:notation>nicht_immatrikuliert</skos:notation>
+      <skos:prefLabel xml:lang="de">nicht immatrikuliert</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/vorlaeufig_immatrikuliert">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>vorlaeufig_immatrikuliert</dcterms:identifier>
+      <skos:notation>vorlaeufig_immatrikuliert</skos:notation>
+      <skos:prefLabel xml:lang="de">vorläufig immatrikuliert</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/~wert_nicht_in_liste">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>~wert_nicht_in_liste</dcterms:identifier>
+      <skos:notation>~wert_nicht_in_liste</skos:notation>
+      <skos:prefLabel xml:lang="de">Wert nicht in Liste</skos:prefLabel>
+   </skos:Concept>
+</rdf:RDF>

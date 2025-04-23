@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Diploma Supplement nach XHochschule Version 1.1. Nichtnormative Beispielinstanz.
+    Version: XHochschule 1.1 
+    Letzte Aktualisierung: 25.02.2025
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
+<xhs:diplomaSupplement xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.1/xsd">
+    <xhs:titel xml:lang="de-DE">Diploma Supplement</xhs:titel>
+    <xhs:ausstellungsdatum>2025-02-13</xhs:ausstellungsdatum>
+    <xhs:gueltigkeitsdatum>2035-02-12</xhs:gueltigkeitsdatum>
+    <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+        listVersionID="20240925-0">
+        <code>DEU</code>
+    </xhs:sprache>
+    <!-- Angaben zum Inhaber des Dokumentes -->
+    <xhs:angabenInhaber>
+        <xhs:familienname>Musterfrau</xhs:familienname>
+        <xhs:vorname>Erika</xhs:vorname>
+        <xhs:geburtsdatum>
+            <xbd:jahr>1994</xbd:jahr>
+        </xhs:geburtsdatum>
+        <xhs:matrikelnummer>123456789</xhs:matrikelnummer>
+    </xhs:angabenInhaber>
+    <!-- Angaben zur Qualifikation -->
+    <xhs:angabenQualifikation>
+        <xhs:bezeichnungQualifikationGrad xml:lang="de-DE">Bachelor of Science</xhs:bezeichnungQualifikationGrad>
+        <xhs:hauptstudienfach xml:lang="de-DE">Physik</xhs:hauptstudienfach>
+        <xhs:verleihendeEinrichtung xml:lang="de-DE">Technische Universität Musterstadt</xhs:verleihendeEinrichtung>
+        <xhs:durchfuehrendeEinrichtung xml:lang="de-DE">Technische Universität Musterstadt</xhs:durchfuehrendeEinrichtung>
+        <xhs:spracheUnterrichtPruefung
+            listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+            listVersionID="20240925-0">
+            <code>DEU</code>
+        </xhs:spracheUnterrichtPruefung>
+    </xhs:angabenQualifikation>
+    <xhs:dauerUndEbeneQualifikation>
+        <xhs:ebeneDerQualifikation>
+            <xhs:freitext xml:lang="de-DE">EQF Level 5</xhs:freitext>
+        </xhs:ebeneDerQualifikation>
+        <xhs:dauerStudiumInJahrenOderECTS>
+            <xhs:dauerInJahren>3</xhs:dauerInJahren>
+        </xhs:dauerStudiumInJahrenOderECTS>
+        <xhs:zugangsvorraussetzungen xml:lang="de-DE">Allgemeine Hochschulreife</xhs:zugangsvorraussetzungen>
+    </xhs:dauerUndEbeneQualifikation>
+    <!-- Angaben zu den erzielten Lernergebnissen -->
+    <xhs:erzielteErgebnisse>
+        <xhs:studienform xml:lang="de-DE">Vollzeit</xhs:studienform>
+        <xhs:lernergebnisse xml:lang="de-DE">Die Studierende hat durch die im Studiengebiet
+            absolvierten Kurse umfangreiche Kenntnisse und praktische Fähigkeiten erlangt. Für
+            weitere Informationen kann die aktuelle Studienordnung eingesehen
+            werden.</xhs:lernergebnisse>
+        <xhs:studiendetails xml:lang="de-DE">Für eine vollständige Aufzählung der Studiendetails
+            wird auf das beiliegende Transcript of Records verwiesen.</xhs:studiendetails>
+        <xhs:gesamtnoteUndNotensystem>
+            <xbd:note>note0</xbd:note>
+            <xbd:wortbezeichnung xml:lang="de-DE">Gut (good)</xbd:wortbezeichnung>
+            <xbd:punkte>0</xbd:punkte>
+            <xbd:bewertungsschemaNote>
+                <xbd:schemaURI>https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/2003/2003_10_10-Laendergemeinsame-Strukturvorgaben.pdf</xbd:schemaURI>
+                <xbd:beschreibung xml:lang="de-DE">Abbildung des deutschen Notensystems für
+                    Bachelor- und Masterstudiengänge</xbd:beschreibung>
+                <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
+            </xbd:bewertungsschemaNote>
+        </xhs:gesamtnoteUndNotensystem>
+    </xhs:erzielteErgebnisse>
+    <!-- Angaben zu der durch die Qualifikation erlangten Berechtigungen -->
+    <xhs:berechtigungenDurchQualifikation>
+        <xhs:zugangWeiterfuehrendeStudien xml:lang="de-DE">Dieser Abschluss ermöglicht dem
+            Studierenden das Studium im Master in einem fachähnlichen
+            Studiengang.</xhs:zugangWeiterfuehrendeStudien>
+        <xhs:zugangZuReglementiertenBerufen xml:lang="de-DE">Der Absolvent hat mach dem Abschluss
+            Zugang zu einer breiten Auswahl an möglichen Berufen. Mehr Informationen in der
+            aktuellen Studienordnung.</xhs:zugangZuReglementiertenBerufen>
+    </xhs:berechtigungenDurchQualifikation>
+    <!-- Sonstige Angaben -->
+    <xhs:sonstigeAngaben>
+        <xhs:weitereAngaben xml:lang="de-DE">Hier können weitere Angaben zum Studium genannt werden. </xhs:weitereAngaben>
+        <xhs:weitereInformationsquellen xml:lang="de-DE">Hier kann auf weitere Informationsquellen verwiesen werden wie zum Beispiel der Webseite der Hochschule.</xhs:weitereInformationsquellen>
+    </xhs:sonstigeAngaben>
+    <xhs:angabenNationalesHochschulsystem>
+        <xhs:beschreibung>Beschreibung des nationalen Hochschulesystems</xhs:beschreibung>
+    </xhs:angabenNationalesHochschulsystem>
+</xhs:diplomaSupplement>

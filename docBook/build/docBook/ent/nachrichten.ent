@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!ENTITY nachricht.diplomaSupplement "diplomaSupplement">
+                    <!ENTITY nachricht.title.diplomaSupplement "diplomaSupplement">
+                    <!ENTITY nachricht.ref.diplomaSupplement "<link linkend='XHochschule.Bildungsnachweise.diplomaSupplement'>Nachricht diplomaSupplement</link>">
+                    <!ENTITY nachricht.exmatrikulationsbescheinigung "exmatrikulationsbescheinigung">
+                    <!ENTITY nachricht.title.exmatrikulationsbescheinigung "exmatrikulationsbescheinigung">
+                    <!ENTITY nachricht.ref.exmatrikulationsbescheinigung "<link linkend='XHochschule.Bescheinigungen.exmatrikulationsbescheinigung'>Nachricht exmatrikulationsbescheinigung</link>">
+                    <!ENTITY nachricht.hochschulabschlusszeugnis "hochschulabschlusszeugnis">
+                    <!ENTITY nachricht.title.hochschulabschlusszeugnis "hochschulabschlusszeugnis">
+                    <!ENTITY nachricht.ref.hochschulabschlusszeugnis "<link linkend='XHochschule.Bildungsnachweise.hochschulabschlusszeugnis'>Nachricht hochschulabschlusszeugnis</link>">
+                    <!ENTITY nachricht.immatrikulationsbescheinigung "immatrikulationsbescheinigung">
+                    <!ENTITY nachricht.title.immatrikulationsbescheinigung "immatrikulationsbescheinigung">
+                    <!ENTITY nachricht.ref.immatrikulationsbescheinigung "<link linkend='XHochschule.Bescheinigungen.immatrikulationsbescheinigung'>Nachricht immatrikulationsbescheinigung</link>">
+                    <!ENTITY nachricht.immatrikulationsbescheinigungBAfoeGP9 "immatrikulationsbescheinigungBAfoeGP9">
+                    <!ENTITY nachricht.title.immatrikulationsbescheinigungBAfoeGP9 "immatrikulationsbescheinigungBAfoeGP9">
+                    <!ENTITY nachricht.ref.immatrikulationsbescheinigungBAfoeGP9 "<link linkend='XHochschule.Bescheinigungen.immatrikulationsbescheinigungBAfoeGP9'>Nachricht immatrikulationsbescheinigungBAfoeGP9</link>">
+                    <!ENTITY nachricht.rentenbescheinigung "rentenbescheinigung">
+                    <!ENTITY nachricht.title.rentenbescheinigung "rentenbescheinigung">
+                    <!ENTITY nachricht.ref.rentenbescheinigung "<link linkend='XHochschule.Bescheinigungen.rentenbescheinigung'>Nachricht rentenbescheinigung</link>">
+                    <!ENTITY nachricht.studienverlaufsbescheinigung "studienverlaufsbescheinigung">
+                    <!ENTITY nachricht.title.studienverlaufsbescheinigung "studienverlaufsbescheinigung">
+                    <!ENTITY nachricht.ref.studienverlaufsbescheinigung "<link linkend='XHochschule.Bescheinigungen.studienverlaufsbescheinigung'>Nachricht studienverlaufsbescheinigung</link>">
+                    <!ENTITY nachricht.transcriptOfRecords "transcriptOfRecords">
+                    <!ENTITY nachricht.title.transcriptOfRecords "transcriptOfRecords">
+                    <!ENTITY nachricht.ref.transcriptOfRecords "<link linkend='XHochschule.Bildungsnachweise.transcriptOfRecords'>Nachricht transcriptOfRecords</link>">
+                    

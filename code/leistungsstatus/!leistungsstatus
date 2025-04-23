@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Diese RDF-Datei enthält maschinenverarbeitbare Informationen über die Codeliste "Leistungsstatus" in der Version 1.0. Die Codeliste wird bereitgestellt durch das Vorhaben XHochschule (https://xhochschule.de/web/). Bei technischen Fragen zur Bereitstellung der Datei kontaktieren Sie uns bitte unter https://xhochschule.de/web/contact. -->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+   <skos:ConceptScheme rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus">
+      <dcterms:identifier>leistungsstatus</dcterms:identifier>
+      <rdfs:label>Leistungsstatus</rdfs:label>
+      <skos:prefLabel>Leistungsstatus</skos:prefLabel>
+      <dcterms:title>Leistungsstatus</dcterms:title>
+      <dcterms:description>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, etc.</dcterms:description>
+      <dcterms:creator>XHS</dcterms:creator>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/angemeldet"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/endgueltig_nicht_bestanden"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/entschuldigt"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/nicht_bestanden"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/nicht_vollstaendig"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/~wert_nicht_in_liste"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/angemeldet">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>angemeldet</dcterms:identifier>
+      <skos:notation>angemeldet</skos:notation>
+      <skos:prefLabel xml:lang="de">angemeldet</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>bestanden</dcterms:identifier>
+      <skos:notation>bestanden</skos:notation>
+      <skos:prefLabel xml:lang="de">bestanden</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/endgueltig_nicht_bestanden">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>endgueltig_nicht_bestanden</dcterms:identifier>
+      <skos:notation>endgueltig_nicht_bestanden</skos:notation>
+      <skos:prefLabel xml:lang="de">endgültig nicht bestanden</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/entschuldigt">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>entschuldigt</dcterms:identifier>
+      <skos:notation>entschuldigt</skos:notation>
+      <skos:prefLabel xml:lang="de">entschuldigt</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/nicht_bestanden">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>nicht_bestanden</dcterms:identifier>
+      <skos:notation>nicht_bestanden</skos:notation>
+      <skos:prefLabel xml:lang="de">nicht bestanden</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/nicht_vollstaendig">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>nicht_vollstaendig</dcterms:identifier>
+      <skos:notation>nicht_vollstaendig</skos:notation>
+      <skos:prefLabel xml:lang="de">nicht vollständig</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/~wert_nicht_in_liste">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>~wert_nicht_in_liste</dcterms:identifier>
+      <skos:notation>~wert_nicht_in_liste</skos:notation>
+      <skos:prefLabel xml:lang="de">Wert nicht in Liste</skos:prefLabel>
+   </skos:Concept>
+</rdf:RDF>

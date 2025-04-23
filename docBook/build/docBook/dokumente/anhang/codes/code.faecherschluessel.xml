@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XHochschule.Baukasten.Codes.Code.Faecherschluessel"
+         status="&specstatus;"
+         revision="&xrecent;">
+   <title>Code.Faecherschluessel</title>
+   <informaltable>
+      <tgroup cols="2">
+         <colspec colnum="1" colname="des" colwidth="22mm"/>
+         <colspec colnum="2" colname="val" colwidth="138mm"/>
+         <thead>
+            <row>
+               <entry>Codelisten</entry>
+               <entry/>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry>-beschreibung</entry>
+               <entry><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für
+Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten. Die Codeliste wird von Statistik Nord zur Verfügung gestellt.</para>
+
+<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">Statistik Nord</link> bereitgestellt.</para>
+
+<para>Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. </para>
+
+<para>In dem Dokument ist eine Erläuterung vermerkt zur Handhabung der Systematik der Fächergruppen und der Verschlüsselung der Studienfächer. Die Fächerschlüssel sind unter "4. Studienfächer, Studienbereiche und Fächergruppen" des Schlüsselverzeichnis lokalisierbar.</para>
+
+<para>Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI"  an.
+</para></entry>
+            </row>
+            <row>
+               <entry>-nutzung</entry>
+               <entry>Typ: 3, siehe Beschreibung</entry>
+            </row>
+            <row>
+               <entry>-kennung</entry>
+               <entry>urn:xhochschule-de:destatis:codeliste:faecherschluessel</entry>
+            </row>
+            <row>
+               <entry>-version</entry>
+               <entry>unbestimmt</entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../verwendung/complexTypes/code.faecherschluessel_list.xml"/>
+</section>

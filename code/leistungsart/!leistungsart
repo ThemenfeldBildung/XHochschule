@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Diese RDF-Datei enthält maschinenverarbeitbare Informationen über die Codeliste "Leistungsart" in der Version 1.0. Die Codeliste wird bereitgestellt durch das Vorhaben XHochschule (https://xhochschule.de/web/). Bei technischen Fragen zur Bereitstellung der Datei kontaktieren Sie uns bitte unter https://xhochschule.de/web/contact. -->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+   <skos:ConceptScheme rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart">
+      <dcterms:identifier>leistungsart</dcterms:identifier>
+      <rdfs:label>Leistungsart</rdfs:label>
+      <skos:prefLabel>Leistungsart</skos:prefLabel>
+      <dcterms:title>Leistungsart</dcterms:title>
+      <dcterms:description>Diese Codeliste gibt an, um welche Art der Leistung es sich bei einer konkreten Leistung handelt, z.B. Modul oder Klausur, etc.</dcterms:description>
+      <dcterms:creator>XHS</dcterms:creator>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/abschlusspruefung"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/bachelorarbeit"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/diplomarbeit"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/doktorarbeit"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/fach"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/fachbereich"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/forschungspraktikum"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/hausarbeit"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/industriepraktikum"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/klausur"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/kolloquium"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/kurs"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/laborpraktikum"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/masterarbeit"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modulteilleistung"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/muendliche_pruefung"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/pflichtbereich"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/praktikum"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/praxissemester"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/schriftliche_pruefung"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/seminar"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/seminararbeit"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studienfach"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studiengang"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/thesis"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/tutorium"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/vorlesung"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlbereich"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlfach"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlmodul"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtbereich"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtfach"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtmodul"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/~wert_nicht_in_liste"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/abschlusspruefung">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>abschlusspruefung</dcterms:identifier>
+      <skos:notation>abschlusspruefung</skos:notation>
+      <skos:prefLabel xml:lang="de">Abschlussprüfung</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/bachelorarbeit">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>bachelorarbeit</dcterms:identifier>
+      <skos:notation>bachelorarbeit</skos:notation>
+      <skos:prefLabel xml:lang="de">Bachelorarbeit</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/diplomarbeit">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>diplomarbeit</dcterms:identifier>
+      <skos:notation>diplomarbeit</skos:notation>
+      <skos:prefLabel xml:lang="de">Diplomarbeit</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/doktorarbeit">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>doktorarbeit</dcterms:identifier>
+      <skos:notation>doktorarbeit</skos:notation>
+      <skos:prefLabel xml:lang="de">Doktorarbeit</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/fach">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>fach</dcterms:identifier>
+      <skos:notation>fach</skos:notation>
+      <skos:prefLabel xml:lang="de">Fach</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/fachbereich">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>fachbereich</dcterms:identifier>
+      <skos:notation>fachbereich</skos:notation>
+      <skos:prefLabel xml:lang="de">Fachbereich</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/forschungspraktikum">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>forschungspraktikum</dcterms:identifier>
+      <skos:notation>forschungspraktikum</skos:notation>
+      <skos:prefLabel xml:lang="de">Forschungspraktikum</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/hausarbeit">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>hausarbeit</dcterms:identifier>
+      <skos:notation>hausarbeit</skos:notation>
+      <skos:prefLabel xml:lang="de">Hausarbeit</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/industriepraktikum">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>industriepraktikum</dcterms:identifier>
+      <skos:notation>industriepraktikum</skos:notation>
+      <skos:prefLabel xml:lang="de">Industriepraktikum</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/klausur">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>klausur</dcterms:identifier>
+      <skos:notation>klausur</skos:notation>
+      <skos:prefLabel xml:lang="de">Klausur</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/kolloquium">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>kolloquium</dcterms:identifier>
+      <skos:notation>kolloquium</skos:notation>
+      <skos:prefLabel xml:lang="de">Kolloquium</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/kurs">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>kurs</dcterms:identifier>
+      <skos:notation>kurs</skos:notation>
+      <skos:prefLabel xml:lang="de">Kurs</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/laborpraktikum">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>laborpraktikum</dcterms:identifier>
+      <skos:notation>laborpraktikum</skos:notation>
+      <skos:prefLabel xml:lang="de">Laborpraktikum</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/masterarbeit">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>masterarbeit</dcterms:identifier>
+      <skos:notation>masterarbeit</skos:notation>
+      <skos:prefLabel xml:lang="de">Masterarbeit</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>modul</dcterms:identifier>
+      <skos:notation>modul</skos:notation>
+      <skos:prefLabel xml:lang="de">Modul</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modulteilleistung">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>modulteilleistung</dcterms:identifier>
+      <skos:notation>modulteilleistung</skos:notation>
+      <skos:prefLabel xml:lang="de">Modulteilleistung</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/muendliche_pruefung">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>muendliche_pruefung</dcterms:identifier>
+      <skos:notation>muendliche_pruefung</skos:notation>
+      <skos:prefLabel xml:lang="de">Mündliche Prüfung</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/pflichtbereich">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>pflichtbereich</dcterms:identifier>
+      <skos:notation>pflichtbereich</skos:notation>
+      <skos:prefLabel xml:lang="de">Pflichtbereich</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/praktikum">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>praktikum</dcterms:identifier>
+      <skos:notation>praktikum</skos:notation>
+      <skos:prefLabel xml:lang="de">Praktikum</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/praxissemester">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>praxissemester</dcterms:identifier>
+      <skos:notation>praxissemester</skos:notation>
+      <skos:prefLabel xml:lang="de">Praxissemester</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/schriftliche_pruefung">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>schriftliche_pruefung</dcterms:identifier>
+      <skos:notation>schriftliche_pruefung</skos:notation>
+      <skos:prefLabel xml:lang="de">Schriftliche Prüfung</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/seminar">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>seminar</dcterms:identifier>
+      <skos:notation>seminar</skos:notation>
+      <skos:prefLabel xml:lang="de">Seminar</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/seminararbeit">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>seminararbeit</dcterms:identifier>
+      <skos:notation>seminararbeit</skos:notation>
+      <skos:prefLabel xml:lang="de">Seminararbeit</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studienfach">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>studienfach</dcterms:identifier>
+      <skos:notation>studienfach</skos:notation>
+      <skos:prefLabel xml:lang="de">Studienfach</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studiengang">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>studiengang</dcterms:identifier>
+      <skos:notation>studiengang</skos:notation>
+      <skos:prefLabel xml:lang="de">Studiengang</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/thesis">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>thesis</dcterms:identifier>
+      <skos:notation>thesis</skos:notation>
+      <skos:prefLabel xml:lang="de">Thesis</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/tutorium">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>tutorium</dcterms:identifier>
+      <skos:notation>tutorium</skos:notation>
+      <skos:prefLabel xml:lang="de">Tutorium</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/vorlesung">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>vorlesung</dcterms:identifier>
+      <skos:notation>vorlesung</skos:notation>
+      <skos:prefLabel xml:lang="de">Vorlesung</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlbereich">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>wahlbereich</dcterms:identifier>
+      <skos:notation>wahlbereich</skos:notation>
+      <skos:prefLabel xml:lang="de">Wahlbereich</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlfach">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>wahlfach</dcterms:identifier>
+      <skos:notation>wahlfach</skos:notation>
+      <skos:prefLabel xml:lang="de">Wahlfach</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlmodul">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>wahlmodul</dcterms:identifier>
+      <skos:notation>wahlmodul</skos:notation>
+      <skos:prefLabel xml:lang="de">Wahlmodul</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtbereich">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>wahlpflichtbereich</dcterms:identifier>
+      <skos:notation>wahlpflichtbereich</skos:notation>
+      <skos:prefLabel xml:lang="de">Wahlpflichtbereich</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtfach">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>wahlpflichtfach</dcterms:identifier>
+      <skos:notation>wahlpflichtfach</skos:notation>
+      <skos:prefLabel xml:lang="de">Wahlpflichtfach</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtmodul">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>wahlpflichtmodul</dcterms:identifier>
+      <skos:notation>wahlpflichtmodul</skos:notation>
+      <skos:prefLabel xml:lang="de">Wahlpflichtmodul</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/~wert_nicht_in_liste">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>~wert_nicht_in_liste</dcterms:identifier>
+      <skos:notation>~wert_nicht_in_liste</skos:notation>
+      <skos:prefLabel xml:lang="de">Wert nicht in Liste</skos:prefLabel>
+   </skos:Concept>
+</rdf:RDF>

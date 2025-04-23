@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Diese RDF-Datei enthält maschinenverarbeitbare Informationen über die Codeliste "Leistungsbenotungsstatus" in der Version 1.0. Die Codeliste wird bereitgestellt durch das Vorhaben XHochschule (https://xhochschule.de/web/). Bei technischen Fragen zur Bereitstellung der Datei kontaktieren Sie uns bitte unter https://xhochschule.de/web/contact. -->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+   <skos:ConceptScheme rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus">
+      <dcterms:identifier>leistungsbenotungsstatus</dcterms:identifier>
+      <rdfs:label>Leistungsbenotungsstatus</rdfs:label>
+      <skos:prefLabel>Leistungsbenotungsstatus</skos:prefLabel>
+      <dcterms:title>Leistungsbenotungsstatus</dcterms:title>
+      <dcterms:description>Diese Codeliste gibt den Status einer Leistung in Bezug auf die Benotung an. Eine Leistung kann benotet, unbenotet, oder vorläufig benotet sein.</dcterms:description>
+      <dcterms:creator>XHS</dcterms:creator>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/note_liegt_nicht_vor"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/vorlaeufige_note"/>
+      <skos:hasTopConcept rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/~wert_nicht_in_liste"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>finale_note</dcterms:identifier>
+      <skos:notation>finale_note</skos:notation>
+      <skos:prefLabel xml:lang="de">Finale Note</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/note_liegt_nicht_vor">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>note_liegt_nicht_vor</dcterms:identifier>
+      <skos:notation>note_liegt_nicht_vor</skos:notation>
+      <skos:prefLabel xml:lang="de">Note liegt nicht vor</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/vorlaeufige_note">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>vorlaeufige_note</dcterms:identifier>
+      <skos:notation>vorlaeufige_note</skos:notation>
+      <skos:prefLabel xml:lang="de">Vorläufige Note</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/~wert_nicht_in_liste">
+      <skos:inScheme rdf:resource="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus"/>
+      <owl:versionInfo>1.0</owl:versionInfo>
+      <dcterms:identifier>~wert_nicht_in_liste</dcterms:identifier>
+      <skos:notation>~wert_nicht_in_liste</skos:notation>
+      <skos:prefLabel xml:lang="de">Wert nicht in Liste</skos:prefLabel>
+   </skos:Concept>
+</rdf:RDF>

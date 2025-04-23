@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE
+                    appendix
+                    [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><appendix xmlns="http://docbook.org/ns/docbook"
+          version="5"
+          xml:lang="de"
+          xml:id="schluesseltabellen"
+          status="&specstatus;"
+          revision="&xrecent;">
+   <title xmlns:xlink="http://www.w3.org/1999/xlink">Codelisten</title>
+   <para xmlns:xlink="http://www.w3.org/1999/xlink">In diesem Abschnitt sind die in XHochschule verwendeten Codelisten und ihre Inhalte aufgeführt.</para>
+   <section xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:id="schluesseltabellen.uebersicht">
+      <title>Übersicht</title>
+      <para>In der nachstehenden Tabelle werden die folgenden Informationen dargestellt:</para>
+      <variablelist>
+         <varlistentry>
+            <term>Codeliste</term>
+            <listitem>
+               <para>Alle in XHochschule genutzten Codelisten in alphabetischer Reihenfolge, die in mindestens einem Code-Datentyp genutzt werden (Typ der Codelistennutzung 1 bis 3).<footnote xml:id="no-entry">
+                     <para>Sofern in der Spalte „Code-Datentyp(en)“ kein Eintrag vorhanden ist, bedeutet dies, dass der Standard die jeweilige Codeliste verwendet und dokumentieren möchte. Der die Codeliste nutzende Code-Datentyp ist jedoch nicht im Standard spezifiziert.</para>
+                  </footnote>
+               </para>
+            </listitem>
+         </varlistentry>
+         <varlistentry>
+            <term>Version</term>
+            <listitem>
+               <para>Die Version der Codeliste.</para>
+            </listitem>
+         </varlistentry>
+         <varlistentry>
+            <term>Code-Datentyp(en)</term>
+            <listitem>
+               <para>Die die jeweilige Codeliste nutzenden Code-Datentypen.<footnoteref linkend="no-entry"/>
+               </para>
+            </listitem>
+         </varlistentry>
+      </variablelist>
+      <para>Die Namen der Code-Datentypen und der Codelisten stellen Links zu den jeweiligen Detail-Abschnitten dar.</para>
+      <informaltable version="5" xml:lang="de" xml:id="codelisten-uebersichtstabelle">
+         <tgroup cols="3">
+            <colspec colnum="1" colname="codeliste" colwidth="63mm"/>
+            <colspec colnum="2" colname="version" colwidth="34mm"/>
+            <colspec colnum="3" colname="code" colwidth="63mm"/>
+            <thead>
+               <row>
+                  <entry>Codeliste</entry>
+                  <entry>Version</entry>
+                  <entry>Code-Datentyp(en)</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.anerkanntoderangerechnet.AnerkanntOderAngerechnet-Codes">AnerkanntOderAngerechnet</link>
+                  </entry>
+                  <entry align="left">1.0</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XHochschule.Baukasten.Codes.Code.AnerkanntOderAngerechnet">Code.AnerkanntOderAngerechnet</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xhochschule-de.destatis.codeliste.beurlaubungsgrund.Beurlaubungsgrund-Codes">Beurlaubungsgrund</link>
+                  </entry>
+                  <entry align="left">--</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XHochschule.Baukasten.Codes.Code.Beurlaubungsgrund">Code.Beurlaubungsgrund</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.beurlaubungsstatus.Beurlaubungsstatus-Codes">Beurlaubungsstatus</link>
+                  </entry>
+                  <entry align="left">1.0</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XHochschule.Baukasten.Codes.Code.Beurlaubungsstatus">Code.Beurlaubungsstatus</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xhochschule-de.destatis.codeliste.faecherschluessel.Faecherschluessel-Codes">Faecherschluessel</link>
+                  </entry>
+                  <entry align="left">--</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XHochschule.Baukasten.Codes.Code.Faecherschluessel">Code.Faecherschluessel</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xhochschule-de.destatis.codeliste.hochschulsignatur.Hochschulsignatur-Codes">Hochschulsignaturen</link>
+                  </entry>
+                  <entry align="left">--</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XHochschule.Baukasten.Codes.Code.Hochschulsignatur">Code.Hochschulsignatur</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.immatrikulationsstatus.Immatrikulationsstatus-Codes">Immatrikulationsstatus</link>
+                  </entry>
+                  <entry align="left">1.0</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XHochschule.Baukasten.Codes.Code.Immatrikulationsstatus">Code.Immatrikulationsstatus</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.lateinischeehrenbezeichnung.LateinischeEhrenbezeichnung-Codes">Lateinische Ehrenbezeichnungen</link>
+                  </entry>
+                  <entry align="left">1.0</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XHochschule.Baukasten.Codes.Code.LateinischeEhrenbezeichnung">Code.LateinischeEhrenbezeichnung</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsart.Leistungsart-Codes">Leistungsart</link>
+                  </entry>
+                  <entry align="left">1.0</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XHochschule.Baukasten.Codes.Code.Leistungsart">Code.Leistungsart</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsbenotungsstatus.Leistungsbenotungsstatus-Codes">Leistungsbenotungsstatus</link>
+                  </entry>
+                  <entry align="left">1.0</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XHochschule.Baukasten.Codes.Code.Leistungsbenotungsstatus">Code.Leistungsbenotungsstatus</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsstatus.Leistungsstatus-Codes">Leistungsstatus</link>
+                  </entry>
+                  <entry align="left">1.0</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XHochschule.Baukasten.Codes.Code.Leistungsstatus">Code.Leistungsstatus</link>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </informaltable>
+   </section>
+   <section xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:id="schluesseltabellen.details">
+      <title>Details</title>
+      <section xml:id="tabelle.urn.xhochschule-de.xhochschule.codeliste.anerkanntoderangerechnet.AnerkanntOderAngerechnet-Codes">
+         <title>AnerkanntOderAngerechnet</title>
+         <para>Diese Codeliste gibt an, ob eine Leistung, die an einer externen Bildungseinrichtung erbracht wurde, an der Hochschule (die den Bildungsnachweis ausstellt) entweder anerkannt oder angerechnet wurde.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>AnerkanntOderAngerechnet</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>AnerkanntOderAngerechnet</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xhochschule-de:xhochschule:codeliste:anerkanntoderangerechnet</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XHochschule (XHS)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>1.0</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">description-de-DE (deutsche Übersetzung)</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/anerkanntoderangerechnet/anerkannt">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​a​n​e​r​k​a​n​n​t​o​d​e​r​a​n​g​e​r​e​c​h​n​e​t​/​a​n​e​r​k​a​n​n​t</link>
+                        </entry>
+                        <entry align="left">anerkannt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/anerkanntoderangerechnet/angerechnet">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​a​n​e​r​k​a​n​n​t​o​d​e​r​a​n​g​e​r​e​c​h​n​e​t​/​a​n​g​e​r​e​c​h​n​e​t</link>
+                        </entry>
+                        <entry align="left">angerechnet</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/anerkanntoderangerechnet/~wert_nicht_bekannt">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​a​n​e​r​k​a​n​n​t​o​d​e​r​a​n​g​e​r​e​c​h​n​e​t​/​~​w​e​r​t​_​n​i​c​h​t​_​b​e​k​a​n​n​t</link>
+                        </entry>
+                        <entry align="left">Wert nicht bekannt</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xhochschule-de.destatis.codeliste.beurlaubungsgrund.Beurlaubungsgrund-Codes">
+         <title>Beurlaubungsgrund</title><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik, mit denen Hochschulen eindeutig identifiziert werden können. Der Beurlaubungsgrund  ist aus dem Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik entnommen. Diese wurde von Statistik Nord veröffentlicht.</para>
+
+<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">Statistik Nord</link> bereitgestellt.</para>
+
+<para>Als Schlüssel wird der Eintrag (Ziffer zwischen 1 und 9) in der Spalte "Signatur" der Tabelle "Gründe der Beurlaubung" unter dem Schlüsselverzeichnis "7.2 Gründe der Beurlaubung" aufgelistet.</para>
+
+<para>Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. </para>
+
+<para>Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI"  an.
+</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Grund für die Beurlaubung nach DESTATIS Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Beurlaubungsgrund</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xhochschule-de:destatis:codeliste:beurlaubungsgrund</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>Statistisches Bundesamt (DESTATIS)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>unbestimmt</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xhochschule-de.xhochschule.codeliste.beurlaubungsstatus.Beurlaubungsstatus-Codes">
+         <title>Beurlaubungsstatus</title>
+         <para>Diese Codeliste enthält mögliche Ausprägungen des Status einer Beurlaubung eines Studierenden.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Beurlaubungsstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Beurlaubungsstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XHochschule (XHS)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>1.0</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">description-de-DE (deutsche Übersetzung)</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/beurlaubt">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​b​e​u​r​l​a​u​b​u​n​g​s​s​t​a​t​u​s​/​b​e​u​r​l​a​u​b​t</link>
+                        </entry>
+                        <entry align="left">beurlaubt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/nicht_beurlaubt">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​b​e​u​r​l​a​u​b​u​n​g​s​s​t​a​t​u​s​/​n​i​c​h​t​_​b​e​u​r​l​a​u​b​t</link>
+                        </entry>
+                        <entry align="left">nicht beurlaubt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/~wert_nicht_bekannt">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​b​e​u​r​l​a​u​b​u​n​g​s​s​t​a​t​u​s​/​~​w​e​r​t​_​n​i​c​h​t​_​b​e​k​a​n​n​t</link>
+                        </entry>
+                        <entry align="left">Wert nicht bekannt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/~wert_nicht_in_liste">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​b​e​u​r​l​a​u​b​u​n​g​s​s​t​a​t​u​s​/​~​w​e​r​t​_​n​i​c​h​t​_​i​n​_​l​i​s​t​e</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xhochschule-de.destatis.codeliste.faecherschluessel.Faecherschluessel-Codes">
+         <title>Faecherschluessel</title><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für
+Zwecke der Bundesstatistik. Sie dienen in XHochschule der eindeutigen Identifizierung von Studienfächern anhand von Schlüsselwerten. Die Codeliste wird von Statistik Nord zur Verfügung gestellt.</para>
+
+<para>Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">Statistik Nord</link> bereitgestellt.</para>
+
+<para>Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig. </para>
+
+<para>In dem Dokument ist eine Erläuterung vermerkt zur Handhabung der Systematik der Fächergruppen und der Verschlüsselung der Studienfächer. Die Fächerschlüssel sind unter "4. Studienfächer, Studienbereiche und Fächergruppen" des Schlüsselverzeichnis lokalisierbar.</para>
+
+<para>Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI"  an.
+</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Fächerschluessel nach DESTATIS Schüsselverzeichnis. Übersicht der Fächergruppen, Studienbereiche und Studienfächer. (Bundesfächerschüssel)</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Faecherschluessel</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xhochschule-de:destatis:codeliste:faecherschluessel</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>Statistisches Bundesamt (DESTATIS)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>unbestimmt</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xhochschule-de.destatis.codeliste.hochschulsignatur.Hochschulsignatur-Codes">
+         <title>Hochschulsignaturen</title><para>Diese Verzeichnisse des Statistischen Bundesamtes (DESTATIS) sind Erhebungsschlüssel für Zwecke der Bundesstatistik, mit denen Hochschulen eindeutig identifiziert werden können. Die Hochschulsignatur ist aus dem Schlüsselverzeichnisse für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik entnommen. 
+Die Schlüsselverzeichnisse werden unter anderem auf der Webseite von <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">Statistik Nord</link> bereitgestellt.</para>
+
+<para>Als Schlüssel wird der Eintrag "Signatur" aus der Tabelle "Hochschulen, numerisch" verwendet. Der Schlüssel muss als eine vierstellige Zeichenkette dargestellt werden. Zugelassen sind Zahlen und Großbuchstaben. Führende Nullen im Schlüssel müssen erhalten bleiben. Die jeweiligen Schlüssel finden sich unter "2. Hochschulen" im Schlüsselverzeichnis.
+Es sollte der Codelistenwert aus der Version verwendet werden, in der ein Dokument ursprünglich erstellt wurde. Vorherige Versionen der Schlüsselliste bleiben für den Zeitraum, auf den sie sich beziehen, gültig.</para>
+
+<para>Geben Sie Ihren Bezugsort für die Codeliste unter dem Attribut "listURI"  an.
+</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Hochschulsignaturenschlüssel von DESTATIS H201 Hochschulstatistik</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Hochschulsignaturen</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xhochschule-de:destatis:codeliste:hochschulsignatur</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>Statistisches Bundesamt (DESTATIS)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>unbestimmt</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xhochschule-de.xhochschule.codeliste.immatrikulationsstatus.Immatrikulationsstatus-Codes">
+         <title>Immatrikulationsstatus</title>
+         <para>Diese Codeliste enthält mögliche Ausprägungen des Status der Immatrikulation an einer Hochschule.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Immatrikulationsstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Immatrikulationsstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xhochschule-de:xhochschule:codeliste:immatrikulationsstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XHochschule (XHS)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>1.0</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">description-de-DE (Name (Deutsch))</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/immatrikuliert">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​i​m​m​a​t​r​i​k​u​l​a​t​i​o​n​s​s​t​a​t​u​s​/​i​m​m​a​t​r​i​k​u​l​i​e​r​t</link>
+                        </entry>
+                        <entry align="left">immatrikuliert</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/nicht_immatrikuliert">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​i​m​m​a​t​r​i​k​u​l​a​t​i​o​n​s​s​t​a​t​u​s​/​n​i​c​h​t​_​i​m​m​a​t​r​i​k​u​l​i​e​r​t</link>
+                        </entry>
+                        <entry align="left">nicht immatrikuliert</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/vorlaeufig_immatrikuliert">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​i​m​m​a​t​r​i​k​u​l​a​t​i​o​n​s​s​t​a​t​u​s​/​v​o​r​l​a​e​u​f​i​g​_​i​m​m​a​t​r​i​k​u​l​i​e​r​t</link>
+                        </entry>
+                        <entry align="left">vorläufig immatrikuliert</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/~wert_nicht_in_liste">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​i​m​m​a​t​r​i​k​u​l​a​t​i​o​n​s​s​t​a​t​u​s​/​~​w​e​r​t​_​n​i​c​h​t​_​i​n​_​l​i​s​t​e</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xhochschule-de.xhochschule.codeliste.lateinischeehrenbezeichnung.LateinischeEhrenbezeichnung-Codes">
+         <title>Lateinische Ehrenbezeichnungen</title>
+         <para>Diese Codeliste enthält mögliche Ausprägungen von lateinischen Ehrenbezeichnungen eines Hochschulabschlusses.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Lateinische Ehrenbezeichnungen</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Lateinische Ehrenbezeichnungen</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xhochschule-de:xhochschule:codeliste:lateinischeehrenbezeichnung</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XHochschule (XHS)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>1.0</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="3">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <colspec colnum="3" colname="desc"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">description-en-GB (Lateinische Bezeichnung)</entry>
+                        <entry align="left">description-de-DE (deutsche Übersetzung)</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/cum_laude">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​a​t​e​i​n​i​s​c​h​e​e​h​r​e​n​b​e​z​e​i​c​h​n​u​n​g​/​c​u​m​_​l​a​u​d​e</link>
+                        </entry>
+                        <entry align="left">cum laude</entry>
+                        <entry align="left">mit Auszeichnung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/insigni_cum_laude">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​a​t​e​i​n​i​s​c​h​e​e​h​r​e​n​b​e​z​e​i​c​h​n​u​n​g​/​i​n​s​i​g​n​i​_​c​u​m​_​l​a​u​d​e</link>
+                        </entry>
+                        <entry align="left">insigni cum laude</entry>
+                        <entry align="left">(DE-CH) sehr gut</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/magna_cum_laude">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​a​t​e​i​n​i​s​c​h​e​e​h​r​e​n​b​e​z​e​i​c​h​n​u​n​g​/​m​a​g​n​a​_​c​u​m​_​l​a​u​d​e</link>
+                        </entry>
+                        <entry align="left">magna cum laude</entry>
+                        <entry align="left">mit großer Auszeichnung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/rite">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​a​t​e​i​n​i​s​c​h​e​e​h​r​e​n​b​e​z​e​i​c​h​n​u​n​g​/​r​i​t​e</link>
+                        </entry>
+                        <entry align="left">rite</entry>
+                        <entry align="left">ordnungsgemäß</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/summa_cum_laude">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​a​t​e​i​n​i​s​c​h​e​e​h​r​e​n​b​e​z​e​i​c​h​n​u​n​g​/​s​u​m​m​a​_​c​u​m​_​l​a​u​d​e</link>
+                        </entry>
+                        <entry align="left">summa cum laude</entry>
+                        <entry align="left">mit höchster Auszeichnung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/~wert_nicht_bekannt">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​a​t​e​i​n​i​s​c​h​e​e​h​r​e​n​b​e​z​e​i​c​h​n​u​n​g​/​~​w​e​r​t​_​n​i​c​h​t​_​b​e​k​a​n​n​t</link>
+                        </entry>
+                        <entry align="left">Value unknown</entry>
+                        <entry align="left">Wert nicht bekannt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/~wert_nicht_in_liste">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​a​t​e​i​n​i​s​c​h​e​e​h​r​e​n​b​e​z​e​i​c​h​n​u​n​g​/​~​w​e​r​t​_​n​i​c​h​t​_​i​n​_​l​i​s​t​e</link>
+                        </entry>
+                        <entry align="left">Value not in list</entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsart.Leistungsart-Codes">
+         <title>Leistungsart</title>
+         <para>Diese Codeliste gibt an, um welche Art der Leistung es sich bei einer konkreten Leistung handelt, z.B. Modul oder Klausur, etc.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Leistungsart</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Leistungsart</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xhochschule-de:xhochschule:codeliste:leistungsart</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XHochschule (XHS)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>1.0</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">description-de-DE (deutsche Übersetzung)</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/abschlusspruefung">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​a​b​s​c​h​l​u​s​s​p​r​u​e​f​u​n​g</link>
+                        </entry>
+                        <entry align="left">Abschlussprüfung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/bachelorarbeit">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​b​a​c​h​e​l​o​r​a​r​b​e​i​t</link>
+                        </entry>
+                        <entry align="left">Bachelorarbeit</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/diplomarbeit">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​d​i​p​l​o​m​a​r​b​e​i​t</link>
+                        </entry>
+                        <entry align="left">Diplomarbeit</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/doktorarbeit">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​d​o​k​t​o​r​a​r​b​e​i​t</link>
+                        </entry>
+                        <entry align="left">Doktorarbeit</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/fach">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​f​a​c​h</link>
+                        </entry>
+                        <entry align="left">Fach</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/fachbereich">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​f​a​c​h​b​e​r​e​i​c​h</link>
+                        </entry>
+                        <entry align="left">Fachbereich</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/forschungspraktikum">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​f​o​r​s​c​h​u​n​g​s​p​r​a​k​t​i​k​u​m</link>
+                        </entry>
+                        <entry align="left">Forschungspraktikum</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/hausarbeit">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​h​a​u​s​a​r​b​e​i​t</link>
+                        </entry>
+                        <entry align="left">Hausarbeit</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/industriepraktikum">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​i​n​d​u​s​t​r​i​e​p​r​a​k​t​i​k​u​m</link>
+                        </entry>
+                        <entry align="left">Industriepraktikum</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/klausur">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​k​l​a​u​s​u​r</link>
+                        </entry>
+                        <entry align="left">Klausur</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/kolloquium">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​k​o​l​l​o​q​u​i​u​m</link>
+                        </entry>
+                        <entry align="left">Kolloquium</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/kurs">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​k​u​r​s</link>
+                        </entry>
+                        <entry align="left">Kurs</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/laborpraktikum">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​l​a​b​o​r​p​r​a​k​t​i​k​u​m</link>
+                        </entry>
+                        <entry align="left">Laborpraktikum</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/masterarbeit">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​m​a​s​t​e​r​a​r​b​e​i​t</link>
+                        </entry>
+                        <entry align="left">Masterarbeit</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​m​o​d​u​l</link>
+                        </entry>
+                        <entry align="left">Modul</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modulteilleistung">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​m​o​d​u​l​t​e​i​l​l​e​i​s​t​u​n​g</link>
+                        </entry>
+                        <entry align="left">Modulteilleistung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/muendliche_pruefung">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​m​u​e​n​d​l​i​c​h​e​_​p​r​u​e​f​u​n​g</link>
+                        </entry>
+                        <entry align="left">Mündliche Prüfung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/pflichtbereich">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​p​f​l​i​c​h​t​b​e​r​e​i​c​h</link>
+                        </entry>
+                        <entry align="left">Pflichtbereich</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/praktikum">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​p​r​a​k​t​i​k​u​m</link>
+                        </entry>
+                        <entry align="left">Praktikum</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/praxissemester">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​p​r​a​x​i​s​s​e​m​e​s​t​e​r</link>
+                        </entry>
+                        <entry align="left">Praxissemester</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/schriftliche_pruefung">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​s​c​h​r​i​f​t​l​i​c​h​e​_​p​r​u​e​f​u​n​g</link>
+                        </entry>
+                        <entry align="left">Schriftliche Prüfung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/seminar">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​s​e​m​i​n​a​r</link>
+                        </entry>
+                        <entry align="left">Seminar</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/seminararbeit">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​s​e​m​i​n​a​r​a​r​b​e​i​t</link>
+                        </entry>
+                        <entry align="left">Seminararbeit</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studienfach">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​s​t​u​d​i​e​n​f​a​c​h</link>
+                        </entry>
+                        <entry align="left">Studienfach</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studiengang">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​s​t​u​d​i​e​n​g​a​n​g</link>
+                        </entry>
+                        <entry align="left">Studiengang</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/thesis">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​t​h​e​s​i​s</link>
+                        </entry>
+                        <entry align="left">Thesis</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/tutorium">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​t​u​t​o​r​i​u​m</link>
+                        </entry>
+                        <entry align="left">Tutorium</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/vorlesung">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​v​o​r​l​e​s​u​n​g</link>
+                        </entry>
+                        <entry align="left">Vorlesung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlbereich">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​w​a​h​l​b​e​r​e​i​c​h</link>
+                        </entry>
+                        <entry align="left">Wahlbereich</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlfach">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​w​a​h​l​f​a​c​h</link>
+                        </entry>
+                        <entry align="left">Wahlfach</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlmodul">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​w​a​h​l​m​o​d​u​l</link>
+                        </entry>
+                        <entry align="left">Wahlmodul</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtbereich">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​w​a​h​l​p​f​l​i​c​h​t​b​e​r​e​i​c​h</link>
+                        </entry>
+                        <entry align="left">Wahlpflichtbereich</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtfach">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​w​a​h​l​p​f​l​i​c​h​t​f​a​c​h</link>
+                        </entry>
+                        <entry align="left">Wahlpflichtfach</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlpflichtmodul">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​w​a​h​l​p​f​l​i​c​h​t​m​o​d​u​l</link>
+                        </entry>
+                        <entry align="left">Wahlpflichtmodul</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/~wert_nicht_in_liste">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​a​r​t​/​~​w​e​r​t​_​n​i​c​h​t​_​i​n​_​l​i​s​t​e</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsbenotungsstatus.Leistungsbenotungsstatus-Codes">
+         <title>Leistungsbenotungsstatus</title>
+         <para>Diese Codeliste gibt den Status einer Leistung in Bezug auf die Benotung an. Eine Leistung kann benotet, unbenotet, oder vorläufig benotet sein.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Leistungsbenotungsstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Leistungsbenotungsstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XHochschule (XHS)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>1.0</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">description-de-DE (deutsche Übersetzung)</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​b​e​n​o​t​u​n​g​s​s​t​a​t​u​s​/​f​i​n​a​l​e​_​n​o​t​e</link>
+                        </entry>
+                        <entry align="left">Finale Note</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/note_liegt_nicht_vor">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​b​e​n​o​t​u​n​g​s​s​t​a​t​u​s​/​n​o​t​e​_​l​i​e​g​t​_​n​i​c​h​t​_​v​o​r</link>
+                        </entry>
+                        <entry align="left">Note liegt nicht vor</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/vorlaeufige_note">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​b​e​n​o​t​u​n​g​s​s​t​a​t​u​s​/​v​o​r​l​a​e​u​f​i​g​e​_​n​o​t​e</link>
+                        </entry>
+                        <entry align="left">Vorläufige Note</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/~wert_nicht_in_liste">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​b​e​n​o​t​u​n​g​s​s​t​a​t​u​s​/​~​w​e​r​t​_​n​i​c​h​t​_​i​n​_​l​i​s​t​e</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsstatus.Leistungsstatus-Codes">
+         <title>Leistungsstatus</title>
+         <para>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, etc.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Leistungsstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Leistungsstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xhochschule-de:xhochschule:codeliste:leistungsstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XHochschule (XHS)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>1.0</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">description-de-DE (deutsche Übersetzung)</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/angemeldet">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​s​t​a​t​u​s​/​a​n​g​e​m​e​l​d​e​t</link>
+                        </entry>
+                        <entry align="left">angemeldet</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​s​t​a​t​u​s​/​b​e​s​t​a​n​d​e​n</link>
+                        </entry>
+                        <entry align="left">bestanden</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/endgueltig_nicht_bestanden">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​s​t​a​t​u​s​/​e​n​d​g​u​e​l​t​i​g​_​n​i​c​h​t​_​b​e​s​t​a​n​d​e​n</link>
+                        </entry>
+                        <entry align="left">endgültig nicht bestanden</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/entschuldigt">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​s​t​a​t​u​s​/​e​n​t​s​c​h​u​l​d​i​g​t</link>
+                        </entry>
+                        <entry align="left">entschuldigt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/nicht_bestanden">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​s​t​a​t​u​s​/​n​i​c​h​t​_​b​e​s​t​a​n​d​e​n</link>
+                        </entry>
+                        <entry align="left">nicht bestanden</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/nicht_vollstaendig">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​s​t​a​t​u​s​/​n​i​c​h​t​_​v​o​l​l​s​t​a​e​n​d​i​g</link>
+                        </entry>
+                        <entry align="left">nicht vollständig</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/~wert_nicht_in_liste">h​t​t​p​:​/​/​x​h​o​c​h​s​c​h​u​l​e​.​d​e​/​d​e​f​/​x​h​o​c​h​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​l​e​i​s​t​u​n​g​s​s​t​a​t​u​s​/​~​w​e​r​t​_​n​i​c​h​t​_​i​n​_​l​i​s​t​e</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+   </section>
+</appendix>

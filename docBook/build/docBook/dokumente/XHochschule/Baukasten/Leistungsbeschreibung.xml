@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XHochschule.Baukasten.Leistungsbeschreibung">
+   <title>Leistungsbeschreibung</title>
+   <subtitle>Typ: <emphasis role="codebf">Leistungsbeschreibung</emphasis>
+   </subtitle><para>Klasse zur Beschreibung einer Leistung</para><figure xml:id="figure.XHochschule.Baukasten.Leistungsbeschreibung">
+      <title>Leistungsbeschreibung</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../zeichnungen/XHochschule/Baukasten/Leistungsbeschreibung.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XHochschule.Baukasten.Leistungsbeschreibung">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">Leistungsbeschreibung</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">beschreibung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>In diesem Freitextfeld soll der Inhalt einer Leistung beschrieben werden. Um die Interoperabilität gewährleisten zu können sollte dieses Feld immer befüllt werden. Es ist entscheidend, Informationen über eine Leistung in XHS zu transportieren, um interoperabel zu bleiben. Denn, für Verweise, die in diesem Feld auf andere Quellen zeigen, kann die dauerhafte Verfügbarkeit nicht gewährleistet bzw. garantiert werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">beschreibungAlsHTML</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeE</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>In diesem Freitextfeld kann der Inhalt einer Leistung mittels HTML beschrieben werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">umfangInSWS</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:decimal</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Umfang der Leistung in Semesterwochenstunden</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">modulbeschreibungNachKMK</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">ModulbeschreibungNachKMK</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.ModulbeschreibungNachKMK"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.ModulbeschreibungNachKMK"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Klasse zur strukturierten Erfassung einer Modulbeschreibung nach Rahmenvorgaben der KMK (laut Beschluss der Kultusministerkonferenz vom 15.09.2000). Weitere Informationen verfügbar in den <link xlink:href="https://www.kmk.org/fileadmin/pdf/PresseUndAktuelles/2000/module.pdf"> Rahmenvorgaben der KMK. </link>  </para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">versionDesModulhandbuchs</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Feld "Version des Modulhandbuchs" ist optional und sollte nur die Versionsnummer ggf. Versionsbezeichnung enthalten. 
+Anmerkung: Aufnehmende Hochschulen benötigen bei Angabe einer Modul-ID die Referenz, auf welche Fassung eines Modulhandbuchs sich diese bezieht.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">weitereInformationen</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:anyURI</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Link, der den Zugriff auf weitere Informationen zur Leistung ermöglicht.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../anhang/verwendung/complexTypes/leistungsbeschreibung_list.xml"/>
+</section>
