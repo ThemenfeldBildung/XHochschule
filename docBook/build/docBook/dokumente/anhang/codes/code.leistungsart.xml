@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XHochschule.Baukasten.Codes.Code.Leistungsart"
+         status="&specstatus;"
+         revision="&xrecent;">
+   <title>Code.Leistungsart</title><para>Diese Codeliste gibt an, um welche Art einer Leistung es sich handelt - z.B. Modul, Kurs, Klausur, Hausarbeit, etc. Je nach ausgewähltem Wert werden durch die Klasse "Leistung" unterschiedliche Elemente zur weiteren Beschreibung der Leistung bereitgestellt. </para><informaltable>
+      <tgroup cols="2">
+         <colspec colnum="1" colname="des" colwidth="22mm"/>
+         <colspec colnum="2" colname="val" colwidth="138mm"/>
+         <thead>
+            <row>
+               <entry>Codelisten</entry>
+               <entry/>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry>-beschreibung</entry>
+               <entry>Diese Codeliste gibt an, um welche Art der Leistung es sich bei einer konkreten Leistung handelt, z.B. Modul oder Klausur, etc.</entry>
+            </row>
+            <row>
+               <entry>-nutzung</entry>
+               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsart.Leistungsart-Codes"
+                        role="Seite"/>
+               </entry>
+            </row>
+            <row>
+               <entry>-kennung</entry>
+               <entry>urn:xhochschule-de:xhochschule:codeliste:leistungsart</entry>
+            </row>
+            <row>
+               <entry>-version</entry>
+               <entry>1.0</entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../verwendung/complexTypes/code.leistungsart_list.xml"/>
+</section>

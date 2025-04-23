@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://xhochschule.de/def/xhochschule/1.0/xsd"
+           version="1.0"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+   <xs:include schemaLocation="Kernkomponenten.xsd"/>
+   <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
+   <xs:include schemaLocation="xhochschule-bescheinigungen.xsd"/>
+   <xs:include schemaLocation="xhochschule-bildungsnachweise.xsd"/>
+</xs:schema>

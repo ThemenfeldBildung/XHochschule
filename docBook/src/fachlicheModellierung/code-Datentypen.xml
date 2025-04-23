@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<chapter version="5" xml:id="spezifikation.code-Datentypen" xml:lang="de" xmlns="http://docbook.org/ns/docbook">
+    <info>
+        <title>Code-Datentypen</title>
+    </info>
+    <include href="../../build/docBook/dokumente/anhang/codes/code-uebersichtstabelle.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="../../build/docBook/dokumente/anhang/codes/code.anerkanntoderangerechnet.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="../../build/docBook/dokumente/anhang/codes/code.beurlaubungsgrund.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="../../build/docBook/dokumente/anhang/codes/code.beurlaubungsstatus.xml" xmlns="http://www.w3.org/2001/XInclude" />
+	<include href="../../build/docBook/dokumente/anhang/codes/code.immatrikulationsstatus.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="../../build/docBook/dokumente/anhang/codes/code.hochschulsignatur.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="../../build/docBook/dokumente/anhang/codes/code.lateinischeehrenbezeichnung.xml" xmlns="http://www.w3.org/2001/XInclude" />
+	<include href="../../build/docBook/dokumente/anhang/codes/code.leistungsart.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="../../build/docBook/dokumente/anhang/codes/code.leistungsbenotungsstatus.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="../../build/docBook/dokumente/anhang/codes/code.leistungsstatus.xml" xmlns="http://www.w3.org/2001/XInclude" />
+	<include href="../../build/docBook/dokumente/anhang/codes/code.lernzeitmodell.xml" xmlns="http://www.w3.org/2001/XInclude" />
+    <include href="../../build/docBook/dokumente/anhang/codes/code.faecherschluessel.xml" xmlns="http://www.w3.org/2001/XInclude" />
+</chapter>

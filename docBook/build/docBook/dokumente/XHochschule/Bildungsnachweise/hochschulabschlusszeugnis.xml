@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XHochschule.Bildungsnachweise.hochschulabschlusszeugnis">
+   <title>hochschulabschlusszeugnis</title>
+   <subtitle>Nachricht: <emphasis role="codebf">hochschulabschlusszeugnis</emphasis>
+   </subtitle><para>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Hochschulabschlusszeugnisses erhält. 
+Alle Module wie auch die Abschlussarbeit kann über das Element "leistung " mit der zugehörigen Codeliste "leistungsart" abgebildet werden.
+Zum Beispiel: kann das Element "leistung" mit "leistungsart" = Vorlesungen, Praktika, Klausuren, Abschlussarbeit etc. enthalten.</para>
+<figure xml:id="figure.XHochschule.Bildungsnachweise.hochschulabschlusszeugnis">
+      <title>hochschulabschlusszeugnis</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="107"
+                       fileref="../../../zeichnungen/XHochschule/Bildungsnachweise/hochschulabschlusszeugnis.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <informaltable xml:id="table.XHochschule.Bildungsnachweise.hochschulabschlusszeugnis">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">hochschulabschlusszeugnis</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">abschluss</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeC</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Bezeichnung des Abschlusses, z.B. "Master of Science".</para> </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">studierender</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Studierender</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Studierender" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Studierender" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Studierende Person, für die ein Hochschulabschlusszeugnis ausgestellt wird.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ausstellendeHochschule</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Hochschule</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Hochschule" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Hochschule" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die Hochschule, die das Hochschulabschlusszeugnis ausgestellt hat.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">datumDesErwerbs</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:date</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Gibt das Datum an, an dem das Hochschulabschlusszeugnis erworben wurde.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">leistung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Leistung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Leistung" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Leistung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Element für die strukturierte Abbildung der Studienleistungen. An oberster Ebene dient die Klasse zur Spezifizierung des Studienfachs (Synonym zu Studiengang, bezeichnet den spezifischen Aufbau und die fachliche Ausrichtung eines Studiums). Die jeweilige Art der Leistung, z.B. Studienfach, Modul, Klausur etc., wird durch das Kindelement "leistungsart" angegeben. "Leistung" kann sich selbst als Kindelement enthalten, um die aufgeschlüsselten Inhalte des Studienfachs abzubilden. "leistung" kann so oft in sich geschachtelt werden, wie es die organisatorische Aufteilung des Studienfachs erfordert. Z. B. kann das Studienfach "Biophysik" ("Leistung" mit "leistungsart" = Studienfach) mehrere Module ("leistung" mit "leistungsart" = Modul) enthalten, die wiederum jeweils mehrere Elemente "leistung" mit "leistungsart" = Abschlussarbeit, Vorlesungen, Praktika, Klausuren etc. enthalten.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">benotung</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die Benotung der absolvierenden Person, die sich aus Benotungselementen wie z.B. Gesamtnote und lateinischer Ehrenbezeichnung zusammensetzt.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">gesamtnote</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Benotung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zur Note, die sich aus allen erbrachten Leistungen des Hochschulstudiums ergibt.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">lateinischeEhrenbezeichnung</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Lateinische Ehrenbezeichnung wahlweise als Codelisteneintrag oder als Freitext. Der Freitext steht nur dann zur Verfügung, wenn kein zutreffender Codelisteneintrag vorliegt. </para> 
+</entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.LateinischeEhrenbezeichnung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Codes.Code.LateinischeEhrenbezeichnung"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Baukasten.Codes.Code.LateinischeEhrenbezeichnung"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Diese Codeliste enthält mögliche Ausprägungen von lateinischen Ehrenbezeichnungen eines Hochschulabschlusses.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>In diesem Feld ist die lateinische Ehrenbezeichnung als Freitext anzugeben. Es steht nur für den Fall zur Verfügung, wenn kein zutreffender Wert in der Codeliste enthalten ist, d. h. wenn dort der Codelisteneintrag "Wert nicht in Liste" ausgewählt wird.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">zulassungZuReglementiertemBerufBezeichnung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Bezeichnung des reglementierten Berufs für den durch Erwerb des Hochschulabschlusses die Zugangsvoraussetzung erfüllt werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">zugangsberechtigungWeiterfuehrendesStudiumBezeichnung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Freitextbeschreibung des erworbenen Zugangs zu einem weiterführenden Studium.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">zugangsberechtigungWeiterfuehrendesStudiumCodeEQF</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.EQF</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Niveau des erworbenen Zugangs zu einem weiterführenden Studium (European Qualifications Framework / EQF).</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">zugangsberechtigungWeiterfuehrendesStudiumCodeISCED2011</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.ISCED2011</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Bezeichnung des erworbenen Zugangs zu einem weiterführenden Studium (International Standard  Classification of Qualification / ISCED).</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">diplomaSupplement</emphasis> (ref)</entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Bildungsnachweise.diplomaSupplement"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XHochschule.Bildungsnachweise.diplomaSupplement"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Klasse, die die Datenstrukturen enthält, wie sie ein Studierender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Diploma Supplement erhält.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">Signature</emphasis> (ref)</entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle." role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle." role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier kann eine digitale Signatur angegeben werden.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <section>
+      <title>Geschäftsregeln</title>
+      <informaltable xml:id="table.XHochschule.Bildungsnachweise.hochschulabschlusszeugnis.rules">
+         <tgroup cols="2">
+            <colspec colname="id" colnum="1" colwidth="20mm"/>
+            <colspec colname="regel" colnum="2" colwidth="140mm"/>
+            <thead>
+               <row>
+                  <entry>ID</entry>
+                  <entry>Regel / XPath</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;7&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;H&#x200B;A&#x200B;Z&#x200B;</entry>
+                  <entry>XHS-0007 Ein Ausstellungsort darf auf dem Hochschulabschlusszeugnis nicht angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">benotung</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;1&#x200B;-&#x200B;P&#x200B;f&#x200B;l&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;f&#x200B;e&#x200B;l&#x200B;d&#x200B;e&#x200B;r&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;</entry>
+                  <entry>XHS-0011 Fehlende Angabe in 'benotung'. 'note' muss angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">exists(*:gesamtnote/*:note)</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">benotung/gesamtnote/note</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;9&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;G&#x200B;e&#x200B;s&#x200B;a&#x200B;m&#x200B;t&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;u&#x200B;n&#x200B;d&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;a&#x200B;r&#x200B;b&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
+                  <entry>XHS-0019 Das Feld Note muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(matches(., '^\d+,\d+$'))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">benotung/lateinischeEhrenbezeichnung</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;7&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;L&#x200B;a&#x200B;t&#x200B;e&#x200B;i&#x200B;n&#x200B;i&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;E&#x200B;h&#x200B;r&#x200B;e&#x200B;n&#x200B;b&#x200B;e&#x200B;z&#x200B;e&#x200B;i&#x200B;c&#x200B;h&#x200B;n&#x200B;u&#x200B;n&#x200B;g&#x200B;</entry>
+                  <entry>XHS-0017 Wenn und nur wenn der Wert der Codeliste LateinischeEhrenbezeichnung 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">diplomaSupplement</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;8&#x200B;-&#x200B;K&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;u&#x200B;s&#x200B;s&#x200B;t&#x200B;e&#x200B;l&#x200B;l&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;D&#x200B;S&#x200B;</entry>
+                  <entry>XHS-0008 Ein Ausstellungsort darf auf dem Diploma Supplement nicht angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">not(exists(*:ausstellung/ort))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">leistung/benotung/note</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;9&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;G&#x200B;e&#x200B;s&#x200B;a&#x200B;m&#x200B;t&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;u&#x200B;n&#x200B;d&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;a&#x200B;r&#x200B;b&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
+                  <entry>XHS-0019 Das Feld Note muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(matches(., '^\d+,\d+$'))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </informaltable>
+   </section>
+</section>

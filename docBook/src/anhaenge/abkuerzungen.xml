@@ -1,0 +1,172 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<appendix version="5" xml:id="spezifikation.anhang.abkuerzungen" xml:lang="de" xmlns="http://docbook.org/ns/docbook">
+    <info>
+        <title>Abkürzungen</title>
+    </info>
+    <informaltable frame="all">
+        <tgroup cols="2">
+            <thead>
+                <row>
+                    <entry>Abkürzung</entry>
+                    <entry>Bedeutung</entry>
+                </row>
+            </thead>
+            <tbody>
+                <!--<row>
+                    <entry>ASMK</entry>
+                    <entry>Arbeits- und Sozialministerkonferenz</entry>
+                </row>-->
+                <row>
+                    <entry>BAföG</entry>
+                    <entry>Bundesausbildungsförderungsgesetz</entry>
+                </row>
+                <!--<row>
+                    <entry>BFUG</entry>
+                    <entry>Bologna Follow-Up Group</entry>
+                </row>-->
+                <row>
+                    <entry>BMBF</entry>
+                    <entry>Bundesministerium für Bildung und Forschung</entry>
+                </row>
+                <!--<row>
+                    <entry>BMI</entry>
+                    <entry>Bundesministerium des Innern, für Bau und Heimat</entry>
+                </row> -->
+                <row>
+                    <entry>CaMS</entry>
+                    <entry>Campus Management System</entry>
+                </row>
+                <!--<row>
+                    <entry>CIO</entry>
+                    <entry>Chief Information Officer</entry>
+                </row>
+                <row>
+                    <entry>DAAD</entry>
+                    <entry>Deutscher Akademischen Austauschdienst</entry>
+                </row>-->
+                <row>
+                    <entry>DSGVO</entry>
+                    <entry>Datenschutzgrundverordnung</entry>
+                </row>
+                <row>
+                    <entry>DQR</entry>
+                    <entry>Deutscher Qualifikationsrahmen</entry>
+                </row>
+                <row>
+                    <entry>ECTS</entry>
+                    <entry>European Credit Transfer and Accumulation System</entry>
+                </row>
+                <row>
+                    <entry>EDCI</entry>
+                    <entry>Europass Digital Credential Infrastructure</entry>
+                </row>
+                <row>
+                    <entry>EHR</entry>
+                    <entry>Europäischer Hochschulraum</entry>
+                </row>
+                <row>
+                    <entry>EQF / EQR</entry>
+                    <entry>European Qualifications Framework / Europäischer
+                        Qualifikationsrahmen</entry>
+                </row>
+                <row>
+                    <entry>eIDAS</entry>
+                    <entry>Electronic Identification, Authentication and trust Services</entry>
+                </row>
+                <!--<row>
+                    <entry>EQF</entry>
+                    <entry>European Quality Framework</entry>
+                </row>
+                <row>
+                    <entry>EUG</entry>
+                    <entry>Emrex User Group</entry>
+                </row>
+                <row>
+                    <entry>EWP</entry>
+                    <entry>Erasmus Without Paper</entry>
+                </row>-->
+                <row>
+                    <entry>EWR</entry>
+                    <entry>Europäischer Wirtschaftsraum</entry>
+                </row>
+                <!--<row>
+                    <entry>FITKO</entry>
+                    <entry>Föderale IT-Kooperation</entry>
+                </row>
+                <row>
+                    <entry>HoF</entry>
+                    <entry>Institut für Hochschulforschung</entry>
+                </row>
+                <row>
+                    <entry>HRK</entry>
+                    <entry>Hochschulrektorenkonferenz</entry>
+                </row>-->
+                <row>
+                    <entry>HZB</entry>
+                    <entry>Hochschulzugangsberechtigung</entry>
+                </row>
+                <!--<row>
+                    <entry>IT-PLR</entry>
+                    <entry>IT-Planungsrat</entry>
+                </row>
+                <row>
+                    <entry>KfW</entry>
+                    <entry>Kreditanstalt für Wiederaufbau</entry>
+                </row>
+                <row>
+                    <entry>KMK</entry>
+                    <entry>Kultusministerkonferenz</entry>
+                </row>
+                <row>
+                    <entry>KoSIT</entry>
+                    <entry>Koordinierungsstelle für IT-Standards</entry>
+                </row>
+                <row>
+                    <entry>LeiKa</entry>
+                    <entry>Leistungskatalog</entry>
+                </row>
+                <row>
+                    <entry>OLA</entry>
+                    <entry>Online Learning Agreement</entry>
+                </row>-->
+                <row>
+                    <entry>OZG</entry>
+                    <entry>sog. Onlinezugangsgesetz (Gesetz zur Verbesserung des Onlinezugangs zu Verwaltungsleistungen)</entry>
+                </row>
+                <row>
+                    <entry>PIM</entry>
+                    <entry>Plattform für Internationale Studierendenmobilität </entry>
+                </row>
+                <row>
+                    <entry>SDG</entry>
+                    <entry>Single Digital Gateway</entry>
+                </row>
+                <row>
+                    <entry>SfH</entry>
+                    <entry>Stiftung für Hochschulzulassung</entry>
+                </row>
+                <row>
+                    <entry>ToR</entry>
+                    <entry>Transcript of Records</entry>
+                </row>
+                <!--<row>
+                    <entry>WMK</entry>
+                    <entry>Wirtschaftsministerkonferenz</entry>
+                </row>-->
+                <row>
+                    <entry>W3C</entry>
+                    <entry>World Wide Web Consortium</entry>
+                </row>
+                <row>
+                    <entry>XÖV</entry>
+                    <entry>XML in der öffentlichen Verwaltung</entry>
+                </row>
+                <row>
+                    <entry>ZAB</entry>
+                    <entry>Zentralstelle für Ausländisches Bildungswesen</entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </informaltable>
+</appendix>

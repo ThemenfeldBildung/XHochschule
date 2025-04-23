@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xml:id="code-uebersicht">
+   <title>Übersicht</title>
+   <para>In der nachstehenden Tabelle werden die folgenden Informationen dargestellt:</para>
+   <variablelist>
+      <varlistentry>
+         <term>Code-Datentyp</term>
+         <listitem>
+            <para>Alle in &fachmodul; definierten Code-Datentypen in alphabetischer Reihenfolge. </para>
+         </listitem>
+      </varlistentry>
+      <varlistentry>
+         <term>Codeliste</term>
+         <listitem>
+            <para> Der Name (kurz)<footnote>
+                  <para>Weitere Informationen zu den Metadaten einer Codeliste sind im aktuellen XÖV-Handbuch beschrieben.</para>
+               </footnote> der im jeweiligen Code-Datentyp genutzten Codeliste.</para>
+         </listitem>
+      </varlistentry>
+      <varlistentry>
+         <term>Version</term>
+         <listitem>
+            <para> Die Version der im jeweiligen Code-Datentyp genutzten Codeliste (Attribut listVersionID). </para>
+         </listitem>
+      </varlistentry>
+      <varlistentry>
+         <term>Typ</term>
+         <listitem>
+            <para> Art der Codelistennutzung, wie im XÖV-Handbuch beschrieben. </para>
+         </listitem>
+      </varlistentry>
+   </variablelist>
+   <para>Die Namen der Code-Datentypen und der Codelisten stellen Links zu den jeweiligen Detail-Abschnitten dar.</para>
+   <informaltable version="5" xml:lang="de" xml:id="code-uebersichtstabelle">
+      <tgroup cols="4">
+         <colspec colnum="1" colname="code" colwidth="64mm"/>
+         <colspec colnum="2" colname="codeliste" colwidth="55mm"/>
+         <colspec colnum="3" colname="version" colwidth="34mm"/>
+         <colspec colnum="4" colname="nutzung" colwidth="7mm"/>
+         <thead>
+            <row>
+               <entry>Code-Datentyp</entry>
+               <entry>Codeliste</entry>
+               <entry>Version</entry>
+               <entry>Typ</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XHochschule.Baukasten.Codes.Code.AnerkanntOderAngerechnet">Code.AnerkanntOderAngerechnet</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.anerkanntoderangerechnet.AnerkanntOderAngerechnet-Codes">AnerkanntOderAngerechnet</link>
+               </entry>
+               <entry align="left">1.0</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XHochschule.Baukasten.Codes.Code.Beurlaubungsgrund">Code.Beurlaubungsgrund</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.destatis.codeliste.beurlaubungsgrund.Beurlaubungsgrund-Codes">Beurlaubungsgrund</link>
+               </entry>
+               <entry align="left">--</entry>
+               <entry align="left">3</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XHochschule.Baukasten.Codes.Code.Beurlaubungsstatus">Code.Beurlaubungsstatus</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.beurlaubungsstatus.Beurlaubungsstatus-Codes">Beurlaubungsstatus</link>
+               </entry>
+               <entry align="left">1.0</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XHochschule.Baukasten.Codes.Code.Faecherschluessel">Code.Faecherschluessel</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.destatis.codeliste.faecherschluessel.Faecherschluessel-Codes">Faecherschluessel</link>
+               </entry>
+               <entry align="left">--</entry>
+               <entry align="left">3</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XHochschule.Baukasten.Codes.Code.Hochschulsignatur">Code.Hochschulsignatur</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.destatis.codeliste.hochschulsignatur.Hochschulsignatur-Codes">Hochschulsignaturen</link>
+               </entry>
+               <entry align="left">--</entry>
+               <entry align="left">3</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XHochschule.Baukasten.Codes.Code.Immatrikulationsstatus">Code.Immatrikulationsstatus</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.immatrikulationsstatus.Immatrikulationsstatus-Codes">Immatrikulationsstatus</link>
+               </entry>
+               <entry align="left">1.0</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XHochschule.Baukasten.Codes.Code.LateinischeEhrenbezeichnung">Code.LateinischeEhrenbezeichnung</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.lateinischeehrenbezeichnung.LateinischeEhrenbezeichnung-Codes">Lateinische Ehrenbezeichnungen</link>
+               </entry>
+               <entry align="left">1.0</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz" linkend="XHochschule.Baukasten.Codes.Code.Leistungsart">Code.Leistungsart</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsart.Leistungsart-Codes">Leistungsart</link>
+               </entry>
+               <entry align="left">1.0</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XHochschule.Baukasten.Codes.Code.Leistungsbenotungsstatus">Code.Leistungsbenotungsstatus</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsbenotungsstatus.Leistungsbenotungsstatus-Codes">Leistungsbenotungsstatus</link>
+               </entry>
+               <entry align="left">1.0</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XHochschule.Baukasten.Codes.Code.Leistungsstatus">Code.Leistungsstatus</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.leistungsstatus.Leistungsstatus-Codes">Leistungsstatus</link>
+               </entry>
+               <entry align="left">1.0</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XHochschule.Baukasten.Codes.Code.Lernzeitmodell">Code.Lernzeitmodell</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xhochschule-de.xhochschule.codeliste.lernzeitmodell.Lernzeitmodell-Codes">Lernzeitmodell</link>
+               </entry>
+               <entry align="left">1.0</entry>
+               <entry align="left">1</entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+</section>
+<?KoSIT-FO hard-pagebreak?>

@@ -1,0 +1,80 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE appendix [
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+<chapter version="5" xml:id="spezifikation.grundlegendeDesignentscheidungen" xml:lang="de" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Grundlegende Designentscheidungen</title>
+    <para>OZG, SDG, DSGVO und eIDAS sind rechtliche Vorgaben im Bildungswesen, die es einzuhalten bzw.
+        umzusetzen gilt. Im Jahr 2019 kam eine <link
+            xlink:href="https://www.it-planungsrat.de/beschluss/beschluss-2020-52">Studie</link> im
+        Kontext der OZG-Umsetzung zu dem Ergebnis, dass es neben fachlich konkreten Spezifikationen wie
+        XHochschule und weiteren auch eines organisatorischen, semantischen und technischen Rahmens
+        bedarf, der <link
+            xlink:href="https://verwaltung.bund.de/portal/DE/Lebenslagen/Schule_Ausbildung_Studium"
+            >Lebenslagen-übergreifend</link> für Interoperabilität im Bildungswesen sorgt. Dieser Rahmen
+        soll Themen abbilden, die nicht direkt schul- oder hochschulspezifisch sind. Genau das ist die
+        Zielstellung von XBildung. Mit XBildung können Entwicklungsaufwände gebündelt werden, die
+        bei einer Vielzahl parallel umzusetzender digitaler Verwaltungsdienstleistungen im Bildungswesen
+        entstehen.</para>
+    <para>Übergeordnetes Ziel ist es, die Interoperabilität im Bildungswesen durch die Digitalisierung
+        von ehemals analogen Nachweisen zu fördern: d.h. die zusätzliche Ausstellung von
+        maschinenverarbeitbaren Bildungsnachweisen zu ermöglichen. Dazu zählen beispielsweise der
+        digitale Sekundarschulabschluss, das Hochschulabschlusszeugnis oder das Prüfungszeugnis einer
+        dualen Ausbildung. Hier dient die Spezifikation von XBildung als Basismodul. Die darin
+        definierten semantischen Bausteine werden eingebunden von Fachmodulen wie XHochschule für das
+        Hochschulwesen, XSchule für das Schulwesen oder XBerufsbildung für das
+        Berufsbildungswesen.</para>
+    <para>Die folgenden Designentscheidungen sind für die Erstellung dieser Spezifikationen besonders
+        wichtig: </para>
+    <orderedlist>
+        <listitem>
+            <para>Nachnutzung von XÖV-Methodik, Komponenten der XÖV-Kernkomponentenbibliothek sowie der
+                Datentypen der DIN 91379 "Zeichen und definierte Zeichensequenzen in Unicode für die
+                elektronische Verarbeitung von Namen und den Datenaustausch in Europa".</para>
+        </listitem>
+        <listitem>
+            <para>Wahrung von Anschlussfähigkeit <emphasis role="bold">begrenzt auf Belange der
+                semantischen Ebene, also auf den fachlichen Payload,</emphasis> an bestehende Register und
+                OZG-Komponenten, wie Nutzerkonten des Bundes oder der Länder oder ein zukünftiges
+                Datenschutzcockpit als Teil einer Architektur des IT-Planungsrates für die Umsetzung des
+                <link
+                    xlink:href="https://www.bundesregierung.de/breg-de/suche/registermodernisierungsgesetz-1790176"
+                    >Registermodernisierungsgesetzes</link> in Deutschland.</para>
+        </listitem>
+        <listitem>
+            <para>Enger Kontakt zu europäischen Datenmodellen: SDG-Datenmodell, European Learning Model
+                (EDCI/ELM) sowie EMREX/ELMO . Dies ermöglicht einerseits die Berücksichtigung europäischer
+                Anforderungen, die im Rahmen von XBildung/XHochschule relevant sind und die Möglichkeit eines
+                Mappings von Wertelisten, wo Interoperabilität zu den europäischen Datenmodellen bereits
+                besteht. Andererseits sollen fachliche Anforderungen aus XBildung/XHochschule in die europäischen
+                Vorhaben eingebracht werden, um von vornherein eine möglichst hohe Interoperabilität
+                zwischen XBildung/XHochschule und den europäischen Datenmodellen sicherzustellen.</para>
+        </listitem>
+        <listitem>
+            <para>Berücksichtigung rechtlicher und architektonischer Anforderungen an den Datenaustausch aus der  
+                <link xlink:href="https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32014R0910"
+                    >eIDAS-Verordnung</link> und der <link xlink:href="https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32018R1724"
+                        >SDG-Verordnung</link>. Dies betrifft insbesondere die Anschlussfähigkeit
+                an elektronische Siegel-/Signierdienste und die Einrichtung eines technischen Systems für den 
+                grenzüberschreitenden Austausch von Nachweisen nach dem Grundsatz der einmaligen Erfassung ("Once-Only-Prinzip"). 
+               </para>
+        </listitem>
+        <listitem>
+            <para>Berücksichtigung von Semantic Web und W3C Technologie wie etwa der Einsatz von
+                Controlled Vocabularies, Thesauri und persistenten Identifiern.</para>
+        </listitem>
+    </orderedlist>
+    
+    <para>Die nachfolgende Grafik fasst die wesentlichen Rahmenbedingungen für die Interoperabilität
+        im Kontext von XBildung zusammen:</para>
+    <para>
+        <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" fileref="../abbildungen/grundlegendeDesignentscheidungen_02.png"
+                    format="PNG" scale="70"/>
+            </imageobject>
+        </inlinemediaobject>
+    </para>
+</chapter>

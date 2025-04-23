@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<appendix version="5" xml:id="spezifikation.uebersichtUeberAlleDokumente" xml:lang="de" xmlns="http://docbook.org/ns/docbook">
+  <info>
+    <title>Übersicht über alle Dokumente</title>
+  </info>
+  <include href="../../build/docBook/dokumente/anhang/nachrichten/tabelle.nachrichten.uebersicht.xml" xmlns="http://www.w3.org/2001/XInclude" />
+</appendix>
