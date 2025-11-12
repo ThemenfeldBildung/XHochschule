@@ -1,132 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Studienverlaufsbescheinigung nach XHochschule Version 1.1. Nichtnormative Beispielinstanz.
-    Version: XHochschule 1.1 
-    Letzte Aktualisierung: 25.02.2025
-    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
+<!-- Studienverlaufsbescheinigung nach XHochschule Version 1.2. Nichtnormative Beispielinstanz. Veranschaulicht ein exemplarisches Dokument der beispielhaften studierenden Person Amélie Duval.
+    Version: XHochschule 1.2 
+    Letzte Aktualisierung: 11.11.2025
+    Lizenz: CC BY 4.0 „]init[ AG im Auftrag des Landes Sachsen-Anhalt -->
 <xhs:studienverlaufsbescheinigung xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/1.2/xsd"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.1/xsd">
-    <xhs:titel xml:lang="de-DE">Studienverlaufsbescheinigung</xhs:titel>
-    <xhs:ausstellungsdatum>2023-10-04</xhs:ausstellungsdatum>
-    <xhs:gueltigkeitsdatum>2026-12-16</xhs:gueltigkeitsdatum>
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.2/xsd">
+    <xhs:titel>Studienverlaufsbescheinigung</xhs:titel>
+    <xhs:ausstellungsdatum>2025-09-30</xhs:ausstellungsdatum>
+    <xhs:gueltigkeitsdatum>2025-09-30</xhs:gueltigkeitsdatum>
     <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
         listVersionID="20240925-0">
         <code>DEU</code>
     </xhs:sprache>
-    <!-- Angaben zur studierenden Person -->
     <xhs:studierender>
         <xhs:nameNatuerlichePerson>
             <xhs:familienname>
-                <xhs:name>Mustermann</xhs:name>
+                <xhs:name>Amélie</xhs:name>
             </xhs:familienname>
             <xhs:vorname>
-                <xhs:name>Erik</xhs:name>
+                <xhs:name>Duval</xhs:name>
             </xhs:vorname>
         </xhs:nameNatuerlichePerson>
         <xhs:geburt>
             <xhs:datum>
-                <xbd:jahrMonatTag>2006-01-29</xbd:jahrMonatTag>
+                <xbd:jahrMonatTag>2002-04-28</xbd:jahrMonatTag>
             </xhs:datum>
             <xhs:geburtsort>
-                <xbd:ort>Stuttgart</xbd:ort>
+                <xbd:ort>Marseille</xbd:ort>
                 <xbd:staat
                     listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
-                    listVersionID="listVersionID1">
-                    <code>000</code>
-                    <name>Bundesrepublik Deutschland</name>
+                    listVersionID="listVersionID2">
+                    <code>129</code>
+                    <name>Frankreich</name>
                 </xbd:staat>
             </xhs:geburtsort>
         </xhs:geburt>
-        <xhs:identifikationsnummer>
-            <xhs:id>85330846388</xhs:id>
-            <xhs:gueltigkeit>
-                <xhs:beginn>2006-01-29</xhs:beginn>
-            </xhs:gueltigkeit>
-            <xhs:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuernID)</xhs:beschreibung>
-        </xhs:identifikationsnummer>
-        <xhs:identifikationsnummer>
-            <xhs:id>88-888-999-888-999</xhs:id>
-            <xhs:gueltigkeit>
-                <xhs:beginn>2011-03-11</xhs:beginn>
-            </xhs:gueltigkeit>
-            <xhs:beschreibung>OZG-Landeskontonummer-ID der studierenden Person</xhs:beschreibung>
-        </xhs:identifikationsnummer>
         <xhs:matrikelnummer>
-            <xhs:id>34567</xhs:id>
+            <xhs:id>123546789</xhs:id>
             <xhs:gueltigkeit>
-                <xhs:beginn>2020-05-04</xhs:beginn>
-                <xhs:ende>2025-05-04</xhs:ende>
+                <xhs:beginn>2023-10-01</xhs:beginn>
+                <xhs:ende>2025-09-30</xhs:ende>
             </xhs:gueltigkeit>
+            <xhs:beschreibung>Matrikelnummer der Technischen Universität
+                Clausthal</xhs:beschreibung>
         </xhs:matrikelnummer>
         <xhs:ersteinschreibung>2020-10-01</xhs:ersteinschreibung>
-        <xhs:hochschulsemester>5</xhs:hochschulsemester>
-        <xhs:urlaubssemester>2</xhs:urlaubssemester>
+        <xhs:hochschulsemester>10</xhs:hochschulsemester>
+        <xhs:urlaubssemester>0</xhs:urlaubssemester>
     </xhs:studierender>
-    <!-- Angaben zur ausstellenden Hochschule -->
     <xhs:ausstellendeHochschule>
         <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur"
             listVersionID="listVersionID1">
-            <code>0180</code>
+            <code>1440</code>
         </xhs:hochschulsignatur>
-        <xhs:name xml:lang="de-DE">Charité - Universitätsmedizin Berlin</xhs:name>
+        <xhs:name xml:lang="de-DE">Technische Universität Clausthal</xhs:name>
     </xhs:ausstellendeHochschule>
-    <!-- Angaben zum Studium -->
     <xhs:studienabschnitt>
         <xhs:aufzaehlung>
             <xhs:studienzeitraum>
                 <xhs:zeitraum>
-                    <xhs:beginn>2024-10-01</xhs:beginn>
-                    <xhs:ende>2025-03-31</xhs:ende>
+                    <xhs:beginn>2023-10-01</xhs:beginn>
+                    <xhs:ende>2026-09-30</xhs:ende>
                 </xhs:zeitraum>
-                <xhs:semesterbezeichnung xml:lang="de-DE">Wintersemester 2024</xhs:semesterbezeichnung>
             </xhs:studienzeitraum>
             <xhs:studienfach>
-                <xhs:name xml:lang="de-DE">Pflege älterer Menschen und erwachsener Personen mit Behinderung</xhs:name>
-                <xhs:angestrebterAbschluss xml:lang="de-DE">Bachelor of Science</xhs:angestrebterAbschluss>
+                <xhs:name xml:lang="de-DE">Informatik</xhs:name>
+                <xhs:angestrebterAbschluss xml:lang="de-DE">Master of
+                    Science</xhs:angestrebterAbschluss>
                 <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011"
                     listVersionID="ISCED-2011">
-                    <code>454</code>
+                    <code>747</code>
                 </xhs:schluesselISCED2011>
                 <xhs:schluesselISCEDF2013
                     listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013"
                     listVersionID="20240110-0">
-                    <code>0921</code>
+                    <code>0610</code>
                 </xhs:schluesselISCEDF2013>
                 <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf"
                     listVersionID="20230118-0">
                     <code>6</code>
                 </xhs:schluesselEQF>
-                <xhs:fachsemester>5</xhs:fachsemester>
-                <xhs:unbedenklichkeitsvermerk xml:lang="de-DE">Im Studienfach Pflege älterer Menschen und erwachsener Personen mit Behinderung wurde keine nach der Prüfungsordnung erforderliche Studienleistung/Prüfung endgültig nicht bestanden und der Prüfungsanspruch nicht verloren.</xhs:unbedenklichkeitsvermerk>
+                <xhs:fachsemester>2</xhs:fachsemester>
+                <xhs:unbedenklichkeitsvermerk xml:lang="de-DE">Im Studienfach Informatik wurde keine
+                    nach der Prüfungsordnung erforderliche Studienleistung/Prüfung endgültig nicht
+                    bestanden und der Prüfungsanspruch nicht
+                    verloren.</xhs:unbedenklichkeitsvermerk>
             </xhs:studienfach>
             <xhs:lernzeitmodell>
                 <xhs:code listURI="urn:xbildung-de:xbildung:codeliste:lernzeitmodell"
                     listVersionID="2025-02-04">
-                    <code>http://xbildung.de/def/xbildung/2025-02-04/code/lernzeitmodell/dual-ausbildungsintegriert</code>
+                    <code>http://xbildung.de/def/xbildung/2025-02-04/code/lernzeitmodell/vollzeit</code>
                 </xhs:code>
             </xhs:lernzeitmodell>
-            <xhs:regelstudienzeit>8</xhs:regelstudienzeit>
-            <xhs:beurlaubungsstatus>
-                <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:beurlaubungsstatus"
-                    listVersionID="1.0">
-                    <code>http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/nicht_beurlaubt</code>
-                </xhs:code>
-            </xhs:beurlaubungsstatus>
         </xhs:aufzaehlung>
     </xhs:studienabschnitt>
-    <xhs:anmerkungRegelstudienzeit xml:lang="de-DE">Regelstudienzeit verlängert. Für genauere Informationen wenden Sie sich bitte an das Immatrikulationsamt.</xhs:anmerkungRegelstudienzeit>
-    <!-- Angaben zur Verifikation des ausgestellen Dokuments -->
-    <xhs:verifikation>
-        <xhs:schluessel>GFLCJNKU</xhs:schluessel>
-        <xhs:adresse>https://his.charite.de/qisserver/verify</xhs:adresse>
-        <xhs:inhaltstyp>XML</xhs:inhaltstyp>
-        <xhs:gueltigkeit>
-            <xhs:beginn>2024-05-04</xhs:beginn>
-            <xhs:ende>2026-05-04</xhs:ende>
-        </xhs:gueltigkeit>
-    </xhs:verifikation>
 </xhs:studienverlaufsbescheinigung>

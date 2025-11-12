@@ -88,7 +88,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier werden Angaben zum Ort einer Geburt gemacht (z. B. Geburtsort, Geburtsstaat)</para></entry>
+               <entry namest="indent0" nameend="page"><para>Hier werden Angaben zum Ort einer Geburt gemacht (z. B. Geburtsort, Geburtsstaat).</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -112,7 +112,7 @@
 
 <para>Anmerkung: Der Zusatz kann der Geburt hinzugefügt werden, um die Orts- bzw. Zeitangaben zu konkretisieren oder ein Objekt genauer zu beschreiben, als es mit den klassischen Attributen einer Anschrift allein möglich ist.</para>
 
-<para>Beispiel: Geburt auf See, Schiff unter Bundesdeutscher Flagge</para></entry>
+<para>Beispiel: Geburt auf See, Schiff unter Bundesdeutscher Flagge.</para></entry>
             </row>
          </tbody>
       </tgroup>

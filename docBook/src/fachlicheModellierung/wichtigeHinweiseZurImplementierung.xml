@@ -9,6 +9,33 @@
     <title>Wichtige Hinweise zur Implementierung</title>
     <variablelist>
         <varlistentry>
+            <term>Grundlegende Designentscheidungen</term>
+            <listitem>
+                <para>Grundlegende Designentscheidungen des Standards
+                    XHochschule lassen sich aus der <link
+                        xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf"
+                        >Spezifikation XBildung</link> entnehmen. Um den folgenden Abschnitt zu verstehen, sind
+                    zwei Aspekte hervorzuheben: </para>
+                <orderedlist>
+                    <listitem>
+                        <para>Die Nachnutzung von Komponenten aus dem XÖV-Baukasten der Koordinierungsstelle für
+                            IT-Standards (KOSIT): Diese enthalten grundlegende Klassen des Datenaustauschs, die
+                            für alle XÖV-Standards nutzbar und für XHochschule spezifisch beschränkt oder
+                            erweitert werden. Ein Beispiel hierfür ist die Klasse „NatuerlichePerson“, die
+                            Angaben generellen Charakters enthält.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Die gemeinsame Basis von XBildung für alle XÖV-Vorhaben im Bildungsbereich:
+                            XHochschule verwendet gemeinsam mit anderen Teilmodulen semantisch übergeordnete
+                            Klassen, die für XHochschule spezifisch beschränkt oder erweitert werden. Ein
+                            Beispiel hierfür ist die Klasse „Benotung“, die für alle Bereiche der Bildung
+                            nutzbar ist. </para>
+                        <para></para>
+                    </listitem>
+                </orderedlist>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
             <term>Versionierung</term>
             <listitem>
                 <para>Die Version einer XML-Nachricht wird über den verwendeten Namespace

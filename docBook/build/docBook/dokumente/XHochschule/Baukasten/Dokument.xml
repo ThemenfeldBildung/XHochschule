@@ -8,7 +8,7 @@
          xml:id="XHochschule.Baukasten.Dokument">
    <title>Dokument</title>
    <subtitle>Typ: <emphasis role="codebf">Dokument</emphasis>
-   </subtitle><para>Die Klasse Dokument bildet die Grundlage für alle Bildungsnachweise und Bescheinigungen, die mit XHochschule als XML-Dateien für den Datenaustausch generiert werden. Die Klasse enthält allgemeine Eigenschaften von Dokumenten, die zum Zwecke generischerer Verarbeitung übergreifend modelliert wurden. </para><figure xml:id="figure.XHochschule.Baukasten.Dokument">
+   </subtitle><para>Die Klasse Dokument bildet die Grundlage für alle Bildungsnachweise und Bescheinigungen, die mit XHochschule als XML-Dateien für den Datenaustausch generiert werden. Die Klasse enthält allgemeine Eigenschaften von Dokumenten, die zum Zwecke generischerer Verarbeitung übergreifend modelliert wurden. Die Klasse bildet die Klasse "Dokument" in XBildung nach, unter Verzicht auf die "Ortsangabe". </para><figure xml:id="figure.XHochschule.Baukasten.Dokument">
       <title>Dokument</title>
       <mediaobject>
          <imageobject>

@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Diploma Supplement nach XHochschule Version 1.1. Nichtnormative Beispielinstanz.
-    Version: XHochschule 1.1 
-    Letzte Aktualisierung: 25.02.2025
-    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
-<xhs:diplomaSupplement xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+<!-- Diploma Supplement nach XHochschule Version 1.2. Nichtnormative Beispielinstanz. Veranschaulicht ein exemplarisches Dokument der beispielhaften studierenden Person Amélie Duval.
+    Version: XHochschule 1.2 
+    Letzte Aktualisierung: 07.11.2025
+    Lizenz: CC BY 4.0 „]init[ AG im Auftrag des Landes Sachsen-Anhalt" -->
+<xhs:diplomaSupplement xmlns:xhs="http://xhochschule.de/def/xhochschule/1.2/xsd"
     xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.1/xsd">
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.2/xsd">
     <xhs:titel xml:lang="de-DE">Diploma Supplement</xhs:titel>
-    <xhs:ausstellungsdatum>2025-02-13</xhs:ausstellungsdatum>
-    <xhs:gueltigkeitsdatum>2035-02-12</xhs:gueltigkeitsdatum>
+    <xhs:ausstellungsdatum>2025-09-20</xhs:ausstellungsdatum>
+    <xhs:gueltigkeitsdatum>2025-09-20</xhs:gueltigkeitsdatum>
     <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
         listVersionID="20240925-0">
         <code>DEU</code>
     </xhs:sprache>
     <!-- Angaben zum Inhaber des Dokumentes -->
     <xhs:angabenInhaber>
-        <xhs:familienname>Musterfrau</xhs:familienname>
-        <xhs:vorname>Erika</xhs:vorname>
+        <xhs:familienname>Duval</xhs:familienname>
+        <xhs:vorname>Amélie</xhs:vorname>
         <xhs:geburtsdatum>
-            <xbd:jahr>1994</xbd:jahr>
+            <xbd:jahrMonatTag>2002-04-28</xbd:jahrMonatTag>
         </xhs:geburtsdatum>
-        <xhs:matrikelnummer>123456789</xhs:matrikelnummer>
+        <xhs:matrikelnummer>123546789</xhs:matrikelnummer>
     </xhs:angabenInhaber>
     <!-- Angaben zur Qualifikation -->
     <xhs:angabenQualifikation>
-        <xhs:bezeichnungQualifikationGrad xml:lang="de-DE">Bachelor of Science</xhs:bezeichnungQualifikationGrad>
-        <xhs:hauptstudienfach xml:lang="de-DE">Physik</xhs:hauptstudienfach>
-        <xhs:verleihendeEinrichtung xml:lang="de-DE">Technische Universität Musterstadt</xhs:verleihendeEinrichtung>
-        <xhs:durchfuehrendeEinrichtung xml:lang="de-DE">Technische Universität Musterstadt</xhs:durchfuehrendeEinrichtung>
+        <xhs:bezeichnungQualifikationGrad xml:lang="de-DE">Master of Science</xhs:bezeichnungQualifikationGrad>
+        <xhs:hauptstudienfach xml:lang="de-DE">Informatik</xhs:hauptstudienfach>
+        <xhs:verleihendeEinrichtung xml:lang="de-DE">Technische Universität Clausthal</xhs:verleihendeEinrichtung>
+        <xhs:durchfuehrendeEinrichtung xml:lang="de-DE">Technische Universität Clausthal</xhs:durchfuehrendeEinrichtung>
         <xhs:spracheUnterrichtPruefung
             listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
             listVersionID="20240925-0">
@@ -40,12 +40,12 @@
     </xhs:angabenQualifikation>
     <xhs:dauerUndEbeneQualifikation>
         <xhs:ebeneDerQualifikation>
-            <xhs:freitext xml:lang="de-DE">EQF Level 5</xhs:freitext>
+            <xhs:freitext xml:lang="de-DE">EQF Level 7</xhs:freitext>
         </xhs:ebeneDerQualifikation>
         <xhs:dauerStudiumInJahrenOderECTS>
-            <xhs:dauerInJahren>3</xhs:dauerInJahren>
+            <xhs:umfangInECTS>120</xhs:umfangInECTS>
         </xhs:dauerStudiumInJahrenOderECTS>
-        <xhs:zugangsvorraussetzungen xml:lang="de-DE">Allgemeine Hochschulreife</xhs:zugangsvorraussetzungen>
+        <xhs:zugangsvorraussetzungen xml:lang="de-DE">Bachelor of Arts Informatik</xhs:zugangsvorraussetzungen>
     </xhs:dauerUndEbeneQualifikation>
     <!-- Angaben zu den erzielten Lernergebnissen -->
     <xhs:erzielteErgebnisse>
@@ -57,13 +57,10 @@
         <xhs:studiendetails xml:lang="de-DE">Für eine vollständige Aufzählung der Studiendetails
             wird auf das beiliegende Transcript of Records verwiesen.</xhs:studiendetails>
         <xhs:gesamtnoteUndNotensystem>
-            <xbd:note>note0</xbd:note>
-            <xbd:wortbezeichnung xml:lang="de-DE">Gut (good)</xbd:wortbezeichnung>
-            <xbd:punkte>0</xbd:punkte>
+            <xbd:note>1,3</xbd:note>
+            <xbd:wortbezeichnung xml:lang="de-DE">Sehr gut</xbd:wortbezeichnung>
             <xbd:bewertungsschemaNote>
-                <xbd:schemaURI>https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/2003/2003_10_10-Laendergemeinsame-Strukturvorgaben.pdf</xbd:schemaURI>
-                <xbd:beschreibung xml:lang="de-DE">Abbildung des deutschen Notensystems für
-                    Bachelor- und Masterstudiengänge</xbd:beschreibung>
+                <xbd:schemaURI>https://tu-clausthal.atlassian.net/wiki/spaces/VER/pages/27461201/6.10.01+Allgemeine+Pr+fungsordnung+der+Technischen+Universit+t+Clausthal+in+der+Fassung+der+4.+nderung+vom+09.11.2021_Mitt.TUC+2021+Seite+678</xbd:schemaURI>
                 <xbd:besteBewertung>1,0</xbd:besteBewertung>
                 <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
                 <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
@@ -72,19 +69,18 @@
     </xhs:erzielteErgebnisse>
     <!-- Angaben zu der durch die Qualifikation erlangten Berechtigungen -->
     <xhs:berechtigungenDurchQualifikation>
-        <xhs:zugangWeiterfuehrendeStudien xml:lang="de-DE">Dieser Abschluss ermöglicht dem
-            Studierenden das Studium im Master in einem fachähnlichen
-            Studiengang.</xhs:zugangWeiterfuehrendeStudien>
+        <xhs:zugangWeiterfuehrendeStudien xml:lang="de-DE">Berechtigt zu einer Promotion in gleicher oder ähnlicher Fachrichtung.</xhs:zugangWeiterfuehrendeStudien>
         <xhs:zugangZuReglementiertenBerufen xml:lang="de-DE">Der Absolvent hat mach dem Abschluss
             Zugang zu einer breiten Auswahl an möglichen Berufen. Mehr Informationen in der
-            aktuellen Studienordnung.</xhs:zugangZuReglementiertenBerufen>
+            aktuellen Studienordnung.
+        </xhs:zugangZuReglementiertenBerufen>
     </xhs:berechtigungenDurchQualifikation>
     <!-- Sonstige Angaben -->
     <xhs:sonstigeAngaben>
-        <xhs:weitereAngaben xml:lang="de-DE">Hier können weitere Angaben zum Studium genannt werden. </xhs:weitereAngaben>
-        <xhs:weitereInformationsquellen xml:lang="de-DE">Hier kann auf weitere Informationsquellen verwiesen werden wie zum Beispiel der Webseite der Hochschule.</xhs:weitereInformationsquellen>
+        <xhs:weitereAngaben xml:lang="de-DE">Besonders qualifizierten und forschungsinteressierten Studierenden wird ein Research Track angeboten. In dieser Variante des Studienplans absolvieren die Studierenden ein einsemestriges Forschungsprojekt als Vorbereitung auf ein mögliches Promotionsstudium.</xhs:weitereAngaben>
+        <xhs:weitereInformationsquellen xml:lang="de-DE">https://www.tu-clausthal.de/</xhs:weitereInformationsquellen>
     </xhs:sonstigeAngaben>
     <xhs:angabenNationalesHochschulsystem>
-        <xhs:beschreibung>Beschreibung des nationalen Hochschulesystems</xhs:beschreibung>
+        <xhs:beschreibung>Das deutsche Hochschulsystem ist durch eine föderale Struktur geprägt, bei der die Bundesländer maßgeblich für die Organisation und Gesetzgebung im Hochschulbereich verantwortlich sind. Es umfasst verschiedene Hochschultypen wie Universitäten, Fachhochschulen, Kunst- und Musikhochschulen sowie duale Hochschulen. Die Hochschulen sind weitgehend autonom, was ihre Lehre, Forschung und Selbstverwaltung betrifft, unterliegen aber staatlicher Aufsicht und gesetzlichen Rahmenbedingungen. Studiengänge sind in der Regel modularisiert und folgen dem Bologna-System mit den Abschlüssen Bachelor, Master und Promotion.</xhs:beschreibung>
     </xhs:angabenNationalesHochschulsystem>
 </xhs:diplomaSupplement>

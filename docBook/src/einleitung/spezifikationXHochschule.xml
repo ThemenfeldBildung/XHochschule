@@ -22,7 +22,7 @@
 		<para>Das Dokument ist in drei Teile gegliedert, einer Einleitung mit dem <link
 				linkend="spezifikation.einleitung.hintergrundZuXHochschule">Hintergrund zu
 				XHochschule</link> und der <link
-				linkend="spezifikation.einleitung.dieHochschuljourney">Hochschuljourney</link>,
+				linkend="spezifikation.einleitung.dieHochschuljourney">Hochschul-Journey</link>,
 			einem inhaltlichen Kapitel zur <link linkend="spezifikation.fachlicheModellierung"
 				>fachlichen Modellierung</link> mit Klassen und Dokumenten für den Datenaustausch im
 			Hochschulwesen, sowie einem <link linkend="spezifikation.anhaenge">Anhang</link>,
@@ -42,13 +42,12 @@
 			begann darauf aufbauend die Dokumentation des Standardisierungsbedarfes und erste
 			Bearbeitung des Bedarfs durch Aufnahme von Umsetzungsarbeiten die in frühe Versionen
 			einer im November 2020 veröffentlichten Spezifikation mündeten. </para>
-		<para>Seitdem wurden in Standardisierungsmeetings die ersten Anwendungsfälle und
-			Anforderungen an den Datenaustausch zwischen Hochschulen analysiert und der Fokus von
-			&fachmodul; geschärft. <link
-				xlink:href="https://www.xbildung.de/web/events/xhochschule">Weitere
+		<para>Seitdem wurden in Standardisierungsmeetings die ersten Anwendungsfälle und Anforderungen an
+			den Datenaustausch zwischen Hochschulen analysiert und der Fokus von &fachmodul;
+			geschärft. <link xlink:href="https://www.xbildung.de/web/events/xhochschule">Weitere
 				Treffen</link> wurden im Jahr 2021 zur Erarbeitung von Folgeversionen zur Abdeckung
-			weiterer Nachweise und Datenaustauschmomente durchgeführt. Diese Reihe wir bis heute mit
-			der Durchführung von Workshops und Arbeitskreisen im Rahmen von XHochschule und
+			weiterer Nachweise und Datenaustauschmomente durchgeführt. Diese Reihe wird bis heute
+			mit der Durchführung von Workshops und Arbeitskreisen im Rahmen von XHochschule und
 			übergreifend durch XBildung fortgesetzt.</para>
 		<para>Das methodische Vorgehen der Datenmodellierung ist an zwei bewährte Methodiken
 			angelehnt: <itemizedlist>

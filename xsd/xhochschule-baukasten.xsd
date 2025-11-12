@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/1.2/xsd"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-           xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-           targetNamespace="http://xhochschule.de/def/xhochschule/1.1/xsd"
-           version="1.1"
+           targetNamespace="http://xhochschule.de/def/xhochschule/1.2/xsd"
+           version="1.2"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -15,21 +15,22 @@
             <nameKurz>XHochschule</nameKurz>
             <nameTechnisch>xhochschule</nameTechnisch>
             <kennung>urn:xoev-de:xhochschule-de:def:standard:xhochschule</kennung>
-            <beschreibung>XHochschule</beschreibung>
+            <beschreibung>XHochschule ist ein föderaler IT-Standard, der für die Erstellung von elektronischen Bildungsnachweisen sowie den Datenaustausch im Hochschulwesen entwickelt wird. Er ist Teil der Standard-Familie XBildung. </beschreibung>
          </standard>
          <versionStandard>
-            <version>1.1</version>
-            <versionXOEVProfil>3.0.1</versionXOEVProfil>
-            <versionXOEVHandbuch>3.0.0</versionXOEVHandbuch>
+            <version>1.2</version>
+            <beschreibung>Diese Version 1.2 des Standards XHochschule beinhaltet die zur XÖV-Zertifizierung notwendigen Anpassungen am Modell und an weiteren standardbezogenen Artefakten.</beschreibung>
+            <versionXOEVProfil>3.0.3</versionXOEVProfil>
+            <versionXOEVHandbuch>3.0.2</versionXOEVHandbuch>
             <versionXGenerator>3.1.1</versionXGenerator>
-            <versionModellierungswerkzeug>19.0 SP 3</versionModellierungswerkzeug>
+            <versionModellierungswerkzeug>19.0 SP 4</versionModellierungswerkzeug>
             <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
          </versionStandard>
       </xs:appinfo>
    </xs:annotation>
    <xs:include schemaLocation="Kernkomponenten.xsd"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.1/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/1.1/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.2/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/1.2/xsd"/>
    <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
               namespace="http://xoev.de/schemata/code/1_0"/>
    <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
@@ -61,6 +62,7 @@
                <description-de-DE>
                   <spaltennameLang>deutsche Übersetzung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -142,6 +144,7 @@
                <description-de-DE>
                   <spaltennameLang>deutsche Übersetzung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -248,6 +251,7 @@
                <description-de-DE>
                   <spaltennameLang>Name (Deutsch)</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -302,6 +306,7 @@
                <description-en-GB>
                   <spaltennameLang>Lateinische Bezeichnung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>en-GB</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -309,6 +314,7 @@
                <description-de-DE>
                   <spaltennameLang>deutsche Übersetzung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -363,6 +369,7 @@
                <description-de-DE>
                   <spaltennameLang>deutsche Übersetzung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -415,6 +422,7 @@
                <description-de-DE>
                   <spaltennameLang>deutsche Übersetzung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -469,6 +477,7 @@
                <description-de-DE>
                   <spaltennameLang>deutsche Übersetzung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -496,7 +505,7 @@
    </xs:complexType>
    <xs:complexType name="Dokument">
       <xs:annotation>
-         <xs:documentation>Die Klasse Dokument bildet die Grundlage für alle Bildungsnachweise und Bescheinigungen, die mit XHochschule als XML-Dateien für den Datenaustausch generiert werden. Die Klasse enthält allgemeine Eigenschaften von Dokumenten, die zum Zwecke generischerer Verarbeitung übergreifend modelliert wurden.</xs:documentation>
+         <xs:documentation>Die Klasse Dokument bildet die Grundlage für alle Bildungsnachweise und Bescheinigungen, die mit XHochschule als XML-Dateien für den Datenaustausch generiert werden. Die Klasse enthält allgemeine Eigenschaften von Dokumenten, die zum Zwecke generischerer Verarbeitung übergreifend modelliert wurden. Die Klasse bildet die Klasse "Dokument" in XBildung nach, unter Verzicht auf die "Ortsangabe".</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="titel" type="xbd:String.Localized">
@@ -575,7 +584,7 @@
       <xs:sequence>
          <xs:element name="bezeichnung" type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Bezeichnung einer Leistung, z.B. "Analysis 3"</xs:documentation>
+               <xs:documentation>Bezeichnung einer Leistung, z.B. "Analysis 3".</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="bezeichnungAlsHTML" minOccurs="0" type="din91379:datatypeE">
@@ -587,7 +596,7 @@
                      minOccurs="0"
                      type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Der Abschluss, der mit dem Studienfach angestrebt wird, z. B. Master of Science.</xs:documentation>
+               <xs:documentation>Der Abschluss, der mit dem Studienfach angestrebt wird, z. B. "Master of Science".</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="fachsemester" minOccurs="0" type="xs:decimal">
@@ -650,7 +659,7 @@
          </xs:element>
          <xs:element name="beschreibung" minOccurs="0" type="xhs:Leistungsbeschreibung">
             <xs:annotation>
-               <xs:documentation>Beschreibung einer Leistung</xs:documentation>
+               <xs:documentation>Beschreibung einer Leistung.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="leistungsstatus" minOccurs="0">
@@ -661,7 +670,7 @@
                <xs:sequence>
                   <xs:element name="code" type="xhs:Code.Leistungsstatus">
                      <xs:annotation>
-                        <xs:documentation>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, nicht bestanden etc.</xs:documentation>
+                        <xs:documentation>Diese Codeliste gibt den Status einer Leistung an, z.B. angemeldet, bestanden, nicht bestanden, etc.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="nichtGelisteterWert"
@@ -748,7 +757,7 @@
                      maxOccurs="unbounded"
                      type="xbd:Code.Language">
             <xs:annotation>
-               <xs:documentation>Sprache, in der die Leistung erbracht wurde</xs:documentation>
+               <xs:documentation>Sprache, in der die Leistung erbracht wurde.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="externErbrachteLeistung"
@@ -792,7 +801,7 @@
          </xs:element>
          <xs:element name="umfangInSWS" minOccurs="0" type="xs:decimal">
             <xs:annotation>
-               <xs:documentation>Umfang der Leistung in Semesterwochenstunden</xs:documentation>
+               <xs:documentation>Umfang der Leistung in Semesterwochenstunden.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="modulbeschreibungNachKMK"
@@ -928,7 +937,7 @@
       <xs:sequence>
          <xs:element name="studienzeitraum" type="xhs:Studienzeitraum">
             <xs:annotation>
-               <xs:documentation>Angaben zur zeitlichen Einteilung eines Studienabschnitts</xs:documentation>
+               <xs:documentation>Angaben zur zeitlichen Einteilung eines Studienabschnitts.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="studienfach" type="xhs:Studienfach">
@@ -1009,7 +1018,7 @@
       <xs:sequence>
          <xs:element name="zeitraum" type="xhs:Zeitraum">
             <xs:annotation>
-               <xs:documentation>Angaben zur zeitlichen Einteilung eines Studienabschnitts</xs:documentation>
+               <xs:documentation>Angaben zur zeitlichen Einteilung eines Studienabschnitts.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="studienfach" minOccurs="0" type="xhs:Studienfach">
@@ -1124,7 +1133,7 @@
                </xs:element>
                <xs:element name="ersteinschreibung" minOccurs="0" type="xs:date">
                   <xs:annotation>
-                     <xs:documentation>Datum der Ersteinschreibung</xs:documentation>
+                     <xs:documentation>Datum der Ersteinschreibung.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="hochschulsemester" minOccurs="0" type="xs:decimal">
@@ -1195,6 +1204,7 @@
                <description-de-DE>
                   <spaltennameLang>deutsche Übersetzung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -1253,6 +1263,7 @@
                <description-de-DE>
                   <spaltennameLang>deutsche Übersetzung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -1318,6 +1329,7 @@
                <description-de-DE>
                   <spaltennameLang>Name (Deutsch)</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -1383,6 +1395,7 @@
                <description-en-GB>
                   <spaltennameLang>Lateinische Bezeichnung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>en-GB</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -1390,6 +1403,7 @@
                <description-de-DE>
                   <spaltennameLang>deutsche Übersetzung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -1483,6 +1497,7 @@
                <description-de-DE>
                   <spaltennameLang>deutsche Übersetzung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -1765,6 +1780,7 @@
                <description-de-DE>
                   <spaltennameLang>deutsche Übersetzung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
@@ -1830,6 +1846,7 @@
                <description-de-DE>
                   <spaltennameLang>deutsche Übersetzung</spaltennameLang>
                   <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
                   <codeSpalte>false</codeSpalte>
                   <verwendung>required</verwendung>
                   <empfohleneCodeSpalte>false</empfohleneCodeSpalte>

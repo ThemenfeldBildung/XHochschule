@@ -6,132 +6,176 @@
 ]>
 <chapter version="5" xml:id="spezifikation.einleitung.dieHochschuljourney" xml:lang="de" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
   <info>
-    <title>Die Hochschuljourney</title>
+    <title>Die XHochschule-Journey</title>
   </info>
-  <para>Die Hochschuljourney beschreibt einen Weg durch den Lebensabschnitt Hochschulbildung mit den möglichen Etappen und Abzweigungen, die eine Person in ihrem Studium erleben kann. Diese Journey findet sich ebenfalls auf der 
-    <link xlink:href="https://xhochschule.de/web/journey">Webseite</link> und ist dort als interaktive Grafik eingebettet. 
-    Überall dort, wo ein XML-Symbol zu sehen ist, werden neben weiterführenden Informationen auch Beispielnachrichten zum Download angeboten.</para>
-  <para>Im Folgenden werden diese Stationen beschrieben. Beispielnachrichten wie Zeugnisse oder Bescheinigungen, die Teil von &fachmodul; sind, sind mit einer Verlinkung auf die entsprechende
-  Stelle des Spezifikationsdokumentes versehen.</para>
+  <para>Die XHochschule-Journey beschreibt exemplarisch anhand der Persona Amélie den
+    Lebensabschnitt Hochschulbildung mit möglichen Stationen und Abzweigungen, die eine Person in
+    ihrem Studium durchlaufen kann. Diese Journey findet sich ebenfalls auf der <link
+      xlink:href="https://xhochschule.de/web/xhochschule-journey">Webseite</link> und ist dort als
+    interaktive Grafik eingebettet. Überall dort, wo ein XML-Symbol zu sehen ist, werden neben
+    weiterführenden Informationen auch Beispielnachrichten zum Download angeboten.</para>
+  <para>Im Folgenden werden die einzelnen Stationen beschrieben. Dabei werden Beispieldokumente wie
+    Zeugnisse oder Bescheinigungen, die Teil von XHochschule sind, hervorgehoben und mit einer
+    Verlinkung auf die entsprechende Stelle im Spezifikationsdokument versehen.</para>
   <orderedlist>
     <listitem>
-      <para>Suchen und informieren &ndash; Online-Suche nach geeigneten Studiengängen</para>
-      <para>Erster Schritt in der Hochschulbildung ist die Recherche. Studieninteressierte können sich über strukturierte Angebote (z. B. Hochschulkompass der HRK, My Guide, Digitaler Campus,
-      StudyInEurope) sowie Suchmaschinen über das Studienangebot und konkrete Studienfächer in Deutschland informieren.</para>
+      <para><emphasis role="bold">Suchen und informieren</emphasis>
+      </para>
+      <para>Am Ende ihrer Schullaufbahn entscheidet sich Amélie für die Aufnahme eines Studiums. Als
+        ersten Schritt informiert sie sich über strukturierte Angebote (z. B. Hochschulkompass der
+        HRK, My Guide, Digitaler Campus, StudyInEurope) sowie Online-Suchmaschinen über das
+        Studienangebot und konkrete Studienfächer in Deutschland.</para>
       <para> </para>
     </listitem>
     <listitem>
-      <para>Studium vorbereiten &ndash; Auswahl eines konkreten Studienfachs und Vorbereitung der Unterlagen</para>
-      <para>Nach einem Vergleich des Studienangebots entscheiden sich Studieninteressierte in der Regel für ein bis zwei konkrete Studienfächer.</para>
+      <para><emphasis role="bold">Studium vorbereiten</emphasis>
+      </para>
+      <para>Nach einem Vergleich der verschiedenen Studienmöglichkeiten entscheidet sich Amélie für
+        ein Bachelor-Studium der Informatik an der TU München und bereitet Ihre Unterlagen (inkl.
+        der Hochschulzugangsberechtigung) für die Bewerbung vor.</para>
       <para> </para>
     </listitem>
     <listitem>
-      <para>Zulassungsvoraussetzungen prüfen lassen &ndash; Eignung und/oder Kompetenznachweise vorab prüfen lassen</para>
-      <para>Für einige Studienfächer müssen Studieninteressierte bestimmte
-        Zulassungsvoraussetzungen erfüllen und vor bzw. im Zuge einer Bewerbung prüfen lassen:
-        Zum einen gibt es Studienfächer, für die eine bestimmte Eignung im Rahmen einer Prüfung
-        nachgewiesen werden müssen (künstlerische und sportliche Eignungsprüfung, Test für
-        medizinische Studienfächer (TMS)). Zum anderen müssen Studieninteressierte vor einer
-        Bewerbung teilweise auch Kompetenznachweise z.B. bei Dienstleistern wie uni-assist zur
-        Prüfung der Zulassungsvoraussetzungen für ein konkretes Studienfach (ggf. mit
-        Zweitwunsch) einreichen.</para>
+      <para><emphasis role="bold">Zulassungsvoraussetzungen prüfen lassen</emphasis>
+      </para>
+      <para>Für einige Studienfächer müssen Studieninteressierte bestimmte Zulassungsvoraussetzungen
+        erfüllen und vor bzw. im Zuge einer Bewerbung prüfen lassen: Zum einen gibt es
+        Studienfächer, für die eine bestimmte Eignung im Rahmen einer Prüfung nachgewiesen werden
+        müssen (künstlerische und sportliche Eignungsprüfung, Test für medizinische Studienfächer
+        (TMS)). Zum anderen müssen Studieninteressierte vor einer Bewerbung teilweise auch
+        Kompetenznachweise z.B. bei Dienstleistern wie uni-assist zur Prüfung der
+        Zulassungsvoraussetzungen für ein konkretes Studienfach (ggf. mit Zweitwunsch) einreichen.
+        Im Falle von Amélie genügt eine direkte Bewerbung bei der TU München. </para>
       <para> </para>
     </listitem>
     <listitem>
-      <para>Für Studienfach bewerben &ndash; Bewerbung für ein konkretes Studienfach an einer (Fach-)Hochschule oder der Stiftung für Hochschulzulassung</para>
-      <para>Die Bewerbung für ein konkretes Studienfach mit Nachweisen etc. erfolgt in der Regel
-        über die digitalen Bewerbungsplattformen der Hochschulen. Insbesondere bei den
-        bundesweit zulassungsbeschränkten Studienfächern (Medizin, Pharmazie, Tiermedizin und
-        Zahnmedizin) erfolgt die Bewerbung hingegen zentral über die sog.
+      <para><emphasis role="bold">Für Studienfach bewerben</emphasis>
+      </para>
+      <para>Amélie bewirbt sich für das Informatik-Studium über die digitalen Bewerbungsplattform
+        der TU München. Bei den bundesweit zulassungsbeschränkten Studienfächern (Medizin,
+        Pharmazie, Tiermedizin und Zahnmedizin) erfolgt die Bewerbung hingegen zentral über die sog.
         DoSV-Bewerbungsplattform der Stiftung für Hochschulzulassung (SfH).</para>
       <para> </para>
     </listitem>
     <listitem>
-      <para>Kompetenzen anerkennen lassen &ndash; Anerkennung von (ausländischen) Kompetenznachweisen durch die Hochschule</para>
-      <para>Das Prüfungsamt und/oder einzelne Fakultäten einer Hochschule erkennen (ausländische) Kompetenznachweise gegebenenfalls studienfachsspezifisch an.</para>
-      <para> </para>
-    </listitem>
-    <listitem>
-      <para>An Hochschule einschreiben &ndash; Immatrikulation in ein konkretes Studienfach</para>
-      <para>Bei Vorliegen aller Zulassungsvoraussetzungen erhalten Studieninteressierte ein Studienplatzangebot, welches sie mit einer Zusage annehmen können. Nach der Bezahlung einer
-        Gebühr werden sie an der Hochschule immatrikuliert und erhalten eine <link linkend="XHochschule.Bescheinigungen.immatrikulationsbescheinigung">Immatrikulationsbescheinigung</link>.</para>
-      <para> </para>
-    </listitem>
-    <listitem>
-      <para>Studienfinanzierung beantragen &ndash; Auswahl einer von verschiedenen Förderungsmöglichkeiten</para>
-      <para>Zur Finanzierung eines Studiums können (angehende) Studierende verschiedene Fördermöglichkeiten beantragen (z. B. <link linkend="XHochschule.Bescheinigungen.immatrikulationsbescheinigungBAfoeGP9">BAföG</link>, Stipendien), wobei die Möglickeiten und eine konkrete
-      finanzielle Förderung von zahlreichen Faktoren abhängen &ndash; etwa persönliche Lebenslage, bisherige Leistungen, Hochschule und das konkrete Studienfach.</para>
-      <para> </para>
-    </listitem>
-    <listitem>
-      <para>Im Bachelor studieren &ndash; Absolvieren eines grundständigen Studiums</para>
-      <para>In Deutschland ist das grundständige Studium zumeist ein Bachelorstudium. </para>
-      <para> </para>
-    </listitem>
-    <listitem>
-      <para>Auslandsstudium vorbereiten &ndash; Vorbereitung und Bewerbung eines Auslandssemesters</para>
-      <para>Studierende können sich mit strukturierten Informationsangeboten oder
-        beim akademischen Auslandsamt ihrer Hochschule über die Möglichkeit eines
-        Auslandsaufenthalts bzw. Auslandssemesters (z.B. im Rahmen des EU-Programms Erasmus+) informieren
-        und sich nach einer Prüfung der Zulassungsvoraussetzungen im Ausland für einen
-        Studienplatz bewerben. Im Zuge von Erasmus+ kann außerdem ein sogenanntes Learning Agreement
-         zwischen der studierenden Person, der heimischen Hochschule sowie der ausgewählten ausländischen
-        Hochschule über die im Rahmen des Auslandsaufenthalts angestrebten Leistungen geschlossen werden.
-        Gegebenenfalls ist die Ausstellung eines <link linkend="XHochschule.Bildungsnachweise.transcriptOfRecords">Transcript of Records</link> (ToR) notwendig.
-     </para>
-      <para> </para>
-    </listitem>
-    <listitem>
-      <para>Auslandsstudium antreten &ndash; Immatrikulation an einer ausländischen Hochschule</para>
-      <para>Nach erfolgreicher Prüfung der (deutschen) Kompetenznachweise durch die ausländische Hochschule können die Studierenden ihr Studium im Ausland antreten.</para>
-      <para> </para>
-    </listitem>
-    <listitem>
-      <para>Im Ausland studieren &ndash; Absolvieren eines Studiensemesters im Ausland</para>
-      <para>Im Ausland absolvieren die Studierenden ein Studiensemester, wobei sie in der Regel Veranstaltungen in ihrem Studienfach und auf ihrem Niveau besuchen.</para>
-      <para> </para>
-    </listitem>
-    <listitem>
-      <para>Auslandsstudium beenden &ndash; Abschluss des Auslandsstudiums und Anerkennung der absolvierten Leistungen</para>
-      <para>Nach Abschluss des Auslandssemesters können die Studierenden ihre im Rahmen des Auslandsaufenthalts erbrachten Leistungen durch die heimische Hochschule für ihr 
-      Studium anerkennen und anrechnen lassen.</para>
-      <para> </para>
-    </listitem>
-    <listitem>
-      <para>Hochschulabschlusszeugnis erhalten &ndash; Ausstellung eines Zeugnisses bei erfolgreichem Abschluss</para>
-      <para>Zum erfolgreichen Abschluss des grundständigen Studiums wird den Studierenden ein (digitales) <link linkend="XHochschule.Bildungsnachweise.hochschulabschlusszeugnis">Hochschulabschlusszeugnis</link> mit weiteren Dokumenenten wie
-        <link linkend="XHochschule.Bildungsnachweise.transcriptOfRecords">Transcript of Records</link> (ToR) oder <link linkend="XHochschule.Bildungsnachweise.diplomaSupplement">Diploma Supplements</link> ausgestellt.</para>
-      <para> </para>
-    </listitem>
-    <listitem>
-      <para>Studienfach wechseln &ndash; Übergang von Bachelor zu Master</para>
-      <para>Studierende können nach erfolgreichem Abschluss ihres Bachelorstudiums ein Masterstudium aufnehmen,
-      falls ihr Bachelorstudium durch die entsprechende Hochschule anerkannt wird und sie alle weiteren Zulassungsvoraussetzungen erfüllen.</para>
-      <para> </para>
-    </listitem>
-    <listitem>
-      <para>Im Master studieren &ndash; Absolvieren eines weiterführenden Studiums</para>
-      <para>Nach dem grundständigen Studium (Bachelor) absolvieren Studierende in Deutschland häufig ein weiterführendes Studium (Master).</para>
-      <para> </para>
-    </listitem>
-    <listitem>
-      <para>Hochschulabschlusszeugnis erhalten &ndash; Ausstellung eines Zeugnisses bei erfolgreichem Abschluss</para>
-      <para>Zum erfolgreichen Abschluss des konsekutiven Studiums wird den Studierenden ein (digitales) <link linkend="XHochschule.Bildungsnachweise.hochschulabschlusszeugnis">Hochschulabschlusszeugnis</link> mit weiteren Dokumenenten wie
-        <link linkend="XHochschule.Bildungsnachweise.transcriptOfRecords">Transcript of Records</link> (ToR) oder <link linkend="XHochschule.Bildungsnachweise.diplomaSupplement">Diploma Supplements</link> ausgestellt.
+      <para><emphasis role="bold">Kompetenzen anerkennen lassen</emphasis>
       </para>
+      <para>Das Prüfungsamt und/oder einzelne Fakultäten einer Hochschule erkennen (ausländische)
+        Kompetenznachweise gegebenenfalls studienfachspezifisch an. Da Amélie ihr Studium direkt
+        nach dem Schulabschluss beginnt, liegen noch keine anerkennenswerten Leistungen vor. </para>
       <para> </para>
     </listitem>
     <listitem>
-      <para>Suchen und informieren &ndash; Online-Suche nach geeigneten Jobs</para>
-      <para>Zu Beginn der Jobsuche informieren sich Arbeitssuchende mit strukturierten Informationsangeboten (z.B. Jobbörse der Bundesagentur für Arbeit, indeed),
-        Suchmaschinen (z.B. Google) oder bei Beratungsstellen (z. B. bei Vermittlungsfachkräften der Bundesagentur für Arbeit) zum deutschen Arbeitsmarkt und geeigneten
-        Beschäftigungsmöglichkeiten.</para>
+      <para><emphasis role="bold">An Hochschule einschreiben</emphasis>
+      </para>
+      <para>Nach Prüfung der Zulassungsvoraussetzungen erhält Amélie ein Studienplatzangebot. Nach
+        ihrer Zusage kann sie sich mittels Zahlung einer Gebühr an der TU München immatrikulieren
+        und erhält eine <link linkend="XHochschule.Bescheinigungen.immatrikulationsbescheinigung">Immatrikulationsbescheinigung</link>.</para>
       <para> </para>
     </listitem>
     <listitem>
-      <para>Für Job bewerben &ndash; Online-Bewerbung für einen Arbeitgeber</para>
-      <para>Die Bewerbung für einen konkreten Job mit Nachweisen wie z. B. Zeugnissen erfolgt beispielsweise über digitale Bewerbungsplattformen der Arbeitgeber oder
-      zunehmend auch über die digitalen Onlineprofile der Bewerber:innen.</para>
+      <para><emphasis role="bold">Studienfinanzierung beantragen</emphasis>
+      </para>
+      <para>Da Amélies Eltern noch weitere Kinder in Ausbildung finanzieren, bewirbt sich Amélie auf
+        ein Stipendium. Zudem beantragt sie Leistungen nach dem <link linkend="XHochschule.Bescheinigungen.immatrikulationsbescheinigungBAfoeGP9">BAföG</link>. 
+        Die Zusage und Höhe einer finanziellen Förderung hängen von zahlreichen
+        Faktoren ab – etwa persönlicher Lebenslage, bisherige Leistungen, Hochschule und konkretem
+        Studienfach.</para>
+      <para> </para>
+    </listitem>
+    <listitem>
+      <para><emphasis role="bold">Im Bachelor studieren</emphasis>
+      </para>
+      <para>Amélie beginnt ihr Bachelorstudium. </para>
+      <para> </para>
+    </listitem>
+    <listitem>
+      <para><emphasis role="bold">Auslandsstudium vorbereiten </emphasis>
+      </para>
+      <para>Während ihres Studiums möchte Amélie gerne ein Semester im Ausland studieren. Hierzu
+        informiert sie sich über strukturierte Informationsangebote und beim akademischen
+        Auslandsamt der TU München über die Möglichkeiten (z.B. im Rahmen des EU-Programms
+        Erasmus+). Nach Prüfung ihrer Zulassungsvoraussetzungen bewirbt sie sich für einen
+        Studienplatz in Frankreich, an der Université de Strasbourg. Im Zuge von Erasmus+ wird ein
+        sogenanntes Learning Agreement zwischen Amélie, der heimischen Hochschule sowie der
+        ausgewählten ausländischen Hochschule über die im Rahmen des Auslandsaufenthalts
+        angestrebten Leistungen geschlossen. Gegebenenfalls ist die Ausstellung eines 
+        <link linkend="XHochschule.Bildungsnachweise.transcriptOfRecords">Transcript of Records</link> (ToR) notwendig. </para>
+      <para> </para>
+    </listitem>
+    <listitem>
+      <para><emphasis role="bold">Auslandsstudium antreten</emphasis>
+      </para>
+      <para>Nach erfolgreicher Prüfung der (deutschen) Kompetenznachweise durch die Université de
+        Strasbourg kann Amélie ihr Studium an der französischen Hochschule antreten.</para>
+      <para> </para>
+    </listitem>
+    <listitem>
+      <para><emphasis role="bold">Im Ausland studieren</emphasis>
+      </para>
+      <para>Amélie besucht innerhalb eines Studiensemesters Veranstaltungen in ihrem Studienfach und
+        auf ihrem Niveau an der Université de Strasbourg.</para>
+      <para> </para>
+    </listitem>
+    <listitem>
+      <para><emphasis role="bold">Auslandsstudium beenden</emphasis>
+      </para>
+      <para>Nach Abschluss des Auslandssemesters lässt Amélie ihre im Rahmen des Auslandsaufenthalts
+        erbrachten Leistungen durch die TU München für ihr Studium anerkennen und anrechnen.</para>
+      <para> </para>
+    </listitem>
+    <listitem>
+      <para><emphasis role="bold">Hochschulabschlusszeugnis erhalten </emphasis></para>
+      <para>Amélie absolviert ihr Bachelorstudium in der Regelstudienzeit. Zum erfolgreichen
+        Abschluss des grundständigen Studiums erhält sie ein (digitales) <link
+          linkend="XHochschule.Bildungsnachweise.hochschulabschlusszeugnis"
+          >Hochschulabschlusszeugnis</link> mit weiteren Dokumenenten wie <link
+          linkend="XHochschule.Bildungsnachweise.transcriptOfRecords">Transcript of Records</link>
+        (ToR) und <link linkend="XHochschule.Bildungsnachweise.diplomaSupplement">Diploma
+          Supplement</link> von der TU München ausgestellt.</para>
+      <para> </para>
+    </listitem>
+    <listitem>
+      <para><emphasis role="bold">Weiterführendes Studium auswählen</emphasis>
+      </para>
+      <para>Nach erfolgreichem Abschluss ihres Bachelorstudiums entscheidet sich Amélie, ein
+        Masterstudium in Informatik anzuschließen. Hierzu bewirbt sie sich mit dem
+        Hochschulabschlusszeugnis ihres Bachelorstudiums an einer anderen deutschen Hochschule, der
+        TU Clausthal.</para>
+      <para> </para>
+    </listitem>
+    <listitem>
+      <para><emphasis role="bold">Im Master studieren</emphasis></para>
+      <para>Amélie absolviert innerhalb der Regelstudienzeit ihr Masterstudium.</para>
+      <para> </para>
+    </listitem>
+    <listitem>
+      <para><emphasis role="bold">Hochschulabschlusszeugnis erhalten </emphasis></para>
+      <para>Zum erfolgreichen Abschluss des Masterstudiums erhält Amélie ein (digitales) <link
+          linkend="XHochschule.Bildungsnachweise.hochschulabschlusszeugnis"
+          >Hochschulabschlusszeugnis</link> mit weiteren Dokumenenten wie <link
+          linkend="XHochschule.Bildungsnachweise.transcriptOfRecords">Transcript of Records</link>
+        (ToR) und <link linkend="XHochschule.Bildungsnachweise.diplomaSupplement">Diploma
+          Supplement</link> von der TU Clausthal ausgestellt. </para>
+      <para> </para>
+    </listitem>
+    <listitem>
+      <para><emphasis role="bold">Suchen und informieren</emphasis>
+      </para>
+      <para>Zu Beginn der Jobsuche informiert Amélie sich mit strukturierten Informationsangeboten
+        (z.B. Jobbörse der Bundesagentur für Arbeit, indeed), Suchmaschinen (z.B. Google) und bei
+        Beratungsstellen (z. B. bei Vermittlungsfachkräften der Bundesagentur für Arbeit) zum
+        deutschen Arbeitsmarkt und geeigneten Beschäftigungsmöglichkeiten entsprechend ihres
+        abgeschlossenen Informatik-Studiums.</para>
+      <para> </para>
+    </listitem>
+    <listitem>
+      <para><emphasis role="bold">Für Job bewerben</emphasis>
+      </para>
+      <para>Amélie bewirbt sich für eine Stelle als Entwicklerin bei mehreren deutschen
+        Softwareherstellern. Hierzu legt sie Nachweise wie z. B. Zeugnisse oder
+        Praktikumsbescheinigungen über die digitalen Bewerbungsplattformen ihrer potenziellen
+        Arbeitgeber vor.</para>
       <para> </para>
     </listitem>
   </orderedlist> 
@@ -139,7 +183,7 @@
 
  <!-- <para>
     <table frame="all">
-      <title>Etappen der Hochschuljourney</title>
+      <title>Etappen der XHochschule-Journey</title>
       <tgroup cols="6">
         <colspec colname="c1" colnum="1" colwidth="6mm" />
         <colspec colname="c2" colnum="2" />
@@ -238,7 +282,7 @@
             <entry>8.</entry>
             <entry>Im Bachelor studieren</entry>
             <entry>Absolvieren eines grundständigen Studiums</entry>
-            <entry>Die Hochschuljourney startet in Deutschland i.d.R. mit einem grundständigen Studiums (Bachelor).</entry>
+            <entry>Die X-Hochschule-Journey startet in Deutschland i.d.R. mit einem grundständigen Studiums (Bachelor).</entry>
             <entry/>
             <entry>Hochschulabschlusszeugnis Bachelor, Hochschulabschlusszeugnis+, ToR+Diploma Supplement</entry>
           </row>
@@ -357,7 +401,7 @@
   </para>
   -->
   <figure>
-    <title>Die Hochschuljourney</title>
+    <title>Die XHochschule-Journey</title>
     <mediaobject>
       <imageobject>
         <imagedata align="center" fileref="../abbildungen/Journey_fuer_Spezifikation.PNG" format="PNG" width="100%"/>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
+           xmlns:xhs="http://xhochschule.de/def/xhochschule/1.2/xsd"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
            xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-           xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
-           targetNamespace="http://xhochschule.de/def/xhochschule/1.1/xsd"
-           version="1.1"
+           xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+           targetNamespace="http://xhochschule.de/def/xhochschule/1.2/xsd"
+           version="1.2"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -15,14 +15,15 @@
             <nameKurz>XHochschule</nameKurz>
             <nameTechnisch>xhochschule</nameTechnisch>
             <kennung>urn:xoev-de:xhochschule-de:def:standard:xhochschule</kennung>
-            <beschreibung>XHochschule</beschreibung>
+            <beschreibung>XHochschule ist ein föderaler IT-Standard, der für die Erstellung von elektronischen Bildungsnachweisen sowie den Datenaustausch im Hochschulwesen entwickelt wird. Er ist Teil der Standard-Familie XBildung. </beschreibung>
          </standard>
          <versionStandard>
-            <version>1.1</version>
-            <versionXOEVProfil>3.0.1</versionXOEVProfil>
-            <versionXOEVHandbuch>3.0.0</versionXOEVHandbuch>
+            <version>1.2</version>
+            <beschreibung>Diese Version 1.2 des Standards XHochschule beinhaltet die zur XÖV-Zertifizierung notwendigen Anpassungen am Modell und an weiteren standardbezogenen Artefakten.</beschreibung>
+            <versionXOEVProfil>3.0.3</versionXOEVProfil>
+            <versionXOEVHandbuch>3.0.2</versionXOEVHandbuch>
             <versionXGenerator>3.1.1</versionXGenerator>
-            <versionModellierungswerkzeug>19.0 SP 3</versionModellierungswerkzeug>
+            <versionModellierungswerkzeug>19.0 SP 4</versionModellierungswerkzeug>
             <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
          </versionStandard>
       </xs:appinfo>
@@ -30,8 +31,8 @@
    <xs:include schemaLocation="xhochschule-baukasten.xsd"/>
    <xs:import schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"
               namespace="http://www.w3.org/2000/09/xmldsig#"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.1/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/1.1/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.2/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/1.2/xsd"/>
    <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
               namespace="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"/>
    <xs:element name="exmatrikulationsbescheinigung">
@@ -141,7 +142,7 @@
                   </xs:element>
                   <xs:element name="studienzeitraum" type="xhs:Studienzeitraum">
                      <xs:annotation>
-                        <xs:documentation>Bezeichnung des aktuellen Studienzeitraums, sowie dessen Anfangs- und Enddatums</xs:documentation>
+                        <xs:documentation>Bezeichnung des aktuellen Studienzeitraums, sowie dessen Anfangs- und Enddatums.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="immatrikulationsstatus">
@@ -152,7 +153,7 @@
                         <xs:sequence>
                            <xs:element name="code" type="xhs:Code.Immatrikulationsstatus">
                               <xs:annotation>
-                                 <xs:documentation>Angabe zum Immatrikulationsstatus des Studierenden</xs:documentation>
+                                 <xs:documentation>Angabe zum Immatrikulationsstatus des Studierenden.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                            <xs:element name="nichtGelisteterWert"
@@ -247,7 +248,7 @@
                            </xs:element>
                            <xs:element name="geburt">
                               <xs:annotation>
-                                 <xs:documentation>Angaben zur Geburt, benötigt bei der Immatrikulationsbescheinigung nach BAföG §9. In dieser Klasse ist die Angabe des Geburtsdatums und Geburtsorts verpflichtend</xs:documentation>
+                                 <xs:documentation>Angaben zur Geburt, benötigt bei der Immatrikulationsbescheinigung nach BAföG §9. In dieser Klasse ist die Angabe des Geburtsdatums und Geburtsorts verpflichtend.</xs:documentation>
                               </xs:annotation>
                               <xs:complexType>
                                  <xs:sequence>
@@ -258,7 +259,7 @@
                                     </xs:element>
                                     <xs:element name="geburtsort" type="xbd:Ortsangabe" form="qualified">
                                        <xs:annotation>
-                                          <xs:documentation>Hier werden Angaben zum Ort einer Geburt gemacht (z. B. Geburtsort, Geburtsstaat)</xs:documentation>
+                                          <xs:documentation>Hier werden Angaben zum Ort einer Geburt gemacht (z. B. Geburtsort, Geburtsstaat).</xs:documentation>
                                        </xs:annotation>
                                     </xs:element>
                                  </xs:sequence>
@@ -266,7 +267,7 @@
                            </xs:element>
                            <xs:element name="ersteinschreibung" type="xs:date">
                               <xs:annotation>
-                                 <xs:documentation>Datum der Ersteinschreibung</xs:documentation>
+                                 <xs:documentation>Datum der Ersteinschreibung.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                         </xs:sequence>
@@ -303,7 +304,7 @@
                   </xs:element>
                   <xs:element name="studienzeitraum" type="xhs:Studienzeitraum">
                      <xs:annotation>
-                        <xs:documentation>Bezeichnung des aktuellen Studienzeitraums, sowie dessen Anfangs- und Enddatums</xs:documentation>
+                        <xs:documentation>Bezeichnung des aktuellen Studienzeitraums, sowie dessen Anfangs- und Enddatums.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="immatrikulationsstatus">
@@ -314,7 +315,7 @@
                         <xs:sequence>
                            <xs:element name="code" type="xhs:Code.Immatrikulationsstatus">
                               <xs:annotation>
-                                 <xs:documentation>Angabe zum Immatrikulationsstatus des Studierenden</xs:documentation>
+                                 <xs:documentation>Angabe zum Immatrikulationsstatus des Studierenden.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                            <xs:element name="nichtGelisteterWert"

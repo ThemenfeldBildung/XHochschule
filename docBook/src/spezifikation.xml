@@ -10,7 +10,8 @@
         <subtitle>Version &version; &version_title;</subtitle>
         <abstract>
             <para>Fassung: &fassung;</para>
-            <para>Herausgeber: BMBF, Land Sachsen-Anhalt</para>
+            <para>Herausgeber: Land Sachsen-Anhalt</para>
+            <para>Lizenz: CC BY 4.0 "]init[ AG im Auftrag des Landes Sachsen-Anhalt"</para>
             <para>Bezugsort: <link xlink:href="http://&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/spec/&fachmodul_kurz;_spezifikation_&version;.pdf" xmlns:xlink="http://www.w3.org/1999/xlink">http://&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/spec/&fachmodul_kurz;_spezifikation_&version;.pdf</link></para>
         </abstract>
     </info>

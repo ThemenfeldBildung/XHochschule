@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<xsl:stylesheet xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                xmlns:saxon="http://saxon.sf.net/"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:xhtml="http://www.w3.org/1999/xhtml"
-                xmlns:oxy="http://www.oxygenxml.com/schematron/validation"
-                xmlns:bn-beh="http://xoev.de/schemata/basisnachricht/behoerde/1_0"
+<xsl:stylesheet xmlns:bn-beh="http://xoev.de/schemata/basisnachricht/behoerde/1_0"
                 xmlns:bn-g2g="http://xoev.de/schemata/basisnachricht/g2g/1_0"
                 xmlns:bn-kom="http://xoev.de/schemata/basisnachricht/kommunikation/1_0"
                 xmlns:bn-uq-g2g="http://xoev.de/schemata/basisnachricht/unqualified/g2g/1_0"
@@ -13,10 +7,16 @@
                 xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
                 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
                 xmlns:gml="http://www.opengis.net/gml/3.2"
-                xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
-                xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
+                xmlns:oxy="http://www.oxygenxml.com/schematron/validation"
+                xmlns:saxon="http://saxon.sf.net/"
+                xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+                xmlns:xhs="http://xhochschule.de/def/xhochschule/1.0/xsd"
+                xmlns:xhtml="http://www.w3.org/1999/xhtml"
                 xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
                 xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 version="2.0"
                 xml:base="file:/C:/Code/ozg-xhsj/Spezifikation/build/sch/xhochschule-schematron.sch_xslt_cascade"><!--Implementers: please note that overriding process-prolog or process-root is 
     the preferred method for meta-stylesheets to use where possible. -->
@@ -225,6 +225,13 @@
       <xsl:apply-templates select="/" mode="M39"/>
       <xsl:apply-templates select="/" mode="M40"/>
       <xsl:apply-templates select="/" mode="M41"/>
+      <xsl:apply-templates select="/" mode="M42"/>
+      <xsl:apply-templates select="/" mode="M43"/>
+      <xsl:apply-templates select="/" mode="M44"/>
+      <xsl:apply-templates select="/" mode="M45"/>
+      <xsl:apply-templates select="/" mode="M46"/>
+      <xsl:apply-templates select="/" mode="M47"/>
+      <xsl:apply-templates select="/" mode="M48"/>
    </xsl:template>
    <!--SCHEMATRON PATTERNS-->
    <!--PATTERN -->
@@ -257,6 +264,17 @@ ID:SCH-XHS-0000-KeineLeerenElemente</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="not(exists(*:ausstellung/ort))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0003 Ein Ausstellungsort darf auf der Exmatrikulationsbescheinigung nicht angegeben werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0003-KeinAusstellungsortExmatrikulationsbescheinigung</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
       <xsl:apply-templates select="*" mode="M14"/>
    </xsl:template>
    <xsl:template match="text()" priority="-1" mode="M14"/>
@@ -265,7 +283,7 @@ ID:SCH-XHS-0000-KeineLeerenElemente</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:rentenbescheinigung//xhs:studienabschnitt"
+   <xsl:template match="xhs:rentenbescheinigung//studienabschnitt"
                  priority="1000"
                  mode="M15">
 
@@ -274,7 +292,7 @@ ID:SCH-XHS-0000-KeineLeerenElemente</xsl:text>
          <xsl:when test="if (*:beurlaubungsstatus/code/code = 'http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/beurlaubt') then exists(*:beurlaubungsgrund) else empty(*:beurlaubungsgrund)"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0001 Wenn und nur wenn der Beurlaubungsstatus 'beurlaubt' ist, darf der Beurlaubungsgrund angegeben werden.</xsl:text>
+               <xsl:text>XHS-0001 Wenn und nur wenn der Beurlaubungsstatus "beurlaubt" ist, darf der Beurlaubungsgrund angegeben werden.</xsl:text>
                <xsl:text>
 ID:SCH-XHS-0001-WennBeurlaubtDannBeurlaubungsgrund</xsl:text>
             </xsl:message>
@@ -288,29 +306,16 @@ ID:SCH-XHS-0001-WennBeurlaubtDannBeurlaubungsgrund</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:immatrikulationsbescheinigungBAfoeGP9//xhs:lernzeitmodell"
-                 priority="1000"
-                 mode="M16">
+   <xsl:template match="xhs:studienverlaufsbescheinigung" priority="1000" mode="M16">
 
 		<!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')"/>
+         <xsl:when test="not(exists(*:ausstellung/ort))"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung 'Teilzeit' oder 'Vollzeit' haben.</xsl:text>
+               <xsl:text>XHS-0002 Ein Ausstellungsort darf auf der Studienverlaufsbescheinigung nicht angegeben werden.</xsl:text>
                <xsl:text>
-ID:SCH-XHS-0010-LernzeitmodellVollOderTeilzeit</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0014 Wenn und nur wenn der Wert der Codeliste Lernzeitmodell 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0014-WertNichtInListeLernzeitmodell</xsl:text>
+ID:SCH-XHS-0002-KeinAusstellungsortSVB</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
@@ -322,18 +327,18 @@ ID:SCH-XHS-0014-WertNichtInListeLernzeitmodell</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:hochschulabschlusszeugnis/xhs:benotung"
+   <xsl:template match="xhs:immatrikulationsbescheinigungBAfoeGP9"
                  priority="1000"
                  mode="M17">
 
 		<!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="exists(*:gesamtnote/*:note)"/>
+         <xsl:when test="not(exists(*:ausstellung/ort))"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0011 Fehlende Angabe in 'benotung'. 'note' muss angegeben werden.</xsl:text>
+               <xsl:text>XHS-0004 Ein Ausstellungsort darf auf der Immatrikulationsbescheinigung nach BaföG § 9 nicht angegeben werden.</xsl:text>
                <xsl:text>
-ID:SCH-XHS-0011-PflichtfelderBenotung</xsl:text>
+ID:SCH-XHS-0004-KeinAusstellungsortImmatrikulationsbescheinigungBAfoeGP9</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
@@ -345,18 +350,18 @@ ID:SCH-XHS-0011-PflichtfelderBenotung</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:hochschulabschlusszeugnis//xhs:leistungsart"
+   <xsl:template match="xhs:immatrikulationsbescheinigung"
                  priority="1000"
                  mode="M18">
 
 		<!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:when test="not(exists(*:ausstellung/ort))"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0012 Wenn und nur wenn der Wert der Codeliste Leistungsart 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>XHS-0005 Ein Ausstellungsort darf auf der Immatrikulationsbescheinigung nicht angegeben werden.</xsl:text>
                <xsl:text>
-ID:SCH-XHS-0012-WertNichtInListeLeistungsart</xsl:text>
+ID:SCH-XHS-0005-KeinAusstellungsortImmatrikulationsbescheinigung</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
@@ -368,18 +373,16 @@ ID:SCH-XHS-0012-WertNichtInListeLeistungsart</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:transcriptOfRecords//xhs:leistungsart"
-                 priority="1000"
-                 mode="M19">
+   <xsl:template match="xhs:rentenbescheinigung" priority="1000" mode="M19">
 
 		<!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:when test="not(exists(*:ausstellung/ort))"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0012 Wenn und nur wenn der Wert der Codeliste Leistungsart 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>XHS-0006 Ein Ausstellungsort darf auf der Rentenbescheinigung nicht angegeben werden.</xsl:text>
                <xsl:text>
-ID:SCH-XHS-0012-WertNichtInListeLeistungsart</xsl:text>
+ID:SCH-XHS-0006-KeinAusstellungsortRentenbescheinigung</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
@@ -391,18 +394,16 @@ ID:SCH-XHS-0012-WertNichtInListeLeistungsart</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:hochschulabschlusszeugnis//xhs:leistungsstatus"
-                 priority="1000"
-                 mode="M20">
+   <xsl:template match="xhs:hochschulabschlusszeugnis" priority="1000" mode="M20">
 
 		<!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:when test="not(exists(*:ausstellung/ort))"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0013 Wenn und nur wenn der Wert der Codeliste Leistungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden. </xsl:text>
+               <xsl:text>XHS-0007 Ein Ausstellungsort darf auf dem Hochschulabschlusszeugnis nicht angegeben werden.</xsl:text>
                <xsl:text>
-ID:SCH-XHS-0013-WertNichtInListeLeistungsstatus</xsl:text>
+ID:SCH-XHS-0007-KeinAusstellungsortHAZ</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
@@ -414,18 +415,16 @@ ID:SCH-XHS-0013-WertNichtInListeLeistungsstatus</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:transcriptOfRecords//xhs:leistungsstatus"
-                 priority="1000"
-                 mode="M21">
+   <xsl:template match="xhs:diplomaSupplement" priority="1000" mode="M21">
 
 		<!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:when test="not(exists(*:ausstellung/ort))"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0013 Wenn und nur wenn der Wert der Codeliste Leistungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden. </xsl:text>
+               <xsl:text>XHS-0008 Ein Ausstellungsort darf auf dem Diploma Supplement nicht angegeben werden.</xsl:text>
                <xsl:text>
-ID:SCH-XHS-0013-WertNichtInListeLeistungsstatus</xsl:text>
+ID:SCH-XHS-0008-KeinAusstellungsortDS</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
@@ -437,18 +436,18 @@ ID:SCH-XHS-0013-WertNichtInListeLeistungsstatus</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:exmatrikulationsbescheinigung//xhs:lernzeitmodell"
+   <xsl:template match="xhs:hochschulabschlusszeugnis//diplomaSupplement"
                  priority="1000"
                  mode="M22">
 
 		<!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:when test="not(exists(*:ausstellung/ort))"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0014 Wenn und nur wenn der Wert der Codeliste Lernzeitmodell 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>XHS-0008 Ein Ausstellungsort darf auf dem Diploma Supplement nicht angegeben werden.</xsl:text>
                <xsl:text>
-ID:SCH-XHS-0014-WertNichtInListeLernzeitmodell</xsl:text>
+ID:SCH-XHS-0008-KeinAusstellungsortDS</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
@@ -460,18 +459,16 @@ ID:SCH-XHS-0014-WertNichtInListeLernzeitmodell</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:immatrikulationsbescheinigung//xhs:lernzeitmodell"
-                 priority="1000"
-                 mode="M23">
+   <xsl:template match="xhs:transcriptOfRecords" priority="1000" mode="M23">
 
 		<!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:when test="not(exists(*:ausstellung/ort))"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0014 Wenn und nur wenn der Wert der Codeliste Lernzeitmodell 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>XHS-0009 Ein Ausstellungsort darf auf dem Transcript of Records nicht angegeben werden.</xsl:text>
                <xsl:text>
-ID:SCH-XHS-0014-WertNichtInListeLernzeitmodell</xsl:text>
+ID:SCH-XHS-0009-KeinAusstellungsortTOR</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
@@ -483,11 +480,22 @@ ID:SCH-XHS-0014-WertNichtInListeLernzeitmodell</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:rentenbescheinigung//xhs:lernzeitmodell"
+   <xsl:template match="xhs:exmatrikulationsbescheinigung//lernzeitmodell"
                  priority="1000"
                  mode="M24">
 
 		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung "Teilzeit" oder "Vollzeit" haben.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0010-LernzeitmodellVollOderTeilzeit</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
       <xsl:choose>
          <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
          <xsl:otherwise>
@@ -506,11 +514,22 @@ ID:SCH-XHS-0014-WertNichtInListeLernzeitmodell</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:studienverlaufsbescheinigung//xhs:lernzeitmodell"
+   <xsl:template match="xhs:immatrikulationsbescheinigung//lernzeitmodell"
                  priority="1000"
                  mode="M25">
 
 		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung "Teilzeit" oder "Vollzeit" haben.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0010-LernzeitmodellVollOderTeilzeit</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
       <xsl:choose>
          <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
          <xsl:otherwise>
@@ -529,18 +548,29 @@ ID:SCH-XHS-0014-WertNichtInListeLernzeitmodell</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:exmatrikulationsbescheinigung//xhs:beurlaubungsstatus"
+   <xsl:template match="xhs:immatrikulationsbescheinigungBAfoeGP9//lernzeitmodell"
                  priority="1000"
                  mode="M26">
 
 		<!--ASSERT -->
       <xsl:choose>
+         <xsl:when test="ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung "Teilzeit" oder "Vollzeit" haben.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0010-LernzeitmodellVollOderTeilzeit</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
          <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0015 Wenn und nur wenn der Wert der Codeliste Beurlaubungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>XHS-0014 Wenn und nur wenn der Wert der Codeliste Lernzeitmodell 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
                <xsl:text>
-ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
+ID:SCH-XHS-0014-WertNichtInListeLernzeitmodell</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
@@ -552,18 +582,29 @@ ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:immatrikulationsbescheinigung//xhs:beurlaubungsstatus"
+   <xsl:template match="xhs:rentenbescheinigung//lernzeitmodell"
                  priority="1000"
                  mode="M27">
 
 		<!--ASSERT -->
       <xsl:choose>
+         <xsl:when test="ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung "Teilzeit" oder "Vollzeit" haben.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0010-LernzeitmodellVollOderTeilzeit</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
          <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0015 Wenn und nur wenn der Wert der Codeliste Beurlaubungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>XHS-0014 Wenn und nur wenn der Wert der Codeliste Lernzeitmodell 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
                <xsl:text>
-ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
+ID:SCH-XHS-0014-WertNichtInListeLernzeitmodell</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
@@ -575,18 +616,29 @@ ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:immatrikulationsbescheinigungBAfoeGP9//xhs:beurlaubungsstatus"
+   <xsl:template match="xhs:studienverlaufsbescheinigung//lernzeitmodell"
                  priority="1000"
                  mode="M28">
 
 		<!--ASSERT -->
       <xsl:choose>
+         <xsl:when test="ends-with(*:code/code/text(),'/vollzeit') or ends-with(*:code/code/text(),'/teilzeit')"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0010 Das Lernzeitmodell muss in der Immatrikulationsbescheinigung nach BaföG § 9 die Ausprägung "Teilzeit" oder "Vollzeit" haben.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0010-LernzeitmodellVollOderTeilzeit</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
          <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0015 Wenn und nur wenn der Wert der Codeliste Beurlaubungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>XHS-0014 Wenn und nur wenn der Wert der Codeliste Lernzeitmodell 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
                <xsl:text>
-ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
+ID:SCH-XHS-0014-WertNichtInListeLernzeitmodell</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
@@ -598,18 +650,18 @@ ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:rentenbescheinigung//xhs:beurlaubungsstatus"
+   <xsl:template match="xhs:hochschulabschlusszeugnis/benotung"
                  priority="1000"
                  mode="M29">
 
 		<!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:when test="exists(*:gesamtnote/*:note)"/>
          <xsl:otherwise>
             <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0015 Wenn und nur wenn der Wert der Codeliste Beurlaubungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>XHS-0011 Fehlende Angabe in 'benotung'. 'note' muss angegeben werden.</xsl:text>
                <xsl:text>
-ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
+ID:SCH-XHS-0011-PflichtfelderBenotung</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
@@ -621,9 +673,101 @@ ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:studienverlaufsbescheinigung//xhs:beurlaubungsstatus"
+   <xsl:template match="xhs:hochschulabschlusszeugnis//leistungsart"
                  priority="1000"
                  mode="M30">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0012 Wenn und nur wenn der Wert der Codeliste Leistungsart 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0012-WertNichtInListeLeistungsart</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M30"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M30"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M30">
+      <xsl:apply-templates select="*" mode="M30"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:transcriptOfRecords//leistungsart"
+                 priority="1000"
+                 mode="M31">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0012 Wenn und nur wenn der Wert der Codeliste Leistungsart 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0012-WertNichtInListeLeistungsart</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M31"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M31"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M31">
+      <xsl:apply-templates select="*" mode="M31"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:hochschulabschlusszeugnis//leistungsstatus"
+                 priority="1000"
+                 mode="M32">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0013 Wenn und nur wenn der Wert der Codeliste Leistungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden. </xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0013-WertNichtInListeLeistungsstatus</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M32"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M32"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M32">
+      <xsl:apply-templates select="*" mode="M32"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:transcriptOfRecords//leistungsstatus"
+                 priority="1000"
+                 mode="M33">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0013 Wenn und nur wenn der Wert der Codeliste Leistungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden. </xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0013-WertNichtInListeLeistungsstatus</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M33"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M33"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M33">
+      <xsl:apply-templates select="*" mode="M33"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:exmatrikulationsbescheinigung//beurlaubungsstatus"
+                 priority="1000"
+                 mode="M34">
 
 		<!--ASSERT -->
       <xsl:choose>
@@ -636,17 +780,109 @@ ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*" mode="M30"/>
+      <xsl:apply-templates select="*" mode="M34"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M30"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M30">
-      <xsl:apply-templates select="*" mode="M30"/>
+   <xsl:template match="text()" priority="-1" mode="M34"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M34">
+      <xsl:apply-templates select="*" mode="M34"/>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:immatrikulationsbescheinigung//xhs:immatrikulationsstatus"
+   <xsl:template match="xhs:immatrikulationsbescheinigung//beurlaubungsstatus"
                  priority="1000"
-                 mode="M31">
+                 mode="M35">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0015 Wenn und nur wenn der Wert der Codeliste Beurlaubungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M35"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M35"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M35">
+      <xsl:apply-templates select="*" mode="M35"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:immatrikulationsbescheinigungBAfoeGP9//beurlaubungsstatus"
+                 priority="1000"
+                 mode="M36">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0015 Wenn und nur wenn der Wert der Codeliste Beurlaubungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M36"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M36"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M36">
+      <xsl:apply-templates select="*" mode="M36"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:rentenbescheinigung//beurlaubungsstatus"
+                 priority="1000"
+                 mode="M37">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0015 Wenn und nur wenn der Wert der Codeliste Beurlaubungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M37"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M37"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M37">
+      <xsl:apply-templates select="*" mode="M37"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:studienverlaufsbescheinigung//beurlaubungsstatus"
+                 priority="1000"
+                 mode="M38">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0015 Wenn und nur wenn der Wert der Codeliste Beurlaubungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M38"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M38"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M38">
+      <xsl:apply-templates select="*" mode="M38"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:immatrikulationsbescheinigung//immatrikulationsstatus"
+                 priority="1000"
+                 mode="M39">
 
 		<!--ASSERT -->
       <xsl:choose>
@@ -659,17 +895,17 @@ ID:SCH-XHS-0016-WertNichtInListeImmatrikulationsstatus</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*" mode="M31"/>
+      <xsl:apply-templates select="*" mode="M39"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M31"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M31">
-      <xsl:apply-templates select="*" mode="M31"/>
+   <xsl:template match="text()" priority="-1" mode="M39"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M39">
+      <xsl:apply-templates select="*" mode="M39"/>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:immatrikulationsbescheinigungBAfoeGP9//xhs:immatrikulationsstatus"
+   <xsl:template match="xhs:immatrikulationsbescheinigungBAfoeGP9//immatrikulationsstatus"
                  priority="1000"
-                 mode="M32">
+                 mode="M40">
 
 		<!--ASSERT -->
       <xsl:choose>
@@ -682,17 +918,17 @@ ID:SCH-XHS-0016-WertNichtInListeImmatrikulationsstatus</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*" mode="M32"/>
+      <xsl:apply-templates select="*" mode="M40"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M32"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M32">
-      <xsl:apply-templates select="*" mode="M32"/>
+   <xsl:template match="text()" priority="-1" mode="M40"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M40">
+      <xsl:apply-templates select="*" mode="M40"/>
    </xsl:template>
    <!--PATTERN -->
    <!--RULE -->
-   <xsl:template match="xhs:hochschulabschlusszeugnis//xhs:lateinischeEhrenbezeichnung"
+   <xsl:template match="xhs:hochschulabschlusszeugnis//lateinischeEhrenbezeichnung"
                  priority="1000"
-                 mode="M33">
+                 mode="M41">
 
 		<!--ASSERT -->
       <xsl:choose>
@@ -705,412 +941,389 @@ ID:SCH-XHS-0017-WertNichtInListeLateinischeEhrenbezeichnung</xsl:text>
             </xsl:message>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*" mode="M33"/>
-   </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M33"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M33">
-      <xsl:apply-templates select="*" mode="M33"/>
-   </xsl:template>
-   <!--PATTERN -->
-   <!--RULE -->
-   <xsl:template match="xhs:hochschulabschlusszeugnis/xhs:leistung//xbd:note"
-                 priority="1000"
-                 mode="M34">
-
-		<!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0018 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0018-Benotungsschema</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates select="*" mode="M34"/>
-   </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M34"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M34">
-      <xsl:apply-templates select="*" mode="M34"/>
-   </xsl:template>
-   <!--PATTERN -->
-   <!--RULE -->
-   <xsl:template match="xhs:transcriptOfRecords//xbd:note"
-                 priority="1000"
-                 mode="M35">
-
-		<!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0018 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0018-Benotungsschema</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates select="*" mode="M35"/>
-   </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M35"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M35">
-      <xsl:apply-templates select="*" mode="M35"/>
-   </xsl:template>
-   <!--PATTERN -->
-   <!--RULE -->
-   <xsl:template match="xhs:hochschulabschlusszeugnis//xbd:note"
-                 priority="1000"
-                 mode="M36">
-
-		<!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0019-BenotungsschemaGesamtnoteundAbschlussarbeit</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates select="*" mode="M36"/>
-   </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M36"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M36">
-      <xsl:apply-templates select="*" mode="M36"/>
-   </xsl:template>
-   <!--PATTERN -->
-   <!--RULE -->
-   <xsl:template match="xhs:hochschulabschlusszeugnis//xhs:leistung"
-                 priority="1000"
-                 mode="M37">
-
-		<!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/leistungsartCode/code/text(), 'klausur') or  ends-with(*:leistungsart/leistungsartCode/code/text(), 'pruefung')) then not(exists(*:beschreibung/*:umfangInSWS)) else (not(exists(*:beschreibung/*:umfangInSWS)) or exists(*:beschreibung/*:umfangInSWS))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0020 Der Wert 'UmfangInSWS' darf nicht angegeben werden, wenn der Inhalt des Codewertes von 'leistungsart' mit 'klausur' oder 'pruefung' endet. Bei Prüfungenund Klausuren handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0020-KeineSWSBeiPruefungen</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:unbedenklichkeitsvermerk) or not(exists(*:unbedenklichkeitsvermerk))) else not(exists(*:unbedenklichkeitsvermerk))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0021 Der Unbedenklichkeitsvermerk darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0021-UnbedenklichkeitNurBeiStudienfach</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:angestrebterAbschluss) or not(exists(*:angestrebterAbschluss))) else not(exists(*:angestrebterAbschluss))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0022 Der angestrebte Abschluss darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0022-angestrebterAbschluss</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:fachsemester) or not(exists(*:fachsemester))) else not(exists(*:fachsemester))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0023 Das Fachsemester darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0023-fachsemester</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselISCED2011) or not(exists(*:schluesselISCED2011))) else not(exists(*:schluesselISCED2011))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0024 Der Schlüssel nach ISCED2011 darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0024-schluesselISCED2011</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselISCEDF2013) or not(exists(*:schluesselISCEDF2013))) else not(exists(*:schluesselISCEDF2013))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0025 Der Schlüssel nach ISCEDF2013 darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0025-schluesselISCEDF2013</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselEQF) or not(exists(*:schluesselEQF))) else not(exists(*:schluesselEQF))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0026 Der Schlüssel nach EQF darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0026-schluesselEQF</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:leistungsbenotungsstatus)) else (not(exists(*:leistungsbenotungsstatus)))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0027 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll der Leistungsbenotungsstatus angegeben werden.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0027-nurWennBenotetLeistungsbenotungsstatus</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:benotung)) else (not(exists(*:benotung)))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0028 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll die Benotung angegeben werden.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0028-nurWennBenotetNote</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="((ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK)) or exists(*:beschreibung/*:modulbeschreibungNachKMK))) or (not(ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK))))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0029 Nur wenn der Wert der Codeliste Leistungsart auf 'modul' gesetzt wurde, soll die Beschreibung nach den Vorgaben der KMK ausgefüllt werden.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0029-nurWennModulModulbeschreibungNachKMK</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesselDESTATIS) or not(exists(*:faecherschluesselDESTATIS))) else not(exists(*:faecherschluesselDESTATIS))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0031 Der Fächerschlüssel nach Destatis darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0031-faecherschluesselDESTATIS</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates select="*" mode="M37"/>
-   </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M37"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M37">
-      <xsl:apply-templates select="*" mode="M37"/>
-   </xsl:template>
-   <!--PATTERN -->
-   <!--RULE -->
-   <xsl:template match="xhs:transcriptOfRecords//xhs:leistung"
-                 priority="1000"
-                 mode="M38">
-
-		<!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/leistungsartCode/code/text(), 'klausur') or  ends-with(*:leistungsart/leistungsartCode/code/text(), 'pruefung')) then not(exists(*:beschreibung/*:umfangInSWS)) else (not(exists(*:beschreibung/*:umfangInSWS)) or exists(*:beschreibung/*:umfangInSWS))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0020 Der Wert 'UmfangInSWS' darf nicht angegeben werden, wenn der Inhalt des Codewertes von 'leistungsart' mit 'klausur' oder 'pruefung' endet. Bei Prüfungenund Klausuren handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0020-KeineSWSBeiPruefungen</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:unbedenklichkeitsvermerk) or not(exists(*:unbedenklichkeitsvermerk))) else not(exists(*:unbedenklichkeitsvermerk))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0021 Der Unbedenklichkeitsvermerk darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0021-UnbedenklichkeitNurBeiStudienfach</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:angestrebterAbschluss) or not(exists(*:angestrebterAbschluss))) else not(exists(*:angestrebterAbschluss))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0022 Der angestrebte Abschluss darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0022-angestrebterAbschluss</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:fachsemester) or not(exists(*:fachsemester))) else not(exists(*:fachsemester))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0023 Das Fachsemester darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0023-fachsemester</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselISCED2011) or not(exists(*:schluesselISCED2011))) else not(exists(*:schluesselISCED2011))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0024 Der Schlüssel nach ISCED2011 darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0024-schluesselISCED2011</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselISCEDF2013) or not(exists(*:schluesselISCEDF2013))) else not(exists(*:schluesselISCEDF2013))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0025 Der Schlüssel nach ISCEDF2013 darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0025-schluesselISCEDF2013</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselEQF) or not(exists(*:schluesselEQF))) else not(exists(*:schluesselEQF))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0026 Der Schlüssel nach EQF darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0026-schluesselEQF</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:leistungsbenotungsstatus)) else (not(exists(*:leistungsbenotungsstatus)))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0027 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll der Leistungsbenotungsstatus angegeben werden.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0027-nurWennBenotetLeistungsbenotungsstatus</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:benotung)) else (not(exists(*:benotung)))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0028 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll die Benotung angegeben werden.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0028-nurWennBenotetNote</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="((ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK)) or exists(*:beschreibung/*:modulbeschreibungNachKMK))) or (not(ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK))))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0029 Nur wenn der Wert der Codeliste Leistungsart auf 'modul' gesetzt wurde, soll die Beschreibung nach den Vorgaben der KMK ausgefüllt werden.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0029-nurWennModulModulbeschreibungNachKMK</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesselDESTATIS) or not(exists(*:faecherschluesselDESTATIS))) else not(exists(*:faecherschluesselDESTATIS))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0031 Der Fächerschlüssel nach Destatis darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0031-faecherschluesselDESTATIS</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates select="*" mode="M38"/>
-   </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M38"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M38">
-      <xsl:apply-templates select="*" mode="M38"/>
-   </xsl:template>
-   <!--PATTERN -->
-   <!--RULE -->
-   <xsl:template match="xhs:hochschulabschlusszeugnis//xhs:leistungsbenotungsstatus"
-                 priority="1000"
-                 mode="M39">
-
-		<!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0030 Wenn und nur wenn der Wert der Codeliste Leistungsbenotungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden. </xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0030-WertNichtInListeLeistungsbenotungsstatus</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates select="*" mode="M39"/>
-   </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M39"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M39">
-      <xsl:apply-templates select="*" mode="M39"/>
-   </xsl:template>
-   <!--PATTERN -->
-   <!--RULE -->
-   <xsl:template match="xhs:transcriptOfRecords//xhs:leistungsbenotungsstatus"
-                 priority="1000"
-                 mode="M40">
-
-		<!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0030 Wenn und nur wenn der Wert der Codeliste Leistungsbenotungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden. </xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0030-WertNichtInListeLeistungsbenotungsstatus</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates select="*" mode="M40"/>
-   </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M40"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M40">
-      <xsl:apply-templates select="*" mode="M40"/>
-   </xsl:template>
-   <!--PATTERN -->
-   <!--RULE -->
-   <xsl:template match="xhs:rentenbescheinigung" priority="1000" mode="M41">
-
-		<!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="not(exists(*:rentenversicherungsnummer/gueltigkeit/ende))"/>
-         <xsl:otherwise>
-            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
-               <xsl:text>XHS-0032 Die Rentenversicheurngsnummer ist ab Geburt ein Leben lang gültig. Ablaufdatum darf nicht angezeigt werden.</xsl:text>
-               <xsl:text>
-ID:SCH-XHS-0032-keinAblaufdatumRentenversicherungsnummer</xsl:text>
-            </xsl:message>
-         </xsl:otherwise>
-      </xsl:choose>
       <xsl:apply-templates select="*" mode="M41"/>
    </xsl:template>
    <xsl:template match="text()" priority="-1" mode="M41"/>
    <xsl:template match="@*|node()" priority="-2" mode="M41">
       <xsl:apply-templates select="*" mode="M41"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:hochschulabschlusszeugnis/leistung//note"
+                 priority="1000"
+                 mode="M42">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(matches(., '^\d+,\d+$'))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0018 Das Feld Note muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0018-Benotungsschema</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M42"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M42"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M42">
+      <xsl:apply-templates select="*" mode="M42"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:transcriptOfRecords//note" priority="1000" mode="M43">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(matches(., '^\d+,\d+$'))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0018 Das Feld Note muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0018-Benotungsschema</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M43"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M43"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M43">
+      <xsl:apply-templates select="*" mode="M43"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:hochschulabschlusszeugnis//note"
+                 priority="1000"
+                 mode="M44">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(matches(., '^\d+,\d+$'))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0019 Das Feld Note muss in dem Format "Zahl,Komma,Zahl" angegeben werden. Ein Beispiel hierfür wäre "2,5".</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0019-BenotungsschemaGesamtnoteundAbschlussarbeit</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M44"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M44"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M44">
+      <xsl:apply-templates select="*" mode="M44"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:hochschulabschlusszeugnis//leistung"
+                 priority="1000"
+                 mode="M45">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/leistungsartCode/code/text(), 'klausur') or  ends-with(*:leistungsart/leistungsartCode/code/text(), 'pruefung')) then not(exists(*:beschreibung/*:umfangInSWS)) else (not(exists(*:beschreibung/*:umfangInSWS)) or exists(*:beschreibung/*:umfangInSWS))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0020 Der Wert "UmfangInSWS" darf nicht angegeben werden, wenn der Inhalt des Codewertes von "leistungsart" mit "klausur" oder "pruefung" endet. Bei Prüfungen handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0020-KeineSWSBeiPruefungen</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:unbedenklichkeitsvermerk) or not(exists(*:unbedenklichkeitsvermerk))) else not(exists(*:unbedenklichkeitsvermerk))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0021 Der Unbedenklichkeitsvermerk darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0021-UnbedenklichkeitNurBeiStudienfach</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:angestrebterAbschluss) or not(exists(*:angestrebterAbschluss))) else not(exists(*:angestrebterAbschluss))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0022 Der angestrebte Abschluss darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0022-angestrebterAbschluss</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:fachsemester) or not(exists(*:fachsemester))) else not(exists(*:fachsemester))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0023 Das Fachsemester darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0023-fachsemester</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselISCED2011) or not(exists(*:schluesselISCED2011))) else not(exists(*:schluesselISCED2011))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0024 Der Schlüssel nach ISCED2011 darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0024-schluesselISCED2011</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselISCEDF2013) or not(exists(*:schluesselISCEDF2013))) else not(exists(*:schluesselISCEDF2013))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0025 Der Schlüssel nach ISCEDF2013 darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0025-schluesselISCEDF2013</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselEQF) or not(exists(*:schluesselEQF))) else not(exists(*:schluesselEQF))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0026 Der Schlüssel nach EQF darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0026-schluesselEQF</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:leistungsbenotungsstatus)) else (not(exists(*:leistungsbenotungsstatus)))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0027 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll der Leistungsbenotungsstatus angegeben werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0027-nurWennBenotetLeistungsbenotungsstatus</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:benotung)) else (not(exists(*:benotung)))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0028 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll die Benotung angegeben werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0028-nurWennBenotetNote</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="((ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK)) or exists(*:beschreibung/*:modulbeschreibungNachKMK))) or (not(ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK))))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0029 Nur wenn der Wert der Codeliste Leistungsart auf 'modul' gesetzt wurde, soll die Beschreibung nach den Vorgaben der KMK ausgefüllt werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0029-nurWennModulModulbeschreibungNachKMK</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesseDESTATIS) or not(exists(*:faecherschluesseDESTATIS))) else not(exists(*:faecherschluesseDESTATIS))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0031 Der Fächerschlüssel nach DESTATIS darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0031-faecherschluesselDESTATIS</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M45"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M45"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M45">
+      <xsl:apply-templates select="*" mode="M45"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:transcriptOfRecords//leistung"
+                 priority="1000"
+                 mode="M46">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/leistungsartCode/code/text(), 'klausur') or  ends-with(*:leistungsart/leistungsartCode/code/text(), 'pruefung')) then not(exists(*:beschreibung/*:umfangInSWS)) else (not(exists(*:beschreibung/*:umfangInSWS)) or exists(*:beschreibung/*:umfangInSWS))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0020 Der Wert "UmfangInSWS" darf nicht angegeben werden, wenn der Inhalt des Codewertes von "leistungsart" mit "klausur" oder "pruefung" endet. Bei Prüfungen handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0020-KeineSWSBeiPruefungen</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:unbedenklichkeitsvermerk) or not(exists(*:unbedenklichkeitsvermerk))) else not(exists(*:unbedenklichkeitsvermerk))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0021 Der Unbedenklichkeitsvermerk darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0021-UnbedenklichkeitNurBeiStudienfach</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:angestrebterAbschluss) or not(exists(*:angestrebterAbschluss))) else not(exists(*:angestrebterAbschluss))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0022 Der angestrebte Abschluss darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0022-angestrebterAbschluss</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:fachsemester) or not(exists(*:fachsemester))) else not(exists(*:fachsemester))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0023 Das Fachsemester darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0023-fachsemester</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselISCED2011) or not(exists(*:schluesselISCED2011))) else not(exists(*:schluesselISCED2011))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0024 Der Schlüssel nach ISCED2011 darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0024-schluesselISCED2011</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselISCEDF2013) or not(exists(*:schluesselISCEDF2013))) else not(exists(*:schluesselISCEDF2013))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0025 Der Schlüssel nach ISCEDF2013 darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0025-schluesselISCEDF2013</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:schluesselEQF) or not(exists(*:schluesselEQF))) else not(exists(*:schluesselEQF))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0026 Der Schlüssel nach EQF darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0026-schluesselEQF</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:leistungsbenotungsstatus)) else (not(exists(*:leistungsbenotungsstatus)))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0027 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll der Leistungsbenotungsstatus angegeben werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0027-nurWennBenotetLeistungsbenotungsstatus</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:benotung)) else (not(exists(*:benotung)))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0028 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll die Benotung angegeben werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0028-nurWennBenotetNote</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="((ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK)) or exists(*:beschreibung/*:modulbeschreibungNachKMK))) or (not(ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK))))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0029 Nur wenn der Wert der Codeliste Leistungsart auf 'modul' gesetzt wurde, soll die Beschreibung nach den Vorgaben der KMK ausgefüllt werden.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0029-nurWennModulModulbeschreibungNachKMK</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="if(ends-with(*:leistungsart/code/code/text(), 'studienfach') or ends-with(*:leistungsart/code/code/text(), 'studiengang')) then (exists(*:faecherschluesseDESTATIS) or not(exists(*:faecherschluesseDESTATIS))) else not(exists(*:faecherschluesseDESTATIS))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0031 Der Fächerschlüssel nach DESTATIS darf nur angegeben werden, wenn der Wert der Codeliste Leistungsart auf 'studienfach' oder 'studiengang' gesetzt wurde.</xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0031-faecherschluesselDESTATIS</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M46"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M46"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M46">
+      <xsl:apply-templates select="*" mode="M46"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:hochschulabschlusszeugnis//leistungsbenotungsstatus"
+                 priority="1000"
+                 mode="M47">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0030 Wenn und nur wenn der Wert der Codeliste Leistungsbenotungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden. </xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0030-WertNichtInListeLeistungsbenotungsstatus</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M47"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M47"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M47">
+      <xsl:apply-templates select="*" mode="M47"/>
+   </xsl:template>
+   <!--PATTERN -->
+   <!--RULE -->
+   <xsl:template match="xhs:transcriptOfRecords//leistungsbenotungsstatus"
+                 priority="1000"
+                 mode="M48">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))"/>
+         <xsl:otherwise>
+            <xsl:message xmlns:iso="http://purl.oclc.org/dsdl/schematron">
+               <xsl:text>XHS-0030 Wenn und nur wenn der Wert der Codeliste Leistungsbenotungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden. </xsl:text>
+               <xsl:text>
+ID:SCH-XHS-0030-WertNichtInListeLeistungsbenotungsstatus</xsl:text>
+            </xsl:message>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*" mode="M48"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M48"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M48">
+      <xsl:apply-templates select="*" mode="M48"/>
    </xsl:template>
 </xsl:stylesheet>

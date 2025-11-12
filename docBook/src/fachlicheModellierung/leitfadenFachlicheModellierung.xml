@@ -6,27 +6,9 @@
 ]>
 <chapter version="5" xml:id="spezifikation.leitfadenFachlicheModellierung" xml:lang="de" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Leitfaden zur Fachlichen Modellierung: Wie lese ich dieses Dokument?</title>
-    <para> Das Teilmodul XHochschule ist in verschiedener Weise mit anderen Standardisierungsvorhaben
-        verknüpft. Grundlegende Designentscheidungen des Standards XHochschule lassen sich aus der 
-        <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#%5B%7B%22num%22%3A121%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C70.866%2C727.937%2Cnull%5D"
-            >Spezifikation XBildung</link> entnehmen. Um den folgenden Abschnitt zu verstehen, sind dabei zwei Aspekte hervorzuheben: </para>
-    <orderedlist>
-        <listitem>
-            <para>Die Nachnutzung von Komponenten aus dem XÖV-Baukasten der Koordinierungsstelle für
-                IT-Standards (KOSIT): Diese enthalten grundlegende Klassen des Datenaustauschs, die
-                für alle XÖV-Standards nutzbar und für XHochschule spezifisch beschränkt oder
-                erweitert werden. Ein Beispiel hierfür ist die Klasse „NatuerlichePerson“, die
-                Angaben generellen Charakters enthält.</para>
-        </listitem>
-        <listitem>
-            <para>Die gemeinsame Basis von XBildung für alle XÖV-Vorhaben im Bildungsbereich:
-                XHochschule verwendet gemeinsam mit anderen Teilmodulen semantisch übergeordnete
-                Klassen, die für XHochschule spezifisch beschränkt oder erweitert werden. Ein
-                Beispiel hierfür ist die Klasse „Benotung“, die für alle Bereiche der Bildung
-                nutzbar ist. </para>
-        </listitem>
-    </orderedlist>
-    <para> Diese eingebundenen externen Modelle werden in <xref linkend="externe.modelle"
+    <para>Das Teilmodul XHochschule ist in verschiedener Weise mit anderen
+        Standardisierungsvorhaben verknüpft. 
+        Diese eingebundenen externen Modelle werden in <xref linkend="externe.modelle"
         role="AbschnittNummer"/> aufgelistet und genauer beschrieben. <xref linkend="spezifikation.xoevKernkomponenten"
             role="AbschnittNummer"/> enthält die im Fachmodell eingebundenen XÖV-Kernkomponenten. Weiterhin werden bei
         XHochschule für eine Reihe von Angaben kontrollierte Vokabulare mittels Codelisten

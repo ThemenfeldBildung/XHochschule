@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Immatrikulationsbescheinigung gemäß §9 BAfoeG nach XHochschule Version 1.2. Nichtnormative Beispielinstanz. Veranschaulicht ein exemplarisches Dokument der beispielhaften studierenden Person Amélie Duval.
+    Version: XHochschule 1.2 
+    Letzte Aktualisierung: 11.11.2025
+    Lizenz: CC BY 4.0 „]init[ AG im Auftrag des Landes Sachsen-Anhalt" -->
+<xhs:immatrikulationsbescheinigungBAfoeGP9
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xhs="http://xhochschule.de/def/xhochschule/1.2/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.2/xsd">
+    <xhs:titel xml:lang="en-US">Immatrikulationsbescheinigung nach § 9 BAföG</xhs:titel>
+    <xhs:ausstellungsdatum>2024-10-01</xhs:ausstellungsdatum>
+    <xhs:gueltigkeitsdatum>2024-10-01</xhs:gueltigkeitsdatum>
+    <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+        listVersionID="20240925-0">
+        <code>DEU</code>
+    </xhs:sprache>
+    <xhs:ausstellendeHochschule>
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur"
+            listVersionID="listVersionID1">
+            <code>1440</code>
+        </xhs:hochschulsignatur>
+        <xhs:name xml:lang="de-DE">Technische Universität Clausthal</xhs:name>
+    </xhs:ausstellendeHochschule>
+    <xhs:studierender>
+        <xhs:name>
+            <xhs:familienname>
+                <xhs:name>Duval</xhs:name>
+            </xhs:familienname>
+            <xhs:vorname>
+                <xhs:name>Amélie</xhs:name>
+            </xhs:vorname>
+        </xhs:name>
+        <xhs:geburt>
+            <xhs:datum>
+                <xbd:jahrMonatTag>2002-04-28</xbd:jahrMonatTag>
+            </xhs:datum>
+            <xhs:geburtsort>
+                <xbd:ort>Marseille</xbd:ort>
+                <xbd:staat
+                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
+                    listVersionID="listVersionID2">
+                    <code>129</code>
+                    <name>Frankreich</name>
+                </xbd:staat>
+            </xhs:geburtsort>
+        </xhs:geburt>
+        <xhs:ersteinschreibung>2020-10-01</xhs:ersteinschreibung>
+    </xhs:studierender>
+    <xhs:studienfach>
+        <xhs:name xml:lang="de-DE">Informatik</xhs:name>
+        <xhs:angestrebterAbschluss xml:lang="de-DE">Master of Science</xhs:angestrebterAbschluss>
+        <xhs:schluesselISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011"
+            listVersionID="ISCED-2011">
+            <code>747</code>
+        </xhs:schluesselISCED2011>
+        <xhs:schluesselISCEDF2013
+            listURI="urn:xbildung-de:publicationsoffice-eu:taxonomie:isced-f-2013"
+            listVersionID="20240110-0">
+            <code>0610</code>
+        </xhs:schluesselISCEDF2013>
+        <xhs:schluesselEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf"
+            listVersionID="20230118-0">
+            <code>6</code>
+        </xhs:schluesselEQF>
+        <xhs:fachsemester>2</xhs:fachsemester>
+        <xhs:unbedenklichkeitsvermerk xml:lang="de-DE">Im Studienfach Informatik wurde keine nach
+            der Prüfungsordnung erforderliche Studienleistung/Prüfung endgültig nicht bestanden und
+            der Prüfungsanspruch nicht verloren.</xhs:unbedenklichkeitsvermerk>
+    </xhs:studienfach>
+    <xhs:lernzeitmodell>
+        <xhs:code listURI="urn:xbildung-de:xbildung:codeliste:lernzeitmodell"
+            listVersionID="2025-02-04">
+            <code>http://xbildung.de/def/xbildung/2025-02-04/code/lernzeitmodell/vollzeit</code>
+        </xhs:code>
+    </xhs:lernzeitmodell>
+    <xhs:studienzeitraum>
+        <xhs:zeitraum>
+            <xhs:beginn>2024-10-01</xhs:beginn>
+            <xhs:ende>2025-03-31</xhs:ende>
+        </xhs:zeitraum>
+        <xhs:semesterbezeichnung xml:lang="en-US">Wintersemester 2024/2025</xhs:semesterbezeichnung>
+    </xhs:studienzeitraum>
+    <xhs:immatrikulationsstatus>
+        <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:immatrikulationsstatus"
+            listVersionID="1.0">
+            <code>http://xhochschule.de/def/xhochschule/1.0/code/immatrikulationsstatus/immatrikuliert</code>
+        </xhs:code>
+    </xhs:immatrikulationsstatus>
+    <xhs:beurlaubungsstatus>
+        <xhs:code>
+            <code>http://xhochschule.de/def/xhochschule/1.0/code/beurlaubungsstatus/nicht_beurlaubt</code>
+        </xhs:code>
+    </xhs:beurlaubungsstatus>
+</xhs:immatrikulationsbescheinigungBAfoeGP9>

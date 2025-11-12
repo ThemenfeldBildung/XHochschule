@@ -485,8 +485,7 @@ Dabei deckt die im Element Dokument enthaltene Klasse "ausstellung" den Abschnit
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Bezieht sich auf Abschnitt 4.1. Studienform.</para>
-</entry>
+               <entry namest="indent1" nameend="page"><para>Bezieht sich auf Abschnitt 4.1. Studienform.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -588,8 +587,7 @@ Dabei deckt die im Element Dokument enthaltene Klasse "ausstellung" den Abschnit
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Bezieht sich auf Abschnitt 5.1. Zugang zu weiterführenden Studien.</para>
-</entry>
+               <entry namest="indent1" nameend="page"><para>Bezieht sich auf Abschnitt 5.1. Zugang zu weiterführenden Studien.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>

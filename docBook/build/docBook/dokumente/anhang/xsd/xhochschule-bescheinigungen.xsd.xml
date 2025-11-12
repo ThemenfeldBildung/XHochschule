@@ -24,11 +24,11 @@
          </row>
          <row>
             <entry>Version</entry>
-            <entry>1.1</entry>
+            <entry>1.2</entry>
          </row>
          <row>
             <entry>Namensraum</entry>
-            <entry>http://xhochschule.de/def/xhochschule/1.1/xsd</entry>
+            <entry>http://xhochschule.de/def/xhochschule/1.2/xsd</entry>
          </row>
          <row>
             <entry>Präfix</entry>
@@ -36,7 +36,7 @@
          </row>
          <row>
             <entry>SchemaLocation</entry>
-            <entry>http://xhochschule.de/def/xhochschule/1.1/xsd/xhochschule-bescheinigungen.xsd</entry>
+            <entry>http://xhochschule.de/def/xhochschule/1.2/xsd/xhochschule-bescheinigungen.xsd</entry>
          </row>
          <row>
             <entry>Inkludierte XSDs</entry>
@@ -59,7 +59,7 @@
                      <para>din-norm-91379-datatypes.xsd (din91379 : urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08)</para>
                   </listitem>
                   <listitem>
-                     <para>xbildung-baukasten.xsd (xbd : http://xbildung.de/def/xbildung/1.1/xsd)</para>
+                     <para>xbildung-baukasten.xsd (xbd : http://xbildung.de/def/xbildung/1.2/xsd)</para>
                   </listitem>
                </itemizedlist>
             </entry>

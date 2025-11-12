@@ -1,100 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Transcript of Records nach XHochschule Version 1.1. Nichtnormative Beispielinstanz.
-    Version: XHochschule 1.1 
-    Letzte Aktualisierung: 25.02.2025
-    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
-<xhs:transcriptOfRecords xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
+<!-- Transcript of Records nach XHochschule Version 1.2. Nichtnormative Beispielinstanz. Veranschaulicht ein exemplarisches Dokument der beispielhaften studierenden Person Amélie Duval.
+    Version: XHochschule 1.2 
+    Letzte Aktualisierung: 11.11.2025
+    Lizenz: CC BY 4.0 „]init[ AG im Auftrag des Landes Sachsen-Anhalt -->
+<xhs:transcriptOfRecords xmlns:xhs="http://xhochschule.de/def/xhochschule/1.2/xsd"
     xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
-    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.1/xsd">
-    <xhs:titel xml:lang="de-DE">Transcript of Records</xhs:titel>
-    <xhs:ausstellungsdatum>2025-02-13</xhs:ausstellungsdatum>
-    <xhs:gueltigkeitsdatum>2035-02-12</xhs:gueltigkeitsdatum>
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.2/xsd">
+    <xhs:titel>Transcript of Records</xhs:titel>
+    <xhs:ausstellungsdatum>2025-03-30</xhs:ausstellungsdatum>
+    <xhs:gueltigkeitsdatum>2025-03-30</xhs:gueltigkeitsdatum>
     <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
         listVersionID="20240925-0">
         <code>DEU</code>
     </xhs:sprache>
-    <!-- Angaben zur studierenden Person -->
     <xhs:studierender>
         <xhs:nameNatuerlichePerson>
             <xhs:familienname>
-                <xhs:name>Erika</xhs:name>
+                <xhs:name>Amélie</xhs:name>
             </xhs:familienname>
             <xhs:vorname>
-                <xhs:name>Mustermann</xhs:name>
+                <xhs:name>Duval</xhs:name>
             </xhs:vorname>
         </xhs:nameNatuerlichePerson>
         <xhs:geburt>
             <xhs:datum>
-                <xbd:jahrMonatTag>1994-05-04</xbd:jahrMonatTag>
+                <xbd:jahrMonatTag>2002-04-28</xbd:jahrMonatTag>
             </xhs:datum>
             <xhs:geburtsort>
-                <xbd:ort>Hamburg</xbd:ort>
+                <xbd:ort>Marseille</xbd:ort>
                 <xbd:staat
                     listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
-                    listVersionID="listVersionID2">
-                    <code>000</code>
-                    <name>Bundesrepublik Deutschland</name>
+                    listVersionID="listVersionID1">
+                    <code>129</code>
+                    <name>Frankreich</name>
                 </xbd:staat>
             </xhs:geburtsort>
         </xhs:geburt>
         <xhs:identifikationsnummer>
             <xhs:id>86095742719</xhs:id>
             <xhs:gueltigkeit>
-                <xhs:beginn>1998-05-04</xhs:beginn>
+                <xhs:beginn>2002-04-28</xhs:beginn>
             </xhs:gueltigkeit>
             <xhs:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuernID)</xhs:beschreibung>
-        </xhs:identifikationsnummer>
-        <xhs:identifikationsnummer>
-            <xhs:id>99-999-999-999-999</xhs:id>
-            <xhs:gueltigkeit>
-                <xhs:beginn>2010-08-27</xhs:beginn>
-            </xhs:gueltigkeit>
-            <xhs:beschreibung>OZG-Landeskontonummer-ID der studierenden Person</xhs:beschreibung>
         </xhs:identifikationsnummer>
         <xhs:matrikelnummer>
             <xhs:id>123546789</xhs:id>
             <xhs:gueltigkeit>
-                <xhs:beginn>2020-10-01</xhs:beginn>
-                <xhs:ende>2024-05-04</xhs:ende>
-            </xhs:gueltigkeit>
-            <xhs:beschreibung>Matrikelnummer der Hochschule für angewandte Wissenschaften Weihenstephan-Triesdorf in Triesdorf</xhs:beschreibung>
+                <xhs:beginn>2023-10-01</xhs:beginn>
+              </xhs:gueltigkeit>
+            <xhs:beschreibung>Matrikelnummer an der Technischen Universität Clausthal</xhs:beschreibung>
         </xhs:matrikelnummer>
         <xhs:ersteinschreibung>2020-10-01</xhs:ersteinschreibung>
-        <xhs:hochschulsemester>7</xhs:hochschulsemester>
+        <xhs:hochschulsemester>9</xhs:hochschulsemester>
         <xhs:urlaubssemester>1</xhs:urlaubssemester>
     </xhs:studierender>
-    <!-- Angaben zur ausstellenden Hochschule -->
     <xhs:ausstellendeHochschule>
         <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur"
             listVersionID="listVersionID1">
-            <code>0180</code>
+            <code>1440</code>
         </xhs:hochschulsignatur>
-        <xhs:name xml:lang="de-DE">Charité - Universitätsmedizin Berlin</xhs:name>
+        <xhs:name xml:lang="de-DE">Technische Universität Clausthal</xhs:name>
     </xhs:ausstellendeHochschule>
-    <!-- Angaben zum Studium -->
     <xhs:leistung>
-        <xhs:bezeichnung xml:lang="de-DE">Evidenzbasiertes Arbeiten in der Pflege</xhs:bezeichnung>
+        <xhs:bezeichnung xml:lang="de-DE">Informatik M.Sc.</xhs:bezeichnung>
         <xhs:leistungsart>
             <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
                 listVersionID="1.0">
-                <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul</code>
+                <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studiengang</code>
             </xhs:code>
         </xhs:leistungsart>
         <xhs:id>
-            <xhs:id>P12</xhs:id>
-            <xhs:gueltigkeit>
-                <xhs:beginn>2015-08-20</xhs:beginn>
-            </xhs:gueltigkeit>
-            <xhs:beschreibung>Modulnummer des Moduls in der aktuellen Studienordnung vom 20.08.2015.</xhs:beschreibung>
+            <xhs:id>INF-M-2020</xhs:id>
+            <xhs:beschreibung>Studiengangskennziffer</xhs:beschreibung>
         </xhs:id>
         <xhs:beschreibung>
-            <xhs:beschreibung xml:lang="de-DE">Das Modul "Evidenzbasiertes Arbeiten in der Pflege" ist ein Modul innerhalb der Grundlagen der Pflegewissenschaft und -forschung</xhs:beschreibung>
-            <xhs:versionDesModulhandbuchs xml:lang="de-DE">P_20082015</xhs:versionDesModulhandbuchs>
-            <xhs:weitereInformationen>https://www.charite.de/fileadmin/user_upload/portal_relaunch/studium/dokumente_downloads/Modulu%CC%88bersicht_BSc_Pflege_Charite%CC%81.pdf</xhs:weitereInformationen>
+            <xhs:beschreibung xml:lang="de-DE">Der Studiengang richtet sich an Absolventinnen und Absolventen von Bachelor-Studiengängen der Informatik oder eng verwandter Fächer wie Technische Informatik und Software Engineering. Er stellt zudem die konsekutive Fortsetzung des Bachelor-Studiengangs Informatik an der TU Clausthal dar.</xhs:beschreibung>
+            <xhs:versionDesModulhandbuchs xml:lang="de-DE">MHB-M-I-20-02</xhs:versionDesModulhandbuchs>
+            <xhs:weitereInformationen>https://www.studiengaenge.tu-clausthal.de/fileadmin/Sites/Studiengaenge/Documents/Studiengaenge/Modulhandbuecher/Neu_in_2021-22/MHB_Informatik_M.Sc._2020_16_12_2021.pdf</xhs:weitereInformationen>
         </xhs:beschreibung>
         <xhs:leistungsstatus>
             <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
@@ -110,178 +95,491 @@
         </xhs:leistungsbenotungsstatus>
         <xhs:benotet>true</xhs:benotet>
         <xhs:benotung>
-            <xbd:note>2,0</xbd:note>
-            <xbd:wortbezeichnung xml:lang="de-DE">Zwei</xbd:wortbezeichnung>
+            <xbd:note>1,3</xbd:note>
+            <xbd:wortbezeichnung xml:lang="de-DE">Sehr gut</xbd:wortbezeichnung>
             <xbd:bewertungsschemaNote>
-                <xbd:schemaURI>https://www.charite.de/bewertungsschema</xbd:schemaURI>
-                <xbd:besteBewertung>1</xbd:besteBewertung>
-                <xbd:bestandenAbBewertung>4</xbd:bestandenAbBewertung>
-                <xbd:schlechtesteBewertung>6</xbd:schlechtesteBewertung>
+                <xbd:schemaURI>https://tu-clausthal.atlassian.net/wiki/spaces/VER/pages/27461201/6.10.01+Allgemeine+Pr+fungsordnung+der+Technischen+Universit+t+Clausthal+in+der+Fassung+der+4.+nderung+vom+09.11.2021_Mitt.TUC+2021+Seite+678</xbd:schemaURI>
+                <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
             </xbd:bewertungsschemaNote>
         </xhs:benotung>
-        <xhs:erforderlicheLeistungspunkteECTS>2</xhs:erforderlicheLeistungspunkteECTS>
-        <xhs:erbrachteLeistungspunkteECTS>2</xhs:erbrachteLeistungspunkteECTS>
+        <xhs:erforderlicheLeistungspunkteECTS>120</xhs:erforderlicheLeistungspunkteECTS>
+        <xhs:erbrachteLeistungspunkteECTS>120</xhs:erbrachteLeistungspunkteECTS>
         <xhs:absolvierteVersuche>1</xhs:absolvierteVersuche>
-        <xhs:lehrendeOderPruefende xml:lang="de-DE">Herr Dr. Müller</xhs:lehrendeOderPruefende>
-        <xhs:datumDerLeistungserbringung>2025-01-13</xhs:datumDerLeistungserbringung>
-        <xhs:semesterDerLeistungserbringung>
-            <xhs:zeitraum>
-                <xhs:beginn>2024-10-01</xhs:beginn>
-                <xhs:ende>2025-02-28</xhs:ende>
-            </xhs:zeitraum>
-            <xhs:semesterbezeichnung xml:lang="de-DE">Wintersemester 2024/25</xhs:semesterbezeichnung>
-        </xhs:semesterDerLeistungserbringung>
         <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
             listVersionID="20240925-0">
-            <code>DEU</code>
+            <code>https://publications.europa.eu/resource/authority/language/DEU</code>
         </xhs:sprache>
-   <xhs:leistung>
-       <xhs:bezeichnung xml:lang="de-DE">Unterstützendes Praktikum</xhs:bezeichnung>
-       <xhs:leistungsart>
-           <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
-               listVersionID="1.0">
-               <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/praktikum</code>
-           </xhs:code>
-       </xhs:leistungsart>
-       <xhs:beschreibung>
-           <xhs:beschreibung xml:lang="de-DE">Dieses begleitende Praktikum wird unterstützend zum Modul "Evidenzbasiertes Arbeiten in der Pflege" empfohlen.</xhs:beschreibung>
-           <xhs:versionDesModulhandbuchs xml:lang="de-DE">P_20082015</xhs:versionDesModulhandbuchs>
-           <xhs:weitereInformationen>https://www.charite.de/fileadmin/user_upload/portal_relaunch/studium/dokumente_downloads/Modulu%CC%88bersicht_BSc_Pflege_Charite%CC%81.pdf</xhs:weitereInformationen>
-       </xhs:beschreibung>
-       <xhs:leistungsstatus>
-           <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
-               listVersionID="1.0">
-               <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/~wert_nicht_in_liste</code>
-           </xhs:code>
-           <xhs:nichtGelisteterWert>Praktikum erfolgreich absolviert.</xhs:nichtGelisteterWert>
-       </xhs:leistungsstatus>
-       <xhs:benotet>false</xhs:benotet>
-       <xhs:erforderlicheLeistungspunkteECTS>3</xhs:erforderlicheLeistungspunkteECTS>
-       <xhs:erbrachteLeistungspunkteECTS>2</xhs:erbrachteLeistungspunkteECTS>
-       <xhs:absolvierteVersuche>0</xhs:absolvierteVersuche>
-       <xhs:lehrendeOderPruefende xml:lang="de-DE">Herr Dr. Prof. Lehmann</xhs:lehrendeOderPruefende>
-       <xhs:datumDerLeistungserbringung>2025-06-12</xhs:datumDerLeistungserbringung>
-       <xhs:semesterDerLeistungserbringung>
-           <xhs:zeitraum>
-               <xhs:beginn>2025-03-01</xhs:beginn>
-               <xhs:ende>2025-09-30</xhs:ende>
-           </xhs:zeitraum>
-           <xhs:semesterbezeichnung xml:lang="de-DE">Sommersemester 2025</xhs:semesterbezeichnung>
-       </xhs:semesterDerLeistungserbringung>
-       <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-           listVersionID="20240925-0">
-           <code>DEU</code>
-       </xhs:sprache>
-   </xhs:leistung>
+        <!-- 1. Modul -->
+        <xhs:leistung>
+            <xhs:bezeichnung xml:lang="de-DE">Vertiefung Datenbanken</xhs:bezeichnung>
+            <xhs:leistungsart>
+                <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul</code>
+                </xhs:code>
+            </xhs:leistungsart>
+            <xhs:id>
+                <xhs:id/>
+                <!-- keine Modulnummer im Modulhandbuch vorhanden -->
+                <xhs:beschreibung>Modulnummer</xhs:beschreibung>
+            </xhs:id>
+            <xhs:beschreibung>
+                <xhs:beschreibung xml:lang="de-DE">Nach erfolgreichem Anschluss dieses Moduls beherrschen die Studierenden grundlegende Methoden für die 
+Auswahl, Entwicklung und den Einsatz moderner Datenbanksysteme in leistungskritischen Anwendungen.</xhs:beschreibung>
+                <xhs:umfangInSWS>4</xhs:umfangInSWS>
+            </xhs:beschreibung>
+            <xhs:leistungsstatus>
+                <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden</code>
+                </xhs:code>
+            </xhs:leistungsstatus>
+            <xhs:leistungsbenotungsstatus>
+                <xhs:code
+                    listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
+                </xhs:code>
+            </xhs:leistungsbenotungsstatus>
+            <xhs:benotet>true</xhs:benotet>
+            <xhs:benotung>
+                <xbd:note>1,7</xbd:note>
+                <xbd:wortbezeichnung xml:lang="de-DE">Gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                    <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                    <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
+                </xbd:bewertungsschemaNote>
+            </xhs:benotung>
+            <xhs:erbrachteLeistungspunkteECTS>6</xhs:erbrachteLeistungspunkteECTS>
+            <xhs:absolvierteVersuche>1</xhs:absolvierteVersuche>
+            <xhs:lehrendeOderPruefende xml:lang="de-DE">Dr. Mustermann</xhs:lehrendeOderPruefende>
+            <xhs:semesterDerLeistungserbringung>
+                <xhs:zeitraum>
+                    <xhs:beginn>2023-04-01</xhs:beginn>
+                    <xhs:ende>2023-09-30</xhs:ende>
+                </xhs:zeitraum>
+            </xhs:semesterDerLeistungserbringung>
+            <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+                listVersionID="20240925-0">
+                <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+            </xhs:sprache>
+            <!-- Leistungen in Modul 1 -->
+            <!-- 1. Vorlesung-->
+            <xhs:leistung>
+                <xhs:bezeichnung xml:lang="de-DE">Datenbanken II Vorlesung</xhs:bezeichnung>
+                <xhs:leistungsart>
+                    <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/vorlesung</code>
+                    </xhs:code>
+                </xhs:leistungsart>
+                <xhs:leistungsstatus>
+                    <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden</code>
+                    </xhs:code>
+                </xhs:leistungsstatus>
+                <xhs:leistungsbenotungsstatus>
+                    <xhs:code
+                        listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
+                    </xhs:code>
+                </xhs:leistungsbenotungsstatus>
+                <xhs:benotet>true</xhs:benotet>
+                <xhs:benotung>
+                    <xbd:note>1,7</xbd:note>
+                    <xbd:wortbezeichnung xml:lang="de-DE">Gut</xbd:wortbezeichnung>
+                    <xbd:bewertungsschemaNote>
+                        <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                        <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                        <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
+                    </xbd:bewertungsschemaNote>
+                </xhs:benotung>
+            </xhs:leistung>
+            <!-- 2. Prüfung bzw. Leistung-->
+            <xhs:leistung>
+                <xhs:bezeichnung xml:lang="de-DE">Hausübungen zu Datenbanken II</xhs:bezeichnung>
+                <xhs:leistungsart>
+                    <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/hausarbeit</code>
+                    </xhs:code>
+                </xhs:leistungsart>
+                <xhs:leistungsstatus>
+                    <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden</code>
+                    </xhs:code>
+                </xhs:leistungsstatus>
+                <xhs:benotet>false</xhs:benotet>
+            </xhs:leistung>
+        </xhs:leistung>
+        <!-- 2. Modul -->
+        <xhs:leistung>
+            <xhs:bezeichnung xml:lang="de-DE">Vertiefung Softwaretechnik</xhs:bezeichnung>
+            <xhs:leistungsart>
+                <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul</code>
+                </xhs:code>
+            </xhs:leistungsart>
+            <xhs:id>
+                <xhs:id/>
+                <!-- keine Modulnummer angegeben -->
+                <xhs:beschreibung>Modulnummer</xhs:beschreibung>
+            </xhs:id>
+            <xhs:beschreibung>
+                <xhs:beschreibung xml:lang="de-DE">Die Studierenden haben nach Abschluss des Moduls die grundlegenden Kenntnisse für die Entwicklung 
+großer verteilter Anwendungen erworben. Hierbei werden insbesondere anhand einer Reihe von praxisnahen 
+Beispielen die notwendigen Kenntnisse eines erfolgreichen Softwarearchitekten vermittelt. Anhand einer 
+Reihe von praxisnahen Beispielen wird gezeigt, wie sich große Systeme in Komponenten zerlegen lassen und 
+welche Beziehungen es zwischen diesen gibt. Hierbei werden zum Beispiel folgende Punkte erörtert:
+• Wie gestaltet sich der Entwurfsprozess? 
+• Welche Methoden und Beschreibungstechniken sind geeignet? 
+• Welche erprobten Lösungen gibt es für technische Aspekte wie Transaktionsverwaltung oder Persistenz?
+Darüber hinaus werden Formalismen für die Spezifikation des Systemverhaltens eingeführt. Außerdem 
+vermittelt die Vorlesung den Teilnehmenden ein grundlegendes Verständnis von Qualitätssicherung im 
+Software Engineering. Anhang praxisnaher Beispiele und formaler Beschreibungen werden Begrifflichkeiten 
+wie Quality Assurance, Code Qualität, Code Analyse, Verifikation und Testen definiert. Die Studierenden 
+werden durch Bearbeitung von praxisorientierten Fragestellungen dazu angeleitet, selbstständige 
+Beurteilungen hinsichtlich Code Qualität, sowie Verifikations- und Testverfahren durchzuführen und diese 
+anzuwenden</xhs:beschreibung>
+                <xhs:umfangInSWS>4</xhs:umfangInSWS>
+                <xhs:versionDesModulhandbuchs xml:lang="de-DE">Dezember 2021</xhs:versionDesModulhandbuchs>
+                <!-- in Modul 1 nicht angegeben -->
+            </xhs:beschreibung>
+            <xhs:leistungsstatus>
+                <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden</code>
+                </xhs:code>
+            </xhs:leistungsstatus>
+            <xhs:leistungsbenotungsstatus>
+                <xhs:code
+                    listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
+                </xhs:code>
+            </xhs:leistungsbenotungsstatus>
+            <xhs:benotet>true</xhs:benotet>
+            <xhs:benotung>
+                <xbd:note>2,0</xbd:note>
+                <xbd:wortbezeichnung xml:lang="de-DE">Gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                    <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                    <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
+                </xbd:bewertungsschemaNote>
+            </xhs:benotung>
+            <xhs:erbrachteLeistungspunkteECTS>6</xhs:erbrachteLeistungspunkteECTS>
+            <xhs:absolvierteVersuche>1</xhs:absolvierteVersuche>
+            <xhs:lehrendeOderPruefende xml:lang="de-DE">Dr. Maths</xhs:lehrendeOderPruefende>
+            <xhs:semesterDerLeistungserbringung>
+                <xhs:zeitraum>
+                    <xhs:beginn>2024-10-01</xhs:beginn>
+                    <xhs:ende>2025-03-31</xhs:ende>
+                </xhs:zeitraum>
+            </xhs:semesterDerLeistungserbringung>
+            <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+                listVersionID="20240925-0">
+                <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+            </xhs:sprache>
+            <!-- Leistungen in Modul 2 -->
+            <!-- Seminar -->
+            <xhs:leistung>
+                <xhs:bezeichnung xml:lang="de-DE">Seminar Entwurfsmethoden</xhs:bezeichnung>
+                <xhs:leistungsart>
+                    <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/seminar</code>
+                    </xhs:code>
+                </xhs:leistungsart>
+                <xhs:leistungsstatus>
+                    <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden</code>
+                    </xhs:code>
+                </xhs:leistungsstatus>
+                <xhs:leistungsbenotungsstatus>
+                    <xhs:code
+                        listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
+                    </xhs:code>
+                </xhs:leistungsbenotungsstatus>
+                <xhs:benotet>true</xhs:benotet>
+                <xhs:benotung>
+                    <xbd:note>2,0</xbd:note>
+                    <xbd:wortbezeichnung xml:lang="de-DE">Gut</xbd:wortbezeichnung>
+                    <xbd:bewertungsschemaNote>
+                        <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                        <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                        <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
+                    </xbd:bewertungsschemaNote>
+                </xhs:benotung>
+            </xhs:leistung>
+            <!-- Hausarbeit -->
+            <xhs:leistung>
+                <xhs:bezeichnung xml:lang="de-DE">Hausübungen</xhs:bezeichnung>
+                <xhs:leistungsart>
+                    <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/hausarbeit</code>
+                    </xhs:code>
+                </xhs:leistungsart>
+                <xhs:leistungsstatus>
+                    <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden</code>
+                    </xhs:code>
+                </xhs:leistungsstatus>
+                <xhs:benotet>false</xhs:benotet>
+            </xhs:leistung>
+        </xhs:leistung>
+        <!-- 3. Modul -->
+        <xhs:leistung>
+            <xhs:bezeichnung xml:lang="de-DE">Anerkanntes Modul Auswärtige Qualifikationen 'Theoretische und methodische Grundlagen' 1</xhs:bezeichnung>
+            <xhs:leistungsart>
+                <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul</code>
+                </xhs:code>
+            </xhs:leistungsart>
+            <xhs:id>
+                <xhs:id/>
+                <!-- keine Modulnummer angegeben -->
+                <xhs:beschreibung>Modulnummer</xhs:beschreibung>
+            </xhs:id>
+            <xhs:beschreibung>
+                <xhs:beschreibung xml:lang="de-DE">Die Studierenden verfügen über fortgeschrittene Kenntnisse auf dem Gebiet der jeweiligen Lehrveranstaltung
+unter Einsatz eines kritischen Verständnisses von Theorien und Grundsätzen. Sie besitzen fortgeschrittene 
+Fertigkeiten, die die Beherrschung des jeweiligen Themengebiets sowie Innovationsfähigkeit erkennen lassen, 
+und zur Lösung komplexer und nicht vorhersehbarer Probleme in dem spezialisierten Lernbereich nötig sind. 
+Sie sind in der Lage, komplexe fachlicher oder beruflicher Tätigkeiten oder Projekte auf dem jeweiligen 
+Themengebiet zu leiten und für hiermit verbundene Fragegestellungen Entscheidungsverantwortung in nicht 
+vorhersehbaren Arbeits- oder Lernkontexten zu übernehmen.</xhs:beschreibung>
+                <xhs:umfangInSWS>4</xhs:umfangInSWS>
+                <xhs:versionDesModulhandbuchs xml:lang="de-DE">Dezember 2021</xhs:versionDesModulhandbuchs>
+                <!-- in Modul 1 nicht angegeben -->
+            </xhs:beschreibung>
+            <xhs:leistungsbenotungsstatus>
+                <xhs:code
+                    listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
+                </xhs:code>
+            </xhs:leistungsbenotungsstatus>
+            <xhs:benotet>true</xhs:benotet>
+            <xhs:benotung>
+                <xbd:note>2,7</xbd:note>
+                <xbd:wortbezeichnung xml:lang="de-DE">befriedigend</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                    <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                    <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
+                </xbd:bewertungsschemaNote>
+            </xhs:benotung>
+            <xhs:erbrachteLeistungspunkteECTS>6</xhs:erbrachteLeistungspunkteECTS>
+            <xhs:absolvierteVersuche>1</xhs:absolvierteVersuche>
+            <xhs:lehrendeOderPruefende xml:lang="de-DE">Dr. Mustermann</xhs:lehrendeOderPruefende>
+            <xhs:semesterDerLeistungserbringung>
+                <xhs:zeitraum>
+                    <xhs:beginn>2024-04-01</xhs:beginn>
+                    <xhs:ende>2024-09-30</xhs:ende>
+                </xhs:zeitraum>
+            </xhs:semesterDerLeistungserbringung>
+            <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+                listVersionID="20240925-0">
+                <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+            </xhs:sprache>
+            <!-- Prüfung in Modul 3-->
+            <!--Mündliche Prüfung -->
+            <xhs:leistung>
+                <xhs:bezeichnung xml:lang="de-DE">Mündliche Prüfung</xhs:bezeichnung>
+                <xhs:leistungsart>
+                    <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/muendliche_pruefung</code>
+                    </xhs:code>
+                </xhs:leistungsart>
+                <xhs:leistungsstatus>
+                    <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden</code>
+                    </xhs:code>
+                </xhs:leistungsstatus>
+                <xhs:leistungsbenotungsstatus>
+                    <xhs:code
+                        listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
+                    </xhs:code>
+                </xhs:leistungsbenotungsstatus>
+                <xhs:benotet>true</xhs:benotet>
+                <xhs:benotung>
+                    <xbd:note>2,7</xbd:note>
+                    <xbd:wortbezeichnung xml:lang="de-DE">befriedigend</xbd:wortbezeichnung>
+                    <xbd:bewertungsschemaNote>
+                        <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                        <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                        <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
+                    </xbd:bewertungsschemaNote>
+                </xhs:benotung>
+            </xhs:leistung>
+        </xhs:leistung>
+        <!-- 4. Modul -->
+        <xhs:leistung>
+            <xhs:bezeichnung xml:lang="de-DE">Forschungsmethoden</xhs:bezeichnung>
+            <xhs:leistungsart>
+                <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul</code>
+                </xhs:code>
+            </xhs:leistungsart>
+            <xhs:id>
+                <xhs:id/>
+                <!-- keine Modulnummer angegeben -->
+                <xhs:beschreibung>Modulnummer</xhs:beschreibung>
+            </xhs:id>
+            <xhs:beschreibung>
+                <xhs:beschreibung xml:lang="de-DE">Nach erfolgreichem Abschluss dieses Moduls kennen die Studierenden grundlegende Forschungsmethoden 
+der Informatik/Wirtschaftsinformatik und können Beispiele für deren Einsatz sicher erkennen und zuordnen. 
+Sie kennen gängige Werkzeuge, um erzielte Ergebnisse in wissenschaftlichen Publikationen (Thesis, 
+Seminararbeit, wiss. Artikel in Konferenzen und Fachjournalen) zu verschriftlichen und können darüber 
+hinaus eigenständig verwandte Literatur suchen, bewerten und korrekt in eigenen Arbeiten zitieren</xhs:beschreibung>
+                <xhs:umfangInSWS>2</xhs:umfangInSWS>
+                <xhs:versionDesModulhandbuchs xml:lang="de-DE">Dezember 2021</xhs:versionDesModulhandbuchs>
+                <!-- in Modul 1 nicht angegeben -->
+            </xhs:beschreibung>
+            <xhs:benotet>false</xhs:benotet>
+            <xhs:erbrachteLeistungspunkteECTS>3</xhs:erbrachteLeistungspunkteECTS>
+            <xhs:absolvierteVersuche>1</xhs:absolvierteVersuche>
+            <xhs:lehrendeOderPruefende xml:lang="de-DE">Dr. Mustermann</xhs:lehrendeOderPruefende>
+            <xhs:semesterDerLeistungserbringung>
+                <xhs:zeitraum>
+                    <xhs:beginn>2023-10-01</xhs:beginn>
+                    <xhs:ende>2024-03-31</xhs:ende>
+                </xhs:zeitraum>
+            </xhs:semesterDerLeistungserbringung>
+            <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+                listVersionID="20240925-0">
+                <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+            </xhs:sprache>
+        </xhs:leistung>
+        <!-- 5. Modul -->
+        <xhs:leistung>
+            <xhs:bezeichnung xml:lang="de-DE">Anwendungen der Informatik 1/2</xhs:bezeichnung>
+            <xhs:leistungsart>
+                <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul</code>
+                </xhs:code>
+            </xhs:leistungsart>
+            <xhs:id>
+                <xhs:id/>
+                <!-- keine Modulnummer angegeben -->
+                <xhs:beschreibung>Modulnummer</xhs:beschreibung>
+            </xhs:id>
+            <xhs:beschreibung>
+                <xhs:beschreibung xml:lang="de-DE">Die Studierenden verfügen über fortgeschrittene Kenntnisse auf dem Gebiet der jeweiligen Lehrveranstaltung 
+unter Einsatz eines kritischen Verständnisses von Theorien und Grundsätzen. Sie besitzen fortgeschrittene 
+Fertigkeiten, die die Beherrschung des jeweiligen Themengebiets sowie Innovationsfähigkeit erkennen lassen, 
+und zur Lösung komplexer und nicht vorhersehbarer Probleme in dem spezialisierten Lernbereich nötig sind. 
+Sie sind in der Lage, komplexe fachlicher oder beruflicher Tätigkeiten oder Projekte auf dem jeweiligen 
+Themengebiet zu leiten und für hiermit verbundene Fragegestellungen Entscheidungsverantwortung in nicht 
+vorhersehbaren Arbeits- oder Lernkontexten zu übernehmen.</xhs:beschreibung>
+                <xhs:umfangInSWS>6</xhs:umfangInSWS>
+                <xhs:versionDesModulhandbuchs xml:lang="de-DE">Dezember 2021</xhs:versionDesModulhandbuchs>
+                <!-- in Modul 1 nicht angegeben -->
+            </xhs:beschreibung>
+            <xhs:leistungsbenotungsstatus>
+                <xhs:code
+                    listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
+                </xhs:code>
+            </xhs:leistungsbenotungsstatus>
+            <xhs:benotet>true</xhs:benotet>
+            <xhs:benotung>
+                <xbd:note>1,5</xbd:note>
+                <xbd:wortbezeichnung xml:lang="de-DE">sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                    <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                    <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
+                </xbd:bewertungsschemaNote>
+            </xhs:benotung>
+            <xhs:erbrachteLeistungspunkteECTS>6</xhs:erbrachteLeistungspunkteECTS>
+            <xhs:absolvierteVersuche>1</xhs:absolvierteVersuche>
+            <xhs:lehrendeOderPruefende xml:lang="de-DE">Dr. Mustermann</xhs:lehrendeOderPruefende>
+            <xhs:semesterDerLeistungserbringung>
+                <xhs:zeitraum>
+                    <xhs:beginn>2024-04-01</xhs:beginn>
+                    <xhs:ende>2024-09-30</xhs:ende>
+                </xhs:zeitraum>
+            </xhs:semesterDerLeistungserbringung>
+            <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+                listVersionID="20240925-0">
+                <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+            </xhs:sprache>
+            <!-- Leistungen im Modul -->
+            <!-- Praktikum -->
+            <xhs:leistung>
+                <xhs:bezeichnung xml:lang="de-DE">4-wöchiges Praktikum bei Softwarehersteller</xhs:bezeichnung>
+                <xhs:leistungsart>
+                    <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/praktikum</code>
+                    </xhs:code>
+                </xhs:leistungsart>
+                <xhs:leistungsstatus>
+                    <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
+                        listVersionID="1.0">
+                        <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden</code>
+                    </xhs:code>
+                </xhs:leistungsstatus>
+                <xhs:benotet>false</xhs:benotet>
+            </xhs:leistung>
+        </xhs:leistung>
+        <!-- 6. Modul -->
+        <xhs:leistung>
+            <xhs:bezeichnung xml:lang="de-DE">Allgemeine Grundlagen</xhs:bezeichnung>
+            <xhs:leistungsart>
+                <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                    listVersionID="1.0">
+                    <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul</code>
+                </xhs:code>
+            </xhs:leistungsart>
+            <xhs:id>
+                <xhs:id/>
+                <!-- keine Modulnummer angegeben -->
+                <xhs:beschreibung>Modulnummer</xhs:beschreibung>
+            </xhs:id>
+            <xhs:beschreibung>
+                <xhs:beschreibung xml:lang="de-DE">Die Studierenden erwerben Schlüsselkompetenzen, die je nach gewählter Veranstaltung verschieden sind.
+</xhs:beschreibung>
+                <xhs:umfangInSWS>6</xhs:umfangInSWS>
+                <xhs:versionDesModulhandbuchs xml:lang="de-DE">Dezember 2021</xhs:versionDesModulhandbuchs>
+                <!-- in Modul 1 nicht angegeben -->
+            </xhs:beschreibung>
+            <xhs:benotet>false</xhs:benotet>
+            <xhs:erbrachteLeistungspunkteECTS>4</xhs:erbrachteLeistungspunkteECTS>
+            <xhs:absolvierteVersuche>1</xhs:absolvierteVersuche>
+            <xhs:lehrendeOderPruefende xml:lang="de-DE">Dr. Mustermann</xhs:lehrendeOderPruefende>
+            <xhs:semesterDerLeistungserbringung>
+                <xhs:zeitraum>
+                    <xhs:beginn>2024-04-01</xhs:beginn>
+                    <xhs:ende>2024-09-30</xhs:ende>
+                </xhs:zeitraum>
+            </xhs:semesterDerLeistungserbringung>
+            <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+                listVersionID="20240925-0">
+                <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+            </xhs:sprache>
+        </xhs:leistung>
     </xhs:leistung>
-    <xhs:leistung>
-        <xhs:bezeichnung xml:lang="de-DE">Fall- und versorgungssteuernde sowie edukative Aufgaben in der Pflege</xhs:bezeichnung>
-        <xhs:leistungsart>
-            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
-                listVersionID="1.0">
-                <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/modul</code>
-            </xhs:code>
-        </xhs:leistungsart>
-        <xhs:id>
-            <xhs:id>P15</xhs:id>
-            <xhs:gueltigkeit>
-                <xhs:beginn>2015-08-20</xhs:beginn>
-            </xhs:gueltigkeit>
-            <xhs:beschreibung>Modulnummer des Moduls in der aktuellen Studienordnung vom 20.08.2015.</xhs:beschreibung>
-        </xhs:id>
-        <xhs:beschreibung>
-            <xhs:beschreibung xml:lang="de-DE">Das Modul "Fall- und versorgungssteuernde sowie edukative Aufgaben in der Pflege" ist ein Modul innerhalb der Grundlagen der Pflegerischen Kernaufgaben.</xhs:beschreibung>
-            <xhs:versionDesModulhandbuchs xml:lang="de-DE">P_20082015</xhs:versionDesModulhandbuchs>
-            <xhs:weitereInformationen>https://www.charite.de/fileadmin/user_upload/portal_relaunch/studium/dokumente_downloads/Modulu%CC%88bersicht_BSc_Pflege_Charite%CC%81.pdf</xhs:weitereInformationen>
-        </xhs:beschreibung>
-        <xhs:leistungsstatus>
-            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
-                listVersionID="1.0">
-                <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/angemeldet</code>
-            </xhs:code>
-        </xhs:leistungsstatus>
-        <xhs:benotet>false</xhs:benotet>
-        <xhs:erforderlicheLeistungspunkteECTS>3</xhs:erforderlicheLeistungspunkteECTS>
-        <xhs:erbrachteLeistungspunkteECTS>2</xhs:erbrachteLeistungspunkteECTS>
-        <xhs:absolvierteVersuche>0</xhs:absolvierteVersuche>
-        <xhs:lehrendeOderPruefende xml:lang="de-DE">Frau Dr. Prof. Schneider</xhs:lehrendeOderPruefende>
-        <xhs:datumDerLeistungserbringung>2025-06-12</xhs:datumDerLeistungserbringung>
-        <xhs:semesterDerLeistungserbringung>
-            <xhs:zeitraum>
-                <xhs:beginn>2025-03-01</xhs:beginn>
-                <xhs:ende>2025-09-30</xhs:ende>
-            </xhs:zeitraum>
-            <xhs:semesterbezeichnung xml:lang="de-DE">Sommersemester 2025</xhs:semesterbezeichnung>
-        </xhs:semesterDerLeistungserbringung>
-        <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-            listVersionID="20240925-0">
-            <code>DEU</code>
-        </xhs:sprache>
-    </xhs:leistung>
-    <xhs:leistung>
-        <xhs:bezeichnung xml:lang="de-DE">Wahlpflichtmodul: Neuroimmunologie</xhs:bezeichnung>
-        <xhs:leistungsart>
-            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
-                listVersionID="1.0">
-                <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/wahlmodul</code>
-            </xhs:code>
-        </xhs:leistungsart>
-        <xhs:id>
-            <xhs:id>P15</xhs:id>
-            <xhs:gueltigkeit>
-                <xhs:beginn>2015-08-20</xhs:beginn>
-            </xhs:gueltigkeit>
-            <xhs:beschreibung>Modulnummer des Moduls in der aktuellen Studienordnung vom 20.08.2015.</xhs:beschreibung>
-        </xhs:id>
-        <xhs:beschreibung>
-            <xhs:beschreibung xml:lang="de-DE">Das Modul "Neuroimmunologie" ist ein Wahlpflichtmodul.</xhs:beschreibung>
-            <xhs:versionDesModulhandbuchs xml:lang="de-DE">P_20082015</xhs:versionDesModulhandbuchs>
-            <xhs:weitereInformationen>https://www.charite.de/fileadmin/user_upload/portal_relaunch/studium/dokumente_downloads/Modulu%CC%88bersicht_BSc_Pflege_Charite%CC%81.pdf</xhs:weitereInformationen>
-        </xhs:beschreibung>
-        <xhs:leistungsstatus>
-            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
-                listVersionID="1.0">
-                <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden</code>
-            </xhs:code>
-        </xhs:leistungsstatus>
-        <xhs:leistungsbenotungsstatus>
-            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus"
-                listVersionID="1.0">
-                <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
-            </xhs:code>
-        </xhs:leistungsbenotungsstatus>
-        <xhs:benotet>true</xhs:benotet>
-        <xhs:benotung>
-            <xbd:note>2,0</xbd:note>
-            <xbd:wortbezeichnung xml:lang="de-DE">Zwei</xbd:wortbezeichnung>
-            <xbd:bewertungsschemaNote>
-                <xbd:schemaURI>https://www.ahkwien.de/bewertungsschema</xbd:schemaURI>
-                <xbd:besteBewertung>1</xbd:besteBewertung>
-                <xbd:bestandenAbBewertung>4</xbd:bestandenAbBewertung>
-                <xbd:schlechtesteBewertung>6</xbd:schlechtesteBewertung>
-            </xbd:bewertungsschemaNote>
-        </xhs:benotung>
-        <xhs:erforderlicheLeistungspunkteECTS>3</xhs:erforderlicheLeistungspunkteECTS>
-        <xhs:erbrachteLeistungspunkteECTS>2</xhs:erbrachteLeistungspunkteECTS>
-        <xhs:absolvierteVersuche>0</xhs:absolvierteVersuche>
-        <xhs:lehrendeOderPruefende xml:lang="de-DE">Frau Dr. Prof. Höftwald</xhs:lehrendeOderPruefende>
-        <xhs:datumDerLeistungserbringung>2023-07-04</xhs:datumDerLeistungserbringung>
-        <xhs:semesterDerLeistungserbringung>
-            <xhs:zeitraum>
-                <xhs:beginn>2023-09-30</xhs:beginn>
-                <xhs:ende>2024-03-31</xhs:ende>
-            </xhs:zeitraum>
-            <xhs:semesterbezeichnung xml:lang="de-DE">Wintersemester 2023</xhs:semesterbezeichnung>
-        </xhs:semesterDerLeistungserbringung>
-        <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-            listVersionID="20240925-0">
-            <code>DEU</code>
-        </xhs:sprache>
-        <xhs:externErbrachteLeistung>
-            <xhs:anerkanntOderAngerechnet>
-                <code>http://xhochschule.de/def/xhochschule/1.0/code/anerkanntoderangerechnet/anerkannt</code>
-            </xhs:anerkanntOderAngerechnet>
-            <xhs:einrichtungDerLeistungserbringung>Universitätsklinikum für Neurologie AKH Wien</xhs:einrichtungDerLeistungserbringung>
-        </xhs:externErbrachteLeistung>
-   </xhs:leistung>
 </xhs:transcriptOfRecords>

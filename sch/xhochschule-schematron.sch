@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron"
             xmlns:xs="http://www.w3.org/2001/XMLSchema"
             queryBinding="xslt2">
@@ -14,19 +15,21 @@
            uri="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"/>
    <sch:ns prefix="ds" uri="http://www.w3.org/2000/09/xmldsig#"/>
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
-   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/1.1/xsd"/>
-   <sch:ns prefix="xhs" uri="http://xhochschule.de/def/xhochschule/1.1/xsd"/>
+   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/1.2/xsd"/>
+   <sch:ns prefix="xhs" uri="http://xhochschule.de/def/xhochschule/1.2/xsd"/>
    <sch:ns prefix="xml" uri="http://www.w3.org/XML/1998/namespace"/>
    <sch:ns prefix="xoev-code" uri="http://xoev.de/schemata/code/1_0"/>
    <sch:ns prefix="xoev-lc" uri="http://xoev.de/latinchars/1_1/datatypes"/>
-   <sch:pattern><!--Abstrakte Regeln--><!-- /Data/XHochschule/Baukasten/Leistung -->
+   <sch:pattern>
+      <!--Abstrakte Regeln-->
+      <!-- /Data/XHochschule/Baukasten/Leistung -->
       <sch:rule id="rule-SCH-XHS-0018-Benotungsschema" abstract="true">
          <sch:assert id="SCH-XHS-0018-Benotungsschema"
-                     test="(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))">XHS-0018 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</sch:assert>
+                     test="(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))">XHS-0018 Im Feld Note dürfen nur die folgenden Formate angegeben werden: 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+".</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-XHS-0020-KeineSWSBeiPruefungen" abstract="true">
          <sch:assert id="SCH-XHS-0020-KeineSWSBeiPruefungen"
-                     test="if(ends-with(*:leistungsart/leistungsartCode/code/text(), 'klausur') or  ends-with(*:leistungsart/leistungsartCode/code/text(), 'pruefung')) then not(exists(*:beschreibung/*:umfangInSWS)) else (not(exists(*:beschreibung/*:umfangInSWS)) or exists(*:beschreibung/*:umfangInSWS))">XHS-0020 Der Wert 'UmfangInSWS' darf nicht angegeben werden, wenn der Inhalt des Codewertes von 'leistungsart' mit 'klausur' oder 'pruefung' endet. Bei Prüfungenund Klausuren  handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</sch:assert>
+                     test="if(ends-with(*:leistungsart/leistungsartCode/code/text(), 'klausur') or  ends-with(*:leistungsart/leistungsartCode/code/text(), 'pruefung')) then not(exists(*:beschreibung/*:umfangInSWS)) else (not(exists(*:beschreibung/*:umfangInSWS)) or exists(*:beschreibung/*:umfangInSWS))">XHS-0020 Der Wert 'UmfangInSWS' darf nicht angegeben werden, wenn der Inhalt des Codewertes von 'leistungsart' mit 'klausur' oder 'pruefung' endet. Bei Prüfungen und Klausuren handelt es sich um punktuelle Ereignisse, die nicht über das Semester verteilt sind.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-XHS-0021-UnbedenklichkeitNurBeiStudienfach"
                 abstract="true">
@@ -56,16 +59,16 @@
       <sch:rule id="rule-SCH-XHS-0027-nurWennBenotetLeistungsbenotungsstatus"
                 abstract="true">
          <sch:assert id="SCH-XHS-0027-nurWennBenotetLeistungsbenotungsstatus"
-                     test="if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:leistungsbenotungsstatus)) else (not(exists(*:leistungsbenotungsstatus)))">XHS-0027 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll der Leistungsbenotungsstatus angegeben werden.</sch:assert>
+                     test="if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:leistungsbenotungsstatus)) else (not(exists(*:leistungsbenotungsstatus)))">XHS-0027 Wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), muss der Leistungsbenotungsstatus angegeben werden. Ansonsten darf der Leistungsbenotungsstatus nicht angegeben werden."</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-XHS-0028-nurWennBenotetNote" abstract="true">
          <sch:assert id="SCH-XHS-0028-nurWennBenotetNote"
-                     test="if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:benotung)) else (not(exists(*:benotung)))">XHS-0028 Wenn und nur wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), soll die Benotung angegeben werden.</sch:assert>
+                     test="if(ends-with(*:benotet/text(),'true') or ends-with(*:benotet/text(),'1')) then (exists(*:benotung)) else (not(exists(*:benotung)))">XHS-0028 Wenn eine Leistung benotet ist (boolean 'benotet' = 'true' oder '1'), muss die Benotung angegeben werden. Ansonsten darf die Benotung nicht angegeben werden.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-XHS-0029-nurWennModulModulbeschreibungNachKMK"
                 abstract="true">
          <sch:assert id="SCH-XHS-0029-nurWennModulModulbeschreibungNachKMK"
-                     test="((ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK)) or exists(*:beschreibung/*:modulbeschreibungNachKMK))) or (not(ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK))))">XHS-0029 Nur wenn der Wert der Codeliste Leistungsart auf 'modul' gesetzt wurde, soll die Beschreibung nach den Vorgaben der KMK ausgefüllt werden.</sch:assert>
+                     test="((ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK)) or exists(*:beschreibung/*:modulbeschreibungNachKMK))) or (not(ends-with(*:leistungsart/code/code/text(), 'modul')) and (not(exists(*:beschreibung/*:modulbeschreibungNachKMK))))">XHS-0029 Nur wenn der Wert der Codeliste Leistungsart auf 'modul' gesetzt wurde, soll die Beschreibung nach den Vorgaben der KMK ausgefüllt werden. Ansonsten darf die Beschreibung nicht nach den Vorgaben der KMK ausgefüllt werden.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-XHS-0031-faecherschluesselDESTATIS" abstract="true">
          <sch:assert id="SCH-XHS-0031-faecherschluesselDESTATIS"
@@ -75,18 +78,18 @@
       <sch:rule id="rule-SCH-XHS-0030-WertNichtInListeLeistungsbenotungsstatus"
                 abstract="true">
          <sch:assert id="SCH-XHS-0030-WertNichtInListeLeistungsbenotungsstatus"
-                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0030 Wenn und nur wenn der Wert der Codeliste Leistungsbenotungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden. </sch:assert>
+                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0030 Wenn der Wert der Codeliste Leistungsbenotungsstatus '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</sch:assert>
       </sch:rule>
       <!-- /Data/XHochschule/Baukasten/Anonymous/beurlaubungsstatus -->
       <sch:rule id="rule-SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus"
                 abstract="true">
          <sch:assert id="SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus"
-                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0015 Wenn und nur wenn der Wert der Codeliste Beurlaubungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</sch:assert>
+                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0015 Wenn der Wert der Codeliste Beurlaubungsstatus '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</sch:assert>
       </sch:rule>
       <!-- /Data/XHochschule/Bescheinigungen/exmatrikulationsbescheinigung -->
       <sch:rule id="rule-SCH-XHS-0000-KeineLeerenElemente" abstract="true">
          <sch:assert id="SCH-XHS-0000-KeineLeerenElemente"
-                     test="normalize-space(string())!=''">XHS-0000 GlobaleRegel: Das Element <sch:name/>  in <sch:value-of select="ancestor::*/name()"/> ist leer. Leere Elemente sind nicht erlaubt.</sch:assert>
+                     test="normalize-space(string())!=''">XHS-0000 GlobaleRegel: Das Element in ist leer. Leere Elemente sind nicht erlaubt.</sch:assert>
       </sch:rule>
       <!-- /Data/XHochschule/Bildungsnachweise/hochschulabschlusszeugnis -->
       <sch:rule id="rule-SCH-XHS-0011-PflichtfelderBenotung" abstract="true">
@@ -96,7 +99,7 @@
       <sch:rule id="rule-SCH-XHS-0019-BenotungsschemaGesamtnoteundAbschlussarbeit"
                 abstract="true">
          <sch:assert id="SCH-XHS-0019-BenotungsschemaGesamtnoteundAbschlussarbeit"
-                     test="(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))">XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</sch:assert>
+                     test="(matches(., '^(6([,.]0)?|([1-5]([,.]\d+)))|[A-F][+-]?$'))">XHS-0019 Im Feld Note dürfen nur die folgenden Formate angegeben werden: 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+".</sch:assert>
       </sch:rule>
       <!-- /Data/XHochschule/Bescheinigungen/immatrikulationsbescheinigungBAfoeGP9 -->
       <sch:rule id="rule-SCH-XHS-0010-LernzeitmodellVollOderTeilzeit" abstract="true">
@@ -107,28 +110,28 @@
       <sch:rule id="rule-SCH-XHS-0016-WertNichtInListeImmatrikulationsstatus"
                 abstract="true">
          <sch:assert id="SCH-XHS-0016-WertNichtInListeImmatrikulationsstatus"
-                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0016 Wenn und nur wenn der Wert der Codeliste Immatrikulationsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</sch:assert>
+                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0016 Wenn der Wert der Codeliste Immatrikulationsstatus '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</sch:assert>
       </sch:rule>
       <!-- /Data/XHochschule/Baukasten/Anonymous/lateinischeEhrenbezeichnung -->
       <sch:rule id="rule-SCH-XHS-0017-WertNichtInListeLateinischeEhrenbezeichnung"
                 abstract="true">
          <sch:assert id="SCH-XHS-0017-WertNichtInListeLateinischeEhrenbezeichnung"
-                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0017 Wenn und nur wenn der Wert der Codeliste LateinischeEhrenbezeichnung 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden. </sch:assert>
+                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0017 Wenn der Wert der Codeliste LateinischeEhrenbezeichnung '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</sch:assert>
       </sch:rule>
       <!-- /Data/XHochschule/Baukasten/Anonymous/leistungsart -->
       <sch:rule id="rule-SCH-XHS-0012-WertNichtInListeLeistungsart" abstract="true">
          <sch:assert id="SCH-XHS-0012-WertNichtInListeLeistungsart"
-                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0012 Wenn und nur wenn der Wert der Codeliste Leistungsart 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</sch:assert>
+                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0012 Wenn der Wert der Codeliste Leistungsart '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</sch:assert>
       </sch:rule>
       <!-- /Data/XHochschule/Baukasten/Anonymous/leistungsstatus -->
       <sch:rule id="rule-SCH-XHS-0013-WertNichtInListeLeistungsstatus" abstract="true">
          <sch:assert id="SCH-XHS-0013-WertNichtInListeLeistungsstatus"
-                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0013 Wenn und nur wenn der Wert der Codeliste Leistungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden. </sch:assert>
+                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0013 Wenn der Wert der Codeliste Leistungsstatus '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</sch:assert>
       </sch:rule>
       <!-- /Data/XHochschule/Baukasten/Anonymous/lernzeitmodell -->
       <sch:rule id="rule-SCH-XHS-0014-WertNichtInListeLernzeitmodell" abstract="true">
          <sch:assert id="SCH-XHS-0014-WertNichtInListeLernzeitmodell"
-                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0014 Wenn und nur wenn der Wert der Codeliste Lernzeitmodell 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</sch:assert>
+                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (not(exists(*:nichtGelisteterWert)) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">XHS-0014 Wenn der Wert der Codeliste Lernzeitmodell '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</sch:assert>
       </sch:rule>
       <!-- /Data/XHochschule/Bescheinigungen/rentenbescheinigung -->
       <sch:rule id="rule-SCH-XHS-0001-WennBeurlaubtDannBeurlaubungsgrund"
@@ -139,128 +142,79 @@
       <sch:rule id="rule-SCH-XHS-0032-keinAblaufdatumRentenversicherungsnummer"
                 abstract="true">
          <sch:assert id="SCH-XHS-0032-keinAblaufdatumRentenversicherungsnummer"
-                     test="not(exists(*:rentenversicherungsnummer/gueltigkeit/ende))">XHS-0032 Die Rentenversicheurngsnummer ist ab Geburt ein Leben lang gültig. Ablaufdatum darf nicht angezeigt werden.</sch:assert>
+                     test="not(exists(*:rentenversicherungsnummer/gueltigkeit/ende))">XHS-0032 Die Rentenversicheurngsnummer ist ab Geburt ein Leben lang gültig. Das Ablaufdatum darf nicht angezeigt werden.</sch:assert>
       </sch:rule>
-   </sch:pattern>
-   <!--Globale Regeln-->
-   <!--Konkrete Regeln-->
-   <sch:pattern>
+      <!--Konkrete Regeln-->
       <sch:rule context="xhs:exmatrikulationsbescheinigung">
          <sch:extends rule="rule-SCH-XHS-0000-KeineLeerenElemente"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:rentenbescheinigung//xhs:studienabschnitt">
          <sch:extends rule="rule-SCH-XHS-0001-WennBeurlaubtDannBeurlaubungsgrund"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:immatrikulationsbescheinigungBAfoeGP9//xhs:lernzeitmodell">
          <sch:extends rule="rule-SCH-XHS-0010-LernzeitmodellVollOderTeilzeit"/>
          <sch:extends rule="rule-SCH-XHS-0014-WertNichtInListeLernzeitmodell"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:hochschulabschlusszeugnis/xhs:benotung">
          <sch:extends rule="rule-SCH-XHS-0011-PflichtfelderBenotung"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:hochschulabschlusszeugnis//xhs:leistungsart">
          <sch:extends rule="rule-SCH-XHS-0012-WertNichtInListeLeistungsart"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:transcriptOfRecords//xhs:leistungsart">
          <sch:extends rule="rule-SCH-XHS-0012-WertNichtInListeLeistungsart"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:hochschulabschlusszeugnis//xhs:leistungsstatus">
          <sch:extends rule="rule-SCH-XHS-0013-WertNichtInListeLeistungsstatus"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:transcriptOfRecords//xhs:leistungsstatus">
          <sch:extends rule="rule-SCH-XHS-0013-WertNichtInListeLeistungsstatus"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:exmatrikulationsbescheinigung//xhs:lernzeitmodell">
          <sch:extends rule="rule-SCH-XHS-0014-WertNichtInListeLernzeitmodell"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:immatrikulationsbescheinigung//xhs:lernzeitmodell">
          <sch:extends rule="rule-SCH-XHS-0014-WertNichtInListeLernzeitmodell"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:rentenbescheinigung//xhs:lernzeitmodell">
          <sch:extends rule="rule-SCH-XHS-0014-WertNichtInListeLernzeitmodell"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:studienverlaufsbescheinigung//xhs:lernzeitmodell">
          <sch:extends rule="rule-SCH-XHS-0014-WertNichtInListeLernzeitmodell"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:exmatrikulationsbescheinigung//xhs:beurlaubungsstatus">
          <sch:extends rule="rule-SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:immatrikulationsbescheinigung//xhs:beurlaubungsstatus">
          <sch:extends rule="rule-SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:immatrikulationsbescheinigungBAfoeGP9//xhs:beurlaubungsstatus">
          <sch:extends rule="rule-SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:rentenbescheinigung//xhs:beurlaubungsstatus">
          <sch:extends rule="rule-SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:studienverlaufsbescheinigung//xhs:beurlaubungsstatus">
          <sch:extends rule="rule-SCH-XHS-0015-WertNichtInListeBeurlaubungsstatus"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:immatrikulationsbescheinigung//xhs:immatrikulationsstatus">
          <sch:extends rule="rule-SCH-XHS-0016-WertNichtInListeImmatrikulationsstatus"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:immatrikulationsbescheinigungBAfoeGP9//xhs:immatrikulationsstatus">
          <sch:extends rule="rule-SCH-XHS-0016-WertNichtInListeImmatrikulationsstatus"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:hochschulabschlusszeugnis//xhs:lateinischeEhrenbezeichnung">
          <sch:extends rule="rule-SCH-XHS-0017-WertNichtInListeLateinischeEhrenbezeichnung"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:hochschulabschlusszeugnis/xhs:leistung//xbd:note">
          <sch:extends rule="rule-SCH-XHS-0018-Benotungsschema"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:transcriptOfRecords//xbd:note">
          <sch:extends rule="rule-SCH-XHS-0018-Benotungsschema"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:hochschulabschlusszeugnis//xbd:note">
          <sch:extends rule="rule-SCH-XHS-0019-BenotungsschemaGesamtnoteundAbschlussarbeit"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:hochschulabschlusszeugnis//xhs:leistung">
          <sch:extends rule="rule-SCH-XHS-0020-KeineSWSBeiPruefungen"/>
          <sch:extends rule="rule-SCH-XHS-0021-UnbedenklichkeitNurBeiStudienfach"/>
@@ -274,8 +228,6 @@
          <sch:extends rule="rule-SCH-XHS-0029-nurWennModulModulbeschreibungNachKMK"/>
          <sch:extends rule="rule-SCH-XHS-0031-faecherschluesselDESTATIS"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:transcriptOfRecords//xhs:leistung">
          <sch:extends rule="rule-SCH-XHS-0020-KeineSWSBeiPruefungen"/>
          <sch:extends rule="rule-SCH-XHS-0021-UnbedenklichkeitNurBeiStudienfach"/>
@@ -289,21 +241,14 @@
          <sch:extends rule="rule-SCH-XHS-0029-nurWennModulModulbeschreibungNachKMK"/>
          <sch:extends rule="rule-SCH-XHS-0031-faecherschluesselDESTATIS"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:hochschulabschlusszeugnis//xhs:leistungsbenotungsstatus">
          <sch:extends rule="rule-SCH-XHS-0030-WertNichtInListeLeistungsbenotungsstatus"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:transcriptOfRecords//xhs:leistungsbenotungsstatus">
          <sch:extends rule="rule-SCH-XHS-0030-WertNichtInListeLeistungsbenotungsstatus"/>
       </sch:rule>
-   </sch:pattern>
-   <sch:pattern>
       <sch:rule context="xhs:rentenbescheinigung">
          <sch:extends rule="rule-SCH-XHS-0032-keinAblaufdatumRentenversicherungsnummer"/>
       </sch:rule>
    </sch:pattern>
-   <!--Konkrete Regeln mit Kindelementen-->
 </sch:schema>

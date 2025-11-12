@@ -1,48 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Hochschulabschlusszeugnis nach XHochschule Version 1.1. Nichtnormative Beispielinstanz.
-    Version: XHochschule 1.1 
-    Letzte Aktualisierung: 25.02.2025
-    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt" -->
-<xhs:hochschulabschlusszeugnis xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
- xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
- xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
- xmlns:xhs="http://xhochschule.de/def/xhochschule/1.1/xsd"
- xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.1/xsd">
-    <xhs:titel xml:lang="de-DE">Hochschulabschlusszeugnis</xhs:titel>
-    <xhs:ausstellungsdatum>2025-02-13</xhs:ausstellungsdatum>
-    <xhs:gueltigkeitsdatum>2035-02-12</xhs:gueltigkeitsdatum>
-    <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20240925-0">
+<!-- Hochschulabschlusszeugnis nach XHochschule Version 1.2. Nichtnormative Beispielinstanz. Veranschaulicht ein exemplarisches Dokument der beispielhaften studierenden Person Amélie Duval.
+    Version: XHochschule 1.2 
+    Letzte Aktualisierung: 11.11.2025
+    Lizenz: CC BY 4.0 „]init[ AG im Auftrag des Landes Sachsen-Anhalt" -->
+<xhs:hochschulabschlusszeugnis xmlns:xhs="http://xhochschule.de/def/xhochschule/1.2/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xhochschule.de/def/xhochschule/1.2/xsd">
+    <xhs:titel>Hochschulabschlusszeugnis</xhs:titel>
+    <xhs:ausstellungsdatum>2025-09-20</xhs:ausstellungsdatum>
+    <xhs:gueltigkeitsdatum>2025-09-20</xhs:gueltigkeitsdatum>
+    <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+        listVersionID="20240925-0">
         <code>DEU</code>
     </xhs:sprache>
-    <xhs:abschluss>Bachelor of Science</xhs:abschluss>
-    <!-- Angaben zur studierenden Person -->
+    <xhs:abschluss>Master of Arts</xhs:abschluss>
     <xhs:studierender>
         <xhs:nameNatuerlichePerson>
             <xhs:familienname>
-                <xhs:name>Erika</xhs:name>
+                <xhs:name>Amélie</xhs:name>
             </xhs:familienname>
             <xhs:vorname>
-                <xhs:name>Mustermann</xhs:name>
+                <xhs:name>Duval</xhs:name>
             </xhs:vorname>
         </xhs:nameNatuerlichePerson>
         <xhs:geburt>
             <xhs:datum>
-                <xbd:jahrMonatTag>1994-05-04</xbd:jahrMonatTag>
+                <xbd:jahrMonatTag>2002-04-28</xbd:jahrMonatTag>
             </xhs:datum>
             <xhs:geburtsort>
-                <xbd:ort>Hamburg</xbd:ort>
-                <xbd:staat listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit" listVersionID="listVersionID2">
-                    <code>000</code>
-                    <name>Bundesrepublik Deutschland</name>
+                <xbd:ort>Marseille</xbd:ort>
+                <xbd:staat
+                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
+                    listVersionID="listVersionID1">
+                    <code>129</code>
+                    <name>Frankreich</name>
                 </xbd:staat>
             </xhs:geburtsort>
         </xhs:geburt>
         <xhs:identifikationsnummer>
             <xhs:id>86095742719</xhs:id>
             <xhs:gueltigkeit>
-                <xhs:beginn>1998-05-04</xhs:beginn>
+                <xhs:beginn>2002-04-28</xhs:beginn>
             </xhs:gueltigkeit>
             <xhs:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuernID)</xhs:beschreibung>
         </xhs:identifikationsnummer>
@@ -56,128 +58,118 @@
         <xhs:matrikelnummer>
             <xhs:id>123546789</xhs:id>
             <xhs:gueltigkeit>
-                <xhs:beginn>2020-10-01</xhs:beginn>
-                <xhs:ende>2024-05-04</xhs:ende>
+                <xhs:beginn>2023-10-01</xhs:beginn>
+                <xhs:ende>2025-09-30</xhs:ende>
             </xhs:gueltigkeit>
-            <xhs:beschreibung>Matrikelnummer der Hochschule für angewandte Wissenschaften Weihenstephan-Triesdorf in Triesdorf</xhs:beschreibung>
+            <xhs:beschreibung>Matrikelnummer an der Technischen Universität Clausthal</xhs:beschreibung>
         </xhs:matrikelnummer>
         <xhs:ersteinschreibung>2020-10-01</xhs:ersteinschreibung>
-        <xhs:hochschulsemester>7</xhs:hochschulsemester>
-        <xhs:urlaubssemester>1</xhs:urlaubssemester>
+        <xhs:hochschulsemester>10</xhs:hochschulsemester>
+        <xhs:urlaubssemester>0</xhs:urlaubssemester>
     </xhs:studierender>
-    <!-- Angaben zur ausstellenden Hochschule -->
+    <!-- Angaben zur Hochschule -->
     <xhs:ausstellendeHochschule>
-        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur" listVersionID="listVersionID1">
-            <code>0180</code>
+        <xhs:hochschulsignatur listURI="urn:xhochschule-de:destatis:codeliste:hochschulsignatur"
+            listVersionID="listVersionID1">
+            <code>1440</code>
         </xhs:hochschulsignatur>
-        <xhs:name xml:lang="de-DE">Charité - Universitätsmedizin Berlin</xhs:name>
+        <xhs:name xml:lang="de-DE">Technische Universität Clausthal</xhs:name>
     </xhs:ausstellendeHochschule>
-    <xhs:datumDesErwerbs>2006-05-04</xhs:datumDesErwerbs>
-    <!-- Angaben zum Studium -->
+    <xhs:datumDesErwerbs>2025-09-20</xhs:datumDesErwerbs>
+    <!-- Angaben zum Studiengang -->
     <xhs:leistung>
-        <xhs:bezeichnung xml:lang="de-DE">Pflege älterer Menschen und erwachsener Personen mit Behinderung</xhs:bezeichnung>
+        <xhs:bezeichnung xml:lang="de-DE">Informatik M.Sc.</xhs:bezeichnung>
         <xhs:leistungsart>
-            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart" listVersionID="1.0">
+            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsart"
+                listVersionID="1.0">
                 <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsart/studiengang</code>
             </xhs:code>
         </xhs:leistungsart>
         <xhs:id>
-            <xhs:id>Pf0156</xhs:id>
-            <xhs:gueltigkeit>
-                <xhs:beginn>2015-08-20</xhs:beginn>
-            </xhs:gueltigkeit>
-            <xhs:beschreibung>Modulnummer des Studienganges in der aktuellen Studienordnung vom 20.08.2015.</xhs:beschreibung>
+            <xhs:id>INF-M-2020</xhs:id>
+            <xhs:beschreibung>Studiengangskennziffer</xhs:beschreibung>
         </xhs:id>
         <xhs:beschreibung>
-            <xhs:beschreibung xml:lang="de-DE">Der Studiengang Pflege älterer Menschen und erwachsener Personen mit Behinderung gliedert sich in mehrere Fachmodule und einen praktischen Teil. Detaillierte Informationen sind der aktueller Studienordnung zu entnehmen.</xhs:beschreibung>
-            <xhs:versionDesModulhandbuchs xml:lang="de-DE">P_20082015</xhs:versionDesModulhandbuchs>
-            <xhs:weitereInformationen>https://www.charite.de/fileadmin/user_upload/portal_relaunch/studium/dokumente_downloads/Modulu%CC%88bersicht_BSc_Pflege_Charite%CC%81.pdf</xhs:weitereInformationen>
+            <xhs:beschreibung xml:lang="de-DE">Der Studiengang richtet sich an Absolventinnen und Absolventen von Bachelor-Studiengängen der Informatik oder eng verwandter Fächer wie Technische Informatik und Software Engineering. Er stellt zudem die konsekutive Fortsetzung des Bachelor-Studiengangs Informatik an der TU Clausthal dar.</xhs:beschreibung>
+            <xhs:versionDesModulhandbuchs xml:lang="de-DE">MHB-M-I-20-02</xhs:versionDesModulhandbuchs>
+            <xhs:weitereInformationen>https://www.studiengaenge.tu-clausthal.de/fileadmin/Sites/Studiengaenge/Documents/Studiengaenge/Modulhandbuecher/Neu_in_2021-22/MHB_Informatik_M.Sc._2020_16_12_2021.pdf</xhs:weitereInformationen>
         </xhs:beschreibung>
         <xhs:leistungsstatus>
-            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus" listVersionID="1.0">
+            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsstatus"
+                listVersionID="1.0">
                 <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsstatus/bestanden</code>
             </xhs:code>
         </xhs:leistungsstatus>
         <xhs:leistungsbenotungsstatus>
-            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus" listVersionID="1.0">
+            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:leistungsbenotungsstatus"
+                listVersionID="1.0">
                 <code>http://xhochschule.de/def/xhochschule/1.0/code/leistungsbenotungsstatus/finale_note</code>
             </xhs:code>
         </xhs:leistungsbenotungsstatus>
         <xhs:benotet>true</xhs:benotet>
         <xhs:benotung>
-            <xbd:note>B-</xbd:note>
-            <xbd:wortbezeichnung xml:lang="de-DE">B Minus</xbd:wortbezeichnung>
+            <xbd:note>1,3</xbd:note>
+            <xbd:wortbezeichnung xml:lang="de-DE">Sehr gut</xbd:wortbezeichnung>
             <xbd:bewertungsschemaNote>
-                <xbd:schemaURI>https://www.charite.de/bewertungsschema</xbd:schemaURI>
-                <xbd:besteBewertung>A+</xbd:besteBewertung>
-                <xbd:bestandenAbBewertung>D</xbd:bestandenAbBewertung>
-                <xbd:schlechtesteBewertung>F</xbd:schlechtesteBewertung>
+                <xbd:schemaURI>https://tu-clausthal.atlassian.net/wiki/spaces/VER/pages/27461201/6.10.01+Allgemeine+Pr+fungsordnung+der+Technischen+Universit+t+Clausthal+in+der+Fassung+der+4.+nderung+vom+09.11.2021_Mitt.TUC+2021+Seite+678</xbd:schemaURI>
+                <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
             </xbd:bewertungsschemaNote>
         </xhs:benotung>
-        <xhs:erforderlicheLeistungspunkteECTS>240</xhs:erforderlicheLeistungspunkteECTS>
-        <xhs:erbrachteLeistungspunkteECTS>245</xhs:erbrachteLeistungspunkteECTS>
-        <xhs:absolvierteVersuche>2</xhs:absolvierteVersuche>
-        <xhs:lehrendeOderPruefende xml:lang="de-DE">Frau Prof. Dr. Schmidt</xhs:lehrendeOderPruefende>
-        <xhs:datumDerLeistungserbringung>2025-01-13</xhs:datumDerLeistungserbringung>
-        <xhs:semesterDerLeistungserbringung>
-            <xhs:zeitraum>
-                <xhs:beginn>2024-10-01</xhs:beginn>
-                <xhs:ende>2025-02-28</xhs:ende>
-            </xhs:zeitraum>
-            <xhs:semesterbezeichnung xml:lang="de-DE">Wintersemester 2024/25</xhs:semesterbezeichnung>
-        </xhs:semesterDerLeistungserbringung>
-        <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20240925-0">
-            <code>DEU</code>
+        <xhs:erforderlicheLeistungspunkteECTS>120</xhs:erforderlicheLeistungspunkteECTS>
+        <xhs:erbrachteLeistungspunkteECTS>120</xhs:erbrachteLeistungspunkteECTS>
+        <xhs:absolvierteVersuche>1</xhs:absolvierteVersuche>
+        <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+            listVersionID="20240925-0">
+            <code>https://publications.europa.eu/resource/authority/language/DEU</code>
         </xhs:sprache>
-         </xhs:leistung>
-    <!-- Angaben zur Benotung -->
+    </xhs:leistung>
     <xhs:benotung>
         <xhs:gesamtnote>
-            <xbd:note>B-</xbd:note>
-            <xbd:wortbezeichnung xml:lang="de-DE">B Minus</xbd:wortbezeichnung>
+            <xbd:note>1,3</xbd:note>
+            <xbd:wortbezeichnung xml:lang="de-DE">Sehr gut</xbd:wortbezeichnung>
             <xbd:bewertungsschemaNote>
-                <xbd:schemaURI>https://www.hswt.de/bewertungsschema</xbd:schemaURI>
-                <xbd:besteBewertung>A+</xbd:besteBewertung>
-                <xbd:bestandenAbBewertung>D</xbd:bestandenAbBewertung>
-                <xbd:schlechtesteBewertung>F</xbd:schlechtesteBewertung>
+                <xbd:schemaURI>https://tu-clausthal.atlassian.net/wiki/spaces/VER/pages/27461201/6.10.01+Allgemeine+Pr+fungsordnung+der+Technischen+Universit+t+Clausthal+in+der+Fassung+der+4.+nderung+vom+09.11.2021_Mitt.TUC+2021+Seite+678</xbd:schemaURI>
+                <xbd:besteBewertung>1,0</xbd:besteBewertung>
+                <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
+                <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
             </xbd:bewertungsschemaNote>
         </xhs:gesamtnote>
-        <xhs:lateinischeEhrenbezeichnung>
-            <xhs:code listURI="urn:xhochschule-de:xhochschule:codeliste:lateinischeehrenbezeichnung" listVersionID="1.0">
-                <code>http://xhochschule.de/def/xhochschule/1.0/code/lateinischeehrenbezeichnung/summa_cum_laude</code>
-            </xhs:code>
-        </xhs:lateinischeEhrenbezeichnung>
     </xhs:benotung>
-    <xhs:zulassungZuReglementiertemBerufBezeichnung xml:lang="de-DE">Gesundheits- und Krankenpfleger und -pflegerin</xhs:zulassungZuReglementiertemBerufBezeichnung>
-    <xhs:zugangsberechtigungWeiterfuehrendesStudiumBezeichnung xml:lang="de-DE">Berechtigt zu einem weiterführendem Studium ähnlicher Ausrichtung</xhs:zugangsberechtigungWeiterfuehrendesStudiumBezeichnung>
-    <xhs:zugangsberechtigungWeiterfuehrendesStudiumCodeEQF listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
+      <xhs:zugangsberechtigungWeiterfuehrendesStudiumBezeichnung>
+        Berechtigt zu einer Promotion in gleicher oder ähnlicher Fachrichtung.
+    </xhs:zugangsberechtigungWeiterfuehrendesStudiumBezeichnung>
+    <xhs:zugangsberechtigungWeiterfuehrendesStudiumCodeEQF>
         <code>7</code>
     </xhs:zugangsberechtigungWeiterfuehrendesStudiumCodeEQF>
-    <xhs:zugangsberechtigungWeiterfuehrendesStudiumCodeISCED2011 listURI="urn:xbildung-de:unesco:codeliste:isced2011" listVersionID="ISCED-2011">
-        <code>454</code>
+    <xhs:zugangsberechtigungWeiterfuehrendesStudiumCodeISCED2011>
+        <code>844</code>
     </xhs:zugangsberechtigungWeiterfuehrendesStudiumCodeISCED2011>
-    <!-- Eingebettetes Diploma Supplement, dieses steht ebenfalls als separates Dokument zur Verfügung -->
+    <!-- Eingebundenes Diploma Supplement. Dieses steht auch als separate Beispielinstanz zur Verfügung. -->
     <xhs:diplomaSupplement>
         <xhs:titel xml:lang="de-DE">Diploma Supplement</xhs:titel>
-        <xhs:ausstellungsdatum>2025-02-13</xhs:ausstellungsdatum>
-        <xhs:gueltigkeitsdatum>2035-02-12</xhs:gueltigkeitsdatum>
+        <xhs:ausstellungsdatum>2025-09-20</xhs:ausstellungsdatum>
+        <xhs:gueltigkeitsdatum>2025-09-20</xhs:gueltigkeitsdatum>
         <xhs:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
             listVersionID="20240925-0">
             <code>DEU</code>
         </xhs:sprache>
+        <!-- Angaben zum Inhaber des Dokumentes -->
         <xhs:angabenInhaber>
-            <xhs:familienname>Musterfrau</xhs:familienname>
-            <xhs:vorname>Erika</xhs:vorname>
+            <xhs:familienname>Duval</xhs:familienname>
+            <xhs:vorname>Amélie</xhs:vorname>
             <xhs:geburtsdatum>
-                <xbd:jahr>1994</xbd:jahr>
+                <xbd:jahrMonatTag>2002-04-28</xbd:jahrMonatTag>
             </xhs:geburtsdatum>
-            <xhs:matrikelnummer>123456789</xhs:matrikelnummer>
+            <xhs:matrikelnummer>123546789</xhs:matrikelnummer>
         </xhs:angabenInhaber>
+        <!-- Angaben zur Qualifikation -->
         <xhs:angabenQualifikation>
-            <xhs:bezeichnungQualifikationGrad xml:lang="de-DE">Bachelor of Science</xhs:bezeichnungQualifikationGrad>
-            <xhs:hauptstudienfach xml:lang="de-DE">Physik</xhs:hauptstudienfach>
-            <xhs:verleihendeEinrichtung xml:lang="de-DE">Technische Universität Musterstadt</xhs:verleihendeEinrichtung>
-            <xhs:durchfuehrendeEinrichtung xml:lang="de-DE">Technische Universität Musterstadt</xhs:durchfuehrendeEinrichtung>
+            <xhs:bezeichnungQualifikationGrad xml:lang="de-DE">Master of Science</xhs:bezeichnungQualifikationGrad>
+            <xhs:hauptstudienfach xml:lang="de-DE">Informatik</xhs:hauptstudienfach>
+            <xhs:verleihendeEinrichtung xml:lang="de-DE">Technische Universität Clausthal</xhs:verleihendeEinrichtung>
+            <xhs:durchfuehrendeEinrichtung xml:lang="de-DE">Technische Universität Clausthal</xhs:durchfuehrendeEinrichtung>
             <xhs:spracheUnterrichtPruefung
                 listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
                 listVersionID="20240925-0">
@@ -186,13 +178,14 @@
         </xhs:angabenQualifikation>
         <xhs:dauerUndEbeneQualifikation>
             <xhs:ebeneDerQualifikation>
-                <xhs:freitext xml:lang="de-DE">EQF Level 5</xhs:freitext>
+                <xhs:freitext xml:lang="de-DE">EQF Level 7</xhs:freitext>
             </xhs:ebeneDerQualifikation>
             <xhs:dauerStudiumInJahrenOderECTS>
-                <xhs:dauerInJahren>3</xhs:dauerInJahren>
+                <xhs:umfangInECTS>120</xhs:umfangInECTS>
             </xhs:dauerStudiumInJahrenOderECTS>
-            <xhs:zugangsvorraussetzungen xml:lang="de-DE">Allgemeine Hochschulreife</xhs:zugangsvorraussetzungen>
+            <xhs:zugangsvorraussetzungen xml:lang="de-DE">Bachelor of Arts Informatik</xhs:zugangsvorraussetzungen>
         </xhs:dauerUndEbeneQualifikation>
+        <!-- Angaben zu den erzielten Lernergebnissen -->
         <xhs:erzielteErgebnisse>
             <xhs:studienform xml:lang="de-DE">Vollzeit</xhs:studienform>
             <xhs:lernergebnisse xml:lang="de-DE">Die Studierende hat durch die im Studiengebiet
@@ -202,28 +195,32 @@
             <xhs:studiendetails xml:lang="de-DE">Für eine vollständige Aufzählung der Studiendetails
                 wird auf das beiliegende Transcript of Records verwiesen.</xhs:studiendetails>
             <xhs:gesamtnoteUndNotensystem>
-                <xbd:note>2,0</xbd:note>
-                <xbd:wortbezeichnung xml:lang="de-DE">Gut (good)</xbd:wortbezeichnung>
+                <xbd:note>1,3</xbd:note>
+                <xbd:wortbezeichnung xml:lang="de-DE">Sehr gut</xbd:wortbezeichnung>
                 <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/2003/2003_10_10-Laendergemeinsame-Strukturvorgaben.pdf</xbd:schemaURI>
-                    <xbd:beschreibung xml:lang="de-DE">Abbildung des deutschen Notensystems für
-                        Bachelor- und Masterstudiengänge</xbd:beschreibung>
+                    <xbd:schemaURI>https://tu-clausthal.atlassian.net/wiki/spaces/VER/pages/27461201/6.10.01+Allgemeine+Pr+fungsordnung+der+Technischen+Universit+t+Clausthal+in+der+Fassung+der+4.+nderung+vom+09.11.2021_Mitt.TUC+2021+Seite+678</xbd:schemaURI>
                     <xbd:besteBewertung>1,0</xbd:besteBewertung>
                     <xbd:bestandenAbBewertung>4,0</xbd:bestandenAbBewertung>
                     <xbd:schlechtesteBewertung>5,0</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaNote>
             </xhs:gesamtnoteUndNotensystem>
         </xhs:erzielteErgebnisse>
+        <!-- Angaben zu der durch die Qualifikation erlangten Berechtigungen -->
         <xhs:berechtigungenDurchQualifikation>
-            <xhs:zugangWeiterfuehrendeStudien xml:lang="de-DE">Berechtigt zu einem weiterführendem Studium ähnlicher Ausrichtung</xhs:zugangWeiterfuehrendeStudien>
-            <xhs:zugangZuReglementiertenBerufen xml:lang="de-DE">Gesundheits- und Krankenpfleger und -pflegerin</xhs:zugangZuReglementiertenBerufen>
+            <xhs:zugangWeiterfuehrendeStudien xml:lang="de-DE">Berechtigt zu einer Promotion in gleicher oder ähnlicher Fachrichtung.</xhs:zugangWeiterfuehrendeStudien>
+            <xhs:zugangZuReglementiertenBerufen xml:lang="de-DE">Der Absolvent hat mach dem Abschluss
+                Zugang zu einer breiten Auswahl an möglichen Berufen. Mehr Informationen in der
+                aktuellen Studienordnung.
+            </xhs:zugangZuReglementiertenBerufen>
         </xhs:berechtigungenDurchQualifikation>
+        <!-- Sonstige Angaben -->
         <xhs:sonstigeAngaben>
-            <xhs:weitereAngaben xml:lang="de-DE">Hier können weitere Angaben zum Studium genannt werden. </xhs:weitereAngaben>
-            <xhs:weitereInformationsquellen xml:lang="de-DE">Hier kann auf weitere Informationsquellen verwiesen werden wie zum Beispiel der Webseite der Hochschule.</xhs:weitereInformationsquellen>
+            <xhs:weitereAngaben xml:lang="de-DE">Besonders qualifizierten und forschungsinteressierten Studierenden wird ein Research Track angeboten. In dieser Variante des Studienplans absolvieren die Studierenden ein einsemestriges Forschungsprojekt als Vorbereitung auf ein mögliches Promotionsstudium.</xhs:weitereAngaben>
+            <xhs:weitereInformationsquellen xml:lang="de-DE">https://www.tu-clausthal.de/</xhs:weitereInformationsquellen>
         </xhs:sonstigeAngaben>
         <xhs:angabenNationalesHochschulsystem>
-            <xhs:beschreibung>Beschreibung des nationalen Hochschulesystems</xhs:beschreibung>
+            <xhs:beschreibung>Das deutsche Hochschulsystem ist durch eine föderale Struktur geprägt, bei der die Bundesländer maßgeblich für die Organisation und Gesetzgebung im Hochschulbereich verantwortlich sind. Es umfasst verschiedene Hochschultypen wie Universitäten, Fachhochschulen, Kunst- und Musikhochschulen sowie duale Hochschulen. Die Hochschulen sind weitgehend autonom, was ihre Lehre, Forschung und Selbstverwaltung betrifft, unterliegen aber staatlicher Aufsicht und gesetzlichen Rahmenbedingungen. Studiengänge sind in der Regel modularisiert und folgen dem Bologna-System mit den Abschlüssen Bachelor, Master und Promotion.</xhs:beschreibung>
         </xhs:angabenNationalesHochschulsystem>
     </xhs:diplomaSupplement>
+    
 </xhs:hochschulabschlusszeugnis>

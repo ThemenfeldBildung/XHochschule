@@ -64,7 +64,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angaben zur zeitlichen Einteilung eines Studienabschnitts</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur zeitlichen Einteilung eines Studienabschnitts.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -186,7 +186,7 @@
                </row>
                <row>
                   <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;4&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;</entry>
-                  <entry>XHS-0014 Wenn und nur wenn der Wert der Codeliste Lernzeitmodell 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+                  <entry>XHS-0014 Wenn der Wert der Codeliste Lernzeitmodell '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</entry>
                </row>
                <row>
                   <entry align="left">

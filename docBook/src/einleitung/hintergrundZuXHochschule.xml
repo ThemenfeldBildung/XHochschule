@@ -39,8 +39,10 @@
                     >Webseite des Vorhabens</link> bereitgestellt.</para>
         </listitem>
     </itemizedlist>
-    <para>Zur besseren Anschlussfähigkeit an weitere, vor allem auch internationale Systeme, werden im Rahmen der Vereinheitlichung in- wie ausländische Bestrebungen ebenso
-        berücksichtigt bzw. über die Arbeiten von &fachmodul; informiert, sodass auch abhängige und parallellaufende Projekte aufeinander abgestimmt konzipiert werden.</para>
+    <para>Zur besseren Anschlussfähigkeit an weitere, vor allem auch internationale Systeme, werden
+        im Rahmen der Vereinheitlichung in- wie ausländische Bestrebungen ebenso berücksichtigt bzw.
+        über die Arbeiten von &fachmodul; informiert, sodass auch abhängige und parallel laufende
+        Projekte aufeinander abgestimmt konzipiert werden.</para>
     <para>Im Ergebnis wird mit der hier vorliegenden <emphasis role="bold">Spezifikation &fachmodul;</emphasis> eine
 		Spezifikation erstellt, die den Hochschulen im Rahmen der Digitalisierung Auskunft darüber gibt, wie die hochschulübergreifende Datenkommunikation geregelt ist. Ein <link
 		    xlink:href="https://www.youtube.com/watch?v=dPkTbENMl_E">Animationsvideo</link> illustriert den fachlichen Bedarf dieser Spezifikation im Hochschulwesen.</para>

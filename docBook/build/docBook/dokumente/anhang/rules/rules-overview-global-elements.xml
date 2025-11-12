@@ -60,7 +60,7 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;9&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;G&#x200B;e&#x200B;s&#x200B;a&#x200B;m&#x200B;t&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;u&#x200B;n&#x200B;d&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;a&#x200B;r&#x200B;b&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
-            <entry>XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>
+            <entry>XHS-0019 Im Feld Note dürfen nur die folgenden Formate angegeben werden: 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+".</entry>
          </row>
          <row>
             <entry align="left">
@@ -76,7 +76,7 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;7&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;L&#x200B;a&#x200B;t&#x200B;e&#x200B;i&#x200B;n&#x200B;i&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;E&#x200B;h&#x200B;r&#x200B;e&#x200B;n&#x200B;b&#x200B;e&#x200B;z&#x200B;e&#x200B;i&#x200B;c&#x200B;h&#x200B;n&#x200B;u&#x200B;n&#x200B;g&#x200B;</entry>
-            <entry>XHS-0017 Wenn und nur wenn der Wert der Codeliste LateinischeEhrenbezeichnung 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+            <entry>XHS-0017 Wenn der Wert der Codeliste LateinischeEhrenbezeichnung '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</entry>
          </row>
          <row>
             <entry align="left">
@@ -92,7 +92,7 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;9&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;G&#x200B;e&#x200B;s&#x200B;a&#x200B;m&#x200B;t&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;u&#x200B;n&#x200B;d&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;a&#x200B;r&#x200B;b&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
-            <entry>XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>
+            <entry>XHS-0019 Im Feld Note dürfen nur die folgenden Formate angegeben werden: 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+".</entry>
          </row>
          <row>
             <entry align="left">
@@ -108,7 +108,7 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;9&#x200B;-&#x200B;B&#x200B;e&#x200B;n&#x200B;o&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;c&#x200B;h&#x200B;e&#x200B;m&#x200B;a&#x200B;G&#x200B;e&#x200B;s&#x200B;a&#x200B;m&#x200B;t&#x200B;n&#x200B;o&#x200B;t&#x200B;e&#x200B;u&#x200B;n&#x200B;d&#x200B;A&#x200B;b&#x200B;s&#x200B;c&#x200B;h&#x200B;l&#x200B;u&#x200B;s&#x200B;s&#x200B;a&#x200B;r&#x200B;b&#x200B;e&#x200B;i&#x200B;t&#x200B;</entry>
-            <entry>XHS-0019 Im Feld Note dürfen nur zwei Formate 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+" angegeben werden.</entry>
+            <entry>XHS-0019 Im Feld Note dürfen nur die folgenden Formate angegeben werden: 1. 'Zahl-Komma-Zahl' Beispiel "2,6" oder 2. 'Buchstabe A-F (+/-)' Beispiel "A" oder "A+".</entry>
          </row>
          <row>
             <entry align="left">
@@ -131,7 +131,7 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;5&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;B&#x200B;e&#x200B;u&#x200B;r&#x200B;l&#x200B;a&#x200B;u&#x200B;b&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;t&#x200B;a&#x200B;t&#x200B;u&#x200B;s&#x200B;</entry>
-            <entry>XHS-0015 Wenn und nur wenn der Wert der Codeliste Beurlaubungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+            <entry>XHS-0015 Wenn der Wert der Codeliste Beurlaubungsstatus '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</entry>
          </row>
          <row>
             <entry align="left">
@@ -147,7 +147,7 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;4&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;</entry>
-            <entry>XHS-0014 Wenn und nur wenn der Wert der Codeliste Lernzeitmodell 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+            <entry>XHS-0014 Wenn der Wert der Codeliste Lernzeitmodell '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</entry>
          </row>
          <row>
             <entry align="left">
@@ -163,7 +163,7 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;6&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;I&#x200B;m&#x200B;m&#x200B;a&#x200B;t&#x200B;r&#x200B;i&#x200B;k&#x200B;u&#x200B;l&#x200B;a&#x200B;t&#x200B;i&#x200B;o&#x200B;n&#x200B;s&#x200B;s&#x200B;t&#x200B;a&#x200B;t&#x200B;u&#x200B;s&#x200B;</entry>
-            <entry>XHS-0016 Wenn und nur wenn der Wert der Codeliste Immatrikulationsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+            <entry>XHS-0016 Wenn der Wert der Codeliste Immatrikulationsstatus '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</entry>
          </row>
          <row>
             <entry align="left">
@@ -186,7 +186,7 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;5&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;B&#x200B;e&#x200B;u&#x200B;r&#x200B;l&#x200B;a&#x200B;u&#x200B;b&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;s&#x200B;t&#x200B;a&#x200B;t&#x200B;u&#x200B;s&#x200B;</entry>
-            <entry>XHS-0015 Wenn und nur wenn der Wert der Codeliste Beurlaubungsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+            <entry>XHS-0015 Wenn der Wert der Codeliste Beurlaubungsstatus '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</entry>
          </row>
          <row>
             <entry align="left">
@@ -202,7 +202,7 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;4&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;L&#x200B;e&#x200B;r&#x200B;n&#x200B;z&#x200B;e&#x200B;i&#x200B;t&#x200B;m&#x200B;o&#x200B;d&#x200B;e&#x200B;l&#x200B;l&#x200B;</entry>
-            <entry>XHS-0014 Wenn und nur wenn der Wert der Codeliste Lernzeitmodell 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+            <entry>XHS-0014 Wenn der Wert der Codeliste Lernzeitmodell '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</entry>
          </row>
          <row>
             <entry align="left">
@@ -218,7 +218,7 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;6&#x200B;-&#x200B;W&#x200B;e&#x200B;r&#x200B;t&#x200B;N&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;I&#x200B;n&#x200B;L&#x200B;i&#x200B;s&#x200B;t&#x200B;e&#x200B;I&#x200B;m&#x200B;m&#x200B;a&#x200B;t&#x200B;r&#x200B;i&#x200B;k&#x200B;u&#x200B;l&#x200B;a&#x200B;t&#x200B;i&#x200B;o&#x200B;n&#x200B;s&#x200B;s&#x200B;t&#x200B;a&#x200B;t&#x200B;u&#x200B;s&#x200B;</entry>
-            <entry>XHS-0016 Wenn und nur wenn der Wert der Codeliste Immatrikulationsstatus 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+            <entry>XHS-0016 Wenn der Wert der Codeliste Immatrikulationsstatus '~wert_nicht_in_liste' ist, muss das Freitextfeld 'nichtGelisteterWert' angegeben werden. Ansonsten darf das Freitextfeld 'nichtGelisteterWert' nicht angegeben werden.</entry>
          </row>
          <row>
             <entry align="left">
@@ -252,7 +252,7 @@
          </row>
          <row>
             <entry morerows="1">S&#x200B;C&#x200B;H&#x200B;-&#x200B;X&#x200B;H&#x200B;S&#x200B;-&#x200B;0&#x200B;0&#x200B;3&#x200B;2&#x200B;-&#x200B;k&#x200B;e&#x200B;i&#x200B;n&#x200B;A&#x200B;b&#x200B;l&#x200B;a&#x200B;u&#x200B;f&#x200B;d&#x200B;a&#x200B;t&#x200B;u&#x200B;m&#x200B;R&#x200B;e&#x200B;n&#x200B;t&#x200B;e&#x200B;n&#x200B;v&#x200B;e&#x200B;r&#x200B;s&#x200B;i&#x200B;c&#x200B;h&#x200B;e&#x200B;r&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;n&#x200B;u&#x200B;m&#x200B;m&#x200B;e&#x200B;r&#x200B;</entry>
-            <entry>XHS-0032 Die Rentenversicheurngsnummer ist ab Geburt ein Leben lang gültig. Ablaufdatum darf nicht angezeigt werden.</entry>
+            <entry>XHS-0032 Die Rentenversicheurngsnummer ist ab Geburt ein Leben lang gültig. Das Ablaufdatum darf nicht angezeigt werden.</entry>
          </row>
          <row>
             <entry align="left">
