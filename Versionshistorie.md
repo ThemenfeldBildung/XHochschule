@@ -17,7 +17,6 @@ Im Kontext des Antrags zur XÖV-Zertifizierung wurden einige Änderungen vorgeno
 zu den Kriterien des [XÖV-Handbuchs](https://docs.xoev.de/xoev-handbuch/%C3%BCbersicht) und des  [XÖV-Codelisten-Handbuchs](https://docs.xoev.de/codelistenhandbuch/%C3%BCbersicht) herzustellen. Die Änderungen haben keine fachlichen Auswirkungen.
 
 ## 2. Präzisierung bei Beschreibungen
-Im Kontext des Antrags zur XÖV-Zertifizierung wurden einige Änderungen vorgenommen um Konformität
 
 ### 2.1 Änderungen am Spezifikationsdokument
 Im Spezifikationsdokument wurde in der Struktur eine Angleichung an die weiteren XBildung-Standards
