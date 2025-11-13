@@ -5,7 +5,7 @@
 		<modelPart name='com.nomagic.magicdraw.uml_model.shared_model'/>
 	</xmi:Extension>
 	<xmi:Documentation>
-		<xmi:exporter>MagicDraw UML</xmi:exporter>
+		<xmi:exporter>MagicDraw  UML</xmi:exporter>
 		<xmi:exporterVersion>19.0 v9</xmi:exporterVersion>
 	</xmi:Documentation>
 	<xmi:Extension extender='MagicDraw UML 19.0'>
