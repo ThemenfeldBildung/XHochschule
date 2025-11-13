@@ -1,12 +1,46 @@
 **XHochschule - Versionshistorie**
 
 <!-- TOC start -->
-
+- [Version 1.2](#version-12)
 - [Version 1.1](#version-11)
 - [Version 1.0](#version-10)
 - [Version 0.95](#version-095)
 
 <!-- TOC end -->
+
+<!-- TOC --><a name="version-12"></a>
+# Version 1.2
+**Veröffentlichungsdatum:** 12.11.2025
+
+## 1. Änderungen im Kontext der XÖV-Zertifizierung
+Im Kontext des Antrags zur XÖV-Zertifizierung wurden einige Änderungen vorgenommen um Konformität
+zu den Kriterien des [XÖV-Handbuchs](https://docs.xoev.de/xoev-handbuch/%C3%BCbersicht) und des  [XÖV-Codelisten-Handbuchs](https://docs.xoev.de/codelistenhandbuch/%C3%BCbersicht) herzustellen. Die Änderungen haben keine fachlichen Auswirkungen.
+
+## 2. Präzisierung bei Beschreibungen
+Im Kontext des Antrags zur XÖV-Zertifizierung wurden einige Änderungen vorgenommen um Konformität
+
+### 2.1 Änderungen am Spezifikationsdokument
+Im Spezifikationsdokument wurde in der Struktur eine Angleichung an die weiteren XBildung-Standards
+vorgenommen. Weiterhin wurde die XHochschule-Journey für eine fiktive Persona Amélie angepasst.
+
+### 2.2 Beschreibungen der Schematron-Regeln
+Zur bessseren Verständlichkeit wurden die textlichen Beschreibungen der Schematron-Regeln angepasst.
+Änderungen an den Regeln wurden nicht vorgenommen.
+
+## 3. Liste der umgesetzten Tickets
+* XHS-697: Beschreibung der Schematron-Regeln optimieren
+* XHS-721: Lizenzangaben anpassen
+* XHS-722: DARP-Logo in Spezifikation aufnehmen
+* XHS-723: Bessere Dokumentation zur Nachnutzung von XBD/Dokument
+* XHS-724: Dokumentieren der Abweichungen bei XÖV-Kernkomponenten im Modell
+* XHS-725: Language-Eigenschaft bei Codelisten prüfen
+* XHS-727: Prüfen ob bereitgestellte Artefakte autonom validieren
+* XHS-729: Aktualisierung auf gültige XÖV.Konfiguration / XÖV-Profil auf 3.0.3 umstellen
+* XHS-731: Metadaten aktualisieren im Modell und XRepository
+* XHS-732: Lizenzangaben in Beispielinstanzen anpassen
+* XHS-733: Anpassungen in Spezifikation
+* XHS-734: Abschnitt "Grundlegende Designentscheidungen" an gleiche Stelle wie bei anderen Spezifikationen
+* XHS-735: Differenz in Spezifikation zu anderen Vorhaben anpassen
 
 <!-- TOC --><a name="version-11"></a>
 # Version 1.1
