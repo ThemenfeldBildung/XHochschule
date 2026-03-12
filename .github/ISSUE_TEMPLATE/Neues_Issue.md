@@ -1,6 +1,6 @@
 ---
-name: Allgemeine Rückmeldung
-about: Beteiligungsverfahren von XHochschule
+name: Neues Issue
+about: Erstellung einer allgemeinen Rückmeldung zu XHochschule
 title: ''
 labels: Open
 
