@@ -1,6 +1,6 @@
 ---
 name: Kommentierung von XHochschule Version 1.2
-about: Beteiligungsverfahren von XHochschule im Auftrag der Arbeitsgruppe „OZG-Lebenslage Studium" der Kultusministerkonferenz (KMK)
+about: Beteiligungsverfahren XHochschule im Auftrag der Arbeitsgruppe „OZG-Lebenslage Studium" der Kultusministerkonferenz (KMK)
 title: ''
 labels: Kommentierung XHS v1.2, Open
 
@@ -10,7 +10,7 @@ Autor:in: [ bitte angeben ]
 
 Art der Organisation: [ z.B. Hochschule/CaMS-Hersteller/Versicherung/... ]
 
-Name der Organisation: [ bitte angeben ]
+Name der Organisation: [ bitte angeben, z.B. Name der Hochschule ]
 
 Ihre Rückmeldung zur Spezifikation XHochschule Version 1.2: 
 
