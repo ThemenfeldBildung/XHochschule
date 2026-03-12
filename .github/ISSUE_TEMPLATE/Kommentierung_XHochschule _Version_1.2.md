@@ -1,6 +1,6 @@
 ---
 name: Kommentierung von XHochschule Version 1.2
-about: Beteiligungsverfahren XHochschule im Auftrag der Arbeitsgruppe „OZG-Lebenslage Studium" der Kultusministerkonferenz (KMK)
+about: Beteiligungsverfahren XHochschule vom 16.03.2026 bis 30.06.2026 im Auftrag der Arbeitsgruppe „OZG-Lebenslage Studium" der Kultusministerkonferenz (KMK)
 title: ''
 labels: Kommentierung XHochschule v1.2
 
