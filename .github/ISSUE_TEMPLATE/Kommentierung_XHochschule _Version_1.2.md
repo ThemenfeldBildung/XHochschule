@@ -2,7 +2,7 @@
 name: Kommentierung von XHochschule Version 1.2
 about: Beteiligungsverfahren XHochschule im Auftrag der Arbeitsgruppe „OZG-Lebenslage Studium" der Kultusministerkonferenz (KMK)
 title: ''
-labels: Kommentierung XHS v1.2, Open
+labels: Kommentierung XHochschule v1.2
 
 ---
 
