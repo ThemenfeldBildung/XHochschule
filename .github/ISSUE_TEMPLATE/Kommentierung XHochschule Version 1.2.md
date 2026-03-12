@@ -6,6 +6,9 @@ labels: Kommentierung XHS v1.2, Open
 
 ---
 
-Autor: [bitte angeben]
-Art der Organisation: [ Hochschule / CAMS-Hersteller / Ministerium / andere ]
-Beschreibung: [bitte Beschreibung der Rückmeldung angeben]
+Autor:in: [bitte angeben]
+Name der Hochschule: [bitte angeben]
+Rückmeldung zur SPezifikation: [bitte fügen Sie hier Ihre Rückmeldung zur Spezifikation ein]
+
+
+Weitere Bescheinigungen und Bildungsnachweise (Optional): [Gibt es weitere Bescheinigungen und Bildungsnachweise, die aus Ihrer Sicht in die Spezifikation XHochschule aufgenommen werden sollten?]
