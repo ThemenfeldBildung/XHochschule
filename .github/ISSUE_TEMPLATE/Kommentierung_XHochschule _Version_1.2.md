@@ -5,7 +5,7 @@ title: ''
 labels: Kommentierung XHochschule v1.2
 
 ---
-*Die Kommentierung zu XHochschule Version 1.2 läuft vom 16.03.2026 bis 30.06.2026*
+Hinweis: _Die Kommentierung von XHochschule Version 1.2 läuft vom 16.03.2026 bis 30.06.2026_
 
 Autor:in: [ bitte angeben ]
 
