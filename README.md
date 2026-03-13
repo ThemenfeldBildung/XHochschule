@@ -29,4 +29,4 @@ Das Vorgehen für Ihre Beteiligung umfasst folgende Schritte :
 
 1. Sie erstellen ein [Nutzerkonto bei GitHub](https://github.com/join?ref_cta=Sign+up) oder loggen Sie sich mit einem bestehenden Konto ein.
 2. Sie erstellen [ein Issue](https://github.com/OZG-TFBildung/XHochschule/issues/new/choose) in dem Sie Ihr Anliegen beschreiben. ([hier erfahren Sie mehr](http://www.xhochschule.de/web/node/28) darüber, wie ein Issue angelegt wird) 
-3. Ihr Anliegen ist nun veröffentlicht und wird bei der Weiterentwicklung der Spezifikation in Betracht genommen.
+3. Ihr Anliegen ist nun veröffentlicht und wird bei der Weiterentwicklung der Spezifikation in Betracht gezogen.
