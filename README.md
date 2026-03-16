@@ -1,6 +1,6 @@
 # XHochschule
 
-+++ Alle Informationen zur laufenden Kommentierung der XHochschule-Spezifikation 1.2 vom 16.03. bis zum 30.06. finden Sie auf der XHochschule-Website: https://xhochschule.de/web/kommentierungv1.2 +++
++++ [Aktuelle Informationen](https://xhochschule.de/web/kommentierungv1.2) zur laufenden **Kommentierung der XHochschule-Spezifikation 1.2 vom 16.03.2026 bis zum 30.06.2026** finden Sie auf der XHochschule-Website. +++
 
 ![Logo und Federfuehrer](http://www.xhochschule.de/images/logo_und_federfuehrer.png)
 
