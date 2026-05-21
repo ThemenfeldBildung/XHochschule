@@ -9,7 +9,7 @@
 
 XHochschule ist ein Datenaustauschstandard für den medienbruchfreien Austausch von Daten und Dokumenten wie Abschlusszeugnissen, Immatrikulationsbescheinigungen oder Rentenbescheinigungen. XHochschule basiert auf dem Standardisierungsrahmen [XÖV](https://www.xoev.de/xoev-4987) und wurde vom [IT-Planungsrat](https://www.it-planungsrat.de/beschluss/beschluss-2020-52/) 2020 auf die Standardisierungsagenda gehoben, ab 2029 ist seine Nutzung für den Anwendungsbereich „digitale Zeugnisausstellung“ [verbindlich](https://www.it-planungsrat.de/beschluss/b-2025-43-it). 
 
-Das Projekt XHochschule umspannt den gesamten Prozess von der Bedarfserhebung bis hin zur Gestaltung der technischen Umsetzung. Die Federführung liegt beim Land Sachsen-Anhalt und dem Bundesministerium für Bildung und Forschung.
+Das Projekt XHochschule umspannt den gesamten Prozess von der Bedarfserhebung bis hin zur Gestaltung der technischen Umsetzung. Die Federführung liegt beim Land Sachsen-Anhalt.
 
 # Veröffentlichte Artefakte von XHochschule
 
