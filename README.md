@@ -2,7 +2,7 @@
 
 +++ [Aktuelle Informationen](https://xhochschule.de/web/kommentierungv1.2) zur laufenden **Kommentierung der XHochschule-Spezifikation 1.2 vom 16.03.2026 bis zum 30.06.2026** finden Sie auf der XHochschule-Website. +++
 
-![Logo und Federfuehrer](http://www.xhochschule.de/images/logo_und_federfuehrer.png)
+![Logo und Federfuehrer](https://www.xhochschule.de/images/logo_und_federfuehrer.png)
 
 
 # Was ist XHochschule?
